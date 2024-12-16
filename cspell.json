@@ -60,5 +60,4 @@
 // cspell "**" > "errors.txt"
 
 // Ensuring no issues are found
-// echo "# New Words" >> project-words.txt
 // cspell --words-only --unique "**" >> errors.txt
