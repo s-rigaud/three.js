@@ -61,4 +61,4 @@
 
 // Ensuring no issues are found
 // echo "# New Words" >> project-words.txt
-// cspell --words-only --unique "**" | sort --ignore-case >> errors.txt
+// cspell --words-only --unique "**" >> errors.txt
