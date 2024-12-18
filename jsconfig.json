@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "checkJs": true,
+        "lib": [] // Do not include dom
+    },
+    "include": [
+        "src/**/*.js",
+        "examples/**/*"
+    ]
+}
