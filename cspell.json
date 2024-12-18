@@ -41,6 +41,7 @@
         "editor/js/Strings.js",
         "examples/jsm/libs/*",
         "examples/models/*",
+        "examples/textures/*",
         "manual/3rdparty/*",
         "manual/fr/*",
         "manual/ja/*",
