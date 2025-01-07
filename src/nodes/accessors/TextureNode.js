@@ -268,7 +268,7 @@ class TextureNode extends UniformNode {
 	setUpdateMatrix( value ) {
 
 		this.updateMatrix = value;
-		this.updateType = value ? NodeUpdateType.FRAME : NodeUpdateType.NONE;
+		this.updateType = value ? NodeUpdateType.RENDER : NodeUpdateType.NONE;
 
 		return this;
 
@@ -313,6 +313,16 @@ class TextureNode extends UniformNode {
 
 		const properties = builder.getNodeProperties( this );
 		properties.referenceNode = this.referenceNode;
+
+		//
+
+		const texture = this.value;
+
+		if ( ! texture || texture.isTexture !== true ) {
+
+			throw new Error( 'THREE.TSL: `texture( value )` function expects a valid instance of THREE.Texture().' );
+
+		}
 
 		//
 
@@ -426,16 +436,9 @@ class TextureNode extends UniformNode {
 	 */
 	generate( builder, output ) {
 
-		const properties = builder.getNodeProperties( this );
-
 		const texture = this.value;
 
-		if ( ! texture || texture.isTexture !== true ) {
-
-			throw new Error( 'TextureNode: Need a three.js texture.' );
-
-		}
-
+		const properties = builder.getNodeProperties( this );
 		const textureProperty = super.generate( builder, 'property' );
 
 		if ( output === 'sampler' ) {

@@ -5,7 +5,7 @@
  */
 'use strict';
 
-const REVISION = '172dev';
+const REVISION = '172';
 
 const MOUSE = { LEFT: 0, MIDDLE: 1, RIGHT: 2, ROTATE: 0, DOLLY: 1, PAN: 2 };
 const TOUCH = { ROTATE: 0, PAN: 1, DOLLY_PAN: 2, DOLLY_ROTATE: 3 };
@@ -3276,9 +3276,9 @@ class Data3DTexture extends Texture {
 	constructor( data = null, width = 1, height = 1, depth = 1 ) {
 
 		// We're going to add .setXXX() methods for setting properties later.
-		// Users can still set in DataTexture3D directly.
+		// Users can still set in Data3DTexture directly.
 		//
-		//	const texture = new THREE.DataTexture3D( data, width, height, depth );
+		//	const texture = new THREE.Data3DTexture( data, width, height, depth );
 		// 	texture.anisotropy = 16;
 		//
 		// See #14839
@@ -34381,6 +34381,42 @@ class AnimationMixer extends EventDispatcher {
 
 }
 
+class RenderTarget3D extends RenderTarget {
+
+	constructor( width = 1, height = 1, depth = 1, options = {} ) {
+
+		super( width, height, options );
+
+		this.isRenderTarget3D = true;
+
+		this.depth = depth;
+
+		this.texture = new Data3DTexture( null, width, height, depth );
+
+		this.texture.isRenderTargetTexture = true;
+
+	}
+
+}
+
+class RenderTargetArray extends RenderTarget {
+
+	constructor( width = 1, height = 1, depth = 1, options = {} ) {
+
+		super( width, height, options );
+
+		this.isRenderTargetArray = true;
+
+		this.depth = depth;
+
+		this.texture = new DataArrayTexture( null, width, height, depth );
+
+		this.texture.isRenderTargetTexture = true;
+
+	}
+
+}
+
 class Uniform {
 
 	constructor( value ) {
@@ -52950,7 +52986,7 @@ class WebGLRenderer {
 
 			//
 
-			if ( _currentRenderTarget !== null ) {
+			if ( _currentRenderTarget !== null && _currentActiveMipmapLevel === 0 ) {
 
 				// resolve multisample renderbuffers to a single-sample texture if necessary
 
@@ -53945,6 +53981,7 @@ class WebGLRenderer {
 
 		};
 
+		const _scratchFrameBuffer = _gl.createFramebuffer();
 		this.setRenderTarget = function ( renderTarget, activeCubeFace = 0, activeMipmapLevel = 0 ) {
 
 			_currentRenderTarget = renderTarget;
@@ -54053,6 +54090,14 @@ class WebGLRenderer {
 
 			}
 
+			// Use a scratch frame buffer if rendering to a mip level to avoid depth buffers
+			// being bound that are different sizes.
+			if ( activeMipmapLevel !== 0 ) {
+
+				framebuffer = _scratchFrameBuffer;
+
+			}
+
 			const framebufferBound = state.bindFramebuffer( _gl.FRAMEBUFFER, framebuffer );
 
 			if ( framebufferBound && useDefaultFramebuffer ) {
@@ -54073,8 +54118,15 @@ class WebGLRenderer {
 			} else if ( isRenderTarget3D ) {
 
 				const textureProperties = properties.get( renderTarget.texture );
-				const layer = activeCubeFace || 0;
-				_gl.framebufferTextureLayer( _gl.FRAMEBUFFER, _gl.COLOR_ATTACHMENT0, textureProperties.__webglTexture, activeMipmapLevel || 0, layer );
+				const layer = activeCubeFace;
+				_gl.framebufferTextureLayer( _gl.FRAMEBUFFER, _gl.COLOR_ATTACHMENT0, textureProperties.__webglTexture, activeMipmapLevel, layer );
+
+			} else if ( renderTarget !== null && activeMipmapLevel !== 0 ) {
+
+				// Only bind the frame buffer if we are using a scratch frame buffer to render to a mipmap.
+				// If we rebind the texture when using a multi sample buffer then an error about inconsistent samples will be thrown.
+				const textureProperties = properties.get( renderTarget.texture );
+				_gl.framebufferTexture2D( _gl.FRAMEBUFFER, _gl.COLOR_ATTACHMENT0, _gl.TEXTURE_2D, textureProperties.__webglTexture, activeMipmapLevel );
 
 			}
 
@@ -54933,6 +54985,8 @@ exports.RedFormat = RedFormat;
 exports.RedIntegerFormat = RedIntegerFormat;
 exports.ReinhardToneMapping = ReinhardToneMapping;
 exports.RenderTarget = RenderTarget;
+exports.RenderTarget3D = RenderTarget3D;
+exports.RenderTargetArray = RenderTargetArray;
 exports.RepeatWrapping = RepeatWrapping;
 exports.ReplaceStencilOp = ReplaceStencilOp;
 exports.ReverseSubtractEquation = ReverseSubtractEquation;

@@ -4,7 +4,7 @@ import { NormalBlending } from '../../constants.js';
 import { getNodeChildren, getCacheKey } from '../../nodes/core/NodeUtils.js';
 import { attribute } from '../../nodes/core/AttributeNode.js';
 import { output, diffuseColor, emissive, varyingProperty } from '../../nodes/core/PropertyNode.js';
-import { materialAlphaTest, materialColor, materialOpacity, materialEmissive, materialNormal, materialLightMap, materialAOMap } from '../../nodes/accessors/MaterialNode.js';
+import { materialAlphaTest, materialColor, materialOpacity, materialEmissive, materialNormal, materialLightMap, materialAO } from '../../nodes/accessors/MaterialNode.js';
 import { modelViewProjection } from '../../nodes/accessors/ModelViewProjectionNode.js';
 import { normalLocal } from '../../nodes/accessors/Normal.js';
 import { instancedMesh } from '../../nodes/accessors/InstancedMeshNode.js';
@@ -400,7 +400,7 @@ class NodeMaterial extends Material {
 	}
 
 	/**
-	 * Setups the vertex and fragment stahge of this node material.
+	 * Setups the vertex and fragment stage of this node material.
 	 *
 	 * @param {NodeBuilder} builder - The current node builder.
 	 */
@@ -439,7 +439,7 @@ class NodeMaterial extends Material {
 
 		const clippingNode = this.setupClipping( builder );
 
-		if ( this.depthWrite === true ) {
+		if ( this.depthWrite === true || this.depthTest === true ) {
 
 			// only write depth if depth buffer is configured
 
@@ -912,7 +912,7 @@ class NodeMaterial extends Material {
 
 		if ( this.aoNode !== null || builder.material.aoMap ) {
 
-			const aoNode = this.aoNode !== null ? this.aoNode : materialAOMap;
+			const aoNode = this.aoNode !== null ? this.aoNode : materialAO;
 
 			materialLightsNode.push( new AONode( aoNode ) );
 

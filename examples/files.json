@@ -408,6 +408,7 @@
 		"webgpu_procedural_texture",
 		"webgpu_reflection",
 		"webgpu_refraction",
+		"webgpu_rendertarget_2d-array_3d",
 		"webgpu_rtt",
 		"webgpu_sandbox",
 		"webgpu_shadertoy",
@@ -513,7 +514,8 @@
 		"misc_exporter_usdz",
 		"misc_exporter_exr",
 		"misc_exporter_ktx2",
-		"misc_lookat"
+		"misc_lookat",
+		"misc_raycaster_helper"
 	],
 	"css2d": [
 		"css2d_label"
