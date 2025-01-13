@@ -37,7 +37,7 @@ class WebGPUBackend extends Backend {
 	 * @param {Boolean} [parameters.trackTimestamp=false] - Whether to track timestamps with a Timestamp Query API or not.
 	 * @param {String} [parameters.powerPreference=undefined] - The power preference.
 	 * @param {Object} [parameters.requiredLimits=undefined] - Specifies the limits that are required by the device request. The request will fail if the adapter cannot provide these limits.
-	 * @param {GPUDevice} [parameters.device=undefined] - If there is an exisitng GPU device on app level, it can be passed to the renderer as a parameter.
+	 * @param {GPUDevice} [parameters.device=undefined] - If there is an existing GPU device on app level, it can be passed to the renderer as a parameter.
 	 */
 	constructor( parameters = {} ) {
 
@@ -787,7 +787,7 @@ class WebGPUBackend extends Backend {
 
 			for ( let i = 0; i < currentOcclusionQueryObjects.length; i ++ ) {
 
-				if ( results[ i ] !== BigInt( 0 ) ) {
+				if ( results[ i ] === BigInt( 0 ) ) {
 
 					occluded.add( currentOcclusionQueryObjects[ i ] );
 
@@ -890,7 +890,7 @@ class WebGPUBackend extends Backend {
 
 			if ( color ) {
 
-				const descriptor = this._getRenderPassDescriptor( renderTargetContext, { loadOp: GPULoadOp.Clear } );
+				const descriptor = this._getRenderPassDescriptor( renderTargetContext, { loadOp: GPULoadOp.Clear, clearValue } );
 
 				colorAttachments = descriptor.colorAttachments;
 
@@ -948,7 +948,7 @@ class WebGPUBackend extends Backend {
 
 		//
 
-		const encoder = device.createCommandEncoder( {} );
+		const encoder = device.createCommandEncoder( { label: 'clear' } );
 		const currentPass = encoder.beginRenderPass( {
 			colorAttachments,
 			depthStencilAttachment
@@ -973,11 +973,13 @@ class WebGPUBackend extends Backend {
 		const groupGPU = this.get( computeGroup );
 
 
-		const descriptor = {};
+		const descriptor = {
+			label: 'computeGroup_' + computeGroup.id
+		};
 
 		this.initTimestampQuery( computeGroup, descriptor );
 
-		groupGPU.cmdEncoderGPU = this.device.createCommandEncoder();
+		groupGPU.cmdEncoderGPU = this.device.createCommandEncoder( { label: 'computeGroup_' + computeGroup.id } );
 
 		groupGPU.passEncoderGPU = groupGPU.cmdEncoderGPU.beginComputePass( descriptor );
 
@@ -1466,23 +1468,23 @@ class WebGPUBackend extends Backend {
 
 		const renderContextData = this.get( renderContext );
 
-		if ( ! renderContextData.timeStampQuerySet ) {
+		// init query set if not exists
 
+		if ( ! renderContextData.timestampQuerySet ) {
 
 			const type = renderContext.isComputeNode ? 'compute' : 'render';
-			const timeStampQuerySet = this.device.createQuerySet( { type: 'timestamp', count: 2, label: `timestamp_${type}_${renderContext.id}` } );
 
-			const timestampWrites = {
-				querySet: timeStampQuerySet,
-				beginningOfPassWriteIndex: 0, // Write timestamp in index 0 when pass begins.
-				endOfPassWriteIndex: 1, // Write timestamp in index 1 when pass ends.
-			};
-
-			Object.assign( descriptor, { timestampWrites } );
-
-			renderContextData.timeStampQuerySet = timeStampQuerySet;
+			renderContextData.timestampQuerySet = this.device.createQuerySet( { type: 'timestamp', count: 2, label: `timestamp_${type}_${renderContext.id}` } );
 
 		}
+
+		// augment descriptor
+
+		descriptor.timestampWrites = {
+			querySet: renderContextData.timestampQuerySet,
+			beginningOfPassWriteIndex: 0, // Write timestamp in index 0 when pass begins.
+			endOfPassWriteIndex: 1, // Write timestamp in index 1 when pass ends.
+		};
 
 	}
 
@@ -1499,7 +1501,7 @@ class WebGPUBackend extends Backend {
 		const renderContextData = this.get( renderContext );
 
 
-		const size = 2 * BigInt64Array.BYTES_PER_ELEMENT;
+		const size = 2 * BigUint64Array.BYTES_PER_ELEMENT;
 
 		if ( renderContextData.currentTimestampQueryBuffers === undefined ) {
 
@@ -1521,7 +1523,7 @@ class WebGPUBackend extends Backend {
 		const { resolveBuffer, resultBuffer } = renderContextData.currentTimestampQueryBuffers;
 
 
-		encoder.resolveQuerySet( renderContextData.timeStampQuerySet, 0, 2, resolveBuffer, 0 );
+		encoder.resolveQuerySet( renderContextData.timestampQuerySet, 0, 2, resolveBuffer, 0 );
 
 		if ( resultBuffer.mapState === 'unmapped' ) {
 
@@ -1551,18 +1553,15 @@ class WebGPUBackend extends Backend {
 
 		if ( resultBuffer.mapState === 'unmapped' ) {
 
-			resultBuffer.mapAsync( GPUMapMode.READ ).then( () => {
+			await resultBuffer.mapAsync( GPUMapMode.READ );
 
-				const times = new BigUint64Array( resultBuffer.getMappedRange() );
-				const duration = Number( times[ 1 ] - times[ 0 ] ) / 1000000;
-
-
-				this.renderer.info.updateTimestamp( type, duration );
-
-				resultBuffer.unmap();
+			const times = new BigUint64Array( resultBuffer.getMappedRange() );
+			const duration = Number( times[ 1 ] - times[ 0 ] ) / 1000000;
 
 
-			} );
+			this.renderer.info.updateTimestamp( type, duration );
+
+			resultBuffer.unmap();
 
 		}
 

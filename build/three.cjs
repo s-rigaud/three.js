@@ -1,11 +1,11 @@
 /**
  * @license
- * Copyright 2010-2024 Three.js Authors
+ * Copyright 2010-2025 Three.js Authors
  * SPDX-License-Identifier: MIT
  */
 'use strict';
 
-const REVISION = '172';
+const REVISION = '173dev';
 
 const MOUSE = { LEFT: 0, MIDDLE: 1, RIGHT: 2, ROTATE: 0, DOLLY: 1, PAN: 2 };
 const TOUCH = { ROTATE: 0, PAN: 1, DOLLY_PAN: 2, DOLLY_ROTATE: 3 };
@@ -17518,6 +17518,36 @@ class VideoTexture extends Texture {
 			this.needsUpdate = true;
 
 		}
+
+	}
+
+}
+
+class VideoFrameTexture extends VideoTexture {
+
+	constructor( mapping, wrapS, wrapT, magFilter, minFilter, format, type, anisotropy ) {
+
+		super( {}, mapping, wrapS, wrapT, magFilter, minFilter, format, type, anisotropy );
+
+	}
+
+	update() {
+
+		// overwrites `VideoTexture.update()` with an empty method since
+		// this type of texture is updated via `setFrame()`.
+
+	}
+
+	clone() {
+
+		return new this.constructor().copy( this ); // restoring Texture.clone()
+
+	}
+
+	setFrame( frame ) {
+
+		this.image = frame;
+		this.needsUpdate = true;
 
 	}
 
@@ -38577,12 +38607,16 @@ function WebGLBackground( renderer, cubemaps, cubeuvmaps, state, objects, alpha,
 			boxMesh.geometry.dispose();
 			boxMesh.material.dispose();
 
+			boxMesh = undefined;
+
 		}
 
 		if ( planeMesh !== undefined ) {
 
 			planeMesh.geometry.dispose();
 			planeMesh.material.dispose();
+
+			planeMesh = undefined;
 
 		}
 
@@ -50227,7 +50261,9 @@ class WebXRManager extends EventDispatcher {
 				currentPixelRatio = renderer.getPixelRatio();
 				renderer.getSize( currentSize );
 
-				const useLayers = session.enabledFeatures !== undefined && session.enabledFeatures.includes( 'layers' );
+				// Check that the browser implements the necessary APIs to use an
+				// XRProjectionLayer rather than an XRWebGLLayer
+				const useLayers = XRWebGLBinding !== undefined && 'createProjectionLayer' in XRWebGLBinding.prototype;
 
 				if ( ! useLayers ) {
 
@@ -50736,8 +50772,11 @@ class WebXRManager extends EventDispatcher {
 				//
 
 				const enabledFeatures = session.enabledFeatures;
+				const gpuDepthSensingEnabled = enabledFeatures &&
+					enabledFeatures.includes( 'depth-sensing' ) &&
+					session.depthUsage == 'gpu-optimized';
 
-				if ( enabledFeatures && enabledFeatures.includes( 'depth-sensing' ) ) {
+				if ( gpuDepthSensingEnabled && glBinding ) {
 
 					const depthData = glBinding.getDepthInformation( views[ 0 ] );
 
@@ -55065,6 +55104,7 @@ exports.Vector2 = Vector2;
 exports.Vector3 = Vector3;
 exports.Vector4 = Vector4;
 exports.VectorKeyframeTrack = VectorKeyframeTrack;
+exports.VideoFrameTexture = VideoFrameTexture;
 exports.VideoTexture = VideoTexture;
 exports.WebGL3DRenderTarget = WebGL3DRenderTarget;
 exports.WebGLArrayRenderTarget = WebGLArrayRenderTarget;
