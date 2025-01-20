@@ -2596,3 +2596,7 @@ zscene
 zstddec
 zulip
 zwift
+webcodecs
+hardwrap
+demuxer
+Demuxer

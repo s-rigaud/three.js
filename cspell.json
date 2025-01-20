@@ -36,6 +36,7 @@
         "docs/manual/ru/*",
         "docs/manual/zh/*",
         "docs/prettify/*",
+        "docs_new/*",  // generated from source code
         "examples/fonts/*",
         "editor/js/libs/*",
         "editor/js/Strings.js",
