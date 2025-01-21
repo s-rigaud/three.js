@@ -1,7 +1,12 @@
 {
     "compilerOptions": {
         "checkJs": true,
-        "lib": [] // Do not include dom
+        "lib": [
+            "esnext",
+            // "dom", // Do not include dom
+            // "dom.iterable", // Do not include dom
+            "scripthost"
+        ]
     },
     "include": [
         "src/**/*.js",
