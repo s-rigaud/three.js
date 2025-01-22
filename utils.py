@@ -17,13 +17,30 @@ def clean_ts_errors():
         lines = f.read().splitlines()
 
     banned_errors = [
+        "TS7005",  # "Parameter 'x' implicitly has an 'any' type."
         "TS7006",  # "Parameter 'x' implicitly has an 'any' type."
+        "7034",  # "Variable 'x' implicitly has an 'any' type."
+        "TS2304",  # "Cannot find name 'x'."
     ]
 
-    lines = [l for l in lines for ban_word in banned_errors if ban_word not in l]
+    banned_folders = [
+        "build/",
+    ]
+
+    accepted_lines= []
+    for line in lines:
+        for ban_word in banned_errors:
+            if ban_word in line:
+                break
+        else:
+            for ban_folder in banned_folders:
+                if ban_folder in line:
+                    break
+            else:
+                accepted_lines.append(line)
 
     with open('errors.txt', 'w', encoding="utf-8") as f:
-        f.write('\n'.join(lines))
+        f.write('\n'.join(accepted_lines))
 
     print('Errors cleaned!')
 
