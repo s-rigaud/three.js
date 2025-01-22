@@ -1,0 +1,11 @@
+
+- [ ] Run eslint on every file and fix errors
+- [ ] Typehint WeakMap and map properly (add values for generic)
+- [ ] Node constructor name can be null or undefined (see assign node and others)
+- [ ] No `charCodeAt()`
+- [ ] `virutal camera`
+- [ ] Uncommenting @abstract parameters
+- [ ] Add type for ParameterNode
+- [ ] Update augment from RTTNode
+- [ ] updateReference.js updateReference return type -> Node
+- [ ] update RenderOutputNode toneMapping type

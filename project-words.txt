@@ -473,6 +473,8 @@ deinterleaves
 deliveroo
 demiboy
 demigirl
+demuxer
+Demuxer
 denodo
 Denoise
 denoise
@@ -1015,6 +1017,7 @@ halfwidth
 handinput
 Handley
 happyface
+hardwrap
 HBAO
 HBIL
 hcenter
@@ -2483,6 +2486,7 @@ WCOD
 wdec
 wders
 webaudio
+webcodecs
 webflow
 webgl
 webglcontextcreationerror
@@ -2596,7 +2600,3 @@ zscene
 zstddec
 zulip
 zwift
-webcodecs
-hardwrap
-demuxer
-Demuxer

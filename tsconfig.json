@@ -1,0 +1,45 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "allowJs": true,
+        "composite": true,
+        "strict": true,
+        "jsx": "preserve",
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "allowImportingTsExtensions": true,
+        "forceConsistentCasingInFileNames": true,
+        "useDefineForClassFields": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "noEmit": true,
+        "strictPropertyInitialization": false,
+        "sourceMap": true,
+        "resolveJsonModule": true,
+        "baseUrl": ".",
+        "checkJs": true,
+        "paths": {
+            "three/addons/*": [
+                "node_modules/@types/three/examples/jsm/*"
+            ],
+        },
+        "lib": [
+            "esnext",
+            // "dom", // Do not include dom
+            // "dom.iterable", // Do not include dom
+            "scripthost"
+        ]
+    },
+    "include": [
+        "src/**/*.js",
+        "examples/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "build",
+    ]
+}
