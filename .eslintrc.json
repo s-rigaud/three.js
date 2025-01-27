@@ -82,6 +82,12 @@
     ],
     // TS rules ignore
     "no-mixed-spaces-and-tabs": "off",
+    "no-useless-escape": "off",
+    "@typescript-eslint/class-literal-property-style": "off",
+    "@typescript-eslint/prefer-for-of": "off",
+    "@typescript-eslint/no-dynamic-delete": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-unused-expressions": "off",
     "@typescript-eslint/no-this-alias": "off"
   }
 }
