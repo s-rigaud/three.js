@@ -5,17 +5,22 @@
     "node": true,
     "es2018": true
   },
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
   "extends": [
     "mdcs",
-    "plugin:compat/recommended"
+    "plugin:compat/recommended",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/strict",
+    "plugin:@typescript-eslint/stylistic"
   ],
   "plugins": [
     "html",
-    "import"
+    "import",
+    "@typescript-eslint"
   ],
   "settings": {
     "polyfills": [
@@ -74,6 +79,9 @@
         "requireReturnDescription": false,
         "requireParamType": true
       }
-    ]
+    ],
+    // TS rules ignore
+    "no-mixed-spaces-and-tabs": "off",
+    "@typescript-eslint/no-this-alias": "off"
   }
 }
