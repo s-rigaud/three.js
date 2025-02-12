@@ -53,6 +53,10 @@
         "manual/ru/*",
         "manual/zh/*",
         "playground/libs/*",
+        "utils/docs/template/*",
+        // Other files
+        "tsconfig.tsbuildinfo",
+        "TODOS.md",
     ]
 }
 
