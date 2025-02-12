@@ -69,7 +69,7 @@
     "test-treeshake": "rollup -c test/rollup.treeshake.config.js",
     "test-circular-deps": "dpdm --no-warning --no-tree --exit-code circular:1 src/nodes/Nodes.js",
     "make-screenshot": "node test/e2e/puppeteer.js --make",
-    "ts": "tsc > errors.txt"
+    "ts": "tsc > type-errors.txt"
   },
   "keywords": [
     "three",

@@ -64,7 +64,7 @@
 // cspell "**" --no-issues
 
 // Saving errors
-// cspell "**" > "errors.txt"
+// cspell "**" > "spelling-errors.txt"
 
 // Ensuring no issues are found
 // cspell --words-only --unique "**" >> errors.txt
