@@ -5,7 +5,7 @@
  */
 'use strict';
 
-const REVISION = '173dev';
+const REVISION = '174dev';
 
 const MOUSE = { LEFT: 0, MIDDLE: 1, RIGHT: 2, ROTATE: 0, DOLLY: 1, PAN: 2 };
 const TOUCH = { ROTATE: 0, PAN: 1, DOLLY_PAN: 2, DOLLY_ROTATE: 3 };
@@ -216,6 +216,11 @@ const GLSL3 = '300 es';
 
 const WebGLCoordinateSystem = 2000;
 const WebGPUCoordinateSystem = 2001;
+
+const TimestampQuery = {
+	COMPUTE: 'compute',
+	RENDER: 'render'
+};
 
 /**
  * https://github.com/mrdoob/eventdispatcher.js/
@@ -17413,7 +17418,7 @@ class Line extends Object3D {
 				const a = index.getX( i );
 				const b = index.getX( i + 1 );
 
-				const intersect = checkIntersection( this, raycaster, _ray$1, localThresholdSq, a, b );
+				const intersect = checkIntersection( this, raycaster, _ray$1, localThresholdSq, a, b, i );
 
 				if ( intersect ) {
 
@@ -17428,7 +17433,7 @@ class Line extends Object3D {
 				const a = index.getX( end - 1 );
 				const b = index.getX( start );
 
-				const intersect = checkIntersection( this, raycaster, _ray$1, localThresholdSq, a, b );
+				const intersect = checkIntersection( this, raycaster, _ray$1, localThresholdSq, a, b, end - 1 );
 
 				if ( intersect ) {
 
@@ -17445,7 +17450,7 @@ class Line extends Object3D {
 
 			for ( let i = start, l = end - 1; i < l; i += step ) {
 
-				const intersect = checkIntersection( this, raycaster, _ray$1, localThresholdSq, i, i + 1 );
+				const intersect = checkIntersection( this, raycaster, _ray$1, localThresholdSq, i, i + 1, i );
 
 				if ( intersect ) {
 
@@ -17457,7 +17462,7 @@ class Line extends Object3D {
 
 			if ( this.isLineLoop ) {
 
-				const intersect = checkIntersection( this, raycaster, _ray$1, localThresholdSq, end - 1, start );
+				const intersect = checkIntersection( this, raycaster, _ray$1, localThresholdSq, end - 1, start, end - 1 );
 
 				if ( intersect ) {
 
@@ -17504,7 +17509,7 @@ class Line extends Object3D {
 
 }
 
-function checkIntersection( object, raycaster, ray, thresholdSq, a, b ) {
+function checkIntersection( object, raycaster, ray, thresholdSq, a, b, i ) {
 
 	const positionAttribute = object.geometry.attributes.position;
 
@@ -17527,7 +17532,7 @@ function checkIntersection( object, raycaster, ray, thresholdSq, a, b ) {
 		// What do we want? intersection point on the ray or on the segment??
 		// point: raycaster.ray.at( distance ),
 		point: _intersectPointOnSegment.clone().applyMatrix4( object.matrixWorld ),
-		index: a,
+		index: i,
 		face: null,
 		faceIndex: null,
 		barycoord: null,
@@ -17862,6 +17867,8 @@ class VideoFrameTexture extends VideoTexture {
 	constructor( mapping, wrapS, wrapT, magFilter, minFilter, format, type, anisotropy ) {
 
 		super( {}, mapping, wrapS, wrapT, magFilter, minFilter, format, type, anisotropy );
+
+		this.isVideoFrameTexture = true;
 
 	}
 
@@ -37248,11 +37255,11 @@ function fill( texture ) {
  * Given the width, height, format, and type of a texture. Determines how many
  * bytes must be used to represent the texture.
  *
- * @param {Number} width
- * @param {Number} height
- * @param {Number} format
- * @param {Number} type
- * @return {Number} The number of bytes required to represent the texture.
+ * @param {number} width
+ * @param {number} height
+ * @param {number} format
+ * @param {number} type
+ * @return {number} The number of bytes required to represent the texture.
  */
 function getByteLength( width, height, format, type ) {
 
@@ -40105,6 +40112,8 @@ const _axisDirections = [
 	/*@__PURE__*/ new Vector3( -1, 1, 1 ),
 	/*@__PURE__*/ new Vector3( 1, 1, 1 ) ];
 
+const _origin = /*@__PURE__*/ new Vector3();
+
 /**
  * This class generates a Prefiltered, Mipmapped Radiance Environment Map
  * (PMREM) from a cubeMap environment texture. This allows different levels of
@@ -40145,16 +40154,21 @@ class PMREMGenerator {
 	 * Generates a PMREM from a supplied Scene, which can be faster than using an
 	 * image if networking bandwidth is low. Optional sigma specifies a blur radius
 	 * in radians to be applied to the scene before PMREM generation. Optional near
-	 * and far planes ensure the scene is rendered in its entirety (the cubeCamera
-	 * is placed at the origin).
+	 * and far planes ensure the scene is rendered in its entirety.
 	 *
 	 * @param {Scene} scene
 	 * @param {number} sigma
 	 * @param {number} near
 	 * @param {number} far
+	 * @param {?Object} [options={}]
 	 * @return {WebGLRenderTarget}
 	 */
-	fromScene( scene, sigma = 0, near = 0.1, far = 100 ) {
+	fromScene( scene, sigma = 0, near = 0.1, far = 100, options = {} ) {
+
+		const {
+			size = 256,
+			position = _origin,
+		} = options;
 
 		_oldTarget = this._renderer.getRenderTarget();
 		_oldActiveCubeFace = this._renderer.getActiveCubeFace();
@@ -40163,12 +40177,12 @@ class PMREMGenerator {
 
 		this._renderer.xr.enabled = false;
 
-		this._setSize( 256 );
+		this._setSize( size );
 
 		const cubeUVRenderTarget = this._allocateTargets();
 		cubeUVRenderTarget.depthBuffer = true;
 
-		this._sceneToCubeUV( scene, near, far, cubeUVRenderTarget );
+		this._sceneToCubeUV( scene, near, far, cubeUVRenderTarget, position );
 
 		if ( sigma > 0 ) {
 
@@ -40365,7 +40379,7 @@ class PMREMGenerator {
 
 	}
 
-	_sceneToCubeUV( scene, near, far, cubeUVRenderTarget ) {
+	_sceneToCubeUV( scene, near, far, cubeUVRenderTarget, position ) {
 
 		const fov = 90;
 		const aspect = 1;
@@ -40417,17 +40431,21 @@ class PMREMGenerator {
 			if ( col === 0 ) {
 
 				cubeCamera.up.set( 0, upSign[ i ], 0 );
-				cubeCamera.lookAt( forwardSign[ i ], 0, 0 );
+				cubeCamera.position.set( position.x, position.y, position.z );
+				cubeCamera.lookAt( position.x + forwardSign[ i ], position.y, position.z );
 
 			} else if ( col === 1 ) {
 
 				cubeCamera.up.set( 0, 0, upSign[ i ] );
-				cubeCamera.lookAt( 0, forwardSign[ i ], 0 );
+				cubeCamera.position.set( position.x, position.y, position.z );
+				cubeCamera.lookAt( position.x, position.y + forwardSign[ i ], position.z );
+
 
 			} else {
 
 				cubeCamera.up.set( 0, upSign[ i ], 0 );
-				cubeCamera.lookAt( 0, 0, forwardSign[ i ] );
+				cubeCamera.position.set( position.x, position.y, position.z );
+				cubeCamera.lookAt( position.x, position.y, position.z + forwardSign[ i ] );
 
 			}
 
@@ -55073,6 +55091,7 @@ exports.TetrahedronGeometry = TetrahedronGeometry;
 exports.Texture = Texture;
 exports.TextureLoader = TextureLoader;
 exports.TextureUtils = TextureUtils;
+exports.TimestampQuery = TimestampQuery;
 exports.TorusGeometry = TorusGeometry;
 exports.TorusKnotGeometry = TorusKnotGeometry;
 exports.Triangle = Triangle;

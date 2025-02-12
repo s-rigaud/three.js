@@ -105,6 +105,7 @@ const exceptionList = [
 	'webgl_points_dynamic',
 	'webgpu_multisampled_renderbuffers',
 	'webgl_test_wide_gamut',
+	'webgl_volume_instancing',
 
 	// TODO: implement determinism for setTimeout and setInterval
 	// could it fix some examples from above?
@@ -115,7 +116,7 @@ const exceptionList = [
 	'webgpu_compute_audio',
 	'webgpu_compute_texture',
 	'webgpu_compute_texture_pingpong',
-	"webgpu_compute_water",
+	'webgpu_compute_water',
 	'webgpu_materials',
 	'webgpu_sandbox',
 	'webgpu_video_panorama',
@@ -126,6 +127,7 @@ const exceptionList = [
 	// Awaiting for WebGPU Backend support in Puppeteer
 	'webgpu_storage_buffer',
 	'webgpu_compute_sort_bitonic',
+	'webgpu_struct_drawindirect',
 
 	// WebGPURenderer: Unknown problem
 	'webgpu_backdrop_water',
@@ -148,7 +150,6 @@ const exceptionList = [
 	'webgpu_texturegrad',
 	'webgpu_performance_renderbundle',
 	'webgpu_lights_rectarealight',
-	'webgpu_tsl_coffee_smoke',
 	'webgpu_tsl_vfx_flames',
 	'webgpu_tsl_halftone',
 	'webgpu_tsl_vfx_linkedparticles',
@@ -157,6 +158,8 @@ const exceptionList = [
 	'webgpu_rendertarget_2d-array_3d',
 	'webgpu_materials_envmaps_bpcem',
 	'webgpu_postprocessing_sobel',
+	'webgpu_postprocessing_3dlut',
+	'webgpu_postprocessing_afterimage',
 
 	// WebGPU idleTime and parseTime too low
 	'webgpu_compute_particles',

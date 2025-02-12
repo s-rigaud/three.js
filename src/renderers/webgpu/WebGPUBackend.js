@@ -14,6 +14,7 @@ import WebGPUPipelineUtils from './utils/WebGPUPipelineUtils.js';
 import WebGPUTextureUtils from './utils/WebGPUTextureUtils.js';
 
 import { WebGPUCoordinateSystem } from '../../constants.js';
+import WebGPUTimestampQueryPool from './utils/WebGPUTimestampQueryPool.js';
 
 /**
  * A backend implementation targeting WebGPU.
@@ -27,18 +28,18 @@ class WebGPUBackend extends Backend {
 	 * Constructs a new WebGPU backend.
 	 *
 	 * @param {Object} parameters - The configuration parameter.
-	 * @param {Boolean} [parameters.logarithmicDepthBuffer=false] - Whether logarithmic depth buffer is enabled or not.
-	 * @param {Boolean} [parameters.alpha=true] - Whether the default framebuffer (which represents the final contents of the canvas) should be transparent or opaque.
-	 * @param {Boolean} [parameters.depth=true] - Whether the default framebuffer should have a depth buffer or not.
-	 * @param {Boolean} [parameters.stencil=false] - Whether the default framebuffer should have a stencil buffer or not.
-	 * @param {Boolean} [parameters.antialias=false] - Whether MSAA as the default anti-aliasing should be enabled or not.
-	 * @param {Number} [parameters.samples=0] - When `antialias` is `true`, `4` samples are used by default. Set this parameter to any other integer value than 0 to overwrite the default.
-	 * @param {Boolean} [parameters.forceWebGL=false] - If set to `true`, the renderer uses a WebGL 2 backend no matter if WebGPU is supported or not.
-	 * @param {Boolean} [parameters.trackTimestamp=false] - Whether to track timestamps with a Timestamp Query API or not.
-	 * @param {String} [parameters.powerPreference=undefined] - The power preference.
+	 * @param {boolean} [parameters.logarithmicDepthBuffer=false] - Whether logarithmic depth buffer is enabled or not.
+	 * @param {boolean} [parameters.alpha=true] - Whether the default framebuffer (which represents the final contents of the canvas) should be transparent or opaque.
+	 * @param {boolean} [parameters.depth=true] - Whether the default framebuffer should have a depth buffer or not.
+	 * @param {boolean} [parameters.stencil=false] - Whether the default framebuffer should have a stencil buffer or not.
+	 * @param {boolean} [parameters.antialias=false] - Whether MSAA as the default anti-aliasing should be enabled or not.
+	 * @param {number} [parameters.samples=0] - When `antialias` is `true`, `4` samples are used by default. Set this parameter to any other integer value than 0 to overwrite the default.
+	 * @param {boolean} [parameters.forceWebGL=false] - If set to `true`, the renderer uses a WebGL 2 backend no matter if WebGPU is supported or not.
+	 * @param {boolean} [parameters.trackTimestamp=false] - Whether to track timestamps with a Timestamp Query API or not.
+	 * @param {string} [parameters.powerPreference=undefined] - The power preference.
 	 * @param {Object} [parameters.requiredLimits=undefined] - Specifies the limits that are required by the device request. The request will fail if the adapter cannot provide these limits.
 	 * @param {GPUDevice} [parameters.device=undefined] - If there is an existing GPU device on app level, it can be passed to the renderer as a parameter.
-	 * @param {Number} [parameters.outputType=undefined] - Texture type for output to canvas. By default, device's preferred format is used; other formats may incur overhead.
+	 * @param {number} [parameters.outputType=undefined] - Texture type for output to canvas. By default, device's preferred format is used; other formats may incur overhead.
 	 */
 	constructor( parameters = {} ) {
 
@@ -47,7 +48,7 @@ class WebGPUBackend extends Backend {
 		/**
 		 * This flag can be used for type testing.
 		 *
-		 * @type {Boolean}
+		 * @type {boolean}
 		 * @readonly
 		 * @default true
 		 */
@@ -61,7 +62,7 @@ class WebGPUBackend extends Backend {
 		/**
 		 * Whether to track timestamps with a Timestamp Query API or not.
 		 *
-		 * @type {Boolean}
+		 * @type {boolean}
 		 * @default false
 		 */
 		this.trackTimestamp = ( parameters.trackTimestamp === true );
@@ -69,7 +70,7 @@ class WebGPUBackend extends Backend {
 		/**
 		 * A reference to the device.
 		 *
-		 * @type {GPUDevice?}
+		 * @type {?GPUDevice}
 		 * @default null
 		 */
 		this.device = null;
@@ -77,7 +78,7 @@ class WebGPUBackend extends Backend {
 		/**
 		 * A reference to the context.
 		 *
-		 * @type {GPUCanvasContext?}
+		 * @type {?GPUCanvasContext}
 		 * @default null
 		 */
 		this.context = null;
@@ -85,7 +86,7 @@ class WebGPUBackend extends Backend {
 		/**
 		 * A reference to the color attachment of the default framebuffer.
 		 *
-		 * @type {GPUTexture?}
+		 * @type {?GPUTexture}
 		 * @default null
 		 */
 		this.colorBuffer = null;
@@ -93,7 +94,7 @@ class WebGPUBackend extends Backend {
 		/**
 		 * A reference to the default render pass descriptor.
 		 *
-		 * @type {Object?}
+		 * @type {?Object}
 		 * @default null
 		 */
 		this.defaultRenderPassdescriptor = null;
@@ -140,7 +141,7 @@ class WebGPUBackend extends Backend {
 		/**
 		 * A map that manages the resolve buffers for occlusion queries.
 		 *
-		 * @type {Map<Number,GPUBuffer>}
+		 * @type {Map<number,GPUBuffer>}
 		 */
 		this.occludedResolveCache = new Map();
 
@@ -244,7 +245,7 @@ class WebGPUBackend extends Backend {
 	/**
 	 * The coordinate system of the backend.
 	 *
-	 * @type {Number}
+	 * @type {number}
 	 * @readonly
 	 */
 	get coordinateSystem() {
@@ -716,8 +717,6 @@ class WebGPUBackend extends Backend {
 
 		}
 
-		this.prepareTimestampBuffer( renderContext, renderContextData.encoder );
-
 		this.device.queue.submit( [ renderContextData.encoder.finish() ] );
 
 
@@ -749,7 +748,7 @@ class WebGPUBackend extends Backend {
 	 *
 	 * @param {RenderContext} renderContext - The render context.
 	 * @param {Object3D} object - The 3D object to test.
-	 * @return {Boolean} Whether the 3D object is fully occluded or not.
+	 * @return {boolean} Whether the 3D object is fully occluded or not.
 	 */
 	isOccluded( renderContext, object ) {
 
@@ -820,12 +819,36 @@ class WebGPUBackend extends Backend {
 	}
 
 	/**
+	 * Returns the clear color and alpha into a single
+	 * color object.
+	 *
+	 * @return {Color4} The clear color.
+	 */
+	getClearColor() {
+
+		const clearColor = super.getClearColor();
+
+		// only premultiply alpha when alphaMode is "premultiplied"
+
+		if ( this.renderer.alpha === true ) {
+
+			clearColor.r *= clearColor.a;
+			clearColor.g *= clearColor.a;
+			clearColor.b *= clearColor.a;
+
+		}
+
+		return clearColor;
+
+	}
+
+	/**
 	 * Performs a clear operation.
 	 *
-	 * @param {Boolean} color - Whether the color buffer should be cleared or not.
-	 * @param {Boolean} depth - Whether the depth buffer should be cleared or not.
-	 * @param {Boolean} stencil - Whether the stencil buffer should be cleared or not.
-	 * @param {RenderContext?} [renderTargetContext=null] - The render context of the current set render target.
+	 * @param {boolean} color - Whether the color buffer should be cleared or not.
+	 * @param {boolean} depth - Whether the depth buffer should be cleared or not.
+	 * @param {boolean} stencil - Whether the stencil buffer should be cleared or not.
+	 * @param {?RenderContext} [renderTargetContext=null] - The render context of the current set render target.
 	 */
 	clear( color, depth, stencil, renderTargetContext = null ) {
 
@@ -843,20 +866,7 @@ class WebGPUBackend extends Backend {
 		if ( color ) {
 
 			const clearColor = this.getClearColor();
-
-			if ( this.renderer.alpha === true ) {
-
-				// premultiply alpha
-
-				const a = clearColor.a;
-
-				clearValue = { r: clearColor.r * a, g: clearColor.g * a, b: clearColor.b * a, a: a };
-
-			} else {
-
-				clearValue = { r: clearColor.r, g: clearColor.g, b: clearColor.b, a: clearColor.a };
-
-			}
+			clearValue = { r: clearColor.r, g: clearColor.g, b: clearColor.b, a: clearColor.a };
 
 		}
 
@@ -1054,8 +1064,6 @@ class WebGPUBackend extends Backend {
 
 		groupData.passEncoderGPU.end();
 
-		this.prepareTimestampBuffer( computeGroup, groupData.cmdEncoderGPU );
-
 		this.device.queue.submit( [ groupData.cmdEncoderGPU.finish() ] );
 
 	}
@@ -1083,7 +1091,7 @@ class WebGPUBackend extends Backend {
 	 */
 	draw( renderObject, info ) {
 
-		const { object, context, pipeline } = renderObject;
+		const { object, material, context, pipeline } = renderObject;
 		const bindings = renderObject.getBindings();
 		const renderContextData = this.get( context );
 		const pipelineGPU = this.get( pipeline ).pipeline;
@@ -1192,6 +1200,15 @@ class WebGPUBackend extends Backend {
 
 		}
 
+		// stencil
+
+		if ( context.stencil === true && material.stencilWrite === true && renderContextData.currentStencilRef !== material.stencilRef ) {
+
+			passEncoderGPU.setStencilReference( material.stencilRef );
+			renderContextData.currentStencilRef = material.stencilRef;
+
+		}
+
 		// draw
 
 		const draw = () => {
@@ -1217,6 +1234,8 @@ class WebGPUBackend extends Backend {
 						passEncoderGPU.draw( counts[ i ], count, starts[ i ], firstInstance );
 
 					}
+
+					info.update( object, counts[ i ], count );
 
 				}
 
@@ -1332,7 +1351,7 @@ class WebGPUBackend extends Backend {
 	 * Returns `true` if the render pipeline requires an update.
 	 *
 	 * @param {RenderObject} renderObject - The render object.
-	 * @return {Boolean} Whether the render pipeline requires an update or not.
+	 * @return {boolean} Whether the render pipeline requires an update or not.
 	 */
 	needsRenderUpdate( renderObject ) {
 
@@ -1394,7 +1413,7 @@ class WebGPUBackend extends Backend {
 	 * Returns a cache key that is used to identify render pipelines.
 	 *
 	 * @param {RenderObject} renderObject - The render object.
-	 * @return {String} The cache key.
+	 * @return {string} The cache key.
 	 */
 	getRenderCacheKey( renderObject ) {
 
@@ -1509,11 +1528,11 @@ class WebGPUBackend extends Backend {
 	 *
 	 * @async
 	 * @param {Texture} texture - The texture to copy.
-	 * @param {Number} x - The x coordinate of the copy origin.
-	 * @param {Number} y - The y coordinate of the copy origin.
-	 * @param {Number} width - The width of the copy.
-	 * @param {Number} height - The height of the copy.
-	 * @param {Number} faceIndex - The face index.
+	 * @param {number} x - The x coordinate of the copy origin.
+	 * @param {number} y - The y coordinate of the copy origin.
+	 * @param {number} width - The width of the copy.
+	 * @param {number} height - The height of the copy.
+	 * @param {number} faceIndex - The face index.
 	 * @return {Promise<TypedArray>} A Promise that resolves with a typed array when the copy operation has finished.
 	 */
 	async copyTextureToBuffer( texture, x, y, width, height, faceIndex ) {
@@ -1532,106 +1551,27 @@ class WebGPUBackend extends Backend {
 
 		if ( ! this.trackTimestamp ) return;
 
-		const renderContextData = this.get( renderContext );
+		const type = renderContext.isComputeNode ? 'compute' : 'render';
 
-		// init query set if not exists
+		if ( ! this.timestampQueryPool[ type ] ) {
 
-		if ( ! renderContextData.timestampQuerySet ) {
-
-			const type = renderContext.isComputeNode ? 'compute' : 'render';
-
-			renderContextData.timestampQuerySet = this.device.createQuerySet( { type: 'timestamp', count: 2, label: `timestamp_${type}_${renderContext.id}` } );
+			// TODO: Variable maxQueries?
+			this.timestampQueryPool[ type ] = new WebGPUTimestampQueryPool( this.device, type, 2048 );
 
 		}
 
-		// augment descriptor
+		const timestampQueryPool = this.timestampQueryPool[ type ];
+
+		const baseOffset = timestampQueryPool.allocateQueriesForContext( renderContext );
 
 		descriptor.timestampWrites = {
-			querySet: renderContextData.timestampQuerySet,
-			beginningOfPassWriteIndex: 0, // Write timestamp in index 0 when pass begins.
-			endOfPassWriteIndex: 1, // Write timestamp in index 1 when pass ends.
-		};
+			querySet: timestampQueryPool.querySet,
+			beginningOfPassWriteIndex: baseOffset,
+			endOfPassWriteIndex: baseOffset + 1,
+		  };
 
 	}
 
-	/**
-	 * Prepares the timestamp buffer.
-	 *
-	 * @param {RenderContext} renderContext - The render context.
-	 * @param {GPUCommandEncoder} encoder - The command encoder.
-	 */
-	prepareTimestampBuffer( renderContext, encoder ) {
-
-		if ( ! this.trackTimestamp ) return;
-
-		const renderContextData = this.get( renderContext );
-
-
-		const size = 2 * BigUint64Array.BYTES_PER_ELEMENT;
-
-		if ( renderContextData.currentTimestampQueryBuffers === undefined ) {
-
-			renderContextData.currentTimestampQueryBuffers = {
-				resolveBuffer: this.device.createBuffer( {
-					label: 'timestamp resolve buffer',
-					size: size,
-					usage: GPUBufferUsage.QUERY_RESOLVE | GPUBufferUsage.COPY_SRC,
-				} ),
-				resultBuffer: this.device.createBuffer( {
-					label: 'timestamp result buffer',
-					size: size,
-					usage: GPUBufferUsage.COPY_DST | GPUBufferUsage.MAP_READ,
-				} )
-			};
-
-		}
-
-		const { resolveBuffer, resultBuffer } = renderContextData.currentTimestampQueryBuffers;
-
-
-		encoder.resolveQuerySet( renderContextData.timestampQuerySet, 0, 2, resolveBuffer, 0 );
-
-		if ( resultBuffer.mapState === 'unmapped' ) {
-
-			encoder.copyBufferToBuffer( resolveBuffer, 0, resultBuffer, 0, size );
-
-		}
-
-	}
-
-	/**
-	 * Resolves the time stamp for the given render context and type.
-	 *
-	 * @async
-	 * @param {RenderContext} renderContext - The render context.
-	 * @param {String} type - The render context.
-	 * @return {Promise} A Promise that resolves when the time stamp has been computed.
-	 */
-	async resolveTimestampAsync( renderContext, type = 'render' ) {
-
-		if ( ! this.trackTimestamp ) return;
-
-		const renderContextData = this.get( renderContext );
-
-		if ( renderContextData.currentTimestampQueryBuffers === undefined ) return;
-
-		const { resultBuffer } = renderContextData.currentTimestampQueryBuffers;
-
-		if ( resultBuffer.mapState === 'unmapped' ) {
-
-			await resultBuffer.mapAsync( GPUMapMode.READ );
-
-			const times = new BigUint64Array( resultBuffer.getMappedRange() );
-			const duration = Number( times[ 1 ] - times[ 0 ] ) / 1000000;
-
-
-			this.renderer.info.updateTimestamp( type, duration );
-
-			resultBuffer.unmap();
-
-		}
-
-	}
 
 	// node builder
 
@@ -1763,8 +1703,8 @@ class WebGPUBackend extends Backend {
 	 *
 	 * @param {BindGroup} bindGroup - The bind group.
 	 * @param {Array<BindGroup>} bindings - Array of bind groups.
-	 * @param {Number} cacheIndex - The cache index.
-	 * @param {Number} version - The version.
+	 * @param {number} cacheIndex - The cache index.
+	 * @param {number} version - The version.
 	 */
 	createBindings( bindGroup, bindings, cacheIndex, version ) {
 
@@ -1777,8 +1717,8 @@ class WebGPUBackend extends Backend {
 	 *
 	 * @param {BindGroup} bindGroup - The bind group.
 	 * @param {Array<BindGroup>} bindings - Array of bind groups.
-	 * @param {Number} cacheIndex - The cache index.
-	 * @param {Number} version - The version.
+	 * @param {number} cacheIndex - The cache index.
+	 * @param {number} version - The version.
 	 */
 	updateBindings( bindGroup, bindings, cacheIndex, version ) {
 
@@ -1882,7 +1822,7 @@ class WebGPUBackend extends Backend {
 	/**
 	 * Returns the maximum anisotropy texture filtering value.
 	 *
-	 * @return {Number} The maximum anisotropy texture filtering value.
+	 * @return {number} The maximum anisotropy texture filtering value.
 	 */
 	getMaxAnisotropy() {
 
@@ -1893,8 +1833,8 @@ class WebGPUBackend extends Backend {
 	/**
 	 * Checks if the given feature is supported  by the backend.
 	 *
-	 * @param {String} name - The feature's name.
-	 * @return {Boolean} Whether the feature is supported or not.
+	 * @param {string} name - The feature's name.
+	 * @return {boolean} Whether the feature is supported or not.
 	 */
 	hasFeature( name ) {
 
@@ -1907,9 +1847,9 @@ class WebGPUBackend extends Backend {
 	 *
 	 * @param {Texture} srcTexture - The source texture.
 	 * @param {Texture} dstTexture - The destination texture.
-	 * @param {Vector4?} [srcRegion=null] - The region of the source texture to copy.
-	 * @param {(Vector2|Vector3)?} [dstPosition=null] - The destination position of the copy.
-	 * @param {Number} [level=0] - The mip level to copy.
+	 * @param {?Vector4} [srcRegion=null] - The region of the source texture to copy.
+	 * @param {?(Vector2|Vector3)} [dstPosition=null] - The destination position of the copy.
+	 * @param {number} [level=0] - The mip level to copy.
 	 */
 	copyTextureToTexture( srcTexture, dstTexture, srcRegion = null, dstPosition = null, level = 0 ) {
 

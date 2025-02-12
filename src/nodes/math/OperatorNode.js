@@ -1,8 +1,6 @@
 import TempNode from '../core/TempNode.js';
 import { addMethodChaining, nodeProxy } from '../tsl/TSLCore.js';
 
-/** @module OperatorNode **/
-
 /**
  * This node represents basic mathematical and logical operations like addition,
  * subtraction or comparisons (e.g. `equal()`).
@@ -20,7 +18,7 @@ class OperatorNode extends TempNode {
 	/**
 	 * Constructs a new operator node.
 	 *
-	 * @param {String} op - The operator.
+	 * @param {string} op - The operator.
 	 * @param {Node} aNode - The first input.
 	 * @param {Node} bNode - The second input.
 	 * @param {...Node} params - Additional input parameters.
@@ -47,7 +45,7 @@ class OperatorNode extends TempNode {
 		/**
 		 * The operator.
 		 *
-		 * @type {String}
+		 * @type {string}
 		 */
 		this.op = op;
 
@@ -68,7 +66,7 @@ class OperatorNode extends TempNode {
 		/**
 		 * This flag can be used for type testing.
 		 *
-		 * @type {Boolean}
+		 * @type {boolean}
 		 * @readonly
 		 * @default true
 		 */
@@ -81,8 +79,8 @@ class OperatorNode extends TempNode {
 	 * and the input node types.
 	 *
 	 * @param {NodeBuilder} builder - The current node builder.
-	 * @param {String} output - The current output string.
-	 * @return {String} The node type.
+	 * @param {string} output - The current output string.
+	 * @return {string} The node type.
 	 */
 	getNodeType( builder, output ) {
 
@@ -118,23 +116,39 @@ class OperatorNode extends TempNode {
 
 		} else {
 
-			if ( typeA === 'float' && builder.isMatrix( typeB ) ) {
+			// Handle matrix operations
+			if ( builder.isMatrix( typeA ) ) {
 
-				return typeB;
+				if ( typeB === 'float' ) {
 
-			} else if ( builder.isMatrix( typeA ) && builder.isVector( typeB ) ) {
+					return typeA; // matrix * scalar = matrix
 
-				// matrix x vector
+				} else if ( builder.isVector( typeB ) ) {
 
-				return builder.getVectorFromMatrix( typeA );
+					return builder.getVectorFromMatrix( typeA ); // matrix * vector
 
-			} else if ( builder.isVector( typeA ) && builder.isMatrix( typeB ) ) {
+				} else if ( builder.isMatrix( typeB ) ) {
 
-				// vector x matrix
+					return typeA; // matrix * matrix
 
-				return builder.getVectorFromMatrix( typeB );
+				}
 
-			} else if ( builder.getTypeLength( typeB ) > builder.getTypeLength( typeA ) ) {
+			} else if ( builder.isMatrix( typeB ) ) {
+
+				if ( typeA === 'float' ) {
+
+					return typeB; // scalar * matrix = matrix
+
+				} else if ( builder.isVector( typeA ) ) {
+
+					return builder.getVectorFromMatrix( typeB ); // vector * matrix
+
+				}
+
+			}
+
+			// Handle non-matrix cases
+			if ( builder.getTypeLength( typeB ) > builder.getTypeLength( typeA ) ) {
 
 				// anytype x anytype: use the greater length vector
 
@@ -182,17 +196,43 @@ class OperatorNode extends TempNode {
 				typeA = type;
 				typeB = builder.changeComponentType( typeB, 'uint' );
 
-			} else if ( builder.isMatrix( typeA ) && builder.isVector( typeB ) ) {
+			} else if ( builder.isMatrix( typeA ) ) {
 
-				// matrix x vector
+				if ( typeB === 'float' ) {
 
-				typeB = builder.getVectorFromMatrix( typeA );
+					// Keep matrix type for typeA, but ensure typeB stays float
+					typeB = 'float';
 
-			} else if ( builder.isVector( typeA ) && builder.isMatrix( typeB ) ) {
+				} else if ( builder.isVector( typeB ) ) {
 
-				// vector x matrix
+					// matrix x vector
+					typeB = builder.getVectorFromMatrix( typeA );
 
-				typeA = builder.getVectorFromMatrix( typeB );
+				} else if ( builder.isMatrix( typeB ) ) {
+					// matrix x matrix - keep both types
+				} else {
+
+					typeA = typeB = type;
+
+				}
+
+			} else if ( builder.isMatrix( typeB ) ) {
+
+				if ( typeA === 'float' ) {
+
+					// Keep matrix type for typeB, but ensure typeA stays float
+					typeA = 'float';
+
+				} else if ( builder.isVector( typeA ) ) {
+
+					// vector x matrix
+					typeA = builder.getVectorFromMatrix( typeB );
+
+				} else {
+
+					typeA = typeB = type;
+
+				}
 
 			} else {
 
@@ -274,7 +314,20 @@ class OperatorNode extends TempNode {
 
 			} else {
 
-				return builder.format( `( ${ a } ${ op } ${ b } )`, type, output );
+				// Handle matrix operations
+				if ( builder.isMatrix( typeA ) && typeB === 'float' ) {
+
+					return builder.format( `( ${ b } ${ op } ${ a } )`, type, output );
+
+				} else if ( typeA === 'float' && builder.isMatrix( typeB ) ) {
+
+					return builder.format( `${ a } ${ op } ${ b }`, type, output );
+
+				} else {
+
+					return builder.format( `( ${ a } ${ op } ${ b } )`, type, output );
+
+				}
 
 			}
 
@@ -286,7 +339,15 @@ class OperatorNode extends TempNode {
 
 			} else {
 
-				return builder.format( `${ a } ${ op } ${ b }`, type, output );
+				if ( builder.isMatrix( typeA ) && typeB === 'float' ) {
+
+					return builder.format( `${ b } ${ op } ${ a }`, type, output );
+
+				} else {
+
+					return builder.format( `${ a } ${ op } ${ b }`, type, output );
+
+				}
 
 			}
 
@@ -317,6 +378,7 @@ export default OperatorNode;
 /**
  * Returns the addition of two or more value.
  *
+ * @tsl
  * @function
  * @param {Node} aNode - The first input.
  * @param {Node} bNode - The second input.
@@ -328,6 +390,7 @@ export const add = /*@__PURE__*/ nodeProxy( OperatorNode, '+' );
 /**
  * Returns the subtraction of two or more value.
  *
+ * @tsl
  * @function
  * @param {Node} aNode - The first input.
  * @param {Node} bNode - The second input.
@@ -339,6 +402,7 @@ export const sub = /*@__PURE__*/ nodeProxy( OperatorNode, '-' );
 /**
  * Returns the multiplication of two or more value.
  *
+ * @tsl
  * @function
  * @param {Node} aNode - The first input.
  * @param {Node} bNode - The second input.
@@ -350,6 +414,7 @@ export const mul = /*@__PURE__*/ nodeProxy( OperatorNode, '*' );
 /**
  * Returns the division of two or more value.
  *
+ * @tsl
  * @function
  * @param {Node} aNode - The first input.
  * @param {Node} bNode - The second input.
@@ -361,6 +426,7 @@ export const div = /*@__PURE__*/ nodeProxy( OperatorNode, '/' );
 /**
  * Computes the remainder of dividing the first node by the second, for integer values.
  *
+ * @tsl
  * @function
  * @param {Node} aNode - The first input.
  * @param {Node} bNode - The second input.
@@ -371,6 +437,7 @@ export const modInt = /*@__PURE__*/ nodeProxy( OperatorNode, '%' );
 /**
  * Checks if two nodes are equal.
  *
+ * @tsl
  * @function
  * @param {Node} aNode - The first input.
  * @param {Node} bNode - The second input.
@@ -381,6 +448,7 @@ export const equal = /*@__PURE__*/ nodeProxy( OperatorNode, '==' );
 /**
  * Checks if two nodes are not equal.
  *
+ * @tsl
  * @function
  * @param {Node} aNode - The first input.
  * @param {Node} bNode - The second input.
@@ -391,6 +459,7 @@ export const notEqual = /*@__PURE__*/ nodeProxy( OperatorNode, '!=' );
 /**
  * Checks if the first node is less than the second.
  *
+ * @tsl
  * @function
  * @param {Node} aNode - The first input.
  * @param {Node} bNode - The second input.
@@ -401,6 +470,7 @@ export const lessThan = /*@__PURE__*/ nodeProxy( OperatorNode, '<' );
 /**
  * Checks if the first node is greater than the second.
  *
+ * @tsl
  * @function
  * @param {Node} aNode - The first input.
  * @param {Node} bNode - The second input.
@@ -411,6 +481,7 @@ export const greaterThan = /*@__PURE__*/ nodeProxy( OperatorNode, '>' );
 /**
  * Checks if the first node is less than or equal to the second.
  *
+ * @tsl
  * @function
  * @param {Node} aNode - The first input.
  * @param {Node} bNode - The second input.
@@ -421,6 +492,7 @@ export const lessThanEqual = /*@__PURE__*/ nodeProxy( OperatorNode, '<=' );
 /**
  * Checks if the first node is greater than or equal to the second.
  *
+ * @tsl
  * @function
  * @param {Node} aNode - The first input.
  * @param {Node} bNode - The second input.
@@ -431,6 +503,7 @@ export const greaterThanEqual = /*@__PURE__*/ nodeProxy( OperatorNode, '>=' );
 /**
  * Performs logical AND on two nodes.
  *
+ * @tsl
  * @function
  * @param {Node} aNode - The first input.
  * @param {Node} bNode - The second input.
@@ -441,6 +514,7 @@ export const and = /*@__PURE__*/ nodeProxy( OperatorNode, '&&' );
 /**
  * Performs logical OR on two nodes.
  *
+ * @tsl
  * @function
  * @param {Node} aNode - The first input.
  * @param {Node} bNode - The second input.
@@ -451,6 +525,7 @@ export const or = /*@__PURE__*/ nodeProxy( OperatorNode, '||' );
 /**
  * Performs logical NOT on a node.
  *
+ * @tsl
  * @function
  * @param {Node} aNode - The first input.
  * @param {Node} bNode - The second input.
@@ -461,6 +536,7 @@ export const not = /*@__PURE__*/ nodeProxy( OperatorNode, '!' );
 /**
  * Performs logical XOR on two nodes.
  *
+ * @tsl
  * @function
  * @param {Node} aNode - The first input.
  * @param {Node} bNode - The second input.
@@ -471,6 +547,7 @@ export const xor = /*@__PURE__*/ nodeProxy( OperatorNode, '^^' );
 /**
  * Performs bitwise AND on two nodes.
  *
+ * @tsl
  * @function
  * @param {Node} aNode - The first input.
  * @param {Node} bNode - The second input.
@@ -481,6 +558,7 @@ export const bitAnd = /*@__PURE__*/ nodeProxy( OperatorNode, '&' );
 /**
  * Performs bitwise NOT on a node.
  *
+ * @tsl
  * @function
  * @param {Node} aNode - The first input.
  * @param {Node} bNode - The second input.
@@ -491,6 +569,7 @@ export const bitNot = /*@__PURE__*/ nodeProxy( OperatorNode, '~' );
 /**
  * Performs bitwise OR on two nodes.
  *
+ * @tsl
  * @function
  * @param {Node} aNode - The first input.
  * @param {Node} bNode - The second input.
@@ -501,6 +580,7 @@ export const bitOr = /*@__PURE__*/ nodeProxy( OperatorNode, '|' );
 /**
  * Performs bitwise XOR on two nodes.
  *
+ * @tsl
  * @function
  * @param {Node} aNode - The first input.
  * @param {Node} bNode - The second input.
@@ -511,6 +591,7 @@ export const bitXor = /*@__PURE__*/ nodeProxy( OperatorNode, '^' );
 /**
  * Shifts a node to the left.
  *
+ * @tsl
  * @function
  * @param {Node} aNode - The node to shift.
  * @param {Node} bNode - The value to shift.
@@ -521,6 +602,7 @@ export const shiftLeft = /*@__PURE__*/ nodeProxy( OperatorNode, '<<' );
 /**
  * Shifts a node to the right.
  *
+ * @tsl
  * @function
  * @param {Node} aNode - The node to shift.
  * @param {Node} bNode - The value to shift.
@@ -551,6 +633,7 @@ addMethodChaining( 'shiftLeft', shiftLeft );
 addMethodChaining( 'shiftRight', shiftRight );
 
 /**
+ * @tsl
  * @function
  * @deprecated since r168. Use {@link modInt} instead.
  *
