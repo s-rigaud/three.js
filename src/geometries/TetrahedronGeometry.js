@@ -17,8 +17,8 @@ class TetrahedronGeometry extends PolyhedronGeometry {
 		this.type = 'TetrahedronGeometry';
 
 		this.parameters = {
-			radius: radius,
-			detail: detail
+			'radius': radius,
+			'detail': detail
 		};
 
 	}

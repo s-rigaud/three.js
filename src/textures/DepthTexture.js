@@ -18,7 +18,7 @@ class DepthTexture extends Texture {
 
 		this.isDepthTexture = true;
 
-		this.image = { width: width, height: height };
+		this.image = { 'width': width, 'height': height };
 
 		this.magFilter = magFilter !== undefined ? magFilter : NearestFilter;
 		this.minFilter = minFilter !== undefined ? minFilter : NearestFilter;

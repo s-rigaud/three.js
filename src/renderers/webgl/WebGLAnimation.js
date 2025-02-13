@@ -15,7 +15,7 @@ function WebGLAnimation() {
 
 	return {
 
-		start: function () {
+		'start': function () {
 
 			if ( isAnimating === true ) return;
 			if ( animationLoop === null ) return;
@@ -26,7 +26,7 @@ function WebGLAnimation() {
 
 		},
 
-		stop: function () {
+		'stop': function () {
 
 			context.cancelAnimationFrame( requestId );
 
@@ -34,13 +34,13 @@ function WebGLAnimation() {
 
 		},
 
-		setAnimationLoop: function ( callback ) {
+		'setAnimationLoop': function ( callback ) {
 
 			animationLoop = callback;
 
 		},
 
-		setContext: function ( value ) {
+		'setContext': function ( value ) {
 
 			context = value;
 

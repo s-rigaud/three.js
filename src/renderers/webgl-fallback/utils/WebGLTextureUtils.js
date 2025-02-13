@@ -376,7 +376,7 @@ class WebGLTextureUtils {
 		backend.set( texture, {
 			textureGPU,
 			glTextureType,
-			isDefault: true
+			'isDefault': true
 		} );
 
 	}
@@ -706,7 +706,7 @@ class WebGLTextureUtils {
 		const { gl, backend } = this;
 		const { state } = this.backend;
 
-		const { textureGPU: dstTextureGPU, glTextureType, glType, glFormat } = backend.get( dstTexture );
+		const { 'textureGPU': dstTextureGPU, glTextureType, glType, glFormat } = backend.get( dstTexture );
 
 		let width, height, minX, minY;
 		let dstX, dstY;
@@ -833,7 +833,7 @@ class WebGLTextureUtils {
 
 		const { textureGPU } = this.backend.get( texture );
 
-		const { x, y, z: width, w: height } = rectangle;
+		const { x, y, 'z': width, 'w': height } = rectangle;
 
 		const requireDrawFrameBuffer = texture.isDepthTexture === true || ( renderContext.renderTarget && renderContext.renderTarget.samples > 0 );
 

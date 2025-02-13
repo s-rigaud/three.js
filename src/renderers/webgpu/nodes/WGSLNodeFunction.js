@@ -86,7 +86,7 @@ const parse = ( source ) => {
 
 		while ( ( match = propertiesRegexp.exec( inputsCode ) ) !== null ) {
 
-			propsMatches.push( { name: match[ 1 ], type: match[ 2 ] } );
+			propsMatches.push( { 'name': match[ 1 ], 'type': match[ 2 ] } );
 
 		}
 

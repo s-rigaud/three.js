@@ -22,11 +22,11 @@ const _xAxis = /*@__PURE__*/ new Vector3( 1, 0, 0 );
 const _yAxis = /*@__PURE__*/ new Vector3( 0, 1, 0 );
 const _zAxis = /*@__PURE__*/ new Vector3( 0, 0, 1 );
 
-const _addedEvent = { type: 'added' };
-const _removedEvent = { type: 'removed' };
+const _addedEvent = { 'type': 'added' };
+const _removedEvent = { 'type': 'removed' };
 
-const _childaddedEvent = { type: 'childadded', child: null };
-const _childremovedEvent = { type: 'childremoved', child: null };
+const _childaddedEvent = { 'type': 'childadded', 'child': null };
+const _childremovedEvent = { 'type': 'childremoved', 'child': null };
 
 class Object3D extends EventDispatcher {
 
@@ -36,7 +36,7 @@ class Object3D extends EventDispatcher {
 
 		this.isObject3D = true;
 
-		Object.defineProperty( this, 'id', { value: _object3DId ++ } );
+		Object.defineProperty( this, 'id', { 'value': _object3DId ++ } );
 
 		this.uuid = generateUUID();
 
@@ -69,31 +69,31 @@ class Object3D extends EventDispatcher {
 		quaternion._onChange( onQuaternionChange );
 
 		Object.defineProperties( this, {
-			position: {
-				configurable: true,
-				enumerable: true,
-				value: position
+			'position': {
+				'configurable': true,
+				'enumerable': true,
+				'value': position
 			},
-			rotation: {
-				configurable: true,
-				enumerable: true,
-				value: rotation
+			'rotation': {
+				'configurable': true,
+				'enumerable': true,
+				'value': rotation
 			},
-			quaternion: {
-				configurable: true,
-				enumerable: true,
-				value: quaternion
+			'quaternion': {
+				'configurable': true,
+				'enumerable': true,
+				'value': quaternion
 			},
-			scale: {
-				configurable: true,
-				enumerable: true,
-				value: scale
+			'scale': {
+				'configurable': true,
+				'enumerable': true,
+				'value': scale
 			},
-			modelViewMatrix: {
-				value: new Matrix4()
+			'modelViewMatrix': {
+				'value': new Matrix4()
 			},
-			normalMatrix: {
-				value: new Matrix3()
+			'normalMatrix': {
+				'value': new Matrix3()
 			}
 		} );
 
@@ -681,20 +681,20 @@ class Object3D extends EventDispatcher {
 
 			// initialize meta obj
 			meta = {
-				geometries: {},
-				materials: {},
-				textures: {},
-				images: {},
-				shapes: {},
-				skeletons: {},
-				animations: {},
-				nodes: {}
+				'geometries': {},
+				'materials': {},
+				'textures': {},
+				'images': {},
+				'shapes': {},
+				'skeletons': {},
+				'animations': {},
+				'nodes': {}
 			};
 
 			output.metadata = {
-				version: 4.6,
-				type: 'Object',
-				generator: 'Object3D.toJSON'
+				'version': 4.6,
+				'type': 'Object',
+				'generator': 'Object3D.toJSON'
 			};
 
 		}
@@ -743,13 +743,13 @@ class Object3D extends EventDispatcher {
 			object.visibility = this._visibility;
 			object.active = this._active;
 			object.bounds = this._bounds.map( bound => ( {
-				boxInitialized: bound.boxInitialized,
-				boxMin: bound.box.min.toArray(),
-				boxMax: bound.box.max.toArray(),
+				'boxInitialized': bound.boxInitialized,
+				'boxMin': bound.box.min.toArray(),
+				'boxMax': bound.box.max.toArray(),
 
-				sphereInitialized: bound.sphereInitialized,
-				sphereRadius: bound.sphere.radius,
-				sphereCenter: bound.sphere.center.toArray()
+				'sphereInitialized': bound.sphereInitialized,
+				'sphereRadius': bound.sphere.radius,
+				'sphereCenter': bound.sphere.center.toArray()
 			} ) );
 
 			object.maxInstanceCount = this._maxInstanceCount;
@@ -766,8 +766,8 @@ class Object3D extends EventDispatcher {
 			if ( this.boundingSphere !== null ) {
 
 				object.boundingSphere = {
-					center: object.boundingSphere.center.toArray(),
-					radius: object.boundingSphere.radius
+					'center': object.boundingSphere.center.toArray(),
+					'radius': object.boundingSphere.radius
 				};
 
 			}
@@ -775,8 +775,8 @@ class Object3D extends EventDispatcher {
 			if ( this.boundingBox !== null ) {
 
 				object.boundingBox = {
-					min: object.boundingBox.min.toArray(),
-					max: object.boundingBox.max.toArray()
+					'min': object.boundingBox.min.toArray(),
+					'max': object.boundingBox.max.toArray()
 				};
 
 			}

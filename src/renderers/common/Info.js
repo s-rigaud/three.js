@@ -55,13 +55,13 @@ class Info {
 		 * @property {number} timestamp - The timestamp of the frame when using `renderer.renderAsync()`.
 		 */
 		this.render = {
-			calls: 0,
-			frameCalls: 0,
-			drawCalls: 0,
-			triangles: 0,
-			points: 0,
-			lines: 0,
-			timestamp: 0,
+			'calls': 0,
+			'frameCalls': 0,
+			'drawCalls': 0,
+			'triangles': 0,
+			'points': 0,
+			'lines': 0,
+			'timestamp': 0,
 		};
 
 		/**
@@ -74,9 +74,9 @@ class Info {
 		 * @property {number} timestamp - The timestamp of the frame when using `renderer.computeAsync()`.
 		 */
 		this.compute = {
-			calls: 0,
-			frameCalls: 0,
-			timestamp: 0
+			'calls': 0,
+			'frameCalls': 0,
+			'timestamp': 0
 		};
 
 		/**
@@ -88,8 +88,8 @@ class Info {
 		 * @property {number} frameCalls - The number of active textures.
 		 */
 		this.memory = {
-			geometries: 0,
-			textures: 0
+			'geometries': 0,
+			'textures': 0
 		};
 
 	}

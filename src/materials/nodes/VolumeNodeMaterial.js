@@ -133,7 +133,7 @@ class VolumeNodeMaterial extends NodeMaterial {
 			const vDirection = varying( positionGeometry.sub( vOrigin ) );
 
 			const rayDir = vDirection.normalize();
-			const bounds = vec2( hitBox( { orig: vOrigin, dir: rayDir } ) ).toVar();
+			const bounds = vec2( hitBox( { 'orig': vOrigin, 'dir': rayDir } ) ).toVar();
 
 			bounds.x.greaterThan( bounds.y ).discard();
 
@@ -147,13 +147,13 @@ class VolumeNodeMaterial extends NodeMaterial {
 
 			const ac = vec4( materialReference( 'base', 'color' ), 0.0 ).toVar();
 
-			Loop( { type: 'float', start: bounds.x, end: bounds.y, update: '+= delta' }, () => {
+			Loop( { 'type': 'float', 'start': bounds.x, 'end': bounds.y, 'update': '+= delta' }, () => {
 
 				const d = property( 'float', 'd' ).assign( map.sample( p.add( 0.5 ) ).r );
 
 				if ( this.testNode !== null ) {
 
-					this.testNode( { map: map, mapValue: d, probe: p, finalColor: ac } ).append();
+					this.testNode( { 'map': map, 'mapValue': d, 'probe': p, 'finalColor': ac } ).append();
 
 				} else {
 

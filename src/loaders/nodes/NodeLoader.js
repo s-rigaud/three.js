@@ -96,7 +96,7 @@ class NodeLoader extends Loader {
 
 			}
 
-			const meta = { nodes, textures: this.textures };
+			const meta = { nodes, 'textures': this.textures };
 
 			for ( const nodeJSON of json ) {
 
@@ -127,7 +127,7 @@ class NodeLoader extends Loader {
 		node.uuid = json.uuid;
 
 		const nodes = this.parseNodes( json.nodes );
-		const meta = { nodes, textures: this.textures };
+		const meta = { nodes, 'textures': this.textures };
 
 		json.meta = meta;
 

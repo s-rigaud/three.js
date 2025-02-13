@@ -57,10 +57,10 @@ export const mx_hsvtorgb = /*@__PURE__*/ Fn( ( [ hsv ] ) => {
 	return result;
 
 } ).setLayout( {
-	name: 'mx_hsvtorgb',
-	type: 'vec3',
-	inputs: [
-		{ name: 'hsv', type: 'vec3' }
+	'name': 'mx_hsvtorgb',
+	'type': 'vec3',
+	'inputs': [
+		{ 'name': 'hsv', 'type': 'vec3' }
 	]
 } );
 
@@ -119,9 +119,9 @@ export const mx_rgbtohsv = /*@__PURE__*/ Fn( ( [ c_immutable ] ) => {
 	return vec3( h, s, v );
 
 } ).setLayout( {
-	name: 'mx_rgbtohsv',
-	type: 'vec3',
-	inputs: [
-		{ name: 'c', type: 'vec3' }
+	'name': 'mx_rgbtohsv',
+	'type': 'vec3',
+	'inputs': [
+		{ 'name': 'c', 'type': 'vec3' }
 	]
 } );

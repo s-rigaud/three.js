@@ -86,13 +86,13 @@ class LightingContextNode extends ContextNode {
 		};
 
 		const context = {
-			radiance: vec3().toVar( 'radiance' ),
-			irradiance: vec3().toVar( 'irradiance' ),
-			iblIrradiance: vec3().toVar( 'iblIrradiance' ),
-			ambientOcclusion: float( 1 ).toVar( 'ambientOcclusion' ),
+			'radiance': vec3().toVar( 'radiance' ),
+			'irradiance': vec3().toVar( 'irradiance' ),
+			'iblIrradiance': vec3().toVar( 'iblIrradiance' ),
+			'ambientOcclusion': float( 1 ).toVar( 'ambientOcclusion' ),
 			reflectedLight,
-			backdrop: backdropNode,
-			backdropAlpha: backdropAlphaNode
+			'backdrop': backdropNode,
+			'backdropAlpha': backdropAlphaNode
 		};
 
 		return context;

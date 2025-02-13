@@ -116,12 +116,12 @@ class WebGLRenderer {
 			 * Enables error checking and reporting when shader programs are being compiled
 			 * @type {boolean}
 			 */
-			checkShaderErrors: true,
+			'checkShaderErrors': true,
 			/**
 			 * Callback for custom error reporting.
 			 * @type {?Function}
 			 */
-			onShaderError: null
+			'onShaderError': null
 		};
 
 		// clearing
@@ -205,7 +205,7 @@ class WebGLRenderer {
 
 		const _vector4 = new Vector4();
 
-		const _emptyScene = { background: null, fog: null, environment: null, overrideMaterial: null, isScene: true };
+		const _emptyScene = { 'background': null, 'fog': null, 'environment': null, 'overrideMaterial': null, 'isScene': true };
 
 		let _renderBackground = false;
 
@@ -228,7 +228,7 @@ class WebGLRenderer {
 		try {
 
 			const contextAttributes = {
-				alpha: true,
+				'alpha': true,
 				depth,
 				stencil,
 				antialias,
@@ -1475,14 +1475,14 @@ class WebGLRenderer {
 			if ( currentRenderState.state.transmissionRenderTarget[ camera.id ] === undefined ) {
 
 				currentRenderState.state.transmissionRenderTarget[ camera.id ] = new WebGLRenderTarget( 1, 1, {
-					generateMipmaps: true,
-					type: ( extensions.has( 'EXT_color_buffer_half_float' ) || extensions.has( 'EXT_color_buffer_float' ) ) ? HalfFloatType : UnsignedByteType,
-					minFilter: LinearMipmapLinearFilter,
-					samples: 4,
-					stencilBuffer: stencil,
-					resolveDepthBuffer: false,
-					resolveStencilBuffer: false,
-					colorSpace: ColorManagement.workingColorSpace,
+					'generateMipmaps': true,
+					'type': ( extensions.has( 'EXT_color_buffer_half_float' ) || extensions.has( 'EXT_color_buffer_float' ) ) ? HalfFloatType : UnsignedByteType,
+					'minFilter': LinearMipmapLinearFilter,
+					'samples': 4,
+					'stencilBuffer': stencil,
+					'resolveDepthBuffer': false,
+					'resolveStencilBuffer': false,
+					'colorSpace': ColorManagement.workingColorSpace,
 				} );
 
 				// debug
@@ -2921,7 +2921,7 @@ class WebGLRenderer {
 
 		if ( typeof __THREE_DEVTOOLS__ !== 'undefined' ) {
 
-			__THREE_DEVTOOLS__.dispatchEvent( new CustomEvent( 'observe', { detail: this } ) );
+			__THREE_DEVTOOLS__.dispatchEvent( new CustomEvent( 'observe', { 'detail': this } ) );
 
 		}
 

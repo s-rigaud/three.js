@@ -11,7 +11,7 @@ class UniformsGroup extends EventDispatcher {
 
 		this.isUniformsGroup = true;
 
-		Object.defineProperty( this, 'id', { value: _id ++ } );
+		Object.defineProperty( this, 'id', { 'value': _id ++ } );
 
 		this.name = '';
 
@@ -56,7 +56,7 @@ class UniformsGroup extends EventDispatcher {
 
 	dispose() {
 
-		this.dispatchEvent( { type: 'dispose' } );
+		this.dispatchEvent( { 'type': 'dispose' } );
 
 		return this;
 

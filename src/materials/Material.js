@@ -13,7 +13,7 @@ class Material extends EventDispatcher {
 
 		this.isMaterial = true;
 
-		Object.defineProperty( this, 'id', { value: _materialId ++ } );
+		Object.defineProperty( this, 'id', { 'value': _materialId ++ } );
 
 		this.uuid = generateUUID();
 
@@ -161,17 +161,17 @@ class Material extends EventDispatcher {
 		if ( isRootObject ) {
 
 			meta = {
-				textures: {},
-				images: {}
+				'textures': {},
+				'images': {}
 			};
 
 		}
 
 		const data = {
-			metadata: {
-				version: 4.6,
-				type: 'Material',
-				generator: 'Material.toJSON'
+			'metadata': {
+				'version': 4.6,
+				'type': 'Material',
+				'generator': 'Material.toJSON'
 			}
 		};
 
@@ -510,7 +510,7 @@ class Material extends EventDispatcher {
 
 	dispose() {
 
-		this.dispatchEvent( { type: 'dispose' } );
+		this.dispatchEvent( { 'type': 'dispose' } );
 
 	}
 

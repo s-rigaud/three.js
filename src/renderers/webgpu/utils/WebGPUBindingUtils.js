@@ -58,8 +58,8 @@ class WebGPUBindingUtils {
 		for ( const binding of bindGroup.bindings ) {
 
 			const bindingGPU = {
-				binding: index ++,
-				visibility: binding.visibility
+				'binding': index ++,
+				'visibility': binding.visibility
 			};
 
 			if ( binding.isUniformBuffer || binding.isStorageBuffer ) {
@@ -309,17 +309,17 @@ class WebGPUBindingUtils {
 		const index = data[ 0 ];
 
 		const buffer = device.createBuffer( {
-			label: 'bindingCameraIndex_' + index,
-			size: 16, // uint(4) * 4
-			usage: usage
+			'label': 'bindingCameraIndex_' + index,
+			'size': 16, // uint(4) * 4
+			'usage': usage
 		} );
 
 		device.queue.writeBuffer( buffer, 0, data, 0 );
 
-		const entries = [ { binding: 0, resource: { buffer } } ];
+		const entries = [ { 'binding': 0, 'resource': { buffer } } ];
 
 		return device.createBindGroup( {
-			label: 'bindGroupCameraIndex_' + index,
+			'label': 'bindGroupCameraIndex_' + index,
 			layout,
 			entries
 		} );
@@ -354,16 +354,16 @@ class WebGPUBindingUtils {
 					const usage = GPUBufferUsage.UNIFORM | GPUBufferUsage.COPY_DST;
 
 					const bufferGPU = device.createBuffer( {
-						label: 'bindingBuffer_' + binding.name,
-						size: byteLength,
-						usage: usage
+						'label': 'bindingBuffer_' + binding.name,
+						'size': byteLength,
+						'usage': usage
 					} );
 
 					bindingData.buffer = bufferGPU;
 
 				}
 
-				entriesGPU.push( { binding: bindingPoint, resource: { buffer: bindingData.buffer } } );
+				entriesGPU.push( { 'binding': bindingPoint, 'resource': { 'buffer': bindingData.buffer } } );
 
 			} else if ( binding.isStorageBuffer ) {
 
@@ -380,13 +380,13 @@ class WebGPUBindingUtils {
 
 				}
 
-				entriesGPU.push( { binding: bindingPoint, resource: { buffer: bindingData.buffer } } );
+				entriesGPU.push( { 'binding': bindingPoint, 'resource': { 'buffer': bindingData.buffer } } );
 
 			} else if ( binding.isSampler ) {
 
 				const textureGPU = backend.get( binding.texture );
 
-				entriesGPU.push( { binding: bindingPoint, resource: textureGPU.sampler } );
+				entriesGPU.push( { 'binding': bindingPoint, 'resource': textureGPU.sampler } );
 
 			} else if ( binding.isSampledTexture ) {
 
@@ -396,7 +396,7 @@ class WebGPUBindingUtils {
 
 				if ( textureData.externalTexture !== undefined ) {
 
-					resourceGPU = device.importExternalTexture( { source: textureData.externalTexture } );
+					resourceGPU = device.importExternalTexture( { 'source': textureData.externalTexture } );
 
 				} else {
 
@@ -429,13 +429,13 @@ class WebGPUBindingUtils {
 
 						}
 
-						resourceGPU = textureData[ propertyName ] = textureData.texture.createView( { aspect: aspectGPU, dimension: dimensionViewGPU, mipLevelCount } );
+						resourceGPU = textureData[ propertyName ] = textureData.texture.createView( { 'aspect': aspectGPU, 'dimension': dimensionViewGPU, mipLevelCount } );
 
 					}
 
 				}
 
-				entriesGPU.push( { binding: bindingPoint, resource: resourceGPU } );
+				entriesGPU.push( { 'binding': bindingPoint, 'resource': resourceGPU } );
 
 			}
 
@@ -444,9 +444,9 @@ class WebGPUBindingUtils {
 		}
 
 		return device.createBindGroup( {
-			label: 'bindGroup_' + bindGroup.name,
-			layout: layoutGPU,
-			entries: entriesGPU
+			'label': 'bindGroup_' + bindGroup.name,
+			'layout': layoutGPU,
+			'entries': entriesGPU
 		} );
 
 	}

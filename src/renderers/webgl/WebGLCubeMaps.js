@@ -90,8 +90,8 @@ function WebGLCubeMaps( renderer ) {
 	}
 
 	return {
-		get: get,
-		dispose: dispose
+		'get': get,
+		'dispose': dispose
 	};
 
 }

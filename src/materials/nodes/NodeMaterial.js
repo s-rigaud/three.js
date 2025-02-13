@@ -723,7 +723,7 @@ class NodeMaterial extends Material {
 
 		if ( this.positionNode !== null ) {
 
-			positionLocal.assign( this.positionNode.context( { isPositionNodeInput: true } ) );
+			positionLocal.assign( this.positionNode.context( { 'isPositionNodeInput': true } ) );
 
 		}
 
@@ -1072,9 +1072,9 @@ class NodeMaterial extends Material {
 		if ( isRoot ) {
 
 			meta = {
-				textures: {},
-				images: {},
-				nodes: {}
+				'textures': {},
+				'images': {},
+				'nodes': {}
 			};
 
 		}

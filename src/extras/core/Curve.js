@@ -364,9 +364,9 @@ class Curve {
 		}
 
 		return {
-			tangents: tangents,
-			normals: normals,
-			binormals: binormals
+			'tangents': tangents,
+			'normals': normals,
+			'binormals': binormals
 		};
 
 	}
@@ -388,10 +388,10 @@ class Curve {
 	toJSON() {
 
 		const data = {
-			metadata: {
-				version: 4.6,
-				type: 'Curve',
-				generator: 'Curve.toJSON'
+			'metadata': {
+				'version': 4.6,
+				'type': 'Curve',
+				'generator': 'Curve.toJSON'
 			}
 		};
 

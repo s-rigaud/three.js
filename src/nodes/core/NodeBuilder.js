@@ -236,14 +236,14 @@ class NodeBuilder {
 		 *
 		 * @type {Object<string,Array<Node>>}
 		 */
-		this.flowNodes = { vertex: [], fragment: [], compute: [] };
+		this.flowNodes = { 'vertex': [], 'fragment': [], 'compute': [] };
 
 		/**
 		 * Nodes code from `.flowNodes`.
 		 *
 		 * @type {Object<string,string>}
 		 */
-		this.flowCode = { vertex: '', fragment: '', compute: '' };
+		this.flowCode = { 'vertex': '', 'fragment': '', 'compute': '' };
 
 		/**
 		 * This dictionary holds the node uniforms of the builder.
@@ -251,7 +251,7 @@ class NodeBuilder {
 		 *
 		 * @type {Object}
 		 */
-		this.uniforms = { vertex: [], fragment: [], compute: [], index: 0 };
+		this.uniforms = { 'vertex': [], 'fragment': [], 'compute': [], 'index': 0 };
 
 		/**
 		 * This dictionary holds the output structs of the builder.
@@ -259,14 +259,14 @@ class NodeBuilder {
 		 *
 		 * @type {Object}
 		 */
-		this.structs = { vertex: [], fragment: [], compute: [], index: 0 };
+		this.structs = { 'vertex': [], 'fragment': [], 'compute': [], 'index': 0 };
 
 		/**
 		 * This dictionary holds the bindings for each shader stage.
 		 *
 		 * @type {Object}
 		 */
-		this.bindings = { vertex: {}, fragment: {}, compute: {} };
+		this.bindings = { 'vertex': {}, 'fragment': {}, 'compute': {} };
 
 		/**
 		 * This dictionary maintains the binding indices per bind group.
@@ -327,7 +327,7 @@ class NodeBuilder {
 		 *
 		 * @type {{code: string}}
 		 */
-		this.flow = { code: '' };
+		this.flow = { 'code': '' };
 
 		/**
 		 * A chain of nodes.
@@ -376,7 +376,7 @@ class NodeBuilder {
 		 * @type {Object}
 		 */
 		this.context = {
-			material: this.material
+			'material': this.material
 		};
 
 		/**
@@ -575,7 +575,7 @@ class NodeBuilder {
 
 			if ( this.bindingsIndexes[ groupName ] === undefined ) {
 
-				this.bindingsIndexes[ groupName ] = { binding: 0, group: Object.keys( this.bindingsIndexes ).length };
+				this.bindingsIndexes[ groupName ] = { 'binding': 0, 'group': Object.keys( this.bindingsIndexes ).length };
 
 			}
 
@@ -1592,7 +1592,7 @@ class NodeBuilder {
 
 		const nodeData = this.getDataFromNode( node, shaderStage );
 
-		return nodeData.properties || ( nodeData.properties = { outputNode: null } );
+		return nodeData.properties || ( nodeData.properties = { 'outputNode': null } );
 
 	}
 
@@ -2102,9 +2102,9 @@ class NodeBuilder {
 				let index = 0;
 				const values = Object.values( this );
 				return {
-					next: () => ( {
-						value: values[ index ],
-						done: index ++ >= values.length
+					'next': () => ( {
+						'value': values[ index ],
+						'done': index ++ >= values.length
 					} )
 				};
 
@@ -2146,7 +2146,7 @@ class NodeBuilder {
 		const previousStack = this.stack;
 
 		const flow = {
-			code: ''
+			'code': ''
 		};
 
 		this.flow = flow;
@@ -2201,7 +2201,7 @@ class NodeBuilder {
 		const previousFlow = this.flow;
 
 		const flow = {
-			code: ''
+			'code': ''
 		};
 
 		this.flow = flow;

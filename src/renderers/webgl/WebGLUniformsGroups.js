@@ -285,8 +285,8 @@ function WebGLUniformsGroups( gl, info, capabilities, state ) {
 	function getUniformSize( value ) {
 
 		const info = {
-			boundary: 0, // bytes
-			storage: 0 // bytes
+			'boundary': 0, // bytes
+			'storage': 0 // bytes
 		};
 
 		// determine sizes according to STD140
@@ -379,10 +379,10 @@ function WebGLUniformsGroups( gl, info, capabilities, state ) {
 
 	return {
 
-		bind: bind,
-		update: update,
+		'bind': bind,
+		'update': update,
 
-		dispose: dispose
+		'dispose': dispose
 
 	};
 

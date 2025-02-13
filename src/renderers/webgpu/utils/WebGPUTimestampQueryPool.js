@@ -23,22 +23,22 @@ class WebGPUTimestampQueryPool extends TimestampQueryPool {
 		this.type = type;
 
 		this.querySet = this.device.createQuerySet( {
-			type: 'timestamp',
-			count: this.maxQueries,
-			label: `queryset_global_timestamp_${type}`
+			'type': 'timestamp',
+			'count': this.maxQueries,
+			'label': `queryset_global_timestamp_${type}`
 		} );
 
 		const bufferSize = this.maxQueries * 8;
 		this.resolveBuffer = this.device.createBuffer( {
-			label: `buffer_timestamp_resolve_${type}`,
-			size: bufferSize,
-			usage: GPUBufferUsage.QUERY_RESOLVE | GPUBufferUsage.COPY_SRC
+			'label': `buffer_timestamp_resolve_${type}`,
+			'size': bufferSize,
+			'usage': GPUBufferUsage.QUERY_RESOLVE | GPUBufferUsage.COPY_SRC
 		} );
 
 		this.resultBuffer = this.device.createBuffer( {
-			label: `buffer_timestamp_result_${type}`,
-			size: bufferSize,
-			usage: GPUBufferUsage.COPY_DST | GPUBufferUsage.MAP_READ
+			'label': `buffer_timestamp_result_${type}`,
+			'size': bufferSize,
+			'usage': GPUBufferUsage.COPY_DST | GPUBufferUsage.MAP_READ
 		} );
 
 	}

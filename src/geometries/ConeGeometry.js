@@ -9,13 +9,13 @@ class ConeGeometry extends CylinderGeometry {
 		this.type = 'ConeGeometry';
 
 		this.parameters = {
-			radius: radius,
-			height: height,
-			radialSegments: radialSegments,
-			heightSegments: heightSegments,
-			openEnded: openEnded,
-			thetaStart: thetaStart,
-			thetaLength: thetaLength
+			'radius': radius,
+			'height': height,
+			'radialSegments': radialSegments,
+			'heightSegments': heightSegments,
+			'openEnded': openEnded,
+			'thetaStart': thetaStart,
+			'thetaLength': thetaLength
 		};
 
 	}

@@ -404,9 +404,9 @@ class ObjectLoader extends Loader {
 				if ( image.data ) {
 
 					return {
-						data: getTypedArray( image.type, image.data ),
-						width: image.width,
-						height: image.height
+						'data': getTypedArray( image.type, image.data ),
+						'width': image.width,
+						'height': image.height
 					};
 
 				} else {
@@ -503,9 +503,9 @@ class ObjectLoader extends Loader {
 				if ( image.data ) {
 
 					return {
-						data: getTypedArray( image.type, image.data ),
-						width: image.width,
-						height: image.height
+						'data': getTypedArray( image.type, image.data ),
+						'width': image.width,
+						'height': image.height
 					};
 
 				} else {
@@ -933,11 +933,11 @@ class ObjectLoader extends Loader {
 					sphere.center.fromArray( bound.sphereCenter );
 
 					return {
-						boxInitialized: bound.boxInitialized,
-						box: box,
+						'boxInitialized': bound.boxInitialized,
+						'box': box,
 
-						sphereInitialized: bound.sphereInitialized,
-						sphere: sphere
+						'sphereInitialized': bound.sphereInitialized,
+						'sphere': sphere
 					};
 
 				} );
@@ -1157,27 +1157,27 @@ class ObjectLoader extends Loader {
 }
 
 const TEXTURE_MAPPING = {
-	UVMapping: UVMapping,
-	CubeReflectionMapping: CubeReflectionMapping,
-	CubeRefractionMapping: CubeRefractionMapping,
-	EquirectangularReflectionMapping: EquirectangularReflectionMapping,
-	EquirectangularRefractionMapping: EquirectangularRefractionMapping,
-	CubeUVReflectionMapping: CubeUVReflectionMapping
+	'UVMapping': UVMapping,
+	'CubeReflectionMapping': CubeReflectionMapping,
+	'CubeRefractionMapping': CubeRefractionMapping,
+	'EquirectangularReflectionMapping': EquirectangularReflectionMapping,
+	'EquirectangularRefractionMapping': EquirectangularRefractionMapping,
+	'CubeUVReflectionMapping': CubeUVReflectionMapping
 };
 
 const TEXTURE_WRAPPING = {
-	RepeatWrapping: RepeatWrapping,
-	ClampToEdgeWrapping: ClampToEdgeWrapping,
-	MirroredRepeatWrapping: MirroredRepeatWrapping
+	'RepeatWrapping': RepeatWrapping,
+	'ClampToEdgeWrapping': ClampToEdgeWrapping,
+	'MirroredRepeatWrapping': MirroredRepeatWrapping
 };
 
 const TEXTURE_FILTER = {
-	NearestFilter: NearestFilter,
-	NearestMipmapNearestFilter: NearestMipmapNearestFilter,
-	NearestMipmapLinearFilter: NearestMipmapLinearFilter,
-	LinearFilter: LinearFilter,
-	LinearMipmapNearestFilter: LinearMipmapNearestFilter,
-	LinearMipmapLinearFilter: LinearMipmapLinearFilter
+	'NearestFilter': NearestFilter,
+	'NearestMipmapNearestFilter': NearestMipmapNearestFilter,
+	'NearestMipmapLinearFilter': NearestMipmapLinearFilter,
+	'LinearFilter': LinearFilter,
+	'LinearMipmapNearestFilter': LinearMipmapNearestFilter,
+	'LinearMipmapLinearFilter': LinearMipmapLinearFilter
 };
 
 export { ObjectLoader };

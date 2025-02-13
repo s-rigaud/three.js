@@ -696,8 +696,8 @@ function WebGLTextures( _gl, extensions, state, properties, capabilities, utils,
 				// create new entry
 
 				webglTextures[ textureCacheKey ] = {
-					texture: _gl.createTexture(),
-					usedTimes: 0
+					'texture': _gl.createTexture(),
+					'usedTimes': 0
 				};
 
 				info.memory.textures ++;

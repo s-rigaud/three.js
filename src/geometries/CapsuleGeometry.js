@@ -14,10 +14,10 @@ class CapsuleGeometry extends LatheGeometry {
 		this.type = 'CapsuleGeometry';
 
 		this.parameters = {
-			radius: radius,
-			length: length,
-			capSegments: capSegments,
-			radialSegments: radialSegments,
+			'radius': radius,
+			'length': length,
+			'capSegments': capSegments,
+			'radialSegments': radialSegments,
 		};
 
 	}

@@ -161,8 +161,8 @@ export * from './Three.Legacy.js';
 
 if ( typeof __THREE_DEVTOOLS__ !== 'undefined' ) {
 
-	__THREE_DEVTOOLS__.dispatchEvent( new CustomEvent( 'register', { detail: {
-		revision: REVISION,
+	__THREE_DEVTOOLS__.dispatchEvent( new CustomEvent( 'register', { 'detail': {
+		'revision': REVISION,
 	} } ) );
 
 }

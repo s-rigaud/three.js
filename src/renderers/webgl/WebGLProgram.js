@@ -210,9 +210,9 @@ function fetchAttributeLocations( gl, program ) {
 		// console.log( 'THREE.WebGLProgram: ACTIVE VERTEX ATTRIBUTE:', name, i );
 
 		attributes[ name ] = {
-			type: info.type,
-			location: gl.getAttribLocation( program, name ),
-			locationSize: locationSize
+			'type': info.type,
+			'location': gl.getAttribLocation( program, name ),
+			'locationSize': locationSize
 		};
 
 	}
@@ -966,21 +966,21 @@ function WebGLProgram( renderer, cacheKey, parameters, bindingStates ) {
 
 				self.diagnostics = {
 
-					runnable: runnable,
+					'runnable': runnable,
 
-					programLog: programLog,
+					'programLog': programLog,
 
-					vertexShader: {
+					'vertexShader': {
 
-						log: vertexLog,
-						prefix: prefixVertex
+						'log': vertexLog,
+						'prefix': prefixVertex
 
 					},
 
-					fragmentShader: {
+					'fragmentShader': {
 
-						log: fragmentLog,
-						prefix: prefixFragment
+						'log': fragmentLog,
+						'prefix': prefixFragment
 
 					}
 

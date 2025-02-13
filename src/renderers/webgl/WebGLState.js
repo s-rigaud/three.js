@@ -26,7 +26,7 @@ function WebGLState( gl, extensions ) {
 
 		return {
 
-			setMask: function ( colorMask ) {
+			'setMask': function ( colorMask ) {
 
 				if ( currentColorMask !== colorMask && ! locked ) {
 
@@ -37,13 +37,13 @@ function WebGLState( gl, extensions ) {
 
 			},
 
-			setLocked: function ( lock ) {
+			'setLocked': function ( lock ) {
 
 				locked = lock;
 
 			},
 
-			setClear: function ( r, g, b, a, premultipliedAlpha ) {
+			'setClear': function ( r, g, b, a, premultipliedAlpha ) {
 
 				if ( premultipliedAlpha === true ) {
 
@@ -62,7 +62,7 @@ function WebGLState( gl, extensions ) {
 
 			},
 
-			reset: function () {
+			'reset': function () {
 
 				locked = false;
 
@@ -86,7 +86,7 @@ function WebGLState( gl, extensions ) {
 
 		return {
 
-			setReversed: function ( value ) {
+			'setReversed': function ( value ) {
 
 				if ( reversed !== value ) {
 
@@ -112,13 +112,13 @@ function WebGLState( gl, extensions ) {
 
 			},
 
-			getReversed: function () {
+			'getReversed': function () {
 
 				return reversed;
 
 			},
 
-			setTest: function ( depthTest ) {
+			'setTest': function ( depthTest ) {
 
 				if ( depthTest ) {
 
@@ -132,7 +132,7 @@ function WebGLState( gl, extensions ) {
 
 			},
 
-			setMask: function ( depthMask ) {
+			'setMask': function ( depthMask ) {
 
 				if ( currentDepthMask !== depthMask && ! locked ) {
 
@@ -143,7 +143,7 @@ function WebGLState( gl, extensions ) {
 
 			},
 
-			setFunc: function ( depthFunc ) {
+			'setFunc': function ( depthFunc ) {
 
 				if ( reversed ) depthFunc = reversedFuncs[ depthFunc ];
 
@@ -203,13 +203,13 @@ function WebGLState( gl, extensions ) {
 
 			},
 
-			setLocked: function ( lock ) {
+			'setLocked': function ( lock ) {
 
 				locked = lock;
 
 			},
 
-			setClear: function ( depth ) {
+			'setClear': function ( depth ) {
 
 				if ( currentDepthClear !== depth ) {
 
@@ -226,7 +226,7 @@ function WebGLState( gl, extensions ) {
 
 			},
 
-			reset: function () {
+			'reset': function () {
 
 				locked = false;
 
@@ -256,7 +256,7 @@ function WebGLState( gl, extensions ) {
 
 		return {
 
-			setTest: function ( stencilTest ) {
+			'setTest': function ( stencilTest ) {
 
 				if ( ! locked ) {
 
@@ -274,7 +274,7 @@ function WebGLState( gl, extensions ) {
 
 			},
 
-			setMask: function ( stencilMask ) {
+			'setMask': function ( stencilMask ) {
 
 				if ( currentStencilMask !== stencilMask && ! locked ) {
 
@@ -285,7 +285,7 @@ function WebGLState( gl, extensions ) {
 
 			},
 
-			setFunc: function ( stencilFunc, stencilRef, stencilMask ) {
+			'setFunc': function ( stencilFunc, stencilRef, stencilMask ) {
 
 				if ( currentStencilFunc !== stencilFunc ||
 				     currentStencilRef !== stencilRef ||
@@ -301,7 +301,7 @@ function WebGLState( gl, extensions ) {
 
 			},
 
-			setOp: function ( stencilFail, stencilZFail, stencilZPass ) {
+			'setOp': function ( stencilFail, stencilZFail, stencilZPass ) {
 
 				if ( currentStencilFail !== stencilFail ||
 				     currentStencilZFail !== stencilZFail ||
@@ -317,13 +317,13 @@ function WebGLState( gl, extensions ) {
 
 			},
 
-			setLocked: function ( lock ) {
+			'setLocked': function ( lock ) {
 
 				locked = lock;
 
 			},
 
-			setClear: function ( stencil ) {
+			'setClear': function ( stencil ) {
 
 				if ( currentStencilClear !== stencil ) {
 
@@ -334,7 +334,7 @@ function WebGLState( gl, extensions ) {
 
 			},
 
-			reset: function () {
+			'reset': function () {
 
 				locked = false;
 
@@ -938,7 +938,7 @@ function WebGLState( gl, extensions ) {
 
 		if ( boundTexture === undefined ) {
 
-			boundTexture = { type: undefined, texture: undefined };
+			boundTexture = { 'type': undefined, 'texture': undefined };
 			currentBoundTextures[ webglSlot ] = boundTexture;
 
 		}
@@ -1276,53 +1276,53 @@ function WebGLState( gl, extensions ) {
 
 	return {
 
-		buffers: {
-			color: colorBuffer,
-			depth: depthBuffer,
-			stencil: stencilBuffer
+		'buffers': {
+			'color': colorBuffer,
+			'depth': depthBuffer,
+			'stencil': stencilBuffer
 		},
 
-		enable: enable,
-		disable: disable,
+		'enable': enable,
+		'disable': disable,
 
-		bindFramebuffer: bindFramebuffer,
-		drawBuffers: drawBuffers,
+		'bindFramebuffer': bindFramebuffer,
+		'drawBuffers': drawBuffers,
 
-		useProgram: useProgram,
+		'useProgram': useProgram,
 
-		setBlending: setBlending,
-		setMaterial: setMaterial,
+		'setBlending': setBlending,
+		'setMaterial': setMaterial,
 
-		setFlipSided: setFlipSided,
-		setCullFace: setCullFace,
+		'setFlipSided': setFlipSided,
+		'setCullFace': setCullFace,
 
-		setLineWidth: setLineWidth,
-		setPolygonOffset: setPolygonOffset,
+		'setLineWidth': setLineWidth,
+		'setPolygonOffset': setPolygonOffset,
 
-		setScissorTest: setScissorTest,
+		'setScissorTest': setScissorTest,
 
-		activeTexture: activeTexture,
-		bindTexture: bindTexture,
-		unbindTexture: unbindTexture,
-		compressedTexImage2D: compressedTexImage2D,
-		compressedTexImage3D: compressedTexImage3D,
-		texImage2D: texImage2D,
-		texImage3D: texImage3D,
+		'activeTexture': activeTexture,
+		'bindTexture': bindTexture,
+		'unbindTexture': unbindTexture,
+		'compressedTexImage2D': compressedTexImage2D,
+		'compressedTexImage3D': compressedTexImage3D,
+		'texImage2D': texImage2D,
+		'texImage3D': texImage3D,
 
-		updateUBOMapping: updateUBOMapping,
-		uniformBlockBinding: uniformBlockBinding,
+		'updateUBOMapping': updateUBOMapping,
+		'uniformBlockBinding': uniformBlockBinding,
 
-		texStorage2D: texStorage2D,
-		texStorage3D: texStorage3D,
-		texSubImage2D: texSubImage2D,
-		texSubImage3D: texSubImage3D,
-		compressedTexSubImage2D: compressedTexSubImage2D,
-		compressedTexSubImage3D: compressedTexSubImage3D,
+		'texStorage2D': texStorage2D,
+		'texStorage3D': texStorage3D,
+		'texSubImage2D': texSubImage2D,
+		'texSubImage3D': texSubImage3D,
+		'compressedTexSubImage2D': compressedTexSubImage2D,
+		'compressedTexSubImage3D': compressedTexSubImage3D,
 
-		scissor: scissor,
-		viewport: viewport,
+		'scissor': scissor,
+		'viewport': viewport,
 
-		reset: reset
+		'reset': reset
 
 	};
 

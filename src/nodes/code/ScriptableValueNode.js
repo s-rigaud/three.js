@@ -103,7 +103,7 @@ class ScriptableValueNode extends Node {
 
 		this._value = val;
 
-		this.events.dispatchEvent( { type: 'change' } );
+		this.events.dispatchEvent( { 'type': 'change' } );
 
 		this.refresh();
 
@@ -125,7 +125,7 @@ class ScriptableValueNode extends Node {
 	 */
 	refresh() {
 
-		this.events.dispatchEvent( { type: 'refresh' } );
+		this.events.dispatchEvent( { 'type': 'refresh' } );
 
 	}
 

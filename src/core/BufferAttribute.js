@@ -21,7 +21,7 @@ class BufferAttribute {
 
 		this.isBufferAttribute = true;
 
-		Object.defineProperty( this, 'id', { value: _id ++ } );
+		Object.defineProperty( this, 'id', { 'value': _id ++ } );
 
 		this.name = '';
 
@@ -368,10 +368,10 @@ class BufferAttribute {
 	toJSON() {
 
 		const data = {
-			itemSize: this.itemSize,
-			type: this.array.constructor.name,
-			array: Array.from( this.array ),
-			normalized: this.normalized
+			'itemSize': this.itemSize,
+			'type': this.array.constructor.name,
+			'array': Array.from( this.array ),
+			'normalized': this.normalized
 		};
 
 		if ( this.name !== '' ) data.name = this.name;

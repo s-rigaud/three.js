@@ -13,7 +13,7 @@ function WebGLClipping( properties ) {
 	const plane = new Plane(),
 		viewNormalMatrix = new Matrix3(),
 
-		uniform = { value: null, needsUpdate: false };
+		uniform = { 'value': null, 'needsUpdate': false };
 
 	this.uniform = uniform;
 	this.numPlanes = 0;

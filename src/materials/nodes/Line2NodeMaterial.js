@@ -156,11 +156,11 @@ class Line2NodeMaterial extends NodeMaterial {
 			return vec4( mix( start.xyz, end.xyz, alpha ), end.w );
 
 		} ).setLayout( {
-			name: 'trimSegment',
-			type: 'vec4',
-			inputs: [
-				{ name: 'start', type: 'vec4' },
-				{ name: 'end', type: 'vec4' }
+			'name': 'trimSegment',
+			'type': 'vec4',
+			'inputs': [
+				{ 'name': 'start', 'type': 'vec4' },
+				{ 'name': 'end', 'type': 'vec4' }
 			]
 		} );
 
@@ -209,11 +209,11 @@ class Line2NodeMaterial extends NodeMaterial {
 
 				If( start.z.lessThan( 0.0 ).and( end.z.greaterThan( 0.0 ) ), () => {
 
-					end.assign( trimSegment( { start: start, end: end } ) );
+					end.assign( trimSegment( { 'start': start, 'end': end } ) );
 
 				} ).ElseIf( end.z.lessThan( 0.0 ).and( start.z.greaterThanEqual( 0.0 ) ), () => {
 
-					start.assign( trimSegment( { start: end, end: start } ) );
+					start.assign( trimSegment( { 'start': end, 'end': start } ) );
 
 			 	} );
 
@@ -376,7 +376,7 @@ class Line2NodeMaterial extends NodeMaterial {
 				// Find the closest points on the view ray and the line segment
 				const rayEnd = varyingProperty( 'vec4', 'worldPos' ).xyz.normalize().mul( 1e5 );
 				const lineDir = worldEnd.sub( worldStart );
-				const params = closestLineToLine( { p1: worldStart, p2: worldEnd, p3: vec3( 0.0, 0.0, 0.0 ), p4: rayEnd } );
+				const params = closestLineToLine( { 'p1': worldStart, 'p2': worldEnd, 'p3': vec3( 0.0, 0.0, 0.0 ), 'p4': rayEnd } );
 
 				const p1 = worldStart.add( lineDir.mul( params.x ) );
 				const p2 = rayEnd.mul( params.y );

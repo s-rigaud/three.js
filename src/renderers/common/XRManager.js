@@ -595,9 +595,9 @@ class XRManager extends EventDispatcher {
 				}
 
 				const projectionlayerInit = {
-					colorFormat: gl.RGBA8,
-					depthFormat: glDepthFormat,
-					scaleFactor: this._framebufferScaleFactor
+					'colorFormat': gl.RGBA8,
+					'depthFormat': glDepthFormat,
+					'scaleFactor': this._framebufferScaleFactor
 				};
 
 				const glBinding = new XRWebGLBinding( session, gl );
@@ -606,7 +606,7 @@ class XRManager extends EventDispatcher {
 				this._glBinding = glBinding;
 				this._glProjLayer = glProjLayer;
 
-				session.updateRenderState( { layers: [ glProjLayer ] } );
+				session.updateRenderState( { 'layers': [ glProjLayer ] } );
 
 				renderer.setPixelRatio( 1 );
 				renderer.setSize( glProjLayer.textureWidth, glProjLayer.textureHeight, false );
@@ -615,11 +615,11 @@ class XRManager extends EventDispatcher {
 					glProjLayer.textureWidth,
 					glProjLayer.textureHeight,
 					{
-						format: RGBAFormat,
-						type: UnsignedByteType,
-						colorSpace: renderer.outputColorSpace,
-						depthTexture: new DepthTexture( glProjLayer.textureWidth, glProjLayer.textureHeight, depthType, undefined, undefined, undefined, undefined, undefined, undefined, depthFormat ),
-						stencilBuffer: renderer.stencil
+						'format': RGBAFormat,
+						'type': UnsignedByteType,
+						'colorSpace': renderer.outputColorSpace,
+						'depthTexture': new DepthTexture( glProjLayer.textureWidth, glProjLayer.textureHeight, depthType, undefined, undefined, undefined, undefined, undefined, undefined, depthFormat ),
+						'stencilBuffer': renderer.stencil
 					} );
 
 				this._xrRenderTarget.hasExternalTextures = true;
@@ -629,17 +629,17 @@ class XRManager extends EventDispatcher {
 				// fallback to XRWebGLLayer
 
 				const layerInit = {
-					antialias: renderer.samples > 0,
-					alpha: true,
-					depth: renderer.depth,
-					stencil: renderer.stencil,
-					framebufferScaleFactor: this.getFramebufferScaleFactor()
+					'antialias': renderer.samples > 0,
+					'alpha': true,
+					'depth': renderer.depth,
+					'stencil': renderer.stencil,
+					'framebufferScaleFactor': this.getFramebufferScaleFactor()
 				};
 
 				const glBaseLayer = new XRWebGLLayer( session, gl, layerInit );
 				this._glBaseLayer = glBaseLayer;
 
-				session.updateRenderState( { baseLayer: glBaseLayer } );
+				session.updateRenderState( { 'baseLayer': glBaseLayer } );
 
 				renderer.setPixelRatio( 1 );
 				renderer.setSize( glBaseLayer.framebufferWidth, glBaseLayer.framebufferHeight, false );
@@ -648,10 +648,10 @@ class XRManager extends EventDispatcher {
 					glBaseLayer.framebufferWidth,
 					glBaseLayer.framebufferHeight,
 					{
-						format: RGBAFormat,
-						type: UnsignedByteType,
-						colorSpace: renderer.outputColorSpace,
-						stencilBuffer: renderer.stencil
+						'format': RGBAFormat,
+						'type': UnsignedByteType,
+						'colorSpace': renderer.outputColorSpace,
+						'stencilBuffer': renderer.stencil
 					}
 				);
 
@@ -669,7 +669,7 @@ class XRManager extends EventDispatcher {
 
 			this.isPresenting = true;
 
-			this.dispatchEvent( { type: 'sessionstart' } );
+			this.dispatchEvent( { 'type': 'sessionstart' } );
 
 		}
 
@@ -703,8 +703,8 @@ class XRManager extends EventDispatcher {
 			// Note that the new renderState won't apply until the next frame. See #18320
 
 			session.updateRenderState( {
-				depthNear: cameraXR.near,
-				depthFar: cameraXR.far
+				'depthNear': cameraXR.near,
+				'depthFar': cameraXR.far
 			} );
 
 			this._currentDepthNear = cameraXR.near;
@@ -922,7 +922,7 @@ function onSessionEvent( event ) {
 		const referenceSpace = this.getReferenceSpace();
 
 		controller.update( event.inputSource, event.frame, referenceSpace );
-		controller.dispatchEvent( { type: event.type, data: event.inputSource } );
+		controller.dispatchEvent( { 'type': event.type, 'data': event.inputSource } );
 
 	}
 
@@ -978,7 +978,7 @@ function onSessionEnd() {
 	renderer.setPixelRatio( this._currentPixelRatio );
 	renderer.setSize( this._currentSize.width, this._currentSize.height, false );
 
-	this.dispatchEvent( { type: 'sessionend' } );
+	this.dispatchEvent( { 'type': 'sessionend' } );
 
 }
 
@@ -1170,7 +1170,7 @@ function onAnimationFrame( time, frame ) {
 
 	if ( frame.detectedPlanes ) {
 
-		this.dispatchEvent( { type: 'planesdetected', data: frame } );
+		this.dispatchEvent( { 'type': 'planesdetected', 'data': frame } );
 
 	}
 

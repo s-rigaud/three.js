@@ -236,15 +236,15 @@ class RenderList {
 		if ( renderItem === undefined ) {
 
 			renderItem = {
-				id: object.id,
-				object: object,
-				geometry: geometry,
-				material: material,
-				groupOrder: groupOrder,
-				renderOrder: object.renderOrder,
-				z: z,
-				group: group,
-				clippingContext: clippingContext
+				'id': object.id,
+				'object': object,
+				'geometry': geometry,
+				'material': material,
+				'groupOrder': groupOrder,
+				'renderOrder': object.renderOrder,
+				'z': z,
+				'group': group,
+				'clippingContext': clippingContext
 			};
 
 			this.renderItems[ this.renderItemsIndex ] = renderItem;

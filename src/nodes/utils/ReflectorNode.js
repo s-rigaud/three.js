@@ -133,8 +133,8 @@ class ReflectorNode extends TextureNode {
 			}
 
 			this._depthNode = nodeObject( new ReflectorNode( {
-				defaultTexture: _defaultRT.depthTexture,
-				reflector: this._reflectorBaseNode
+				'defaultTexture': _defaultRT.depthTexture,
+				'reflector': this._reflectorBaseNode
 			} ) );
 
 		}
@@ -336,7 +336,7 @@ class ReflectorBaseNode extends Node {
 
 		if ( renderTarget === undefined ) {
 
-			renderTarget = new RenderTarget( 0, 0, { type: HalfFloatType } );
+			renderTarget = new RenderTarget( 0, 0, { 'type': HalfFloatType } );
 
 			if ( this.generateMipmaps === true ) {
 

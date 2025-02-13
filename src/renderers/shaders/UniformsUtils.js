@@ -108,6 +108,6 @@ export function getUnlitUniformColorSpace( renderer ) {
 
 // Legacy
 
-const UniformsUtils = { clone: cloneUniforms, merge: mergeUniforms };
+const UniformsUtils = { 'clone': cloneUniforms, 'merge': mergeUniforms };
 
 export { UniformsUtils };

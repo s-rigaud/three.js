@@ -19,11 +19,11 @@ const DFGApprox = /*@__PURE__*/ Fn( ( { roughness, dotNV } ) => {
 	return fab;
 
 } ).setLayout( {
-	name: 'DFGApprox',
-	type: 'vec2',
-	inputs: [
-		{ name: 'roughness', type: 'float' },
-		{ name: 'dotNV', type: 'vec3' }
+	'name': 'DFGApprox',
+	'type': 'vec2',
+	'inputs': [
+		{ 'name': 'roughness', 'type': 'float' },
+		{ 'name': 'dotNV', 'type': 'vec3' }
 	]
 } );
 

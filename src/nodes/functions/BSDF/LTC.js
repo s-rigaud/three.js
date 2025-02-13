@@ -23,12 +23,12 @@ const LTC_Uv = /*@__PURE__*/ Fn( ( { N, V, roughness } ) => {
 	return uv;
 
 } ).setLayout( {
-	name: 'LTC_Uv',
-	type: 'vec2',
-	inputs: [
-		{ name: 'N', type: 'vec3' },
-		{ name: 'V', type: 'vec3' },
-		{ name: 'roughness', type: 'float' }
+	'name': 'LTC_Uv',
+	'type': 'vec2',
+	'inputs': [
+		{ 'name': 'N', 'type': 'vec3' },
+		{ 'name': 'V', 'type': 'vec3' },
+		{ 'name': 'roughness', 'type': 'float' }
 	]
 } );
 
@@ -42,10 +42,10 @@ const LTC_ClippedSphereFormFactor = /*@__PURE__*/ Fn( ( { f } ) => {
 	return max( l.mul( l ).add( f.z ).div( l.add( 1.0 ) ), 0 );
 
 } ).setLayout( {
-	name: 'LTC_ClippedSphereFormFactor',
-	type: 'float',
-	inputs: [
-		{ name: 'f', type: 'vec3' }
+	'name': 'LTC_ClippedSphereFormFactor',
+	'type': 'float',
+	'inputs': [
+		{ 'name': 'f', 'type': 'vec3' }
 	]
 } );
 
@@ -64,11 +64,11 @@ const LTC_EdgeVectorFormFactor = /*@__PURE__*/ Fn( ( { v1, v2 } ) => {
 	return v1.cross( v2 ).mul( theta_sintheta );
 
 } ).setLayout( {
-	name: 'LTC_EdgeVectorFormFactor',
-	type: 'vec3',
-	inputs: [
-		{ name: 'v1', type: 'vec3' },
-		{ name: 'v2', type: 'vec3' }
+	'name': 'LTC_EdgeVectorFormFactor',
+	'type': 'vec3',
+	'inputs': [
+		{ 'name': 'v1', 'type': 'vec3' },
+		{ 'name': 'v2', 'type': 'vec3' }
 	]
 } );
 
@@ -100,30 +100,30 @@ const LTC_Evaluate = /*@__PURE__*/ Fn( ( { N, V, P, mInv, p0, p1, p2, p3 } ) => 
 
 		// calculate vector form factor
 		const vectorFormFactor = vec3( 0 ).toVar();
-		vectorFormFactor.addAssign( LTC_EdgeVectorFormFactor( { v1: coords0, v2: coords1 } ) );
-		vectorFormFactor.addAssign( LTC_EdgeVectorFormFactor( { v1: coords1, v2: coords2 } ) );
-		vectorFormFactor.addAssign( LTC_EdgeVectorFormFactor( { v1: coords2, v2: coords3 } ) );
-		vectorFormFactor.addAssign( LTC_EdgeVectorFormFactor( { v1: coords3, v2: coords0 } ) );
+		vectorFormFactor.addAssign( LTC_EdgeVectorFormFactor( { 'v1': coords0, 'v2': coords1 } ) );
+		vectorFormFactor.addAssign( LTC_EdgeVectorFormFactor( { 'v1': coords1, 'v2': coords2 } ) );
+		vectorFormFactor.addAssign( LTC_EdgeVectorFormFactor( { 'v1': coords2, 'v2': coords3 } ) );
+		vectorFormFactor.addAssign( LTC_EdgeVectorFormFactor( { 'v1': coords3, 'v2': coords0 } ) );
 
 		// adjust for horizon clipping
-		result.assign( vec3( LTC_ClippedSphereFormFactor( { f: vectorFormFactor } ) ) );
+		result.assign( vec3( LTC_ClippedSphereFormFactor( { 'f': vectorFormFactor } ) ) );
 
 	} );
 
 	return result;
 
 } ).setLayout( {
-	name: 'LTC_Evaluate',
-	type: 'vec3',
-	inputs: [
-		{ name: 'N', type: 'vec3' },
-		{ name: 'V', type: 'vec3' },
-		{ name: 'P', type: 'vec3' },
-		{ name: 'mInv', type: 'mat3' },
-		{ name: 'p0', type: 'vec3' },
-		{ name: 'p1', type: 'vec3' },
-		{ name: 'p2', type: 'vec3' },
-		{ name: 'p3', type: 'vec3' }
+	'name': 'LTC_Evaluate',
+	'type': 'vec3',
+	'inputs': [
+		{ 'name': 'N', 'type': 'vec3' },
+		{ 'name': 'V', 'type': 'vec3' },
+		{ 'name': 'P', 'type': 'vec3' },
+		{ 'name': 'mInv', 'type': 'mat3' },
+		{ 'name': 'p0', 'type': 'vec3' },
+		{ 'name': 'p1', 'type': 'vec3' },
+		{ 'name': 'p2', 'type': 'vec3' },
+		{ 'name': 'p3', 'type': 'vec3' }
 	]
 } );
 

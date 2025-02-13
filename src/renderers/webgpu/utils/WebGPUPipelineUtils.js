@@ -101,10 +101,10 @@ class WebGPUPipelineUtils {
 		if ( material.stencilWrite === true ) {
 
 			stencilFront = {
-				compare: this._getStencilCompare( material ),
-				failOp: this._getStencilOperation( material.stencilFail ),
-				depthFailOp: this._getStencilOperation( material.stencilZFail ),
-				passOp: this._getStencilOperation( material.stencilZPass )
+				'compare': this._getStencilCompare( material ),
+				'failOp': this._getStencilOperation( material.stencilFail ),
+				'depthFailOp': this._getStencilOperation( material.stencilZFail ),
+				'passOp': this._getStencilOperation( material.stencilZPass )
 			};
 
 		}
@@ -122,9 +122,9 @@ class WebGPUPipelineUtils {
 				const colorFormat = utils.getTextureFormatGPU( textures[ i ] );
 
 				targets.push( {
-					format: colorFormat,
-					blend: blending,
-					writeMask: colorWriteMask
+					'format': colorFormat,
+					'blend': blending,
+					'writeMask': colorWriteMask
 				} );
 
 			}
@@ -134,9 +134,9 @@ class WebGPUPipelineUtils {
 			const colorFormat = utils.getCurrentColorFormat( renderObject.context );
 
 			targets.push( {
-				format: colorFormat,
-				blend: blending,
-				writeMask: colorWriteMask
+				'format': colorFormat,
+				'blend': blending,
+				'writeMask': colorWriteMask
 			} );
 
 		}
@@ -151,15 +151,15 @@ class WebGPUPipelineUtils {
 		const sampleCount = this._getSampleCount( renderObject.context );
 
 		const pipelineDescriptor = {
-			label: `renderPipeline_${ material.name || material.type }_${ material.id }`,
-			vertex: Object.assign( {}, vertexModule, { buffers: vertexBuffers } ),
-			fragment: Object.assign( {}, fragmentModule, { targets } ),
-			primitive: primitiveState,
-			multisample: {
-				count: sampleCount,
-				alphaToCoverageEnabled: material.alphaToCoverage && sampleCount > 1
+			'label': `renderPipeline_${ material.name || material.type }_${ material.id }`,
+			'vertex': Object.assign( {}, vertexModule, { 'buffers': vertexBuffers } ),
+			'fragment': Object.assign( {}, fragmentModule, { targets } ),
+			'primitive': primitiveState,
+			'multisample': {
+				'count': sampleCount,
+				'alphaToCoverageEnabled': material.alphaToCoverage && sampleCount > 1
 			},
-			layout: device.createPipelineLayout( {
+			'layout': device.createPipelineLayout( {
 				bindGroupLayouts
 			} )
 		};
@@ -240,8 +240,8 @@ class WebGPUPipelineUtils {
 		const sampleCount = this._getSampleCount( renderContext );
 
 		const descriptor = {
-			label: 'renderBundleEncoder',
-			colorFormats: [ colorFormat ],
+			'label': 'renderBundleEncoder',
+			'colorFormats': [ colorFormat ],
 			depthStencilFormat,
 			sampleCount
 		};
@@ -278,8 +278,8 @@ class WebGPUPipelineUtils {
 		}
 
 		pipelineGPU.pipeline = device.createComputePipeline( {
-			compute: computeProgram,
-			layout: device.createPipelineLayout( {
+			'compute': computeProgram,
+			'layout': device.createPipelineLayout( {
 				bindGroupLayouts
 			} )
 		} );
@@ -311,15 +311,15 @@ class WebGPUPipelineUtils {
 			const blendEquationAlpha = material.blendEquationAlpha !== null ? material.blendEquationAlpha : blendEquation;
 
 			color = {
-				srcFactor: this._getBlendFactor( blendSrc ),
-				dstFactor: this._getBlendFactor( blendDst ),
-				operation: this._getBlendOperation( blendEquation )
+				'srcFactor': this._getBlendFactor( blendSrc ),
+				'dstFactor': this._getBlendFactor( blendDst ),
+				'operation': this._getBlendOperation( blendEquation )
 			};
 
 			alpha = {
-				srcFactor: this._getBlendFactor( blendSrcAlpha ),
-				dstFactor: this._getBlendFactor( blendDstAlpha ),
-				operation: this._getBlendOperation( blendEquationAlpha )
+				'srcFactor': this._getBlendFactor( blendSrcAlpha ),
+				'dstFactor': this._getBlendFactor( blendDstAlpha ),
+				'operation': this._getBlendOperation( blendEquationAlpha )
 			};
 
 		} else {
@@ -329,15 +329,15 @@ class WebGPUPipelineUtils {
 			const setBlend = ( srcRGB, dstRGB, srcAlpha, dstAlpha ) => {
 
 				color = {
-					srcFactor: srcRGB,
-					dstFactor: dstRGB,
-					operation: GPUBlendOperation.Add
+					'srcFactor': srcRGB,
+					'dstFactor': dstRGB,
+					'operation': GPUBlendOperation.Add
 				};
 
 				alpha = {
-					srcFactor: srcAlpha,
-					dstFactor: dstAlpha,
-					operation: GPUBlendOperation.Add
+					'srcFactor': srcAlpha,
+					'dstFactor': dstAlpha,
+					'operation': GPUBlendOperation.Add
 				};
 
 			};

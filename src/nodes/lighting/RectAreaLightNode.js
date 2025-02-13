@@ -111,10 +111,10 @@ class RectAreaLightNode extends AnalyticLightNode {
 		const reflectedLight = builder.context.reflectedLight;
 
 		lightingModel.directRectArea( {
-			lightColor: colorNode,
+			'lightColor': colorNode,
 			lightPosition,
-			halfWidth: this.halfWidth,
-			halfHeight: this.halfHeight,
+			'halfWidth': this.halfWidth,
+			'halfHeight': this.halfHeight,
 			reflectedLight,
 			ltc_1,
 			ltc_2

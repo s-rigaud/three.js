@@ -73,14 +73,14 @@ function WebGLRenderList() {
 		if ( renderItem === undefined ) {
 
 			renderItem = {
-				id: object.id,
-				object: object,
-				geometry: geometry,
-				material: material,
-				groupOrder: groupOrder,
-				renderOrder: object.renderOrder,
-				z: z,
-				group: group
+				'id': object.id,
+				'object': object,
+				'geometry': geometry,
+				'material': material,
+				'groupOrder': groupOrder,
+				'renderOrder': object.renderOrder,
+				'z': z,
+				'group': group
 			};
 
 			renderItems[ renderItemsIndex ] = renderItem;
@@ -174,16 +174,16 @@ function WebGLRenderList() {
 
 	return {
 
-		opaque: opaque,
-		transmissive: transmissive,
-		transparent: transparent,
+		'opaque': opaque,
+		'transmissive': transmissive,
+		'transparent': transparent,
 
-		init: init,
-		push: push,
-		unshift: unshift,
-		finish: finish,
+		'init': init,
+		'push': push,
+		'unshift': unshift,
+		'finish': finish,
 
-		sort: sort
+		'sort': sort
 	};
 
 }
@@ -228,8 +228,8 @@ function WebGLRenderLists() {
 	}
 
 	return {
-		get: get,
-		dispose: dispose
+		'get': get,
+		'dispose': dispose
 	};
 
 }

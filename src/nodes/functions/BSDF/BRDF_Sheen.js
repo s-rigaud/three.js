@@ -16,11 +16,11 @@ const D_Charlie = /*@__PURE__*/ Fn( ( { roughness, dotNH } ) => {
 	return float( 2.0 ).add( invAlpha ).mul( sin2h.pow( invAlpha.mul( 0.5 ) ) ).div( 2.0 * Math.PI );
 
 } ).setLayout( {
-	name: 'D_Charlie',
-	type: 'float',
-	inputs: [
-		{ name: 'roughness', type: 'float' },
-		{ name: 'dotNH', type: 'float' }
+	'name': 'D_Charlie',
+	'type': 'float',
+	'inputs': [
+		{ 'name': 'roughness', 'type': 'float' },
+		{ 'name': 'dotNH', 'type': 'float' }
 	]
 } );
 
@@ -31,11 +31,11 @@ const V_Neubelt = /*@__PURE__*/ Fn( ( { dotNV, dotNL } ) => {
 	return float( 1.0 ).div( float( 4.0 ).mul( dotNL.add( dotNV ).sub( dotNL.mul( dotNV ) ) ) );
 
 } ).setLayout( {
-	name: 'V_Neubelt',
-	type: 'float',
-	inputs: [
-		{ name: 'dotNV', type: 'float' },
-		{ name: 'dotNL', type: 'float' }
+	'name': 'V_Neubelt',
+	'type': 'float',
+	'inputs': [
+		{ 'name': 'dotNV', 'type': 'float' },
+		{ 'name': 'dotNL', 'type': 'float' }
 	]
 } );
 
@@ -47,7 +47,7 @@ const BRDF_Sheen = /*@__PURE__*/ Fn( ( { lightDirection } ) => {
 	const dotNV = transformedNormalView.dot( positionViewDirection ).clamp();
 	const dotNH = transformedNormalView.dot( halfDir ).clamp();
 
-	const D = D_Charlie( { roughness: sheenRoughness, dotNH } );
+	const D = D_Charlie( { 'roughness': sheenRoughness, dotNH } );
 	const V = V_Neubelt( { dotNV, dotNL } );
 
 	return sheen.mul( D ).mul( V );

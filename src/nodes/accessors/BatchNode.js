@@ -80,10 +80,10 @@ class BatchNode extends Node {
 			return textureLoad( this.batchMesh._indirectTexture, ivec2( x, y ) ).x;
 
 		} ).setLayout( {
-			name: 'getIndirectIndex',
-			type: 'uint',
-			inputs: [
-				{ name: 'id', type: 'int' }
+			'name': 'getIndirectIndex',
+			'type': 'uint',
+			'inputs': [
+				{ 'name': 'id', 'type': 'int' }
 			]
 		} );
 
@@ -117,10 +117,10 @@ class BatchNode extends Node {
 				return textureLoad( colorsTexture, ivec2( x, y ) ).rgb;
 
 			} ).setLayout( {
-				name: 'getBatchingColor',
-				type: 'vec3',
-				inputs: [
-					{ name: 'id', type: 'int' }
+				'name': 'getBatchingColor',
+				'type': 'vec3',
+				'inputs': [
+					{ 'name': 'id', 'type': 'int' }
 				]
 			} );
 

@@ -110,31 +110,31 @@ function WebGLCapabilities( gl, extensions, parameters, utils ) {
 
 	return {
 
-		isWebGL2: true, // keeping this for backwards compatibility
+		'isWebGL2': true, // keeping this for backwards compatibility
 
-		getMaxAnisotropy: getMaxAnisotropy,
-		getMaxPrecision: getMaxPrecision,
+		'getMaxAnisotropy': getMaxAnisotropy,
+		'getMaxPrecision': getMaxPrecision,
 
-		textureFormatReadable: textureFormatReadable,
-		textureTypeReadable: textureTypeReadable,
+		'textureFormatReadable': textureFormatReadable,
+		'textureTypeReadable': textureTypeReadable,
 
-		precision: precision,
-		logarithmicDepthBuffer: logarithmicDepthBuffer,
-		reverseDepthBuffer: reverseDepthBuffer,
+		'precision': precision,
+		'logarithmicDepthBuffer': logarithmicDepthBuffer,
+		'reverseDepthBuffer': reverseDepthBuffer,
 
-		maxTextures: maxTextures,
-		maxVertexTextures: maxVertexTextures,
-		maxTextureSize: maxTextureSize,
-		maxCubemapSize: maxCubemapSize,
+		'maxTextures': maxTextures,
+		'maxVertexTextures': maxVertexTextures,
+		'maxTextureSize': maxTextureSize,
+		'maxCubemapSize': maxCubemapSize,
 
-		maxAttributes: maxAttributes,
-		maxVertexUniforms: maxVertexUniforms,
-		maxVaryings: maxVaryings,
-		maxFragmentUniforms: maxFragmentUniforms,
+		'maxAttributes': maxAttributes,
+		'maxVertexUniforms': maxVertexUniforms,
+		'maxVaryings': maxVaryings,
+		'maxFragmentUniforms': maxFragmentUniforms,
 
-		vertexTextures: vertexTextures,
+		'vertexTextures': vertexTextures,
 
-		maxSamples: maxSamples
+		'maxSamples': maxSamples
 
 	};
 

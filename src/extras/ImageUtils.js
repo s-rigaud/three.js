@@ -100,9 +100,9 @@ class ImageUtils {
 			}
 
 			return {
-				data: data,
-				width: image.width,
-				height: image.height
+				'data': data,
+				'width': image.width,
+				'height': image.height
 			};
 
 		} else {

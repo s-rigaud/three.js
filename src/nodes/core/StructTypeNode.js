@@ -16,11 +16,11 @@ function getMembersLayout( members ) {
 
 		if ( typeof value === 'string' ) {
 
-			return { name, type: value, atomic: false };
+			return { name, 'type': value, 'atomic': false };
 
 		}
 
-		return { name, type: value.type, atomic: value.atomic || false };
+		return { name, 'type': value.type, 'atomic': value.atomic || false };
 
 	} );
 

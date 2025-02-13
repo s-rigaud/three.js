@@ -1,16 +1,16 @@
 function WebGLInfo( gl ) {
 
 	const memory = {
-		geometries: 0,
-		textures: 0
+		'geometries': 0,
+		'textures': 0
 	};
 
 	const render = {
-		frame: 0,
-		calls: 0,
-		triangles: 0,
-		points: 0,
-		lines: 0
+		'frame': 0,
+		'calls': 0,
+		'triangles': 0,
+		'points': 0,
+		'lines': 0
 	};
 
 	function update( count, mode, instanceCount ) {
@@ -57,12 +57,12 @@ function WebGLInfo( gl ) {
 	}
 
 	return {
-		memory: memory,
-		render: render,
-		programs: null,
-		autoReset: true,
-		reset: reset,
-		update: update
+		'memory': memory,
+		'render': render,
+		'programs': null,
+		'autoReset': true,
+		'reset': reset,
+		'update': update
 	};
 
 }

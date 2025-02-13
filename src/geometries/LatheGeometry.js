@@ -13,10 +13,10 @@ class LatheGeometry extends BufferGeometry {
 		this.type = 'LatheGeometry';
 
 		this.parameters = {
-			points: points,
-			segments: segments,
-			phiStart: phiStart,
-			phiLength: phiLength
+			'points': points,
+			'segments': segments,
+			'phiStart': phiStart,
+			'phiLength': phiLength
 		};
 
 		segments = Math.floor( segments );

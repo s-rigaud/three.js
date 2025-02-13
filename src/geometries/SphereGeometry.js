@@ -11,13 +11,13 @@ class SphereGeometry extends BufferGeometry {
 		this.type = 'SphereGeometry';
 
 		this.parameters = {
-			radius: radius,
-			widthSegments: widthSegments,
-			heightSegments: heightSegments,
-			phiStart: phiStart,
-			phiLength: phiLength,
-			thetaStart: thetaStart,
-			thetaLength: thetaLength
+			'radius': radius,
+			'widthSegments': widthSegments,
+			'heightSegments': heightSegments,
+			'phiStart': phiStart,
+			'phiLength': phiLength,
+			'thetaStart': thetaStart,
+			'thetaLength': thetaLength
 		};
 
 		widthSegments = Math.max( 3, Math.floor( widthSegments ) );

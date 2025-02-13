@@ -17,9 +17,9 @@ function createColorManagement() {
 
 	const ColorManagement = {
 
-		enabled: true,
+		'enabled': true,
 
-		workingColorSpace: LinearSRGBColorSpace,
+		'workingColorSpace': LinearSRGBColorSpace,
 
 		/**
 		 * Implementations of supported color spaces.
@@ -39,9 +39,9 @@ function createColorManagement() {
 		 * Reference:
 		 * - https://www.russellcottrell.com/photo/matrixCalculator.htm
 		 */
-		spaces: {},
+		'spaces': {},
 
-		convert: function ( color, sourceColorSpace, targetColorSpace ) {
+		'convert': function ( color, sourceColorSpace, targetColorSpace ) {
 
 			if ( this.enabled === false || sourceColorSpace === targetColorSpace || ! sourceColorSpace || ! targetColorSpace ) {
 
@@ -76,25 +76,25 @@ function createColorManagement() {
 
 		},
 
-		fromWorkingColorSpace: function ( color, targetColorSpace ) {
+		'fromWorkingColorSpace': function ( color, targetColorSpace ) {
 
 			return this.convert( color, this.workingColorSpace, targetColorSpace );
 
 		},
 
-		toWorkingColorSpace: function ( color, sourceColorSpace ) {
+		'toWorkingColorSpace': function ( color, sourceColorSpace ) {
 
 			return this.convert( color, sourceColorSpace, this.workingColorSpace );
 
 		},
 
-		getPrimaries: function ( colorSpace ) {
+		'getPrimaries': function ( colorSpace ) {
 
 			return this.spaces[ colorSpace ].primaries;
 
 		},
 
-		getTransfer: function ( colorSpace ) {
+		'getTransfer': function ( colorSpace ) {
 
 			if ( colorSpace === NoColorSpace ) return LinearTransfer;
 
@@ -102,13 +102,13 @@ function createColorManagement() {
 
 		},
 
-		getLuminanceCoefficients: function ( target, colorSpace = this.workingColorSpace ) {
+		'getLuminanceCoefficients': function ( target, colorSpace = this.workingColorSpace ) {
 
 			return target.fromArray( this.spaces[ colorSpace ].luminanceCoefficients );
 
 		},
 
-		define: function ( colorSpaces ) {
+		'define': function ( colorSpaces ) {
 
 			Object.assign( this.spaces, colorSpaces );
 
@@ -116,7 +116,7 @@ function createColorManagement() {
 
 		// Internal APIs
 
-		_getMatrix: function ( targetMatrix, sourceColorSpace, targetColorSpace ) {
+		'_getMatrix': function ( targetMatrix, sourceColorSpace, targetColorSpace ) {
 
 			return targetMatrix
 				.copy( this.spaces[ sourceColorSpace ].toXYZ )
@@ -124,13 +124,13 @@ function createColorManagement() {
 
 		},
 
-		_getDrawingBufferColorSpace: function ( colorSpace ) {
+		'_getDrawingBufferColorSpace': function ( colorSpace ) {
 
 			return this.spaces[ colorSpace ].outputColorSpaceConfig.drawingBufferColorSpace;
 
 		},
 
-		_getUnpackColorSpace: function ( colorSpace = this.workingColorSpace ) {
+		'_getUnpackColorSpace': function ( colorSpace = this.workingColorSpace ) {
 
 			return this.spaces[ colorSpace ].workingColorSpaceConfig.unpackColorSpace;
 
@@ -149,24 +149,24 @@ function createColorManagement() {
 	ColorManagement.define( {
 
 		[ LinearSRGBColorSpace ]: {
-			primaries: REC709_PRIMARIES,
-			whitePoint: D65,
-			transfer: LinearTransfer,
-			toXYZ: LINEAR_REC709_TO_XYZ,
-			fromXYZ: XYZ_TO_LINEAR_REC709,
-			luminanceCoefficients: REC709_LUMINANCE_COEFFICIENTS,
-			workingColorSpaceConfig: { unpackColorSpace: SRGBColorSpace },
-			outputColorSpaceConfig: { drawingBufferColorSpace: SRGBColorSpace }
+			'primaries': REC709_PRIMARIES,
+			'whitePoint': D65,
+			'transfer': LinearTransfer,
+			'toXYZ': LINEAR_REC709_TO_XYZ,
+			'fromXYZ': XYZ_TO_LINEAR_REC709,
+			'luminanceCoefficients': REC709_LUMINANCE_COEFFICIENTS,
+			'workingColorSpaceConfig': { 'unpackColorSpace': SRGBColorSpace },
+			'outputColorSpaceConfig': { 'drawingBufferColorSpace': SRGBColorSpace }
 		},
 
 		[ SRGBColorSpace ]: {
-			primaries: REC709_PRIMARIES,
-			whitePoint: D65,
-			transfer: SRGBTransfer,
-			toXYZ: LINEAR_REC709_TO_XYZ,
-			fromXYZ: XYZ_TO_LINEAR_REC709,
-			luminanceCoefficients: REC709_LUMINANCE_COEFFICIENTS,
-			outputColorSpaceConfig: { drawingBufferColorSpace: SRGBColorSpace }
+			'primaries': REC709_PRIMARIES,
+			'whitePoint': D65,
+			'transfer': SRGBTransfer,
+			'toXYZ': LINEAR_REC709_TO_XYZ,
+			'fromXYZ': XYZ_TO_LINEAR_REC709,
+			'luminanceCoefficients': REC709_LUMINANCE_COEFFICIENTS,
+			'outputColorSpaceConfig': { 'drawingBufferColorSpace': SRGBColorSpace }
 		},
 
 	} );

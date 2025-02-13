@@ -12,17 +12,17 @@ const V_GGX_SmithCorrelated_Anisotropic = /*@__PURE__*/ Fn( ( { alphaT, alphaB, 
 	return v.saturate();
 
 } ).setLayout( {
-	name: 'V_GGX_SmithCorrelated_Anisotropic',
-	type: 'float',
-	inputs: [
-		{ name: 'alphaT', type: 'float', qualifier: 'in' },
-		{ name: 'alphaB', type: 'float', qualifier: 'in' },
-		{ name: 'dotTV', type: 'float', qualifier: 'in' },
-		{ name: 'dotBV', type: 'float', qualifier: 'in' },
-		{ name: 'dotTL', type: 'float', qualifier: 'in' },
-		{ name: 'dotBL', type: 'float', qualifier: 'in' },
-		{ name: 'dotNV', type: 'float', qualifier: 'in' },
-		{ name: 'dotNL', type: 'float', qualifier: 'in' }
+	'name': 'V_GGX_SmithCorrelated_Anisotropic',
+	'type': 'float',
+	'inputs': [
+		{ 'name': 'alphaT', 'type': 'float', 'qualifier': 'in' },
+		{ 'name': 'alphaB', 'type': 'float', 'qualifier': 'in' },
+		{ 'name': 'dotTV', 'type': 'float', 'qualifier': 'in' },
+		{ 'name': 'dotBV', 'type': 'float', 'qualifier': 'in' },
+		{ 'name': 'dotTL', 'type': 'float', 'qualifier': 'in' },
+		{ 'name': 'dotBL', 'type': 'float', 'qualifier': 'in' },
+		{ 'name': 'dotNV', 'type': 'float', 'qualifier': 'in' },
+		{ 'name': 'dotNL', 'type': 'float', 'qualifier': 'in' }
 	]
 } );
 

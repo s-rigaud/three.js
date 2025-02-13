@@ -212,10 +212,10 @@ class WebGLBackend extends Backend {
 		const parameters = this.parameters;
 
 		const contextAttributes = {
-			antialias: false, // MSAA is applied via a custom renderbuffer
-			alpha: true, // always true for performance reasons
-			depth: false, // depth and stencil are set to false since the engine always renders into a framebuffer target first
-			stencil: false
+			'antialias': false, // MSAA is applied via a custom renderbuffer
+			'alpha': true, // always true for performance reasons
+			'depth': false, // depth and stencil are set to false since the engine always renders into a framebuffer target first
+			'stencil': false
 		};
 
 		const glContext = ( parameters.context !== undefined ) ? parameters.context : renderer.domElement.getContext( 'webgl2', contextAttributes );
@@ -225,10 +225,10 @@ class WebGLBackend extends Backend {
 			event.preventDefault();
 
 			const contextLossInfo = {
-				api: 'WebGL',
-				message: event.statusMessage || 'Unknown reason',
-				reason: null,
-				originalEvent: event
+				'api': 'WebGL',
+				'message': event.statusMessage || 'Unknown reason',
+				'reason': null,
+				'originalEvent': event
 			};
 
 			renderer.onDeviceLost( contextLossInfo );
@@ -343,13 +343,13 @@ class WebGLBackend extends Backend {
 
 		const gl = this.gl;
 
-		this.set( renderTarget.texture, { textureGPU: colorTexture, glInternalFormat: gl.RGBA8 } ); // see #24698 why RGBA8 and not SRGB8_ALPHA8 is used
+		this.set( renderTarget.texture, { 'textureGPU': colorTexture, 'glInternalFormat': gl.RGBA8 } ); // see #24698 why RGBA8 and not SRGB8_ALPHA8 is used
 
 		if ( depthTexture !== null ) {
 
 			const glInternalFormat = renderTarget.stencilBuffer ? gl.DEPTH24_STENCIL8 : gl.DEPTH_COMPONENT24;
 
-			this.set( renderTarget.depthTexture, { textureGPU: depthTexture, glInternalFormat: glInternalFormat } );
+			this.set( renderTarget.depthTexture, { 'textureGPU': depthTexture, 'glInternalFormat': glInternalFormat } );
 
 			renderTarget.autoAllocateDepthBuffer = false;
 
@@ -745,8 +745,8 @@ class WebGLBackend extends Backend {
 			const clearColor = this.getClearColor();
 
 			descriptor = {
-				textures: null,
-				clearColorValue: clearColor
+				'textures': null,
+				'clearColorValue': clearColor
 			};
 
 		}
@@ -1324,7 +1324,7 @@ class WebGLBackend extends Backend {
 		gl.compileShader( shader );
 
 		this.set( program, {
-			shaderGPU: shader
+			'shaderGPU': shader
 		} );
 
 	}
@@ -1559,8 +1559,8 @@ class WebGLBackend extends Backend {
 		// Program
 
 		const fragmentProgram = {
-			stage: 'fragment',
-			code: '#version 300 es\nprecision highp float;\nvoid main() {}'
+			'stage': 'fragment',
+			'code': '#version 300 es\nprecision highp float;\nvoid main() {}'
 		};
 
 		this.createProgram( fragmentProgram );
@@ -1666,8 +1666,8 @@ class WebGLBackend extends Backend {
 			for ( const bindGroup of bindings ) {
 
 				this.set( bindGroup, {
-					textures: textures,
-					uniformBuffers: uniformBuffers
+					'textures': textures,
+					'uniformBuffers': uniformBuffers
 				} );
 
 				for ( const binding of bindGroup.bindings ) {
@@ -1713,7 +1713,7 @@ class WebGLBackend extends Backend {
 				gl.bufferData( gl.UNIFORM_BUFFER, data, gl.DYNAMIC_DRAW );
 
 				this.set( binding, {
-					index: i ++,
+					'index': i ++,
 					bufferGPU
 				} );
 
@@ -1722,7 +1722,7 @@ class WebGLBackend extends Backend {
 				const { textureGPU, glTextureType } = this.get( binding.texture );
 
 				this.set( binding, {
-					index: t ++,
+					'index': t ++,
 					textureGPU,
 					glTextureType
 				} );

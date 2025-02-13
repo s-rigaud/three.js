@@ -42,14 +42,14 @@ const getVolumeTransmissionRay = /*@__PURE__*/ Fn( ( [ n, v, thickness, ior, mod
 	return normalize( refractionVector ).mul( thickness.mul( modelScale ) );
 
 } ).setLayout( {
-	name: 'getVolumeTransmissionRay',
-	type: 'vec3',
-	inputs: [
-		{ name: 'n', type: 'vec3' },
-		{ name: 'v', type: 'vec3' },
-		{ name: 'thickness', type: 'float' },
-		{ name: 'ior', type: 'float' },
-		{ name: 'modelMatrix', type: 'mat4' }
+	'name': 'getVolumeTransmissionRay',
+	'type': 'vec3',
+	'inputs': [
+		{ 'name': 'n', 'type': 'vec3' },
+		{ 'name': 'v', 'type': 'vec3' },
+		{ 'name': 'thickness', 'type': 'float' },
+		{ 'name': 'ior', 'type': 'float' },
+		{ 'name': 'modelMatrix', 'type': 'mat4' }
 	]
 } );
 
@@ -60,11 +60,11 @@ const applyIorToRoughness = /*@__PURE__*/ Fn( ( [ roughness, ior ] ) => {
 	return roughness.mul( clamp( ior.mul( 2.0 ).sub( 2.0 ), 0.0, 1.0 ) );
 
 } ).setLayout( {
-	name: 'applyIorToRoughness',
-	type: 'float',
-	inputs: [
-		{ name: 'roughness', type: 'float' },
-		{ name: 'ior', type: 'float' }
+	'name': 'applyIorToRoughness',
+	'type': 'float',
+	'inputs': [
+		{ 'name': 'roughness', 'type': 'float' },
+		{ 'name': 'ior', 'type': 'float' }
 	]
 } );
 
@@ -100,12 +100,12 @@ const volumeAttenuation = /*@__PURE__*/ Fn( ( [ transmissionDistance, attenuatio
 	return vec3( 1.0 );
 
 } ).setLayout( {
-	name: 'volumeAttenuation',
-	type: 'vec3',
-	inputs: [
-		{ name: 'transmissionDistance', type: 'float' },
-		{ name: 'attenuationColor', type: 'vec3' },
-		{ name: 'attenuationDistance', type: 'float' }
+	'name': 'volumeAttenuation',
+	'type': 'vec3',
+	'inputs': [
+		{ 'name': 'transmissionDistance', 'type': 'float' },
+		{ 'name': 'attenuationColor', 'type': 'vec3' },
+		{ 'name': 'attenuationDistance', 'type': 'float' }
 	]
 } );
 
@@ -121,7 +121,7 @@ const getIBLVolumeRefraction = /*@__PURE__*/ Fn( ( [ n, v, roughness, diffuseCol
 		const halfSpread = ior.sub( 1.0 ).mul( dispersion.mul( 0.025 ) );
 		const iors = vec3( ior.sub( halfSpread ), ior, ior.add( halfSpread ) );
 
-		Loop( { start: 0, end: 3 }, ( { i } ) => {
+		Loop( { 'start': 0, 'end': 3 }, ( { i } ) => {
 
 			const ior = iors.element( i );
 
@@ -252,7 +252,7 @@ const evalIridescence = /*@__PURE__*/ Fn( ( { outsideIOR, eta2, cosTheta1, thinF
 
 	// First interface
 	const R0 = IorToFresnel0( iridescenceIOR, outsideIOR );
-	const R12 = F_Schlick( { f0: R0, f90: 1.0, dotVH: cosTheta1 } );
+	const R12 = F_Schlick( { 'f0': R0, 'f90': 1.0, 'dotVH': cosTheta1 } );
 	//const R21 = R12;
 	const T121 = R12.oneMinus();
 	const phi12 = iridescenceIOR.lessThan( outsideIOR ).select( Math.PI, 0.0 );
@@ -261,7 +261,7 @@ const evalIridescence = /*@__PURE__*/ Fn( ( { outsideIOR, eta2, cosTheta1, thinF
 	// Second interface
 	const baseIOR = Fresnel0ToIor( baseF0.clamp( 0.0, 0.9999 ) ); // guard against 1.0
 	const R1 = IorToFresnel0( baseIOR, iridescenceIOR.toVec3() );
-	const R23 = F_Schlick( { f0: R1, f90: 1.0, dotVH: cosTheta2 } );
+	const R23 = F_Schlick( { 'f0': R1, 'f90': 1.0, 'dotVH': cosTheta2 } );
 	const phi23 = vec3(
 		baseIOR.x.lessThan( iridescenceIOR ).select( Math.PI, 0.0 ),
 		baseIOR.y.lessThan( iridescenceIOR ).select( Math.PI, 0.0 ),
@@ -284,7 +284,7 @@ const evalIridescence = /*@__PURE__*/ Fn( ( { outsideIOR, eta2, cosTheta1, thinF
 	// Reflectance term for m > 0 (pairs of diracs)
 	const Cm = Rs.sub( T121 ).toVar();
 
-	Loop( { start: 1, end: 2, condition: '<=', name: 'm' }, ( { m } ) => {
+	Loop( { 'start': 1, 'end': 2, 'condition': '<=', 'name': 'm' }, ( { m } ) => {
 
 		Cm.mulAssign( r123 );
 		const Sm = evalSensitivity( float( m ).mul( OPD ), float( m ).mul( phi ) ).mul( 2.0 );
@@ -296,14 +296,14 @@ const evalIridescence = /*@__PURE__*/ Fn( ( { outsideIOR, eta2, cosTheta1, thinF
 	return I.max( vec3( 0.0 ) );
 
 } ).setLayout( {
-	name: 'evalIridescence',
-	type: 'vec3',
-	inputs: [
-		{ name: 'outsideIOR', type: 'float' },
-		{ name: 'eta2', type: 'float' },
-		{ name: 'cosTheta1', type: 'float' },
-		{ name: 'thinFilmThickness', type: 'float' },
-		{ name: 'baseF0', type: 'vec3' }
+	'name': 'evalIridescence',
+	'type': 'vec3',
+	'inputs': [
+		{ 'name': 'outsideIOR', 'type': 'float' },
+		{ 'name': 'eta2', 'type': 'float' },
+		{ 'name': 'cosTheta1', 'type': 'float' },
+		{ 'name': 'thinFilmThickness', 'type': 'float' },
+		{ 'name': 'baseF0', 'type': 'vec3' }
 	]
 } );
 
@@ -497,14 +497,14 @@ class PhysicalLightingModel extends LightingModel {
 			const dotNVi = transformedNormalView.dot( positionViewDirection ).clamp();
 
 			this.iridescenceFresnel = evalIridescence( {
-				outsideIOR: float( 1.0 ),
-				eta2: iridescenceIOR,
-				cosTheta1: dotNVi,
-				thinFilmThickness: iridescenceThickness,
-				baseF0: specularColor
+				'outsideIOR': float( 1.0 ),
+				'eta2': iridescenceIOR,
+				'cosTheta1': dotNVi,
+				'thinFilmThickness': iridescenceThickness,
+				'baseF0': specularColor
 			} );
 
-			this.iridescenceF0 = Schlick_to_F0( { f: this.iridescenceFresnel, f90: 1.0, dotVH: dotNVi } );
+			this.iridescenceF0 = Schlick_to_F0( { 'f': this.iridescenceFresnel, 'f90': 1.0, 'dotVH': dotNVi } );
 
 		}
 
@@ -588,13 +588,13 @@ class PhysicalLightingModel extends LightingModel {
 			const dotNLcc = transformedClearcoatNormalView.dot( lightDirection ).clamp();
 			const ccIrradiance = dotNLcc.mul( lightColor );
 
-			this.clearcoatSpecularDirect.addAssign( ccIrradiance.mul( BRDF_GGX( { lightDirection, f0: clearcoatF0, f90: clearcoatF90, roughness: clearcoatRoughness, normalView: transformedClearcoatNormalView } ) ) );
+			this.clearcoatSpecularDirect.addAssign( ccIrradiance.mul( BRDF_GGX( { lightDirection, 'f0': clearcoatF0, 'f90': clearcoatF90, 'roughness': clearcoatRoughness, 'normalView': transformedClearcoatNormalView } ) ) );
 
 		}
 
-		reflectedLight.directDiffuse.addAssign( irradiance.mul( BRDF_Lambert( { diffuseColor: diffuseColor.rgb } ) ) );
+		reflectedLight.directDiffuse.addAssign( irradiance.mul( BRDF_Lambert( { 'diffuseColor': diffuseColor.rgb } ) ) );
 
-		reflectedLight.directSpecular.addAssign( irradiance.mul( BRDF_GGX( { lightDirection, f0: specularColor, f90: 1, roughness, iridescence: this.iridescence, f: this.iridescenceFresnel, USE_IRIDESCENCE: this.iridescence, USE_ANISOTROPY: this.anisotropy } ) ) );
+		reflectedLight.directSpecular.addAssign( irradiance.mul( BRDF_GGX( { lightDirection, 'f0': specularColor, 'f90': 1, roughness, 'iridescence': this.iridescence, 'f': this.iridescenceFresnel, 'USE_IRIDESCENCE': this.iridescence, 'USE_ANISOTROPY': this.anisotropy } ) ) );
 
 	}
 
@@ -634,7 +634,7 @@ class PhysicalLightingModel extends LightingModel {
 
 		reflectedLight.directSpecular.addAssign( lightColor.mul( fresnel ).mul( LTC_Evaluate( { N, V, P, mInv, p0, p1, p2, p3 } ) ) );
 
-		reflectedLight.directDiffuse.addAssign( lightColor.mul( diffuseColor ).mul( LTC_Evaluate( { N, V, P, mInv: mat3( 1, 0, 0, 0, 1, 0, 0, 0, 1 ), p0, p1, p2, p3 } ) ) );
+		reflectedLight.directDiffuse.addAssign( lightColor.mul( diffuseColor ).mul( LTC_Evaluate( { N, V, P, 'mInv': mat3( 1, 0, 0, 0, 1, 0, 0, 0, 1 ), p0, p1, p2, p3 } ) ) );
 
 	}
 
@@ -680,9 +680,9 @@ class PhysicalLightingModel extends LightingModel {
 			this.sheenSpecularIndirect.addAssign( iblIrradiance.mul(
 				sheen,
 				IBLSheenBRDF( {
-					normal: transformedNormalView,
-					viewDir: positionViewDirection,
-					roughness: sheenRoughness
+					'normal': transformedNormalView,
+					'viewDir': positionViewDirection,
+					'roughness': sheenRoughness
 				} )
 			) );
 
@@ -693,10 +693,10 @@ class PhysicalLightingModel extends LightingModel {
 			const dotNVcc = transformedClearcoatNormalView.dot( positionViewDirection ).clamp();
 
 			const clearcoatEnv = EnvironmentBRDF( {
-				dotNV: dotNVcc,
-				specularColor: clearcoatF0,
-				specularF90: clearcoatF90,
-				roughness: clearcoatRoughness
+				'dotNV': dotNVcc,
+				'specularColor': clearcoatF0,
+				'specularF90': clearcoatF90,
+				'roughness': clearcoatRoughness
 			} );
 
 			this.clearcoatSpecularIndirect.addAssign( this.clearcoatRadiance.mul( clearcoatEnv ) );
@@ -771,9 +771,9 @@ class PhysicalLightingModel extends LightingModel {
 			const dotNVcc = transformedClearcoatNormalView.dot( positionViewDirection ).clamp();
 
 			const Fcc = F_Schlick( {
-				dotVH: dotNVcc,
-				f0: clearcoatF0,
-				f90: clearcoatF90
+				'dotVH': dotNVcc,
+				'f0': clearcoatF0,
+				'f90': clearcoatF90
 			} );
 
 			const clearcoatLight = outgoingLight.mul( clearcoat.mul( Fcc ).oneMinus() ).add( this.clearcoatSpecularDirect.add( this.clearcoatSpecularIndirect ).mul( clearcoat ) );

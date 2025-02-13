@@ -22,10 +22,10 @@ class FogExp2 {
 	toJSON( /* meta */ ) {
 
 		return {
-			type: 'FogExp2',
-			name: this.name,
-			color: this.color.getHex(),
-			density: this.density
+			'type': 'FogExp2',
+			'name': this.name,
+			'color': this.color.getHex(),
+			'density': this.density
 		};
 
 	}

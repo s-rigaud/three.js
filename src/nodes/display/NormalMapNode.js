@@ -118,10 +118,10 @@ class NormalMapNode extends TempNode {
 			} else {
 
 				outputNode = perturbNormal2Arb( {
-					eye_pos: positionView,
-					surf_norm: normalView,
-					mapN: normalMap,
-					uv: uv()
+					'eye_pos': positionView,
+					'surf_norm': normalView,
+					'mapN': normalMap,
+					'uv': uv()
 				} );
 
 			}

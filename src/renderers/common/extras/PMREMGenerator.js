@@ -434,12 +434,12 @@ class PMREMGenerator {
 		const height = 4 * this._cubeSize;
 
 		const params = {
-			magFilter: LinearFilter,
-			minFilter: LinearFilter,
-			generateMipmaps: false,
-			type: HalfFloatType,
-			format: RGBAFormat,
-			colorSpace: LinearSRGBColorSpace,
+			'magFilter': LinearFilter,
+			'minFilter': LinearFilter,
+			'generateMipmaps': false,
+			'type': HalfFloatType,
+			'format': RGBAFormat,
+			'colorSpace': LinearSRGBColorSpace,
 			//depthBuffer: false
 		};
 
@@ -456,7 +456,7 @@ class PMREMGenerator {
 			this._pingPongRenderTarget = _createRenderTarget( width, height, params );
 
 			const { _lodMax } = this;
-			( { sizeLods: this._sizeLods, lodPlanes: this._lodPlanes, sigmas: this._sigmas, lodMeshes: this._lodMeshes } = _createPlanes( _lodMax ) );
+			( { 'sizeLods': this._sizeLods, 'lodPlanes': this._lodPlanes, 'sigmas': this._sigmas, 'lodMeshes': this._lodMeshes } = _createPlanes( _lodMax ) );
 
 			this._blurMaterial = _getBlurShader( _lodMax, width, height );
 
@@ -496,10 +496,10 @@ class PMREMGenerator {
 		if ( backgroundBox === null ) {
 
 			const backgroundMaterial = new MeshBasicMaterial( {
-				name: 'PMREM.Background',
-				side: BackSide,
-				depthWrite: false,
-				depthTest: false
+				'name': 'PMREM.Background',
+				'side': BackSide,
+				'depthWrite': false,
+				'depthTest': false
 			} );
 
 			backgroundBox = new Mesh( new BoxGeometry(), backgroundMaterial );
@@ -893,7 +893,7 @@ function _getBlurShader( lodMax, width, height ) {
 		latitudinal,
 		weights,
 		poleAxis,
-		outputDirection: _outputDirection,
+		'outputDirection': _outputDirection,
 		dTheta,
 		samples,
 		envMap,
@@ -904,7 +904,7 @@ function _getBlurShader( lodMax, width, height ) {
 	};
 
 	const material = _getMaterial( 'blur' );
-	material.fragmentNode = blur( { ...materialUniforms, latitudinal: latitudinal.equal( 1 ) } );
+	material.fragmentNode = blur( { ...materialUniforms, 'latitudinal': latitudinal.equal( 1 ) } );
 
 	_uniformsMap.set( material, materialUniforms );
 

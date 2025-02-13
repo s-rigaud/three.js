@@ -18,8 +18,8 @@ class EdgesGeometry extends BufferGeometry {
 		this.type = 'EdgesGeometry';
 
 		this.parameters = {
-			geometry: geometry,
-			thresholdAngle: thresholdAngle
+			'geometry': geometry,
+			'thresholdAngle': thresholdAngle
 		};
 
 		if ( geometry !== null ) {
@@ -103,9 +103,9 @@ class EdgesGeometry extends BufferGeometry {
 						// if we've already got an edge here then skip adding a new one
 						edgeData[ hash ] = {
 
-							index0: indexArr[ j ],
-							index1: indexArr[ jNext ],
-							normal: _normal.clone(),
+							'index0': indexArr[ j ],
+							'index1': indexArr[ jNext ],
+							'normal': _normal.clone(),
 
 						};
 

@@ -15,8 +15,8 @@ class AnimationAction {
 			interpolants = new Array( nTracks );
 
 		const interpolantSettings = {
-			endingStart: ZeroCurvatureEnding,
-			endingEnd: ZeroCurvatureEnding
+			'endingStart': ZeroCurvatureEnding,
+			'endingEnd': ZeroCurvatureEnding
 		};
 
 		for ( let i = 0; i !== nTracks; ++ i ) {
@@ -529,8 +529,8 @@ class AnimationAction {
 				this.time = time;
 
 				this._mixer.dispatchEvent( {
-					type: 'finished', action: this,
-					direction: deltaTime < 0 ? - 1 : 1
+					'type': 'finished', 'action': this,
+					'direction': deltaTime < 0 ? - 1 : 1
 				} );
 
 			}
@@ -582,8 +582,8 @@ class AnimationAction {
 					this.time = time;
 
 					this._mixer.dispatchEvent( {
-						type: 'finished', action: this,
-						direction: deltaTime > 0 ? 1 : - 1
+						'type': 'finished', 'action': this,
+						'direction': deltaTime > 0 ? 1 : - 1
 					} );
 
 				} else {
@@ -608,7 +608,7 @@ class AnimationAction {
 					this.time = time;
 
 					this._mixer.dispatchEvent( {
-						type: 'loop', action: this, loopDelta: loopDelta
+						'type': 'loop', 'action': this, 'loopDelta': loopDelta
 					} );
 
 				}

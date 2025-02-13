@@ -11,12 +11,12 @@ class TorusKnotGeometry extends BufferGeometry {
 		this.type = 'TorusKnotGeometry';
 
 		this.parameters = {
-			radius: radius,
-			tube: tube,
-			tubularSegments: tubularSegments,
-			radialSegments: radialSegments,
-			p: p,
-			q: q
+			'radius': radius,
+			'tube': tube,
+			'tubularSegments': tubularSegments,
+			'radialSegments': radialSegments,
+			'p': p,
+			'q': q
 		};
 
 		tubularSegments = Math.floor( tubularSegments );

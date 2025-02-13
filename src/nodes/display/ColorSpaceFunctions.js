@@ -20,10 +20,10 @@ export const sRGBTransferEOTF = /*@__PURE__*/ Fn( ( [ color ] ) => {
 	return rgbResult;
 
 } ).setLayout( {
-	name: 'sRGBTransferEOTF',
-	type: 'vec3',
-	inputs: [
-		{ name: 'color', type: 'vec3' }
+	'name': 'sRGBTransferEOTF',
+	'type': 'vec3',
+	'inputs': [
+		{ 'name': 'color', 'type': 'vec3' }
 	]
 } );
 
@@ -46,9 +46,9 @@ export const sRGBTransferOETF = /*@__PURE__*/ Fn( ( [ color ] ) => {
 	return rgbResult;
 
 } ).setLayout( {
-	name: 'sRGBTransferOETF',
-	type: 'vec3',
-	inputs: [
-		{ name: 'color', type: 'vec3' }
+	'name': 'sRGBTransferOETF',
+	'type': 'vec3',
+	'inputs': [
+		{ 'name': 'color', 'type': 'vec3' }
 	]
 } );

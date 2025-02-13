@@ -8,9 +8,9 @@ import { Matrix3 } from '../../math/Matrix3.js';
 
 const ShaderLib = {
 
-	basic: {
+	'basic': {
 
-		uniforms: /*@__PURE__*/ mergeUniforms( [
+		'uniforms': /*@__PURE__*/ mergeUniforms( [
 			UniformsLib.common,
 			UniformsLib.specularmap,
 			UniformsLib.envmap,
@@ -19,14 +19,14 @@ const ShaderLib = {
 			UniformsLib.fog
 		] ),
 
-		vertexShader: ShaderChunk.meshbasic_vert,
-		fragmentShader: ShaderChunk.meshbasic_frag
+		'vertexShader': ShaderChunk.meshbasic_vert,
+		'fragmentShader': ShaderChunk.meshbasic_frag
 
 	},
 
-	lambert: {
+	'lambert': {
 
-		uniforms: /*@__PURE__*/ mergeUniforms( [
+		'uniforms': /*@__PURE__*/ mergeUniforms( [
 			UniformsLib.common,
 			UniformsLib.specularmap,
 			UniformsLib.envmap,
@@ -39,18 +39,18 @@ const ShaderLib = {
 			UniformsLib.fog,
 			UniformsLib.lights,
 			{
-				emissive: { value: /*@__PURE__*/ new Color( 0x000000 ) }
+				'emissive': { 'value': /*@__PURE__*/ new Color( 0x000000 ) }
 			}
 		] ),
 
-		vertexShader: ShaderChunk.meshlambert_vert,
-		fragmentShader: ShaderChunk.meshlambert_frag
+		'vertexShader': ShaderChunk.meshlambert_vert,
+		'fragmentShader': ShaderChunk.meshlambert_frag
 
 	},
 
-	phong: {
+	'phong': {
 
-		uniforms: /*@__PURE__*/ mergeUniforms( [
+		'uniforms': /*@__PURE__*/ mergeUniforms( [
 			UniformsLib.common,
 			UniformsLib.specularmap,
 			UniformsLib.envmap,
@@ -63,20 +63,20 @@ const ShaderLib = {
 			UniformsLib.fog,
 			UniformsLib.lights,
 			{
-				emissive: { value: /*@__PURE__*/ new Color( 0x000000 ) },
-				specular: { value: /*@__PURE__*/ new Color( 0x111111 ) },
-				shininess: { value: 30 }
+				'emissive': { 'value': /*@__PURE__*/ new Color( 0x000000 ) },
+				'specular': { 'value': /*@__PURE__*/ new Color( 0x111111 ) },
+				'shininess': { 'value': 30 }
 			}
 		] ),
 
-		vertexShader: ShaderChunk.meshphong_vert,
-		fragmentShader: ShaderChunk.meshphong_frag
+		'vertexShader': ShaderChunk.meshphong_vert,
+		'fragmentShader': ShaderChunk.meshphong_frag
 
 	},
 
-	standard: {
+	'standard': {
 
-		uniforms: /*@__PURE__*/ mergeUniforms( [
+		'uniforms': /*@__PURE__*/ mergeUniforms( [
 			UniformsLib.common,
 			UniformsLib.envmap,
 			UniformsLib.aomap,
@@ -90,21 +90,21 @@ const ShaderLib = {
 			UniformsLib.fog,
 			UniformsLib.lights,
 			{
-				emissive: { value: /*@__PURE__*/ new Color( 0x000000 ) },
-				roughness: { value: 1.0 },
-				metalness: { value: 0.0 },
-				envMapIntensity: { value: 1 }
+				'emissive': { 'value': /*@__PURE__*/ new Color( 0x000000 ) },
+				'roughness': { 'value': 1.0 },
+				'metalness': { 'value': 0.0 },
+				'envMapIntensity': { 'value': 1 }
 			}
 		] ),
 
-		vertexShader: ShaderChunk.meshphysical_vert,
-		fragmentShader: ShaderChunk.meshphysical_frag
+		'vertexShader': ShaderChunk.meshphysical_vert,
+		'fragmentShader': ShaderChunk.meshphysical_frag
 
 	},
 
-	toon: {
+	'toon': {
 
-		uniforms: /*@__PURE__*/ mergeUniforms( [
+		'uniforms': /*@__PURE__*/ mergeUniforms( [
 			UniformsLib.common,
 			UniformsLib.aomap,
 			UniformsLib.lightmap,
@@ -116,185 +116,185 @@ const ShaderLib = {
 			UniformsLib.fog,
 			UniformsLib.lights,
 			{
-				emissive: { value: /*@__PURE__*/ new Color( 0x000000 ) }
+				'emissive': { 'value': /*@__PURE__*/ new Color( 0x000000 ) }
 			}
 		] ),
 
-		vertexShader: ShaderChunk.meshtoon_vert,
-		fragmentShader: ShaderChunk.meshtoon_frag
+		'vertexShader': ShaderChunk.meshtoon_vert,
+		'fragmentShader': ShaderChunk.meshtoon_frag
 
 	},
 
-	matcap: {
+	'matcap': {
 
-		uniforms: /*@__PURE__*/ mergeUniforms( [
+		'uniforms': /*@__PURE__*/ mergeUniforms( [
 			UniformsLib.common,
 			UniformsLib.bumpmap,
 			UniformsLib.normalmap,
 			UniformsLib.displacementmap,
 			UniformsLib.fog,
 			{
-				matcap: { value: null }
+				'matcap': { 'value': null }
 			}
 		] ),
 
-		vertexShader: ShaderChunk.meshmatcap_vert,
-		fragmentShader: ShaderChunk.meshmatcap_frag
+		'vertexShader': ShaderChunk.meshmatcap_vert,
+		'fragmentShader': ShaderChunk.meshmatcap_frag
 
 	},
 
-	points: {
+	'points': {
 
-		uniforms: /*@__PURE__*/ mergeUniforms( [
+		'uniforms': /*@__PURE__*/ mergeUniforms( [
 			UniformsLib.points,
 			UniformsLib.fog
 		] ),
 
-		vertexShader: ShaderChunk.points_vert,
-		fragmentShader: ShaderChunk.points_frag
+		'vertexShader': ShaderChunk.points_vert,
+		'fragmentShader': ShaderChunk.points_frag
 
 	},
 
-	dashed: {
+	'dashed': {
 
-		uniforms: /*@__PURE__*/ mergeUniforms( [
+		'uniforms': /*@__PURE__*/ mergeUniforms( [
 			UniformsLib.common,
 			UniformsLib.fog,
 			{
-				scale: { value: 1 },
-				dashSize: { value: 1 },
-				totalSize: { value: 2 }
+				'scale': { 'value': 1 },
+				'dashSize': { 'value': 1 },
+				'totalSize': { 'value': 2 }
 			}
 		] ),
 
-		vertexShader: ShaderChunk.linedashed_vert,
-		fragmentShader: ShaderChunk.linedashed_frag
+		'vertexShader': ShaderChunk.linedashed_vert,
+		'fragmentShader': ShaderChunk.linedashed_frag
 
 	},
 
-	depth: {
+	'depth': {
 
-		uniforms: /*@__PURE__*/ mergeUniforms( [
+		'uniforms': /*@__PURE__*/ mergeUniforms( [
 			UniformsLib.common,
 			UniformsLib.displacementmap
 		] ),
 
-		vertexShader: ShaderChunk.depth_vert,
-		fragmentShader: ShaderChunk.depth_frag
+		'vertexShader': ShaderChunk.depth_vert,
+		'fragmentShader': ShaderChunk.depth_frag
 
 	},
 
-	normal: {
+	'normal': {
 
-		uniforms: /*@__PURE__*/ mergeUniforms( [
+		'uniforms': /*@__PURE__*/ mergeUniforms( [
 			UniformsLib.common,
 			UniformsLib.bumpmap,
 			UniformsLib.normalmap,
 			UniformsLib.displacementmap,
 			{
-				opacity: { value: 1.0 }
+				'opacity': { 'value': 1.0 }
 			}
 		] ),
 
-		vertexShader: ShaderChunk.meshnormal_vert,
-		fragmentShader: ShaderChunk.meshnormal_frag
+		'vertexShader': ShaderChunk.meshnormal_vert,
+		'fragmentShader': ShaderChunk.meshnormal_frag
 
 	},
 
-	sprite: {
+	'sprite': {
 
-		uniforms: /*@__PURE__*/ mergeUniforms( [
+		'uniforms': /*@__PURE__*/ mergeUniforms( [
 			UniformsLib.sprite,
 			UniformsLib.fog
 		] ),
 
-		vertexShader: ShaderChunk.sprite_vert,
-		fragmentShader: ShaderChunk.sprite_frag
+		'vertexShader': ShaderChunk.sprite_vert,
+		'fragmentShader': ShaderChunk.sprite_frag
 
 	},
 
-	background: {
+	'background': {
 
-		uniforms: {
-			uvTransform: { value: /*@__PURE__*/ new Matrix3() },
-			t2D: { value: null },
-			backgroundIntensity: { value: 1 }
+		'uniforms': {
+			'uvTransform': { 'value': /*@__PURE__*/ new Matrix3() },
+			't2D': { 'value': null },
+			'backgroundIntensity': { 'value': 1 }
 		},
 
-		vertexShader: ShaderChunk.background_vert,
-		fragmentShader: ShaderChunk.background_frag
+		'vertexShader': ShaderChunk.background_vert,
+		'fragmentShader': ShaderChunk.background_frag
 
 	},
 
-	backgroundCube: {
+	'backgroundCube': {
 
-		uniforms: {
-			envMap: { value: null },
-			flipEnvMap: { value: - 1 },
-			backgroundBlurriness: { value: 0 },
-			backgroundIntensity: { value: 1 },
-			backgroundRotation: { value: /*@__PURE__*/ new Matrix3() }
+		'uniforms': {
+			'envMap': { 'value': null },
+			'flipEnvMap': { 'value': - 1 },
+			'backgroundBlurriness': { 'value': 0 },
+			'backgroundIntensity': { 'value': 1 },
+			'backgroundRotation': { 'value': /*@__PURE__*/ new Matrix3() }
 		},
 
-		vertexShader: ShaderChunk.backgroundCube_vert,
-		fragmentShader: ShaderChunk.backgroundCube_frag
+		'vertexShader': ShaderChunk.backgroundCube_vert,
+		'fragmentShader': ShaderChunk.backgroundCube_frag
 
 	},
 
-	cube: {
+	'cube': {
 
-		uniforms: {
-			tCube: { value: null },
-			tFlip: { value: - 1 },
-			opacity: { value: 1.0 }
+		'uniforms': {
+			'tCube': { 'value': null },
+			'tFlip': { 'value': - 1 },
+			'opacity': { 'value': 1.0 }
 		},
 
-		vertexShader: ShaderChunk.cube_vert,
-		fragmentShader: ShaderChunk.cube_frag
+		'vertexShader': ShaderChunk.cube_vert,
+		'fragmentShader': ShaderChunk.cube_frag
 
 	},
 
-	equirect: {
+	'equirect': {
 
-		uniforms: {
-			tEquirect: { value: null },
+		'uniforms': {
+			'tEquirect': { 'value': null },
 		},
 
-		vertexShader: ShaderChunk.equirect_vert,
-		fragmentShader: ShaderChunk.equirect_frag
+		'vertexShader': ShaderChunk.equirect_vert,
+		'fragmentShader': ShaderChunk.equirect_frag
 
 	},
 
-	distanceRGBA: {
+	'distanceRGBA': {
 
-		uniforms: /*@__PURE__*/ mergeUniforms( [
+		'uniforms': /*@__PURE__*/ mergeUniforms( [
 			UniformsLib.common,
 			UniformsLib.displacementmap,
 			{
-				referencePosition: { value: /*@__PURE__*/ new Vector3() },
-				nearDistance: { value: 1 },
-				farDistance: { value: 1000 }
+				'referencePosition': { 'value': /*@__PURE__*/ new Vector3() },
+				'nearDistance': { 'value': 1 },
+				'farDistance': { 'value': 1000 }
 			}
 		] ),
 
-		vertexShader: ShaderChunk.distanceRGBA_vert,
-		fragmentShader: ShaderChunk.distanceRGBA_frag
+		'vertexShader': ShaderChunk.distanceRGBA_vert,
+		'fragmentShader': ShaderChunk.distanceRGBA_frag
 
 	},
 
-	shadow: {
+	'shadow': {
 
-		uniforms: /*@__PURE__*/ mergeUniforms( [
+		'uniforms': /*@__PURE__*/ mergeUniforms( [
 			UniformsLib.lights,
 			UniformsLib.fog,
 			{
-				color: { value: /*@__PURE__*/ new Color( 0x00000 ) },
-				opacity: { value: 1.0 }
+				'color': { 'value': /*@__PURE__*/ new Color( 0x00000 ) },
+				'opacity': { 'value': 1.0 }
 			},
 		] ),
 
-		vertexShader: ShaderChunk.shadow_vert,
-		fragmentShader: ShaderChunk.shadow_frag
+		'vertexShader': ShaderChunk.shadow_vert,
+		'fragmentShader': ShaderChunk.shadow_frag
 
 	}
 
@@ -302,58 +302,58 @@ const ShaderLib = {
 
 ShaderLib.physical = {
 
-	uniforms: /*@__PURE__*/ mergeUniforms( [
+	'uniforms': /*@__PURE__*/ mergeUniforms( [
 		ShaderLib.standard.uniforms,
 		{
-			clearcoat: { value: 0 },
-			clearcoatMap: { value: null },
-			clearcoatMapTransform: { value: /*@__PURE__*/ new Matrix3() },
-			clearcoatNormalMap: { value: null },
-			clearcoatNormalMapTransform: { value: /*@__PURE__*/ new Matrix3() },
-			clearcoatNormalScale: { value: /*@__PURE__*/ new Vector2( 1, 1 ) },
-			clearcoatRoughness: { value: 0 },
-			clearcoatRoughnessMap: { value: null },
-			clearcoatRoughnessMapTransform: { value: /*@__PURE__*/ new Matrix3() },
-			dispersion: { value: 0 },
-			iridescence: { value: 0 },
-			iridescenceMap: { value: null },
-			iridescenceMapTransform: { value: /*@__PURE__*/ new Matrix3() },
-			iridescenceIOR: { value: 1.3 },
-			iridescenceThicknessMinimum: { value: 100 },
-			iridescenceThicknessMaximum: { value: 400 },
-			iridescenceThicknessMap: { value: null },
-			iridescenceThicknessMapTransform: { value: /*@__PURE__*/ new Matrix3() },
-			sheen: { value: 0 },
-			sheenColor: { value: /*@__PURE__*/ new Color( 0x000000 ) },
-			sheenColorMap: { value: null },
-			sheenColorMapTransform: { value: /*@__PURE__*/ new Matrix3() },
-			sheenRoughness: { value: 1 },
-			sheenRoughnessMap: { value: null },
-			sheenRoughnessMapTransform: { value: /*@__PURE__*/ new Matrix3() },
-			transmission: { value: 0 },
-			transmissionMap: { value: null },
-			transmissionMapTransform: { value: /*@__PURE__*/ new Matrix3() },
-			transmissionSamplerSize: { value: /*@__PURE__*/ new Vector2() },
-			transmissionSamplerMap: { value: null },
-			thickness: { value: 0 },
-			thicknessMap: { value: null },
-			thicknessMapTransform: { value: /*@__PURE__*/ new Matrix3() },
-			attenuationDistance: { value: 0 },
-			attenuationColor: { value: /*@__PURE__*/ new Color( 0x000000 ) },
-			specularColor: { value: /*@__PURE__*/ new Color( 1, 1, 1 ) },
-			specularColorMap: { value: null },
-			specularColorMapTransform: { value: /*@__PURE__*/ new Matrix3() },
-			specularIntensity: { value: 1 },
-			specularIntensityMap: { value: null },
-			specularIntensityMapTransform: { value: /*@__PURE__*/ new Matrix3() },
-			anisotropyVector: { value: /*@__PURE__*/ new Vector2() },
-			anisotropyMap: { value: null },
-			anisotropyMapTransform: { value: /*@__PURE__*/ new Matrix3() },
+			'clearcoat': { 'value': 0 },
+			'clearcoatMap': { 'value': null },
+			'clearcoatMapTransform': { 'value': /*@__PURE__*/ new Matrix3() },
+			'clearcoatNormalMap': { 'value': null },
+			'clearcoatNormalMapTransform': { 'value': /*@__PURE__*/ new Matrix3() },
+			'clearcoatNormalScale': { 'value': /*@__PURE__*/ new Vector2( 1, 1 ) },
+			'clearcoatRoughness': { 'value': 0 },
+			'clearcoatRoughnessMap': { 'value': null },
+			'clearcoatRoughnessMapTransform': { 'value': /*@__PURE__*/ new Matrix3() },
+			'dispersion': { 'value': 0 },
+			'iridescence': { 'value': 0 },
+			'iridescenceMap': { 'value': null },
+			'iridescenceMapTransform': { 'value': /*@__PURE__*/ new Matrix3() },
+			'iridescenceIOR': { 'value': 1.3 },
+			'iridescenceThicknessMinimum': { 'value': 100 },
+			'iridescenceThicknessMaximum': { 'value': 400 },
+			'iridescenceThicknessMap': { 'value': null },
+			'iridescenceThicknessMapTransform': { 'value': /*@__PURE__*/ new Matrix3() },
+			'sheen': { 'value': 0 },
+			'sheenColor': { 'value': /*@__PURE__*/ new Color( 0x000000 ) },
+			'sheenColorMap': { 'value': null },
+			'sheenColorMapTransform': { 'value': /*@__PURE__*/ new Matrix3() },
+			'sheenRoughness': { 'value': 1 },
+			'sheenRoughnessMap': { 'value': null },
+			'sheenRoughnessMapTransform': { 'value': /*@__PURE__*/ new Matrix3() },
+			'transmission': { 'value': 0 },
+			'transmissionMap': { 'value': null },
+			'transmissionMapTransform': { 'value': /*@__PURE__*/ new Matrix3() },
+			'transmissionSamplerSize': { 'value': /*@__PURE__*/ new Vector2() },
+			'transmissionSamplerMap': { 'value': null },
+			'thickness': { 'value': 0 },
+			'thicknessMap': { 'value': null },
+			'thicknessMapTransform': { 'value': /*@__PURE__*/ new Matrix3() },
+			'attenuationDistance': { 'value': 0 },
+			'attenuationColor': { 'value': /*@__PURE__*/ new Color( 0x000000 ) },
+			'specularColor': { 'value': /*@__PURE__*/ new Color( 1, 1, 1 ) },
+			'specularColorMap': { 'value': null },
+			'specularColorMapTransform': { 'value': /*@__PURE__*/ new Matrix3() },
+			'specularIntensity': { 'value': 1 },
+			'specularIntensityMap': { 'value': null },
+			'specularIntensityMapTransform': { 'value': /*@__PURE__*/ new Matrix3() },
+			'anisotropyVector': { 'value': /*@__PURE__*/ new Vector2() },
+			'anisotropyMap': { 'value': null },
+			'anisotropyMapTransform': { 'value': /*@__PURE__*/ new Matrix3() },
 		}
 	] ),
 
-	vertexShader: ShaderChunk.meshphysical_vert,
-	fragmentShader: ShaderChunk.meshphysical_frag
+	'vertexShader': ShaderChunk.meshphysical_vert,
+	'fragmentShader': ShaderChunk.meshphysical_frag
 
 };
 

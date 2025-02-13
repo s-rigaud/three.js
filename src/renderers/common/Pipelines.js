@@ -61,9 +61,9 @@ class Pipelines extends DataMap {
 		 * @type {Object<string,Map>}
 		 */
 		this.programs = {
-			vertex: new Map(),
-			fragment: new Map(),
-			compute: new Map()
+			'vertex': new Map(),
+			'fragment': new Map(),
+			'compute': new Map()
 		};
 
 	}
@@ -285,9 +285,9 @@ class Pipelines extends DataMap {
 
 		this.caches = new Map();
 		this.programs = {
-			vertex: new Map(),
-			fragment: new Map(),
-			compute: new Map()
+			'vertex': new Map(),
+			'fragment': new Map(),
+			'compute': new Map()
 		};
 
 	}

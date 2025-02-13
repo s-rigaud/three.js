@@ -311,10 +311,10 @@ class InterleavedBufferAttribute {
 			// de-interleave data and save it as an ordinary buffer attribute for now
 
 			return {
-				itemSize: this.itemSize,
-				type: this.array.constructor.name,
-				array: array,
-				normalized: this.normalized
+				'itemSize': this.itemSize,
+				'type': this.array.constructor.name,
+				'array': array,
+				'normalized': this.normalized
 			};
 
 		} else {
@@ -334,11 +334,11 @@ class InterleavedBufferAttribute {
 			}
 
 			return {
-				isInterleavedBufferAttribute: true,
-				itemSize: this.itemSize,
-				data: this.data.uuid,
-				offset: this.offset,
-				normalized: this.normalized
+				'isInterleavedBufferAttribute': true,
+				'itemSize': this.itemSize,
+				'data': this.data.uuid,
+				'offset': this.offset,
+				'normalized': this.normalized
 			};
 
 		}

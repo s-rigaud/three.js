@@ -21,7 +21,7 @@ function WebGLShadowMap( renderer, objects, capabilities ) {
 
 		_viewport = new Vector4(),
 
-		_depthMaterial = new MeshDepthMaterial( { depthPacking: RGBADepthPacking } ),
+		_depthMaterial = new MeshDepthMaterial( { 'depthPacking': RGBADepthPacking } ),
 		_distanceMaterial = new MeshDistanceMaterial(),
 
 		_materialCache = {},
@@ -31,17 +31,17 @@ function WebGLShadowMap( renderer, objects, capabilities ) {
 	const shadowSide = { [ FrontSide ]: BackSide, [ BackSide ]: FrontSide, [ DoubleSide ]: DoubleSide };
 
 	const shadowMaterialVertical = new ShaderMaterial( {
-		defines: {
-			VSM_SAMPLES: 8
+		'defines': {
+			'VSM_SAMPLES': 8
 		},
-		uniforms: {
-			shadow_pass: { value: null },
-			resolution: { value: new Vector2() },
-			radius: { value: 4.0 }
+		'uniforms': {
+			'shadow_pass': { 'value': null },
+			'resolution': { 'value': new Vector2() },
+			'radius': { 'value': 4.0 }
 		},
 
-		vertexShader: vsm.vertex,
-		fragmentShader: vsm.fragment
+		'vertexShader': vsm.vertex,
+		'fragmentShader': vsm.fragment
 
 	} );
 
@@ -139,7 +139,7 @@ function WebGLShadowMap( renderer, objects, capabilities ) {
 
 			if ( shadow.map === null || toVSM === true || fromVSM === true ) {
 
-				const pars = ( this.type !== VSMShadowMap ) ? { minFilter: NearestFilter, magFilter: NearestFilter } : {};
+				const pars = ( this.type !== VSMShadowMap ) ? { 'minFilter': NearestFilter, 'magFilter': NearestFilter } : {};
 
 				if ( shadow.map !== null ) {
 

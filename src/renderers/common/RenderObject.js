@@ -501,10 +501,10 @@ class RenderObject {
 		const { object, material, geometry, group, drawRange } = this;
 
 		const drawParams = this.drawParams || ( this.drawParams = {
-			vertexCount: 0,
-			firstVertex: 0,
-			instanceCount: 0,
-			firstInstance: 0
+			'vertexCount': 0,
+			'firstVertex': 0,
+			'instanceCount': 0,
+			'firstInstance': 0
 		} );
 
 		const index = this.getIndex();

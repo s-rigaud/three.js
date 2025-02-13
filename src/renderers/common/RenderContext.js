@@ -47,7 +47,7 @@ class RenderContext {
 		 * @type {Object}
 		 * @default true
 		 */
-		this.clearColorValue = { r: 0, g: 0, b: 0, a: 1 };
+		this.clearColorValue = { 'r': 0, 'g': 0, 'b': 0, 'a': 1 };
 
 		/**
 		 * Whether the current active framebuffer has a depth attachment.

@@ -20,8 +20,8 @@ class OctahedronGeometry extends PolyhedronGeometry {
 		this.type = 'OctahedronGeometry';
 
 		this.parameters = {
-			radius: radius,
-			detail: detail
+			'radius': radius,
+			'detail': detail
 		};
 
 	}

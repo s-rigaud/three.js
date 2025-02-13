@@ -73,12 +73,12 @@ class WebXRDepthSensing {
 
 				const viewport = cameraXR.cameras[ 0 ].viewport;
 				const material = new ShaderMaterial( {
-					vertexShader: _occlusion_vertex,
-					fragmentShader: _occlusion_fragment,
-					uniforms: {
-						depthColor: { value: this.texture },
-						depthWidth: { value: viewport.z },
-						depthHeight: { value: viewport.w }
+					'vertexShader': _occlusion_vertex,
+					'fragmentShader': _occlusion_fragment,
+					'uniforms': {
+						'depthColor': { 'value': this.texture },
+						'depthWidth': { 'value': viewport.z },
+						'depthHeight': { 'value': viewport.w }
 					}
 				} );
 

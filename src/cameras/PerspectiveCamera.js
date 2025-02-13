@@ -192,13 +192,13 @@ class PerspectiveCamera extends Camera {
 		if ( this.view === null ) {
 
 			this.view = {
-				enabled: true,
-				fullWidth: 1,
-				fullHeight: 1,
-				offsetX: 0,
-				offsetY: 0,
-				width: 1,
-				height: 1
+				'enabled': true,
+				'fullWidth': 1,
+				'fullHeight': 1,
+				'offsetX': 0,
+				'offsetY': 0,
+				'width': 1,
+				'height': 1
 			};
 
 		}

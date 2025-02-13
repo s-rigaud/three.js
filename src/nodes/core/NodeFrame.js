@@ -124,8 +124,8 @@ class NodeFrame {
 		if ( maps === undefined ) {
 
 			maps = {
-				renderMap: new WeakMap(),
-				frameMap: new WeakMap()
+				'renderMap': new WeakMap(),
+				'frameMap': new WeakMap()
 			};
 
 			referenceMap.set( nodeRef, maps );

@@ -17,7 +17,7 @@ class PlaneHelper extends Line {
 		geometry.setAttribute( 'position', new Float32BufferAttribute( positions, 3 ) );
 		geometry.computeBoundingSphere();
 
-		super( geometry, new LineBasicMaterial( { color: color, toneMapped: false } ) );
+		super( geometry, new LineBasicMaterial( { 'color': color, 'toneMapped': false } ) );
 
 		this.type = 'PlaneHelper';
 
@@ -31,7 +31,7 @@ class PlaneHelper extends Line {
 		geometry2.setAttribute( 'position', new Float32BufferAttribute( positions2, 3 ) );
 		geometry2.computeBoundingSphere();
 
-		this.add( new Mesh( geometry2, new MeshBasicMaterial( { color: color, opacity: 0.2, transparent: true, depthWrite: false, toneMapped: false } ) ) );
+		this.add( new Mesh( geometry2, new MeshBasicMaterial( { 'color': color, 'opacity': 0.2, 'transparent': true, 'depthWrite': false, 'toneMapped': false } ) ) );
 
 	}
 

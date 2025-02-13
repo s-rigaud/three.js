@@ -206,7 +206,7 @@ function WebGLUtils( gl, extensions ) {
 
 	}
 
-	return { convert: convert };
+	return { 'convert': convert };
 
 }
 

@@ -48,8 +48,8 @@ class DodecahedronGeometry extends PolyhedronGeometry {
 		this.type = 'DodecahedronGeometry';
 
 		this.parameters = {
-			radius: radius,
-			detail: detail
+			'radius': radius,
+			'detail': detail
 		};
 
 	}

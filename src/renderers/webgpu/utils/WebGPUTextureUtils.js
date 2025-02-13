@@ -116,13 +116,13 @@ class WebGPUTextureUtils {
 		const textureGPU = backend.get( texture );
 
 		const samplerDescriptorGPU = {
-			addressModeU: this._convertAddressMode( texture.wrapS ),
-			addressModeV: this._convertAddressMode( texture.wrapT ),
-			addressModeW: this._convertAddressMode( texture.wrapR ),
-			magFilter: this._convertFilterMode( texture.magFilter ),
-			minFilter: this._convertFilterMode( texture.minFilter ),
-			mipmapFilter: this._convertFilterMode( texture.minFilter ),
-			maxAnisotropy: 1
+			'addressModeU': this._convertAddressMode( texture.wrapS ),
+			'addressModeV': this._convertAddressMode( texture.wrapT ),
+			'addressModeW': this._convertAddressMode( texture.wrapR ),
+			'magFilter': this._convertFilterMode( texture.magFilter ),
+			'minFilter': this._convertFilterMode( texture.minFilter ),
+			'mipmapFilter': this._convertFilterMode( texture.minFilter ),
+			'maxAnisotropy': 1
 		};
 
 		// anisotropy can only be used when all filter modes are set to linear.
@@ -233,17 +233,17 @@ class WebGPUTextureUtils {
 		}
 
 		const textureDescriptorGPU = {
-			label: texture.name,
-			size: {
-				width: width,
-				height: height,
-				depthOrArrayLayers: depth,
+			'label': texture.name,
+			'size': {
+				'width': width,
+				'height': height,
+				'depthOrArrayLayers': depth,
 			},
-			mipLevelCount: levels,
-			sampleCount: primarySamples,
-			dimension: dimension,
-			format: format,
-			usage: usage
+			'mipLevelCount': levels,
+			'sampleCount': primarySamples,
+			'dimension': dimension,
+			'format': format,
+			'usage': usage
 		};
 
 		// texture creation
@@ -368,15 +368,15 @@ class WebGPUTextureUtils {
 		const { width, height } = backend.getDrawingBufferSize();
 
 		this.colorBuffer = backend.device.createTexture( {
-			label: 'colorBuffer',
-			size: {
-				width: width,
-				height: height,
-				depthOrArrayLayers: 1
+			'label': 'colorBuffer',
+			'size': {
+				'width': width,
+				'height': height,
+				'depthOrArrayLayers': 1
 			},
-			sampleCount: backend.utils.getSampleCount( backend.renderer.samples ),
-			format: backend.utils.getPreferredCanvasFormat(),
-			usage: GPUTextureUsage.RENDER_ATTACHMENT | GPUTextureUsage.COPY_SRC
+			'sampleCount': backend.utils.getSampleCount( backend.renderer.samples ),
+			'format': backend.utils.getPreferredCanvasFormat(),
+			'usage': GPUTextureUsage.RENDER_ATTACHMENT | GPUTextureUsage.COPY_SRC
 		} );
 
 		return this.colorBuffer;
@@ -520,8 +520,8 @@ class WebGPUTextureUtils {
 
 		const readBuffer = device.createBuffer(
 			{
-				size: width * height * bytesPerTexel,
-				usage: GPUBufferUsage.COPY_DST | GPUBufferUsage.MAP_READ
+				'size': width * height * bytesPerTexel,
+				'usage': GPUBufferUsage.COPY_DST | GPUBufferUsage.MAP_READ
 			}
 		);
 
@@ -529,16 +529,16 @@ class WebGPUTextureUtils {
 
 		encoder.copyTextureToBuffer(
 			{
-				texture: textureGPU,
-				origin: { x, y, z: faceIndex },
+				'texture': textureGPU,
+				'origin': { x, y, 'z': faceIndex },
 			},
 			{
-				buffer: readBuffer,
-				bytesPerRow: bytesPerRow
+				'buffer': readBuffer,
+				'bytesPerRow': bytesPerRow
 			},
 			{
-				width: width,
-				height: height
+				'width': width,
+				'height': height
 			}
 
 		);
@@ -587,7 +587,7 @@ class WebGPUTextureUtils {
 			texture.minFilter = NearestFilter;
 			texture.magFilter = NearestFilter;
 
-			this.createTexture( texture, { width: 1, height: 1, format } );
+			this.createTexture( texture, { 'width': 1, 'height': 1, format } );
 
 			this.defaultTexture[ format ] = defaultTexture = texture;
 
@@ -614,7 +614,7 @@ class WebGPUTextureUtils {
 			texture.minFilter = NearestFilter;
 			texture.magFilter = NearestFilter;
 
-			this.createTexture( texture, { width: 1, height: 1, depth: 6 } );
+			this.createTexture( texture, { 'width': 1, 'height': 1, 'depth': 6 } );
 
 			this.defaultCubeTexture[ format ] = defaultCubeTexture = texture;
 
@@ -637,10 +637,10 @@ class WebGPUTextureUtils {
 		if ( defaultVideoFrame === null ) {
 
 			const init = {
-				timestamp: 0,
-				codedWidth: 1,
-				codedHeight: 1,
-				format: 'RGBA',
+				'timestamp': 0,
+				'codedWidth': 1,
+				'codedHeight': 1,
+				'format': 'RGBA',
 			};
 
 			this.defaultVideoFrame = defaultVideoFrame = new VideoFrame( new Uint8Array( [ 0, 0, 0, 0xff ] ), init );
@@ -698,16 +698,16 @@ class WebGPUTextureUtils {
 
 		device.queue.copyExternalImageToTexture(
 			{
-				source: image,
-				flipY: flipY
+				'source': image,
+				'flipY': flipY
 			}, {
-				texture: textureGPU,
-				mipLevel: 0,
-				origin: { x: 0, y: 0, z: originDepth }
+				'texture': textureGPU,
+				'mipLevel': 0,
+				'origin': { 'x': 0, 'y': 0, 'z': originDepth }
 			}, {
-				width: image.width,
-				height: image.height,
-				depthOrArrayLayers: 1
+				'width': image.width,
+				'height': image.height,
+				'depthOrArrayLayers': 1
 			}
 		);
 
@@ -786,19 +786,19 @@ class WebGPUTextureUtils {
 
 		device.queue.writeTexture(
 			{
-				texture: textureGPU,
-				mipLevel: 0,
-				origin: { x: 0, y: 0, z: originDepth }
+				'texture': textureGPU,
+				'mipLevel': 0,
+				'origin': { 'x': 0, 'y': 0, 'z': originDepth }
 			},
 			data,
 			{
-				offset: image.width * image.height * bytesPerTexel * depth,
+				'offset': image.width * image.height * bytesPerTexel * depth,
 				bytesPerRow
 			},
 			{
-				width: image.width,
-				height: image.height,
-				depthOrArrayLayers: 1
+				'width': image.width,
+				'height': image.height,
+				'depthOrArrayLayers': 1
 			} );
 
 		if ( flipY === true ) {
@@ -841,20 +841,20 @@ class WebGPUTextureUtils {
 
 				device.queue.writeTexture(
 					{
-						texture: textureGPU,
-						mipLevel: i,
-						origin: { x: 0, y: 0, z: j }
+						'texture': textureGPU,
+						'mipLevel': i,
+						'origin': { 'x': 0, 'y': 0, 'z': j }
 					},
 					mipmap.data,
 					{
-						offset: j * bytesPerImage,
+						'offset': j * bytesPerImage,
 						bytesPerRow,
-						rowsPerImage: Math.ceil( height / blockData.height )
+						'rowsPerImage': Math.ceil( height / blockData.height )
 					},
 					{
-						width: Math.ceil( width / blockData.width ) * blockData.width,
-						height: Math.ceil( height / blockData.height ) * blockData.height,
-						depthOrArrayLayers: 1
+						'width': Math.ceil( width / blockData.width ) * blockData.width,
+						'height': Math.ceil( height / blockData.height ) * blockData.height,
+						'depthOrArrayLayers': 1
 					}
 				);
 
@@ -874,36 +874,36 @@ class WebGPUTextureUtils {
 	 */
 	_getBlockData( format ) {
 
-		if ( format === GPUTextureFormat.BC1RGBAUnorm || format === GPUTextureFormat.BC1RGBAUnormSRGB ) return { byteLength: 8, width: 4, height: 4 }; // DXT1
-		if ( format === GPUTextureFormat.BC2RGBAUnorm || format === GPUTextureFormat.BC2RGBAUnormSRGB ) return { byteLength: 16, width: 4, height: 4 }; // DXT3
-		if ( format === GPUTextureFormat.BC3RGBAUnorm || format === GPUTextureFormat.BC3RGBAUnormSRGB ) return { byteLength: 16, width: 4, height: 4 }; // DXT5
-		if ( format === GPUTextureFormat.BC4RUnorm || format === GPUTextureFormat.BC4RSNorm ) return { byteLength: 8, width: 4, height: 4 }; // RGTC1
-		if ( format === GPUTextureFormat.BC5RGUnorm || format === GPUTextureFormat.BC5RGSnorm ) return { byteLength: 16, width: 4, height: 4 }; // RGTC2
-		if ( format === GPUTextureFormat.BC6HRGBUFloat || format === GPUTextureFormat.BC6HRGBFloat ) return { byteLength: 16, width: 4, height: 4 }; // BPTC (float)
-		if ( format === GPUTextureFormat.BC7RGBAUnorm || format === GPUTextureFormat.BC7RGBAUnormSRGB ) return { byteLength: 16, width: 4, height: 4 }; // BPTC (unorm)
+		if ( format === GPUTextureFormat.BC1RGBAUnorm || format === GPUTextureFormat.BC1RGBAUnormSRGB ) return { 'byteLength': 8, 'width': 4, 'height': 4 }; // DXT1
+		if ( format === GPUTextureFormat.BC2RGBAUnorm || format === GPUTextureFormat.BC2RGBAUnormSRGB ) return { 'byteLength': 16, 'width': 4, 'height': 4 }; // DXT3
+		if ( format === GPUTextureFormat.BC3RGBAUnorm || format === GPUTextureFormat.BC3RGBAUnormSRGB ) return { 'byteLength': 16, 'width': 4, 'height': 4 }; // DXT5
+		if ( format === GPUTextureFormat.BC4RUnorm || format === GPUTextureFormat.BC4RSNorm ) return { 'byteLength': 8, 'width': 4, 'height': 4 }; // RGTC1
+		if ( format === GPUTextureFormat.BC5RGUnorm || format === GPUTextureFormat.BC5RGSnorm ) return { 'byteLength': 16, 'width': 4, 'height': 4 }; // RGTC2
+		if ( format === GPUTextureFormat.BC6HRGBUFloat || format === GPUTextureFormat.BC6HRGBFloat ) return { 'byteLength': 16, 'width': 4, 'height': 4 }; // BPTC (float)
+		if ( format === GPUTextureFormat.BC7RGBAUnorm || format === GPUTextureFormat.BC7RGBAUnormSRGB ) return { 'byteLength': 16, 'width': 4, 'height': 4 }; // BPTC (unorm)
 
-		if ( format === GPUTextureFormat.ETC2RGB8Unorm || format === GPUTextureFormat.ETC2RGB8UnormSRGB ) return { byteLength: 8, width: 4, height: 4 };
-		if ( format === GPUTextureFormat.ETC2RGB8A1Unorm || format === GPUTextureFormat.ETC2RGB8A1UnormSRGB ) return { byteLength: 8, width: 4, height: 4 };
-		if ( format === GPUTextureFormat.ETC2RGBA8Unorm || format === GPUTextureFormat.ETC2RGBA8UnormSRGB ) return { byteLength: 16, width: 4, height: 4 };
-		if ( format === GPUTextureFormat.EACR11Unorm ) return { byteLength: 8, width: 4, height: 4 };
-		if ( format === GPUTextureFormat.EACR11Snorm ) return { byteLength: 8, width: 4, height: 4 };
-		if ( format === GPUTextureFormat.EACRG11Unorm ) return { byteLength: 16, width: 4, height: 4 };
-		if ( format === GPUTextureFormat.EACRG11Snorm ) return { byteLength: 16, width: 4, height: 4 };
+		if ( format === GPUTextureFormat.ETC2RGB8Unorm || format === GPUTextureFormat.ETC2RGB8UnormSRGB ) return { 'byteLength': 8, 'width': 4, 'height': 4 };
+		if ( format === GPUTextureFormat.ETC2RGB8A1Unorm || format === GPUTextureFormat.ETC2RGB8A1UnormSRGB ) return { 'byteLength': 8, 'width': 4, 'height': 4 };
+		if ( format === GPUTextureFormat.ETC2RGBA8Unorm || format === GPUTextureFormat.ETC2RGBA8UnormSRGB ) return { 'byteLength': 16, 'width': 4, 'height': 4 };
+		if ( format === GPUTextureFormat.EACR11Unorm ) return { 'byteLength': 8, 'width': 4, 'height': 4 };
+		if ( format === GPUTextureFormat.EACR11Snorm ) return { 'byteLength': 8, 'width': 4, 'height': 4 };
+		if ( format === GPUTextureFormat.EACRG11Unorm ) return { 'byteLength': 16, 'width': 4, 'height': 4 };
+		if ( format === GPUTextureFormat.EACRG11Snorm ) return { 'byteLength': 16, 'width': 4, 'height': 4 };
 
-		if ( format === GPUTextureFormat.ASTC4x4Unorm || format === GPUTextureFormat.ASTC4x4UnormSRGB ) return { byteLength: 16, width: 4, height: 4 };
-		if ( format === GPUTextureFormat.ASTC5x4Unorm || format === GPUTextureFormat.ASTC5x4UnormSRGB ) return { byteLength: 16, width: 5, height: 4 };
-		if ( format === GPUTextureFormat.ASTC5x5Unorm || format === GPUTextureFormat.ASTC5x5UnormSRGB ) return { byteLength: 16, width: 5, height: 5 };
-		if ( format === GPUTextureFormat.ASTC6x5Unorm || format === GPUTextureFormat.ASTC6x5UnormSRGB ) return { byteLength: 16, width: 6, height: 5 };
-		if ( format === GPUTextureFormat.ASTC6x6Unorm || format === GPUTextureFormat.ASTC6x6UnormSRGB ) return { byteLength: 16, width: 6, height: 6 };
-		if ( format === GPUTextureFormat.ASTC8x5Unorm || format === GPUTextureFormat.ASTC8x5UnormSRGB ) return { byteLength: 16, width: 8, height: 5 };
-		if ( format === GPUTextureFormat.ASTC8x6Unorm || format === GPUTextureFormat.ASTC8x6UnormSRGB ) return { byteLength: 16, width: 8, height: 6 };
-		if ( format === GPUTextureFormat.ASTC8x8Unorm || format === GPUTextureFormat.ASTC8x8UnormSRGB ) return { byteLength: 16, width: 8, height: 8 };
-		if ( format === GPUTextureFormat.ASTC10x5Unorm || format === GPUTextureFormat.ASTC10x5UnormSRGB ) return { byteLength: 16, width: 10, height: 5 };
-		if ( format === GPUTextureFormat.ASTC10x6Unorm || format === GPUTextureFormat.ASTC10x6UnormSRGB ) return { byteLength: 16, width: 10, height: 6 };
-		if ( format === GPUTextureFormat.ASTC10x8Unorm || format === GPUTextureFormat.ASTC10x8UnormSRGB ) return { byteLength: 16, width: 10, height: 8 };
-		if ( format === GPUTextureFormat.ASTC10x10Unorm || format === GPUTextureFormat.ASTC10x10UnormSRGB ) return { byteLength: 16, width: 10, height: 10 };
-		if ( format === GPUTextureFormat.ASTC12x10Unorm || format === GPUTextureFormat.ASTC12x10UnormSRGB ) return { byteLength: 16, width: 12, height: 10 };
-		if ( format === GPUTextureFormat.ASTC12x12Unorm || format === GPUTextureFormat.ASTC12x12UnormSRGB ) return { byteLength: 16, width: 12, height: 12 };
+		if ( format === GPUTextureFormat.ASTC4x4Unorm || format === GPUTextureFormat.ASTC4x4UnormSRGB ) return { 'byteLength': 16, 'width': 4, 'height': 4 };
+		if ( format === GPUTextureFormat.ASTC5x4Unorm || format === GPUTextureFormat.ASTC5x4UnormSRGB ) return { 'byteLength': 16, 'width': 5, 'height': 4 };
+		if ( format === GPUTextureFormat.ASTC5x5Unorm || format === GPUTextureFormat.ASTC5x5UnormSRGB ) return { 'byteLength': 16, 'width': 5, 'height': 5 };
+		if ( format === GPUTextureFormat.ASTC6x5Unorm || format === GPUTextureFormat.ASTC6x5UnormSRGB ) return { 'byteLength': 16, 'width': 6, 'height': 5 };
+		if ( format === GPUTextureFormat.ASTC6x6Unorm || format === GPUTextureFormat.ASTC6x6UnormSRGB ) return { 'byteLength': 16, 'width': 6, 'height': 6 };
+		if ( format === GPUTextureFormat.ASTC8x5Unorm || format === GPUTextureFormat.ASTC8x5UnormSRGB ) return { 'byteLength': 16, 'width': 8, 'height': 5 };
+		if ( format === GPUTextureFormat.ASTC8x6Unorm || format === GPUTextureFormat.ASTC8x6UnormSRGB ) return { 'byteLength': 16, 'width': 8, 'height': 6 };
+		if ( format === GPUTextureFormat.ASTC8x8Unorm || format === GPUTextureFormat.ASTC8x8UnormSRGB ) return { 'byteLength': 16, 'width': 8, 'height': 8 };
+		if ( format === GPUTextureFormat.ASTC10x5Unorm || format === GPUTextureFormat.ASTC10x5UnormSRGB ) return { 'byteLength': 16, 'width': 10, 'height': 5 };
+		if ( format === GPUTextureFormat.ASTC10x6Unorm || format === GPUTextureFormat.ASTC10x6UnormSRGB ) return { 'byteLength': 16, 'width': 10, 'height': 6 };
+		if ( format === GPUTextureFormat.ASTC10x8Unorm || format === GPUTextureFormat.ASTC10x8UnormSRGB ) return { 'byteLength': 16, 'width': 10, 'height': 8 };
+		if ( format === GPUTextureFormat.ASTC10x10Unorm || format === GPUTextureFormat.ASTC10x10UnormSRGB ) return { 'byteLength': 16, 'width': 10, 'height': 10 };
+		if ( format === GPUTextureFormat.ASTC12x10Unorm || format === GPUTextureFormat.ASTC12x10UnormSRGB ) return { 'byteLength': 16, 'width': 12, 'height': 10 };
+		if ( format === GPUTextureFormat.ASTC12x12Unorm || format === GPUTextureFormat.ASTC12x12UnormSRGB ) return { 'byteLength': 16, 'width': 12, 'height': 12 };
 
 	}
 

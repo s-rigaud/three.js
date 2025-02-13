@@ -26,19 +26,19 @@ class RenderTarget extends EventDispatcher {
 
 		this.viewport = new Vector4( 0, 0, width, height );
 
-		const image = { width: width, height: height, depth: 1 };
+		const image = { 'width': width, 'height': height, 'depth': 1 };
 
 		options = Object.assign( {
-			generateMipmaps: false,
-			internalFormat: null,
-			minFilter: LinearFilter,
-			depthBuffer: true,
-			stencilBuffer: false,
-			resolveDepthBuffer: true,
-			resolveStencilBuffer: true,
-			depthTexture: null,
-			samples: 0,
-			count: 1
+			'generateMipmaps': false,
+			'internalFormat': null,
+			'minFilter': LinearFilter,
+			'depthBuffer': true,
+			'stencilBuffer': false,
+			'resolveDepthBuffer': true,
+			'resolveStencilBuffer': true,
+			'depthTexture': null,
+			'samples': 0,
+			'count': 1
 		}, options );
 
 		const texture = new Texture( image, options.mapping, options.wrapS, options.wrapT, options.magFilter, options.minFilter, options.format, options.type, options.anisotropy, options.colorSpace );
@@ -171,7 +171,7 @@ class RenderTarget extends EventDispatcher {
 
 	dispose() {
 
-		this.dispatchEvent( { type: 'dispose' } );
+		this.dispatchEvent( { 'type': 'dispose' } );
 
 	}
 

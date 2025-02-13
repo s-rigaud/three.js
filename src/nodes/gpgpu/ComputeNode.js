@@ -104,7 +104,7 @@ class ComputeNode extends Node {
 	 */
 	dispose() {
 
-		this.dispatchEvent( { type: 'dispose' } );
+		this.dispatchEvent( { 'type': 'dispose' } );
 
 	}
 

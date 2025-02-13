@@ -12,10 +12,10 @@ class PolyhedronGeometry extends BufferGeometry {
 		this.type = 'PolyhedronGeometry';
 
 		this.parameters = {
-			vertices: vertices,
-			indices: indices,
-			radius: radius,
-			detail: detail
+			'vertices': vertices,
+			'indices': indices,
+			'radius': radius,
+			'detail': detail
 		};
 
 		// default buffer data

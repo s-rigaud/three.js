@@ -11,12 +11,12 @@ class BoxGeometry extends BufferGeometry {
 		this.type = 'BoxGeometry';
 
 		this.parameters = {
-			width: width,
-			height: height,
-			depth: depth,
-			widthSegments: widthSegments,
-			heightSegments: heightSegments,
-			depthSegments: depthSegments
+			'width': width,
+			'height': height,
+			'depth': depth,
+			'widthSegments': widthSegments,
+			'heightSegments': heightSegments,
+			'depthSegments': depthSegments
 		};
 
 		const scope = this;

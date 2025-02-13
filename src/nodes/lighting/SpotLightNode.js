@@ -110,8 +110,8 @@ class SpotLightNode extends AnalyticLightNode {
 
 		const lightAttenuation = getDistanceAttenuation( {
 			lightDistance,
-			cutoffDistance: cutoffDistanceNode,
-			decayExponent: decayExponentNode
+			'cutoffDistance': cutoffDistanceNode,
+			'decayExponent': decayExponentNode
 		} );
 
 		let lightColor = colorNode.mul( spotAttenuation ).mul( lightAttenuation );

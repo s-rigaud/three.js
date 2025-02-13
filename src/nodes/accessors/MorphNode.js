@@ -130,10 +130,10 @@ function getEntry( geometry ) {
 		}
 
 		entry = {
-			count: morphTargetsCount,
-			texture: bufferTexture,
-			stride: vertexDataCount,
-			size: new Vector2( width, height )
+			'count': morphTargetsCount,
+			'texture': bufferTexture,
+			'stride': vertexDataCount,
+			'size': new Vector2( width, height )
 		};
 
 		_morphTextures.set( geometry, entry );
@@ -219,7 +219,7 @@ class MorphNode extends Node {
 
 		// nodes
 
-		const { texture: bufferMap, stride, size } = getEntry( geometry );
+		const { 'texture': bufferMap, stride, size } = getEntry( geometry );
 
 		if ( hasMorphPosition === true ) positionLocal.mulAssign( this.morphBaseInfluence );
 		if ( hasMorphNormals === true ) normalLocal.mulAssign( this.morphBaseInfluence );
@@ -247,8 +247,8 @@ class MorphNode extends Node {
 					influence,
 					stride,
 					width,
-					depth: i,
-					offset: int( 0 )
+					'depth': i,
+					'offset': int( 0 )
 				} ) );
 
 			}
@@ -260,8 +260,8 @@ class MorphNode extends Node {
 					influence,
 					stride,
 					width,
-					depth: i,
-					offset: int( 1 )
+					'depth': i,
+					'offset': int( 1 )
 				} ) );
 
 			}

@@ -219,8 +219,8 @@ class Renderer {
 		this.info = new Info();
 
 		this.nodes = {
-			modelViewMatrix: null,
-			modelNormalViewMatrix: null
+			'modelViewMatrix': null,
+			'modelNormalViewMatrix': null
 		};
 
 		/**
@@ -654,8 +654,8 @@ class Renderer {
 		 * @type {ShadowMapConfig}
 		 */
 		this.shadowMap = {
-			enabled: false,
-			type: PCFShadowMap
+			'enabled': false,
+			'type': PCFShadowMap
 		};
 
 		/**
@@ -685,9 +685,9 @@ class Renderer {
 		 * @type {DebugConfig}
 		 */
 		this.debug = {
-			checkShaderErrors: true,
-			onShaderError: null,
-			getShaderAsync: async ( scene, camera, object ) => {
+			'checkShaderErrors': true,
+			'onShaderError': null,
+			'getShaderAsync': async ( scene, camera, object ) => {
 
 				await this.compileAsync( scene, camera );
 
@@ -1158,15 +1158,15 @@ class Renderer {
 		if ( frameBufferTarget === null ) {
 
 			frameBufferTarget = new RenderTarget( width, height, {
-				depthBuffer: depth,
-				stencilBuffer: stencil,
-				type: this._colorBufferType,
-				format: RGBAFormat,
-				colorSpace: LinearSRGBColorSpace,
-				generateMipmaps: false,
-				minFilter: LinearFilter,
-				magFilter: LinearFilter,
-				samples: this.samples
+				'depthBuffer': depth,
+				'stencilBuffer': stencil,
+				'type': this._colorBufferType,
+				'format': RGBAFormat,
+				'colorSpace': LinearSRGBColorSpace,
+				'generateMipmaps': false,
+				'minFilter': LinearFilter,
+				'magFilter': LinearFilter,
+				'samples': this.samples
 			} );
 
 			frameBufferTarget.isPostProcessingRenderTarget = true;
@@ -1391,9 +1391,9 @@ class Renderer {
 		const {
 			bundles,
 			lightsNode,
-			transparentDoublePass: transparentDoublePassObjects,
-			transparent: transparentObjects,
-			opaque: opaqueObjects
+			'transparentDoublePass': transparentDoublePassObjects,
+			'transparent': transparentObjects,
+			'opaque': opaqueObjects
 		} = renderList;
 
 		if ( bundles.length > 0 ) this._renderBundles( bundles, sceneRef, lightsNode );
@@ -2260,7 +2260,7 @@ class Renderer {
 
 				if ( onInitFn !== null ) {
 
-					onInitFn.call( computeNode, { renderer: this } );
+					onInitFn.call( computeNode, { 'renderer': this } );
 
 				}
 
@@ -2602,7 +2602,7 @@ class Renderer {
 			renderList.begin();
 
 			baseRenderList.pushBundle( {
-				bundleGroup: object,
+				'bundleGroup': object,
 				camera,
 				renderList,
 			} );

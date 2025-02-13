@@ -62,19 +62,19 @@ class AnimationObjectGroup {
 
 		this.stats = {
 
-			objects: {
-				get total() {
+			'objects': {
+				get 'total'() {
 
 					return scope._objects.length;
 
 				},
-				get inUse() {
+				get 'inUse'() {
 
 					return this.total - scope.nCachedObjects_;
 
 				}
 			},
-			get bindingsPerObject() {
+			get 'bindingsPerObject'() {
 
 				return scope._bindings.length;
 

@@ -45,13 +45,13 @@ function WebGLExtensions( gl ) {
 
 	return {
 
-		has: function ( name ) {
+		'has': function ( name ) {
 
 			return getExtension( name ) !== null;
 
 		},
 
-		init: function () {
+		'init': function () {
 
 			getExtension( 'EXT_color_buffer_float' );
 			getExtension( 'WEBGL_clip_cull_distance' );
@@ -62,7 +62,7 @@ function WebGLExtensions( gl ) {
 
 		},
 
-		get: function ( name ) {
+		'get': function ( name ) {
 
 			const extension = getExtension( name );
 

@@ -14,8 +14,8 @@ class Controls extends EventDispatcher {
 		this.state = - 1;
 
 		this.keys = {};
-		this.mouseButtons = { LEFT: null, MIDDLE: null, RIGHT: null };
-		this.touches = { ONE: null, TWO: null };
+		this.mouseButtons = { 'LEFT': null, 'MIDDLE': null, 'RIGHT': null };
+		this.touches = { 'ONE': null, 'TWO': null };
 
 	}
 

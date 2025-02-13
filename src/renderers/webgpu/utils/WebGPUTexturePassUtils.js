@@ -92,14 +92,14 @@ fn main( @location( 0 ) vTex : vec2<f32> ) -> @location( 0 ) vec4<f32> {
 		 *
 		 * @type {GPUSampler}
 		 */
-		this.mipmapSampler = device.createSampler( { minFilter: GPUFilterMode.Linear } );
+		this.mipmapSampler = device.createSampler( { 'minFilter': GPUFilterMode.Linear } );
 
 		/**
 		 * The flipY GPU sampler.
 		 *
 		 * @type {GPUSampler}
 		 */
-		this.flipYSampler = device.createSampler( { minFilter: GPUFilterMode.Nearest } ); //@TODO?: Consider using textureLoad()
+		this.flipYSampler = device.createSampler( { 'minFilter': GPUFilterMode.Nearest } ); //@TODO?: Consider using textureLoad()
 
 		/**
 		 * A cache for GPU render pipelines used for copy/transfer passes.
@@ -123,8 +123,8 @@ fn main( @location( 0 ) vTex : vec2<f32> ) -> @location( 0 ) vec4<f32> {
 		 * @type {GPUShaderModule}
 		 */
 		this.mipmapVertexShaderModule = device.createShaderModule( {
-			label: 'mipmapVertex',
-			code: mipmapVertexSource
+			'label': 'mipmapVertex',
+			'code': mipmapVertexSource
 		} );
 
 		/**
@@ -133,8 +133,8 @@ fn main( @location( 0 ) vTex : vec2<f32> ) -> @location( 0 ) vec4<f32> {
 		 * @type {GPUShaderModule}
 		 */
 		this.mipmapFragmentShaderModule = device.createShaderModule( {
-			label: 'mipmapFragment',
-			code: mipmapFragmentSource
+			'label': 'mipmapFragment',
+			'code': mipmapFragmentSource
 		} );
 
 		/**
@@ -143,8 +143,8 @@ fn main( @location( 0 ) vTex : vec2<f32> ) -> @location( 0 ) vec4<f32> {
 		 * @type {GPUShaderModule}
 		 */
 		this.flipYFragmentShaderModule = device.createShaderModule( {
-			label: 'flipYFragment',
-			code: flipYFragmentSource
+			'label': 'flipYFragment',
+			'code': flipYFragmentSource
 		} );
 
 	}
@@ -163,21 +163,21 @@ fn main( @location( 0 ) vTex : vec2<f32> ) -> @location( 0 ) vec4<f32> {
 		if ( pipeline === undefined ) {
 
 			pipeline = this.device.createRenderPipeline( {
-				label: `mipmap-${ format }`,
-				vertex: {
-					module: this.mipmapVertexShaderModule,
-					entryPoint: 'main'
+				'label': `mipmap-${ format }`,
+				'vertex': {
+					'module': this.mipmapVertexShaderModule,
+					'entryPoint': 'main'
 				},
-				fragment: {
-					module: this.mipmapFragmentShaderModule,
-					entryPoint: 'main',
-					targets: [ { format } ]
+				'fragment': {
+					'module': this.mipmapFragmentShaderModule,
+					'entryPoint': 'main',
+					'targets': [ { format } ]
 				},
-				primitive: {
-					topology: GPUPrimitiveTopology.TriangleStrip,
-					stripIndexFormat: GPUIndexFormat.Uint32
+				'primitive': {
+					'topology': GPUPrimitiveTopology.TriangleStrip,
+					'stripIndexFormat': GPUIndexFormat.Uint32
 				},
-				layout: 'auto'
+				'layout': 'auto'
 			} );
 
 			this.transferPipelines[ format ] = pipeline;
@@ -202,21 +202,21 @@ fn main( @location( 0 ) vTex : vec2<f32> ) -> @location( 0 ) vec4<f32> {
 		if ( pipeline === undefined ) {
 
 			pipeline = this.device.createRenderPipeline( {
-				label: `flipY-${ format }`,
-				vertex: {
-					module: this.mipmapVertexShaderModule,
-					entryPoint: 'main'
+				'label': `flipY-${ format }`,
+				'vertex': {
+					'module': this.mipmapVertexShaderModule,
+					'entryPoint': 'main'
 				},
-				fragment: {
-					module: this.flipYFragmentShaderModule,
-					entryPoint: 'main',
-					targets: [ { format } ]
+				'fragment': {
+					'module': this.flipYFragmentShaderModule,
+					'entryPoint': 'main',
+					'targets': [ { format } ]
 				},
-				primitive: {
-					topology: GPUPrimitiveTopology.TriangleStrip,
-					stripIndexFormat: GPUIndexFormat.Uint32
+				'primitive': {
+					'topology': GPUPrimitiveTopology.TriangleStrip,
+					'stripIndexFormat': GPUIndexFormat.Uint32
 				},
-				layout: 'auto'
+				'layout': 'auto'
 			} );
 
 			this.flipYPipelines[ format ] = pipeline;
@@ -243,23 +243,23 @@ fn main( @location( 0 ) vTex : vec2<f32> ) -> @location( 0 ) vec4<f32> {
 		const flipYPipeline = this.getFlipYPipeline( format );
 
 		const tempTexture = this.device.createTexture( {
-			size: { width, height, depthOrArrayLayers: 1 },
+			'size': { width, height, 'depthOrArrayLayers': 1 },
 			format,
-			usage: GPUTextureUsage.RENDER_ATTACHMENT | GPUTextureUsage.TEXTURE_BINDING
+			'usage': GPUTextureUsage.RENDER_ATTACHMENT | GPUTextureUsage.TEXTURE_BINDING
 		} );
 
 		const srcView = textureGPU.createView( {
-			baseMipLevel: 0,
-			mipLevelCount: 1,
-			dimension: GPUTextureViewDimension.TwoD,
+			'baseMipLevel': 0,
+			'mipLevelCount': 1,
+			'dimension': GPUTextureViewDimension.TwoD,
 			baseArrayLayer
 		} );
 
 		const dstView = tempTexture.createView( {
-			baseMipLevel: 0,
-			mipLevelCount: 1,
-			dimension: GPUTextureViewDimension.TwoD,
-			baseArrayLayer: 0
+			'baseMipLevel': 0,
+			'mipLevelCount': 1,
+			'dimension': GPUTextureViewDimension.TwoD,
+			'baseArrayLayer': 0
 		} );
 
 		const commandEncoder = this.device.createCommandEncoder( {} );
@@ -269,22 +269,22 @@ fn main( @location( 0 ) vTex : vec2<f32> ) -> @location( 0 ) vec4<f32> {
 			const bindGroupLayout = pipeline.getBindGroupLayout( 0 ); // @TODO: Consider making this static.
 
 			const bindGroup = this.device.createBindGroup( {
-				layout: bindGroupLayout,
-				entries: [ {
-					binding: 0,
-					resource: this.flipYSampler
+				'layout': bindGroupLayout,
+				'entries': [ {
+					'binding': 0,
+					'resource': this.flipYSampler
 				}, {
-					binding: 1,
-					resource: sourceView
+					'binding': 1,
+					'resource': sourceView
 				} ]
 			} );
 
 			const passEncoder = commandEncoder.beginRenderPass( {
-				colorAttachments: [ {
-					view: destinationView,
-					loadOp: GPULoadOp.Clear,
-					storeOp: GPUStoreOp.Store,
-					clearValue: [ 0, 0, 0, 0 ]
+				'colorAttachments': [ {
+					'view': destinationView,
+					'loadOp': GPULoadOp.Clear,
+					'storeOp': GPUStoreOp.Store,
+					'clearValue': [ 0, 0, 0, 0 ]
 				} ]
 			} );
 
@@ -352,9 +352,9 @@ fn main( @location( 0 ) vTex : vec2<f32> ) -> @location( 0 ) vec4<f32> {
 		const bindGroupLayout = pipeline.getBindGroupLayout( 0 ); // @TODO: Consider making this static.
 
 		let srcView = textureGPU.createView( {
-			baseMipLevel: 0,
-			mipLevelCount: 1,
-			dimension: GPUTextureViewDimension.TwoD,
+			'baseMipLevel': 0,
+			'mipLevelCount': 1,
+			'dimension': GPUTextureViewDimension.TwoD,
 			baseArrayLayer
 		} );
 
@@ -363,34 +363,34 @@ fn main( @location( 0 ) vTex : vec2<f32> ) -> @location( 0 ) vec4<f32> {
 		for ( let i = 1; i < textureGPUDescriptor.mipLevelCount; i ++ ) {
 
 			const bindGroup = this.device.createBindGroup( {
-				layout: bindGroupLayout,
-				entries: [ {
-					binding: 0,
-					resource: this.mipmapSampler
+				'layout': bindGroupLayout,
+				'entries': [ {
+					'binding': 0,
+					'resource': this.mipmapSampler
 				}, {
-					binding: 1,
-					resource: srcView
+					'binding': 1,
+					'resource': srcView
 				} ]
 			} );
 
 			const dstView = textureGPU.createView( {
-				baseMipLevel: i,
-				mipLevelCount: 1,
-				dimension: GPUTextureViewDimension.TwoD,
+				'baseMipLevel': i,
+				'mipLevelCount': 1,
+				'dimension': GPUTextureViewDimension.TwoD,
 				baseArrayLayer
 			} );
 
 			const passDescriptor = {
-				colorAttachments: [ {
-					view: dstView,
-					loadOp: GPULoadOp.Clear,
-					storeOp: GPUStoreOp.Store,
-					clearValue: [ 0, 0, 0, 0 ]
+				'colorAttachments': [ {
+					'view': dstView,
+					'loadOp': GPULoadOp.Clear,
+					'storeOp': GPUStoreOp.Store,
+					'clearValue': [ 0, 0, 0, 0 ]
 				} ]
 			};
 
 			const passEncoder = this.device.createRenderBundleEncoder( {
-				colorFormats: [ textureGPUDescriptor.format ]
+				'colorFormats': [ textureGPUDescriptor.format ]
 			} );
 
 			passEncoder.setPipeline( pipeline );
@@ -398,7 +398,7 @@ fn main( @location( 0 ) vTex : vec2<f32> ) -> @location( 0 ) vec4<f32> {
 			passEncoder.draw( 4, 1, 0, 0 );
 
 			passes.push( {
-				renderBundles: [ passEncoder.finish() ],
+				'renderBundles': [ passEncoder.finish() ],
 				passDescriptor
 			} );
 

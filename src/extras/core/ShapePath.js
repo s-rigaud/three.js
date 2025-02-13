@@ -182,7 +182,7 @@ class ShapePath {
 
 				if ( ( ! holesFirst ) && ( newShapes[ mainIdx ] ) )	mainIdx ++;
 
-				newShapes[ mainIdx ] = { s: new Shape(), p: tmpPoints };
+				newShapes[ mainIdx ] = { 's': new Shape(), 'p': tmpPoints };
 				newShapes[ mainIdx ].s.curves = tmpPath.curves;
 
 				if ( holesFirst )	mainIdx ++;
@@ -192,7 +192,7 @@ class ShapePath {
 
 			} else {
 
-				newShapeHoles[ mainIdx ].push( { h: tmpPath, p: tmpPoints[ 0 ] } );
+				newShapeHoles[ mainIdx ].push( { 'h': tmpPath, 'p': tmpPoints[ 0 ] } );
 
 				//console.log('ccw', i);
 

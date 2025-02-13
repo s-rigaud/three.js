@@ -113,7 +113,7 @@ const createRadianceContext = ( roughnessNode, normalViewNode ) => {
 	let reflectVec = null;
 
 	return {
-		getUV: () => {
+		'getUV': () => {
 
 			if ( reflectVec === null ) {
 
@@ -129,7 +129,7 @@ const createRadianceContext = ( roughnessNode, normalViewNode ) => {
 			return reflectVec;
 
 		},
-		getTextureLevel: () => {
+		'getTextureLevel': () => {
 
 			return roughnessNode;
 
@@ -141,12 +141,12 @@ const createRadianceContext = ( roughnessNode, normalViewNode ) => {
 const createIrradianceContext = ( normalWorldNode ) => {
 
 	return {
-		getUV: () => {
+		'getUV': () => {
 
 			return normalWorldNode;
 
 		},
-		getTextureLevel: () => {
+		'getTextureLevel': () => {
 
 			return float( 1.0 );
 

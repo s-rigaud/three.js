@@ -33,8 +33,8 @@ class ShaderMaterial extends Material {
 		this.forceSinglePass = true;
 
 		this.extensions = {
-			clipCullDistance: false, // set to use vertex shader clipping
-			multiDraw: false // set to use vertex shader multi_draw / enable gl_DrawID
+			'clipCullDistance': false, // set to use vertex shader clipping
+			'multiDraw': false // set to use vertex shader multi_draw / enable gl_DrawID
 		};
 
 		// When rendered geometry doesn't include these attributes but the material does,
@@ -100,56 +100,56 @@ class ShaderMaterial extends Material {
 			if ( value && value.isTexture ) {
 
 				data.uniforms[ name ] = {
-					type: 't',
-					value: value.toJSON( meta ).uuid
+					'type': 't',
+					'value': value.toJSON( meta ).uuid
 				};
 
 			} else if ( value && value.isColor ) {
 
 				data.uniforms[ name ] = {
-					type: 'c',
-					value: value.getHex()
+					'type': 'c',
+					'value': value.getHex()
 				};
 
 			} else if ( value && value.isVector2 ) {
 
 				data.uniforms[ name ] = {
-					type: 'v2',
-					value: value.toArray()
+					'type': 'v2',
+					'value': value.toArray()
 				};
 
 			} else if ( value && value.isVector3 ) {
 
 				data.uniforms[ name ] = {
-					type: 'v3',
-					value: value.toArray()
+					'type': 'v3',
+					'value': value.toArray()
 				};
 
 			} else if ( value && value.isVector4 ) {
 
 				data.uniforms[ name ] = {
-					type: 'v4',
-					value: value.toArray()
+					'type': 'v4',
+					'value': value.toArray()
 				};
 
 			} else if ( value && value.isMatrix3 ) {
 
 				data.uniforms[ name ] = {
-					type: 'm3',
-					value: value.toArray()
+					'type': 'm3',
+					'value': value.toArray()
 				};
 
 			} else if ( value && value.isMatrix4 ) {
 
 				data.uniforms[ name ] = {
-					type: 'm4',
-					value: value.toArray()
+					'type': 'm4',
+					'value': value.toArray()
 				};
 
 			} else {
 
 				data.uniforms[ name ] = {
-					value: value
+					'value': value
 				};
 
 				// note: the array variants v2v, v3v, v4v, m4v and tv are not supported so far

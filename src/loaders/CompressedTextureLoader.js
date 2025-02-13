@@ -40,10 +40,10 @@ class CompressedTextureLoader extends Loader {
 				const texDatas = scope.parse( buffer, true );
 
 				images[ i ] = {
-					width: texDatas.width,
-					height: texDatas.height,
-					format: texDatas.format,
-					mipmaps: texDatas.mipmaps
+					'width': texDatas.width,
+					'height': texDatas.height,
+					'format': texDatas.format,
+					'mipmaps': texDatas.mipmaps
 				};
 
 				loaded += 1;
@@ -86,7 +86,7 @@ class CompressedTextureLoader extends Loader {
 
 					for ( let f = 0; f < faces; f ++ ) {
 
-						images[ f ] = { mipmaps: [] };
+						images[ f ] = { 'mipmaps': [] };
 
 						for ( let i = 0; i < texDatas.mipmapCount; i ++ ) {
 

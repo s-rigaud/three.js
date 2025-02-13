@@ -56,7 +56,7 @@ class OutputStructNode extends Node {
 				const name = 'm' + i;
 				const type = members[ i ].getNodeType( builder );
 
-				membersLayout.push( { name, type, index: i } );
+				membersLayout.push( { name, type, 'index': i } );
 
 			}
 

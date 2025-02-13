@@ -114,8 +114,8 @@ class ConditionalNode extends Node {
 
 		const properties = builder.getNodeProperties( this );
 		properties.condNode = condNode;
-		properties.ifNode = ifNode.context( { nodeBlock: ifNode } );
-		properties.elseNode = elseNode ? elseNode.context( { nodeBlock: elseNode } ) : null;
+		properties.ifNode = ifNode.context( { 'nodeBlock': ifNode } );
+		properties.elseNode = elseNode ? elseNode.context( { 'nodeBlock': elseNode } ) : null;
 
 	}
 

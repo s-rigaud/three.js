@@ -1,7 +1,7 @@
 import { Vector3 } from '../../math/Vector3.js';
 import { Group } from '../../objects/Group.js';
 
-const _moveEvent = { type: 'move' };
+const _moveEvent = { 'type': 'move' };
 
 class WebXRController {
 
@@ -22,7 +22,7 @@ class WebXRController {
 			this._hand.visible = false;
 
 			this._hand.joints = {};
-			this._hand.inputState = { pinching: false };
+			this._hand.inputState = { 'pinching': false };
 
 		}
 
@@ -109,7 +109,7 @@ class WebXRController {
 
 		}
 
-		this.dispatchEvent( { type: 'connected', data: inputSource } );
+		this.dispatchEvent( { 'type': 'connected', 'data': inputSource } );
 
 		return this;
 
@@ -117,7 +117,7 @@ class WebXRController {
 
 	disconnect( inputSource ) {
 
-		this.dispatchEvent( { type: 'disconnected', data: inputSource } );
+		this.dispatchEvent( { 'type': 'disconnected', 'data': inputSource } );
 
 		if ( this._targetRay !== null ) {
 
@@ -192,18 +192,18 @@ class WebXRController {
 
 					hand.inputState.pinching = false;
 					this.dispatchEvent( {
-						type: 'pinchend',
-						handedness: inputSource.handedness,
-						target: this
+						'type': 'pinchend',
+						'handedness': inputSource.handedness,
+						'target': this
 					} );
 
 				} else if ( ! hand.inputState.pinching && distance <= distanceToPinch - threshold ) {
 
 					hand.inputState.pinching = true;
 					this.dispatchEvent( {
-						type: 'pinchstart',
-						handedness: inputSource.handedness,
-						target: this
+						'type': 'pinchstart',
+						'handedness': inputSource.handedness,
+						'target': this
 					} );
 
 				}

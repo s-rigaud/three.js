@@ -141,14 +141,14 @@ class NodeMaterialObserver {
 			const { geometry, material, object } = renderObject;
 
 			data = {
-				material: this.getMaterialData( material ),
-				geometry: {
-					id: geometry.id,
-					attributes: this.getAttributesData( geometry.attributes ),
-					indexVersion: geometry.index ? geometry.index.version : null,
-					drawRange: { start: geometry.drawRange.start, count: geometry.drawRange.count }
+				'material': this.getMaterialData( material ),
+				'geometry': {
+					'id': geometry.id,
+					'attributes': this.getAttributesData( geometry.attributes ),
+					'indexVersion': geometry.index ? geometry.index.version : null,
+					'drawRange': { 'start': geometry.drawRange.start, 'count': geometry.drawRange.count }
 				},
-				worldMatrix: object.matrixWorld.clone()
+				'worldMatrix': object.matrixWorld.clone()
 			};
 
 			if ( object.center ) {
@@ -202,7 +202,7 @@ class NodeMaterialObserver {
 			const attribute = attributes[ name ];
 
 			attributesData[ name ] = {
-				version: attribute.version
+				'version': attribute.version
 			};
 
 		}
@@ -257,7 +257,7 @@ class NodeMaterialObserver {
 
 				if ( value.isTexture === true ) {
 
-					data[ property ] = { id: value.id, version: value.version };
+					data[ property ] = { 'id': value.id, 'version': value.version };
 
 				} else {
 

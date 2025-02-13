@@ -229,15 +229,15 @@ function checkIntersection( object, raycaster, ray, thresholdSq, a, b, i ) {
 
 	return {
 
-		distance: distance,
+		'distance': distance,
 		// What do we want? intersection point on the ray or on the segment??
 		// point: raycaster.ray.at( distance ),
-		point: _intersectPointOnSegment.clone().applyMatrix4( object.matrixWorld ),
-		index: i,
-		face: null,
-		faceIndex: null,
-		barycoord: null,
-		object: object
+		'point': _intersectPointOnSegment.clone().applyMatrix4( object.matrixWorld ),
+		'index': i,
+		'face': null,
+		'faceIndex': null,
+		'barycoord': null,
+		'object': object
 
 	};
 

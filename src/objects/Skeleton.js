@@ -244,13 +244,13 @@ class Skeleton {
 	toJSON() {
 
 		const data = {
-			metadata: {
-				version: 4.6,
-				type: 'Skeleton',
-				generator: 'Skeleton.toJSON'
+			'metadata': {
+				'version': 4.6,
+				'type': 'Skeleton',
+				'generator': 'Skeleton.toJSON'
 			},
-			bones: [],
-			boneInverses: []
+			'bones': [],
+			'boneInverses': []
 		};
 
 		data.uuid = this.uuid;

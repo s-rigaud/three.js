@@ -47,10 +47,10 @@ class MultiDrawRenderList {
 
 			pool.push( {
 
-				start: - 1,
-				count: - 1,
-				z: - 1,
-				index: - 1,
+				'start': - 1,
+				'count': - 1,
+				'z': - 1,
+				'index': - 1,
 
 			} );
 
@@ -421,9 +421,9 @@ class BatchedMesh extends Mesh {
 		}
 
 		const instanceInfo = {
-			visible: true,
-			active: true,
-			geometryIndex: geometryId,
+			'visible': true,
+			'active': true,
+			'geometryIndex': geometryId,
 		};
 
 		let drawId = null;
@@ -468,22 +468,22 @@ class BatchedMesh extends Mesh {
 
 		const geometryInfo = {
 			// geometry information
-			vertexStart: - 1,
-			vertexCount: - 1,
-			reservedVertexCount: - 1,
+			'vertexStart': - 1,
+			'vertexCount': - 1,
+			'reservedVertexCount': - 1,
 
-			indexStart: - 1,
-			indexCount: - 1,
-			reservedIndexCount: - 1,
+			'indexStart': - 1,
+			'indexCount': - 1,
+			'reservedIndexCount': - 1,
 
 			// draw range information
-			start: - 1,
-			count: - 1,
+			'start': - 1,
+			'count': - 1,
 
 			// state
-			boundingBox: null,
-			boundingSphere: null,
-			active: true,
+			'boundingBox': null,
+			'boundingSphere': null,
+			'active': true,
 		};
 
 		const geometryInfoList = this._geometryInfo;
@@ -1151,8 +1151,8 @@ class BatchedMesh extends Mesh {
 		this._geometryInfo = source._geometryInfo.map( info => ( {
 			...info,
 
-			boundingBox: info.boundingBox !== null ? info.boundingBox.clone() : null,
-			boundingSphere: info.boundingSphere !== null ? info.boundingSphere.clone() : null,
+			'boundingBox': info.boundingBox !== null ? info.boundingBox.clone() : null,
+			'boundingSphere': info.boundingSphere !== null ? info.boundingSphere.clone() : null,
 		} ) );
 		this._instanceInfo = source._instanceInfo.map( info => ( { ...info } ) );
 

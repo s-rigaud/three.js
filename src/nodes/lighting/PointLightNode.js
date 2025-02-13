@@ -104,10 +104,10 @@ class PointLightNode extends AnalyticLightNode {
 		super.setup( builder );
 
 		directPointLight( {
-			color: this.colorNode,
-			lightViewPosition: lightViewPosition( this.light ),
-			cutoffDistance: this.cutoffDistanceNode,
-			decayExponent: this.decayExponentNode
+			'color': this.colorNode,
+			'lightViewPosition': lightViewPosition( this.light ),
+			'cutoffDistance': this.cutoffDistanceNode,
+			'decayExponent': this.decayExponentNode
 		} ).append();
 
 	}

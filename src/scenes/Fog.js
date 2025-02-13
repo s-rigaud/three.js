@@ -24,11 +24,11 @@ class Fog {
 	toJSON( /* meta */ ) {
 
 		return {
-			type: 'Fog',
-			name: this.name,
-			color: this.color.getHex(),
-			near: this.near,
-			far: this.far
+			'type': 'Fog',
+			'name': this.name,
+			'color': this.color.getHex(),
+			'near': this.near,
+			'far': this.far
 		};
 
 	}

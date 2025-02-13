@@ -107,9 +107,9 @@ function WebGLMorphtargets( gl, capabilities, textures ) {
 			}
 
 			entry = {
-				count: morphTargetsCount,
-				texture: texture,
-				size: new Vector2( width, height )
+				'count': morphTargetsCount,
+				'texture': texture,
+				'size': new Vector2( width, height )
 			};
 
 			morphTextures.set( geometry, entry );
@@ -158,7 +158,7 @@ function WebGLMorphtargets( gl, capabilities, textures ) {
 
 	return {
 
-		update: update
+		'update': update
 
 	};
 

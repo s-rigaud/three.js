@@ -167,7 +167,7 @@ class StorageBufferNode extends BufferNode {
 			if ( bufferData === undefined ) {
 
 				bufferData = {
-					node: this
+					'node': this
 				};
 
 				builder.globalCache.setData( this.value, bufferData );
@@ -296,8 +296,8 @@ class StorageBufferNode extends BufferNode {
 		}
 
 		return {
-			attribute: this._attribute,
-			varying: this._varying
+			'attribute': this._attribute,
+			'varying': this._varying
 		};
 
 	}

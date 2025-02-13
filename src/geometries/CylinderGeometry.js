@@ -12,14 +12,14 @@ class CylinderGeometry extends BufferGeometry {
 		this.type = 'CylinderGeometry';
 
 		this.parameters = {
-			radiusTop: radiusTop,
-			radiusBottom: radiusBottom,
-			height: height,
-			radialSegments: radialSegments,
-			heightSegments: heightSegments,
-			openEnded: openEnded,
-			thetaStart: thetaStart,
-			thetaLength: thetaLength
+			'radiusTop': radiusTop,
+			'radiusBottom': radiusBottom,
+			'height': height,
+			'radialSegments': radialSegments,
+			'heightSegments': heightSegments,
+			'openEnded': openEnded,
+			'thetaStart': thetaStart,
+			'thetaLength': thetaLength
 		};
 
 		const scope = this;

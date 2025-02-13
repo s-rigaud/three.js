@@ -128,7 +128,7 @@ export function* getNodeChildren( node, toJSON = false ) {
 
 				if ( child && ( child.isNode === true || toJSON && typeof child.toJSON === 'function' ) ) {
 
-					yield { property, index: i, childNode: child };
+					yield { property, 'index': i, 'childNode': child };
 
 				}
 
@@ -136,7 +136,7 @@ export function* getNodeChildren( node, toJSON = false ) {
 
 		} else if ( object && object.isNode === true ) {
 
-			yield { property, childNode: object };
+			yield { property, 'childNode': object };
 
 		} else if ( typeof object === 'object' ) {
 
@@ -146,7 +146,7 @@ export function* getNodeChildren( node, toJSON = false ) {
 
 				if ( child && ( child.isNode === true || toJSON && typeof child.toJSON === 'function' ) ) {
 
-					yield { property, index: subProperty, childNode: child };
+					yield { property, 'index': subProperty, 'childNode': child };
 
 				}
 

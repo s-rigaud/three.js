@@ -22,7 +22,7 @@ class CameraHelper extends LineSegments {
 	constructor( camera ) {
 
 		const geometry = new BufferGeometry();
-		const material = new LineBasicMaterial( { color: 0xffffff, vertexColors: true, toneMapped: false } );
+		const material = new LineBasicMaterial( { 'color': 0xffffff, 'vertexColors': true, 'toneMapped': false } );
 
 		const vertices = [];
 		const colors = [];

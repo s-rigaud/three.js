@@ -17,11 +17,11 @@ export const linearToneMapping = /*@__PURE__*/ Fn( ( [ color, exposure ] ) => {
 	return color.mul( exposure ).clamp();
 
 } ).setLayout( {
-	name: 'linearToneMapping',
-	type: 'vec3',
-	inputs: [
-		{ name: 'color', type: 'vec3' },
-		{ name: 'exposure', type: 'float' }
+	'name': 'linearToneMapping',
+	'type': 'vec3',
+	'inputs': [
+		{ 'name': 'color', 'type': 'vec3' },
+		{ 'name': 'exposure', 'type': 'float' }
 	]
 } );
 
@@ -43,11 +43,11 @@ export const reinhardToneMapping = /*@__PURE__*/ Fn( ( [ color, exposure ] ) => 
 	return color.div( color.add( 1.0 ) ).clamp();
 
 } ).setLayout( {
-	name: 'reinhardToneMapping',
-	type: 'vec3',
-	inputs: [
-		{ name: 'color', type: 'vec3' },
-		{ name: 'exposure', type: 'float' }
+	'name': 'reinhardToneMapping',
+	'type': 'vec3',
+	'inputs': [
+		{ 'name': 'color', 'type': 'vec3' },
+		{ 'name': 'exposure', 'type': 'float' }
 	]
 } );
 
@@ -74,11 +74,11 @@ export const cineonToneMapping = /*@__PURE__*/ Fn( ( [ color, exposure ] ) => {
 	return a.div( b ).pow( 2.2 );
 
 } ).setLayout( {
-	name: 'cineonToneMapping',
-	type: 'vec3',
-	inputs: [
-		{ name: 'color', type: 'vec3' },
-		{ name: 'exposure', type: 'float' }
+	'name': 'cineonToneMapping',
+	'type': 'vec3',
+	'inputs': [
+		{ 'name': 'color', 'type': 'vec3' },
+		{ 'name': 'exposure', 'type': 'float' }
 	]
 } );
 
@@ -133,11 +133,11 @@ export const acesFilmicToneMapping = /*@__PURE__*/ Fn( ( [ color, exposure ] ) =
 	return color.clamp();
 
 } ).setLayout( {
-	name: 'acesFilmicToneMapping',
-	type: 'vec3',
-	inputs: [
-		{ name: 'color', type: 'vec3' },
-		{ name: 'exposure', type: 'float' }
+	'name': 'acesFilmicToneMapping',
+	'type': 'vec3',
+	'inputs': [
+		{ 'name': 'color', 'type': 'vec3' },
+		{ 'name': 'exposure', 'type': 'float' }
 	]
 } );
 
@@ -186,11 +186,11 @@ export const agxToneMapping = /*@__PURE__*/ Fn( ( [ color, exposure ] ) => {
 	return colortone;
 
 } ).setLayout( {
-	name: 'agxToneMapping',
-	type: 'vec3',
-	inputs: [
-		{ name: 'color', type: 'vec3' },
-		{ name: 'exposure', type: 'float' }
+	'name': 'agxToneMapping',
+	'type': 'vec3',
+	'inputs': [
+		{ 'name': 'color', 'type': 'vec3' },
+		{ 'name': 'exposure', 'type': 'float' }
 	]
 } );
 
@@ -233,10 +233,10 @@ export const neutralToneMapping = /*@__PURE__*/ Fn( ( [ color, exposure ] ) => {
 	return mix( color, vec3( newPeak ), g );
 
 } ).setLayout( {
-	name: 'neutralToneMapping',
-	type: 'vec3',
-	inputs: [
-		{ name: 'color', type: 'vec3' },
-		{ name: 'exposure', type: 'float' }
+	'name': 'neutralToneMapping',
+	'type': 'vec3',
+	'inputs': [
+		{ 'name': 'color', 'type': 'vec3' },
+		{ 'name': 'exposure', 'type': 'float' }
 	]
 } );

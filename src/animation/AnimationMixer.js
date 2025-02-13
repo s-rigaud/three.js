@@ -190,37 +190,37 @@ class AnimationMixer extends EventDispatcher {
 
 		this.stats = {
 
-			actions: {
-				get total() {
+			'actions': {
+				get 'total'() {
 
 					return scope._actions.length;
 
 				},
-				get inUse() {
+				get 'inUse'() {
 
 					return scope._nActiveActions;
 
 				}
 			},
-			bindings: {
-				get total() {
+			'bindings': {
+				get 'total'() {
 
 					return scope._bindings.length;
 
 				},
-				get inUse() {
+				get 'inUse'() {
 
 					return scope._nActiveBindings;
 
 				}
 			},
-			controlInterpolants: {
-				get total() {
+			'controlInterpolants': {
+				get 'total'() {
 
 					return scope._controlInterpolants.length;
 
 				},
-				get inUse() {
+				get 'inUse'() {
 
 					return scope._nActiveControlInterpolants;
 
@@ -251,8 +251,8 @@ class AnimationMixer extends EventDispatcher {
 
 			actionsForClip = {
 
-				knownActions: [ action ],
-				actionByRoot: {}
+				'knownActions': [ action ],
+				'actionByRoot': {}
 
 			};
 

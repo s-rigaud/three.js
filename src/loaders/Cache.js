@@ -1,10 +1,10 @@
 const Cache = {
 
-	enabled: false,
+	'enabled': false,
 
-	files: {},
+	'files': {},
 
-	add: function ( key, file ) {
+	'add': function ( key, file ) {
 
 		if ( this.enabled === false ) return;
 
@@ -14,7 +14,7 @@ const Cache = {
 
 	},
 
-	get: function ( key ) {
+	'get': function ( key ) {
 
 		if ( this.enabled === false ) return;
 
@@ -24,13 +24,13 @@ const Cache = {
 
 	},
 
-	remove: function ( key ) {
+	'remove': function ( key ) {
 
 		delete this.files[ key ];
 
 	},
 
-	clear: function () {
+	'clear': function () {
 
 		this.files = {};
 

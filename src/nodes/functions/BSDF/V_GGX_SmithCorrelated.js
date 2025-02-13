@@ -14,12 +14,12 @@ const V_GGX_SmithCorrelated = /*@__PURE__*/ Fn( ( { alpha, dotNL, dotNV } ) => {
 	return div( 0.5, gv.add( gl ).max( EPSILON ) );
 
 } ).setLayout( {
-	name: 'V_GGX_SmithCorrelated',
-	type: 'float',
-	inputs: [
-		{ name: 'alpha', type: 'float' },
-		{ name: 'dotNL', type: 'float' },
-		{ name: 'dotNV', type: 'float' }
+	'name': 'V_GGX_SmithCorrelated',
+	'type': 'float',
+	'inputs': [
+		{ 'name': 'alpha', 'type': 'float' },
+		{ 'name': 'dotNL', 'type': 'float' },
+		{ 'name': 'dotNV', 'type': 'float' }
 	]
 } ); // validated
 

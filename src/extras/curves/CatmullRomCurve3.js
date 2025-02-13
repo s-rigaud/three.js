@@ -44,13 +44,13 @@ function CubicPoly() {
 
 	return {
 
-		initCatmullRom: function ( x0, x1, x2, x3, tension ) {
+		'initCatmullRom': function ( x0, x1, x2, x3, tension ) {
 
 			init( x1, x2, tension * ( x2 - x0 ), tension * ( x3 - x1 ) );
 
 		},
 
-		initNonuniformCatmullRom: function ( x0, x1, x2, x3, dt0, dt1, dt2 ) {
+		'initNonuniformCatmullRom': function ( x0, x1, x2, x3, dt0, dt1, dt2 ) {
 
 			// compute tangents when parameterized in [t1,t2]
 			let t1 = ( x1 - x0 ) / dt0 - ( x2 - x0 ) / ( dt0 + dt1 ) + ( x2 - x1 ) / dt1;
@@ -64,7 +64,7 @@ function CubicPoly() {
 
 		},
 
-		calc: function ( t ) {
+		'calc': function ( t ) {
 
 			const t2 = t * t;
 			const t3 = t2 * t;

@@ -13,11 +13,11 @@ class TubeGeometry extends BufferGeometry {
 		this.type = 'TubeGeometry';
 
 		this.parameters = {
-			path: path,
-			tubularSegments: tubularSegments,
-			radius: radius,
-			radialSegments: radialSegments,
-			closed: closed
+			'path': path,
+			'tubularSegments': tubularSegments,
+			'radius': radius,
+			'radialSegments': radialSegments,
+			'closed': closed
 		};
 
 		const frames = path.computeFrenetFrames( tubularSegments, closed );

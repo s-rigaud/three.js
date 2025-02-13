@@ -116,7 +116,7 @@ class Node extends EventDispatcher {
 		 */
 		this._cacheKeyVersion = 0;
 
-		Object.defineProperty( this, 'id', { value: _nodeId ++ } );
+		Object.defineProperty( this, 'id', { 'value': _nodeId ++ } );
 
 	}
 
@@ -281,7 +281,7 @@ class Node extends EventDispatcher {
 	 */
 	dispose() {
 
-		this.dispatchEvent( { type: 'dispose' } );
+		this.dispatchEvent( { 'type': 'dispose' } );
 
 	}
 
@@ -818,9 +818,9 @@ class Node extends EventDispatcher {
 		if ( isRoot ) {
 
 			meta = {
-				textures: {},
-				images: {},
-				nodes: {}
+				'textures': {},
+				'images': {},
+				'nodes': {}
 			};
 
 		}
@@ -835,10 +835,10 @@ class Node extends EventDispatcher {
 				uuid,
 				type,
 				meta,
-				metadata: {
-					version: 4.6,
-					type: 'Node',
-					generator: 'Node.toJSON'
+				'metadata': {
+					'version': 4.6,
+					'type': 'Node',
+					'generator': 'Node.toJSON'
 				}
 			};
 

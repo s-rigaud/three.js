@@ -160,12 +160,12 @@ class WebGLAttributeUtils {
 			bufferGPU,
 			bufferType,
 			type,
-			byteLength: array.byteLength,
-			bytesPerElement: array.BYTES_PER_ELEMENT,
-			version: attribute.version,
-			pbo: attribute.pbo,
-			isInteger: type === gl.INT || type === gl.UNSIGNED_INT || attribute.gpuType === IntType,
-			id: _id ++
+			'byteLength': array.byteLength,
+			'bytesPerElement': array.BYTES_PER_ELEMENT,
+			'version': attribute.version,
+			'pbo': attribute.pbo,
+			'isInteger': type === gl.INT || type === gl.UNSIGNED_INT || attribute.gpuType === IntType,
+			'id': _id ++
 		};
 
 		if ( attribute.isStorageBufferAttribute || attribute.isStorageInstancedBufferAttribute ) {

@@ -21,7 +21,7 @@ class ImageBitmapLoader extends Loader {
 
 		}
 
-		this.options = { premultiplyAlpha: 'none' };
+		this.options = { 'premultiplyAlpha': 'none' };
 
 	}
 
@@ -90,7 +90,7 @@ class ImageBitmapLoader extends Loader {
 
 		} ).then( function ( blob ) {
 
-			return createImageBitmap( blob, Object.assign( scope.options, { colorSpaceConversion: 'none' } ) );
+			return createImageBitmap( blob, Object.assign( scope.options, { 'colorSpaceConversion': 'none' } ) );
 
 		} ).then( function ( imageBitmap ) {
 

@@ -22,8 +22,8 @@ class CubicInterpolant extends Interpolant {
 
 		this.DefaultSettings_ = {
 
-			endingStart: ZeroCurvatureEnding,
-			endingEnd: ZeroCurvatureEnding
+			'endingStart': ZeroCurvatureEnding,
+			'endingEnd': ZeroCurvatureEnding
 
 		};
 

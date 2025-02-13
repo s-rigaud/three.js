@@ -54,9 +54,9 @@ class FileLoader extends Loader {
 
 			loading[ url ].push( {
 
-				onLoad: onLoad,
-				onProgress: onProgress,
-				onError: onError
+				'onLoad': onLoad,
+				'onProgress': onProgress,
+				'onError': onError
 
 			} );
 
@@ -68,15 +68,15 @@ class FileLoader extends Loader {
 		loading[ url ] = [];
 
 		loading[ url ].push( {
-			onLoad: onLoad,
-			onProgress: onProgress,
-			onError: onError,
+			'onLoad': onLoad,
+			'onProgress': onProgress,
+			'onError': onError,
 		} );
 
 		// create request
 		const req = new Request( url, {
-			headers: new Headers( this.requestHeader ),
-			credentials: this.withCredentials ? 'include' : 'same-origin',
+			'headers': new Headers( this.requestHeader ),
+			'credentials': this.withCredentials ? 'include' : 'same-origin',
 			// An abort controller could be added within a future PR
 		} );
 

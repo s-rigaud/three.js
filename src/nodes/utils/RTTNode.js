@@ -35,7 +35,7 @@ class RTTNode extends TextureNode {
 	 * @param {?number} [height=null] - The height of the internal render target.
 	 * @param {Object} [options={type:HalfFloatType}] - The options for the internal render target.
 	 */
-	constructor( node, width = null, height = null, options = { type: HalfFloatType } ) {
+	constructor( node, width = null, height = null, options = { 'type': HalfFloatType } ) {
 
 		const renderTarget = new RenderTarget( width, height, options );
 

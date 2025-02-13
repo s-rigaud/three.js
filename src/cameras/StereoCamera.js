@@ -25,13 +25,13 @@ class StereoCamera {
 		this.cameraR.matrixAutoUpdate = false;
 
 		this._cache = {
-			focus: null,
-			fov: null,
-			aspect: null,
-			near: null,
-			far: null,
-			zoom: null,
-			eyeSep: null
+			'focus': null,
+			'fov': null,
+			'aspect': null,
+			'near': null,
+			'far': null,
+			'zoom': null,
+			'eyeSep': null
 		};
 
 	}

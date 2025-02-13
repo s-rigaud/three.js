@@ -9,19 +9,19 @@ import { NoColorSpace, ByteType, ShortType, RGBAIntegerFormat, RGBIntegerFormat,
 import { DataTexture } from '../../../textures/DataTexture.js';
 
 const glslMethods = {
-	textureDimensions: 'textureSize',
-	equals: 'equal'
+	'textureDimensions': 'textureSize',
+	'equals': 'equal'
 };
 
 const precisionLib = {
-	low: 'lowp',
-	medium: 'mediump',
-	high: 'highp'
+	'low': 'lowp',
+	'medium': 'mediump',
+	'high': 'highp'
 };
 
 const supports = {
-	swizzleAssign: true,
-	storageBuffer: false
+	'swizzleAssign': true,
+	'storageBuffer': false
 };
 
 const defaultPrecisions = `
@@ -95,7 +95,7 @@ class GLSLNodeBuilder extends NodeBuilder {
 		 *
 		 * @type {Object<string,Array<string>>}
 		 */
-		this.builtins = { vertex: [], fragment: [], compute: [] };
+		this.builtins = { 'vertex': [], 'fragment': [], 'compute': [] };
 
 		/**
 		 * Whether comparison in shader code are generated with methods or not.
@@ -214,14 +214,14 @@ ${ flowData.code }
 			}
 
 			const typeMap = {
-				Float32Array: FloatType,
-				Uint8Array: UnsignedByteType,
-				Uint16Array: UnsignedShortType,
-				Uint32Array: UnsignedIntType,
-				Int8Array: ByteType,
-				Int16Array: ShortType,
-				Int32Array: IntType,
-				Uint8ClampedArray: UnsignedByteType,
+				'Float32Array': FloatType,
+				'Uint8Array': UnsignedByteType,
+				'Uint16Array': UnsignedShortType,
+				'Uint32Array': UnsignedIntType,
+				'Int8Array': ByteType,
+				'Int16Array': ShortType,
+				'Int32Array': IntType,
+				'Uint8ClampedArray': UnsignedByteType,
 			};
 
 			const width = Math.pow( 2, Math.ceil( Math.log2( Math.sqrt( numElements / itemSize ) ) ) );
@@ -1197,7 +1197,7 @@ void main() {
 	 */
 	buildCode() {
 
-		const shadersData = this.material !== null ? { fragment: {}, vertex: {} } : { compute: {} };
+		const shadersData = this.material !== null ? { 'fragment': {}, 'vertex': {} } : { 'compute': {} };
 
 		this.sortBindingGroups();
 

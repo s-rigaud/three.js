@@ -144,10 +144,10 @@ class InterleavedBuffer {
 		//
 
 		return {
-			uuid: this.uuid,
-			buffer: this.array.buffer._uuid,
-			type: this.array.constructor.name,
-			stride: this.stride
+			'uuid': this.uuid,
+			'buffer': this.array.buffer._uuid,
+			'type': this.array.constructor.name,
+			'stride': this.stride
 		};
 
 	}

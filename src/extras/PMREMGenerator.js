@@ -288,13 +288,13 @@ class PMREMGenerator {
 		const height = 4 * this._cubeSize;
 
 		const params = {
-			magFilter: LinearFilter,
-			minFilter: LinearFilter,
-			generateMipmaps: false,
-			type: HalfFloatType,
-			format: RGBAFormat,
-			colorSpace: LinearSRGBColorSpace,
-			depthBuffer: false
+			'magFilter': LinearFilter,
+			'minFilter': LinearFilter,
+			'generateMipmaps': false,
+			'type': HalfFloatType,
+			'format': RGBAFormat,
+			'colorSpace': LinearSRGBColorSpace,
+			'depthBuffer': false
 		};
 
 		const cubeUVRenderTarget = _createRenderTarget( width, height, params );
@@ -310,7 +310,7 @@ class PMREMGenerator {
 			this._pingPongRenderTarget = _createRenderTarget( width, height, params );
 
 			const { _lodMax } = this;
-			( { sizeLods: this._sizeLods, lodPlanes: this._lodPlanes, sigmas: this._sigmas } = _createPlanes( _lodMax ) );
+			( { 'sizeLods': this._sizeLods, 'lodPlanes': this._lodPlanes, 'sigmas': this._sigmas } = _createPlanes( _lodMax ) );
 
 			this._blurMaterial = _getBlurShader( _lodMax, width, height );
 
@@ -344,10 +344,10 @@ class PMREMGenerator {
 		renderer.autoClear = false;
 
 		const backgroundMaterial = new MeshBasicMaterial( {
-			name: 'PMREM.Background',
-			side: BackSide,
-			depthWrite: false,
-			depthTest: false,
+			'name': 'PMREM.Background',
+			'side': BackSide,
+			'depthWrite': false,
+			'depthTest': false,
 		} );
 
 		const backgroundBox = new Mesh( new BoxGeometry(), backgroundMaterial );
@@ -712,28 +712,28 @@ function _getBlurShader( lodMax, width, height ) {
 	const poleAxis = new Vector3( 0, 1, 0 );
 	const shaderMaterial = new ShaderMaterial( {
 
-		name: 'SphericalGaussianBlur',
+		'name': 'SphericalGaussianBlur',
 
-		defines: {
+		'defines': {
 			'n': MAX_SAMPLES,
 			'CUBEUV_TEXEL_WIDTH': 1.0 / width,
 			'CUBEUV_TEXEL_HEIGHT': 1.0 / height,
 			'CUBEUV_MAX_MIP': `${lodMax}.0`,
 		},
 
-		uniforms: {
-			'envMap': { value: null },
-			'samples': { value: 1 },
-			'weights': { value: weights },
-			'latitudinal': { value: false },
-			'dTheta': { value: 0 },
-			'mipInt': { value: 0 },
-			'poleAxis': { value: poleAxis }
+		'uniforms': {
+			'envMap': { 'value': null },
+			'samples': { 'value': 1 },
+			'weights': { 'value': weights },
+			'latitudinal': { 'value': false },
+			'dTheta': { 'value': 0 },
+			'mipInt': { 'value': 0 },
+			'poleAxis': { 'value': poleAxis }
 		},
 
-		vertexShader: _getCommonVertexShader(),
+		'vertexShader': _getCommonVertexShader(),
 
-		fragmentShader: /* glsl */`
+		'fragmentShader': /* glsl */`
 
 			precision mediump float;
 			precision mediump int;
@@ -795,9 +795,9 @@ function _getBlurShader( lodMax, width, height ) {
 			}
 		`,
 
-		blending: NoBlending,
-		depthTest: false,
-		depthWrite: false
+		'blending': NoBlending,
+		'depthTest': false,
+		'depthWrite': false
 
 	} );
 
@@ -809,15 +809,15 @@ function _getEquirectMaterial() {
 
 	return new ShaderMaterial( {
 
-		name: 'EquirectangularToCubeUV',
+		'name': 'EquirectangularToCubeUV',
 
-		uniforms: {
-			'envMap': { value: null }
+		'uniforms': {
+			'envMap': { 'value': null }
 		},
 
-		vertexShader: _getCommonVertexShader(),
+		'vertexShader': _getCommonVertexShader(),
 
-		fragmentShader: /* glsl */`
+		'fragmentShader': /* glsl */`
 
 			precision mediump float;
 			precision mediump int;
@@ -838,9 +838,9 @@ function _getEquirectMaterial() {
 			}
 		`,
 
-		blending: NoBlending,
-		depthTest: false,
-		depthWrite: false
+		'blending': NoBlending,
+		'depthTest': false,
+		'depthWrite': false
 
 	} );
 
@@ -850,16 +850,16 @@ function _getCubemapMaterial() {
 
 	return new ShaderMaterial( {
 
-		name: 'CubemapToCubeUV',
+		'name': 'CubemapToCubeUV',
 
-		uniforms: {
-			'envMap': { value: null },
-			'flipEnvMap': { value: - 1 }
+		'uniforms': {
+			'envMap': { 'value': null },
+			'flipEnvMap': { 'value': - 1 }
 		},
 
-		vertexShader: _getCommonVertexShader(),
+		'vertexShader': _getCommonVertexShader(),
 
-		fragmentShader: /* glsl */`
+		'fragmentShader': /* glsl */`
 
 			precision mediump float;
 			precision mediump int;
@@ -877,9 +877,9 @@ function _getCubemapMaterial() {
 			}
 		`,
 
-		blending: NoBlending,
-		depthTest: false,
-		depthWrite: false
+		'blending': NoBlending,
+		'depthTest': false,
+		'depthWrite': false
 
 	} );
 

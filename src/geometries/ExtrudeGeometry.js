@@ -37,8 +37,8 @@ class ExtrudeGeometry extends BufferGeometry {
 		this.type = 'ExtrudeGeometry';
 
 		this.parameters = {
-			shapes: shapes,
-			options: options
+			'shapes': shapes,
+			'options': options
 		};
 
 		shapes = Array.isArray( shapes ) ? shapes : [ shapes ];
@@ -726,7 +726,7 @@ class ExtrudeGeometry extends BufferGeometry {
 
 const WorldUVGenerator = {
 
-	generateTopUV: function ( geometry, vertices, indexA, indexB, indexC ) {
+	'generateTopUV': function ( geometry, vertices, indexA, indexB, indexC ) {
 
 		const a_x = vertices[ indexA * 3 ];
 		const a_y = vertices[ indexA * 3 + 1 ];
@@ -743,7 +743,7 @@ const WorldUVGenerator = {
 
 	},
 
-	generateSideWallUV: function ( geometry, vertices, indexA, indexB, indexC, indexD ) {
+	'generateSideWallUV': function ( geometry, vertices, indexA, indexB, indexC, indexD ) {
 
 		const a_x = vertices[ indexA * 3 ];
 		const a_y = vertices[ indexA * 3 + 1 ];

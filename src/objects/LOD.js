@@ -15,12 +15,12 @@ class LOD extends Object3D {
 		this.type = 'LOD';
 
 		Object.defineProperties( this, {
-			levels: {
-				enumerable: true,
-				value: []
+			'levels': {
+				'enumerable': true,
+				'value': []
 			},
-			isLOD: {
-				value: true,
+			'isLOD': {
+				'value': true,
 			}
 		} );
 
@@ -66,7 +66,7 @@ class LOD extends Object3D {
 
 		}
 
-		levels.splice( l, 0, { distance: distance, hysteresis: hysteresis, object: object } );
+		levels.splice( l, 0, { 'distance': distance, 'hysteresis': hysteresis, 'object': object } );
 
 		this.add( object );
 
@@ -218,9 +218,9 @@ class LOD extends Object3D {
 			const level = levels[ i ];
 
 			data.object.levels.push( {
-				object: level.object.uuid,
-				distance: level.distance,
-				hysteresis: level.hysteresis
+				'object': level.object.uuid,
+				'distance': level.distance,
+				'hysteresis': level.hysteresis
 			} );
 
 		}

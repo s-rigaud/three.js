@@ -42,11 +42,11 @@ function WebGLProperties() {
 	}
 
 	return {
-		has: has,
-		get: get,
-		remove: remove,
-		update: update,
-		dispose: dispose
+		'has': has,
+		'get': get,
+		'remove': remove,
+		'update': update,
+		'dispose': dispose
 	};
 
 }

@@ -10,7 +10,7 @@ function UniformsCache() {
 
 	return {
 
-		get: function ( light ) {
+		'get': function ( light ) {
 
 			if ( lights[ light.id ] !== undefined ) {
 
@@ -24,46 +24,46 @@ function UniformsCache() {
 
 				case 'DirectionalLight':
 					uniforms = {
-						direction: new Vector3(),
-						color: new Color()
+						'direction': new Vector3(),
+						'color': new Color()
 					};
 					break;
 
 				case 'SpotLight':
 					uniforms = {
-						position: new Vector3(),
-						direction: new Vector3(),
-						color: new Color(),
-						distance: 0,
-						coneCos: 0,
-						penumbraCos: 0,
-						decay: 0
+						'position': new Vector3(),
+						'direction': new Vector3(),
+						'color': new Color(),
+						'distance': 0,
+						'coneCos': 0,
+						'penumbraCos': 0,
+						'decay': 0
 					};
 					break;
 
 				case 'PointLight':
 					uniforms = {
-						position: new Vector3(),
-						color: new Color(),
-						distance: 0,
-						decay: 0
+						'position': new Vector3(),
+						'color': new Color(),
+						'distance': 0,
+						'decay': 0
 					};
 					break;
 
 				case 'HemisphereLight':
 					uniforms = {
-						direction: new Vector3(),
-						skyColor: new Color(),
-						groundColor: new Color()
+						'direction': new Vector3(),
+						'skyColor': new Color(),
+						'groundColor': new Color()
 					};
 					break;
 
 				case 'RectAreaLight':
 					uniforms = {
-						color: new Color(),
-						position: new Vector3(),
-						halfWidth: new Vector3(),
-						halfHeight: new Vector3()
+						'color': new Color(),
+						'position': new Vector3(),
+						'halfWidth': new Vector3(),
+						'halfHeight': new Vector3()
 					};
 					break;
 
@@ -85,7 +85,7 @@ function ShadowUniformsCache() {
 
 	return {
 
-		get: function ( light ) {
+		'get': function ( light ) {
 
 			if ( lights[ light.id ] !== undefined ) {
 
@@ -99,33 +99,33 @@ function ShadowUniformsCache() {
 
 				case 'DirectionalLight':
 					uniforms = {
-						shadowIntensity: 1,
-						shadowBias: 0,
-						shadowNormalBias: 0,
-						shadowRadius: 1,
-						shadowMapSize: new Vector2()
+						'shadowIntensity': 1,
+						'shadowBias': 0,
+						'shadowNormalBias': 0,
+						'shadowRadius': 1,
+						'shadowMapSize': new Vector2()
 					};
 					break;
 
 				case 'SpotLight':
 					uniforms = {
-						shadowIntensity: 1,
-						shadowBias: 0,
-						shadowNormalBias: 0,
-						shadowRadius: 1,
-						shadowMapSize: new Vector2()
+						'shadowIntensity': 1,
+						'shadowBias': 0,
+						'shadowNormalBias': 0,
+						'shadowRadius': 1,
+						'shadowMapSize': new Vector2()
 					};
 					break;
 
 				case 'PointLight':
 					uniforms = {
-						shadowIntensity: 1,
-						shadowBias: 0,
-						shadowNormalBias: 0,
-						shadowRadius: 1,
-						shadowMapSize: new Vector2(),
-						shadowCameraNear: 1,
-						shadowCameraFar: 1000
+						'shadowIntensity': 1,
+						'shadowBias': 0,
+						'shadowNormalBias': 0,
+						'shadowRadius': 1,
+						'shadowMapSize': new Vector2(),
+						'shadowCameraNear': 1,
+						'shadowCameraFar': 1000
 					};
 					break;
 
@@ -161,44 +161,44 @@ function WebGLLights( extensions ) {
 
 	const state = {
 
-		version: 0,
+		'version': 0,
 
-		hash: {
-			directionalLength: - 1,
-			pointLength: - 1,
-			spotLength: - 1,
-			rectAreaLength: - 1,
-			hemiLength: - 1,
+		'hash': {
+			'directionalLength': - 1,
+			'pointLength': - 1,
+			'spotLength': - 1,
+			'rectAreaLength': - 1,
+			'hemiLength': - 1,
 
-			numDirectionalShadows: - 1,
-			numPointShadows: - 1,
-			numSpotShadows: - 1,
-			numSpotMaps: - 1,
+			'numDirectionalShadows': - 1,
+			'numPointShadows': - 1,
+			'numSpotShadows': - 1,
+			'numSpotMaps': - 1,
 
-			numLightProbes: - 1
+			'numLightProbes': - 1
 		},
 
-		ambient: [ 0, 0, 0 ],
-		probe: [],
-		directional: [],
-		directionalShadow: [],
-		directionalShadowMap: [],
-		directionalShadowMatrix: [],
-		spot: [],
-		spotLightMap: [],
-		spotShadow: [],
-		spotShadowMap: [],
-		spotLightMatrix: [],
-		rectArea: [],
-		rectAreaLTC1: null,
-		rectAreaLTC2: null,
-		point: [],
-		pointShadow: [],
-		pointShadowMap: [],
-		pointShadowMatrix: [],
-		hemi: [],
-		numSpotLightShadowsWithMaps: 0,
-		numLightProbes: 0
+		'ambient': [ 0, 0, 0 ],
+		'probe': [],
+		'directional': [],
+		'directionalShadow': [],
+		'directionalShadowMap': [],
+		'directionalShadowMatrix': [],
+		'spot': [],
+		'spotLightMap': [],
+		'spotShadow': [],
+		'spotShadowMap': [],
+		'spotLightMatrix': [],
+		'rectArea': [],
+		'rectAreaLTC1': null,
+		'rectAreaLTC2': null,
+		'point': [],
+		'pointShadow': [],
+		'pointShadowMap': [],
+		'pointShadowMatrix': [],
+		'hemi': [],
+		'numSpotLightShadowsWithMaps': 0,
+		'numLightProbes': 0
 
 	};
 
@@ -556,9 +556,9 @@ function WebGLLights( extensions ) {
 	}
 
 	return {
-		setup: setup,
-		setupView: setupView,
-		state: state
+		'setup': setup,
+		'setupView': setupView,
+		'state': state
 	};
 
 }

@@ -140,7 +140,7 @@ class BufferAttributeNode extends InputNode {
 			if ( bufferData === undefined ) {
 
 				bufferData = {
-					node: this
+					'node': this
 				};
 
 				builder.globalCache.setData( this.value, bufferData );

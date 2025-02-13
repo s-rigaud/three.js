@@ -10,10 +10,10 @@ class PlaneGeometry extends BufferGeometry {
 		this.type = 'PlaneGeometry';
 
 		this.parameters = {
-			width: width,
-			height: height,
-			widthSegments: widthSegments,
-			heightSegments: heightSegments
+			'width': width,
+			'height': height,
+			'widthSegments': widthSegments,
+			'heightSegments': heightSegments
 		};
 
 		const width_half = width / 2;

@@ -346,9 +346,9 @@ function checkIntersection( object, material, raycaster, ray, pA, pB, pC, point 
 	if ( distance < raycaster.near || distance > raycaster.far ) return null;
 
 	return {
-		distance: distance,
-		point: _intersectionPointWorld.clone(),
-		object: object
+		'distance': distance,
+		'point': _intersectionPointWorld.clone(),
+		'object': object
 	};
 
 }
@@ -391,11 +391,11 @@ function checkGeometryIntersection( object, material, raycaster, ray, uv, uv1, n
 		}
 
 		const face = {
-			a: a,
-			b: b,
-			c: c,
-			normal: new Vector3(),
-			materialIndex: 0
+			'a': a,
+			'b': b,
+			'c': c,
+			'normal': new Vector3(),
+			'materialIndex': 0
 		};
 
 		Triangle.getNormal( _vA, _vB, _vC, face.normal );

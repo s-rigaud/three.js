@@ -37,7 +37,7 @@ class NodeCode {
 		 */
 		this.code = code;
 
-		Object.defineProperty( this, 'isNodeCode', { value: true } );
+		Object.defineProperty( this, 'isNodeCode', { 'value': true } );
 
 	}
 

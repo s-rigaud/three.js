@@ -13,8 +13,8 @@ class ShapeGeometry extends BufferGeometry {
 		this.type = 'ShapeGeometry';
 
 		this.parameters = {
-			shapes: shapes,
-			curveSegments: curveSegments
+			'shapes': shapes,
+			'curveSegments': curveSegments
 		};
 
 		// buffers

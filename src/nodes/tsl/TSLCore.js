@@ -425,7 +425,7 @@ const floatsCacheMap = new Map( [ ...intsCacheMap ].map( el => new ConstNode( el
 for ( const float of floats ) floatsCacheMap.set( float, new ConstNode( float ) );
 for ( const float of floats ) floatsCacheMap.set( - float, new ConstNode( - float ) );
 
-const cacheMaps = { bool: boolsCacheMap, uint: uintsCacheMap, ints: intsCacheMap, float: floatsCacheMap };
+const cacheMaps = { 'bool': boolsCacheMap, 'uint': uintsCacheMap, 'ints': intsCacheMap, 'float': floatsCacheMap };
 
 const constNodesCacheMap = new Map( [ ...boolsCacheMap, ...floatsCacheMap ] );
 

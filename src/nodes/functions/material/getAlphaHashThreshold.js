@@ -58,10 +58,10 @@ const getAlphaHashThreshold = /*@__PURE__*/ Fn( ( [ position ] ) => {
 	return clamp( threshold, 1.0e-6, 1.0 );
 
 } ).setLayout( {
-	name: 'getAlphaHashThreshold',
-	type: 'float',
-	inputs: [
-		{ name: 'position', type: 'vec3' }
+	'name': 'getAlphaHashThreshold',
+	'type': 'float',
+	'inputs': [
+		{ 'name': 'position', 'type': 'vec3' }
 	]
 } );
 

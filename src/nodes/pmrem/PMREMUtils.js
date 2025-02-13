@@ -58,10 +58,10 @@ const getFace = /*@__PURE__*/ Fn( ( [ direction ] ) => {
 	return face;
 
 } ).setLayout( {
-	name: 'getFace',
-	type: 'float',
-	inputs: [
-		{ name: 'direction', type: 'vec3' }
+	'name': 'getFace',
+	'type': 'float',
+	'inputs': [
+		{ 'name': 'direction', 'type': 'vec3' }
 	]
 } );
 
@@ -99,11 +99,11 @@ const getUV = /*@__PURE__*/ Fn( ( [ direction, face ] ) => {
 	return mul( 0.5, uv.add( 1.0 ) );
 
 } ).setLayout( {
-	name: 'getUV',
-	type: 'vec2',
-	inputs: [
-		{ name: 'direction', type: 'vec3' },
-		{ name: 'face', type: 'float' }
+	'name': 'getUV',
+	'type': 'vec2',
+	'inputs': [
+		{ 'name': 'direction', 'type': 'vec3' },
+		{ 'name': 'face', 'type': 'float' }
 	]
 } );
 
@@ -136,10 +136,10 @@ const roughnessToMip = /*@__PURE__*/ Fn( ( [ roughness ] ) => {
 	return mip;
 
 } ).setLayout( {
-	name: 'roughnessToMip',
-	type: 'float',
-	inputs: [
-		{ name: 'roughness', type: 'float' }
+	'name': 'roughnessToMip',
+	'type': 'float',
+	'inputs': [
+		{ 'name': 'roughness', 'type': 'float' }
 	]
 } );
 
@@ -182,11 +182,11 @@ export const getDirection = /*@__PURE__*/ Fn( ( [ uv_immutable, face ] ) => {
 	return direction;
 
 } ).setLayout( {
-	name: 'getDirection',
-	type: 'vec3',
-	inputs: [
-		{ name: 'uv', type: 'vec2' },
-		{ name: 'face', type: 'float' }
+	'name': 'getDirection',
+	'type': 'vec3',
+	'inputs': [
+		{ 'name': 'uv', 'type': 'vec2' },
+		{ 'name': 'face', 'type': 'float' }
 	]
 } );
 
@@ -267,9 +267,9 @@ export const blur = /*@__PURE__*/ Fn( ( { n, latitudinal, poleAxis, outputDirect
 	axis.assign( normalize( axis ) );
 
 	const gl_FragColor = vec3().toVar();
-	gl_FragColor.addAssign( weights.element( 0 ).mul( getSample( { theta: 0.0, axis, outputDirection, mipInt, envMap, CUBEUV_TEXEL_WIDTH, CUBEUV_TEXEL_HEIGHT, CUBEUV_MAX_MIP } ) ) );
+	gl_FragColor.addAssign( weights.element( 0 ).mul( getSample( { 'theta': 0.0, axis, outputDirection, mipInt, envMap, CUBEUV_TEXEL_WIDTH, CUBEUV_TEXEL_HEIGHT, CUBEUV_MAX_MIP } ) ) );
 
-	Loop( { start: int( 1 ), end: n }, ( { i } ) => {
+	Loop( { 'start': int( 1 ), 'end': n }, ( { i } ) => {
 
 		If( i.greaterThanEqual( samples ), () => {
 
@@ -278,7 +278,7 @@ export const blur = /*@__PURE__*/ Fn( ( { n, latitudinal, poleAxis, outputDirect
 		} );
 
 		const theta = float( dTheta.mul( float( i ) ) ).toVar();
-		gl_FragColor.addAssign( weights.element( i ).mul( getSample( { theta: theta.mul( - 1.0 ), axis, outputDirection, mipInt, envMap, CUBEUV_TEXEL_WIDTH, CUBEUV_TEXEL_HEIGHT, CUBEUV_MAX_MIP } ) ) );
+		gl_FragColor.addAssign( weights.element( i ).mul( getSample( { 'theta': theta.mul( - 1.0 ), axis, outputDirection, mipInt, envMap, CUBEUV_TEXEL_WIDTH, CUBEUV_TEXEL_HEIGHT, CUBEUV_MAX_MIP } ) ) );
 		gl_FragColor.addAssign( weights.element( i ).mul( getSample( { theta, axis, outputDirection, mipInt, envMap, CUBEUV_TEXEL_WIDTH, CUBEUV_TEXEL_HEIGHT, CUBEUV_MAX_MIP } ) ) );
 
 	} );

@@ -382,7 +382,7 @@ class MeshPhysicalNodeMaterial extends MeshStandardNodeMaterial {
 			const clearcoatRoughnessNode = this.clearcoatRoughnessNode ? float( this.clearcoatRoughnessNode ) : materialClearcoatRoughness;
 
 			clearcoat.assign( clearcoatNode );
-			clearcoatRoughness.assign( getRoughness( { roughness: clearcoatRoughnessNode } ) );
+			clearcoatRoughness.assign( getRoughness( { 'roughness': clearcoatRoughnessNode } ) );
 
 		}
 

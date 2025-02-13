@@ -1011,7 +1011,7 @@ class WebGLState {
 
 		if ( boundTexture === undefined ) {
 
-			boundTexture = { type: undefined, texture: undefined };
+			boundTexture = { 'type': undefined, 'texture': undefined };
 			currentBoundTextures[ webglSlot ] = boundTexture;
 
 		}

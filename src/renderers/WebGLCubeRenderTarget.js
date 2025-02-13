@@ -15,7 +15,7 @@ class WebGLCubeRenderTarget extends WebGLRenderTarget {
 
 		this.isWebGLCubeRenderTarget = true;
 
-		const image = { width: size, height: size, depth: 1 };
+		const image = { 'width': size, 'height': size, 'depth': 1 };
 		const images = [ image, image, image, image, image, image ];
 
 		this.texture = new CubeTexture( images, options.mapping, options.wrapS, options.wrapT, options.magFilter, options.minFilter, options.format, options.type, options.anisotropy, options.colorSpace );
@@ -46,11 +46,11 @@ class WebGLCubeRenderTarget extends WebGLRenderTarget {
 
 		const shader = {
 
-			uniforms: {
-				tEquirect: { value: null },
+			'uniforms': {
+				'tEquirect': { 'value': null },
 			},
 
-			vertexShader: /* glsl */`
+			'vertexShader': /* glsl */`
 
 				varying vec3 vWorldDirection;
 
@@ -70,7 +70,7 @@ class WebGLCubeRenderTarget extends WebGLRenderTarget {
 				}
 			`,
 
-			fragmentShader: /* glsl */`
+			'fragmentShader': /* glsl */`
 
 				uniform sampler2D tEquirect;
 
@@ -94,13 +94,13 @@ class WebGLCubeRenderTarget extends WebGLRenderTarget {
 
 		const material = new ShaderMaterial( {
 
-			name: 'CubemapFromEquirect',
+			'name': 'CubemapFromEquirect',
 
-			uniforms: cloneUniforms( shader.uniforms ),
-			vertexShader: shader.vertexShader,
-			fragmentShader: shader.fragmentShader,
-			side: BackSide,
-			blending: NoBlending
+			'uniforms': cloneUniforms( shader.uniforms ),
+			'vertexShader': shader.vertexShader,
+			'fragmentShader': shader.fragmentShader,
+			'side': BackSide,
+			'blending': NoBlending
 
 		} );
 

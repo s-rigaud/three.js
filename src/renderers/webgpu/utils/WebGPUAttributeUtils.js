@@ -114,10 +114,10 @@ class WebGPUAttributeUtils {
 			const size = array.byteLength + ( ( 4 - ( array.byteLength % 4 ) ) % 4 ); // ensure 4 byte alignment, see #20441
 
 			buffer = device.createBuffer( {
-				label: bufferAttribute.name,
-				size: size,
-				usage: usage,
-				mappedAtCreation: true
+				'label': bufferAttribute.name,
+				'size': size,
+				'usage': usage,
+				'mappedAtCreation': true
 			} );
 
 			new array.constructor( buffer.getMappedRange() ).set( array );
@@ -231,7 +231,7 @@ class WebGPUAttributeUtils {
 
 				vertexBufferLayout = {
 					arrayStride,
-					attributes: [],
+					'attributes': [],
 					stepMode
 				};
 
@@ -243,7 +243,7 @@ class WebGPUAttributeUtils {
 			const offset = ( geometryAttribute.isInterleavedBufferAttribute === true ) ? geometryAttribute.offset * bytesPerElement : 0;
 
 			vertexBufferLayout.attributes.push( {
-				shaderLocation: slot,
+				'shaderLocation': slot,
 				offset,
 				format
 			} );
@@ -288,13 +288,13 @@ class WebGPUAttributeUtils {
 		const size = bufferGPU.size;
 
 		const readBufferGPU = device.createBuffer( {
-			label: `${ attribute.name }_readback`,
+			'label': `${ attribute.name }_readback`,
 			size,
-			usage: GPUBufferUsage.COPY_DST | GPUBufferUsage.MAP_READ
+			'usage': GPUBufferUsage.COPY_DST | GPUBufferUsage.MAP_READ
 		} );
 
 		const cmdEncoder = device.createCommandEncoder( {
-			label: `readback_encoder_${ attribute.name }`
+			'label': `readback_encoder_${ attribute.name }`
 		} );
 
 		cmdEncoder.copyBufferToBuffer(

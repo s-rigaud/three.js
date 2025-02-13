@@ -127,11 +127,11 @@ class Sprite extends Object3D {
 
 		intersects.push( {
 
-			distance: distance,
-			point: _intersectPoint.clone(),
-			uv: Triangle.getInterpolation( _intersectPoint, _vA, _vB, _vC, _uvA, _uvB, _uvC, new Vector2() ),
-			face: null,
-			object: this
+			'distance': distance,
+			'point': _intersectPoint.clone(),
+			'uv': Triangle.getInterpolation( _intersectPoint, _vA, _vB, _vC, _uvA, _uvB, _uvC, new Vector2() ),
+			'face': null,
+			'object': this
 
 		} );
 

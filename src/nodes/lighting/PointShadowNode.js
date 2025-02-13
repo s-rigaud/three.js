@@ -88,11 +88,11 @@ export const cubeToUV = /*@__PURE__*/ Fn( ( [ pos, texelSizeY ] ) => {
 	return vec2( 0.125, 0.25 ).mul( planar ).add( vec2( 0.375, 0.75 ) ).flipY();
 
 } ).setLayout( {
-	name: 'cubeToUV',
-	type: 'vec2',
-	inputs: [
-		{ name: 'pos', type: 'vec3' },
-		{ name: 'texelSizeY', type: 'float' }
+	'name': 'cubeToUV',
+	'type': 'vec2',
+	'inputs': [
+		{ 'name': 'pos', 'type': 'vec3' },
+		{ 'name': 'texelSizeY', 'type': 'float' }
 	]
 } );
 

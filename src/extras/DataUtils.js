@@ -128,13 +128,13 @@ function _generateTables() {
 	}
 
 	return {
-		floatView: floatView,
-		uint32View: uint32View,
-		baseTable: baseTable,
-		shiftTable: shiftTable,
-		mantissaTable: mantissaTable,
-		exponentTable: exponentTable,
-		offsetTable: offsetTable
+		'floatView': floatView,
+		'uint32View': uint32View,
+		'baseTable': baseTable,
+		'shiftTable': shiftTable,
+		'mantissaTable': mantissaTable,
+		'exponentTable': exponentTable,
+		'offsetTable': offsetTable
 	};
 
 }
@@ -165,8 +165,8 @@ function fromHalfFloat( val ) {
 }
 
 const DataUtils = {
-	toHalfFloat: toHalfFloat,
-	fromHalfFloat: fromHalfFloat,
+	'toHalfFloat': toHalfFloat,
+	'fromHalfFloat': fromHalfFloat,
 };
 
 export {

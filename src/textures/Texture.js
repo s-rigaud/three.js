@@ -25,7 +25,7 @@ class Texture extends EventDispatcher {
 
 		this.isTexture = true;
 
-		Object.defineProperty( this, 'id', { value: _textureId ++ } );
+		Object.defineProperty( this, 'id', { 'value': _textureId ++ } );
 
 		this.uuid = generateUUID();
 
@@ -158,41 +158,41 @@ class Texture extends EventDispatcher {
 
 		const output = {
 
-			metadata: {
-				version: 4.6,
-				type: 'Texture',
-				generator: 'Texture.toJSON'
+			'metadata': {
+				'version': 4.6,
+				'type': 'Texture',
+				'generator': 'Texture.toJSON'
 			},
 
-			uuid: this.uuid,
-			name: this.name,
+			'uuid': this.uuid,
+			'name': this.name,
 
-			image: this.source.toJSON( meta ).uuid,
+			'image': this.source.toJSON( meta ).uuid,
 
-			mapping: this.mapping,
-			channel: this.channel,
+			'mapping': this.mapping,
+			'channel': this.channel,
 
-			repeat: [ this.repeat.x, this.repeat.y ],
-			offset: [ this.offset.x, this.offset.y ],
-			center: [ this.center.x, this.center.y ],
-			rotation: this.rotation,
+			'repeat': [ this.repeat.x, this.repeat.y ],
+			'offset': [ this.offset.x, this.offset.y ],
+			'center': [ this.center.x, this.center.y ],
+			'rotation': this.rotation,
 
-			wrap: [ this.wrapS, this.wrapT ],
+			'wrap': [ this.wrapS, this.wrapT ],
 
-			format: this.format,
-			internalFormat: this.internalFormat,
-			type: this.type,
-			colorSpace: this.colorSpace,
+			'format': this.format,
+			'internalFormat': this.internalFormat,
+			'type': this.type,
+			'colorSpace': this.colorSpace,
 
-			minFilter: this.minFilter,
-			magFilter: this.magFilter,
-			anisotropy: this.anisotropy,
+			'minFilter': this.minFilter,
+			'magFilter': this.magFilter,
+			'anisotropy': this.anisotropy,
 
-			flipY: this.flipY,
+			'flipY': this.flipY,
 
-			generateMipmaps: this.generateMipmaps,
-			premultiplyAlpha: this.premultiplyAlpha,
-			unpackAlignment: this.unpackAlignment
+			'generateMipmaps': this.generateMipmaps,
+			'premultiplyAlpha': this.premultiplyAlpha,
+			'unpackAlignment': this.unpackAlignment
 
 		};
 
@@ -210,7 +210,7 @@ class Texture extends EventDispatcher {
 
 	dispose() {
 
-		this.dispatchEvent( { type: 'dispose' } );
+		this.dispatchEvent( { 'type': 'dispose' } );
 
 	}
 

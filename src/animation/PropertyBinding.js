@@ -157,11 +157,11 @@ class PropertyBinding {
 
 		const results = {
 			// directoryName: matches[ 1 ], // (tschw) currently unused
-			nodeName: matches[ 2 ],
-			objectName: matches[ 3 ],
-			objectIndex: matches[ 4 ],
-			propertyName: matches[ 5 ], // required
-			propertyIndex: matches[ 6 ]
+			'nodeName': matches[ 2 ],
+			'objectName': matches[ 3 ],
+			'objectIndex': matches[ 4 ],
+			'propertyName': matches[ 5 ], // required
+			'propertyIndex': matches[ 6 ]
 		};
 
 		const lastDot = results.nodeName && results.nodeName.lastIndexOf( '.' );
@@ -660,16 +660,16 @@ class PropertyBinding {
 PropertyBinding.Composite = Composite;
 
 PropertyBinding.prototype.BindingType = {
-	Direct: 0,
-	EntireArray: 1,
-	ArrayElement: 2,
-	HasFromToArray: 3
+	'Direct': 0,
+	'EntireArray': 1,
+	'ArrayElement': 2,
+	'HasFromToArray': 3
 };
 
 PropertyBinding.prototype.Versioning = {
-	None: 0,
-	NeedsUpdate: 1,
-	MatrixWorldNeedsUpdate: 2
+	'None': 0,
+	'NeedsUpdate': 1,
+	'MatrixWorldNeedsUpdate': 2
 };
 
 PropertyBinding.prototype.GetterByBindingType = [

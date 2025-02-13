@@ -64,11 +64,11 @@ function WebGLAttributes( gl ) {
 		}
 
 		return {
-			buffer: buffer,
-			type: type,
-			bytesPerElement: array.BYTES_PER_ELEMENT,
-			version: attribute.version,
-			size: size
+			'buffer': buffer,
+			'type': type,
+			'bytesPerElement': array.BYTES_PER_ELEMENT,
+			'version': attribute.version,
+			'size': size
 		};
 
 	}
@@ -185,10 +185,10 @@ function WebGLAttributes( gl ) {
 			if ( ! cached || cached.version < attribute.version ) {
 
 				buffers.set( attribute, {
-					buffer: attribute.buffer,
-					type: attribute.type,
-					bytesPerElement: attribute.elementSize,
-					version: attribute.version
+					'buffer': attribute.buffer,
+					'type': attribute.type,
+					'bytesPerElement': attribute.elementSize,
+					'version': attribute.version
 				} );
 
 			}
@@ -221,9 +221,9 @@ function WebGLAttributes( gl ) {
 
 	return {
 
-		get: get,
-		remove: remove,
-		update: update
+		'get': get,
+		'remove': remove,
+		'update': update
 
 	};
 

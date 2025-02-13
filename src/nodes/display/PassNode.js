@@ -225,7 +225,7 @@ class PassNode extends TempNode {
 		//depthTexture.type = FloatType;
 		depthTexture.name = 'depth';
 
-		const renderTarget = new RenderTarget( this._width * this._pixelRatio, this._height * this._pixelRatio, { type: HalfFloatType, ...options, } );
+		const renderTarget = new RenderTarget( this._width * this._pixelRatio, this._height * this._pixelRatio, { 'type': HalfFloatType, ...options, } );
 		renderTarget.texture.name = 'output';
 		renderTarget.depthTexture = depthTexture;
 
@@ -243,8 +243,8 @@ class PassNode extends TempNode {
 		 * @type {Object<string, Texture>}
 		 */
 		this._textures = {
-			output: renderTarget.texture,
-			depth: depthTexture
+			'output': renderTarget.texture,
+			'depth': depthTexture
 		};
 
 		/**

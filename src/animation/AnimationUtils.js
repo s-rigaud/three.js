@@ -335,13 +335,13 @@ function makeClipAdditive( targetClip, referenceFrame = 0, referenceClip = targe
 }
 
 const AnimationUtils = {
-	convertArray: convertArray,
-	isTypedArray: isTypedArray,
-	getKeyframeOrder: getKeyframeOrder,
-	sortedArray: sortedArray,
-	flattenJSON: flattenJSON,
-	subclip: subclip,
-	makeClipAdditive: makeClipAdditive
+	'convertArray': convertArray,
+	'isTypedArray': isTypedArray,
+	'getKeyframeOrder': getKeyframeOrder,
+	'sortedArray': sortedArray,
+	'flattenJSON': flattenJSON,
+	'subclip': subclip,
+	'makeClipAdditive': makeClipAdditive
 };
 
 export {

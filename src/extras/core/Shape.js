@@ -35,8 +35,8 @@ class Shape extends Path {
 
 		return {
 
-			shape: this.getPoints( divisions ),
-			holes: this.getPointsHoles( divisions )
+			'shape': this.getPoints( divisions ),
+			'holes': this.getPointsHoles( divisions )
 
 		};
 

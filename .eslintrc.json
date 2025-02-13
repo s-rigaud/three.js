@@ -65,6 +65,7 @@
     "no-duplicate-imports": [
       "error"
     ],
+    "quote-props": ["error", "always"],
     "valid-jsdoc": [
       "error",
       {

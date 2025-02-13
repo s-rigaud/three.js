@@ -165,7 +165,7 @@ class Texture3DNode extends TextureNode {
 	 */
 	normal( uvNode ) {
 
-		return normal( { texture: this, uv: uvNode } );
+		return normal( { 'texture': this, 'uv': uvNode } );
 
 	}
 

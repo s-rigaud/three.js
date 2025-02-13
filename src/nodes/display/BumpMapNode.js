@@ -11,7 +11,7 @@ import { Fn, nodeProxy, float, vec2 } from '../tsl/TSLBase.js';
 const dHdxy_fwd = Fn( ( { textureNode, bumpScale } ) => {
 
 	// It's used to preserve the same TextureNode instance
-	const sampleTexture = ( callback ) => textureNode.cache().context( { getUV: ( texNode ) => callback( texNode.uvNode || uv() ), forceUVContext: true } );
+	const sampleTexture = ( callback ) => textureNode.cache().context( { 'getUV': ( texNode ) => callback( texNode.uvNode || uv() ), 'forceUVContext': true } );
 
 	const Hll = float( sampleTexture( ( uvNode ) => uvNode ) );
 
@@ -91,11 +91,11 @@ class BumpMapNode extends TempNode {
 	setup() {
 
 		const bumpScale = this.scaleNode !== null ? this.scaleNode : 1;
-		const dHdxy = dHdxy_fwd( { textureNode: this.textureNode, bumpScale } );
+		const dHdxy = dHdxy_fwd( { 'textureNode': this.textureNode, bumpScale } );
 
 		return perturbNormalArb( {
-			surf_pos: positionView,
-			surf_norm: normalView,
+			'surf_pos': positionView,
+			'surf_norm': normalView,
 			dHdxy
 		} );
 

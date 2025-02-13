@@ -9,7 +9,7 @@ class Source {
 
 		this.isSource = true;
 
-		Object.defineProperty( this, 'id', { value: _sourceId ++ } );
+		Object.defineProperty( this, 'id', { 'value': _sourceId ++ } );
 
 		this.uuid = generateUUID();
 
@@ -37,8 +37,8 @@ class Source {
 		}
 
 		const output = {
-			uuid: this.uuid,
-			url: ''
+			'uuid': this.uuid,
+			'url': ''
 		};
 
 		const data = this.data;
@@ -108,10 +108,10 @@ function serializeImage( image ) {
 			// images of DataTexture
 
 			return {
-				data: Array.from( image.data ),
-				width: image.width,
-				height: image.height,
-				type: image.data.constructor.name
+				'data': Array.from( image.data ),
+				'width': image.width,
+				'height': image.height,
+				'type': image.data.constructor.name
 			};
 
 		} else {

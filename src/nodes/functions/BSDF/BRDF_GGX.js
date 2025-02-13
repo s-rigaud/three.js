@@ -42,8 +42,8 @@ const BRDF_GGX = /*@__PURE__*/ Fn( ( inputs ) => {
 		const dotBV = anisotropyB.dot( positionViewDirection );
 		const dotBH = anisotropyB.dot( halfDir );
 
-		V = V_GGX_SmithCorrelated_Anisotropic( { alphaT, alphaB: alpha, dotTV, dotBV, dotTL, dotBL, dotNV, dotNL } );
-		D = D_GGX_Anisotropic( { alphaT, alphaB: alpha, dotNH, dotTH, dotBH } );
+		V = V_GGX_SmithCorrelated_Anisotropic( { alphaT, 'alphaB': alpha, dotTV, dotBV, dotTL, dotBL, dotNV, dotNL } );
+		D = D_GGX_Anisotropic( { alphaT, 'alphaB': alpha, dotNH, dotTH, dotBH } );
 
 	} else {
 

@@ -582,8 +582,8 @@ function WebGLMaterials( renderer, properties ) {
 	}
 
 	return {
-		refreshFogUniforms: refreshFogUniforms,
-		refreshMaterialUniforms: refreshMaterialUniforms
+		'refreshFogUniforms': refreshFogUniforms,
+		'refreshMaterialUniforms': refreshMaterialUniforms
 	};
 
 }

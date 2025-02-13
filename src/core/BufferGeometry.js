@@ -27,7 +27,7 @@ class BufferGeometry extends EventDispatcher {
 
 		this.isBufferGeometry = true;
 
-		Object.defineProperty( this, 'id', { value: _id ++ } );
+		Object.defineProperty( this, 'id', { 'value': _id ++ } );
 
 		this.uuid = generateUUID();
 
@@ -46,7 +46,7 @@ class BufferGeometry extends EventDispatcher {
 		this.boundingBox = null;
 		this.boundingSphere = null;
 
-		this.drawRange = { start: 0, count: Infinity };
+		this.drawRange = { 'start': 0, 'count': Infinity };
 
 		this.userData = {};
 
@@ -120,9 +120,9 @@ class BufferGeometry extends EventDispatcher {
 
 		this.groups.push( {
 
-			start: start,
-			count: count,
-			materialIndex: materialIndex
+			'start': start,
+			'count': count,
+			'materialIndex': materialIndex
 
 		} );
 
@@ -599,8 +599,8 @@ class BufferGeometry extends EventDispatcher {
 		if ( groups.length === 0 ) {
 
 			groups = [ {
-				start: 0,
-				count: index.count
+				'start': 0,
+				'count': index.count
 			} ];
 
 		}
@@ -881,10 +881,10 @@ class BufferGeometry extends EventDispatcher {
 	toJSON() {
 
 		const data = {
-			metadata: {
-				version: 4.6,
-				type: 'BufferGeometry',
-				generator: 'BufferGeometry.toJSON'
+			'metadata': {
+				'version': 4.6,
+				'type': 'BufferGeometry',
+				'generator': 'BufferGeometry.toJSON'
 			}
 		};
 
@@ -911,15 +911,15 @@ class BufferGeometry extends EventDispatcher {
 
 		// for simplicity the code assumes attributes are not shared across geometries, see #15811
 
-		data.data = { attributes: {} };
+		data.data = { 'attributes': {} };
 
 		const index = this.index;
 
 		if ( index !== null ) {
 
 			data.data.index = {
-				type: index.array.constructor.name,
-				array: Array.prototype.slice.call( index.array )
+				'type': index.array.constructor.name,
+				'array': Array.prototype.slice.call( index.array )
 			};
 
 		}
@@ -981,8 +981,8 @@ class BufferGeometry extends EventDispatcher {
 		if ( boundingSphere !== null ) {
 
 			data.data.boundingSphere = {
-				center: boundingSphere.center.toArray(),
-				radius: boundingSphere.radius
+				'center': boundingSphere.center.toArray(),
+				'radius': boundingSphere.radius
 			};
 
 		}
@@ -1104,7 +1104,7 @@ class BufferGeometry extends EventDispatcher {
 
 	dispose() {
 
-		this.dispatchEvent( { type: 'dispose' } );
+		this.dispatchEvent( { 'type': 'dispose' } );
 
 	}
 

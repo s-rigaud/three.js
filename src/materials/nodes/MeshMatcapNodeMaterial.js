@@ -59,7 +59,7 @@ class MeshMatcapNodeMaterial extends NodeMaterial {
 
 		if ( builder.material.matcap ) {
 
-			matcapColor = materialReference( 'matcap', 'texture' ).context( { getUV: () => uv } );
+			matcapColor = materialReference( 'matcap', 'texture' ).context( { 'getUV': () => uv } );
 
 		} else {
 

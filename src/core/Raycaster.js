@@ -17,11 +17,11 @@ class Raycaster {
 		this.layers = new Layers();
 
 		this.params = {
-			Mesh: {},
-			Line: { threshold: 1 },
-			LOD: {},
-			Points: { threshold: 1 },
-			Sprite: {}
+			'Mesh': {},
+			'Line': { 'threshold': 1 },
+			'LOD': {},
+			'Points': { 'threshold': 1 },
+			'Sprite': {}
 		};
 
 	}

@@ -119,16 +119,16 @@ function WebGLBindingStates( gl, attributes ) {
 		return {
 
 			// for backward compatibility on non-VAO support browser
-			geometry: null,
-			program: null,
-			wireframe: false,
+			'geometry': null,
+			'program': null,
+			'wireframe': false,
 
-			newAttributes: newAttributes,
-			enabledAttributes: enabledAttributes,
-			attributeDivisors: attributeDivisors,
-			object: vao,
-			attributes: {},
-			index: null
+			'newAttributes': newAttributes,
+			'enabledAttributes': enabledAttributes,
+			'attributeDivisors': attributeDivisors,
+			'object': vao,
+			'attributes': {},
+			'index': null
 
 		};
 
@@ -575,16 +575,16 @@ function WebGLBindingStates( gl, attributes ) {
 
 	return {
 
-		setup: setup,
-		reset: reset,
-		resetDefaultState: resetDefaultState,
-		dispose: dispose,
-		releaseStatesOfGeometry: releaseStatesOfGeometry,
-		releaseStatesOfProgram: releaseStatesOfProgram,
+		'setup': setup,
+		'reset': reset,
+		'resetDefaultState': resetDefaultState,
+		'dispose': dispose,
+		'releaseStatesOfGeometry': releaseStatesOfGeometry,
+		'releaseStatesOfProgram': releaseStatesOfProgram,
 
-		initAttributes: initAttributes,
-		enableAttribute: enableAttribute,
-		disableUnusedAttributes: disableUnusedAttributes
+		'initAttributes': initAttributes,
+		'enableAttribute': enableAttribute,
+		'disableUnusedAttributes': disableUnusedAttributes
 
 	};
 

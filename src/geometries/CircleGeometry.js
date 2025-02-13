@@ -12,10 +12,10 @@ class CircleGeometry extends BufferGeometry {
 		this.type = 'CircleGeometry';
 
 		this.parameters = {
-			radius: radius,
-			segments: segments,
-			thetaStart: thetaStart,
-			thetaLength: thetaLength
+			'radius': radius,
+			'segments': segments,
+			'thetaStart': thetaStart,
+			'thetaLength': thetaLength
 		};
 
 		segments = Math.max( 3, segments );

@@ -105,7 +105,7 @@ export default RemapNode;
  * @param {Node} [outHighNode=float(1)] - The target upper bound of the range.
  * @returns {RemapNode}
  */
-export const remap = /*@__PURE__*/ nodeProxy( RemapNode, null, null, { doClamp: false } );
+export const remap = /*@__PURE__*/ nodeProxy( RemapNode, null, null, { 'doClamp': false } );
 
 /**
  * TSL function for creating a remap node, but with enabled clamping.

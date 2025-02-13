@@ -8,7 +8,7 @@ class CompressedTexture extends Texture {
 
 		this.isCompressedTexture = true;
 
-		this.image = { width: width, height: height };
+		this.image = { 'width': width, 'height': height };
 		this.mipmaps = mipmaps;
 
 		// no flipping for cube textures

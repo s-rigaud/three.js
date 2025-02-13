@@ -11,11 +11,11 @@ class TorusGeometry extends BufferGeometry {
 		this.type = 'TorusGeometry';
 
 		this.parameters = {
-			radius: radius,
-			tube: tube,
-			radialSegments: radialSegments,
-			tubularSegments: tubularSegments,
-			arc: arc
+			'radius': radius,
+			'tube': tube,
+			'radialSegments': radialSegments,
+			'tubularSegments': tubularSegments,
+			'arc': arc
 		};
 
 		radialSegments = Math.floor( radialSegments );

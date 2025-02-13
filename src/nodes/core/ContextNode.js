@@ -136,7 +136,7 @@ export const context = /*@__PURE__*/ nodeProxy( ContextNode );
  * @param {string} name - The name/label to set.
  * @returns {ContextNode}
  */
-export const label = ( node, name ) => context( node, { label: name } );
+export const label = ( node, name ) => context( node, { 'label': name } );
 
 addMethodChaining( 'context', context );
 addMethodChaining( 'label', label );

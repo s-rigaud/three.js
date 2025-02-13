@@ -11,7 +11,7 @@ class WireframeGeometry extends BufferGeometry {
 		this.type = 'WireframeGeometry';
 
 		this.parameters = {
-			geometry: geometry
+			'geometry': geometry
 		};
 
 		if ( geometry !== null ) {
@@ -36,7 +36,7 @@ class WireframeGeometry extends BufferGeometry {
 
 				if ( groups.length === 0 ) {
 
-					groups = [ { start: 0, count: indices.count, materialIndex: 0 } ];
+					groups = [ { 'start': 0, 'count': indices.count, 'materialIndex': 0 } ];
 
 				}
 

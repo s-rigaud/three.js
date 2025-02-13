@@ -150,14 +150,14 @@ function testPoint( point, index, localThresholdSq, matrixWorld, raycaster, inte
 
 		intersects.push( {
 
-			distance: distance,
-			distanceToRay: Math.sqrt( rayPointDistanceSq ),
-			point: intersectPoint,
-			index: index,
-			face: null,
-			faceIndex: null,
-			barycoord: null,
-			object: object
+			'distance': distance,
+			'distanceToRay': Math.sqrt( rayPointDistanceSq ),
+			'point': intersectPoint,
+			'index': index,
+			'face': null,
+			'faceIndex': null,
+			'barycoord': null,
+			'object': object
 
 		} );
 

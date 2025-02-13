@@ -185,20 +185,20 @@ function getTextureTypeByteLength( type ) {
 
 		case UnsignedByteType:
 		case ByteType:
-			return { byteLength: 1, components: 1 };
+			return { 'byteLength': 1, 'components': 1 };
 		case UnsignedShortType:
 		case ShortType:
 		case HalfFloatType:
-			return { byteLength: 2, components: 1 };
+			return { 'byteLength': 2, 'components': 1 };
 		case UnsignedShort4444Type:
 		case UnsignedShort5551Type:
-			return { byteLength: 2, components: 4 };
+			return { 'byteLength': 2, 'components': 4 };
 		case UnsignedIntType:
 		case IntType:
 		case FloatType:
-			return { byteLength: 4, components: 1 };
+			return { 'byteLength': 4, 'components': 1 };
 		case UnsignedInt5999Type:
-			return { byteLength: 4, components: 3 };
+			return { 'byteLength': 4, 'components': 3 };
 
 	}
 

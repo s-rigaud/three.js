@@ -19,7 +19,7 @@ import ExpressionNode from '../../../nodes/code/ExpressionNode.js';
 import { NoColorSpace, FloatType, RepeatWrapping, ClampToEdgeWrapping, MirroredRepeatWrapping, NearestFilter } from '../../../constants.js';
 
 // GPUShaderStage is not defined in browsers not supporting WebGPU
-const GPUShaderStage = ( typeof self !== 'undefined' ) ? self.GPUShaderStage : { VERTEX: 1, FRAGMENT: 2, COMPUTE: 4 };
+const GPUShaderStage = ( typeof self !== 'undefined' ) ? self.GPUShaderStage : { 'VERTEX': 1, 'FRAGMENT': 2, 'COMPUTE': 4 };
 
 const accessNames = {
 	[ NodeAccess.READ_ONLY ]: 'read',
@@ -40,9 +40,9 @@ const gpuShaderStageLib = {
 };
 
 const supports = {
-	instance: true,
-	swizzleAssign: false,
-	storageBuffer: true
+	'instance': true,
+	'swizzleAssign': false,
+	'storageBuffer': true
 };
 
 const wgslFnOpLib = {
@@ -50,48 +50,48 @@ const wgslFnOpLib = {
 };
 
 const wgslTypeLib = {
-	float: 'f32',
-	int: 'i32',
-	uint: 'u32',
-	bool: 'bool',
-	color: 'vec3<f32>',
+	'float': 'f32',
+	'int': 'i32',
+	'uint': 'u32',
+	'bool': 'bool',
+	'color': 'vec3<f32>',
 
-	vec2: 'vec2<f32>',
-	ivec2: 'vec2<i32>',
-	uvec2: 'vec2<u32>',
-	bvec2: 'vec2<bool>',
+	'vec2': 'vec2<f32>',
+	'ivec2': 'vec2<i32>',
+	'uvec2': 'vec2<u32>',
+	'bvec2': 'vec2<bool>',
 
-	vec3: 'vec3<f32>',
-	ivec3: 'vec3<i32>',
-	uvec3: 'vec3<u32>',
-	bvec3: 'vec3<bool>',
+	'vec3': 'vec3<f32>',
+	'ivec3': 'vec3<i32>',
+	'uvec3': 'vec3<u32>',
+	'bvec3': 'vec3<bool>',
 
-	vec4: 'vec4<f32>',
-	ivec4: 'vec4<i32>',
-	uvec4: 'vec4<u32>',
-	bvec4: 'vec4<bool>',
+	'vec4': 'vec4<f32>',
+	'ivec4': 'vec4<i32>',
+	'uvec4': 'vec4<u32>',
+	'bvec4': 'vec4<bool>',
 
-	mat2: 'mat2x2<f32>',
-	mat3: 'mat3x3<f32>',
-	mat4: 'mat4x4<f32>'
+	'mat2': 'mat2x2<f32>',
+	'mat3': 'mat3x3<f32>',
+	'mat4': 'mat4x4<f32>'
 };
 
 const wgslCodeCache = {};
 
 const wgslPolyfill = {
-	tsl_xor: new CodeNode( 'fn tsl_xor( a : bool, b : bool ) -> bool { return ( a || b ) && !( a && b ); }' ),
-	mod_float: new CodeNode( 'fn tsl_mod_float( x : f32, y : f32 ) -> f32 { return x - y * floor( x / y ); }' ),
-	mod_vec2: new CodeNode( 'fn tsl_mod_vec2( x : vec2f, y : vec2f ) -> vec2f { return x - y * floor( x / y ); }' ),
-	mod_vec3: new CodeNode( 'fn tsl_mod_vec3( x : vec3f, y : vec3f ) -> vec3f { return x - y * floor( x / y ); }' ),
-	mod_vec4: new CodeNode( 'fn tsl_mod_vec4( x : vec4f, y : vec4f ) -> vec4f { return x - y * floor( x / y ); }' ),
-	equals_bool: new CodeNode( 'fn tsl_equals_bool( a : bool, b : bool ) -> bool { return a == b; }' ),
-	equals_bvec2: new CodeNode( 'fn tsl_equals_bvec2( a : vec2f, b : vec2f ) -> vec2<bool> { return vec2<bool>( a.x == b.x, a.y == b.y ); }' ),
-	equals_bvec3: new CodeNode( 'fn tsl_equals_bvec3( a : vec3f, b : vec3f ) -> vec3<bool> { return vec3<bool>( a.x == b.x, a.y == b.y, a.z == b.z ); }' ),
-	equals_bvec4: new CodeNode( 'fn tsl_equals_bvec4( a : vec4f, b : vec4f ) -> vec4<bool> { return vec4<bool>( a.x == b.x, a.y == b.y, a.z == b.z, a.w == b.w ); }' ),
-	repeatWrapping_float: new CodeNode( 'fn tsl_repeatWrapping_float( coord: f32 ) -> f32 { return fract( coord ); }' ),
-	mirrorWrapping_float: new CodeNode( 'fn tsl_mirrorWrapping_float( coord: f32 ) -> f32 { let mirrored = fract( coord * 0.5 ) * 2.0; return 1.0 - abs( 1.0 - mirrored ); }' ),
-	clampWrapping_float: new CodeNode( 'fn tsl_clampWrapping_float( coord: f32 ) -> f32 { return clamp( coord, 0.0, 1.0 ); }' ),
-	biquadraticTexture: new CodeNode( /* wgsl */`
+	'tsl_xor': new CodeNode( 'fn tsl_xor( a : bool, b : bool ) -> bool { return ( a || b ) && !( a && b ); }' ),
+	'mod_float': new CodeNode( 'fn tsl_mod_float( x : f32, y : f32 ) -> f32 { return x - y * floor( x / y ); }' ),
+	'mod_vec2': new CodeNode( 'fn tsl_mod_vec2( x : vec2f, y : vec2f ) -> vec2f { return x - y * floor( x / y ); }' ),
+	'mod_vec3': new CodeNode( 'fn tsl_mod_vec3( x : vec3f, y : vec3f ) -> vec3f { return x - y * floor( x / y ); }' ),
+	'mod_vec4': new CodeNode( 'fn tsl_mod_vec4( x : vec4f, y : vec4f ) -> vec4f { return x - y * floor( x / y ); }' ),
+	'equals_bool': new CodeNode( 'fn tsl_equals_bool( a : bool, b : bool ) -> bool { return a == b; }' ),
+	'equals_bvec2': new CodeNode( 'fn tsl_equals_bvec2( a : vec2f, b : vec2f ) -> vec2<bool> { return vec2<bool>( a.x == b.x, a.y == b.y ); }' ),
+	'equals_bvec3': new CodeNode( 'fn tsl_equals_bvec3( a : vec3f, b : vec3f ) -> vec3<bool> { return vec3<bool>( a.x == b.x, a.y == b.y, a.z == b.z ); }' ),
+	'equals_bvec4': new CodeNode( 'fn tsl_equals_bvec4( a : vec4f, b : vec4f ) -> vec4<bool> { return vec4<bool>( a.x == b.x, a.y == b.y, a.z == b.z, a.w == b.w ); }' ),
+	'repeatWrapping_float': new CodeNode( 'fn tsl_repeatWrapping_float( coord: f32 ) -> f32 { return fract( coord ); }' ),
+	'mirrorWrapping_float': new CodeNode( 'fn tsl_mirrorWrapping_float( coord: f32 ) -> f32 { let mirrored = fract( coord * 0.5 ) * 2.0; return 1.0 - abs( 1.0 - mirrored ); }' ),
+	'clampWrapping_float': new CodeNode( 'fn tsl_clampWrapping_float( coord: f32 ) -> f32 { return clamp( coord, 0.0, 1.0 ); }' ),
+	'biquadraticTexture': new CodeNode( /* wgsl */`
 fn tsl_biquadraticTexture( map : texture_2d<f32>, coord : vec2f, iRes : vec2u, level : u32 ) -> vec4f {
 
 	let res = vec2f( iRes );
@@ -117,18 +117,18 @@ fn tsl_biquadraticTexture( map : texture_2d<f32>, coord : vec2f, iRes : vec2u, l
 };
 
 const wgslMethods = {
-	dFdx: 'dpdx',
-	dFdy: '- dpdy',
-	mod_float: 'tsl_mod_float',
-	mod_vec2: 'tsl_mod_vec2',
-	mod_vec3: 'tsl_mod_vec3',
-	mod_vec4: 'tsl_mod_vec4',
-	equals_bool: 'tsl_equals_bool',
-	equals_bvec2: 'tsl_equals_bvec2',
-	equals_bvec3: 'tsl_equals_bvec3',
-	equals_bvec4: 'tsl_equals_bvec4',
-	inversesqrt: 'inverseSqrt',
-	bitcast: 'bitcast<f32>'
+	'dFdx': 'dpdx',
+	'dFdy': '- dpdy',
+	'mod_float': 'tsl_mod_float',
+	'mod_vec2': 'tsl_mod_vec2',
+	'mod_vec3': 'tsl_mod_vec3',
+	'mod_vec4': 'tsl_mod_vec4',
+	'equals_bool': 'tsl_equals_bool',
+	'equals_bvec2': 'tsl_equals_bvec2',
+	'equals_bvec3': 'tsl_equals_bvec3',
+	'equals_bvec4': 'tsl_equals_bvec4',
+	'inversesqrt': 'inverseSqrt',
+	'bitcast': 'bitcast<f32>'
 };
 
 // WebGPU issue: does not support pow() with negative base on Windows
@@ -1716,9 +1716,9 @@ ${ flowData.code }
 				const groupName = uniform.groupNode.name;
 
 				const group = uniformGroups[ groupName ] || ( uniformGroups[ groupName ] = {
-					index: uniformIndexes.binding ++,
-					id: uniformIndexes.group,
-					snippets: []
+					'index': uniformIndexes.binding ++,
+					'id': uniformIndexes.group,
+					'snippets': []
 				} );
 
 				group.snippets.push( `\t${ uniform.name } : ${ vectorType }` );
@@ -1748,7 +1748,7 @@ ${ flowData.code }
 	 */
 	buildCode() {
 
-		const shadersData = this.material !== null ? { fragment: {}, vertex: {} } : { compute: {} };
+		const shadersData = this.material !== null ? { 'fragment': {}, 'vertex': {} } : { 'compute': {} };
 
 		this.sortBindingGroups();
 

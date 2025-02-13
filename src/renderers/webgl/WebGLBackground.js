@@ -10,7 +10,7 @@ import { Mesh } from '../../objects/Mesh.js';
 import { ShaderLib } from '../shaders/ShaderLib.js';
 import { cloneUniforms, getUnlitUniformColorSpace } from '../shaders/UniformsUtils.js';
 
-const _rgb = { r: 0, b: 0, g: 0 };
+const _rgb = { 'r': 0, 'b': 0, 'g': 0 };
 const _e1 = /*@__PURE__*/ new Euler();
 const _m1 = /*@__PURE__*/ new Matrix4();
 
@@ -94,14 +94,14 @@ function WebGLBackground( renderer, cubemaps, cubeuvmaps, state, objects, alpha,
 				boxMesh = new Mesh(
 					new BoxGeometry( 1, 1, 1 ),
 					new ShaderMaterial( {
-						name: 'BackgroundCubeMaterial',
-						uniforms: cloneUniforms( ShaderLib.backgroundCube.uniforms ),
-						vertexShader: ShaderLib.backgroundCube.vertexShader,
-						fragmentShader: ShaderLib.backgroundCube.fragmentShader,
-						side: BackSide,
-						depthTest: false,
-						depthWrite: false,
-						fog: false
+						'name': 'BackgroundCubeMaterial',
+						'uniforms': cloneUniforms( ShaderLib.backgroundCube.uniforms ),
+						'vertexShader': ShaderLib.backgroundCube.vertexShader,
+						'fragmentShader': ShaderLib.backgroundCube.fragmentShader,
+						'side': BackSide,
+						'depthTest': false,
+						'depthWrite': false,
+						'fog': false
 					} )
 				);
 
@@ -117,7 +117,7 @@ function WebGLBackground( renderer, cubemaps, cubeuvmaps, state, objects, alpha,
 				// add "envMap" material property so the renderer can evaluate it like for built-in materials
 				Object.defineProperty( boxMesh.material, 'envMap', {
 
-					get: function () {
+					'get': function () {
 
 						return this.uniforms.envMap.value;
 
@@ -173,14 +173,14 @@ function WebGLBackground( renderer, cubemaps, cubeuvmaps, state, objects, alpha,
 				planeMesh = new Mesh(
 					new PlaneGeometry( 2, 2 ),
 					new ShaderMaterial( {
-						name: 'BackgroundMaterial',
-						uniforms: cloneUniforms( ShaderLib.background.uniforms ),
-						vertexShader: ShaderLib.background.vertexShader,
-						fragmentShader: ShaderLib.background.fragmentShader,
-						side: FrontSide,
-						depthTest: false,
-						depthWrite: false,
-						fog: false
+						'name': 'BackgroundMaterial',
+						'uniforms': cloneUniforms( ShaderLib.background.uniforms ),
+						'vertexShader': ShaderLib.background.vertexShader,
+						'fragmentShader': ShaderLib.background.fragmentShader,
+						'side': FrontSide,
+						'depthTest': false,
+						'depthWrite': false,
+						'fog': false
 					} )
 				);
 
@@ -189,7 +189,7 @@ function WebGLBackground( renderer, cubemaps, cubeuvmaps, state, objects, alpha,
 				// add "map" material property so the renderer can evaluate it like for built-in materials
 				Object.defineProperty( planeMesh.material, 'map', {
 
-					get: function () {
+					'get': function () {
 
 						return this.uniforms.t2D.value;
 
@@ -266,32 +266,32 @@ function WebGLBackground( renderer, cubemaps, cubeuvmaps, state, objects, alpha,
 
 	return {
 
-		getClearColor: function () {
+		'getClearColor': function () {
 
 			return clearColor;
 
 		},
-		setClearColor: function ( color, alpha = 1 ) {
+		'setClearColor': function ( color, alpha = 1 ) {
 
 			clearColor.set( color );
 			clearAlpha = alpha;
 			setClear( clearColor, clearAlpha );
 
 		},
-		getClearAlpha: function () {
+		'getClearAlpha': function () {
 
 			return clearAlpha;
 
 		},
-		setClearAlpha: function ( alpha ) {
+		'setClearAlpha': function ( alpha ) {
 
 			clearAlpha = alpha;
 			setClear( clearColor, clearAlpha );
 
 		},
-		render: render,
-		addToRenderList: addToRenderList,
-		dispose: dispose
+		'render': render,
+		'addToRenderList': addToRenderList,
+		'dispose': dispose
 
 	};
 

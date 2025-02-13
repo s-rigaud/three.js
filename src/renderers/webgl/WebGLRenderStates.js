@@ -41,24 +41,24 @@ function WebGLRenderState( extensions ) {
 	}
 
 	const state = {
-		lightsArray: lightsArray,
-		shadowsArray: shadowsArray,
+		'lightsArray': lightsArray,
+		'shadowsArray': shadowsArray,
 
-		camera: null,
+		'camera': null,
 
-		lights: lights,
+		'lights': lights,
 
-		transmissionRenderTarget: {}
+		'transmissionRenderTarget': {}
 	};
 
 	return {
-		init: init,
-		state: state,
-		setupLights: setupLights,
-		setupLightsView: setupLightsView,
+		'init': init,
+		'state': state,
+		'setupLights': setupLights,
+		'setupLightsView': setupLightsView,
 
-		pushLight: pushLight,
-		pushShadow: pushShadow
+		'pushLight': pushLight,
+		'pushShadow': pushShadow
 	};
 
 }
@@ -103,8 +103,8 @@ function WebGLRenderStates( extensions ) {
 	}
 
 	return {
-		get: get,
-		dispose: dispose
+		'get': get,
+		'dispose': dispose
 	};
 
 }

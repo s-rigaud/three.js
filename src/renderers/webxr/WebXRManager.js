@@ -132,7 +132,7 @@ class WebXRManager extends EventDispatcher {
 			if ( controller !== undefined ) {
 
 				controller.update( event.inputSource, event.frame, customReferenceSpace || referenceSpace );
-				controller.dispatchEvent( { type: event.type, data: event.inputSource } );
+				controller.dispatchEvent( { 'type': event.type, 'data': event.inputSource } );
 
 			}
 
@@ -185,7 +185,7 @@ class WebXRManager extends EventDispatcher {
 			renderer.setPixelRatio( currentPixelRatio );
 			renderer.setSize( currentSize.width, currentSize.height, false );
 
-			scope.dispatchEvent( { type: 'sessionend' } );
+			scope.dispatchEvent( { 'type': 'sessionend' } );
 
 		}
 
@@ -282,16 +282,16 @@ class WebXRManager extends EventDispatcher {
 				if ( ! useLayers ) {
 
 					const layerInit = {
-						antialias: attributes.antialias,
-						alpha: true,
-						depth: attributes.depth,
-						stencil: attributes.stencil,
-						framebufferScaleFactor: framebufferScaleFactor
+						'antialias': attributes.antialias,
+						'alpha': true,
+						'depth': attributes.depth,
+						'stencil': attributes.stencil,
+						'framebufferScaleFactor': framebufferScaleFactor
 					};
 
 					glBaseLayer = new XRWebGLLayer( session, gl, layerInit );
 
-					session.updateRenderState( { baseLayer: glBaseLayer } );
+					session.updateRenderState( { 'baseLayer': glBaseLayer } );
 
 					renderer.setPixelRatio( 1 );
 					renderer.setSize( glBaseLayer.framebufferWidth, glBaseLayer.framebufferHeight, false );
@@ -300,10 +300,10 @@ class WebXRManager extends EventDispatcher {
 						glBaseLayer.framebufferWidth,
 						glBaseLayer.framebufferHeight,
 						{
-							format: RGBAFormat,
-							type: UnsignedByteType,
-							colorSpace: renderer.outputColorSpace,
-							stencilBuffer: attributes.stencil
+							'format': RGBAFormat,
+							'type': UnsignedByteType,
+							'colorSpace': renderer.outputColorSpace,
+							'stencilBuffer': attributes.stencil
 						}
 					);
 
@@ -322,16 +322,16 @@ class WebXRManager extends EventDispatcher {
 					}
 
 					const projectionlayerInit = {
-						colorFormat: gl.RGBA8,
-						depthFormat: glDepthFormat,
-						scaleFactor: framebufferScaleFactor
+						'colorFormat': gl.RGBA8,
+						'depthFormat': glDepthFormat,
+						'scaleFactor': framebufferScaleFactor
 					};
 
 					glBinding = new XRWebGLBinding( session, gl );
 
 					glProjLayer = glBinding.createProjectionLayer( projectionlayerInit );
 
-					session.updateRenderState( { layers: [ glProjLayer ] } );
+					session.updateRenderState( { 'layers': [ glProjLayer ] } );
 
 					renderer.setPixelRatio( 1 );
 					renderer.setSize( glProjLayer.textureWidth, glProjLayer.textureHeight, false );
@@ -340,13 +340,13 @@ class WebXRManager extends EventDispatcher {
 						glProjLayer.textureWidth,
 						glProjLayer.textureHeight,
 						{
-							format: RGBAFormat,
-							type: UnsignedByteType,
-							depthTexture: new DepthTexture( glProjLayer.textureWidth, glProjLayer.textureHeight, depthType, undefined, undefined, undefined, undefined, undefined, undefined, depthFormat ),
-							stencilBuffer: attributes.stencil,
-							colorSpace: renderer.outputColorSpace,
-							samples: attributes.antialias ? 4 : 0,
-							resolveDepthBuffer: ( glProjLayer.ignoreDepthValues === false )
+							'format': RGBAFormat,
+							'type': UnsignedByteType,
+							'depthTexture': new DepthTexture( glProjLayer.textureWidth, glProjLayer.textureHeight, depthType, undefined, undefined, undefined, undefined, undefined, undefined, depthFormat ),
+							'stencilBuffer': attributes.stencil,
+							'colorSpace': renderer.outputColorSpace,
+							'samples': attributes.antialias ? 4 : 0,
+							'resolveDepthBuffer': ( glProjLayer.ignoreDepthValues === false )
 						} );
 
 				}
@@ -363,7 +363,7 @@ class WebXRManager extends EventDispatcher {
 
 				scope.isPresenting = true;
 
-				scope.dispatchEvent( { type: 'sessionstart' } );
+				scope.dispatchEvent( { 'type': 'sessionstart' } );
 
 			}
 
@@ -567,8 +567,8 @@ class WebXRManager extends EventDispatcher {
 				// Note that the new renderState won't apply until the next frame. See #18320
 
 				session.updateRenderState( {
-					depthNear: cameraXR.near,
-					depthFar: cameraXR.far
+					'depthNear': cameraXR.near,
+					'depthFar': cameraXR.far
 				} );
 
 				_currentDepthNear = cameraXR.near;
@@ -823,7 +823,7 @@ class WebXRManager extends EventDispatcher {
 
 			if ( frame.detectedPlanes ) {
 
-				scope.dispatchEvent( { type: 'planesdetected', data: frame } );
+				scope.dispatchEvent( { 'type': 'planesdetected', 'data': frame } );
 
 			}
 

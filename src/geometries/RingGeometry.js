@@ -12,12 +12,12 @@ class RingGeometry extends BufferGeometry {
 		this.type = 'RingGeometry';
 
 		this.parameters = {
-			innerRadius: innerRadius,
-			outerRadius: outerRadius,
-			thetaSegments: thetaSegments,
-			phiSegments: phiSegments,
-			thetaStart: thetaStart,
-			thetaLength: thetaLength
+			'innerRadius': innerRadius,
+			'outerRadius': outerRadius,
+			'thetaSegments': thetaSegments,
+			'phiSegments': phiSegments,
+			'thetaStart': thetaStart,
+			'thetaLength': thetaLength
 		};
 
 		thetaSegments = Math.max( 3, thetaSegments );
