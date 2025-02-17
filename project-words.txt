@@ -549,6 +549,7 @@ dpdx
 dpdy
 Drawbuffers
 drawcalls
+drawindirect
 drawingbuffer
 drawrange
 dribbble
@@ -833,6 +834,7 @@ Eulers
 eulers
 evanw's
 evenodd
+eventdispatcher
 evernote
 Excls
 EXIF
@@ -1365,6 +1367,7 @@ MATMAGIC
 matrici
 matriz
 mattdesl
+Mattercraft
 maty
 matz
 Matériaux
@@ -1499,6 +1502,7 @@ multimaterials
 multipletextures
 Multisampled
 multisampled
+multisampling
 Multiscattering
 multiscattering
 multiview
@@ -1643,6 +1647,7 @@ OMAX
 OMDE
 onedrive
 onlyfans
+oosmoxiecode
 OPAC
 OPACMAP
 OPACMASK
@@ -1841,6 +1846,8 @@ QRCODE
 qrcode
 quaternius
 quaternnion
+Quats
+queryset
 Quickhull
 quis
 Rabbid
@@ -2349,6 +2356,7 @@ unitless
 unittests
 unitx
 unjittered
+unmapping
 UNORM
 Unorm
 unorm
@@ -2599,10 +2607,3 @@ zscene
 zstddec
 zulip
 zwift
-Mattercraft
-drawindirect
-Quats
-queryset
-unmapping
-multisampling
-oosmoxiecode

@@ -57,6 +57,7 @@
         // Other files
         "tsconfig.tsbuildinfo",
         "TODOS.md",
+        "type-errors.txt"
     ]
 }
 

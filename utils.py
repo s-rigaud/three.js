@@ -44,5 +44,5 @@ def clean_ts_errors():
 
     print('Errors cleaned!')
 
-# sort_valid_words()
-clean_ts_errors()
+sort_valid_words()
+# clean_ts_errors()
