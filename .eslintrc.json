@@ -70,6 +70,7 @@
     "no-duplicate-imports": [
       "error"
     ],
+    "prefer-spread": "error",
     "valid-jsdoc": [
       "error",
       {
@@ -77,7 +78,14 @@
         "requireReturnType": true,
         "requireParamDescription": false,
         "requireReturnDescription": false,
-        "requireParamType": true
+        "requireParamType": true,
+        "preferType": {
+          "Any": "any",
+          "Boolean": "boolean",
+          "Number": "number",
+          "object": "Object",
+          "String": "string"
+        }
       }
     ],
     // TS rules ignore

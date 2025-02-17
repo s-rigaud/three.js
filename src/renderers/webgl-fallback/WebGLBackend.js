@@ -194,7 +194,7 @@ class WebGLBackend extends Backend {
 		 * @type {WebGLFramebuffer}
 		 * @default null
 		 */
-		this._xrFamebuffer = null;
+		this._xrFramebuffer = null;
 
 	}
 
@@ -212,10 +212,10 @@ class WebGLBackend extends Backend {
 		const parameters = this.parameters;
 
 		const contextAttributes = {
-			antialias: false, // MSAA is applied via a custom renderbuffer
+			antialias: renderer.samples > 0,
 			alpha: true, // always true for performance reasons
-			depth: false, // depth and stencil are set to false since the engine always renders into a framebuffer target first
-			stencil: false
+			depth: renderer.depth,
+			stencil: renderer.stencil
 		};
 
 		const glContext = ( parameters.context !== undefined ) ? parameters.context : renderer.domElement.getContext( 'webgl2', contextAttributes );
@@ -322,11 +322,11 @@ class WebGLBackend extends Backend {
 	/**
 	 * Sets the XR rendering destination.
 	 *
-	 * @param {WebGLFramebuffer} xrFamebuffer - The XR framebuffer.
+	 * @param {WebGLFramebuffer} xrFramebuffer - The XR framebuffer.
 	 */
-	setXRTarget( xrFamebuffer ) {
+	setXRTarget( xrFramebuffer ) {
 
-		this._xrFamebuffer = xrFamebuffer;
+		this._xrFramebuffer = xrFramebuffer;
 
 	}
 
@@ -1924,7 +1924,7 @@ class WebGLBackend extends Backend {
 
 			} else if ( isXRRenderTarget && hasExternalTextures === false ) {
 
-				fb = this._xrFamebuffer;
+				fb = this._xrFramebuffer;
 
 			} else {
 
