@@ -32,7 +32,7 @@ class Texture extends EventDispatcher {
 	 *
 	 * @param {Object} [image=Texture.DEFAULT_IMAGE] - The image holding the texture data.
 	 * @param {number} [mapping=Texture.DEFAULT_MAPPING] - The texture mapping.
-	 * @param {number} [wrapS=ClampToEdgeWrapping] - The wrapS value.
+	 * @param {RepeatWrapping|ClampToEdgeWrapping|MirroredRepeatWrapping} [wrapS=ClampToEdgeWrapping] - The wrapS value.
 	 * @param {number} [wrapT=ClampToEdgeWrapping] - The wrapT value.
 	 * @param {number} [magFilter=LinearFilter] - The mag filter value.
 	 * @param {number} [minFilter=LinearFilter] - The min filter value.

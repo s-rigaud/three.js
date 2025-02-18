@@ -661,7 +661,7 @@ export default PassNode;
 
 /**
  * TSL function for creating a pass node.
- *
+	*
  * @tsl
  * @function
  * @param {Scene} scene - A reference to the scene.
