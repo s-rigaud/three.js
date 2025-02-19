@@ -1519,6 +1519,7 @@ build/three.core.js(12356,31): error TS7006: Parameter 'src' implicitly has an '
 build/three.core.js(12370,37): error TS7006: Parameter 'renderer' implicitly has an 'any' type.
 build/three.core.js(12402,15): error TS7006: Parameter 'parameters' implicitly has an 'any' type.
 build/three.core.js(12412,3): error TS7008: Member 'uniformsGroups' implicitly has an 'any[]' type.
+build/three.core.js(12441,3): error TS7008: Member 'index0AttributeName' implicitly has an 'any' type.
 build/three.core.js(12454,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
 build/three.core.js(12481,10): error TS7006: Parameter 'meta' implicitly has an 'any' type.
 build/three.core.js(12485,8): error TS2339: Property 'glslVersion' does not exist on type '{ metadata: { version: number; type: string; generator: string; }; }'.
@@ -3270,35 +3271,35 @@ build/three.core.js(30494,12): error TS2339: Property '_visibility' does not exi
 build/three.core.js(30495,12): error TS2339: Property '_active' does not exist on type 'BatchedMesh'.
 build/three.core.js(30496,12): error TS2339: Property '_bounds' does not exist on type 'BatchedMesh'.
 build/three.core.js(30496,39): error TS7006: Parameter 'bound' implicitly has an 'any' type.
-build/three.core.js(30592,67): error TS2339: Property 'position' does not exist on type 'Object3D | Mesh | Sprite | LOD | BatchedMesh | Line | Points'.
+build/three.core.js(30592,67): error TS2339: Property 'position' does not exist on type 'Object3D | Line | BatchedMesh | Mesh | LOD | Points | Sprite'.
   Property 'position' does not exist on type 'Object3D'.
-build/three.core.js(30592,84): error TS2339: Property 'quaternion' does not exist on type 'Object3D | Mesh | Sprite | LOD | BatchedMesh | Line | Points'.
+build/three.core.js(30592,84): error TS2339: Property 'quaternion' does not exist on type 'Object3D | Line | BatchedMesh | Mesh | LOD | Points | Sprite'.
   Property 'quaternion' does not exist on type 'Object3D'.
-build/three.core.js(30592,103): error TS2339: Property 'scale' does not exist on type 'Object3D | Mesh | Sprite | LOD | BatchedMesh | Line | Points'.
+build/three.core.js(30592,103): error TS2339: Property 'scale' does not exist on type 'Object3D | Line | BatchedMesh | Mesh | LOD | Points | Sprite'.
   Property 'scale' does not exist on type 'Object3D'.
-build/three.core.js(30596,46): error TS2339: Property 'position' does not exist on type 'Object3D | Mesh | Sprite | LOD | BatchedMesh | Line | Points'.
+build/three.core.js(30596,46): error TS2339: Property 'position' does not exist on type 'Object3D | Line | BatchedMesh | Mesh | LOD | Points | Sprite'.
   Property 'position' does not exist on type 'Object3D'.
-build/three.core.js(30597,46): error TS2339: Property 'rotation' does not exist on type 'Object3D | Mesh | Sprite | LOD | BatchedMesh | Line | Points'.
+build/three.core.js(30597,46): error TS2339: Property 'rotation' does not exist on type 'Object3D | Line | BatchedMesh | Mesh | LOD | Points | Sprite'.
   Property 'rotation' does not exist on type 'Object3D'.
-build/three.core.js(30598,48): error TS2339: Property 'quaternion' does not exist on type 'Object3D | Mesh | Sprite | LOD | BatchedMesh | Line | Points'.
+build/three.core.js(30598,48): error TS2339: Property 'quaternion' does not exist on type 'Object3D | Line | BatchedMesh | Mesh | LOD | Points | Sprite'.
   Property 'quaternion' does not exist on type 'Object3D'.
-build/three.core.js(30599,43): error TS2339: Property 'scale' does not exist on type 'Object3D | Mesh | Sprite | LOD | BatchedMesh | Line | Points'.
+build/three.core.js(30599,43): error TS2339: Property 'scale' does not exist on type 'Object3D | Line | BatchedMesh | Mesh | LOD | Points | Sprite'.
   Property 'scale' does not exist on type 'Object3D'.
-build/three.core.js(30610,54): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | Sprite | LOD | BatchedMesh | Line | Points'.
+build/three.core.js(30610,54): error TS2339: Property 'shadow' does not exist on type 'Object3D | Line | BatchedMesh | Mesh | LOD | Points | Sprite'.
   Property 'shadow' does not exist on type 'Object3D'.
-build/three.core.js(30611,49): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | Sprite | LOD | BatchedMesh | Line | Points'.
+build/three.core.js(30611,49): error TS2339: Property 'shadow' does not exist on type 'Object3D | Line | BatchedMesh | Mesh | LOD | Points | Sprite'.
   Property 'shadow' does not exist on type 'Object3D'.
-build/three.core.js(30612,55): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | Sprite | LOD | BatchedMesh | Line | Points'.
+build/three.core.js(30612,55): error TS2339: Property 'shadow' does not exist on type 'Object3D | Line | BatchedMesh | Mesh | LOD | Points | Sprite'.
   Property 'shadow' does not exist on type 'Object3D'.
-build/three.core.js(30613,51): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | Sprite | LOD | BatchedMesh | Line | Points'.
+build/three.core.js(30613,51): error TS2339: Property 'shadow' does not exist on type 'Object3D | Line | BatchedMesh | Mesh | LOD | Points | Sprite'.
   Property 'shadow' does not exist on type 'Object3D'.
-build/three.core.js(30614,52): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | Sprite | LOD | BatchedMesh | Line | Points'.
+build/three.core.js(30614,52): error TS2339: Property 'shadow' does not exist on type 'Object3D | Line | BatchedMesh | Mesh | LOD | Points | Sprite'.
   Property 'shadow' does not exist on type 'Object3D'.
-build/three.core.js(30615,51): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | Sprite | LOD | BatchedMesh | Line | Points'.
+build/three.core.js(30615,51): error TS2339: Property 'shadow' does not exist on type 'Object3D | Line | BatchedMesh | Mesh | LOD | Points | Sprite'.
   Property 'shadow' does not exist on type 'Object3D'.
-build/three.core.js(30653,48): error TS2339: Property 'autoUpdate' does not exist on type 'Object3D | Mesh | Sprite | LOD | BatchedMesh | Line | Points'.
+build/three.core.js(30653,48): error TS2339: Property 'autoUpdate' does not exist on type 'Object3D | Line | BatchedMesh | Mesh | LOD | Points | Sprite'.
   Property 'autoUpdate' does not exist on type 'Object3D'.
-build/three.core.js(30664,13): error TS2339: Property 'addLevel' does not exist on type 'Object3D | Mesh | Sprite | LOD | BatchedMesh | Line | Points'.
+build/three.core.js(30664,13): error TS2339: Property 'addLevel' does not exist on type 'Object3D | Line | BatchedMesh | Mesh | LOD | Points | Sprite'.
   Property 'addLevel' does not exist on type 'Object3D'.
 build/three.core.js(30676,17): error TS7006: Parameter 'object' implicitly has an 'any' type.
 build/three.core.js(30676,25): error TS7006: Parameter 'skeletons' implicitly has an 'any' type.
@@ -3507,6 +3508,8 @@ build/three.core.js(33282,4): error TS7053: Element implicitly has an 'any' type
 build/three.core.js(33301,15): error TS7006: Parameter 'mixer' implicitly has an 'any' type.
 build/three.core.js(33301,22): error TS7006: Parameter 'clip' implicitly has an 'any' type.
 build/three.core.js(33305,3): error TS7008: Member '_localRoot' implicitly has an 'any' type.
+build/three.core.js(33332,3): error TS7008: Member '_cacheIndex' implicitly has an 'any' type.
+build/three.core.js(33333,3): error TS7008: Member '_byClipCacheIndex' implicitly has an 'any' type.
 build/three.core.js(33335,3): error TS7022: '_timeScaleInterpolant' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
 build/three.core.js(33336,3): error TS7022: '_weightInterpolant' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
 build/three.core.js(33412,11): error TS7006: Parameter 'time' implicitly has an 'any' type.
@@ -3910,6 +3913,7 @@ build/three.core.js(37117,38): error TS2345: Argument of type 'any' is not assig
 build/three.core.js(37137,15): error TS2532: Object is possibly 'undefined'.
 build/three.core.js(37143,40): error TS2339: Property 'h' does not exist on type 'never'.
 build/three.core.js(37159,15): error TS7006: Parameter 'object' implicitly has an 'any' type.
+build/three.core.js(37164,3): error TS7008: Member 'domElement' implicitly has an 'any' type.
 build/three.core.js(37186,19): error TS7006: Parameter 'texture' implicitly has an 'any' type.
 build/three.core.js(37186,28): error TS7006: Parameter 'aspect' implicitly has an 'any' type.
 build/three.core.js(37212,17): error TS7006: Parameter 'texture' implicitly has an 'any' type.
@@ -25072,6 +25076,12 @@ examples/jsm/tsl/lighting/TiledLightsNode.js(284,17): error TS7006: Parameter 'h
 examples/jsm/tsl/lighting/TiledLightsNode.js(302,22): error TS7006: Parameter 'index' implicitly has an 'any' type.
 examples/jsm/tsl/lighting/TiledLightsNode.js(310,21): error TS7006: Parameter 'elementIndex' implicitly has an 'any' type.
 examples/jsm/tsl/lighting/TiledLightsNode.js(342,30): error TS7031: Binding element 'i' implicitly has an 'any' type.
+examples/jsm/tsl/math/Bayer.js(1,31): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+examples/jsm/tsl/math/Bayer.js(2,45): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
+examples/jsm/tsl/math/Bayer.js(4,5): error TS7034: Variable 'bayer16Texture' implicitly has type 'any' in some locations where its type cannot be determined.
+examples/jsm/tsl/math/Bayer.js(6,32): error TS7031: Binding element 'uv' implicitly has an 'any' type.
+examples/jsm/tsl/math/Bayer.js(8,7): error TS7005: Variable 'bayer16Texture' implicitly has an 'any' type.
+examples/jsm/tsl/math/Bayer.js(16,22): error TS7005: Variable 'bayer16Texture' implicitly has an 'any' type.
 examples/jsm/tsl/utils/Raymarching.js(1,129): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
 examples/jsm/tsl/utils/Raymarching.js(3,38): error TS7031: Binding element 'orig' implicitly has an 'any' type.
 examples/jsm/tsl/utils/Raymarching.js(3,44): error TS7031: Binding element 'dir' implicitly has an 'any' type.
@@ -26685,8 +26695,11 @@ src/core/RenderTarget.js(70,26): error TS2339: Property 'samples' does not exist
 src/core/RenderTarget.js(95,6): error TS7023: 'depthTexture' implicitly has return type 'any' because it does not have a return type annotation and is referenced directly or indirectly in one of its return expressions.
 src/core/RenderTarget.js(101,11): error TS7006: Parameter 'width' implicitly has an 'any' type.
 src/core/RenderTarget.js(101,18): error TS7006: Parameter 'height' implicitly has an 'any' type.
+src/core/RenderTarget.js(111,5): error TS2531: Object is possibly 'null'.
 src/core/RenderTarget.js(111,30): error TS2339: Property 'width' does not exist on type 'Object'.
+src/core/RenderTarget.js(112,5): error TS2531: Object is possibly 'null'.
 src/core/RenderTarget.js(112,30): error TS2339: Property 'height' does not exist on type 'Object'.
+src/core/RenderTarget.js(113,5): error TS2531: Object is possibly 'null'.
 src/core/RenderTarget.js(113,30): error TS2339: Property 'depth' does not exist on type 'Object'.
 src/core/RenderTarget.js(128,14): error TS2351: This expression is not constructable.
   Type 'Function' has no construct signatures.
@@ -27754,6 +27767,7 @@ src/loaders/CubeTextureLoader.js(14,22): error TS7006: Parameter 'onProgress' im
 src/loaders/CubeTextureLoader.js(14,34): error TS7006: Parameter 'onError' implicitly has an 'any' type.
 src/loaders/CubeTextureLoader.js(25,25): error TS7006: Parameter 'i' implicitly has an 'any' type.
 src/loaders/CubeTextureLoader.js(27,39): error TS7006: Parameter 'image' implicitly has an 'any' type.
+src/loaders/CubeTextureLoader.js(29,5): error TS18047: 'texture.images' is possibly 'null'.
 src/loaders/CubeTextureLoader.js(29,5): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type 'Object'.
 src/loaders/DataTextureLoader.js(14,15): error TS7006: Parameter 'manager' implicitly has an 'any' type.
 src/loaders/DataTextureLoader.js(20,8): error TS7006: Parameter 'url' implicitly has an 'any' type.
@@ -28148,7 +28162,6 @@ src/materials/Material.js(177,26): error TS2304: Cannot find name 'SubtractEquat
 src/materials/Material.js(177,43): error TS2304: Cannot find name 'ReverseSubtractEquation'.
 src/materials/Material.js(177,67): error TS2304: Cannot find name 'MinEquation'.
 src/materials/Material.js(177,79): error TS2304: Cannot find name 'MaxEquation'.
-src/materials/Material.js(200,3): error TS2322: Type 'number' is not assignable to type 'Color'.
 src/materials/Material.js(205,14): error TS2304: Cannot find name 'NeverDepth'.
 src/materials/Material.js(205,25): error TS2304: Cannot find name 'AlwaysDepth'.
 src/materials/Material.js(205,37): error TS2304: Cannot find name 'LessDepth'.
@@ -28435,7 +28448,6 @@ src/materials/Material.js(768,43): error TS2339: Property 'blendSrcAlpha' does n
 src/materials/Material.js(769,43): error TS2339: Property 'blendDstAlpha' does not exist on type '{ metadata: { version: number; type: string; generator: string; }; }'.
 src/materials/Material.js(770,48): error TS2339: Property 'blendEquationAlpha' does not exist on type '{ metadata: { version: number; type: string; generator: string; }; }'.
 src/materials/Material.js(771,58): error TS2339: Property 'blendColor' does not exist on type '{ metadata: { version: number; type: string; generator: string; }; }'.
-src/materials/Material.js(772,8): error TS2367: This comparison appears to be unintentional because the types 'Color' and 'number' have no overlap.
 src/materials/Material.js(772,37): error TS2339: Property 'blendAlpha' does not exist on type '{ metadata: { version: number; type: string; generator: string; }; }'.
 src/materials/Material.js(774,49): error TS2339: Property 'depthFunc' does not exist on type '{ metadata: { version: number; type: string; generator: string; }; }'.
 src/materials/Material.js(775,40): error TS2339: Property 'depthTest' does not exist on type '{ metadata: { version: number; type: string; generator: string; }; }'.
@@ -28684,28 +28696,27 @@ src/materials/nodes/MeshPhysicalNodeMaterial.js(471,14): error TS2304: Cannot fi
 src/materials/nodes/MeshPhysicalNodeMaterial.js(479,9): error TS7006: Parameter 'builder' implicitly has an 'any' type.
 src/materials/nodes/MeshPhysicalNodeMaterial.js(481,75): error TS2554: Expected 0 arguments, but got 1.
 src/materials/nodes/MeshPhysicalNodeMaterial.js(487,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
-src/materials/nodes/MeshSSSNodeMaterial.js(45,13): error TS2304: Cannot find name 'StackNode'.
-src/materials/nodes/MeshSSSNodeMaterial.js(46,13): error TS2304: Cannot find name 'NodeBuilder'.
-src/materials/nodes/MeshSSSNodeMaterial.js(48,2): error TS2416: Property 'direct' in type 'SSSLightingModel' is not assignable to the same property in base type 'PhysicalLightingModel'.
-  Type '({ lightDirection, lightColor, reflectedLight }: Object, stack: StackNode, builder: NodeBuilder) => void' is not assignable to type '({ lightDirection, lightColor, reflectedLight }: Object) => void'.
-    Target signature provides too few arguments. Expected 3 or more, but got 1.
-src/materials/nodes/MeshSSSNodeMaterial.js(48,12): error TS2339: Property 'lightDirection' does not exist on type 'Object'.
-src/materials/nodes/MeshSSSNodeMaterial.js(48,28): error TS2339: Property 'lightColor' does not exist on type 'Object'.
-src/materials/nodes/MeshSSSNodeMaterial.js(48,40): error TS2339: Property 'reflectedLight' does not exist on type 'Object'.
-src/materials/nodes/MeshSSSNodeMaterial.js(64,65): error TS2554: Expected 1 arguments, but got 3.
-src/materials/nodes/MeshSSSNodeMaterial.js(96,14): error TS2304: Cannot find name 'Node'.
-src/materials/nodes/MeshSSSNodeMaterial.js(104,14): error TS2304: Cannot find name 'Node'.
-src/materials/nodes/MeshSSSNodeMaterial.js(111,14): error TS2304: Cannot find name 'Node'.
-src/materials/nodes/MeshSSSNodeMaterial.js(118,14): error TS2304: Cannot find name 'Node'.
-src/materials/nodes/MeshSSSNodeMaterial.js(125,14): error TS2304: Cannot find name 'Node'.
-src/materials/nodes/MeshSSSNodeMaterial.js(132,14): error TS2304: Cannot find name 'Node'.
-src/materials/nodes/MeshSSSNodeMaterial.js(155,2): error TS2416: Property 'setupLightingModel' in type 'MeshSSSNodeMaterial' is not assignable to the same property in base type 'MeshPhysicalNodeMaterial'.
+src/materials/nodes/MeshSSSNodeMaterial.js(45,13): error TS2304: Cannot find name 'NodeBuilder'.
+src/materials/nodes/MeshSSSNodeMaterial.js(47,2): error TS2416: Property 'direct' in type 'SSSLightingModel' is not assignable to the same property in base type 'PhysicalLightingModel'.
+  Type '({ lightDirection, lightColor, reflectedLight }: Object, builder: NodeBuilder) => void' is not assignable to type '({ lightDirection, lightColor, reflectedLight }: Object) => void'.
+    Target signature provides too few arguments. Expected 2 or more, but got 1.
+src/materials/nodes/MeshSSSNodeMaterial.js(47,12): error TS2339: Property 'lightDirection' does not exist on type 'Object'.
+src/materials/nodes/MeshSSSNodeMaterial.js(47,28): error TS2339: Property 'lightColor' does not exist on type 'Object'.
+src/materials/nodes/MeshSSSNodeMaterial.js(47,40): error TS2339: Property 'reflectedLight' does not exist on type 'Object'.
+src/materials/nodes/MeshSSSNodeMaterial.js(63,65): error TS2554: Expected 1 arguments, but got 2.
+src/materials/nodes/MeshSSSNodeMaterial.js(95,14): error TS2304: Cannot find name 'Node'.
+src/materials/nodes/MeshSSSNodeMaterial.js(103,14): error TS2304: Cannot find name 'Node'.
+src/materials/nodes/MeshSSSNodeMaterial.js(110,14): error TS2304: Cannot find name 'Node'.
+src/materials/nodes/MeshSSSNodeMaterial.js(117,14): error TS2304: Cannot find name 'Node'.
+src/materials/nodes/MeshSSSNodeMaterial.js(124,14): error TS2304: Cannot find name 'Node'.
+src/materials/nodes/MeshSSSNodeMaterial.js(131,14): error TS2304: Cannot find name 'Node'.
+src/materials/nodes/MeshSSSNodeMaterial.js(154,2): error TS2416: Property 'setupLightingModel' in type 'MeshSSSNodeMaterial' is not assignable to the same property in base type 'MeshPhysicalNodeMaterial'.
   Type '() => SSSLightingModel' is not assignable to type '() => PhysicalLightingModel'.
     Call signature return types 'SSSLightingModel' and 'PhysicalLightingModel' are incompatible.
       The types of 'direct' are incompatible between these types.
-        Type '({ lightDirection, lightColor, reflectedLight }: Object, stack: StackNode, builder: NodeBuilder) => void' is not assignable to type '({ lightDirection, lightColor, reflectedLight }: Object) => void'.
-          Target signature provides too few arguments. Expected 3 or more, but got 1.
-src/materials/nodes/MeshSSSNodeMaterial.js(161,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
+        Type '({ lightDirection, lightColor, reflectedLight }: Object, builder: NodeBuilder) => void' is not assignable to type '({ lightDirection, lightColor, reflectedLight }: Object) => void'.
+          Target signature provides too few arguments. Expected 2 or more, but got 1.
+src/materials/nodes/MeshSSSNodeMaterial.js(160,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
 src/materials/nodes/MeshStandardNodeMaterial.js(61,14): error TS2304: Cannot find name 'Node'.
 src/materials/nodes/MeshStandardNodeMaterial.js(74,14): error TS2304: Cannot find name 'Node'.
 src/materials/nodes/MeshStandardNodeMaterial.js(87,14): error TS2304: Cannot find name 'Node'.
@@ -28733,7 +28744,7 @@ src/materials/nodes/NodeMaterial.js(244,14): error TS2304: Cannot find name 'Nod
 src/materials/nodes/NodeMaterial.js(263,3): error TS2322: Type 'null' is not assignable to type 'Function'.
 src/materials/nodes/NodeMaterial.js(268,14): error TS2304: Cannot find name 'Node'.
 src/materials/nodes/NodeMaterial.js(278,14): error TS2304: Cannot find name 'Node'.
-src/materials/nodes/NodeMaterial.js(295,14): error TS2304: Cannot find name 'Node'.
+src/materials/nodes/NodeMaterial.js(295,24): error TS2304: Cannot find name 'FunctionNode'.
 src/materials/nodes/NodeMaterial.js(319,14): error TS2304: Cannot find name 'Node'.
 src/materials/nodes/NodeMaterial.js(329,14): error TS2304: Cannot find name 'Node'.
 src/materials/nodes/NodeMaterial.js(340,14): error TS2304: Cannot find name 'MRTNode'.
@@ -28794,30 +28805,33 @@ src/materials/nodes/NodeMaterial.js(968,51): error TS2554: Expected 0 arguments,
 src/materials/nodes/NodeMaterial.js(995,13): error TS2304: Cannot find name 'NodeBuilder'.
 src/materials/nodes/NodeMaterial.js(996,13): error TS2304: Cannot find name 'Node'.
 src/materials/nodes/NodeMaterial.js(997,14): error TS2304: Cannot find name 'Node'.
-src/materials/nodes/NodeMaterial.js(1035,18): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Material'.
+src/materials/nodes/NodeMaterial.js(1018,13): error TS2304: Cannot find name 'NodeBuilder'.
+src/materials/nodes/NodeMaterial.js(1019,13): error TS2304: Cannot find name 'Node'.
+src/materials/nodes/NodeMaterial.js(1020,14): error TS2304: Cannot find name 'Node'.
+src/materials/nodes/NodeMaterial.js(1050,18): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Material'.
   No index signature with a parameter of type 'string' was found on type 'Material'.
-src/materials/nodes/NodeMaterial.js(1037,9): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'NodeMaterial'.
+src/materials/nodes/NodeMaterial.js(1052,9): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'NodeMaterial'.
   No index signature with a parameter of type 'string' was found on type 'NodeMaterial'.
-src/materials/nodes/NodeMaterial.js(1039,5): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'NodeMaterial'.
+src/materials/nodes/NodeMaterial.js(1054,5): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'NodeMaterial'.
   No index signature with a parameter of type 'string' was found on type 'NodeMaterial'.
-src/materials/nodes/NodeMaterial.js(1041,33): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'NodeMaterial'.
+src/materials/nodes/NodeMaterial.js(1056,33): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'NodeMaterial'.
   No index signature with a parameter of type 'string' was found on type 'NodeMaterial'.
-src/materials/nodes/NodeMaterial.js(1085,8): error TS2339: Property 'inputNodes' does not exist on type 'Object'.
-src/materials/nodes/NodeMaterial.js(1089,9): error TS2339: Property 'inputNodes' does not exist on type 'Object'.
-src/materials/nodes/NodeMaterial.js(1095,30): error TS7006: Parameter 'cache' implicitly has an 'any' type.
-src/materials/nodes/NodeMaterial.js(1113,39): error TS18047: 'meta' is possibly 'null'.
-src/materials/nodes/NodeMaterial.js(1113,44): error TS2339: Property 'textures' does not exist on type 'string | Object'.
+src/materials/nodes/NodeMaterial.js(1100,8): error TS2339: Property 'inputNodes' does not exist on type 'Object'.
+src/materials/nodes/NodeMaterial.js(1104,9): error TS2339: Property 'inputNodes' does not exist on type 'Object'.
+src/materials/nodes/NodeMaterial.js(1110,30): error TS7006: Parameter 'cache' implicitly has an 'any' type.
+src/materials/nodes/NodeMaterial.js(1128,39): error TS18047: 'meta' is possibly 'null'.
+src/materials/nodes/NodeMaterial.js(1128,44): error TS2339: Property 'textures' does not exist on type 'string | Object'.
   Property 'textures' does not exist on type 'string'.
-src/materials/nodes/NodeMaterial.js(1114,37): error TS18047: 'meta' is possibly 'null'.
-src/materials/nodes/NodeMaterial.js(1114,42): error TS2339: Property 'images' does not exist on type 'string | Object'.
+src/materials/nodes/NodeMaterial.js(1129,37): error TS18047: 'meta' is possibly 'null'.
+src/materials/nodes/NodeMaterial.js(1129,42): error TS2339: Property 'images' does not exist on type 'string | Object'.
   Property 'images' does not exist on type 'string'.
-src/materials/nodes/NodeMaterial.js(1115,36): error TS18047: 'meta' is possibly 'null'.
-src/materials/nodes/NodeMaterial.js(1115,41): error TS2339: Property 'nodes' does not exist on type 'string | Object'.
+src/materials/nodes/NodeMaterial.js(1130,36): error TS18047: 'meta' is possibly 'null'.
+src/materials/nodes/NodeMaterial.js(1130,41): error TS2339: Property 'nodes' does not exist on type 'string | Object'.
   Property 'nodes' does not exist on type 'string'.
-src/materials/nodes/NodeMaterial.js(1117,36): error TS2339: Property 'textures' does not exist on type 'Object'.
-src/materials/nodes/NodeMaterial.js(1118,34): error TS2339: Property 'images' does not exist on type 'Object'.
-src/materials/nodes/NodeMaterial.js(1119,33): error TS2339: Property 'nodes' does not exist on type 'Object'.
-src/materials/nodes/NodeMaterial.js(1159,3): error TS2740: Type 'Material' is missing the following properties from type 'NodeMaterial': isNodeMaterial, fog, lights, hardwareClipping, and 40 more.
+src/materials/nodes/NodeMaterial.js(1132,36): error TS2339: Property 'textures' does not exist on type 'Object'.
+src/materials/nodes/NodeMaterial.js(1133,34): error TS2339: Property 'images' does not exist on type 'Object'.
+src/materials/nodes/NodeMaterial.js(1134,33): error TS2339: Property 'nodes' does not exist on type 'Object'.
+src/materials/nodes/NodeMaterial.js(1174,3): error TS2740: Type 'Material' is missing the following properties from type 'NodeMaterial': isNodeMaterial, fog, lights, hardwareClipping, and 41 more.
 src/materials/nodes/PointsNodeMaterial.js(38,14): error TS2304: Cannot find name 'Node'.
 src/materials/nodes/PointsNodeMaterial.js(66,15): error TS7006: Parameter 'builder' implicitly has an 'any' type.
 src/materials/nodes/PointsNodeMaterial.js(134,6): error TS2611: 'alphaToCoverage' is defined as a property in class 'SpriteNodeMaterial', but is overridden here in 'PointsNodeMaterial' as an accessor.
@@ -28832,15 +28846,8 @@ src/materials/nodes/SpriteNodeMaterial.js(110,2): error TS2416: Property 'setupP
     Target signature provides too few arguments. Expected 1 or more, but got 0.
 src/materials/nodes/SpriteNodeMaterial.js(149,50): error TS2339: Property 'sub' does not exist on type 'ReferenceBaseNode'.
 src/materials/nodes/SpriteNodeMaterial.js(163,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
-src/materials/nodes/VolumeNodeMaterial.js(56,14): error TS2304: Cannot find name 'Data3DTexture'.
-src/materials/nodes/VolumeNodeMaterial.js(74,14): error TS2304: Cannot find name 'Data3DTexture'.
-src/materials/nodes/VolumeNodeMaterial.js(75,14): error TS2304: Cannot find name 'Node'.
-src/materials/nodes/VolumeNodeMaterial.js(77,14): error TS2304: Cannot find name 'Node'.
-src/materials/nodes/VolumeNodeMaterial.js(104,13): error TS2304: Cannot find name 'NodeBuilder'.
-src/materials/nodes/VolumeNodeMaterial.js(110,26): error TS7031: Binding element 'orig' implicitly has an 'any' type.
-src/materials/nodes/VolumeNodeMaterial.js(110,32): error TS7031: Binding element 'dir' implicitly has an 'any' type.
-src/materials/nodes/VolumeNodeMaterial.js(152,40): error TS2339: Property 'assign' does not exist on type 'PropertyNode'.
-src/materials/nodes/VolumeNodeMaterial.js(156,11): error TS2554: Expected 4 arguments, but got 1.
+src/materials/nodes/VolumeNodeMaterial.js(47,22): error TS2304: Cannot find name 'FunctionNode'.
+src/materials/nodes/VolumeNodeMaterial.js(47,35): error TS2304: Cannot find name 'vec4'.
 src/materials/PointsMaterial.js(6,15): error TS7006: Parameter 'parameters' implicitly has an 'any' type.
 src/materials/PointsMaterial.js(29,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
 src/materials/RawShaderMaterial.js(5,15): error TS7006: Parameter 'parameters' implicitly has an 'any' type.
@@ -29801,41 +29808,33 @@ src/nodes/accessors/Camera.js(11,23): error TS2304: Cannot find name 'uint'.
 src/nodes/accessors/Camera.js(13,111): error TS2339: Property 'toVarying' does not exist on type 'UniformNode'.
 src/nodes/accessors/Camera.js(19,11): error TS2304: Cannot find name 'UniformNode'.
 src/nodes/accessors/Camera.js(19,23): error TS2304: Cannot find name 'float'.
-src/nodes/accessors/Camera.js(21,41): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/accessors/Camera.js(21,126): error TS7031: Binding element 'camera' implicitly has an 'any' type.
 src/nodes/accessors/Camera.js(27,11): error TS2304: Cannot find name 'UniformNode'.
 src/nodes/accessors/Camera.js(27,23): error TS2304: Cannot find name 'float'.
-src/nodes/accessors/Camera.js(29,40): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/accessors/Camera.js(29,124): error TS7031: Binding element 'camera' implicitly has an 'any' type.
 src/nodes/accessors/Camera.js(35,11): error TS2304: Cannot find name 'UniformNode'.
 src/nodes/accessors/Camera.js(35,23): error TS2304: Cannot find name 'mat4'.
 src/nodes/accessors/Camera.js(37,63): error TS7031: Binding element 'camera' implicitly has an 'any' type.
 src/nodes/accessors/Camera.js(51,36): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/accessors/Camera.js(53,53): error TS2339: Property 'element' does not exist on type 'UniformNode'.
-src/nodes/accessors/Camera.js(57,28): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/accessors/Camera.js(57,124): error TS7031: Binding element 'camera' implicitly has an 'any' type.
 src/nodes/accessors/Camera.js(69,11): error TS2304: Cannot find name 'UniformNode'.
 src/nodes/accessors/Camera.js(69,23): error TS2304: Cannot find name 'mat4'.
-src/nodes/accessors/Camera.js(71,60): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/accessors/Camera.js(71,163): error TS7031: Binding element 'camera' implicitly has an 'any' type.
 src/nodes/accessors/Camera.js(77,11): error TS2304: Cannot find name 'UniformNode'.
 src/nodes/accessors/Camera.js(77,23): error TS2304: Cannot find name 'mat4'.
 src/nodes/accessors/Camera.js(79,57): error TS7031: Binding element 'camera' implicitly has an 'any' type.
 src/nodes/accessors/Camera.js(93,30): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/accessors/Camera.js(95,41): error TS2339: Property 'element' does not exist on type 'UniformNode'.
-src/nodes/accessors/Camera.js(99,22): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/accessors/Camera.js(99,112): error TS7031: Binding element 'camera' implicitly has an 'any' type.
 src/nodes/accessors/Camera.js(111,11): error TS2304: Cannot find name 'UniformNode'.
 src/nodes/accessors/Camera.js(111,23): error TS2304: Cannot find name 'mat4'.
-src/nodes/accessors/Camera.js(113,48): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/accessors/Camera.js(113,139): error TS7031: Binding element 'camera' implicitly has an 'any' type.
 src/nodes/accessors/Camera.js(119,11): error TS2304: Cannot find name 'UniformNode'.
 src/nodes/accessors/Camera.js(119,23): error TS2304: Cannot find name 'mat3'.
-src/nodes/accessors/Camera.js(121,49): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/accessors/Camera.js(121,141): error TS7031: Binding element 'camera' implicitly has an 'any' type.
 src/nodes/accessors/Camera.js(127,11): error TS2304: Cannot find name 'UniformNode'.
 src/nodes/accessors/Camera.js(127,23): error TS2304: Cannot find name 'vec3'.
-src/nodes/accessors/Camera.js(129,45): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/accessors/Camera.js(129,140): error TS7031: Binding element 'camera' implicitly has an 'any' type.
 src/nodes/accessors/Camera.js(129,150): error TS7006: Parameter 'self' implicitly has an 'any' type.
 src/nodes/accessors/ClippingNode.js(32,15): error TS2322: Type 'string' is not assignable to type '"alphaToCoverage" | "default" | "hardware" | undefined'.
@@ -29917,31 +29916,29 @@ src/nodes/accessors/Lights.js(11,16): error TS7005: Variable 'uniformsLib' impli
 src/nodes/accessors/Lights.js(26,12): error TS2304: Cannot find name 'Light'.
 src/nodes/accessors/Lights.js(27,14): error TS2304: Cannot find name 'UniformNode'.
 src/nodes/accessors/Lights.js(27,26): error TS2304: Cannot find name 'mat4'.
-src/nodes/accessors/Lights.js(33,52): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/accessors/Lights.js(53,12): error TS2304: Cannot find name 'Light'.
-src/nodes/accessors/Lights.js(54,14): error TS2304: Cannot find name 'Node'.
-src/nodes/accessors/Lights.js(54,19): error TS2304: Cannot find name 'vec3'.
-src/nodes/accessors/Lights.js(78,12): error TS2304: Cannot find name 'Light'.
-src/nodes/accessors/Lights.js(79,14): error TS2304: Cannot find name 'UniformNode'.
-src/nodes/accessors/Lights.js(79,26): error TS2304: Cannot find name 'vec3'.
-src/nodes/accessors/Lights.js(85,44): error TS2554: Expected 2 arguments, but got 1.
-src/nodes/accessors/Lights.js(85,111): error TS7006: Parameter '_' implicitly has an 'any' type.
-src/nodes/accessors/Lights.js(85,114): error TS7006: Parameter 'self' implicitly has an 'any' type.
-src/nodes/accessors/Lights.js(94,12): error TS2304: Cannot find name 'Light'.
-src/nodes/accessors/Lights.js(95,14): error TS2304: Cannot find name 'UniformNode'.
-src/nodes/accessors/Lights.js(95,26): error TS2304: Cannot find name 'vec3'.
-src/nodes/accessors/Lights.js(101,56): error TS2554: Expected 2 arguments, but got 1.
-src/nodes/accessors/Lights.js(101,123): error TS7006: Parameter '_' implicitly has an 'any' type.
-src/nodes/accessors/Lights.js(101,126): error TS7006: Parameter 'self' implicitly has an 'any' type.
-src/nodes/accessors/Lights.js(110,12): error TS2304: Cannot find name 'Light'.
-src/nodes/accessors/Lights.js(111,14): error TS2304: Cannot find name 'UniformNode'.
-src/nodes/accessors/Lights.js(111,26): error TS2304: Cannot find name 'vec3'.
-src/nodes/accessors/Lights.js(117,52): error TS2554: Expected 2 arguments, but got 1.
-src/nodes/accessors/Lights.js(117,121): error TS7031: Binding element 'camera' implicitly has an 'any' type.
-src/nodes/accessors/Lights.js(117,131): error TS7006: Parameter 'self' implicitly has an 'any' type.
-src/nodes/accessors/Lights.js(133,12): error TS2304: Cannot find name 'Light'.
-src/nodes/accessors/Lights.js(134,14): error TS2304: Cannot find name 'Node'.
-src/nodes/accessors/Lights.js(134,19): error TS2304: Cannot find name 'vec3'.
+src/nodes/accessors/Lights.js(54,12): error TS2304: Cannot find name 'Node'.
+src/nodes/accessors/Lights.js(54,17): error TS2304: Cannot find name 'vec3'.
+src/nodes/accessors/Lights.js(55,14): error TS2304: Cannot find name 'Node'.
+src/nodes/accessors/Lights.js(55,19): error TS2304: Cannot find name 'vec3'.
+src/nodes/accessors/Lights.js(71,12): error TS2304: Cannot find name 'Light'.
+src/nodes/accessors/Lights.js(72,14): error TS2304: Cannot find name 'UniformNode'.
+src/nodes/accessors/Lights.js(72,26): error TS2304: Cannot find name 'vec3'.
+src/nodes/accessors/Lights.js(78,111): error TS7006: Parameter '_' implicitly has an 'any' type.
+src/nodes/accessors/Lights.js(78,114): error TS7006: Parameter 'self' implicitly has an 'any' type.
+src/nodes/accessors/Lights.js(87,12): error TS2304: Cannot find name 'Light'.
+src/nodes/accessors/Lights.js(88,14): error TS2304: Cannot find name 'UniformNode'.
+src/nodes/accessors/Lights.js(88,26): error TS2304: Cannot find name 'vec3'.
+src/nodes/accessors/Lights.js(94,123): error TS7006: Parameter '_' implicitly has an 'any' type.
+src/nodes/accessors/Lights.js(94,126): error TS7006: Parameter 'self' implicitly has an 'any' type.
+src/nodes/accessors/Lights.js(103,12): error TS2304: Cannot find name 'Light'.
+src/nodes/accessors/Lights.js(104,14): error TS2304: Cannot find name 'UniformNode'.
+src/nodes/accessors/Lights.js(104,26): error TS2304: Cannot find name 'vec3'.
+src/nodes/accessors/Lights.js(110,121): error TS7031: Binding element 'camera' implicitly has an 'any' type.
+src/nodes/accessors/Lights.js(110,131): error TS7006: Parameter 'self' implicitly has an 'any' type.
+src/nodes/accessors/Lights.js(126,12): error TS2304: Cannot find name 'Light'.
+src/nodes/accessors/Lights.js(127,14): error TS2304: Cannot find name 'Node'.
+src/nodes/accessors/Lights.js(127,19): error TS2304: Cannot find name 'vec3'.
 src/nodes/accessors/MaterialNode.js(52,14): error TS2304: Cannot find name 'MaterialReferenceNode'.
 src/nodes/accessors/MaterialNode.js(74,14): error TS2304: Cannot find name 'MaterialReferenceNode'.
 src/nodes/accessors/MaterialNode.js(86,14): error TS2304: Cannot find name 'MaterialReferenceNode'.
@@ -29987,24 +29984,20 @@ src/nodes/accessors/MaterialNode.js(735,11): error TS2315: Type 'Node' is not ge
 src/nodes/accessors/MaterialNode.js(744,11): error TS2315: Type 'Node' is not generic.
 src/nodes/accessors/MaterialNode.js(753,11): error TS2315: Type 'Node' is not generic.
 src/nodes/accessors/MaterialNode.js(761,11): error TS2315: Type 'Node' is not generic.
-src/nodes/accessors/MaterialNode.js(763,55): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/accessors/MaterialNode.js(763,104): error TS7006: Parameter 'frame' implicitly has an 'any' type.
 src/nodes/accessors/MaterialNode.js(767,34): error TS7031: Binding element 'material' implicitly has an 'any' type.
 src/nodes/accessors/MaterialNode.js(769,2): error TS2683: 'this' implicitly has type 'any' because it does not have a type annotation.
 src/nodes/accessors/MaterialProperties.js(12,11): error TS2304: Cannot find name 'UniformNode'.
 src/nodes/accessors/MaterialProperties.js(12,23): error TS2304: Cannot find name 'float'.
-src/nodes/accessors/MaterialProperties.js(14,54): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/accessors/MaterialProperties.js(14,84): error TS7031: Binding element 'material' implicitly has an 'any' type.
 src/nodes/accessors/MaterialProperties.js(14,131): error TS7031: Binding element 'material' implicitly has an 'any' type.
 src/nodes/accessors/MaterialProperties.js(21,11): error TS2304: Cannot find name 'Node'.
 src/nodes/accessors/MaterialProperties.js(21,16): error TS2304: Cannot find name 'float'.
-src/nodes/accessors/MaterialProperties.js(23,51): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/accessors/MaterialProperties.js(23,81): error TS7031: Binding element 'material' implicitly has an 'any' type.
 src/nodes/accessors/MaterialProperties.js(23,137): error TS7031: Binding element 'material' implicitly has an 'any' type.
 src/nodes/accessors/MaterialProperties.js(23,147): error TS7031: Binding element 'scene' implicitly has an 'any' type.
 src/nodes/accessors/MaterialProperties.js(35,11): error TS2304: Cannot find name 'Node'.
 src/nodes/accessors/MaterialProperties.js(35,16): error TS2304: Cannot find name 'mat4'.
-src/nodes/accessors/MaterialProperties.js(37,50): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/accessors/MaterialProperties.js(37,99): error TS7006: Parameter 'frame' implicitly has an 'any' type.
 src/nodes/accessors/MaterialProperties.js(41,34): error TS7031: Binding element 'material' implicitly has an 'any' type.
 src/nodes/accessors/MaterialProperties.js(41,44): error TS7031: Binding element 'scene' implicitly has an 'any' type.
@@ -30026,33 +30019,31 @@ src/nodes/accessors/ModelNode.js(82,11): error TS2315: Type 'ModelNode' is not g
 src/nodes/accessors/ModelNode.js(82,21): error TS2304: Cannot find name 'vec3'.
 src/nodes/accessors/ModelNode.js(90,11): error TS2315: Type 'ModelNode' is not generic.
 src/nodes/accessors/ModelNode.js(90,21): error TS2304: Cannot find name 'vec3'.
-src/nodes/accessors/ModelNode.js(98,11): error TS2304: Cannot find name 'UniformNode'.
-src/nodes/accessors/ModelNode.js(98,23): error TS2304: Cannot find name 'mat3'.
-src/nodes/accessors/ModelNode.js(100,48): error TS2554: Expected 2 arguments, but got 1.
-src/nodes/accessors/ModelNode.js(100,93): error TS7031: Binding element 'object' implicitly has an 'any' type.
-src/nodes/accessors/ModelNode.js(100,103): error TS7006: Parameter 'self' implicitly has an 'any' type.
+src/nodes/accessors/ModelNode.js(98,11): error TS2315: Type 'ModelNode' is not generic.
+src/nodes/accessors/ModelNode.js(98,21): error TS2304: Cannot find name 'float'.
 src/nodes/accessors/ModelNode.js(106,11): error TS2304: Cannot find name 'UniformNode'.
-src/nodes/accessors/ModelNode.js(106,23): error TS2304: Cannot find name 'mat4'.
-src/nodes/accessors/ModelNode.js(108,54): error TS2554: Expected 2 arguments, but got 1.
-src/nodes/accessors/ModelNode.js(108,99): error TS7031: Binding element 'object' implicitly has an 'any' type.
-src/nodes/accessors/ModelNode.js(108,109): error TS7006: Parameter 'self' implicitly has an 'any' type.
-src/nodes/accessors/ModelNode.js(114,11): error TS2304: Cannot find name 'Node'.
-src/nodes/accessors/ModelNode.js(114,16): error TS2304: Cannot find name 'mat4'.
-src/nodes/accessors/ModelNode.js(116,54): error TS7006: Parameter 'builder' implicitly has an 'any' type.
-src/nodes/accessors/ModelNode.js(128,11): error TS2304: Cannot find name 'Node'.
-src/nodes/accessors/ModelNode.js(128,16): error TS2304: Cannot find name 'mat4'.
-src/nodes/accessors/ModelNode.js(139,11): error TS2304: Cannot find name 'Node'.
-src/nodes/accessors/ModelNode.js(139,16): error TS2304: Cannot find name 'mat4'.
-src/nodes/accessors/ModelNode.js(141,59): error TS7006: Parameter 'builder' implicitly has an 'any' type.
-src/nodes/accessors/ModelNode.js(145,9): error TS2554: Expected 2 arguments, but got 1.
-src/nodes/accessors/ModelNode.js(145,47): error TS7031: Binding element 'object' implicitly has an 'any' type.
-src/nodes/accessors/ModelNode.js(145,55): error TS7031: Binding element 'camera' implicitly has an 'any' type.
-src/nodes/accessors/ModelNode.js(158,11): error TS2304: Cannot find name 'Node'.
-src/nodes/accessors/ModelNode.js(158,16): error TS2304: Cannot find name 'mat3'.
-src/nodes/accessors/ModelNode.js(160,65): error TS7006: Parameter 'builder' implicitly has an 'any' type.
-src/nodes/accessors/ModelNode.js(164,9): error TS2554: Expected 2 arguments, but got 1.
-src/nodes/accessors/ModelNode.js(164,47): error TS7031: Binding element 'object' implicitly has an 'any' type.
-src/nodes/accessors/ModelNode.js(164,55): error TS7031: Binding element 'camera' implicitly has an 'any' type.
+src/nodes/accessors/ModelNode.js(106,23): error TS2304: Cannot find name 'mat3'.
+src/nodes/accessors/ModelNode.js(108,93): error TS7031: Binding element 'object' implicitly has an 'any' type.
+src/nodes/accessors/ModelNode.js(108,103): error TS7006: Parameter 'self' implicitly has an 'any' type.
+src/nodes/accessors/ModelNode.js(114,11): error TS2304: Cannot find name 'UniformNode'.
+src/nodes/accessors/ModelNode.js(114,23): error TS2304: Cannot find name 'mat4'.
+src/nodes/accessors/ModelNode.js(116,99): error TS7031: Binding element 'object' implicitly has an 'any' type.
+src/nodes/accessors/ModelNode.js(116,109): error TS7006: Parameter 'self' implicitly has an 'any' type.
+src/nodes/accessors/ModelNode.js(122,11): error TS2304: Cannot find name 'Node'.
+src/nodes/accessors/ModelNode.js(122,16): error TS2304: Cannot find name 'mat4'.
+src/nodes/accessors/ModelNode.js(124,54): error TS7006: Parameter 'builder' implicitly has an 'any' type.
+src/nodes/accessors/ModelNode.js(136,11): error TS2304: Cannot find name 'Node'.
+src/nodes/accessors/ModelNode.js(136,16): error TS2304: Cannot find name 'mat4'.
+src/nodes/accessors/ModelNode.js(147,11): error TS2304: Cannot find name 'Node'.
+src/nodes/accessors/ModelNode.js(147,16): error TS2304: Cannot find name 'mat4'.
+src/nodes/accessors/ModelNode.js(149,59): error TS7006: Parameter 'builder' implicitly has an 'any' type.
+src/nodes/accessors/ModelNode.js(153,47): error TS7031: Binding element 'object' implicitly has an 'any' type.
+src/nodes/accessors/ModelNode.js(153,55): error TS7031: Binding element 'camera' implicitly has an 'any' type.
+src/nodes/accessors/ModelNode.js(166,11): error TS2304: Cannot find name 'Node'.
+src/nodes/accessors/ModelNode.js(166,16): error TS2304: Cannot find name 'mat3'.
+src/nodes/accessors/ModelNode.js(168,65): error TS7006: Parameter 'builder' implicitly has an 'any' type.
+src/nodes/accessors/ModelNode.js(172,47): error TS7031: Binding element 'object' implicitly has an 'any' type.
+src/nodes/accessors/ModelNode.js(172,55): error TS7031: Binding element 'camera' implicitly has an 'any' type.
 src/nodes/accessors/ModelViewProjectionNode.js(7,11): error TS2304: Cannot find name 'VaryingNode'.
 src/nodes/accessors/ModelViewProjectionNode.js(7,23): error TS2304: Cannot find name 'vec4'.
 src/nodes/accessors/ModelViewProjectionNode.js(9,58): error TS7006: Parameter 'builder' implicitly has an 'any' type.
@@ -30068,7 +30059,6 @@ src/nodes/accessors/MorphNode.js(75,47): error TS2345: Argument of type 'Float32
 src/nodes/accessors/MorphNode.js(176,13): error TS2304: Cannot find name 'Mesh'.
 src/nodes/accessors/MorphNode.js(185,13): error TS2304: Cannot find name 'Mesh'.
 src/nodes/accessors/MorphNode.js(192,13): error TS2304: Cannot find name 'UniformNode'.
-src/nodes/accessors/MorphNode.js(194,29): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/accessors/MorphNode.js(208,13): error TS2304: Cannot find name 'NodeBuilder'.
 src/nodes/accessors/MorphNode.js(210,2): error TS2416: Property 'setup' in type 'MorphNode' is not assignable to the same property in base type 'Node'.
   Type '(builder: NodeBuilder) => void' is not assignable to type '(builder: NodeBuilder) => Node | null'.
@@ -30104,23 +30094,24 @@ src/nodes/accessors/Normal.js(136,12): error TS2304: Cannot find name 'Node'.
 src/nodes/accessors/Normal.js(137,12): error TS2304: Cannot find name 'NodeBuilder'.
 src/nodes/accessors/Normal.js(140,60): error TS7031: Binding element 'normal' implicitly has an 'any' type.
 src/nodes/accessors/Normal.js(140,70): error TS7006: Parameter 'builder' implicitly has an 'any' type.
-src/nodes/accessors/Object3DNode.js(32,14): error TS2304: Cannot find name 'Object3D'.
-src/nodes/accessors/Object3DNode.js(48,14): error TS2304: Cannot find name 'Object3D'.
-src/nodes/accessors/Object3DNode.js(74,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
-src/nodes/accessors/Object3DNode.js(95,13): error TS2304: Cannot find name 'NodeFrame'.
-src/nodes/accessors/Object3DNode.js(97,2): error TS2416: Property 'update' in type 'Object3DNode' is not assignable to the same property in base type 'Node'.
+src/nodes/accessors/Object3DNode.js(35,14): error TS2304: Cannot find name 'Object3D'.
+src/nodes/accessors/Object3DNode.js(51,14): error TS2304: Cannot find name 'Object3D'.
+src/nodes/accessors/Object3DNode.js(77,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
+src/nodes/accessors/Object3DNode.js(102,13): error TS2304: Cannot find name 'NodeFrame'.
+src/nodes/accessors/Object3DNode.js(104,2): error TS2416: Property 'update' in type 'Object3DNode' is not assignable to the same property in base type 'Node'.
   Type '(frame: NodeFrame) => void' is not assignable to type '() => boolean | null'.
     Target signature provides too few arguments. Expected 1 or more, but got 0.
-src/nodes/accessors/Object3DNode.js(142,13): error TS2304: Cannot find name 'NodeBuilder'.
-src/nodes/accessors/Object3DNode.js(159,3): error TS2322: Type 'string | null' is not assignable to type 'string'.
+src/nodes/accessors/Object3DNode.js(159,13): error TS2304: Cannot find name 'NodeBuilder'.
+src/nodes/accessors/Object3DNode.js(180,3): error TS2322: Type 'string | null' is not assignable to type 'string'.
   Type 'null' is not assignable to type 'string'.
-src/nodes/accessors/Object3DNode.js(163,13): error TS7006: Parameter 'data' implicitly has an 'any' type.
-src/nodes/accessors/Object3DNode.js(171,15): error TS7006: Parameter 'data' implicitly has an 'any' type.
-src/nodes/accessors/Object3DNode.js(194,13): error TS2304: Cannot find name 'Object3D'.
-src/nodes/accessors/Object3DNode.js(204,13): error TS2304: Cannot find name 'Object3D'.
-src/nodes/accessors/Object3DNode.js(214,13): error TS2304: Cannot find name 'Object3D'.
-src/nodes/accessors/Object3DNode.js(224,13): error TS2304: Cannot find name 'Object3D'.
-src/nodes/accessors/Object3DNode.js(234,13): error TS2304: Cannot find name 'Object3D'.
+src/nodes/accessors/Object3DNode.js(184,13): error TS7006: Parameter 'data' implicitly has an 'any' type.
+src/nodes/accessors/Object3DNode.js(192,15): error TS7006: Parameter 'data' implicitly has an 'any' type.
+src/nodes/accessors/Object3DNode.js(216,13): error TS2304: Cannot find name 'Object3D'.
+src/nodes/accessors/Object3DNode.js(226,13): error TS2304: Cannot find name 'Object3D'.
+src/nodes/accessors/Object3DNode.js(236,13): error TS2304: Cannot find name 'Object3D'.
+src/nodes/accessors/Object3DNode.js(246,13): error TS2304: Cannot find name 'Object3D'.
+src/nodes/accessors/Object3DNode.js(256,13): error TS2304: Cannot find name 'Object3D'.
+src/nodes/accessors/Object3DNode.js(266,13): error TS2304: Cannot find name 'Object3D'.
 src/nodes/accessors/Position.js(9,11): error TS2304: Cannot find name 'AttributeNode'.
 src/nodes/accessors/Position.js(9,25): error TS2304: Cannot find name 'vec3'.
 src/nodes/accessors/Position.js(17,11): error TS2304: Cannot find name 'AttributeNode'.
@@ -30216,7 +30207,6 @@ src/nodes/accessors/SceneNode.js(34,14): error TS2304: Cannot find name 'Scene'.
 src/nodes/accessors/SceneNode.js(36,15): error TS2322: Type 'string' is not assignable to type '"backgroundBlurriness" | "backgroundIntensity" | "backgroundRotation"'.
 src/nodes/accessors/SceneNode.js(50,14): error TS2304: Cannot find name 'Scene'.
 src/nodes/accessors/SceneNode.js(61,13): error TS2304: Cannot find name 'NodeBuilder'.
-src/nodes/accessors/SceneNode.js(81,13): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/accessors/SceneNode.js(110,3): error TS2322: Type 'Node | ReferenceNode | undefined' is not assignable to type 'Node'.
   Type 'undefined' is not assignable to type 'Node'.
 src/nodes/accessors/SkinningNode.js(33,13): error TS2304: Cannot find name 'SkinnedMesh'.
@@ -30409,7 +30399,6 @@ src/nodes/accessors/TextureNode.js(237,18): error TS8024: JSDoc '@param' tag has
 src/nodes/accessors/TextureNode.js(238,14): error TS2304: Cannot find name 'Texture'.
 src/nodes/accessors/TextureNode.js(249,13): error TS2304: Cannot find name 'Node'.
 src/nodes/accessors/TextureNode.js(250,14): error TS2304: Cannot find name 'Node'.
-src/nodes/accessors/TextureNode.js(254,61): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/accessors/TextureNode.js(279,13): error TS2304: Cannot find name 'NodeBuilder'.
 src/nodes/accessors/TextureNode.js(280,13): error TS2304: Cannot find name 'Node'.
 src/nodes/accessors/TextureNode.js(281,14): error TS2304: Cannot find name 'Node'.
@@ -30519,13 +30508,10 @@ src/nodes/accessors/UV.js(9,13): error TS2304: Cannot find name 'AttributeNode'.
 src/nodes/accessors/UV.js(9,27): error TS2304: Cannot find name 'vec2'.
 src/nodes/accessors/VelocityNode.js(66,13): error TS2304: Cannot find name 'UniformNode'.
 src/nodes/accessors/VelocityNode.js(66,25): error TS2304: Cannot find name 'mat4'.
-src/nodes/accessors/VelocityNode.js(69,35): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/accessors/VelocityNode.js(74,13): error TS2304: Cannot find name 'UniformNode'.
 src/nodes/accessors/VelocityNode.js(74,25): error TS2304: Cannot find name 'mat4'.
-src/nodes/accessors/VelocityNode.js(77,35): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/accessors/VelocityNode.js(82,13): error TS2304: Cannot find name 'UniformNode'.
 src/nodes/accessors/VelocityNode.js(82,25): error TS2304: Cannot find name 'mat4'.
-src/nodes/accessors/VelocityNode.js(85,35): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/accessors/VelocityNode.js(103,13): error TS2304: Cannot find name 'NodeFrame'.
 src/nodes/accessors/VelocityNode.js(105,2): error TS2416: Property 'update' in type 'VelocityNode' is not assignable to the same property in base type 'TempNode'.
   Type '({ frameId, camera, object }: NodeFrame) => void' is not assignable to type '() => boolean | null'.
@@ -30538,7 +30524,6 @@ src/nodes/accessors/VelocityNode.js(161,13): error TS2304: Cannot find name 'Nod
 src/nodes/accessors/VelocityNode.js(161,26): error TS8024: JSDoc '@param' tag has name 'builder', but there is no parameter with that name.
 src/nodes/accessors/VelocityNode.js(162,14): error TS2304: Cannot find name 'Node'.
 src/nodes/accessors/VelocityNode.js(162,19): error TS2304: Cannot find name 'vec2'.
-src/nodes/accessors/VelocityNode.js(166,90): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/accessors/VelocityNode.js(184,19): error TS7006: Parameter 'object' implicitly has an 'any' type.
 src/nodes/accessors/VelocityNode.js(199,29): error TS7006: Parameter 'object' implicitly has an 'any' type.
 src/nodes/accessors/VertexColorNode.js(25,10): error TS2345: Argument of type 'null' is not assignable to parameter of type 'string'.
@@ -30655,24 +30640,18 @@ src/nodes/code/ScriptableValueNode.js(183,13): error TS7006: Parameter 'data' im
 src/nodes/code/ScriptableValueNode.js(210,15): error TS7006: Parameter 'data' implicitly has an 'any' type.
 src/nodes/core/ArrayNode.js(30,20): error TS2304: Cannot find name 'Node'.
 src/nodes/core/ArrayNode.js(46,20): error TS2304: Cannot find name 'Node'.
-src/nodes/core/ArrayNode.js(61,2): error TS2416: Property 'getNodeType' in type 'ArrayNode' is not assignable to the same property in base type 'TempNode'.
-  Type '(builder: any) => string | null' is not assignable to type '(builder: NodeBuilder) => string'.
-    Type 'string | null' is not assignable to type 'string'.
-      Type 'null' is not assignable to type 'string'.
-src/nodes/core/ArrayNode.js(61,15): error TS7006: Parameter 'builder' implicitly has an 'any' type.
-src/nodes/core/ArrayNode.js(65,20): error TS2531: Object is possibly 'null'.
-src/nodes/core/ArrayNode.js(73,2): error TS2416: Property 'getElementType' in type 'ArrayNode' is not assignable to the same property in base type 'TempNode'.
-  Type '(builder: any) => string | null' is not assignable to type '(builder: NodeBuilder) => string'.
-    Type 'string | null' is not assignable to type 'string'.
-      Type 'null' is not assignable to type 'string'.
-src/nodes/core/ArrayNode.js(73,18): error TS7006: Parameter 'builder' implicitly has an 'any' type.
-src/nodes/core/ArrayNode.js(79,12): error TS7006: Parameter 'builder' implicitly has an 'any' type.
-src/nodes/core/ArrayNode.js(96,25): error TS2304: Cannot find name 'Node'.
-src/nodes/core/ArrayNode.js(96,32): error TS8024: JSDoc '@param' tag has name 'nodeTypeOrValues', but there is no parameter with that name.
-src/nodes/core/ArrayNode.js(98,22): error TS8024: JSDoc '@param' tag has name 'count', but there is no parameter with that name.
-src/nodes/core/ArrayNode.js(101,24): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
-src/nodes/core/ArrayNode.js(124,33): error TS7006: Parameter 'node' implicitly has an 'any' type.
-src/nodes/core/ArrayNode.js(124,39): error TS7006: Parameter 'count' implicitly has an 'any' type.
+src/nodes/core/ArrayNode.js(64,13): error TS2304: Cannot find name 'NodeBuilder'.
+src/nodes/core/ArrayNode.js(71,20): error TS2531: Object is possibly 'null'.
+src/nodes/core/ArrayNode.js(75,3): error TS2322: Type 'string | null' is not assignable to type 'string'.
+  Type 'null' is not assignable to type 'string'.
+src/nodes/core/ArrayNode.js(82,13): error TS2304: Cannot find name 'NodeBuilder'.
+src/nodes/core/ArrayNode.js(94,13): error TS2304: Cannot find name 'NodeBuilder'.
+src/nodes/core/ArrayNode.js(114,25): error TS2304: Cannot find name 'Node'.
+src/nodes/core/ArrayNode.js(114,32): error TS8024: JSDoc '@param' tag has name 'nodeTypeOrValues', but there is no parameter with that name.
+src/nodes/core/ArrayNode.js(116,22): error TS8024: JSDoc '@param' tag has name 'count', but there is no parameter with that name.
+src/nodes/core/ArrayNode.js(119,24): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
+src/nodes/core/ArrayNode.js(142,33): error TS7006: Parameter 'node' implicitly has an 'any' type.
+src/nodes/core/ArrayNode.js(142,39): error TS7006: Parameter 'count' implicitly has an 'any' type.
 src/nodes/core/AssignNode.js(22,13): error TS2304: Cannot find name 'Node'.
 src/nodes/core/AssignNode.js(23,13): error TS2304: Cannot find name 'Node'.
 src/nodes/core/AssignNode.js(32,13): error TS2304: Cannot find name 'Node'.
@@ -30733,38 +30712,18 @@ src/nodes/core/InputNode.js(114,15): error TS7006: Parameter 'data' implicitly h
 src/nodes/core/InputNode.js(127,2): error TS2416: Property 'generate' in type 'InputNode' is not assignable to the same property in base type 'Node'.
   Type '() => void' is not assignable to type '(builder: NodeBuilder, output: string | null) => string | null'.
     Type 'void' is not assignable to type 'string | null'.
-src/nodes/core/LightingModel.js(14,13): error TS2304: Cannot find name 'ContextNode'.
-src/nodes/core/LightingModel.js(14,26): error TS8024: JSDoc '@param' tag has name 'input', but there is no parameter with that name.
-src/nodes/core/LightingModel.js(15,13): error TS2304: Cannot find name 'StackNode'.
-src/nodes/core/LightingModel.js(15,24): error TS8024: JSDoc '@param' tag has name 'stack', but there is no parameter with that name.
-src/nodes/core/LightingModel.js(16,13): error TS2304: Cannot find name 'NodeBuilder'.
-src/nodes/core/LightingModel.js(16,26): error TS8024: JSDoc '@param' tag has name 'builder', but there is no parameter with that name.
-src/nodes/core/LightingModel.js(25,13): error TS2304: Cannot find name 'ContextNode'.
-src/nodes/core/LightingModel.js(25,26): error TS8024: JSDoc '@param' tag has name 'input', but there is no parameter with that name.
-src/nodes/core/LightingModel.js(26,13): error TS2304: Cannot find name 'StackNode'.
-src/nodes/core/LightingModel.js(26,24): error TS8024: JSDoc '@param' tag has name 'stack', but there is no parameter with that name.
-src/nodes/core/LightingModel.js(27,13): error TS2304: Cannot find name 'NodeBuilder'.
-src/nodes/core/LightingModel.js(27,26): error TS8024: JSDoc '@param' tag has name 'builder', but there is no parameter with that name.
-src/nodes/core/LightingModel.js(36,21): error TS8024: JSDoc '@param' tag has name 'input', but there is no parameter with that name.
-src/nodes/core/LightingModel.js(37,13): error TS2304: Cannot find name 'StackNode'.
-src/nodes/core/LightingModel.js(37,24): error TS8024: JSDoc '@param' tag has name 'stack', but there is no parameter with that name.
-src/nodes/core/LightingModel.js(38,13): error TS2304: Cannot find name 'NodeBuilder'.
-src/nodes/core/LightingModel.js(38,26): error TS8024: JSDoc '@param' tag has name 'builder', but there is no parameter with that name.
-src/nodes/core/LightingModel.js(47,21): error TS8024: JSDoc '@param' tag has name 'input', but there is no parameter with that name.
-src/nodes/core/LightingModel.js(48,13): error TS2304: Cannot find name 'StackNode'.
-src/nodes/core/LightingModel.js(48,24): error TS8024: JSDoc '@param' tag has name 'stack', but there is no parameter with that name.
-src/nodes/core/LightingModel.js(49,13): error TS2304: Cannot find name 'NodeBuilder'.
-src/nodes/core/LightingModel.js(49,26): error TS8024: JSDoc '@param' tag has name 'builder', but there is no parameter with that name.
-src/nodes/core/LightingModel.js(57,13): error TS2304: Cannot find name 'ContextNode'.
-src/nodes/core/LightingModel.js(57,26): error TS8024: JSDoc '@param' tag has name 'input', but there is no parameter with that name.
-src/nodes/core/LightingModel.js(58,13): error TS2304: Cannot find name 'StackNode'.
-src/nodes/core/LightingModel.js(58,24): error TS8024: JSDoc '@param' tag has name 'stack', but there is no parameter with that name.
-src/nodes/core/LightingModel.js(59,13): error TS2304: Cannot find name 'NodeBuilder'.
-src/nodes/core/LightingModel.js(59,26): error TS8024: JSDoc '@param' tag has name 'builder', but there is no parameter with that name.
-src/nodes/core/LightingModel.js(69,13): error TS2304: Cannot find name 'ContextNode'.
-src/nodes/core/LightingModel.js(69,26): error TS8024: JSDoc '@param' tag has name 'input', but there is no parameter with that name.
-src/nodes/core/LightingModel.js(70,13): error TS2304: Cannot find name 'StackNode'.
-src/nodes/core/LightingModel.js(70,24): error TS8024: JSDoc '@param' tag has name 'stack', but there is no parameter with that name.
+src/nodes/core/LightingModel.js(14,13): error TS2304: Cannot find name 'NodeBuilder'.
+src/nodes/core/LightingModel.js(24,18): error TS2554: Expected 0 arguments, but got 1.
+src/nodes/core/LightingModel.js(33,13): error TS2304: Cannot find name 'NodeBuilder'.
+src/nodes/core/LightingModel.js(33,26): error TS8024: JSDoc '@param' tag has name 'builder', but there is no parameter with that name.
+src/nodes/core/LightingModel.js(42,21): error TS8024: JSDoc '@param' tag has name 'lightData', but there is no parameter with that name.
+src/nodes/core/LightingModel.js(43,13): error TS2304: Cannot find name 'NodeBuilder'.
+src/nodes/core/LightingModel.js(43,26): error TS8024: JSDoc '@param' tag has name 'builder', but there is no parameter with that name.
+src/nodes/core/LightingModel.js(52,21): error TS8024: JSDoc '@param' tag has name 'lightData', but there is no parameter with that name.
+src/nodes/core/LightingModel.js(53,13): error TS2304: Cannot find name 'NodeBuilder'.
+src/nodes/core/LightingModel.js(53,26): error TS8024: JSDoc '@param' tag has name 'builder', but there is no parameter with that name.
+src/nodes/core/LightingModel.js(61,13): error TS2304: Cannot find name 'NodeBuilder'.
+src/nodes/core/LightingModel.js(61,26): error TS8024: JSDoc '@param' tag has name 'builder', but there is no parameter with that name.
 src/nodes/core/LightingModel.js(71,13): error TS2304: Cannot find name 'NodeBuilder'.
 src/nodes/core/LightingModel.js(71,26): error TS8024: JSDoc '@param' tag has name 'builder', but there is no parameter with that name.
 src/nodes/core/MRTNode.js(7,18): error TS2304: Cannot find name 'Texture'.
@@ -31379,42 +31338,39 @@ src/nodes/display/PassNode.js(224,16): error TS2540: Cannot assign to 'isRenderT
 src/nodes/display/PassNode.js(243,28): error TS2304: Cannot find name 'Texture'.
 src/nodes/display/PassNode.js(279,28): error TS2304: Cannot find name 'Texture'.
 src/nodes/display/PassNode.js(296,13): error TS2304: Cannot find name 'UniformNode'.
-src/nodes/display/PassNode.js(298,22): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/display/PassNode.js(304,13): error TS2304: Cannot find name 'UniformNode'.
-src/nodes/display/PassNode.js(306,21): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/display/PassNode.js(312,14): error TS2304: Cannot find name 'MRTNode'.
-src/nodes/display/PassNode.js(340,13): error TS2304: Cannot find name 'MRTNode'.
-src/nodes/display/PassNode.js(354,14): error TS2304: Cannot find name 'MRTNode'.
-src/nodes/display/PassNode.js(377,14): error TS2304: Cannot find name 'Texture'.
-src/nodes/display/PassNode.js(404,14): error TS2304: Cannot find name 'Texture'.
-src/nodes/display/PassNode.js(441,31): error TS2339: Property 'updateTexture' does not exist on type 'TextureNode'.
-src/nodes/display/PassNode.js(442,39): error TS2339: Property 'updateTexture' does not exist on type 'TextureNode'.
-src/nodes/display/PassNode.js(461,16): error TS2339: Property 'updateTexture' does not exist on type 'TextureNode'.
-src/nodes/display/PassNode.js(485,16): error TS2339: Property 'updateTexture' does not exist on type 'TextureNode'.
-src/nodes/display/PassNode.js(498,14): error TS2304: Cannot find name 'Node'.
-src/nodes/display/PassNode.js(502,19): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Object'.
+src/nodes/display/PassNode.js(368,13): error TS7006: Parameter 'layers' implicitly has an 'any' type.
+src/nodes/display/PassNode.js(385,13): error TS2304: Cannot find name 'MRTNode'.
+src/nodes/display/PassNode.js(399,14): error TS2304: Cannot find name 'MRTNode'.
+src/nodes/display/PassNode.js(422,14): error TS2304: Cannot find name 'Texture'.
+src/nodes/display/PassNode.js(449,14): error TS2304: Cannot find name 'Texture'.
+src/nodes/display/PassNode.js(486,31): error TS2339: Property 'updateTexture' does not exist on type 'TextureNode'.
+src/nodes/display/PassNode.js(487,39): error TS2339: Property 'updateTexture' does not exist on type 'TextureNode'.
+src/nodes/display/PassNode.js(506,16): error TS2339: Property 'updateTexture' does not exist on type 'TextureNode'.
+src/nodes/display/PassNode.js(530,16): error TS2339: Property 'updateTexture' does not exist on type 'TextureNode'.
+src/nodes/display/PassNode.js(543,14): error TS2304: Cannot find name 'Node'.
+src/nodes/display/PassNode.js(547,19): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Object'.
   No index signature with a parameter of type 'string' was found on type 'Object'.
-src/nodes/display/PassNode.js(509,4): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Object'.
+src/nodes/display/PassNode.js(554,4): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Object'.
   No index signature with a parameter of type 'string' was found on type 'Object'.
-src/nodes/display/PassNode.js(521,14): error TS2304: Cannot find name 'Node'.
-src/nodes/display/PassNode.js(525,25): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Object'.
+src/nodes/display/PassNode.js(566,14): error TS2304: Cannot find name 'Node'.
+src/nodes/display/PassNode.js(570,25): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Object'.
   No index signature with a parameter of type 'string' was found on type 'Object'.
-src/nodes/display/PassNode.js(535,4): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Object'.
+src/nodes/display/PassNode.js(580,4): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Object'.
   No index signature with a parameter of type 'string' was found on type 'Object'.
-src/nodes/display/PassNode.js(543,11): error TS7031: Binding element 'renderer' implicitly has an 'any' type.
-src/nodes/display/PassNode.js(545,44): error TS2339: Property 'samples' does not exist on type 'Object'.
-src/nodes/display/PassNode.js(545,100): error TS2339: Property 'samples' does not exist on type 'Object'.
-src/nodes/display/PassNode.js(560,2): error TS2416: Property 'updateBefore' in type 'PassNode' is not assignable to the same property in base type 'TempNode'.
+src/nodes/display/PassNode.js(588,11): error TS7031: Binding element 'renderer' implicitly has an 'any' type.
+src/nodes/display/PassNode.js(590,44): error TS2339: Property 'samples' does not exist on type 'Object'.
+src/nodes/display/PassNode.js(590,100): error TS2339: Property 'samples' does not exist on type 'Object'.
+src/nodes/display/PassNode.js(605,2): error TS2416: Property 'updateBefore' in type 'PassNode' is not assignable to the same property in base type 'TempNode'.
   Type '(frame: any) => void' is not assignable to type '() => boolean | null'.
     Type 'void' is not assignable to type 'boolean | null'.
-src/nodes/display/PassNode.js(560,16): error TS7006: Parameter 'frame' implicitly has an 'any' type.
-src/nodes/display/PassNode.js(667,12): error TS2304: Cannot find name 'Scene'.
-src/nodes/display/PassNode.js(668,12): error TS2304: Cannot find name 'Camera'.
-src/nodes/display/PassNode.js(672,77): error TS2345: Argument of type 'string' is not assignable to parameter of type '"depth" | "color"'.
-src/nodes/display/PassNode.js(680,12): error TS2304: Cannot find name 'Texture'.
-src/nodes/display/PassNode.js(690,12): error TS2304: Cannot find name 'Scene'.
-src/nodes/display/PassNode.js(691,12): error TS2304: Cannot find name 'Camera'.
-src/nodes/display/PassNode.js(695,82): error TS2345: Argument of type 'string' is not assignable to parameter of type '"depth" | "color"'.
+src/nodes/display/PassNode.js(605,16): error TS7006: Parameter 'frame' implicitly has an 'any' type.
+src/nodes/display/PassNode.js(732,12): error TS2304: Cannot find name 'Scene'.
+src/nodes/display/PassNode.js(733,12): error TS2304: Cannot find name 'Camera'.
+src/nodes/display/PassNode.js(745,12): error TS2304: Cannot find name 'Texture'.
+src/nodes/display/PassNode.js(755,12): error TS2304: Cannot find name 'Scene'.
+src/nodes/display/PassNode.js(756,12): error TS2304: Cannot find name 'Camera'.
 src/nodes/display/PosterizeNode.js(21,13): error TS2304: Cannot find name 'Node'.
 src/nodes/display/PosterizeNode.js(22,13): error TS2304: Cannot find name 'Node'.
 src/nodes/display/PosterizeNode.js(31,13): error TS2304: Cannot find name 'Node'.
@@ -31438,9 +31394,7 @@ src/nodes/display/ScreenNode.js(111,5): error TS7005: Variable 'viewportVec' imp
 src/nodes/display/ScreenNode.js(119,5): error TS7005: Variable 'screenSizeVec' implicitly has an 'any' type.
 src/nodes/display/ScreenNode.js(120,5): error TS7005: Variable 'screenSizeVec' implicitly has an 'any' type.
 src/nodes/display/ScreenNode.js(124,36): error TS7005: Variable 'screenSizeVec' implicitly has an 'any' type.
-src/nodes/display/ScreenNode.js(140,13): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/display/ScreenNode.js(140,22): error TS7005: Variable 'screenSizeVec' implicitly has an 'any' type.
-src/nodes/display/ScreenNode.js(144,13): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/display/ScreenNode.js(144,22): error TS7005: Variable 'viewportVec' implicitly has an 'any' type.
 src/nodes/display/ScreenNode.js(156,12): error TS7006: Parameter 'builder' implicitly has an 'any' type.
 src/nodes/display/ScreenNode.js(176,16): error TS2554: Expected 2 arguments, but got 1.
@@ -31501,7 +31455,6 @@ src/nodes/display/ToonOutlinePassNode.js(37,13): error TS2304: Cannot find name 
 src/nodes/display/ToonOutlinePassNode.js(38,13): error TS2304: Cannot find name 'Node'.
 src/nodes/display/ToonOutlinePassNode.js(39,13): error TS2304: Cannot find name 'Node'.
 src/nodes/display/ToonOutlinePassNode.js(40,13): error TS2304: Cannot find name 'Node'.
-src/nodes/display/ToonOutlinePassNode.js(44,10): error TS2345: Argument of type 'string' is not assignable to parameter of type '"depth" | "color"'.
 src/nodes/display/ToonOutlinePassNode.js(49,13): error TS2304: Cannot find name 'Node'.
 src/nodes/display/ToonOutlinePassNode.js(56,13): error TS2304: Cannot find name 'Node'.
 src/nodes/display/ToonOutlinePassNode.js(63,13): error TS2304: Cannot find name 'Node'.
@@ -31600,18 +31553,14 @@ src/nodes/fog/Fog.js(88,12): error TS2304: Cannot find name 'Node'.
 src/nodes/fog/Fog.js(89,12): error TS2304: Cannot find name 'Node'.
 src/nodes/fog/Fog.js(104,12): error TS2304: Cannot find name 'Node'.
 src/nodes/fog/Fog.js(105,12): error TS2304: Cannot find name 'Node'.
-src/nodes/functions/BasicLightingModel.js(29,13): error TS2304: Cannot find name 'ContextNode'.
-src/nodes/functions/BasicLightingModel.js(30,13): error TS2304: Cannot find name 'StackNode'.
-src/nodes/functions/BasicLightingModel.js(31,13): error TS2304: Cannot find name 'NodeBuilder'.
-src/nodes/functions/BasicLightingModel.js(33,2): error TS2416: Property 'indirect' in type 'BasicLightingModel' is not assignable to the same property in base type 'LightingModel'.
-  Type '(context: ContextNode, stack: StackNode, builder: NodeBuilder) => void' is not assignable to type '() => void'.
-    Target signature provides too few arguments. Expected 3 or more, but got 0.
-src/nodes/functions/BasicLightingModel.js(64,13): error TS2304: Cannot find name 'ContextNode'.
-src/nodes/functions/BasicLightingModel.js(65,13): error TS2304: Cannot find name 'StackNode'.
-src/nodes/functions/BasicLightingModel.js(66,13): error TS2304: Cannot find name 'NodeBuilder'.
-src/nodes/functions/BasicLightingModel.js(68,2): error TS2416: Property 'finish' in type 'BasicLightingModel' is not assignable to the same property in base type 'LightingModel'.
-  Type '(context: ContextNode, stack: StackNode, builder: NodeBuilder) => void' is not assignable to type '() => void'.
-    Target signature provides too few arguments. Expected 3 or more, but got 0.
+src/nodes/functions/BasicLightingModel.js(29,13): error TS2304: Cannot find name 'NodeBuilder'.
+src/nodes/functions/BasicLightingModel.js(31,2): error TS2416: Property 'indirect' in type 'BasicLightingModel' is not assignable to the same property in base type 'LightingModel'.
+  Type '({ context }: NodeBuilder) => void' is not assignable to type '() => void'.
+    Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/nodes/functions/BasicLightingModel.js(62,13): error TS2304: Cannot find name 'NodeBuilder'.
+src/nodes/functions/BasicLightingModel.js(64,2): error TS2416: Property 'finish' in type 'BasicLightingModel' is not assignable to the same property in base type 'LightingModel'.
+  Type '(builder: NodeBuilder) => void' is not assignable to type '() => void'.
+    Target signature provides too few arguments. Expected 1 or more, but got 0.
 src/nodes/functions/BSDF/BRDF_GGX.js(12,38): error TS7006: Parameter 'inputs' implicitly has an 'any' type.
 src/nodes/functions/BSDF/BRDF_Lambert.js(3,42): error TS7006: Parameter 'inputs' implicitly has an 'any' type.
 src/nodes/functions/BSDF/BRDF_Sheen.js(7,41): error TS7031: Binding element 'roughness' implicitly has an 'any' type.
@@ -31646,6 +31595,11 @@ src/nodes/functions/BSDF/LTC.js(75,59): error TS7031: Binding element 'p0' impli
 src/nodes/functions/BSDF/LTC.js(75,63): error TS7031: Binding element 'p1' implicitly has an 'any' type.
 src/nodes/functions/BSDF/LTC.js(75,67): error TS7031: Binding element 'p2' implicitly has an 'any' type.
 src/nodes/functions/BSDF/LTC.js(75,71): error TS7031: Binding element 'p3' implicitly has an 'any' type.
+src/nodes/functions/BSDF/LTC.js(130,51): error TS7031: Binding element 'P' implicitly has an 'any' type.
+src/nodes/functions/BSDF/LTC.js(130,54): error TS7031: Binding element 'p0' implicitly has an 'any' type.
+src/nodes/functions/BSDF/LTC.js(130,58): error TS7031: Binding element 'p1' implicitly has an 'any' type.
+src/nodes/functions/BSDF/LTC.js(130,62): error TS7031: Binding element 'p2' implicitly has an 'any' type.
+src/nodes/functions/BSDF/LTC.js(130,66): error TS7031: Binding element 'p3' implicitly has an 'any' type.
 src/nodes/functions/BSDF/Schlick_to_F0.js(3,45): error TS7031: Binding element 'f' implicitly has an 'any' type.
 src/nodes/functions/BSDF/Schlick_to_F0.js(3,48): error TS7031: Binding element 'f90' implicitly has an 'any' type.
 src/nodes/functions/BSDF/Schlick_to_F0.js(3,53): error TS7031: Binding element 'dotVH' implicitly has an 'any' type.
@@ -31675,21 +31629,13 @@ src/nodes/functions/material/getShIrradianceAt.js(3,49): error TS7031: Binding e
 src/nodes/functions/material/getShIrradianceAt.js(3,57): error TS7031: Binding element 'shCoefficients' implicitly has an 'any' type.
 src/nodes/functions/PhongLightingModel.js(12,44): error TS7031: Binding element 'dotNH' implicitly has an 'any' type.
 src/nodes/functions/PhongLightingModel.js(18,47): error TS7031: Binding element 'lightDirection' implicitly has an 'any' type.
-src/nodes/functions/PhongLightingModel.js(66,13): error TS2304: Cannot find name 'StackNode'.
-src/nodes/functions/PhongLightingModel.js(66,24): error TS8024: JSDoc '@param' tag has name 'stack', but there is no parameter with that name.
-src/nodes/functions/PhongLightingModel.js(67,13): error TS2304: Cannot find name 'NodeBuilder'.
-src/nodes/functions/PhongLightingModel.js(67,26): error TS8024: JSDoc '@param' tag has name 'builder', but there is no parameter with that name.
-src/nodes/functions/PhongLightingModel.js(69,2): error TS2416: Property 'direct' in type 'PhongLightingModel' is not assignable to the same property in base type 'BasicLightingModel'.
+src/nodes/functions/PhongLightingModel.js(67,2): error TS2416: Property 'direct' in type 'PhongLightingModel' is not assignable to the same property in base type 'BasicLightingModel'.
   Type '({ lightDirection, lightColor, reflectedLight }: Object) => void' is not assignable to type '() => void'.
     Target signature provides too few arguments. Expected 1 or more, but got 0.
-src/nodes/functions/PhongLightingModel.js(69,12): error TS2339: Property 'lightDirection' does not exist on type 'Object'.
-src/nodes/functions/PhongLightingModel.js(69,28): error TS2339: Property 'lightColor' does not exist on type 'Object'.
-src/nodes/functions/PhongLightingModel.js(69,40): error TS2339: Property 'reflectedLight' does not exist on type 'Object'.
-src/nodes/functions/PhongLightingModel.js(87,13): error TS2304: Cannot find name 'ContextNode'.
-src/nodes/functions/PhongLightingModel.js(88,13): error TS2304: Cannot find name 'StackNode'.
-src/nodes/functions/PhongLightingModel.js(88,24): error TS8024: JSDoc '@param' tag has name 'stack', but there is no parameter with that name.
-src/nodes/functions/PhongLightingModel.js(89,13): error TS2304: Cannot find name 'NodeBuilder'.
-src/nodes/functions/PhongLightingModel.js(89,26): error TS8024: JSDoc '@param' tag has name 'builder', but there is no parameter with that name.
+src/nodes/functions/PhongLightingModel.js(67,12): error TS2339: Property 'lightDirection' does not exist on type 'Object'.
+src/nodes/functions/PhongLightingModel.js(67,28): error TS2339: Property 'lightColor' does not exist on type 'Object'.
+src/nodes/functions/PhongLightingModel.js(67,40): error TS2339: Property 'reflectedLight' does not exist on type 'Object'.
+src/nodes/functions/PhongLightingModel.js(85,13): error TS2304: Cannot find name 'NodeBuilder'.
 src/nodes/functions/PhysicalLightingModel.js(29,56): error TS7031: Binding element 'n' implicitly has an 'any' type.
 src/nodes/functions/PhysicalLightingModel.js(29,59): error TS7031: Binding element 'v' implicitly has an 'any' type.
 src/nodes/functions/PhysicalLightingModel.js(29,62): error TS7031: Binding element 'thickness' implicitly has an 'any' type.
@@ -31746,71 +31692,43 @@ src/nodes/functions/PhysicalLightingModel.js(441,14): error TS2304: Cannot find 
 src/nodes/functions/PhysicalLightingModel.js(449,14): error TS2304: Cannot find name 'Node'.
 src/nodes/functions/PhysicalLightingModel.js(457,14): error TS2304: Cannot find name 'Node'.
 src/nodes/functions/PhysicalLightingModel.js(465,14): error TS2304: Cannot find name 'Node'.
-src/nodes/functions/PhysicalLightingModel.js(476,13): error TS2304: Cannot find name 'ContextNode'.
-src/nodes/functions/PhysicalLightingModel.js(478,2): error TS2416: Property 'start' in type 'PhysicalLightingModel' is not assignable to the same property in base type 'LightingModel'.
-  Type '(context: ContextNode) => void' is not assignable to type '() => void'.
-    Target signature provides too few arguments. Expected 1 or more, but got 0.
-src/nodes/functions/PhysicalLightingModel.js(547,26): error TS7006: Parameter 'singleScatter' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(547,41): error TS7006: Parameter 'multiScatter' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(547,55): error TS7006: Parameter 'specularF90' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(572,13): error TS2304: Cannot find name 'StackNode'.
-src/nodes/functions/PhysicalLightingModel.js(572,24): error TS8024: JSDoc '@param' tag has name 'stack', but there is no parameter with that name.
-src/nodes/functions/PhysicalLightingModel.js(573,13): error TS2304: Cannot find name 'NodeBuilder'.
-src/nodes/functions/PhysicalLightingModel.js(573,26): error TS8024: JSDoc '@param' tag has name 'builder', but there is no parameter with that name.
-src/nodes/functions/PhysicalLightingModel.js(575,2): error TS2416: Property 'direct' in type 'PhysicalLightingModel' is not assignable to the same property in base type 'LightingModel'.
+src/nodes/functions/PhysicalLightingModel.js(476,13): error TS2304: Cannot find name 'NodeBuilder'.
+src/nodes/functions/PhysicalLightingModel.js(551,26): error TS7006: Parameter 'singleScatter' implicitly has an 'any' type.
+src/nodes/functions/PhysicalLightingModel.js(551,41): error TS7006: Parameter 'multiScatter' implicitly has an 'any' type.
+src/nodes/functions/PhysicalLightingModel.js(551,55): error TS7006: Parameter 'specularF90' implicitly has an 'any' type.
+src/nodes/functions/PhysicalLightingModel.js(576,13): error TS2304: Cannot find name 'NodeBuilder'.
+src/nodes/functions/PhysicalLightingModel.js(576,26): error TS8024: JSDoc '@param' tag has name 'builder', but there is no parameter with that name.
+src/nodes/functions/PhysicalLightingModel.js(578,2): error TS2416: Property 'direct' in type 'PhysicalLightingModel' is not assignable to the same property in base type 'LightingModel'.
   Type '({ lightDirection, lightColor, reflectedLight }: Object) => void' is not assignable to type '() => void'.
     Target signature provides too few arguments. Expected 1 or more, but got 0.
-src/nodes/functions/PhysicalLightingModel.js(575,12): error TS2339: Property 'lightDirection' does not exist on type 'Object'.
-src/nodes/functions/PhysicalLightingModel.js(575,28): error TS2339: Property 'lightColor' does not exist on type 'Object'.
-src/nodes/functions/PhysicalLightingModel.js(575,40): error TS2339: Property 'reflectedLight' does not exist on type 'Object'.
-src/nodes/functions/PhysicalLightingModel.js(606,13): error TS2304: Cannot find name 'StackNode'.
-src/nodes/functions/PhysicalLightingModel.js(606,24): error TS8024: JSDoc '@param' tag has name 'stack', but there is no parameter with that name.
-src/nodes/functions/PhysicalLightingModel.js(607,13): error TS2304: Cannot find name 'NodeBuilder'.
-src/nodes/functions/PhysicalLightingModel.js(607,26): error TS8024: JSDoc '@param' tag has name 'builder', but there is no parameter with that name.
-src/nodes/functions/PhysicalLightingModel.js(609,2): error TS2416: Property 'directRectArea' in type 'PhysicalLightingModel' is not assignable to the same property in base type 'LightingModel'.
+src/nodes/functions/PhysicalLightingModel.js(578,12): error TS2339: Property 'lightDirection' does not exist on type 'Object'.
+src/nodes/functions/PhysicalLightingModel.js(578,28): error TS2339: Property 'lightColor' does not exist on type 'Object'.
+src/nodes/functions/PhysicalLightingModel.js(578,40): error TS2339: Property 'reflectedLight' does not exist on type 'Object'.
+src/nodes/functions/PhysicalLightingModel.js(609,13): error TS2304: Cannot find name 'NodeBuilder'.
+src/nodes/functions/PhysicalLightingModel.js(609,26): error TS8024: JSDoc '@param' tag has name 'builder', but there is no parameter with that name.
+src/nodes/functions/PhysicalLightingModel.js(611,2): error TS2416: Property 'directRectArea' in type 'PhysicalLightingModel' is not assignable to the same property in base type 'LightingModel'.
   Type '({ lightColor, lightPosition, halfWidth, halfHeight, reflectedLight, ltc_1, ltc_2 }: Object) => void' is not assignable to type '() => void'.
     Target signature provides too few arguments. Expected 1 or more, but got 0.
-src/nodes/functions/PhysicalLightingModel.js(609,20): error TS2339: Property 'lightColor' does not exist on type 'Object'.
-src/nodes/functions/PhysicalLightingModel.js(609,32): error TS2339: Property 'lightPosition' does not exist on type 'Object'.
-src/nodes/functions/PhysicalLightingModel.js(609,47): error TS2339: Property 'halfWidth' does not exist on type 'Object'.
-src/nodes/functions/PhysicalLightingModel.js(609,58): error TS2339: Property 'halfHeight' does not exist on type 'Object'.
-src/nodes/functions/PhysicalLightingModel.js(609,70): error TS2339: Property 'reflectedLight' does not exist on type 'Object'.
-src/nodes/functions/PhysicalLightingModel.js(609,86): error TS2339: Property 'ltc_1' does not exist on type 'Object'.
-src/nodes/functions/PhysicalLightingModel.js(609,93): error TS2339: Property 'ltc_2' does not exist on type 'Object'.
-src/nodes/functions/PhysicalLightingModel.js(644,13): error TS2304: Cannot find name 'ContextNode'.
-src/nodes/functions/PhysicalLightingModel.js(645,13): error TS2304: Cannot find name 'StackNode'.
+src/nodes/functions/PhysicalLightingModel.js(611,20): error TS2339: Property 'lightColor' does not exist on type 'Object'.
+src/nodes/functions/PhysicalLightingModel.js(611,32): error TS2339: Property 'lightPosition' does not exist on type 'Object'.
+src/nodes/functions/PhysicalLightingModel.js(611,47): error TS2339: Property 'halfWidth' does not exist on type 'Object'.
+src/nodes/functions/PhysicalLightingModel.js(611,58): error TS2339: Property 'halfHeight' does not exist on type 'Object'.
+src/nodes/functions/PhysicalLightingModel.js(611,70): error TS2339: Property 'reflectedLight' does not exist on type 'Object'.
+src/nodes/functions/PhysicalLightingModel.js(611,86): error TS2339: Property 'ltc_1' does not exist on type 'Object'.
+src/nodes/functions/PhysicalLightingModel.js(611,93): error TS2339: Property 'ltc_2' does not exist on type 'Object'.
 src/nodes/functions/PhysicalLightingModel.js(646,13): error TS2304: Cannot find name 'NodeBuilder'.
 src/nodes/functions/PhysicalLightingModel.js(648,2): error TS2416: Property 'indirect' in type 'PhysicalLightingModel' is not assignable to the same property in base type 'LightingModel'.
-  Type '(context: ContextNode, stack: StackNode, builder: NodeBuilder) => void' is not assignable to type '() => void'.
-    Target signature provides too few arguments. Expected 3 or more, but got 0.
-src/nodes/functions/PhysicalLightingModel.js(650,34): error TS2554: Expected 1 arguments, but got 3.
-src/nodes/functions/PhysicalLightingModel.js(651,35): error TS2554: Expected 1 arguments, but got 3.
-src/nodes/functions/PhysicalLightingModel.js(652,35): error TS2554: Expected 1 arguments, but got 3.
-src/nodes/functions/PhysicalLightingModel.js(659,13): error TS2304: Cannot find name 'ContextNode'.
-src/nodes/functions/PhysicalLightingModel.js(660,13): error TS2304: Cannot find name 'StackNode'.
-src/nodes/functions/PhysicalLightingModel.js(660,24): error TS8024: JSDoc '@param' tag has name 'stack', but there is no parameter with that name.
-src/nodes/functions/PhysicalLightingModel.js(661,13): error TS2304: Cannot find name 'NodeBuilder'.
-src/nodes/functions/PhysicalLightingModel.js(661,26): error TS8024: JSDoc '@param' tag has name 'builder', but there is no parameter with that name.
-src/nodes/functions/PhysicalLightingModel.js(672,13): error TS2304: Cannot find name 'ContextNode'.
-src/nodes/functions/PhysicalLightingModel.js(673,13): error TS2304: Cannot find name 'StackNode'.
-src/nodes/functions/PhysicalLightingModel.js(673,24): error TS8024: JSDoc '@param' tag has name 'stack', but there is no parameter with that name.
-src/nodes/functions/PhysicalLightingModel.js(674,13): error TS2304: Cannot find name 'NodeBuilder'.
-src/nodes/functions/PhysicalLightingModel.js(674,26): error TS8024: JSDoc '@param' tag has name 'builder', but there is no parameter with that name.
-src/nodes/functions/PhysicalLightingModel.js(728,13): error TS2304: Cannot find name 'ContextNode'.
-src/nodes/functions/PhysicalLightingModel.js(729,13): error TS2304: Cannot find name 'StackNode'.
-src/nodes/functions/PhysicalLightingModel.js(729,24): error TS8024: JSDoc '@param' tag has name 'stack', but there is no parameter with that name.
-src/nodes/functions/PhysicalLightingModel.js(730,13): error TS2304: Cannot find name 'NodeBuilder'.
-src/nodes/functions/PhysicalLightingModel.js(730,26): error TS8024: JSDoc '@param' tag has name 'builder', but there is no parameter with that name.
-src/nodes/functions/PhysicalLightingModel.js(732,2): error TS2416: Property 'ambientOcclusion' in type 'PhysicalLightingModel' is not assignable to the same property in base type 'LightingModel'.
-  Type '({ ambientOcclusion, reflectedLight }: ContextNode) => void' is not assignable to type '() => void'.
+  Type '(builder: NodeBuilder) => void' is not assignable to type '() => void'.
     Target signature provides too few arguments. Expected 1 or more, but got 0.
-src/nodes/functions/PhysicalLightingModel.js(761,13): error TS2304: Cannot find name 'ContextNode'.
-src/nodes/functions/PhysicalLightingModel.js(762,13): error TS2304: Cannot find name 'StackNode'.
-src/nodes/functions/PhysicalLightingModel.js(762,24): error TS8024: JSDoc '@param' tag has name 'stack', but there is no parameter with that name.
-src/nodes/functions/PhysicalLightingModel.js(763,13): error TS2304: Cannot find name 'NodeBuilder'.
-src/nodes/functions/PhysicalLightingModel.js(763,26): error TS8024: JSDoc '@param' tag has name 'builder', but there is no parameter with that name.
-src/nodes/functions/PhysicalLightingModel.js(765,2): error TS2416: Property 'finish' in type 'PhysicalLightingModel' is not assignable to the same property in base type 'LightingModel'.
-  Type '(context: ContextNode) => void' is not assignable to type '() => void'.
+src/nodes/functions/PhysicalLightingModel.js(659,13): error TS2304: Cannot find name 'NodeBuilder'.
+src/nodes/functions/PhysicalLightingModel.js(672,13): error TS2304: Cannot find name 'NodeBuilder'.
+src/nodes/functions/PhysicalLightingModel.js(728,13): error TS2304: Cannot find name 'NodeBuilder'.
+src/nodes/functions/PhysicalLightingModel.js(730,2): error TS2416: Property 'ambientOcclusion' in type 'PhysicalLightingModel' is not assignable to the same property in base type 'LightingModel'.
+  Type '(builder: NodeBuilder) => void' is not assignable to type '() => void'.
+    Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/nodes/functions/PhysicalLightingModel.js(761,13): error TS2304: Cannot find name 'NodeBuilder'.
+src/nodes/functions/PhysicalLightingModel.js(763,2): error TS2416: Property 'finish' in type 'PhysicalLightingModel' is not assignable to the same property in base type 'LightingModel'.
+  Type '({ context }: NodeBuilder) => void' is not assignable to type '() => void'.
     Target signature provides too few arguments. Expected 1 or more, but got 0.
 src/nodes/functions/ShadowMaskModel.js(22,13): error TS2304: Cannot find name 'Node'.
 src/nodes/functions/ShadowMaskModel.js(33,2): error TS2416: Property 'direct' in type 'ShadowMaskModel' is not assignable to the same property in base type 'LightingModel'.
@@ -31825,22 +31743,43 @@ src/nodes/functions/ToonLightingModel.js(9,53): error TS7031: Binding element 'n
 src/nodes/functions/ToonLightingModel.js(9,61): error TS7031: Binding element 'lightDirection' implicitly has an 'any' type.
 src/nodes/functions/ToonLightingModel.js(9,77): error TS7031: Binding element 'builder' implicitly has an 'any' type.
 src/nodes/functions/ToonLightingModel.js(17,69): error TS2339: Property 'context' does not exist on type 'MaterialReferenceNode'.
-src/nodes/functions/ToonLightingModel.js(43,13): error TS2304: Cannot find name 'StackNode'.
-src/nodes/functions/ToonLightingModel.js(44,13): error TS2304: Cannot find name 'NodeBuilder'.
-src/nodes/functions/ToonLightingModel.js(46,2): error TS2416: Property 'direct' in type 'ToonLightingModel' is not assignable to the same property in base type 'LightingModel'.
-  Type '({ lightDirection, lightColor, reflectedLight }: Object, stack: StackNode, builder: NodeBuilder) => void' is not assignable to type '() => void'.
-    Target signature provides too few arguments. Expected 3 or more, but got 0.
-src/nodes/functions/ToonLightingModel.js(46,12): error TS2339: Property 'lightDirection' does not exist on type 'Object'.
-src/nodes/functions/ToonLightingModel.js(46,28): error TS2339: Property 'lightColor' does not exist on type 'Object'.
-src/nodes/functions/ToonLightingModel.js(46,40): error TS2339: Property 'reflectedLight' does not exist on type 'Object'.
-src/nodes/functions/ToonLightingModel.js(57,13): error TS2304: Cannot find name 'ContextNode'.
-src/nodes/functions/ToonLightingModel.js(58,13): error TS2304: Cannot find name 'StackNode'.
-src/nodes/functions/ToonLightingModel.js(58,24): error TS8024: JSDoc '@param' tag has name 'stack', but there is no parameter with that name.
-src/nodes/functions/ToonLightingModel.js(59,13): error TS2304: Cannot find name 'NodeBuilder'.
-src/nodes/functions/ToonLightingModel.js(59,26): error TS8024: JSDoc '@param' tag has name 'builder', but there is no parameter with that name.
-src/nodes/functions/ToonLightingModel.js(61,2): error TS2416: Property 'indirect' in type 'ToonLightingModel' is not assignable to the same property in base type 'LightingModel'.
-  Type '({ ambientOcclusion, irradiance, reflectedLight }: ContextNode) => void' is not assignable to type '() => void'.
+src/nodes/functions/ToonLightingModel.js(43,13): error TS2304: Cannot find name 'NodeBuilder'.
+src/nodes/functions/ToonLightingModel.js(45,2): error TS2416: Property 'direct' in type 'ToonLightingModel' is not assignable to the same property in base type 'LightingModel'.
+  Type '({ lightDirection, lightColor, reflectedLight }: Object, builder: NodeBuilder) => void' is not assignable to type '() => void'.
+    Target signature provides too few arguments. Expected 2 or more, but got 0.
+src/nodes/functions/ToonLightingModel.js(45,12): error TS2339: Property 'lightDirection' does not exist on type 'Object'.
+src/nodes/functions/ToonLightingModel.js(45,28): error TS2339: Property 'lightColor' does not exist on type 'Object'.
+src/nodes/functions/ToonLightingModel.js(45,40): error TS2339: Property 'reflectedLight' does not exist on type 'Object'.
+src/nodes/functions/ToonLightingModel.js(56,13): error TS2304: Cannot find name 'NodeBuilder'.
+src/nodes/functions/ToonLightingModel.js(58,2): error TS2416: Property 'indirect' in type 'ToonLightingModel' is not assignable to the same property in base type 'LightingModel'.
+  Type '(builder: NodeBuilder) => void' is not assignable to type '() => void'.
     Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/nodes/functions/VolumetricLightingModel.js(31,9): error TS7006: Parameter 'builder' implicitly has an 'any' type.
+src/nodes/functions/VolumetricLightingModel.js(43,13): error TS2339: Property 'assign' does not exist on type 'PropertyNode'.
+src/nodes/functions/VolumetricLightingModel.js(44,11): error TS2339: Property 'assign' does not exist on type 'PropertyNode'.
+src/nodes/functions/VolumetricLightingModel.js(48,13): error TS2339: Property 'assign' does not exist on type 'PropertyNode'.
+src/nodes/functions/VolumetricLightingModel.js(49,11): error TS2339: Property 'assign' does not exist on type 'PropertyNode'.
+src/nodes/functions/VolumetricLightingModel.js(55,29): error TS2339: Property 'sub' does not exist on type 'PropertyNode'.
+src/nodes/functions/VolumetricLightingModel.js(57,54): error TS7031: Binding element 'material' implicitly has an 'any' type.
+src/nodes/functions/VolumetricLightingModel.js(75,33): error TS2339: Property 'add' does not exist on type 'PropertyNode'.
+src/nodes/functions/VolumetricLightingModel.js(80,20): error TS2339: Property 'assign' does not exist on type 'PropertyNode'.
+src/nodes/functions/VolumetricLightingModel.js(90,22): error TS2339: Property 'assign' does not exist on type 'PropertyNode'.
+src/nodes/functions/VolumetricLightingModel.js(106,23): error TS2339: Property 'mulAssign' does not exist on type 'PropertyNode'.
+src/nodes/functions/VolumetricLightingModel.js(112,38): error TS2339: Property 'mul' does not exist on type 'PropertyNode'.
+src/nodes/functions/VolumetricLightingModel.js(121,20): error TS2339: Property 'addAssign' does not exist on type 'PropertyNode'.
+src/nodes/functions/VolumetricLightingModel.js(125,19): error TS7006: Parameter 'lightColor' implicitly has an 'any' type.
+src/nodes/functions/VolumetricLightingModel.js(125,31): error TS7006: Parameter 'builder' implicitly has an 'any' type.
+src/nodes/functions/VolumetricLightingModel.js(133,23): error TS2339: Property 'addAssign' does not exist on type 'PropertyNode'.
+src/nodes/functions/VolumetricLightingModel.js(139,22): error TS2339: Property 'addAssign' does not exist on type 'PropertyNode'.
+src/nodes/functions/VolumetricLightingModel.js(145,12): error TS7031: Binding element 'lightNode' implicitly has an 'any' type.
+src/nodes/functions/VolumetricLightingModel.js(145,23): error TS7031: Binding element 'lightColor' implicitly has an 'any' type.
+src/nodes/functions/VolumetricLightingModel.js(145,37): error TS7006: Parameter 'builder' implicitly has an 'any' type.
+src/nodes/functions/VolumetricLightingModel.js(160,20): error TS7031: Binding element 'lightColor' implicitly has an 'any' type.
+src/nodes/functions/VolumetricLightingModel.js(160,32): error TS7031: Binding element 'lightPosition' implicitly has an 'any' type.
+src/nodes/functions/VolumetricLightingModel.js(160,47): error TS7031: Binding element 'halfWidth' implicitly has an 'any' type.
+src/nodes/functions/VolumetricLightingModel.js(160,58): error TS7031: Binding element 'halfHeight' implicitly has an 'any' type.
+src/nodes/functions/VolumetricLightingModel.js(160,72): error TS7006: Parameter 'builder' implicitly has an 'any' type.
+src/nodes/functions/VolumetricLightingModel.js(175,10): error TS7006: Parameter 'builder' implicitly has an 'any' type.
 src/nodes/geometry/RangeNode.js(12,5): error TS7034: Variable 'min' implicitly has type 'any' in some locations where its type cannot be determined.
 src/nodes/geometry/RangeNode.js(13,5): error TS7034: Variable 'max' implicitly has type 'any' in some locations where its type cannot be determined.
 src/nodes/geometry/RangeNode.js(37,13): error TS2315: Type 'Node' is not generic.
@@ -31919,22 +31858,22 @@ src/nodes/gpgpu/ComputeBuiltinNode.js(60,3): error TS2322: Type 'string | null' 
 src/nodes/gpgpu/ComputeBuiltinNode.js(81,13): error TS2304: Cannot find name 'NodeBuilder'.
 src/nodes/gpgpu/ComputeBuiltinNode.js(81,26): error TS8024: JSDoc '@param' tag has name 'builder', but there is no parameter with that name.
 src/nodes/gpgpu/ComputeBuiltinNode.js(93,13): error TS2304: Cannot find name 'NodeBuilder'.
-src/nodes/gpgpu/ComputeBuiltinNode.js(101,12): error TS7006: Parameter 'builder' implicitly has an 'any' type.
-src/nodes/gpgpu/ComputeBuiltinNode.js(101,21): error TS7006: Parameter 'output' implicitly has an 'any' type.
-src/nodes/gpgpu/ComputeBuiltinNode.js(103,44): error TS2554: Expected 0 arguments, but got 1.
-src/nodes/gpgpu/ComputeBuiltinNode.js(104,38): error TS2554: Expected 0 arguments, but got 1.
-src/nodes/gpgpu/ComputeBuiltinNode.js(119,13): error TS7006: Parameter 'data' implicitly has an 'any' type.
-src/nodes/gpgpu/ComputeBuiltinNode.js(128,15): error TS7006: Parameter 'data' implicitly has an 'any' type.
-src/nodes/gpgpu/ComputeBuiltinNode.js(173,11): error TS2315: Type 'ComputeBuiltinNode' is not generic.
-src/nodes/gpgpu/ComputeBuiltinNode.js(173,30): error TS2304: Cannot find name 'uvec3'.
-src/nodes/gpgpu/ComputeBuiltinNode.js(200,11): error TS2315: Type 'ComputeBuiltinNode' is not generic.
-src/nodes/gpgpu/ComputeBuiltinNode.js(200,30): error TS2304: Cannot find name 'uvec3'.
-src/nodes/gpgpu/ComputeBuiltinNode.js(208,11): error TS2315: Type 'ComputeBuiltinNode' is not generic.
-src/nodes/gpgpu/ComputeBuiltinNode.js(208,30): error TS2304: Cannot find name 'uvec3'.
-src/nodes/gpgpu/ComputeBuiltinNode.js(215,11): error TS2315: Type 'ComputeBuiltinNode' is not generic.
-src/nodes/gpgpu/ComputeBuiltinNode.js(215,30): error TS2304: Cannot find name 'uvec3'.
-src/nodes/gpgpu/ComputeBuiltinNode.js(223,11): error TS2315: Type 'ComputeBuiltinNode' is not generic.
-src/nodes/gpgpu/ComputeBuiltinNode.js(223,30): error TS2304: Cannot find name 'uint'.
+src/nodes/gpgpu/ComputeBuiltinNode.js(102,12): error TS7006: Parameter 'builder' implicitly has an 'any' type.
+src/nodes/gpgpu/ComputeBuiltinNode.js(102,21): error TS7006: Parameter 'output' implicitly has an 'any' type.
+src/nodes/gpgpu/ComputeBuiltinNode.js(104,44): error TS2554: Expected 0 arguments, but got 1.
+src/nodes/gpgpu/ComputeBuiltinNode.js(105,38): error TS2554: Expected 0 arguments, but got 1.
+src/nodes/gpgpu/ComputeBuiltinNode.js(120,13): error TS7006: Parameter 'data' implicitly has an 'any' type.
+src/nodes/gpgpu/ComputeBuiltinNode.js(129,15): error TS7006: Parameter 'data' implicitly has an 'any' type.
+src/nodes/gpgpu/ComputeBuiltinNode.js(174,11): error TS2315: Type 'ComputeBuiltinNode' is not generic.
+src/nodes/gpgpu/ComputeBuiltinNode.js(174,30): error TS2304: Cannot find name 'uvec3'.
+src/nodes/gpgpu/ComputeBuiltinNode.js(201,11): error TS2315: Type 'ComputeBuiltinNode' is not generic.
+src/nodes/gpgpu/ComputeBuiltinNode.js(201,30): error TS2304: Cannot find name 'uvec3'.
+src/nodes/gpgpu/ComputeBuiltinNode.js(209,11): error TS2315: Type 'ComputeBuiltinNode' is not generic.
+src/nodes/gpgpu/ComputeBuiltinNode.js(209,30): error TS2304: Cannot find name 'uvec3'.
+src/nodes/gpgpu/ComputeBuiltinNode.js(216,11): error TS2315: Type 'ComputeBuiltinNode' is not generic.
+src/nodes/gpgpu/ComputeBuiltinNode.js(216,30): error TS2304: Cannot find name 'uvec3'.
+src/nodes/gpgpu/ComputeBuiltinNode.js(224,11): error TS2315: Type 'ComputeBuiltinNode' is not generic.
+src/nodes/gpgpu/ComputeBuiltinNode.js(224,30): error TS2304: Cannot find name 'uint'.
 src/nodes/gpgpu/ComputeNode.js(72,8): error TS2540: Cannot assign to 'version' because it is a read-only property.
 src/nodes/gpgpu/ComputeNode.js(96,3): error TS2322: Type 'null' is not assignable to type 'Function'.
 src/nodes/gpgpu/ComputeNode.js(158,13): error TS2304: Cannot find name 'NodeFrame'.
@@ -31955,24 +31894,30 @@ src/nodes/gpgpu/WorkgroupInfoNode.js(186,12): error TS7006: Parameter 'builder' 
 src/nodes/gpgpu/WorkgroupInfoNode.js(188,74): error TS2339: Property 'id' does not exist on type 'WorkgroupInfoNode'.
 src/nodes/lighting/AmbientLightNode.js(19,14): error TS2304: Cannot find name 'AmbientLight'.
 src/nodes/lighting/AmbientLightNode.js(27,11): error TS7031: Binding element 'context' implicitly has an 'any' type.
-src/nodes/lighting/AnalyticLightNode.js(26,14): error TS2304: Cannot find name 'Light'.
-src/nodes/lighting/AnalyticLightNode.js(35,14): error TS2304: Cannot find name 'Light'.
-src/nodes/lighting/AnalyticLightNode.js(51,13): error TS2304: Cannot find name 'Node'.
-src/nodes/lighting/AnalyticLightNode.js(53,52): error TS2554: Expected 2 arguments, but got 1.
-src/nodes/lighting/AnalyticLightNode.js(59,14): error TS2304: Cannot find name 'Node'.
-src/nodes/lighting/AnalyticLightNode.js(67,14): error TS2304: Cannot find name 'ShadowNode'.
-src/nodes/lighting/AnalyticLightNode.js(75,14): error TS2304: Cannot find name 'Node'.
-src/nodes/lighting/AnalyticLightNode.js(122,14): error TS2304: Cannot find name 'ShadowNode'.
-src/nodes/lighting/AnalyticLightNode.js(126,10): error TS2554: Expected 2 arguments, but got 1.
-src/nodes/lighting/AnalyticLightNode.js(135,13): error TS2304: Cannot find name 'NodeBuilder'.
-src/nodes/lighting/AnalyticLightNode.js(157,40): error TS2554: Expected 0 arguments, but got 1.
-src/nodes/lighting/AnalyticLightNode.js(180,13): error TS2304: Cannot find name 'NodeBuilder'.
-src/nodes/lighting/AnalyticLightNode.js(182,2): error TS2416: Property 'setup' in type 'AnalyticLightNode' is not assignable to the same property in base type 'LightingNode'.
+src/nodes/lighting/AnalyticLightNode.js(28,14): error TS2304: Cannot find name 'Light'.
+src/nodes/lighting/AnalyticLightNode.js(37,14): error TS2304: Cannot find name 'Light'.
+src/nodes/lighting/AnalyticLightNode.js(53,13): error TS2304: Cannot find name 'Node'.
+src/nodes/lighting/AnalyticLightNode.js(61,14): error TS2304: Cannot find name 'Node'.
+src/nodes/lighting/AnalyticLightNode.js(69,14): error TS2304: Cannot find name 'ShadowNode'.
+src/nodes/lighting/AnalyticLightNode.js(77,14): error TS2304: Cannot find name 'Node'.
+src/nodes/lighting/AnalyticLightNode.js(120,18): error TS7006: Parameter 'builder' implicitly has an 'any' type.
+src/nodes/lighting/AnalyticLightNode.js(130,13): error TS2304: Cannot find name 'NodeBuilder'.
+src/nodes/lighting/AnalyticLightNode.js(130,26): error TS8024: JSDoc '@param' tag has name 'builder', but there is no parameter with that name.
+src/nodes/lighting/AnalyticLightNode.js(140,14): error TS2304: Cannot find name 'ShadowNode'.
+src/nodes/lighting/AnalyticLightNode.js(144,10): error TS2554: Expected 2 arguments, but got 1.
+src/nodes/lighting/AnalyticLightNode.js(153,13): error TS2304: Cannot find name 'NodeBuilder'.
+src/nodes/lighting/AnalyticLightNode.js(175,40): error TS2554: Expected 0 arguments, but got 1.
+src/nodes/lighting/AnalyticLightNode.js(198,13): error TS2304: Cannot find name 'NodeBuilder'.
+src/nodes/lighting/AnalyticLightNode.js(200,2): error TS2416: Property 'setup' in type 'AnalyticLightNode' is not assignable to the same property in base type 'LightingNode'.
   Type '(builder: NodeBuilder) => void' is not assignable to type '(builder: NodeBuilder) => Node | null'.
     Type 'void' is not assignable to type 'Node | null'.
-src/nodes/lighting/AnalyticLightNode.js(209,13): error TS2304: Cannot find name 'NodeFrame'.
-src/nodes/lighting/AnalyticLightNode.js(209,24): error TS8024: JSDoc '@param' tag has name 'frame', but there is no parameter with that name.
-src/nodes/lighting/AnalyticLightNode.js(211,2): error TS2416: Property 'update' in type 'AnalyticLightNode' is not assignable to the same property in base type 'LightingNode'.
+src/nodes/lighting/AnalyticLightNode.js(220,45): error TS2554: Expected 0 arguments, but got 1.
+src/nodes/lighting/AnalyticLightNode.js(221,61): error TS2554: Expected 0 arguments, but got 1.
+src/nodes/lighting/AnalyticLightNode.js(223,8): error TS1345: An expression of type 'void' cannot be tested for truthiness.
+src/nodes/lighting/AnalyticLightNode.js(229,8): error TS1345: An expression of type 'void' cannot be tested for truthiness.
+src/nodes/lighting/AnalyticLightNode.js(242,13): error TS2304: Cannot find name 'NodeFrame'.
+src/nodes/lighting/AnalyticLightNode.js(242,24): error TS8024: JSDoc '@param' tag has name 'frame', but there is no parameter with that name.
+src/nodes/lighting/AnalyticLightNode.js(244,2): error TS2416: Property 'update' in type 'AnalyticLightNode' is not assignable to the same property in base type 'LightingNode'.
   Type '() => void' is not assignable to type '() => boolean | null'.
     Type 'void' is not assignable to type 'boolean | null'.
 src/nodes/lighting/AONode.js(21,14): error TS2304: Cannot find name 'Node'.
@@ -31998,7 +31943,6 @@ src/nodes/lighting/BasicLightMapNode.js(37,2): error TS2416: Property 'setup' in
     Type 'void' is not assignable to type 'Node | null'.
 src/nodes/lighting/BasicLightMapNode.js(37,9): error TS7006: Parameter 'builder' implicitly has an 'any' type.
 src/nodes/lighting/DirectionalLightNode.js(20,14): error TS2304: Cannot find name 'DirectionalLight'.
-src/nodes/lighting/DirectionalLightNode.js(28,9): error TS7006: Parameter 'builder' implicitly has an 'any' type.
 src/nodes/lighting/EnvironmentNode.js(32,13): error TS2304: Cannot find name 'Node'.
 src/nodes/lighting/EnvironmentNode.js(41,14): error TS2304: Cannot find name 'Node'.
 src/nodes/lighting/EnvironmentNode.js(48,2): error TS2416: Property 'setup' in type 'EnvironmentNode' is not assignable to the same property in base type 'LightingNode'.
@@ -32021,7 +31965,6 @@ src/nodes/lighting/HemisphereLightNode.js(42,13): error TS2304: Cannot find name
 src/nodes/lighting/HemisphereLightNode.js(42,18): error TS2304: Cannot find name 'vec3'.
 src/nodes/lighting/HemisphereLightNode.js(49,13): error TS2304: Cannot find name 'UniformNode'.
 src/nodes/lighting/HemisphereLightNode.js(49,25): error TS2304: Cannot find name 'vec3'.
-src/nodes/lighting/HemisphereLightNode.js(51,26): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/lighting/HemisphereLightNode.js(58,13): error TS2304: Cannot find name 'NodeFrame'.
 src/nodes/lighting/HemisphereLightNode.js(60,2): error TS2416: Property 'update' in type 'HemisphereLightNode' is not assignable to the same property in base type 'AnalyticLightNode'.
   Type '(frame: NodeFrame) => void' is not assignable to type '() => void'.
@@ -32085,41 +32028,43 @@ src/nodes/lighting/LightsNode.js(136,2): error TS2416: Property 'getHash' in typ
 src/nodes/lighting/LightsNode.js(144,29): error TS2531: Object is possibly 'null'.
 src/nodes/lighting/LightsNode.js(158,11): error TS7006: Parameter 'builder' implicitly has an 'any' type.
 src/nodes/lighting/LightsNode.js(174,13): error TS2304: Cannot find name 'NodeBuilder'.
-src/nodes/lighting/LightsNode.js(243,13): error TS2304: Cannot find name 'NodeBuilder'.
-src/nodes/lighting/LightsNode.js(244,19): error TS2304: Cannot find name 'LightingNode'.
-src/nodes/lighting/LightsNode.js(261,13): error TS2304: Cannot find name 'NodeBuilder'.
-src/nodes/lighting/LightsNode.js(262,14): error TS2315: Type 'Node' is not generic.
-src/nodes/lighting/LightsNode.js(292,31): error TS2345: Argument of type 'LightingNode[] | null' is not assignable to parameter of type 'LightingNode[]'.
-  Type 'null' is not assignable to type 'LightingNode[]'.
-src/nodes/lighting/LightsNode.js(343,19): error TS2304: Cannot find name 'Light'.
-src/nodes/lighting/LightsNode.js(360,20): error TS2304: Cannot find name 'Light'.
-src/nodes/lighting/LightsNode.js(389,18): error TS2304: Cannot find name 'Light'.
+src/nodes/lighting/LightsNode.js(248,53): error TS2339: Property 'context' does not exist on type 'Object'.
+src/nodes/lighting/LightsNode.js(258,28): error TS7006: Parameter 'builder' implicitly has an 'any' type.
+src/nodes/lighting/LightsNode.js(258,37): error TS7006: Parameter 'lightNode' implicitly has an 'any' type.
+src/nodes/lighting/LightsNode.js(258,48): error TS7006: Parameter 'lightData' implicitly has an 'any' type.
+src/nodes/lighting/LightsNode.js(274,13): error TS2304: Cannot find name 'NodeBuilder'.
+src/nodes/lighting/LightsNode.js(275,19): error TS2304: Cannot find name 'LightingNode'.
+src/nodes/lighting/LightsNode.js(287,17): error TS7006: Parameter 'builder' implicitly has an 'any' type.
+src/nodes/lighting/LightsNode.js(300,13): error TS2304: Cannot find name 'NodeBuilder'.
+src/nodes/lighting/LightsNode.js(301,14): error TS2315: Type 'Node' is not generic.
+src/nodes/lighting/LightsNode.js(387,19): error TS2304: Cannot find name 'Light'.
+src/nodes/lighting/LightsNode.js(404,20): error TS2304: Cannot find name 'Light'.
+src/nodes/lighting/LightsNode.js(433,18): error TS2304: Cannot find name 'Light'.
 src/nodes/lighting/LightUtils.js(8,12): error TS2304: Cannot find name 'Node'.
 src/nodes/lighting/LightUtils.js(8,17): error TS2304: Cannot find name 'float'.
 src/nodes/lighting/LightUtils.js(9,12): error TS2304: Cannot find name 'Node'.
 src/nodes/lighting/LightUtils.js(9,17): error TS2304: Cannot find name 'float'.
 src/nodes/lighting/LightUtils.js(10,12): error TS2304: Cannot find name 'Node'.
 src/nodes/lighting/LightUtils.js(10,17): error TS2304: Cannot find name 'float'.
-src/nodes/lighting/LightUtils.js(13,59): error TS7006: Parameter 'inputs' implicitly has an 'any' type.
-src/nodes/lighting/PointLightNode.js(10,41): error TS7031: Binding element 'color' implicitly has an 'any' type.
-src/nodes/lighting/PointLightNode.js(10,48): error TS7031: Binding element 'lightViewPosition' implicitly has an 'any' type.
-src/nodes/lighting/PointLightNode.js(10,67): error TS7031: Binding element 'cutoffDistance' implicitly has an 'any' type.
-src/nodes/lighting/PointLightNode.js(10,83): error TS7031: Binding element 'decayExponent' implicitly has an 'any' type.
-src/nodes/lighting/PointLightNode.js(10,100): error TS7006: Parameter 'builder' implicitly has an 'any' type.
-src/nodes/lighting/PointLightNode.js(53,14): error TS2304: Cannot find name 'PointLight'.
-src/nodes/lighting/PointLightNode.js(62,13): error TS2304: Cannot find name 'UniformNode'.
-src/nodes/lighting/PointLightNode.js(62,25): error TS2304: Cannot find name 'float'.
-src/nodes/lighting/PointLightNode.js(64,29): error TS2554: Expected 2 arguments, but got 1.
-src/nodes/lighting/PointLightNode.js(69,13): error TS2304: Cannot find name 'UniformNode'.
-src/nodes/lighting/PointLightNode.js(69,25): error TS2304: Cannot find name 'float'.
-src/nodes/lighting/PointLightNode.js(71,28): error TS2554: Expected 2 arguments, but got 1.
-src/nodes/lighting/PointLightNode.js(78,13): error TS2304: Cannot find name 'NodeFrame'.
-src/nodes/lighting/PointLightNode.js(80,2): error TS2416: Property 'update' in type 'PointLightNode' is not assignable to the same property in base type 'AnalyticLightNode'.
+src/nodes/lighting/LightUtils.js(13,61): error TS7031: Binding element 'lightDistance' implicitly has an 'any' type.
+src/nodes/lighting/LightUtils.js(13,76): error TS7031: Binding element 'cutoffDistance' implicitly has an 'any' type.
+src/nodes/lighting/LightUtils.js(13,92): error TS7031: Binding element 'decayExponent' implicitly has an 'any' type.
+src/nodes/lighting/PointLightNode.js(7,37): error TS7031: Binding element 'color' implicitly has an 'any' type.
+src/nodes/lighting/PointLightNode.js(7,44): error TS7031: Binding element 'lightVector' implicitly has an 'any' type.
+src/nodes/lighting/PointLightNode.js(7,57): error TS7031: Binding element 'cutoffDistance' implicitly has an 'any' type.
+src/nodes/lighting/PointLightNode.js(7,73): error TS7031: Binding element 'decayExponent' implicitly has an 'any' type.
+src/nodes/lighting/PointLightNode.js(40,14): error TS2304: Cannot find name 'PointLight'.
+src/nodes/lighting/PointLightNode.js(49,13): error TS2304: Cannot find name 'UniformNode'.
+src/nodes/lighting/PointLightNode.js(49,25): error TS2304: Cannot find name 'float'.
+src/nodes/lighting/PointLightNode.js(56,13): error TS2304: Cannot find name 'UniformNode'.
+src/nodes/lighting/PointLightNode.js(56,25): error TS2304: Cannot find name 'float'.
+src/nodes/lighting/PointLightNode.js(65,13): error TS2304: Cannot find name 'NodeFrame'.
+src/nodes/lighting/PointLightNode.js(67,2): error TS2416: Property 'update' in type 'PointLightNode' is not assignable to the same property in base type 'AnalyticLightNode'.
   Type '(frame: NodeFrame) => void' is not assignable to type '() => void'.
     Target signature provides too few arguments. Expected 1 or more, but got 0.
-src/nodes/lighting/PointLightNode.js(84,17): error TS2554: Expected 0 arguments, but got 1.
-src/nodes/lighting/PointLightNode.js(94,14): error TS2304: Cannot find name 'PointShadowNode'.
-src/nodes/lighting/PointLightNode.js(102,9): error TS7006: Parameter 'builder' implicitly has an 'any' type.
+src/nodes/lighting/PointLightNode.js(71,17): error TS2554: Expected 0 arguments, but got 1.
+src/nodes/lighting/PointLightNode.js(81,14): error TS2304: Cannot find name 'PointShadowNode'.
+src/nodes/lighting/PointLightNode.js(89,15): error TS7006: Parameter 'builder' implicitly has an 'any' type.
 src/nodes/lighting/PointShadowNode.js(33,47): error TS7031: Binding element 'pos' implicitly has an 'any' type.
 src/nodes/lighting/PointShadowNode.js(33,52): error TS7031: Binding element 'texelSizeY' implicitly has an 'any' type.
 src/nodes/lighting/PointShadowNode.js(99,61): error TS7031: Binding element 'depthTexture' implicitly has an 'any' type.
@@ -32135,9 +32080,6 @@ src/nodes/lighting/PointShadowNode.js(123,49): error TS7031: Binding element 'fi
 src/nodes/lighting/PointShadowNode.js(123,59): error TS7031: Binding element 'depthTexture' implicitly has an 'any' type.
 src/nodes/lighting/PointShadowNode.js(123,73): error TS7031: Binding element 'shadowCoord' implicitly has an 'any' type.
 src/nodes/lighting/PointShadowNode.js(123,86): error TS7031: Binding element 'shadow' implicitly has an 'any' type.
-src/nodes/lighting/PointShadowNode.js(130,26): error TS2554: Expected 2 arguments, but got 1.
-src/nodes/lighting/PointShadowNode.js(131,25): error TS2554: Expected 2 arguments, but got 1.
-src/nodes/lighting/PointShadowNode.js(133,18): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/lighting/PointShadowNode.js(140,79): error TS2339: Property 'sub' does not exist on type 'Node'.
 src/nodes/lighting/PointShadowNode.js(145,46): error TS2339: Property 'mul' does not exist on type 'UniformNode'.
 src/nodes/lighting/PointShadowNode.js(177,13): error TS2304: Cannot find name 'PointLight'.
@@ -32161,26 +32103,24 @@ src/nodes/lighting/RectAreaLightNode.js(14,5): error TS7034: Variable '_ltcLib' 
 src/nodes/lighting/RectAreaLightNode.js(32,14): error TS2304: Cannot find name 'RectAreaLight'.
 src/nodes/lighting/RectAreaLightNode.js(41,13): error TS2304: Cannot find name 'UniformNode'.
 src/nodes/lighting/RectAreaLightNode.js(41,25): error TS2304: Cannot find name 'vec3'.
-src/nodes/lighting/RectAreaLightNode.js(43,21): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/lighting/RectAreaLightNode.js(48,13): error TS2304: Cannot find name 'UniformNode'.
 src/nodes/lighting/RectAreaLightNode.js(48,25): error TS2304: Cannot find name 'vec3'.
-src/nodes/lighting/RectAreaLightNode.js(50,20): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/lighting/RectAreaLightNode.js(66,13): error TS2304: Cannot find name 'NodeFrame'.
 src/nodes/lighting/RectAreaLightNode.js(68,2): error TS2416: Property 'update' in type 'RectAreaLightNode' is not assignable to the same property in base type 'AnalyticLightNode'.
   Type '(frame: NodeFrame) => void' is not assignable to type '() => void'.
     Target signature provides too few arguments. Expected 1 or more, but got 0.
 src/nodes/lighting/RectAreaLightNode.js(70,17): error TS2554: Expected 0 arguments, but got 1.
-src/nodes/lighting/RectAreaLightNode.js(89,9): error TS7006: Parameter 'builder' implicitly has an 'any' type.
-src/nodes/lighting/RectAreaLightNode.js(97,21): error TS7005: Variable '_ltcLib' implicitly has an 'any' type.
-src/nodes/lighting/RectAreaLightNode.js(98,21): error TS7005: Variable '_ltcLib' implicitly has an 'any' type.
-src/nodes/lighting/RectAreaLightNode.js(102,21): error TS7005: Variable '_ltcLib' implicitly has an 'any' type.
-src/nodes/lighting/RectAreaLightNode.js(103,21): error TS7005: Variable '_ltcLib' implicitly has an 'any' type.
-src/nodes/lighting/RectAreaLightNode.js(128,13): error TS2304: Cannot find name 'RectAreaLightTexturesLib'.
+src/nodes/lighting/RectAreaLightNode.js(89,23): error TS7006: Parameter 'builder' implicitly has an 'any' type.
+src/nodes/lighting/RectAreaLightNode.js(95,21): error TS7005: Variable '_ltcLib' implicitly has an 'any' type.
+src/nodes/lighting/RectAreaLightNode.js(96,21): error TS7005: Variable '_ltcLib' implicitly has an 'any' type.
+src/nodes/lighting/RectAreaLightNode.js(100,21): error TS7005: Variable '_ltcLib' implicitly has an 'any' type.
+src/nodes/lighting/RectAreaLightNode.js(101,21): error TS7005: Variable '_ltcLib' implicitly has an 'any' type.
+src/nodes/lighting/RectAreaLightNode.js(123,13): error TS2304: Cannot find name 'RectAreaLightTexturesLib'.
 src/nodes/lighting/ShadowBaseNode.js(26,13): error TS2304: Cannot find name 'Light'.
 src/nodes/lighting/ShadowBaseNode.js(35,13): error TS2304: Cannot find name 'Light'.
-src/nodes/lighting/ShadowBaseNode.js(61,14): error TS2304: Cannot find name 'NodeBuilder'.
-src/nodes/lighting/ShadowBaseNode.js(61,27): error TS7008: Member 'Material' implicitly has an 'any' type.
+src/nodes/lighting/ShadowBaseNode.js(61,13): error TS2304: Cannot find name 'NodeBuilder'.
 src/nodes/lighting/ShadowBaseNode.js(88,11): error TS2315: Type 'Node' is not generic.
+src/nodes/lighting/ShadowBaseNode.js(88,16): error TS2304: Cannot find name 'vec3'.
 src/nodes/lighting/ShadowNode.js(23,46): error TS7031: Binding element 'position' implicitly has an 'any' type.
 src/nodes/lighting/ShadowNode.js(23,56): error TS7031: Binding element 'cameraNear' implicitly has an 'any' type.
 src/nodes/lighting/ShadowNode.js(23,68): error TS7031: Binding element 'cameraFar' implicitly has an 'any' type.
@@ -32232,66 +32172,64 @@ src/nodes/lighting/ShadowNode.js(347,14): error TS2304: Cannot find name 'Render
 src/nodes/lighting/ShadowNode.js(356,14): error TS2304: Cannot find name 'RenderTarget'.
 src/nodes/lighting/ShadowNode.js(365,14): error TS2304: Cannot find name 'RenderTarget'.
 src/nodes/lighting/ShadowNode.js(392,14): error TS2304: Cannot find name 'Node'.
-src/nodes/lighting/ShadowNode.js(412,13): error TS2304: Cannot find name 'NodeBuilder'.
-src/nodes/lighting/ShadowNode.js(416,13): error TS2304: Cannot find name 'Node'.
-src/nodes/lighting/ShadowNode.js(417,13): error TS2304: Cannot find name 'LightShadow'.
-src/nodes/lighting/ShadowNode.js(418,14): error TS2304: Cannot find name 'Node'.
-src/nodes/lighting/ShadowNode.js(437,13): error TS2304: Cannot find name 'NodeBuilder'.
-src/nodes/lighting/ShadowNode.js(438,13): error TS2304: Cannot find name 'Node'.
-src/nodes/lighting/ShadowNode.js(439,14): error TS2304: Cannot find name 'Node'.
-src/nodes/lighting/ShadowNode.js(503,13): error TS2304: Cannot find name 'NodeBuilder'.
-src/nodes/lighting/ShadowNode.js(504,14): error TS2304: Cannot find name 'Node'.
-src/nodes/lighting/ShadowNode.js(568,67): error TS2353: Object literal may only specify known properties, and 'shadowTexture' does not exist in type '{ filterFn: Function; depthTexture: DepthTexture; shadowCoord: Node<any>; shadow: LightShadow; }'.
-src/nodes/lighting/ShadowNode.js(571,86): error TS2339: Property 'mul' does not exist on type 'ReferenceNode'.
-src/nodes/lighting/ShadowNode.js(584,13): error TS2304: Cannot find name 'NodeBuilder'.
-src/nodes/lighting/ShadowNode.js(585,14): error TS2304: Cannot find name 'ShaderCallNodeInternal'.
-src/nodes/lighting/ShadowNode.js(627,13): error TS2304: Cannot find name 'NodeFrame'.
-src/nodes/lighting/ShadowNode.js(645,13): error TS2304: Cannot find name 'NodeFrame'.
-src/nodes/lighting/ShadowNode.js(664,65): error TS7005: Variable '_rendererState' implicitly has an 'any' type.
-src/nodes/lighting/ShadowNode.js(668,39): error TS7006: Parameter 'object' implicitly has an 'any' type.
-src/nodes/lighting/ShadowNode.js(668,47): error TS7006: Parameter 'scene' implicitly has an 'any' type.
-src/nodes/lighting/ShadowNode.js(668,54): error TS7006: Parameter '_camera' implicitly has an 'any' type.
-src/nodes/lighting/ShadowNode.js(668,63): error TS7006: Parameter 'geometry' implicitly has an 'any' type.
-src/nodes/lighting/ShadowNode.js(668,73): error TS7006: Parameter 'material' implicitly has an 'any' type.
-src/nodes/lighting/ShadowNode.js(668,83): error TS7006: Parameter 'group' implicitly has an 'any' type.
-src/nodes/lighting/ShadowNode.js(668,90): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
-src/nodes/lighting/ShadowNode.js(674,34): error TS2339: Property 'useVelocity' does not exist on type 'Object'.
-src/nodes/lighting/ShadowNode.js(709,13): error TS2304: Cannot find name 'Renderer'.
-src/nodes/lighting/ShadowNode.js(719,3): error TS2322: Type 'NodeMaterial | null' is not assignable to type 'MeshBasicMaterial'.
+src/nodes/lighting/ShadowNode.js(414,13): error TS2304: Cannot find name 'NodeBuilder'.
+src/nodes/lighting/ShadowNode.js(418,13): error TS2304: Cannot find name 'Node'.
+src/nodes/lighting/ShadowNode.js(419,13): error TS2304: Cannot find name 'LightShadow'.
+src/nodes/lighting/ShadowNode.js(420,14): error TS2304: Cannot find name 'Node'.
+src/nodes/lighting/ShadowNode.js(439,13): error TS2304: Cannot find name 'NodeBuilder'.
+src/nodes/lighting/ShadowNode.js(440,13): error TS2304: Cannot find name 'Node'.
+src/nodes/lighting/ShadowNode.js(441,14): error TS2304: Cannot find name 'Node'.
+src/nodes/lighting/ShadowNode.js(505,13): error TS2304: Cannot find name 'NodeBuilder'.
+src/nodes/lighting/ShadowNode.js(506,14): error TS2304: Cannot find name 'Node'.
+src/nodes/lighting/ShadowNode.js(570,67): error TS2353: Object literal may only specify known properties, and 'shadowTexture' does not exist in type '{ filterFn: Function; depthTexture: DepthTexture; shadowCoord: Node<any>; shadow: LightShadow; }'.
+src/nodes/lighting/ShadowNode.js(573,86): error TS2339: Property 'mul' does not exist on type 'ReferenceNode'.
+src/nodes/lighting/ShadowNode.js(586,13): error TS2304: Cannot find name 'NodeBuilder'.
+src/nodes/lighting/ShadowNode.js(587,14): error TS2304: Cannot find name 'ShaderCallNodeInternal'.
+src/nodes/lighting/ShadowNode.js(629,13): error TS2304: Cannot find name 'NodeFrame'.
+src/nodes/lighting/ShadowNode.js(647,13): error TS2304: Cannot find name 'NodeFrame'.
+src/nodes/lighting/ShadowNode.js(666,65): error TS7005: Variable '_rendererState' implicitly has an 'any' type.
+src/nodes/lighting/ShadowNode.js(670,39): error TS7006: Parameter 'object' implicitly has an 'any' type.
+src/nodes/lighting/ShadowNode.js(670,47): error TS7006: Parameter 'scene' implicitly has an 'any' type.
+src/nodes/lighting/ShadowNode.js(670,54): error TS7006: Parameter '_camera' implicitly has an 'any' type.
+src/nodes/lighting/ShadowNode.js(670,63): error TS7006: Parameter 'geometry' implicitly has an 'any' type.
+src/nodes/lighting/ShadowNode.js(670,73): error TS7006: Parameter 'material' implicitly has an 'any' type.
+src/nodes/lighting/ShadowNode.js(670,83): error TS7006: Parameter 'group' implicitly has an 'any' type.
+src/nodes/lighting/ShadowNode.js(670,90): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
+src/nodes/lighting/ShadowNode.js(676,34): error TS2339: Property 'useVelocity' does not exist on type 'Object'.
+src/nodes/lighting/ShadowNode.js(711,13): error TS2304: Cannot find name 'Renderer'.
+src/nodes/lighting/ShadowNode.js(721,3): error TS2322: Type 'NodeMaterial | null' is not assignable to type 'MeshBasicMaterial'.
   Type 'null' is not assignable to type 'MeshBasicMaterial'.
-src/nodes/lighting/ShadowNode.js(723,3): error TS2322: Type 'NodeMaterial | null' is not assignable to type 'MeshBasicMaterial'.
+src/nodes/lighting/ShadowNode.js(725,3): error TS2322: Type 'NodeMaterial | null' is not assignable to type 'MeshBasicMaterial'.
   Type 'null' is not assignable to type 'MeshBasicMaterial'.
-src/nodes/lighting/ShadowNode.js(741,4): error TS2531: Object is possibly 'null'.
-src/nodes/lighting/ShadowNode.js(751,4): error TS2531: Object is possibly 'null'.
-src/nodes/lighting/ShadowNode.js(763,13): error TS2304: Cannot find name 'NodeFrame'.
-src/nodes/lighting/ShadowNode.js(765,2): error TS2416: Property 'updateBefore' in type 'ShadowNode' is not assignable to the same property in base type 'ShadowBaseNode'.
+src/nodes/lighting/ShadowNode.js(743,4): error TS2531: Object is possibly 'null'.
+src/nodes/lighting/ShadowNode.js(753,4): error TS2531: Object is possibly 'null'.
+src/nodes/lighting/ShadowNode.js(765,13): error TS2304: Cannot find name 'NodeFrame'.
+src/nodes/lighting/ShadowNode.js(767,2): error TS2416: Property 'updateBefore' in type 'ShadowNode' is not assignable to the same property in base type 'ShadowBaseNode'.
   Type '(frame: NodeFrame) => void' is not assignable to type '() => boolean | null'.
     Target signature provides too few arguments. Expected 1 or more, but got 0.
-src/nodes/lighting/ShadowNode.js(794,12): error TS2304: Cannot find name 'Light'.
-src/nodes/lighting/ShadowNode.js(795,12): error TS2304: Cannot find name 'LightShadow'.
-src/nodes/lighting/SpotLightNode.js(26,14): error TS2304: Cannot find name 'SpotLight'.
-src/nodes/lighting/SpotLightNode.js(35,13): error TS2304: Cannot find name 'UniformNode'.
-src/nodes/lighting/SpotLightNode.js(35,25): error TS2304: Cannot find name 'float'.
-src/nodes/lighting/SpotLightNode.js(37,22): error TS2554: Expected 2 arguments, but got 1.
-src/nodes/lighting/SpotLightNode.js(42,13): error TS2304: Cannot find name 'UniformNode'.
-src/nodes/lighting/SpotLightNode.js(42,25): error TS2304: Cannot find name 'float'.
-src/nodes/lighting/SpotLightNode.js(44,26): error TS2554: Expected 2 arguments, but got 1.
-src/nodes/lighting/SpotLightNode.js(49,13): error TS2304: Cannot find name 'UniformNode'.
-src/nodes/lighting/SpotLightNode.js(49,25): error TS2304: Cannot find name 'float'.
-src/nodes/lighting/SpotLightNode.js(51,29): error TS2554: Expected 2 arguments, but got 1.
-src/nodes/lighting/SpotLightNode.js(56,13): error TS2304: Cannot find name 'UniformNode'.
-src/nodes/lighting/SpotLightNode.js(56,25): error TS2304: Cannot find name 'float'.
-src/nodes/lighting/SpotLightNode.js(58,28): error TS2554: Expected 2 arguments, but got 1.
-src/nodes/lighting/SpotLightNode.js(65,13): error TS2304: Cannot find name 'NodeFrame'.
-src/nodes/lighting/SpotLightNode.js(67,2): error TS2416: Property 'update' in type 'SpotLightNode' is not assignable to the same property in base type 'AnalyticLightNode'.
+src/nodes/lighting/ShadowNode.js(775,9): error TS7052: Element implicitly has an 'any' type because type 'WeakMap<WeakKey, any>' has no index signature. Did you mean to call 'get'?
+src/nodes/lighting/ShadowNode.js(781,4): error TS7052: Element implicitly has an 'any' type because type 'WeakMap<WeakKey, any>' has no index signature. Did you mean to call 'set'?
+src/nodes/lighting/ShadowNode.js(808,12): error TS2304: Cannot find name 'Light'.
+src/nodes/lighting/ShadowNode.js(809,12): error TS2304: Cannot find name 'LightShadow'.
+src/nodes/lighting/SpotLightNode.js(25,14): error TS2304: Cannot find name 'SpotLight'.
+src/nodes/lighting/SpotLightNode.js(34,13): error TS2304: Cannot find name 'UniformNode'.
+src/nodes/lighting/SpotLightNode.js(34,25): error TS2304: Cannot find name 'float'.
+src/nodes/lighting/SpotLightNode.js(41,13): error TS2304: Cannot find name 'UniformNode'.
+src/nodes/lighting/SpotLightNode.js(41,25): error TS2304: Cannot find name 'float'.
+src/nodes/lighting/SpotLightNode.js(48,13): error TS2304: Cannot find name 'UniformNode'.
+src/nodes/lighting/SpotLightNode.js(48,25): error TS2304: Cannot find name 'float'.
+src/nodes/lighting/SpotLightNode.js(55,13): error TS2304: Cannot find name 'UniformNode'.
+src/nodes/lighting/SpotLightNode.js(55,25): error TS2304: Cannot find name 'float'.
+src/nodes/lighting/SpotLightNode.js(64,13): error TS2304: Cannot find name 'NodeFrame'.
+src/nodes/lighting/SpotLightNode.js(66,2): error TS2416: Property 'update' in type 'SpotLightNode' is not assignable to the same property in base type 'AnalyticLightNode'.
   Type '(frame: NodeFrame) => void' is not assignable to type '() => void'.
     Target signature provides too few arguments. Expected 1 or more, but got 0.
-src/nodes/lighting/SpotLightNode.js(69,17): error TS2554: Expected 0 arguments, but got 1.
-src/nodes/lighting/SpotLightNode.js(84,13): error TS2304: Cannot find name 'Node'.
-src/nodes/lighting/SpotLightNode.js(84,18): error TS2304: Cannot find name 'float'.
-src/nodes/lighting/SpotLightNode.js(85,14): error TS2304: Cannot find name 'Node'.
-src/nodes/lighting/SpotLightNode.js(85,19): error TS2304: Cannot find name 'float'.
-src/nodes/lighting/SpotLightNode.js(95,9): error TS7006: Parameter 'builder' implicitly has an 'any' type.
+src/nodes/lighting/SpotLightNode.js(68,17): error TS2554: Expected 0 arguments, but got 1.
+src/nodes/lighting/SpotLightNode.js(83,13): error TS2304: Cannot find name 'Node'.
+src/nodes/lighting/SpotLightNode.js(83,18): error TS2304: Cannot find name 'float'.
+src/nodes/lighting/SpotLightNode.js(84,14): error TS2304: Cannot find name 'Node'.
+src/nodes/lighting/SpotLightNode.js(84,19): error TS2304: Cannot find name 'float'.
+src/nodes/lighting/SpotLightNode.js(94,15): error TS7006: Parameter 'builder' implicitly has an 'any' type.
 src/nodes/materialx/lib/mx_hsv.js(8,50): error TS7031: Binding element 'hsv' implicitly has an 'any' type.
 src/nodes/materialx/lib/mx_hsv.js(67,50): error TS7031: Binding element 'c_immutable' implicitly has an 'any' type.
 src/nodes/materialx/lib/mx_noise.js(12,48): error TS7031: Binding element 'b_immutable' implicitly has an 'any' type.
@@ -32913,17 +32851,14 @@ src/nodes/parsers/GLSLNodeParser.js(17,2): error TS2416: Property 'parseFunction
     Target signature provides too few arguments. Expected 1 or more, but got 0.
 src/nodes/pmrem/PMREMNode.js(38,12): error TS2304: Cannot find name 'Renderer'.
 src/nodes/pmrem/PMREMNode.js(54,16): error TS2551: Property 'isCubeTexture' does not exist on type 'Texture'. Did you mean 'isTexture'?
-src/nodes/pmrem/PMREMNode.js(56,25): error TS2345: Argument of type 'Object' is not assignable to parameter of type 'any[]'.
-  The 'Object' type is assignable to very few other types. Did you mean to use the 'any' type instead?
-    Type 'Object' is missing the following properties from type 'any[]': length, pop, push, concat, and 35 more.
+src/nodes/pmrem/PMREMNode.js(56,25): error TS2345: Argument of type 'Object | null' is not assignable to parameter of type 'any[]'.
+  Type 'null' is not assignable to type 'any[]'.
 src/nodes/pmrem/PMREMNode.js(58,5): error TS2740: Type 'RenderTarget' is missing the following properties from type 'Texture': isTexture, uuid, name, source, and 34 more.
 src/nodes/pmrem/PMREMNode.js(58,52): error TS2345: Argument of type 'Texture | undefined' is not assignable to parameter of type 'RenderTarget | null | undefined'.
   Type 'Texture' is missing the following properties from type 'RenderTarget': isRenderTarget, width, height, depth, and 13 more.
-src/nodes/pmrem/PMREMNode.js(62,5): error TS2322: Type 'null' is not assignable to type 'Texture'.
 src/nodes/pmrem/PMREMNode.js(71,5): error TS2740: Type 'RenderTarget' is missing the following properties from type 'Texture': isTexture, uuid, name, source, and 34 more.
 src/nodes/pmrem/PMREMNode.js(71,60): error TS2345: Argument of type 'Texture | undefined' is not assignable to parameter of type 'RenderTarget | null | undefined'.
   Type 'Texture' is missing the following properties from type 'RenderTarget': isRenderTarget, width, height, depth, and 13 more.
-src/nodes/pmrem/PMREMNode.js(75,5): error TS2322: Type 'null' is not assignable to type 'Texture'.
 src/nodes/pmrem/PMREMNode.js(81,3): error TS18048: 'cacheTexture' is possibly 'undefined'.
 src/nodes/pmrem/PMREMNode.js(81,16): error TS2540: Cannot assign to 'pmremVersion' because it is a read-only property.
 src/nodes/pmrem/PMREMNode.js(83,23): error TS2345: Argument of type 'Texture | undefined' is not assignable to parameter of type 'Texture'.
@@ -32939,24 +32874,23 @@ src/nodes/pmrem/PMREMNode.js(165,13): error TS2304: Cannot find name 'Node'.
 src/nodes/pmrem/PMREMNode.js(165,18): error TS2304: Cannot find name 'vec2'.
 src/nodes/pmrem/PMREMNode.js(172,13): error TS2304: Cannot find name 'Node'.
 src/nodes/pmrem/PMREMNode.js(172,18): error TS2304: Cannot find name 'float'.
-src/nodes/pmrem/PMREMNode.js(183,3): error TS2322: Type 'null' is not assignable to type 'PMREMGenerator'.
 src/nodes/pmrem/PMREMNode.js(186,18): error TS2540: Cannot assign to 'isRenderTargetTexture' because it is a read-only property.
 src/nodes/pmrem/PMREMNode.js(192,13): error TS2304: Cannot find name 'TextureNode'.
 src/nodes/pmrem/PMREMNode.js(200,13): error TS2304: Cannot find name 'UniformNode'.
 src/nodes/pmrem/PMREMNode.js(200,25): error TS2304: Cannot find name 'float'.
-src/nodes/pmrem/PMREMNode.js(202,17): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/pmrem/PMREMNode.js(208,13): error TS2304: Cannot find name 'UniformNode'.
 src/nodes/pmrem/PMREMNode.js(208,25): error TS2304: Cannot find name 'float'.
-src/nodes/pmrem/PMREMNode.js(210,18): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/pmrem/PMREMNode.js(216,13): error TS2304: Cannot find name 'UniformNode'.
 src/nodes/pmrem/PMREMNode.js(216,25): error TS2304: Cannot find name 'float'.
-src/nodes/pmrem/PMREMNode.js(218,18): error TS2554: Expected 2 arguments, but got 1.
+src/nodes/pmrem/PMREMNode.js(255,43): error TS18047: 'texture.image' is possibly 'null'.
 src/nodes/pmrem/PMREMNode.js(255,57): error TS2339: Property 'height' does not exist on type 'Object'.
 src/nodes/pmrem/PMREMNode.js(264,2): error TS2416: Property 'updateBefore' in type 'PMREMNode' is not assignable to the same property in base type 'TempNode'.
   Type '(frame: any) => void' is not assignable to type '() => boolean | null'.
     Type 'void' is not assignable to type 'boolean | null'.
 src/nodes/pmrem/PMREMNode.js(264,16): error TS7006: Parameter 'frame' implicitly has an 'any' type.
 src/nodes/pmrem/PMREMNode.js(273,17): error TS2339: Property 'isPMREMTexture' does not exist on type 'Texture'.
+src/nodes/pmrem/PMREMNode.js(279,60): error TS2345: Argument of type 'PMREMGenerator | null' is not assignable to parameter of type 'PMREMGenerator'.
+  Type 'null' is not assignable to type 'PMREMGenerator'.
 src/nodes/pmrem/PMREMNode.js(295,9): error TS7006: Parameter 'builder' implicitly has an 'any' type.
 src/nodes/pmrem/PMREMNode.js(351,19): error TS2304: Cannot find name 'Image'.
 src/nodes/pmrem/PMREMNode.js(376,13): error TS2304: Cannot find name 'Image'.
@@ -33381,11 +33315,9 @@ src/nodes/utils/StorageArrayElementNode.js(139,12): error TS2304: Cannot find na
 src/nodes/utils/StorageArrayElementNode.js(140,12): error TS2304: Cannot find name 'Node'.
 src/nodes/utils/Timer.js(8,11): error TS2304: Cannot find name 'UniformNode'.
 src/nodes/utils/Timer.js(8,23): error TS2304: Cannot find name 'float'.
-src/nodes/utils/Timer.js(10,35): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/utils/Timer.js(10,90): error TS7006: Parameter 'frame' implicitly has an 'any' type.
 src/nodes/utils/Timer.js(16,11): error TS2304: Cannot find name 'UniformNode'.
 src/nodes/utils/Timer.js(16,23): error TS2304: Cannot find name 'float'.
-src/nodes/utils/Timer.js(18,40): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/utils/Timer.js(18,95): error TS7006: Parameter 'frame' implicitly has an 'any' type.
 src/nodes/utils/Timer.js(24,11): error TS2304: Cannot find name 'UniformNode'.
 src/nodes/utils/Timer.js(24,23): error TS2304: Cannot find name 'uint'.
@@ -33729,7 +33661,7 @@ src/renderers/common/Animation.js(27,13): error TS2304: Cannot find name 'Info'.
 src/renderers/common/Animation.js(35,13): error TS2304: Cannot find name 'Window'.
 src/renderers/common/Animation.js(35,20): error TS2304: Cannot find name 'XRSession'.
 src/renderers/common/Animation.js(63,20): error TS7006: Parameter 'time' implicitly has an 'any' type.
-src/renderers/common/Animation.js(63,26): error TS7006: Parameter 'frame' implicitly has an 'any' type.
+src/renderers/common/Animation.js(63,26): error TS7006: Parameter 'xrFrame' implicitly has an 'any' type.
 src/renderers/common/Animation.js(99,3): error TS2322: Type 'Function | null' is not assignable to type 'Function'.
   Type 'null' is not assignable to type 'Function'.
 src/renderers/common/Animation.js(117,14): error TS2304: Cannot find name 'Window'.
@@ -34056,11 +33988,6 @@ src/renderers/common/extras/PMREMGenerator.js(877,26): error TS7006: Parameter '
 src/renderers/common/extras/PMREMGenerator.js(877,34): error TS7006: Parameter 'width' implicitly has an 'any' type.
 src/renderers/common/extras/PMREMGenerator.js(877,41): error TS7006: Parameter 'height' implicitly has an 'any' type.
 src/renderers/common/extras/PMREMGenerator.js(879,18): error TS2554: Expected 2 arguments, but got 1.
-src/renderers/common/extras/PMREMGenerator.js(880,19): error TS2554: Expected 2 arguments, but got 1.
-src/renderers/common/extras/PMREMGenerator.js(881,17): error TS2554: Expected 2 arguments, but got 1.
-src/renderers/common/extras/PMREMGenerator.js(883,22): error TS2554: Expected 2 arguments, but got 1.
-src/renderers/common/extras/PMREMGenerator.js(884,18): error TS2554: Expected 2 arguments, but got 1.
-src/renderers/common/extras/PMREMGenerator.js(886,17): error TS2554: Expected 2 arguments, but got 1.
 src/renderers/common/extras/PMREMGenerator.js(907,80): error TS2339: Property 'equal' does not exist on type 'UniformNode'.
 src/renderers/common/extras/PMREMGenerator.js(915,31): error TS7006: Parameter 'envTexture' implicitly has an 'any' type.
 src/renderers/common/extras/PMREMGenerator.js(924,32): error TS7006: Parameter 'envTexture' implicitly has an 'any' type.
@@ -34332,7 +34259,6 @@ src/renderers/common/Renderer.js(252,3): error TS2322: Type 'Function | null' is
 src/renderers/common/Renderer.js(425,14): error TS2304: Cannot find name 'RenderContext'.
 src/renderers/common/Renderer.js(525,14): error TS2304: Cannot find name 'MRTNode'.
 src/renderers/common/Renderer.js(553,14): error TS2304: Cannot find name 'RenderBundle'.
-src/renderers/common/Renderer.js(614,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
 src/renderers/common/Renderer.js(623,20): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
 src/renderers/common/Renderer.js(689,4): error TS2322: Type 'null' is not assignable to type 'Function'.
 src/renderers/common/Renderer.js(690,28): error TS7006: Parameter 'scene' implicitly has an 'any' type.
@@ -34342,8 +34268,6 @@ src/renderers/common/Renderer.js(694,24): error TS2531: Object is possibly 'null
 src/renderers/common/Renderer.js(695,27): error TS2531: Object is possibly 'null'.
 src/renderers/common/Renderer.js(699,26): error TS2531: Object is possibly 'null'.
 src/renderers/common/Renderer.js(699,40): error TS2554: Expected 8 arguments, but got 7.
-src/renderers/common/Renderer.js(714,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/common/Renderer.js(783,4): error TS2810: Expected 1 argument, but got 0. 'new Promise()' needs a JSDoc hint to produce a 'resolve' that can be called without arguments.
 src/renderers/common/Renderer.js(815,13): error TS2304: Cannot find name 'Object3D'.
 src/renderers/common/Renderer.js(816,13): error TS2304: Cannot find name 'Camera'.
 src/renderers/common/Renderer.js(818,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
@@ -37366,11 +37290,10 @@ src/renderers/webgpu/nodes/WGSLNodeBuilder.js(736,13): error TS2304: Cannot find
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(740,25): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
   Type 'null' is not assignable to type 'string | undefined'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(798,2): error TS2416: Property 'getFunctionOperator' in type 'WGSLNodeBuilder' is not assignable to the same property in base type 'NodeBuilder'.
-  Type '(op: string) => string' is not assignable to type '() => string'.
+  Type '(op: string) => string | null' is not assignable to type '() => string'.
     Target signature provides too few arguments. Expected 1 or more, but got 0.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(800,16): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ '^^': string; }'.
   No index signature with a parameter of type 'string' was found on type '{ '^^': string; }'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(810,3): error TS2322: Type 'null' is not assignable to type 'string'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(817,13): error TS2304: Cannot find name 'StorageTextureNode'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(817,32): error TS2304: Cannot find name 'StorageBufferNode'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(833,13): error TS2304: Cannot find name 'StorageTextureNode'.
@@ -37400,7 +37323,6 @@ src/renderers/webgpu/nodes/WGSLNodeBuilder.js(965,36): error TS2322: Type '"comp
   Type 'null' is not assignable to type 'string | undefined'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(990,20): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
   Type 'null' is not assignable to type 'string | undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(992,3): error TS2322: Type 'boolean' is not assignable to type 'string'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1016,13): error TS2304: Cannot find name 'ShaderNodeInternal'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1035,13): error TS2339: Property 'vars' does not exist on type 'Object'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1036,13): error TS2339: Property 'code' does not exist on type 'Object'.
@@ -37452,7 +37374,6 @@ src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1836,53): error TS2345: Argument o
   Type 'undefined' is not assignable to type 'Object'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1840,51): error TS2345: Argument of type '{} | undefined' is not assignable to parameter of type 'Object'.
   Type 'undefined' is not assignable to type 'Object'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1853,21): error TS2322: Type 'null' is not assignable to type 'string | undefined'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1881,10): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ float: string; int: string; uint: string; bool: string; color: string; vec2: string; ivec2: string; uvec2: string; bvec2: string; vec3: string; ivec3: string; uvec3: string; bvec3: string; vec4: string; ... 5 more ...; mat4: string; }'.
   No index signature with a parameter of type 'string' was found on type '{ float: string; int: string; uint: string; bool: string; color: string; vec2: string; ivec2: string; uvec2: string; bvec2: string; vec3: string; ivec3: string; uvec3: string; bvec3: string; vec4: string; ... 5 more ...; mat4: string; }'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1891,2): error TS2416: Property 'isAvailable' in type 'WGSLNodeBuilder' is not assignable to the same property in base type 'NodeBuilder'.
@@ -37542,8 +37463,6 @@ src/renderers/webgpu/utils/WebGPUAttributeUtils.js(325,37): error TS2304: Cannot
 src/renderers/webgpu/utils/WebGPUAttributeUtils.js(343,33): error TS2304: Cannot find name 'GPUMapMode'.
 src/renderers/webgpu/utils/WebGPUAttributeUtils.js(359,13): error TS2304: Cannot find name 'BufferAttribute'.
 src/renderers/webgpu/utils/WebGPUAttributeUtils.js(377,19): error TS18048: 'prefixOptions' is possibly 'undefined'.
-src/renderers/webgpu/utils/WebGPUAttributeUtils.js(403,3): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
-  Type 'undefined' is not assignable to type 'string'.
 src/renderers/webgpu/utils/WebGPUAttributeUtils.js(425,13): error TS2304: Cannot find name 'BufferAttribute'.
 src/renderers/webgpu/utils/WebGPUAttributeUtils.js(426,14): error TS2304: Cannot find name 'BufferAttribute'.
 src/renderers/webgpu/utils/WebGPUAttributeUtils.js(426,30): error TS2304: Cannot find name 'InterleavedBuffer'.
@@ -37695,6 +37614,7 @@ src/renderers/webgpu/utils/WebGPUTextureUtils.js(251,16): error TS2339: Property
 src/renderers/webgpu/utils/WebGPUTextureUtils.js(254,27): error TS2304: Cannot find name 'VideoFrame'.
 src/renderers/webgpu/utils/WebGPUTextureUtils.js(269,5): error TS2322: Type 'void' is not assignable to type 'undefined'.
 src/renderers/webgpu/utils/WebGPUTextureUtils.js(335,16): error TS2551: Property 'isCubeTexture' does not exist on type 'Texture'. Did you mean 'isTexture'?
+src/renderers/webgpu/utils/WebGPUTextureUtils.js(345,18): error TS18047: 'texture.image' is possibly 'null'.
 src/renderers/webgpu/utils/WebGPUTextureUtils.js(345,32): error TS2339: Property 'depth' does not exist on type 'Object'.
 src/renderers/webgpu/utils/WebGPUTextureUtils.js(361,14): error TS2304: Cannot find name 'GPUTexture'.
 src/renderers/webgpu/utils/WebGPUTextureUtils.js(379,11): error TS2304: Cannot find name 'GPUTextureUsage'.
@@ -38432,7 +38352,6 @@ src/textures/CompressedTexture.js(5,76): error TS7006: Parameter 'magFilter' imp
 src/textures/CompressedTexture.js(5,87): error TS7006: Parameter 'minFilter' implicitly has an 'any' type.
 src/textures/CompressedTexture.js(5,98): error TS7006: Parameter 'anisotropy' implicitly has an 'any' type.
 src/textures/CompressedTexture.js(5,110): error TS7006: Parameter 'colorSpace' implicitly has an 'any' type.
-src/textures/CompressedTexture.js(7,10): error TS2345: Argument of type 'null' is not assignable to parameter of type 'Object | undefined'.
 src/textures/CubeTexture.js(6,15): error TS7006: Parameter 'images' implicitly has an 'any' type.
 src/textures/CubeTexture.js(6,23): error TS7006: Parameter 'mapping' implicitly has an 'any' type.
 src/textures/CubeTexture.js(6,32): error TS7006: Parameter 'wrapS' implicitly has an 'any' type.
@@ -38443,8 +38362,6 @@ src/textures/CubeTexture.js(6,68): error TS7006: Parameter 'format' implicitly h
 src/textures/CubeTexture.js(6,76): error TS7006: Parameter 'type' implicitly has an 'any' type.
 src/textures/CubeTexture.js(6,82): error TS7006: Parameter 'anisotropy' implicitly has an 'any' type.
 src/textures/CubeTexture.js(6,94): error TS7006: Parameter 'colorSpace' implicitly has an 'any' type.
-src/textures/Data3DTexture.js(16,10): error TS2345: Argument of type 'null' is not assignable to parameter of type 'Object | undefined'.
-src/textures/DataArrayTexture.js(8,10): error TS2345: Argument of type 'null' is not assignable to parameter of type 'Object | undefined'.
 src/textures/DataArrayTexture.js(27,18): error TS7006: Parameter 'layerIndex' implicitly has an 'any' type.
 src/textures/DataTexture.js(6,51): error TS7006: Parameter 'format' implicitly has an 'any' type.
 src/textures/DataTexture.js(6,59): error TS7006: Parameter 'type' implicitly has an 'any' type.
@@ -38453,7 +38370,6 @@ src/textures/DataTexture.js(6,74): error TS7006: Parameter 'wrapS' implicitly ha
 src/textures/DataTexture.js(6,81): error TS7006: Parameter 'wrapT' implicitly has an 'any' type.
 src/textures/DataTexture.js(6,142): error TS7006: Parameter 'anisotropy' implicitly has an 'any' type.
 src/textures/DataTexture.js(6,154): error TS7006: Parameter 'colorSpace' implicitly has an 'any' type.
-src/textures/DataTexture.js(8,10): error TS2345: Argument of type 'null' is not assignable to parameter of type 'Object | undefined'.
 src/textures/DepthTexture.js(6,15): error TS7006: Parameter 'width' implicitly has an 'any' type.
 src/textures/DepthTexture.js(6,22): error TS7006: Parameter 'height' implicitly has an 'any' type.
 src/textures/DepthTexture.js(6,30): error TS7006: Parameter 'type' implicitly has an 'any' type.
@@ -38463,7 +38379,6 @@ src/textures/DepthTexture.js(6,52): error TS7006: Parameter 'wrapT' implicitly h
 src/textures/DepthTexture.js(6,59): error TS7006: Parameter 'magFilter' implicitly has an 'any' type.
 src/textures/DepthTexture.js(6,70): error TS7006: Parameter 'minFilter' implicitly has an 'any' type.
 src/textures/DepthTexture.js(6,81): error TS7006: Parameter 'anisotropy' implicitly has an 'any' type.
-src/textures/DepthTexture.js(17,10): error TS2345: Argument of type 'null' is not assignable to parameter of type 'Object | undefined'.
 src/textures/DepthTexture.js(34,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
 src/textures/DepthTexture.js(44,10): error TS7006: Parameter 'meta' implicitly has an 'any' type.
 src/textures/DepthTexture.js(48,45): error TS2339: Property 'compareFunction' does not exist on type 'Object'.
@@ -38480,14 +38395,14 @@ src/textures/Source.js(97,12): error TS2304: Cannot find name 'HTMLCanvasElement
 src/textures/Source.js(97,66): error TS2304: Cannot find name 'HTMLCanvasElement'.
 src/textures/Source.js(98,12): error TS2304: Cannot find name 'ImageBitmap'.
 src/textures/Source.js(98,60): error TS2304: Cannot find name 'ImageBitmap'.
-src/textures/Texture.js(89,29): error TS2345: Argument of type 'Object' is not assignable to parameter of type 'null | undefined'.
-  The 'Object' type is assignable to very few other types. Did you mean to use the 'any' type instead?
+src/textures/Texture.js(89,29): error TS2345: Argument of type 'Object | null' is not assignable to parameter of type 'null | undefined'.
+  Type 'Object' is not assignable to type 'null | undefined'.
+    The 'Object' type is assignable to very few other types. Did you mean to use the 'any' type instead?
 src/textures/Texture.js(102,24): error TS2304: Cannot find name 'CubeReflectionMapping'.
 src/textures/Texture.js(102,46): error TS2304: Cannot find name 'CubeRefractionMapping'.
 src/textures/Texture.js(102,68): error TS2304: Cannot find name 'EquirectangularReflectionMapping'.
 src/textures/Texture.js(102,101): error TS2304: Cannot find name 'EquirectangularRefractionMapping'.
 src/textures/Texture.js(102,134): error TS2304: Cannot find name 'CubeUVReflectionMapping'.
-src/textures/Texture.js(123,3): error TS2322: Type 'number' is not assignable to type '1000 | 1001 | 1002'.
 src/textures/Texture.js(132,3): error TS2322: Type 'number' is not assignable to type '1000 | 1001 | 1002'.
 src/textures/Texture.js(137,14): error TS2304: Cannot find name 'NearestFilter'.
 src/textures/Texture.js(137,28): error TS2304: Cannot find name 'NearestMipmapNearestFilter'.
@@ -38500,7 +38415,6 @@ src/textures/Texture.js(145,94): error TS2304: Cannot find name 'LinearMipmapNea
 src/textures/Texture.js(326,15): error TS2304: Cannot find name 'RenderTarget'.
 src/textures/Texture.js(326,28): error TS2304: Cannot find name 'WebGLRenderTarget'.
 src/textures/Texture.js(363,6): error TS1052: A 'set' accessor parameter cannot have an initializer.
-src/textures/Texture.js(363,13): error TS2322: Type 'null' is not assignable to type 'Object'.
 src/textures/Texture.js(386,14): error TS2351: This expression is not constructable.
   Type 'Function' has no construct signatures.
 src/textures/Texture.js(433,8): error TS2540: Cannot assign to 'isRenderTargetTexture' because it is a read-only property.
@@ -38536,7 +38450,10 @@ src/textures/VideoTexture.js(6,75): error TS7006: Parameter 'type' implicitly ha
 src/textures/VideoTexture.js(6,81): error TS7006: Parameter 'anisotropy' implicitly has an 'any' type.
 src/textures/VideoTexture.js(36,14): error TS2351: This expression is not constructable.
   Type 'Function' has no construct signatures.
+src/textures/VideoTexture.js(43,64): error TS18047: 'video' is possibly 'null'.
+src/textures/VideoTexture.js(45,43): error TS18047: 'video' is possibly 'null'.
 src/textures/VideoTexture.js(45,49): error TS2339: Property 'readyState' does not exist on type 'Object'.
+src/textures/VideoTexture.js(45,63): error TS18047: 'video' is possibly 'null'.
 src/textures/VideoTexture.js(45,69): error TS2339: Property 'HAVE_CURRENT_DATA' does not exist on type 'Object'.
 src/Three.Core.js(160,15): error TS2306: File 'C:/Users/srigaud/Desktop/three.js/src/Three.Legacy.js' is not a module.
 src/Three.Core.js(162,13): error TS2304: Cannot find name '__THREE_DEVTOOLS__'.

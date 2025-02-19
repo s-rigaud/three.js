@@ -23,9 +23,7 @@ def clean_ts_errors():
         "TS2304",  # "Cannot find name 'x'."
     ]
 
-    banned_folders = [
-        "build/",
-    ]
+    banned_folders = [        "build/"    ]
 
     accepted_lines= []
     for line in lines:

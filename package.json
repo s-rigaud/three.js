@@ -94,7 +94,7 @@
   },
   "homepage": "https://threejs.org/",
   "devDependencies": {
-    "@eslint/js": "^9.19.0",
+    "@eslint/js": "^9.20.0",
     "@rollup/plugin-node-resolve": "^16.0.0",
     "@rollup/plugin-terser": "^0.4.0",
     "@types/three": "^0.172.0",
@@ -120,7 +120,7 @@
     "rollup-plugin-visualizer": "^5.9.0",
     "servez": "^2.2.4",
     "typescript": "^5.7.3",
-    "typescript-eslint": "^8.21.0"
+    "typescript-eslint": "^8.24.1"
   },
   "overrides": {
     "jpeg-js": "^0.4.4"
