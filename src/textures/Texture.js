@@ -30,7 +30,7 @@ class Texture extends EventDispatcher {
 	/**
 	 * Constructs a new texture.
 	 *
-	 * @param {Object} [image=Texture.DEFAULT_IMAGE] - The image holding the texture data.
+	 * @param {?Object} [image=Texture.DEFAULT_IMAGE] - The image holding the texture data.
 	 * @param {number} [mapping=Texture.DEFAULT_MAPPING] - The texture mapping.
 	 * @param {RepeatWrapping|ClampToEdgeWrapping|MirroredRepeatWrapping} [wrapS=ClampToEdgeWrapping] - The wrapS value.
 	 * @param {number} [wrapT=ClampToEdgeWrapping] - The wrapT value.
@@ -352,7 +352,7 @@ class Texture extends EventDispatcher {
 	/**
 	 * The image object holding the texture data.
 	 *
-	 * @type {Object}
+	 * @type {?Object}
 	 */
 	get image() {
 
@@ -443,7 +443,7 @@ class Texture extends EventDispatcher {
 	/**
 	 * Serializes the texture into JSON.
 	 *
-	 * @param {?(Object|String)} meta - An optional value holding meta information about the serialization.
+	 * @param {?(Object|string)} meta - An optional value holding meta information about the serialization.
 	 * @return {Object} A JSON object representing the serialized texture.
 	 * @see {@link ObjectLoader#parse}
 	 */
@@ -666,7 +666,7 @@ Texture.DEFAULT_IMAGE = null;
  * The default mapping for all textures.
  *
  * @static
- * @type {Number}
+ * @type {number}
  * @default UVMapping
  */
 Texture.DEFAULT_MAPPING = UVMapping;
@@ -675,7 +675,7 @@ Texture.DEFAULT_MAPPING = UVMapping;
  * The default anisotropy value for all textures.
  *
  * @static
- * @type {Number}
+ * @type {number}
  * @default 1
  */
 Texture.DEFAULT_ANISOTROPY = 1;
