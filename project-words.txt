@@ -1883,6 +1883,7 @@ Reallusion
 rebeccapurple
 recip
 recomposite
+rectarea
 rectarealight
 RECVSHADOW
 REFBLUR

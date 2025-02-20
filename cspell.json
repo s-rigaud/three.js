@@ -54,6 +54,7 @@
         "manual/zh/*",
         "playground/libs/*",
         "utils/docs/template/*",
+        "test/treeshake/stats.html",
         // Other files
         "tsconfig.tsbuildinfo",
         "TODOS.md",
