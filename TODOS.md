@@ -10,6 +10,9 @@ NodeUtils.getCacheKey can be a Node too
 LineSegmentsGeometry toJson should return an object
 WebGputexturepassutils _mipmapCreateBundles & _mipmapCreateBundles typing for return Arrays
 correct all generic errors ": Generic type "
+Fix eslint for test folder
+Add webgpu node build to .gitignore
+
 - [ ] Should not be null
 
 - [ ] typos + Weird
