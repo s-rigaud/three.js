@@ -137,7 +137,7 @@ class PMREMGenerator {
 	 * @param {number} [far=100] - The far plane distance.
 	 * @param {Object} [options={}] - The configuration options.
 	 * @param {number} [options.size=256] - The texture size of the PMREM.
-	 * @param {Vector3} [options.renderTarget=origin] - The position of the internal cube camera that renders the scene.
+	 * @param {Vector3} [options.position=origin] - The position of the internal cube camera that renders the scene.
 	 * @param {?RenderTarget} [options.renderTarget=null] - The render target to use.
 	 * @return {RenderTarget} The resulting PMREM.
 	 * @see {@link PMREMGenerator#fromSceneAsync}

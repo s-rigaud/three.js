@@ -23459,10 +23459,10 @@ examples/jsm/postprocessing/OutlinePass.js(277,20): error TS7006: Parameter 'wri
 examples/jsm/postprocessing/OutlinePass.js(277,33): error TS7006: Parameter 'readBuffer' implicitly has an 'any' type.
 examples/jsm/postprocessing/OutlinePass.js(277,45): error TS7006: Parameter 'deltaTime' implicitly has an 'any' type.
 examples/jsm/postprocessing/OutlinePass.js(277,56): error TS7006: Parameter 'maskActive' implicitly has an 'any' type.
-examples/jsm/postprocessing/OutlinePass.js(330,4): error TS2322: Type 'Texture' is not assignable to type 'null'.
-examples/jsm/postprocessing/OutlinePass.js(340,49): error TS2304: Cannot find name 'performance'.
-examples/jsm/postprocessing/OutlinePass.js(388,67): error TS2551: Property 'patternTexture' does not exist on type 'OutlinePass'. Did you mean 'usePatternTexture'?
-examples/jsm/postprocessing/OutlinePass.js(524,28): error TS7006: Parameter 'maxRadius' implicitly has an 'any' type.
+examples/jsm/postprocessing/OutlinePass.js(331,4): error TS2322: Type 'Texture' is not assignable to type 'null'.
+examples/jsm/postprocessing/OutlinePass.js(341,49): error TS2304: Cannot find name 'performance'.
+examples/jsm/postprocessing/OutlinePass.js(389,67): error TS2551: Property 'patternTexture' does not exist on type 'OutlinePass'. Did you mean 'usePatternTexture'?
+examples/jsm/postprocessing/OutlinePass.js(525,28): error TS7006: Parameter 'maxRadius' implicitly has an 'any' type.
 examples/jsm/postprocessing/OutputPass.js(45,10): error TS7006: Parameter 'renderer' implicitly has an 'any' type.
 examples/jsm/postprocessing/OutputPass.js(45,20): error TS7006: Parameter 'writeBuffer' implicitly has an 'any' type.
 examples/jsm/postprocessing/OutputPass.js(45,33): error TS7006: Parameter 'readBuffer' implicitly has an 'any' type.
@@ -26597,12 +26597,19 @@ src/extras/Controls.js(98,22): error TS8024: JSDoc '@param' tag has name 'delta'
 src/extras/core/Curve.js(63,21): error TS8024: JSDoc '@param' tag has name 't', but there is no parameter with that name.
 src/extras/core/Curve.js(64,33): error TS8024: JSDoc '@param' tag has name 'optionalTarget', but there is no parameter with that name.
 src/extras/core/Curve.js(65,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+src/extras/core/Curve.js(85,3): error TS2322: Type 'Vector2 | Vector3 | null' is not assignable to type 'Vector2 | Vector3'.
+  Type 'null' is not assignable to type 'Vector2 | Vector3'.
 src/extras/core/Curve.js(85,25): error TS2554: Expected 0 arguments, but got 2.
 src/extras/core/Curve.js(102,32): error TS2554: Expected 0 arguments, but got 1.
+src/extras/core/Curve.js(106,3): error TS2322: Type '(Vector2 | Vector3 | null)[]' is not assignable to type '(Vector2 | Vector3)[]'.
+  Type 'Vector2 | Vector3 | null' is not assignable to type 'Vector2 | Vector3'.
+    Type 'null' is not assignable to type 'Vector2 | Vector3'.
 src/extras/core/Curve.js(165,38): error TS2554: Expected 0 arguments, but got 1.
 src/extras/core/Curve.js(172,29): error TS2554: Expected 0 arguments, but got 1.
+src/extras/core/Curve.js(173,11): error TS18047: 'current' is possibly 'null'.
 src/extras/core/Curve.js(303,30): error TS2554: Expected 0 arguments, but got 1.
 src/extras/core/Curve.js(304,30): error TS2554: Expected 0 arguments, but got 1.
+src/extras/core/Curve.js(306,41): error TS18047: 'pt1' is possibly 'null'.
 src/extras/core/Curve.js(306,45): error TS2339: Property 'isVector2' does not exist on type 'Vector2 | Vector3'.
   Property 'isVector2' does not exist on type 'Vector2'.
 src/extras/core/Curve.js(368,38): error TS2339: Property 'z' does not exist on type 'Vector2 | Vector3'.
@@ -26615,354 +26622,476 @@ src/extras/core/Curve.js(458,14): error TS2351: This expression is not construct
 src/extras/core/Curve.js(492,8): error TS2339: Property 'arcLengthDivisions' does not exist on type '{ metadata: { version: number; type: string; generator: string; }; }'.
 src/extras/core/Curve.js(493,8): error TS2339: Property 'type' does not exist on type '{ metadata: { version: number; type: string; generator: string; }; }'.
 src/extras/core/Curve.js(507,34): error TS2339: Property 'arcLengthDivisions' does not exist on type 'Object'.
-src/extras/core/CurvePath.js(17,3): error TS7008: Member 'curves' implicitly has an 'any[]' type.
-src/extras/core/CurvePath.js(22,7): error TS7006: Parameter 'curve' implicitly has an 'any' type.
-src/extras/core/CurvePath.js(54,12): error TS7006: Parameter 't' implicitly has an 'any' type.
-src/extras/core/CurvePath.js(54,15): error TS7006: Parameter 'optionalTarget' implicitly has an 'any' type.
-src/extras/core/CurvePath.js(196,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
-src/extras/core/CurvePath.js(220,8): error TS2339: Property 'autoClose' does not exist on type 'Object'.
-src/extras/core/CurvePath.js(221,8): error TS2339: Property 'curves' does not exist on type 'Object'.
-src/extras/core/CurvePath.js(226,9): error TS2339: Property 'curves' does not exist on type 'Object'.
-src/extras/core/CurvePath.js(234,12): error TS7006: Parameter 'json' implicitly has an 'any' type.
-src/extras/core/CurvePath.js(244,26): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type 'typeof import("C:/Users/srigaud/Desktop/three.js/src/extras/curves/Curves")'.
-src/extras/core/Interpolations.js(6,22): error TS7006: Parameter 't' implicitly has an 'any' type.
-src/extras/core/Interpolations.js(6,25): error TS7006: Parameter 'p0' implicitly has an 'any' type.
-src/extras/core/Interpolations.js(6,29): error TS7006: Parameter 'p1' implicitly has an 'any' type.
-src/extras/core/Interpolations.js(6,33): error TS7006: Parameter 'p2' implicitly has an 'any' type.
-src/extras/core/Interpolations.js(6,37): error TS7006: Parameter 'p3' implicitly has an 'any' type.
-src/extras/core/Interpolations.js(18,29): error TS7006: Parameter 't' implicitly has an 'any' type.
-src/extras/core/Interpolations.js(18,32): error TS7006: Parameter 'p' implicitly has an 'any' type.
+src/extras/core/CurvePath.js(59,49): error TS2554: Expected 0 arguments, but got 1.
+src/extras/core/CurvePath.js(60,68): error TS2554: Expected 0 arguments, but got 1.
+src/extras/core/CurvePath.js(62,10): error TS18047: 'startPoint' is possibly 'null'.
+src/extras/core/CurvePath.js(64,23): error TS18047: 'startPoint' is possibly 'null'.
+src/extras/core/CurvePath.js(64,34): error TS2339: Property 'isVector2' does not exist on type 'Vector2 | Vector3'.
+  Property 'isVector2' does not exist on type 'Vector2'.
+src/extras/core/CurvePath.js(65,22): error TS2345: Argument of type 'LineCurve | LineCurve3' is not assignable to parameter of type 'Curve'.
+  Type 'LineCurve' is not assignable to type 'Curve'.
+    Types of property 'getPoint' are incompatible.
+      Type '(t: number, optionalTarget?: Vector2 | undefined) => Vector2' is not assignable to type '() => Vector2 | Vector3 | null'.
+        Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/core/CurvePath.js(65,46): error TS2345: Argument of type 'Vector2 | Vector3 | null' is not assignable to parameter of type '(Vector2 & Vector3) | undefined'.
+  Type 'null' is not assignable to type '(Vector2 & Vector3) | undefined'.
+src/extras/core/CurvePath.js(78,14): error TS2304: Cannot find name 'Vector2'.
+src/extras/core/CurvePath.js(78,22): error TS2304: Cannot find name 'Vector3'.
+src/extras/core/CurvePath.js(79,16): error TS2304: Cannot find name 'Vector2'.
+src/extras/core/CurvePath.js(79,24): error TS2304: Cannot find name 'Vector3'.
+src/extras/core/CurvePath.js(81,2): error TS2416: Property 'getPoint' in type 'CurvePath' is not assignable to the same property in base type 'Curve'.
+  Type '(t: number, optionalTarget?: any) => any' is not assignable to type '() => Vector2 | Vector3 | null'.
+    Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/core/CurvePath.js(207,29): error TS2339: Property 'isEllipseCurve' does not exist on type 'Curve'.
+src/extras/core/CurvePath.js(208,15): error TS2339: Property 'isLineCurve' does not exist on type 'Curve'.
+src/extras/core/CurvePath.js(208,36): error TS2339: Property 'isLineCurve3' does not exist on type 'Curve'.
+src/extras/core/CurvePath.js(209,14): error TS2339: Property 'isSplineCurve' does not exist on type 'Curve'.
+src/extras/core/CurvePath.js(209,48): error TS2339: Property 'points' does not exist on type 'Curve'.
+src/extras/core/CurvePath.js(237,2): error TS2416: Property 'copy' in type 'CurvePath' is not assignable to the same property in base type 'Curve'.
+  Type '(source: any) => this' is not assignable to type '(source: Curve) => Curve'.
+    Type 'this' is not assignable to type 'Curve'.
+      Type 'CurvePath' is not assignable to type 'Curve'.
+        Types of property 'getPoint' are incompatible.
+          Type '(t: number, optionalTarget?: any) => any' is not assignable to type '() => Vector2 | Vector3 | null'.
+            Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/core/CurvePath.js(237,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
+src/extras/core/CurvePath.js(261,8): error TS2339: Property 'autoClose' does not exist on type 'Object'.
+src/extras/core/CurvePath.js(262,8): error TS2339: Property 'curves' does not exist on type 'Object'.
+src/extras/core/CurvePath.js(267,9): error TS2339: Property 'curves' does not exist on type 'Object'.
+src/extras/core/CurvePath.js(275,2): error TS2416: Property 'fromJSON' in type 'CurvePath' is not assignable to the same property in base type 'Curve'.
+  Type '(json: any) => this' is not assignable to type '(json: Object) => Curve'.
+    Type 'this' is not assignable to type 'Curve'.
+      Type 'CurvePath' is not assignable to type 'Curve'.
+        Types of property 'getPoint' are incompatible.
+          Type '(t: number, optionalTarget?: any) => any' is not assignable to type '() => Vector2 | Vector3 | null'.
+            Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/core/CurvePath.js(275,12): error TS7006: Parameter 'json' implicitly has an 'any' type.
+src/extras/core/CurvePath.js(285,26): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type 'typeof import("C:/Users/srigaud/Desktop/three.js/src/extras/curves/Curves")'.
 src/extras/core/Interpolations.js(25,29): error TS7006: Parameter 't' implicitly has an 'any' type.
 src/extras/core/Interpolations.js(25,32): error TS7006: Parameter 'p' implicitly has an 'any' type.
-src/extras/core/Interpolations.js(31,29): error TS7006: Parameter 't' implicitly has an 'any' type.
-src/extras/core/Interpolations.js(31,32): error TS7006: Parameter 'p' implicitly has an 'any' type.
-src/extras/core/Interpolations.js(37,27): error TS7006: Parameter 't' implicitly has an 'any' type.
-src/extras/core/Interpolations.js(37,30): error TS7006: Parameter 'p0' implicitly has an 'any' type.
-src/extras/core/Interpolations.js(37,34): error TS7006: Parameter 'p1' implicitly has an 'any' type.
-src/extras/core/Interpolations.js(37,38): error TS7006: Parameter 'p2' implicitly has an 'any' type.
-src/extras/core/Interpolations.js(46,25): error TS7006: Parameter 't' implicitly has an 'any' type.
-src/extras/core/Interpolations.js(46,28): error TS7006: Parameter 'p' implicitly has an 'any' type.
-src/extras/core/Interpolations.js(53,25): error TS7006: Parameter 't' implicitly has an 'any' type.
-src/extras/core/Interpolations.js(53,28): error TS7006: Parameter 'p' implicitly has an 'any' type.
-src/extras/core/Interpolations.js(60,25): error TS7006: Parameter 't' implicitly has an 'any' type.
-src/extras/core/Interpolations.js(60,28): error TS7006: Parameter 'p' implicitly has an 'any' type.
-src/extras/core/Interpolations.js(66,25): error TS7006: Parameter 't' implicitly has an 'any' type.
-src/extras/core/Interpolations.js(66,28): error TS7006: Parameter 'p' implicitly has an 'any' type.
-src/extras/core/Interpolations.js(72,23): error TS7006: Parameter 't' implicitly has an 'any' type.
-src/extras/core/Interpolations.js(72,26): error TS7006: Parameter 'p0' implicitly has an 'any' type.
-src/extras/core/Interpolations.js(72,30): error TS7006: Parameter 'p1' implicitly has an 'any' type.
-src/extras/core/Interpolations.js(72,34): error TS7006: Parameter 'p2' implicitly has an 'any' type.
-src/extras/core/Interpolations.js(72,38): error TS7006: Parameter 'p3' implicitly has an 'any' type.
-src/extras/core/Path.js(11,15): error TS7006: Parameter 'points' implicitly has an 'any' type.
-src/extras/core/Path.js(27,17): error TS7006: Parameter 'points' implicitly has an 'any' type.
-src/extras/core/Path.js(41,10): error TS7006: Parameter 'x' implicitly has an 'any' type.
-src/extras/core/Path.js(41,13): error TS7006: Parameter 'y' implicitly has an 'any' type.
-src/extras/core/Path.js(49,10): error TS7006: Parameter 'x' implicitly has an 'any' type.
-src/extras/core/Path.js(49,13): error TS7006: Parameter 'y' implicitly has an 'any' type.
-src/extras/core/Path.js(60,20): error TS7006: Parameter 'aCPx' implicitly has an 'any' type.
-src/extras/core/Path.js(60,26): error TS7006: Parameter 'aCPy' implicitly has an 'any' type.
-src/extras/core/Path.js(60,32): error TS7006: Parameter 'aX' implicitly has an 'any' type.
-src/extras/core/Path.js(60,36): error TS7006: Parameter 'aY' implicitly has an 'any' type.
-src/extras/core/Path.js(76,17): error TS7006: Parameter 'aCP1x' implicitly has an 'any' type.
-src/extras/core/Path.js(76,24): error TS7006: Parameter 'aCP1y' implicitly has an 'any' type.
-src/extras/core/Path.js(76,31): error TS7006: Parameter 'aCP2x' implicitly has an 'any' type.
-src/extras/core/Path.js(76,38): error TS7006: Parameter 'aCP2y' implicitly has an 'any' type.
-src/extras/core/Path.js(76,45): error TS7006: Parameter 'aX' implicitly has an 'any' type.
-src/extras/core/Path.js(76,49): error TS7006: Parameter 'aY' implicitly has an 'any' type.
-src/extras/core/Path.js(93,14): error TS7006: Parameter 'pts' implicitly has an 'any' type.
-src/extras/core/Path.js(106,7): error TS7006: Parameter 'aX' implicitly has an 'any' type.
-src/extras/core/Path.js(106,11): error TS7006: Parameter 'aY' implicitly has an 'any' type.
-src/extras/core/Path.js(106,15): error TS7006: Parameter 'aRadius' implicitly has an 'any' type.
-src/extras/core/Path.js(106,24): error TS7006: Parameter 'aStartAngle' implicitly has an 'any' type.
-src/extras/core/Path.js(106,37): error TS7006: Parameter 'aEndAngle' implicitly has an 'any' type.
-src/extras/core/Path.js(106,48): error TS7006: Parameter 'aClockwise' implicitly has an 'any' type.
-src/extras/core/Path.js(118,10): error TS7006: Parameter 'aX' implicitly has an 'any' type.
-src/extras/core/Path.js(118,14): error TS7006: Parameter 'aY' implicitly has an 'any' type.
-src/extras/core/Path.js(118,18): error TS7006: Parameter 'aRadius' implicitly has an 'any' type.
-src/extras/core/Path.js(118,27): error TS7006: Parameter 'aStartAngle' implicitly has an 'any' type.
-src/extras/core/Path.js(118,40): error TS7006: Parameter 'aEndAngle' implicitly has an 'any' type.
-src/extras/core/Path.js(118,51): error TS7006: Parameter 'aClockwise' implicitly has an 'any' type.
-src/extras/core/Path.js(126,11): error TS7006: Parameter 'aX' implicitly has an 'any' type.
-src/extras/core/Path.js(126,15): error TS7006: Parameter 'aY' implicitly has an 'any' type.
-src/extras/core/Path.js(126,19): error TS7006: Parameter 'xRadius' implicitly has an 'any' type.
-src/extras/core/Path.js(126,28): error TS7006: Parameter 'yRadius' implicitly has an 'any' type.
-src/extras/core/Path.js(126,37): error TS7006: Parameter 'aStartAngle' implicitly has an 'any' type.
-src/extras/core/Path.js(126,50): error TS7006: Parameter 'aEndAngle' implicitly has an 'any' type.
-src/extras/core/Path.js(126,61): error TS7006: Parameter 'aClockwise' implicitly has an 'any' type.
-src/extras/core/Path.js(126,73): error TS7006: Parameter 'aRotation' implicitly has an 'any' type.
-src/extras/core/Path.js(137,14): error TS7006: Parameter 'aX' implicitly has an 'any' type.
-src/extras/core/Path.js(137,18): error TS7006: Parameter 'aY' implicitly has an 'any' type.
-src/extras/core/Path.js(137,22): error TS7006: Parameter 'xRadius' implicitly has an 'any' type.
-src/extras/core/Path.js(137,31): error TS7006: Parameter 'yRadius' implicitly has an 'any' type.
-src/extras/core/Path.js(137,40): error TS7006: Parameter 'aStartAngle' implicitly has an 'any' type.
-src/extras/core/Path.js(137,53): error TS7006: Parameter 'aEndAngle' implicitly has an 'any' type.
-src/extras/core/Path.js(137,64): error TS7006: Parameter 'aClockwise' implicitly has an 'any' type.
-src/extras/core/Path.js(137,76): error TS7006: Parameter 'aRotation' implicitly has an 'any' type.
-src/extras/core/Path.js(163,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
-src/extras/core/Path.js(177,8): error TS2339: Property 'currentPoint' does not exist on type 'Object'.
-src/extras/core/Path.js(183,12): error TS7006: Parameter 'json' implicitly has an 'any' type.
-src/extras/core/Shape.js(6,15): error TS7006: Parameter 'points' implicitly has an 'any' type.
-src/extras/core/Shape.js(14,3): error TS7008: Member 'holes' implicitly has an 'any[]' type.
-src/extras/core/Shape.js(18,18): error TS7006: Parameter 'divisions' implicitly has an 'any' type.
-src/extras/core/Shape.js(34,17): error TS7006: Parameter 'divisions' implicitly has an 'any' type.
-src/extras/core/Shape.js(45,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
-src/extras/core/Shape.js(67,8): error TS2339: Property 'uuid' does not exist on type 'Object'.
-src/extras/core/Shape.js(68,8): error TS2339: Property 'holes' does not exist on type 'Object'.
-src/extras/core/Shape.js(73,9): error TS2339: Property 'holes' does not exist on type 'Object'.
-src/extras/core/Shape.js(81,12): error TS7006: Parameter 'json' implicitly has an 'any' type.
-src/extras/core/ShapePath.js(14,3): error TS7008: Member 'subPaths' implicitly has an 'any[]' type.
-src/extras/core/ShapePath.js(19,10): error TS7006: Parameter 'x' implicitly has an 'any' type.
-src/extras/core/ShapePath.js(19,13): error TS7006: Parameter 'y' implicitly has an 'any' type.
-src/extras/core/ShapePath.js(29,10): error TS7006: Parameter 'x' implicitly has an 'any' type.
-src/extras/core/ShapePath.js(29,13): error TS7006: Parameter 'y' implicitly has an 'any' type.
-src/extras/core/ShapePath.js(31,3): error TS2531: Object is possibly 'null'.
-src/extras/core/ShapePath.js(37,20): error TS7006: Parameter 'aCPx' implicitly has an 'any' type.
-src/extras/core/ShapePath.js(37,26): error TS7006: Parameter 'aCPy' implicitly has an 'any' type.
-src/extras/core/ShapePath.js(37,32): error TS7006: Parameter 'aX' implicitly has an 'any' type.
-src/extras/core/ShapePath.js(37,36): error TS7006: Parameter 'aY' implicitly has an 'any' type.
-src/extras/core/ShapePath.js(39,3): error TS2531: Object is possibly 'null'.
-src/extras/core/ShapePath.js(45,17): error TS7006: Parameter 'aCP1x' implicitly has an 'any' type.
-src/extras/core/ShapePath.js(45,24): error TS7006: Parameter 'aCP1y' implicitly has an 'any' type.
-src/extras/core/ShapePath.js(45,31): error TS7006: Parameter 'aCP2x' implicitly has an 'any' type.
-src/extras/core/ShapePath.js(45,38): error TS7006: Parameter 'aCP2y' implicitly has an 'any' type.
-src/extras/core/ShapePath.js(45,45): error TS7006: Parameter 'aX' implicitly has an 'any' type.
-src/extras/core/ShapePath.js(45,49): error TS7006: Parameter 'aY' implicitly has an 'any' type.
-src/extras/core/ShapePath.js(47,3): error TS2531: Object is possibly 'null'.
-src/extras/core/ShapePath.js(53,14): error TS7006: Parameter 'pts' implicitly has an 'any' type.
-src/extras/core/ShapePath.js(55,3): error TS2531: Object is possibly 'null'.
-src/extras/core/ShapePath.js(61,12): error TS7006: Parameter 'isCCW' implicitly has an 'any' type.
-src/extras/core/ShapePath.js(63,29): error TS7006: Parameter 'inSubpaths' implicitly has an 'any' type.
-src/extras/core/ShapePath.js(82,34): error TS7006: Parameter 'inPt' implicitly has an 'any' type.
-src/extras/core/ShapePath.js(82,40): error TS7006: Parameter 'inPolygon' implicitly has an 'any' type.
-src/extras/core/ShapePath.js(186,5): error TS2532: Object is possibly 'undefined'.
-src/extras/core/ShapePath.js(195,36): error TS2345: Argument of type '{ h: any; p: any; }' is not assignable to parameter of type 'never'.
-src/extras/core/ShapePath.js(220,11): error TS7005: Variable 'sho' implicitly has an 'any[]' type.
-src/extras/core/ShapePath.js(229,40): error TS2532: Object is possibly 'undefined'.
-src/extras/core/ShapePath.js(236,41): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
-src/extras/core/ShapePath.js(250,38): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
-src/extras/core/ShapePath.js(270,15): error TS2532: Object is possibly 'undefined'.
-src/extras/core/ShapePath.js(276,40): error TS2339: Property 'h' does not exist on type 'never'.
-src/extras/curves/ArcCurve.js(5,15): error TS7006: Parameter 'aX' implicitly has an 'any' type.
-src/extras/curves/ArcCurve.js(5,19): error TS7006: Parameter 'aY' implicitly has an 'any' type.
-src/extras/curves/ArcCurve.js(5,23): error TS7006: Parameter 'aRadius' implicitly has an 'any' type.
-src/extras/curves/ArcCurve.js(5,32): error TS7006: Parameter 'aStartAngle' implicitly has an 'any' type.
-src/extras/curves/ArcCurve.js(5,45): error TS7006: Parameter 'aEndAngle' implicitly has an 'any' type.
-src/extras/curves/ArcCurve.js(5,56): error TS7006: Parameter 'aClockwise' implicitly has an 'any' type.
-src/extras/curves/CatmullRomCurve3.js(36,17): error TS7006: Parameter 'x0' implicitly has an 'any' type.
-src/extras/curves/CatmullRomCurve3.js(36,21): error TS7006: Parameter 'x1' implicitly has an 'any' type.
-src/extras/curves/CatmullRomCurve3.js(36,25): error TS7006: Parameter 't0' implicitly has an 'any' type.
-src/extras/curves/CatmullRomCurve3.js(36,29): error TS7006: Parameter 't1' implicitly has an 'any' type.
-src/extras/curves/CatmullRomCurve3.js(47,30): error TS7006: Parameter 'x0' implicitly has an 'any' type.
-src/extras/curves/CatmullRomCurve3.js(47,34): error TS7006: Parameter 'x1' implicitly has an 'any' type.
-src/extras/curves/CatmullRomCurve3.js(47,38): error TS7006: Parameter 'x2' implicitly has an 'any' type.
-src/extras/curves/CatmullRomCurve3.js(47,42): error TS7006: Parameter 'x3' implicitly has an 'any' type.
-src/extras/curves/CatmullRomCurve3.js(47,46): error TS7006: Parameter 'tension' implicitly has an 'any' type.
-src/extras/curves/CatmullRomCurve3.js(53,40): error TS7006: Parameter 'x0' implicitly has an 'any' type.
-src/extras/curves/CatmullRomCurve3.js(53,44): error TS7006: Parameter 'x1' implicitly has an 'any' type.
-src/extras/curves/CatmullRomCurve3.js(53,48): error TS7006: Parameter 'x2' implicitly has an 'any' type.
-src/extras/curves/CatmullRomCurve3.js(53,52): error TS7006: Parameter 'x3' implicitly has an 'any' type.
-src/extras/curves/CatmullRomCurve3.js(53,56): error TS7006: Parameter 'dt0' implicitly has an 'any' type.
-src/extras/curves/CatmullRomCurve3.js(53,61): error TS7006: Parameter 'dt1' implicitly has an 'any' type.
-src/extras/curves/CatmullRomCurve3.js(53,66): error TS7006: Parameter 'dt2' implicitly has an 'any' type.
-src/extras/curves/CatmullRomCurve3.js(67,20): error TS7006: Parameter 't' implicitly has an 'any' type.
+src/extras/core/Interpolations.js(32,29): error TS7006: Parameter 't' implicitly has an 'any' type.
+src/extras/core/Interpolations.js(32,32): error TS7006: Parameter 'p' implicitly has an 'any' type.
+src/extras/core/Interpolations.js(38,29): error TS7006: Parameter 't' implicitly has an 'any' type.
+src/extras/core/Interpolations.js(38,32): error TS7006: Parameter 'p' implicitly has an 'any' type.
+src/extras/core/Interpolations.js(62,25): error TS7006: Parameter 't' implicitly has an 'any' type.
+src/extras/core/Interpolations.js(62,28): error TS7006: Parameter 'p' implicitly has an 'any' type.
+src/extras/core/Interpolations.js(69,25): error TS7006: Parameter 't' implicitly has an 'any' type.
+src/extras/core/Interpolations.js(69,28): error TS7006: Parameter 'p' implicitly has an 'any' type.
+src/extras/core/Interpolations.js(76,25): error TS7006: Parameter 't' implicitly has an 'any' type.
+src/extras/core/Interpolations.js(76,28): error TS7006: Parameter 'p' implicitly has an 'any' type.
+src/extras/core/Interpolations.js(82,25): error TS7006: Parameter 't' implicitly has an 'any' type.
+src/extras/core/Interpolations.js(82,28): error TS7006: Parameter 'p' implicitly has an 'any' type.
+src/extras/core/Path.js(106,21): error TS2345: Argument of type 'LineCurve' is not assignable to parameter of type 'Curve'.
+  Types of property 'getPoint' are incompatible.
+    Type '(t: number, optionalTarget?: Vector2 | undefined) => Vector2' is not assignable to type '() => Vector2 | Vector3 | null'.
+      Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/core/Path.js(132,21): error TS2345: Argument of type 'QuadraticBezierCurve' is not assignable to parameter of type 'Curve'.
+  Types of property 'getPoint' are incompatible.
+    Type '(t: number, optionalTarget?: Vector2 | undefined) => Vector2' is not assignable to type '() => Vector2 | Vector3 | null'.
+      Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/core/Path.js(161,21): error TS2345: Argument of type 'CubicBezierCurve' is not assignable to parameter of type 'Curve'.
+  Types of property 'getPoint' are incompatible.
+    Type '(t: number, optionalTarget?: Vector2 | undefined) => Vector2' is not assignable to type '() => Vector2 | Vector3 | null'.
+      Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/core/Path.js(181,21): error TS2345: Argument of type 'SplineCurve' is not assignable to parameter of type 'Curve'.
+  Types of property 'getPoint' are incompatible.
+    Type '(t: number, optionalTarget?: Vector2 | undefined) => Vector2' is not assignable to type '() => Vector2 | Vector3 | null'.
+      Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/core/Path.js(272,97): error TS2345: Argument of type 'boolean | undefined' is not assignable to parameter of type 'number | undefined'.
+  Type 'boolean' is not assignable to type 'number'.
+src/extras/core/Path.js(287,21): error TS2345: Argument of type 'EllipseCurve' is not assignable to parameter of type 'Curve'.
+  Types of property 'getPoint' are incompatible.
+    Type '(t: number, optionalTarget?: Vector2 | undefined) => Vector2' is not assignable to type '() => Vector2 | Vector3 | null'.
+      Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/core/Path.js(296,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
+src/extras/core/Path.js(310,8): error TS2339: Property 'currentPoint' does not exist on type 'Object'.
+src/extras/core/Path.js(316,12): error TS7006: Parameter 'json' implicitly has an 'any' type.
+src/extras/core/Shape.js(40,19): error TS2304: Cannot find name 'Vector2'.
+src/extras/core/Shape.js(72,26): error TS2304: Cannot find name 'Vector2'.
+src/extras/core/Shape.js(95,27): error TS2304: Cannot find name 'Vector2'.
+src/extras/core/Shape.js(95,54): error TS2304: Cannot find name 'Vector2'.
+src/extras/core/Shape.js(108,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
+src/extras/core/Shape.js(112,8): error TS2540: Cannot assign to 'holes' because it is a read-only property.
+src/extras/core/Shape.js(130,8): error TS2339: Property 'uuid' does not exist on type 'Object'.
+src/extras/core/Shape.js(131,8): error TS2339: Property 'holes' does not exist on type 'Object'.
+src/extras/core/Shape.js(136,9): error TS2339: Property 'holes' does not exist on type 'Object'.
+src/extras/core/Shape.js(144,12): error TS7006: Parameter 'json' implicitly has an 'any' type.
+src/extras/core/Shape.js(148,8): error TS2540: Cannot assign to 'uuid' because it is a read-only property.
+src/extras/core/Shape.js(149,8): error TS2540: Cannot assign to 'holes' because it is a read-only property.
+src/extras/core/ShapePath.js(71,3): error TS2531: Object is possibly 'null'.
+src/extras/core/ShapePath.js(89,3): error TS2531: Object is possibly 'null'.
+src/extras/core/ShapePath.js(109,3): error TS2531: Object is possibly 'null'.
+src/extras/core/ShapePath.js(119,19): error TS2304: Cannot find name 'Vector2'.
+src/extras/core/ShapePath.js(124,3): error TS2531: Object is possibly 'null'.
+src/extras/core/ShapePath.js(139,29): error TS7006: Parameter 'inSubpaths' implicitly has an 'any' type.
+src/extras/core/ShapePath.js(158,34): error TS7006: Parameter 'inPt' implicitly has an 'any' type.
+src/extras/core/ShapePath.js(158,40): error TS7006: Parameter 'inPolygon' implicitly has an 'any' type.
+src/extras/core/ShapePath.js(262,5): error TS2532: Object is possibly 'undefined'.
+src/extras/core/ShapePath.js(271,36): error TS2345: Argument of type '{ h: Path; p: Vector2 | Vector3; }' is not assignable to parameter of type 'never'.
+src/extras/core/ShapePath.js(296,11): error TS7005: Variable 'sho' implicitly has an 'any[]' type.
+src/extras/core/ShapePath.js(305,40): error TS2532: Object is possibly 'undefined'.
+src/extras/core/ShapePath.js(312,41): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
+src/extras/core/ShapePath.js(326,38): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
+src/extras/core/ShapePath.js(346,15): error TS2532: Object is possibly 'undefined'.
+src/extras/core/ShapePath.js(352,40): error TS2339: Property 'h' does not exist on type 'never'.
+src/extras/curves/CatmullRomCurve3.js(35,17): error TS7006: Parameter 'x0' implicitly has an 'any' type.
+src/extras/curves/CatmullRomCurve3.js(35,21): error TS7006: Parameter 'x1' implicitly has an 'any' type.
+src/extras/curves/CatmullRomCurve3.js(35,25): error TS7006: Parameter 't0' implicitly has an 'any' type.
+src/extras/curves/CatmullRomCurve3.js(35,29): error TS7006: Parameter 't1' implicitly has an 'any' type.
+src/extras/curves/CatmullRomCurve3.js(46,30): error TS7006: Parameter 'x0' implicitly has an 'any' type.
+src/extras/curves/CatmullRomCurve3.js(46,34): error TS7006: Parameter 'x1' implicitly has an 'any' type.
+src/extras/curves/CatmullRomCurve3.js(46,38): error TS7006: Parameter 'x2' implicitly has an 'any' type.
+src/extras/curves/CatmullRomCurve3.js(46,42): error TS7006: Parameter 'x3' implicitly has an 'any' type.
+src/extras/curves/CatmullRomCurve3.js(46,46): error TS7006: Parameter 'tension' implicitly has an 'any' type.
+src/extras/curves/CatmullRomCurve3.js(52,40): error TS7006: Parameter 'x0' implicitly has an 'any' type.
+src/extras/curves/CatmullRomCurve3.js(52,44): error TS7006: Parameter 'x1' implicitly has an 'any' type.
+src/extras/curves/CatmullRomCurve3.js(52,48): error TS7006: Parameter 'x2' implicitly has an 'any' type.
+src/extras/curves/CatmullRomCurve3.js(52,52): error TS7006: Parameter 'x3' implicitly has an 'any' type.
+src/extras/curves/CatmullRomCurve3.js(52,56): error TS7006: Parameter 'dt0' implicitly has an 'any' type.
+src/extras/curves/CatmullRomCurve3.js(52,61): error TS7006: Parameter 'dt1' implicitly has an 'any' type.
+src/extras/curves/CatmullRomCurve3.js(52,66): error TS7006: Parameter 'dt2' implicitly has an 'any' type.
+src/extras/curves/CatmullRomCurve3.js(66,20): error TS7006: Parameter 't' implicitly has an 'any' type.
+src/extras/curves/CatmullRomCurve3.js(81,26): error TS7009: 'new' expression, whose target lacks a construct signature, implicitly has an 'any' type.
 src/extras/curves/CatmullRomCurve3.js(82,26): error TS7009: 'new' expression, whose target lacks a construct signature, implicitly has an 'any' type.
 src/extras/curves/CatmullRomCurve3.js(83,26): error TS7009: 'new' expression, whose target lacks a construct signature, implicitly has an 'any' type.
-src/extras/curves/CatmullRomCurve3.js(84,26): error TS7009: 'new' expression, whose target lacks a construct signature, implicitly has an 'any' type.
-src/extras/curves/CatmullRomCurve3.js(88,15): error TS7006: Parameter 'points' implicitly has an 'any[]' type.
-src/extras/curves/CatmullRomCurve3.js(103,12): error TS7006: Parameter 't' implicitly has an 'any' type.
-src/extras/curves/CatmullRomCurve3.js(189,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
-src/extras/curves/CatmullRomCurve3.js(215,8): error TS2339: Property 'points' does not exist on type 'Object'.
-src/extras/curves/CatmullRomCurve3.js(220,9): error TS2339: Property 'points' does not exist on type 'Object'.
-src/extras/curves/CatmullRomCurve3.js(224,8): error TS2339: Property 'closed' does not exist on type 'Object'.
-src/extras/curves/CatmullRomCurve3.js(225,8): error TS2339: Property 'curveType' does not exist on type 'Object'.
-src/extras/curves/CatmullRomCurve3.js(226,8): error TS2339: Property 'tension' does not exist on type 'Object'.
-src/extras/curves/CatmullRomCurve3.js(232,12): error TS7006: Parameter 'json' implicitly has an 'any' type.
-src/extras/curves/CubicBezierCurve.js(22,12): error TS7006: Parameter 't' implicitly has an 'any' type.
-src/extras/curves/CubicBezierCurve.js(37,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
-src/extras/curves/CubicBezierCurve.js(54,8): error TS2339: Property 'v0' does not exist on type 'Object'.
-src/extras/curves/CubicBezierCurve.js(55,8): error TS2339: Property 'v1' does not exist on type 'Object'.
-src/extras/curves/CubicBezierCurve.js(56,8): error TS2339: Property 'v2' does not exist on type 'Object'.
-src/extras/curves/CubicBezierCurve.js(57,8): error TS2339: Property 'v3' does not exist on type 'Object'.
-src/extras/curves/CubicBezierCurve.js(63,12): error TS7006: Parameter 'json' implicitly has an 'any' type.
-src/extras/curves/CubicBezierCurve3.js(22,12): error TS7006: Parameter 't' implicitly has an 'any' type.
-src/extras/curves/CubicBezierCurve3.js(38,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
-src/extras/curves/CubicBezierCurve3.js(55,8): error TS2339: Property 'v0' does not exist on type 'Object'.
-src/extras/curves/CubicBezierCurve3.js(56,8): error TS2339: Property 'v1' does not exist on type 'Object'.
-src/extras/curves/CubicBezierCurve3.js(57,8): error TS2339: Property 'v2' does not exist on type 'Object'.
-src/extras/curves/CubicBezierCurve3.js(58,8): error TS2339: Property 'v3' does not exist on type 'Object'.
-src/extras/curves/CubicBezierCurve3.js(64,12): error TS7006: Parameter 'json' implicitly has an 'any' type.
-src/extras/curves/EllipseCurve.js(29,12): error TS7006: Parameter 't' implicitly has an 'any' type.
-src/extras/curves/EllipseCurve.js(91,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
-src/extras/curves/EllipseCurve.js(116,8): error TS2339: Property 'aX' does not exist on type 'Object'.
-src/extras/curves/EllipseCurve.js(117,8): error TS2339: Property 'aY' does not exist on type 'Object'.
-src/extras/curves/EllipseCurve.js(119,8): error TS2339: Property 'xRadius' does not exist on type 'Object'.
-src/extras/curves/EllipseCurve.js(120,8): error TS2339: Property 'yRadius' does not exist on type 'Object'.
-src/extras/curves/EllipseCurve.js(122,8): error TS2339: Property 'aStartAngle' does not exist on type 'Object'.
-src/extras/curves/EllipseCurve.js(123,8): error TS2339: Property 'aEndAngle' does not exist on type 'Object'.
-src/extras/curves/EllipseCurve.js(125,8): error TS2339: Property 'aClockwise' does not exist on type 'Object'.
-src/extras/curves/EllipseCurve.js(127,8): error TS2339: Property 'aRotation' does not exist on type 'Object'.
-src/extras/curves/EllipseCurve.js(133,12): error TS7006: Parameter 'json' implicitly has an 'any' type.
-src/extras/curves/LineCurve.js(19,12): error TS7006: Parameter 't' implicitly has an 'any' type.
-src/extras/curves/LineCurve.js(39,14): error TS7006: Parameter 'u' implicitly has an 'any' type.
-src/extras/curves/LineCurve.js(39,17): error TS7006: Parameter 'optionalTarget' implicitly has an 'any' type.
-src/extras/curves/LineCurve.js(45,14): error TS7006: Parameter 't' implicitly has an 'any' type.
-src/extras/curves/LineCurve.js(51,16): error TS7006: Parameter 'u' implicitly has an 'any' type.
-src/extras/curves/LineCurve.js(51,19): error TS7006: Parameter 'optionalTarget' implicitly has an 'any' type.
-src/extras/curves/LineCurve.js(57,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
-src/extras/curves/LineCurve.js(72,8): error TS2339: Property 'v1' does not exist on type 'Object'.
-src/extras/curves/LineCurve.js(73,8): error TS2339: Property 'v2' does not exist on type 'Object'.
-src/extras/curves/LineCurve.js(79,12): error TS7006: Parameter 'json' implicitly has an 'any' type.
-src/extras/curves/LineCurve3.js(19,12): error TS7006: Parameter 't' implicitly has an 'any' type.
-src/extras/curves/LineCurve3.js(39,14): error TS7006: Parameter 'u' implicitly has an 'any' type.
-src/extras/curves/LineCurve3.js(39,17): error TS7006: Parameter 'optionalTarget' implicitly has an 'any' type.
-src/extras/curves/LineCurve3.js(45,14): error TS7006: Parameter 't' implicitly has an 'any' type.
-src/extras/curves/LineCurve3.js(51,16): error TS7006: Parameter 'u' implicitly has an 'any' type.
-src/extras/curves/LineCurve3.js(51,19): error TS7006: Parameter 'optionalTarget' implicitly has an 'any' type.
-src/extras/curves/LineCurve3.js(57,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
-src/extras/curves/LineCurve3.js(72,8): error TS2339: Property 'v1' does not exist on type 'Object'.
-src/extras/curves/LineCurve3.js(73,8): error TS2339: Property 'v2' does not exist on type 'Object'.
-src/extras/curves/LineCurve3.js(79,12): error TS7006: Parameter 'json' implicitly has an 'any' type.
-src/extras/curves/QuadraticBezierCurve.js(21,12): error TS7006: Parameter 't' implicitly has an 'any' type.
-src/extras/curves/QuadraticBezierCurve.js(36,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
-src/extras/curves/QuadraticBezierCurve.js(52,8): error TS2339: Property 'v0' does not exist on type 'Object'.
-src/extras/curves/QuadraticBezierCurve.js(53,8): error TS2339: Property 'v1' does not exist on type 'Object'.
-src/extras/curves/QuadraticBezierCurve.js(54,8): error TS2339: Property 'v2' does not exist on type 'Object'.
-src/extras/curves/QuadraticBezierCurve.js(60,12): error TS7006: Parameter 'json' implicitly has an 'any' type.
-src/extras/curves/QuadraticBezierCurve3.js(21,12): error TS7006: Parameter 't' implicitly has an 'any' type.
-src/extras/curves/QuadraticBezierCurve3.js(37,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
-src/extras/curves/QuadraticBezierCurve3.js(53,8): error TS2339: Property 'v0' does not exist on type 'Object'.
-src/extras/curves/QuadraticBezierCurve3.js(54,8): error TS2339: Property 'v1' does not exist on type 'Object'.
-src/extras/curves/QuadraticBezierCurve3.js(55,8): error TS2339: Property 'v2' does not exist on type 'Object'.
-src/extras/curves/QuadraticBezierCurve3.js(61,12): error TS7006: Parameter 'json' implicitly has an 'any' type.
-src/extras/curves/SplineCurve.js(7,15): error TS7006: Parameter 'points' implicitly has an 'any[]' type.
-src/extras/curves/SplineCurve.js(19,12): error TS7006: Parameter 't' implicitly has an 'any' type.
-src/extras/curves/SplineCurve.js(43,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
-src/extras/curves/SplineCurve.js(65,8): error TS2339: Property 'points' does not exist on type 'Object'.
-src/extras/curves/SplineCurve.js(70,9): error TS2339: Property 'points' does not exist on type 'Object'.
-src/extras/curves/SplineCurve.js(78,12): error TS7006: Parameter 'json' implicitly has an 'any' type.
-src/extras/DataUtils.js(144,23): error TS7006: Parameter 'val' implicitly has an 'any' type.
-src/extras/DataUtils.js(159,25): error TS7006: Parameter 'val' implicitly has an 'any' type.
-src/extras/Earcut.js(7,26): error TS7006: Parameter 'data' implicitly has an 'any' type.
-src/extras/Earcut.js(7,32): error TS7006: Parameter 'holeIndices' implicitly has an 'any' type.
-src/extras/Earcut.js(12,9): error TS7034: Variable 'triangles' implicitly has type 'any[]' in some locations where its type cannot be determined.
-src/extras/Earcut.js(14,66): error TS7005: Variable 'triangles' implicitly has an 'any[]' type.
-src/extras/Earcut.js(43,28): error TS7005: Variable 'triangles' implicitly has an 'any[]' type.
-src/extras/Earcut.js(45,10): error TS7005: Variable 'triangles' implicitly has an 'any[]' type.
-src/extras/Earcut.js(52,22): error TS7006: Parameter 'data' implicitly has an 'any' type.
-src/extras/Earcut.js(52,28): error TS7006: Parameter 'start' implicitly has an 'any' type.
-src/extras/Earcut.js(52,35): error TS7006: Parameter 'end' implicitly has an 'any' type.
-src/extras/Earcut.js(52,40): error TS7006: Parameter 'dim' implicitly has an 'any' type.
-src/extras/Earcut.js(52,45): error TS7006: Parameter 'clockwise' implicitly has an 'any' type.
-src/extras/Earcut.js(78,24): error TS7006: Parameter 'start' implicitly has an 'any' type.
-src/extras/Earcut.js(78,31): error TS7006: Parameter 'end' implicitly has an 'any' type.
-src/extras/Earcut.js(109,24): error TS7006: Parameter 'ear' implicitly has an 'any' type.
-src/extras/Earcut.js(109,29): error TS7006: Parameter 'triangles' implicitly has an 'any' type.
-src/extras/Earcut.js(109,40): error TS7006: Parameter 'dim' implicitly has an 'any' type.
-src/extras/Earcut.js(109,45): error TS7006: Parameter 'minX' implicitly has an 'any' type.
-src/extras/Earcut.js(109,51): error TS7006: Parameter 'minY' implicitly has an 'any' type.
-src/extras/Earcut.js(109,57): error TS7006: Parameter 'invSize' implicitly has an 'any' type.
-src/extras/Earcut.js(109,66): error TS7006: Parameter 'pass' implicitly has an 'any' type.
-src/extras/Earcut.js(176,17): error TS7006: Parameter 'ear' implicitly has an 'any' type.
-src/extras/Earcut.js(207,23): error TS7006: Parameter 'ear' implicitly has an 'any' type.
-src/extras/Earcut.js(207,28): error TS7006: Parameter 'minX' implicitly has an 'any' type.
-src/extras/Earcut.js(207,34): error TS7006: Parameter 'minY' implicitly has an 'any' type.
-src/extras/Earcut.js(207,40): error TS7006: Parameter 'invSize' implicitly has an 'any' type.
-src/extras/Earcut.js(266,34): error TS7006: Parameter 'start' implicitly has an 'any' type.
-src/extras/Earcut.js(266,41): error TS7006: Parameter 'triangles' implicitly has an 'any' type.
-src/extras/Earcut.js(266,52): error TS7006: Parameter 'dim' implicitly has an 'any' type.
-src/extras/Earcut.js(297,23): error TS7006: Parameter 'start' implicitly has an 'any' type.
-src/extras/Earcut.js(297,30): error TS7006: Parameter 'triangles' implicitly has an 'any' type.
-src/extras/Earcut.js(297,41): error TS7006: Parameter 'dim' implicitly has an 'any' type.
-src/extras/Earcut.js(297,46): error TS7006: Parameter 'minX' implicitly has an 'any' type.
-src/extras/Earcut.js(297,52): error TS7006: Parameter 'minY' implicitly has an 'any' type.
-src/extras/Earcut.js(297,58): error TS7006: Parameter 'invSize' implicitly has an 'any' type.
-src/extras/Earcut.js(333,26): error TS7006: Parameter 'data' implicitly has an 'any' type.
-src/extras/Earcut.js(333,32): error TS7006: Parameter 'holeIndices' implicitly has an 'any' type.
-src/extras/Earcut.js(333,45): error TS7006: Parameter 'outerNode' implicitly has an 'any' type.
-src/extras/Earcut.js(333,56): error TS7006: Parameter 'dim' implicitly has an 'any' type.
-src/extras/Earcut.js(361,20): error TS7006: Parameter 'a' implicitly has an 'any' type.
-src/extras/Earcut.js(361,23): error TS7006: Parameter 'b' implicitly has an 'any' type.
-src/extras/Earcut.js(368,25): error TS7006: Parameter 'hole' implicitly has an 'any' type.
-src/extras/Earcut.js(368,31): error TS7006: Parameter 'outerNode' implicitly has an 'any' type.
-src/extras/Earcut.js(386,26): error TS7006: Parameter 'hole' implicitly has an 'any' type.
-src/extras/Earcut.js(386,32): error TS7006: Parameter 'outerNode' implicitly has an 'any' type.
-src/extras/Earcut.js(453,32): error TS7006: Parameter 'm' implicitly has an 'any' type.
-src/extras/Earcut.js(453,35): error TS7006: Parameter 'p' implicitly has an 'any' type.
-src/extras/Earcut.js(460,22): error TS7006: Parameter 'start' implicitly has an 'any' type.
-src/extras/Earcut.js(460,29): error TS7006: Parameter 'minX' implicitly has an 'any' type.
-src/extras/Earcut.js(460,35): error TS7006: Parameter 'minY' implicitly has an 'any' type.
-src/extras/Earcut.js(460,41): error TS7006: Parameter 'invSize' implicitly has an 'any' type.
-src/extras/Earcut.js(481,22): error TS7006: Parameter 'list' implicitly has an 'any' type.
-src/extras/Earcut.js(546,18): error TS7006: Parameter 'x' implicitly has an 'any' type.
-src/extras/Earcut.js(546,21): error TS7006: Parameter 'y' implicitly has an 'any' type.
-src/extras/Earcut.js(546,24): error TS7006: Parameter 'minX' implicitly has an 'any' type.
-src/extras/Earcut.js(546,30): error TS7006: Parameter 'minY' implicitly has an 'any' type.
-src/extras/Earcut.js(546,36): error TS7006: Parameter 'invSize' implicitly has an 'any' type.
-src/extras/Earcut.js(567,23): error TS7006: Parameter 'start' implicitly has an 'any' type.
-src/extras/Earcut.js(583,27): error TS7006: Parameter 'ax' implicitly has an 'any' type.
-src/extras/Earcut.js(583,31): error TS7006: Parameter 'ay' implicitly has an 'any' type.
-src/extras/Earcut.js(583,35): error TS7006: Parameter 'bx' implicitly has an 'any' type.
-src/extras/Earcut.js(583,39): error TS7006: Parameter 'by' implicitly has an 'any' type.
-src/extras/Earcut.js(583,43): error TS7006: Parameter 'cx' implicitly has an 'any' type.
-src/extras/Earcut.js(583,47): error TS7006: Parameter 'cy' implicitly has an 'any' type.
-src/extras/Earcut.js(583,51): error TS7006: Parameter 'px' implicitly has an 'any' type.
-src/extras/Earcut.js(583,55): error TS7006: Parameter 'py' implicitly has an 'any' type.
-src/extras/Earcut.js(592,27): error TS7006: Parameter 'a' implicitly has an 'any' type.
-src/extras/Earcut.js(592,30): error TS7006: Parameter 'b' implicitly has an 'any' type.
-src/extras/Earcut.js(602,16): error TS7006: Parameter 'p' implicitly has an 'any' type.
-src/extras/Earcut.js(602,19): error TS7006: Parameter 'q' implicitly has an 'any' type.
-src/extras/Earcut.js(602,22): error TS7006: Parameter 'r' implicitly has an 'any' type.
-src/extras/Earcut.js(609,18): error TS7006: Parameter 'p1' implicitly has an 'any' type.
-src/extras/Earcut.js(609,22): error TS7006: Parameter 'p2' implicitly has an 'any' type.
-src/extras/Earcut.js(616,22): error TS7006: Parameter 'p1' implicitly has an 'any' type.
-src/extras/Earcut.js(616,26): error TS7006: Parameter 'q1' implicitly has an 'any' type.
-src/extras/Earcut.js(616,30): error TS7006: Parameter 'p2' implicitly has an 'any' type.
-src/extras/Earcut.js(616,34): error TS7006: Parameter 'q2' implicitly has an 'any' type.
-src/extras/Earcut.js(635,21): error TS7006: Parameter 'p' implicitly has an 'any' type.
-src/extras/Earcut.js(635,24): error TS7006: Parameter 'q' implicitly has an 'any' type.
-src/extras/Earcut.js(635,27): error TS7006: Parameter 'r' implicitly has an 'any' type.
-src/extras/Earcut.js(641,16): error TS7006: Parameter 'num' implicitly has an 'any' type.
-src/extras/Earcut.js(648,29): error TS7006: Parameter 'a' implicitly has an 'any' type.
-src/extras/Earcut.js(648,32): error TS7006: Parameter 'b' implicitly has an 'any' type.
-src/extras/Earcut.js(664,25): error TS7006: Parameter 'a' implicitly has an 'any' type.
-src/extras/Earcut.js(664,28): error TS7006: Parameter 'b' implicitly has an 'any' type.
-src/extras/Earcut.js(673,24): error TS7006: Parameter 'a' implicitly has an 'any' type.
-src/extras/Earcut.js(673,27): error TS7006: Parameter 'b' implicitly has an 'any' type.
-src/extras/Earcut.js(694,24): error TS7006: Parameter 'a' implicitly has an 'any' type.
-src/extras/Earcut.js(694,27): error TS7006: Parameter 'b' implicitly has an 'any' type.
-src/extras/Earcut.js(718,22): error TS7006: Parameter 'i' implicitly has an 'any' type.
-src/extras/Earcut.js(718,25): error TS7006: Parameter 'x' implicitly has an 'any' type.
-src/extras/Earcut.js(718,28): error TS7006: Parameter 'y' implicitly has an 'any' type.
-src/extras/Earcut.js(718,31): error TS7006: Parameter 'last' implicitly has an 'any' type.
-src/extras/Earcut.js(740,22): error TS7006: Parameter 'p' implicitly has an 'any' type.
-src/extras/Earcut.js(750,16): error TS7006: Parameter 'i' implicitly has an 'any' type.
-src/extras/Earcut.js(750,19): error TS7006: Parameter 'x' implicitly has an 'any' type.
-src/extras/Earcut.js(750,22): error TS7006: Parameter 'y' implicitly has an 'any' type.
-src/extras/Earcut.js(760,2): error TS7008: Member 'prev' implicitly has an 'any' type.
-src/extras/Earcut.js(761,2): error TS7008: Member 'next' implicitly has an 'any' type.
-src/extras/Earcut.js(767,2): error TS7008: Member 'prevZ' implicitly has an 'any' type.
-src/extras/Earcut.js(768,2): error TS7008: Member 'nextZ' implicitly has an 'any' type.
-src/extras/Earcut.js(775,22): error TS7006: Parameter 'data' implicitly has an 'any' type.
-src/extras/Earcut.js(775,28): error TS7006: Parameter 'start' implicitly has an 'any' type.
-src/extras/Earcut.js(775,35): error TS7006: Parameter 'end' implicitly has an 'any' type.
-src/extras/Earcut.js(775,40): error TS7006: Parameter 'dim' implicitly has an 'any' type.
+src/extras/curves/CatmullRomCurve3.js(174,2): error TS2416: Property 'getPoint' in type 'CatmullRomCurve3' is not assignable to the same property in base type 'Curve'.
+  Type '(t: number, optionalTarget?: Vector3 | undefined) => Vector3' is not assignable to type '() => Vector2 | Vector3 | null'.
+    Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/curves/CatmullRomCurve3.js(260,2): error TS2416: Property 'copy' in type 'CatmullRomCurve3' is not assignable to the same property in base type 'Curve'.
+  Type '(source: any) => this' is not assignable to type '(source: Curve) => Curve'.
+    Type 'this' is not assignable to type 'Curve'.
+      Type 'CatmullRomCurve3' is not assignable to type 'Curve'.
+        Types of property 'getPoint' are incompatible.
+          Type '(t: number, optionalTarget?: Vector3 | undefined) => Vector3' is not assignable to type '() => Vector2 | Vector3 | null'.
+            Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/curves/CatmullRomCurve3.js(260,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
+src/extras/curves/CatmullRomCurve3.js(286,8): error TS2339: Property 'points' does not exist on type 'Object'.
+src/extras/curves/CatmullRomCurve3.js(291,9): error TS2339: Property 'points' does not exist on type 'Object'.
+src/extras/curves/CatmullRomCurve3.js(295,8): error TS2339: Property 'closed' does not exist on type 'Object'.
+src/extras/curves/CatmullRomCurve3.js(296,8): error TS2339: Property 'curveType' does not exist on type 'Object'.
+src/extras/curves/CatmullRomCurve3.js(297,8): error TS2339: Property 'tension' does not exist on type 'Object'.
+src/extras/curves/CatmullRomCurve3.js(303,2): error TS2416: Property 'fromJSON' in type 'CatmullRomCurve3' is not assignable to the same property in base type 'Curve'.
+  Type '(json: any) => this' is not assignable to type '(json: Object) => Curve'.
+    Type 'this' is not assignable to type 'Curve'.
+      Type 'CatmullRomCurve3' is not assignable to type 'Curve'.
+        Types of property 'getPoint' are incompatible.
+          Type '(t: number, optionalTarget?: Vector3 | undefined) => Vector3' is not assignable to type '() => Vector2 | Vector3 | null'.
+            Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/curves/CatmullRomCurve3.js(303,12): error TS7006: Parameter 'json' implicitly has an 'any' type.
+src/extras/curves/CubicBezierCurve.js(89,2): error TS2416: Property 'getPoint' in type 'CubicBezierCurve' is not assignable to the same property in base type 'Curve'.
+  Type '(t: number, optionalTarget?: Vector2 | undefined) => Vector2' is not assignable to type '() => Vector2 | Vector3 | null'.
+    Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/curves/CubicBezierCurve.js(104,2): error TS2416: Property 'copy' in type 'CubicBezierCurve' is not assignable to the same property in base type 'Curve'.
+  Type '(source: any) => this' is not assignable to type '(source: Curve) => Curve'.
+    Type 'this' is not assignable to type 'Curve'.
+      Type 'CubicBezierCurve' is not assignable to type 'Curve'.
+        Types of property 'getPoint' are incompatible.
+          Type '(t: number, optionalTarget?: Vector2 | undefined) => Vector2' is not assignable to type '() => Vector2 | Vector3 | null'.
+            Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/curves/CubicBezierCurve.js(104,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
+src/extras/curves/CubicBezierCurve.js(121,8): error TS2339: Property 'v0' does not exist on type 'Object'.
+src/extras/curves/CubicBezierCurve.js(122,8): error TS2339: Property 'v1' does not exist on type 'Object'.
+src/extras/curves/CubicBezierCurve.js(123,8): error TS2339: Property 'v2' does not exist on type 'Object'.
+src/extras/curves/CubicBezierCurve.js(124,8): error TS2339: Property 'v3' does not exist on type 'Object'.
+src/extras/curves/CubicBezierCurve.js(130,2): error TS2416: Property 'fromJSON' in type 'CubicBezierCurve' is not assignable to the same property in base type 'Curve'.
+  Type '(json: any) => this' is not assignable to type '(json: Object) => Curve'.
+    Type 'this' is not assignable to type 'Curve'.
+      Type 'CubicBezierCurve' is not assignable to type 'Curve'.
+        Types of property 'getPoint' are incompatible.
+          Type '(t: number, optionalTarget?: Vector2 | undefined) => Vector2' is not assignable to type '() => Vector2 | Vector3 | null'.
+            Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/curves/CubicBezierCurve.js(130,12): error TS7006: Parameter 'json' implicitly has an 'any' type.
+src/extras/curves/CubicBezierCurve3.js(72,2): error TS2416: Property 'getPoint' in type 'CubicBezierCurve3' is not assignable to the same property in base type 'Curve'.
+  Type '(t: number, optionalTarget?: Vector3 | undefined) => Vector3' is not assignable to type '() => Vector2 | Vector3 | null'.
+    Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/curves/CubicBezierCurve3.js(88,2): error TS2416: Property 'copy' in type 'CubicBezierCurve3' is not assignable to the same property in base type 'Curve'.
+  Type '(source: any) => this' is not assignable to type '(source: Curve) => Curve'.
+    Type 'this' is not assignable to type 'Curve'.
+      Type 'CubicBezierCurve3' is not assignable to type 'Curve'.
+        Types of property 'getPoint' are incompatible.
+          Type '(t: number, optionalTarget?: Vector3 | undefined) => Vector3' is not assignable to type '() => Vector2 | Vector3 | null'.
+            Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/curves/CubicBezierCurve3.js(88,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
+src/extras/curves/CubicBezierCurve3.js(105,8): error TS2339: Property 'v0' does not exist on type 'Object'.
+src/extras/curves/CubicBezierCurve3.js(106,8): error TS2339: Property 'v1' does not exist on type 'Object'.
+src/extras/curves/CubicBezierCurve3.js(107,8): error TS2339: Property 'v2' does not exist on type 'Object'.
+src/extras/curves/CubicBezierCurve3.js(108,8): error TS2339: Property 'v3' does not exist on type 'Object'.
+src/extras/curves/CubicBezierCurve3.js(114,2): error TS2416: Property 'fromJSON' in type 'CubicBezierCurve3' is not assignable to the same property in base type 'Curve'.
+  Type '(json: any) => this' is not assignable to type '(json: Object) => Curve'.
+    Type 'this' is not assignable to type 'Curve'.
+      Type 'CubicBezierCurve3' is not assignable to type 'Curve'.
+        Types of property 'getPoint' are incompatible.
+          Type '(t: number, optionalTarget?: Vector3 | undefined) => Vector3' is not assignable to type '() => Vector2 | Vector3 | null'.
+            Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/curves/CubicBezierCurve3.js(114,12): error TS7006: Parameter 'json' implicitly has an 'any' type.
+src/extras/curves/EllipseCurve.js(131,2): error TS2416: Property 'getPoint' in type 'EllipseCurve' is not assignable to the same property in base type 'Curve'.
+  Type '(t: number, optionalTarget?: Vector2 | undefined) => Vector2' is not assignable to type '() => Vector2 | Vector3 | null'.
+    Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/curves/EllipseCurve.js(193,2): error TS2416: Property 'copy' in type 'EllipseCurve' is not assignable to the same property in base type 'Curve'.
+  Type '(source: any) => this' is not assignable to type '(source: Curve) => Curve'.
+    Type 'this' is not assignable to type 'Curve'.
+      Type 'EllipseCurve' is not assignable to type 'Curve'.
+        Types of property 'getPoint' are incompatible.
+          Type '(t: number, optionalTarget?: Vector2 | undefined) => Vector2' is not assignable to type '() => Vector2 | Vector3 | null'.
+            Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/curves/EllipseCurve.js(193,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
+src/extras/curves/EllipseCurve.js(218,8): error TS2339: Property 'aX' does not exist on type 'Object'.
+src/extras/curves/EllipseCurve.js(219,8): error TS2339: Property 'aY' does not exist on type 'Object'.
+src/extras/curves/EllipseCurve.js(221,8): error TS2339: Property 'xRadius' does not exist on type 'Object'.
+src/extras/curves/EllipseCurve.js(222,8): error TS2339: Property 'yRadius' does not exist on type 'Object'.
+src/extras/curves/EllipseCurve.js(224,8): error TS2339: Property 'aStartAngle' does not exist on type 'Object'.
+src/extras/curves/EllipseCurve.js(225,8): error TS2339: Property 'aEndAngle' does not exist on type 'Object'.
+src/extras/curves/EllipseCurve.js(227,8): error TS2339: Property 'aClockwise' does not exist on type 'Object'.
+src/extras/curves/EllipseCurve.js(229,8): error TS2339: Property 'aRotation' does not exist on type 'Object'.
+src/extras/curves/EllipseCurve.js(235,2): error TS2416: Property 'fromJSON' in type 'EllipseCurve' is not assignable to the same property in base type 'Curve'.
+  Type '(json: any) => this' is not assignable to type '(json: Object) => Curve'.
+    Type 'this' is not assignable to type 'Curve'.
+      Type 'EllipseCurve' is not assignable to type 'Curve'.
+        Types of property 'getPoint' are incompatible.
+          Type '(t: number, optionalTarget?: Vector2 | undefined) => Vector2' is not assignable to type '() => Vector2 | Vector3 | null'.
+            Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/curves/EllipseCurve.js(235,12): error TS7006: Parameter 'json' implicitly has an 'any' type.
+src/extras/curves/LineCurve.js(55,2): error TS2416: Property 'getPoint' in type 'LineCurve' is not assignable to the same property in base type 'Curve'.
+  Type '(t: number, optionalTarget?: Vector2 | undefined) => Vector2' is not assignable to type '() => Vector2 | Vector3 | null'.
+    Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/curves/LineCurve.js(75,14): error TS7006: Parameter 'u' implicitly has an 'any' type.
+src/extras/curves/LineCurve.js(75,17): error TS7006: Parameter 'optionalTarget' implicitly has an 'any' type.
+src/extras/curves/LineCurve.js(81,14): error TS7006: Parameter 't' implicitly has an 'any' type.
+src/extras/curves/LineCurve.js(87,16): error TS7006: Parameter 'u' implicitly has an 'any' type.
+src/extras/curves/LineCurve.js(87,19): error TS7006: Parameter 'optionalTarget' implicitly has an 'any' type.
+src/extras/curves/LineCurve.js(93,2): error TS2416: Property 'copy' in type 'LineCurve' is not assignable to the same property in base type 'Curve'.
+  Type '(source: any) => this' is not assignable to type '(source: Curve) => Curve'.
+    Type 'this' is not assignable to type 'Curve'.
+      Type 'LineCurve' is not assignable to type 'Curve'.
+        Types of property 'getPoint' are incompatible.
+          Type '(t: number, optionalTarget?: Vector2 | undefined) => Vector2' is not assignable to type '() => Vector2 | Vector3 | null'.
+            Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/curves/LineCurve.js(93,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
+src/extras/curves/LineCurve.js(108,8): error TS2339: Property 'v1' does not exist on type 'Object'.
+src/extras/curves/LineCurve.js(109,8): error TS2339: Property 'v2' does not exist on type 'Object'.
+src/extras/curves/LineCurve.js(115,2): error TS2416: Property 'fromJSON' in type 'LineCurve' is not assignable to the same property in base type 'Curve'.
+  Type '(json: any) => this' is not assignable to type '(json: Object) => Curve'.
+    Type 'this' is not assignable to type 'Curve'.
+      Type 'LineCurve' is not assignable to type 'Curve'.
+        Types of property 'getPoint' are incompatible.
+          Type '(t: number, optionalTarget?: Vector2 | undefined) => Vector2' is not assignable to type '() => Vector2 | Vector3 | null'.
+            Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/curves/LineCurve.js(115,12): error TS7006: Parameter 'json' implicitly has an 'any' type.
+src/extras/curves/LineCurve3.js(42,13): error TS2304: Cannot find name 'Vector2'.
+src/extras/curves/LineCurve3.js(55,2): error TS2416: Property 'getPoint' in type 'LineCurve3' is not assignable to the same property in base type 'Curve'.
+  Type '(t: number, optionalTarget?: Vector3 | undefined) => Vector3' is not assignable to type '() => Vector2 | Vector3 | null'.
+    Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/curves/LineCurve3.js(75,14): error TS7006: Parameter 'u' implicitly has an 'any' type.
+src/extras/curves/LineCurve3.js(75,17): error TS7006: Parameter 'optionalTarget' implicitly has an 'any' type.
+src/extras/curves/LineCurve3.js(81,14): error TS7006: Parameter 't' implicitly has an 'any' type.
+src/extras/curves/LineCurve3.js(87,16): error TS7006: Parameter 'u' implicitly has an 'any' type.
+src/extras/curves/LineCurve3.js(87,19): error TS7006: Parameter 'optionalTarget' implicitly has an 'any' type.
+src/extras/curves/LineCurve3.js(93,2): error TS2416: Property 'copy' in type 'LineCurve3' is not assignable to the same property in base type 'Curve'.
+  Type '(source: any) => this' is not assignable to type '(source: Curve) => Curve'.
+    Type 'this' is not assignable to type 'Curve'.
+      Type 'LineCurve3' is not assignable to type 'Curve'.
+        Types of property 'getPoint' are incompatible.
+          Type '(t: number, optionalTarget?: Vector3 | undefined) => Vector3' is not assignable to type '() => Vector2 | Vector3 | null'.
+            Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/curves/LineCurve3.js(93,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
+src/extras/curves/LineCurve3.js(108,8): error TS2339: Property 'v1' does not exist on type 'Object'.
+src/extras/curves/LineCurve3.js(109,8): error TS2339: Property 'v2' does not exist on type 'Object'.
+src/extras/curves/LineCurve3.js(115,2): error TS2416: Property 'fromJSON' in type 'LineCurve3' is not assignable to the same property in base type 'Curve'.
+  Type '(json: any) => this' is not assignable to type '(json: Object) => Curve'.
+    Type 'this' is not assignable to type 'Curve'.
+      Type 'LineCurve3' is not assignable to type 'Curve'.
+        Types of property 'getPoint' are incompatible.
+          Type '(t: number, optionalTarget?: Vector3 | undefined) => Vector3' is not assignable to type '() => Vector2 | Vector3 | null'.
+            Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/curves/LineCurve3.js(115,12): error TS7006: Parameter 'json' implicitly has an 'any' type.
+src/extras/curves/QuadraticBezierCurve.js(80,2): error TS2416: Property 'getPoint' in type 'QuadraticBezierCurve' is not assignable to the same property in base type 'Curve'.
+  Type '(t: number, optionalTarget?: Vector2 | undefined) => Vector2' is not assignable to type '() => Vector2 | Vector3 | null'.
+    Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/curves/QuadraticBezierCurve.js(95,2): error TS2416: Property 'copy' in type 'QuadraticBezierCurve' is not assignable to the same property in base type 'Curve'.
+  Type '(source: any) => this' is not assignable to type '(source: Curve) => Curve'.
+    Type 'this' is not assignable to type 'Curve'.
+      Type 'QuadraticBezierCurve' is not assignable to type 'Curve'.
+        Types of property 'getPoint' are incompatible.
+          Type '(t: number, optionalTarget?: Vector2 | undefined) => Vector2' is not assignable to type '() => Vector2 | Vector3 | null'.
+            Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/curves/QuadraticBezierCurve.js(95,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
+src/extras/curves/QuadraticBezierCurve.js(111,8): error TS2339: Property 'v0' does not exist on type 'Object'.
+src/extras/curves/QuadraticBezierCurve.js(112,8): error TS2339: Property 'v1' does not exist on type 'Object'.
+src/extras/curves/QuadraticBezierCurve.js(113,8): error TS2339: Property 'v2' does not exist on type 'Object'.
+src/extras/curves/QuadraticBezierCurve.js(119,2): error TS2416: Property 'fromJSON' in type 'QuadraticBezierCurve' is not assignable to the same property in base type 'Curve'.
+  Type '(json: any) => this' is not assignable to type '(json: Object) => Curve'.
+    Type 'this' is not assignable to type 'Curve'.
+      Type 'QuadraticBezierCurve' is not assignable to type 'Curve'.
+        Types of property 'getPoint' are incompatible.
+          Type '(t: number, optionalTarget?: Vector2 | undefined) => Vector2' is not assignable to type '() => Vector2 | Vector3 | null'.
+            Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/curves/QuadraticBezierCurve.js(119,12): error TS7006: Parameter 'json' implicitly has an 'any' type.
+src/extras/curves/QuadraticBezierCurve3.js(64,2): error TS2416: Property 'getPoint' in type 'QuadraticBezierCurve3' is not assignable to the same property in base type 'Curve'.
+  Type '(t: number, optionalTarget?: Vector3 | undefined) => Vector3' is not assignable to type '() => Vector2 | Vector3 | null'.
+    Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/curves/QuadraticBezierCurve3.js(80,2): error TS2416: Property 'copy' in type 'QuadraticBezierCurve3' is not assignable to the same property in base type 'Curve'.
+  Type '(source: any) => this' is not assignable to type '(source: Curve) => Curve'.
+    Type 'this' is not assignable to type 'Curve'.
+      Type 'QuadraticBezierCurve3' is not assignable to type 'Curve'.
+        Types of property 'getPoint' are incompatible.
+          Type '(t: number, optionalTarget?: Vector3 | undefined) => Vector3' is not assignable to type '() => Vector2 | Vector3 | null'.
+            Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/curves/QuadraticBezierCurve3.js(80,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
+src/extras/curves/QuadraticBezierCurve3.js(96,8): error TS2339: Property 'v0' does not exist on type 'Object'.
+src/extras/curves/QuadraticBezierCurve3.js(97,8): error TS2339: Property 'v1' does not exist on type 'Object'.
+src/extras/curves/QuadraticBezierCurve3.js(98,8): error TS2339: Property 'v2' does not exist on type 'Object'.
+src/extras/curves/QuadraticBezierCurve3.js(104,2): error TS2416: Property 'fromJSON' in type 'QuadraticBezierCurve3' is not assignable to the same property in base type 'Curve'.
+  Type '(json: any) => this' is not assignable to type '(json: Object) => Curve'.
+    Type 'this' is not assignable to type 'Curve'.
+      Type 'QuadraticBezierCurve3' is not assignable to type 'Curve'.
+        Types of property 'getPoint' are incompatible.
+          Type '(t: number, optionalTarget?: Vector3 | undefined) => Vector3' is not assignable to type '() => Vector2 | Vector3 | null'.
+            Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/curves/QuadraticBezierCurve3.js(104,12): error TS7006: Parameter 'json' implicitly has an 'any' type.
+src/extras/curves/SplineCurve.js(67,2): error TS2416: Property 'getPoint' in type 'SplineCurve' is not assignable to the same property in base type 'Curve'.
+  Type '(t: number, optionalTarget?: Vector2 | undefined) => Vector2' is not assignable to type '() => Vector2 | Vector3 | null'.
+    Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/curves/SplineCurve.js(91,2): error TS2416: Property 'copy' in type 'SplineCurve' is not assignable to the same property in base type 'Curve'.
+  Type '(source: any) => this' is not assignable to type '(source: Curve) => Curve'.
+    Type 'this' is not assignable to type 'Curve'.
+      Type 'SplineCurve' is not assignable to type 'Curve'.
+        Types of property 'getPoint' are incompatible.
+          Type '(t: number, optionalTarget?: Vector2 | undefined) => Vector2' is not assignable to type '() => Vector2 | Vector3 | null'.
+            Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/curves/SplineCurve.js(91,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
+src/extras/curves/SplineCurve.js(113,8): error TS2339: Property 'points' does not exist on type 'Object'.
+src/extras/curves/SplineCurve.js(118,9): error TS2339: Property 'points' does not exist on type 'Object'.
+src/extras/curves/SplineCurve.js(126,2): error TS2416: Property 'fromJSON' in type 'SplineCurve' is not assignable to the same property in base type 'Curve'.
+  Type '(json: any) => this' is not assignable to type '(json: Object) => Curve'.
+    Type 'this' is not assignable to type 'Curve'.
+      Type 'SplineCurve' is not assignable to type 'Curve'.
+        Types of property 'getPoint' are incompatible.
+          Type '(t: number, optionalTarget?: Vector2 | undefined) => Vector2' is not assignable to type '() => Vector2 | Vector3 | null'.
+            Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/extras/curves/SplineCurve.js(126,12): error TS7006: Parameter 'json' implicitly has an 'any' type.
+src/extras/Earcut.js(23,9): error TS7034: Variable 'triangles' implicitly has type 'any[]' in some locations where its type cannot be determined.
+src/extras/Earcut.js(25,66): error TS7005: Variable 'triangles' implicitly has an 'any[]' type.
+src/extras/Earcut.js(54,28): error TS7005: Variable 'triangles' implicitly has an 'any[]' type.
+src/extras/Earcut.js(56,10): error TS7005: Variable 'triangles' implicitly has an 'any[]' type.
+src/extras/Earcut.js(63,22): error TS7006: Parameter 'data' implicitly has an 'any' type.
+src/extras/Earcut.js(63,28): error TS7006: Parameter 'start' implicitly has an 'any' type.
+src/extras/Earcut.js(63,35): error TS7006: Parameter 'end' implicitly has an 'any' type.
+src/extras/Earcut.js(63,40): error TS7006: Parameter 'dim' implicitly has an 'any' type.
+src/extras/Earcut.js(63,45): error TS7006: Parameter 'clockwise' implicitly has an 'any' type.
+src/extras/Earcut.js(89,24): error TS7006: Parameter 'start' implicitly has an 'any' type.
+src/extras/Earcut.js(89,31): error TS7006: Parameter 'end' implicitly has an 'any' type.
+src/extras/Earcut.js(120,24): error TS7006: Parameter 'ear' implicitly has an 'any' type.
+src/extras/Earcut.js(120,29): error TS7006: Parameter 'triangles' implicitly has an 'any' type.
+src/extras/Earcut.js(120,40): error TS7006: Parameter 'dim' implicitly has an 'any' type.
+src/extras/Earcut.js(120,45): error TS7006: Parameter 'minX' implicitly has an 'any' type.
+src/extras/Earcut.js(120,51): error TS7006: Parameter 'minY' implicitly has an 'any' type.
+src/extras/Earcut.js(120,57): error TS7006: Parameter 'invSize' implicitly has an 'any' type.
+src/extras/Earcut.js(120,66): error TS7006: Parameter 'pass' implicitly has an 'any' type.
+src/extras/Earcut.js(187,17): error TS7006: Parameter 'ear' implicitly has an 'any' type.
+src/extras/Earcut.js(218,23): error TS7006: Parameter 'ear' implicitly has an 'any' type.
+src/extras/Earcut.js(218,28): error TS7006: Parameter 'minX' implicitly has an 'any' type.
+src/extras/Earcut.js(218,34): error TS7006: Parameter 'minY' implicitly has an 'any' type.
+src/extras/Earcut.js(218,40): error TS7006: Parameter 'invSize' implicitly has an 'any' type.
+src/extras/Earcut.js(277,34): error TS7006: Parameter 'start' implicitly has an 'any' type.
+src/extras/Earcut.js(277,41): error TS7006: Parameter 'triangles' implicitly has an 'any' type.
+src/extras/Earcut.js(277,52): error TS7006: Parameter 'dim' implicitly has an 'any' type.
+src/extras/Earcut.js(308,23): error TS7006: Parameter 'start' implicitly has an 'any' type.
+src/extras/Earcut.js(308,30): error TS7006: Parameter 'triangles' implicitly has an 'any' type.
+src/extras/Earcut.js(308,41): error TS7006: Parameter 'dim' implicitly has an 'any' type.
+src/extras/Earcut.js(308,46): error TS7006: Parameter 'minX' implicitly has an 'any' type.
+src/extras/Earcut.js(308,52): error TS7006: Parameter 'minY' implicitly has an 'any' type.
+src/extras/Earcut.js(308,58): error TS7006: Parameter 'invSize' implicitly has an 'any' type.
+src/extras/Earcut.js(344,26): error TS7006: Parameter 'data' implicitly has an 'any' type.
+src/extras/Earcut.js(344,32): error TS7006: Parameter 'holeIndices' implicitly has an 'any' type.
+src/extras/Earcut.js(344,45): error TS7006: Parameter 'outerNode' implicitly has an 'any' type.
+src/extras/Earcut.js(344,56): error TS7006: Parameter 'dim' implicitly has an 'any' type.
+src/extras/Earcut.js(372,20): error TS7006: Parameter 'a' implicitly has an 'any' type.
+src/extras/Earcut.js(372,23): error TS7006: Parameter 'b' implicitly has an 'any' type.
+src/extras/Earcut.js(379,25): error TS7006: Parameter 'hole' implicitly has an 'any' type.
+src/extras/Earcut.js(379,31): error TS7006: Parameter 'outerNode' implicitly has an 'any' type.
+src/extras/Earcut.js(397,26): error TS7006: Parameter 'hole' implicitly has an 'any' type.
+src/extras/Earcut.js(397,32): error TS7006: Parameter 'outerNode' implicitly has an 'any' type.
+src/extras/Earcut.js(464,32): error TS7006: Parameter 'm' implicitly has an 'any' type.
+src/extras/Earcut.js(464,35): error TS7006: Parameter 'p' implicitly has an 'any' type.
+src/extras/Earcut.js(471,22): error TS7006: Parameter 'start' implicitly has an 'any' type.
+src/extras/Earcut.js(471,29): error TS7006: Parameter 'minX' implicitly has an 'any' type.
+src/extras/Earcut.js(471,35): error TS7006: Parameter 'minY' implicitly has an 'any' type.
+src/extras/Earcut.js(471,41): error TS7006: Parameter 'invSize' implicitly has an 'any' type.
+src/extras/Earcut.js(492,22): error TS7006: Parameter 'list' implicitly has an 'any' type.
+src/extras/Earcut.js(557,18): error TS7006: Parameter 'x' implicitly has an 'any' type.
+src/extras/Earcut.js(557,21): error TS7006: Parameter 'y' implicitly has an 'any' type.
+src/extras/Earcut.js(557,24): error TS7006: Parameter 'minX' implicitly has an 'any' type.
+src/extras/Earcut.js(557,30): error TS7006: Parameter 'minY' implicitly has an 'any' type.
+src/extras/Earcut.js(557,36): error TS7006: Parameter 'invSize' implicitly has an 'any' type.
+src/extras/Earcut.js(578,23): error TS7006: Parameter 'start' implicitly has an 'any' type.
+src/extras/Earcut.js(594,27): error TS7006: Parameter 'ax' implicitly has an 'any' type.
+src/extras/Earcut.js(594,31): error TS7006: Parameter 'ay' implicitly has an 'any' type.
+src/extras/Earcut.js(594,35): error TS7006: Parameter 'bx' implicitly has an 'any' type.
+src/extras/Earcut.js(594,39): error TS7006: Parameter 'by' implicitly has an 'any' type.
+src/extras/Earcut.js(594,43): error TS7006: Parameter 'cx' implicitly has an 'any' type.
+src/extras/Earcut.js(594,47): error TS7006: Parameter 'cy' implicitly has an 'any' type.
+src/extras/Earcut.js(594,51): error TS7006: Parameter 'px' implicitly has an 'any' type.
+src/extras/Earcut.js(594,55): error TS7006: Parameter 'py' implicitly has an 'any' type.
+src/extras/Earcut.js(603,27): error TS7006: Parameter 'a' implicitly has an 'any' type.
+src/extras/Earcut.js(603,30): error TS7006: Parameter 'b' implicitly has an 'any' type.
+src/extras/Earcut.js(613,16): error TS7006: Parameter 'p' implicitly has an 'any' type.
+src/extras/Earcut.js(613,19): error TS7006: Parameter 'q' implicitly has an 'any' type.
+src/extras/Earcut.js(613,22): error TS7006: Parameter 'r' implicitly has an 'any' type.
+src/extras/Earcut.js(620,18): error TS7006: Parameter 'p1' implicitly has an 'any' type.
+src/extras/Earcut.js(620,22): error TS7006: Parameter 'p2' implicitly has an 'any' type.
+src/extras/Earcut.js(627,22): error TS7006: Parameter 'p1' implicitly has an 'any' type.
+src/extras/Earcut.js(627,26): error TS7006: Parameter 'q1' implicitly has an 'any' type.
+src/extras/Earcut.js(627,30): error TS7006: Parameter 'p2' implicitly has an 'any' type.
+src/extras/Earcut.js(627,34): error TS7006: Parameter 'q2' implicitly has an 'any' type.
+src/extras/Earcut.js(646,21): error TS7006: Parameter 'p' implicitly has an 'any' type.
+src/extras/Earcut.js(646,24): error TS7006: Parameter 'q' implicitly has an 'any' type.
+src/extras/Earcut.js(646,27): error TS7006: Parameter 'r' implicitly has an 'any' type.
+src/extras/Earcut.js(652,16): error TS7006: Parameter 'num' implicitly has an 'any' type.
+src/extras/Earcut.js(659,29): error TS7006: Parameter 'a' implicitly has an 'any' type.
+src/extras/Earcut.js(659,32): error TS7006: Parameter 'b' implicitly has an 'any' type.
+src/extras/Earcut.js(675,25): error TS7006: Parameter 'a' implicitly has an 'any' type.
+src/extras/Earcut.js(675,28): error TS7006: Parameter 'b' implicitly has an 'any' type.
+src/extras/Earcut.js(684,24): error TS7006: Parameter 'a' implicitly has an 'any' type.
+src/extras/Earcut.js(684,27): error TS7006: Parameter 'b' implicitly has an 'any' type.
+src/extras/Earcut.js(705,24): error TS7006: Parameter 'a' implicitly has an 'any' type.
+src/extras/Earcut.js(705,27): error TS7006: Parameter 'b' implicitly has an 'any' type.
+src/extras/Earcut.js(729,22): error TS7006: Parameter 'i' implicitly has an 'any' type.
+src/extras/Earcut.js(729,25): error TS7006: Parameter 'x' implicitly has an 'any' type.
+src/extras/Earcut.js(729,28): error TS7006: Parameter 'y' implicitly has an 'any' type.
+src/extras/Earcut.js(729,31): error TS7006: Parameter 'last' implicitly has an 'any' type.
+src/extras/Earcut.js(751,22): error TS7006: Parameter 'p' implicitly has an 'any' type.
+src/extras/Earcut.js(761,16): error TS7006: Parameter 'i' implicitly has an 'any' type.
+src/extras/Earcut.js(761,19): error TS7006: Parameter 'x' implicitly has an 'any' type.
+src/extras/Earcut.js(761,22): error TS7006: Parameter 'y' implicitly has an 'any' type.
+src/extras/Earcut.js(771,2): error TS7008: Member 'prev' implicitly has an 'any' type.
+src/extras/Earcut.js(772,2): error TS7008: Member 'next' implicitly has an 'any' type.
+src/extras/Earcut.js(778,2): error TS7008: Member 'prevZ' implicitly has an 'any' type.
+src/extras/Earcut.js(779,2): error TS7008: Member 'nextZ' implicitly has an 'any' type.
+src/extras/Earcut.js(786,22): error TS7006: Parameter 'data' implicitly has an 'any' type.
+src/extras/Earcut.js(786,28): error TS7006: Parameter 'start' implicitly has an 'any' type.
+src/extras/Earcut.js(786,35): error TS7006: Parameter 'end' implicitly has an 'any' type.
+src/extras/Earcut.js(786,40): error TS7006: Parameter 'dim' implicitly has an 'any' type.
 src/extras/ImageUtils.js(4,5): error TS7034: Variable '_canvas' implicitly has type 'any' in some locations where its type cannot be determined.
-src/extras/ImageUtils.js(8,21): error TS7006: Parameter 'image' implicitly has an 'any' type.
-src/extras/ImageUtils.js(16,15): error TS2304: Cannot find name 'HTMLCanvasElement'.
-src/extras/ImageUtils.js(24,25): error TS2304: Cannot find name 'HTMLCanvasElement'.
-src/extras/ImageUtils.js(30,9): error TS7005: Variable '_canvas' implicitly has an 'any' type.
-src/extras/ImageUtils.js(32,4): error TS7005: Variable '_canvas' implicitly has an 'any' type.
-src/extras/ImageUtils.js(33,4): error TS7005: Variable '_canvas' implicitly has an 'any' type.
-src/extras/ImageUtils.js(35,20): error TS7005: Variable '_canvas' implicitly has an 'any' type.
-src/extras/ImageUtils.js(37,26): error TS2304: Cannot find name 'ImageData'.
-src/extras/ImageUtils.js(47,13): error TS7005: Variable '_canvas' implicitly has an 'any' type.
-src/extras/ImageUtils.js(55,23): error TS7006: Parameter 'image' implicitly has an 'any' type.
-src/extras/ImageUtils.js(57,17): error TS2304: Cannot find name 'HTMLImageElement'.
-src/extras/ImageUtils.js(57,70): error TS2304: Cannot find name 'HTMLImageElement'.
-src/extras/ImageUtils.js(58,13): error TS2304: Cannot find name 'HTMLCanvasElement'.
-src/extras/ImageUtils.js(58,67): error TS2304: Cannot find name 'HTMLCanvasElement'.
-src/extras/ImageUtils.js(59,13): error TS2304: Cannot find name 'ImageBitmap'.
-src/extras/ImageUtils.js(59,61): error TS2304: Cannot find name 'ImageBitmap'.
+src/extras/ImageUtils.js(16,14): error TS2304: Cannot find name 'HTMLImageElement'.
+src/extras/ImageUtils.js(16,31): error TS2304: Cannot find name 'HTMLCanvasElement'.
+src/extras/ImageUtils.js(27,15): error TS2304: Cannot find name 'HTMLCanvasElement'.
+src/extras/ImageUtils.js(35,25): error TS2304: Cannot find name 'HTMLCanvasElement'.
+src/extras/ImageUtils.js(41,9): error TS7005: Variable '_canvas' implicitly has an 'any' type.
+src/extras/ImageUtils.js(43,4): error TS7005: Variable '_canvas' implicitly has an 'any' type.
+src/extras/ImageUtils.js(44,4): error TS7005: Variable '_canvas' implicitly has an 'any' type.
+src/extras/ImageUtils.js(46,20): error TS7005: Variable '_canvas' implicitly has an 'any' type.
+src/extras/ImageUtils.js(48,26): error TS2304: Cannot find name 'ImageData'.
+src/extras/ImageUtils.js(58,13): error TS7005: Variable '_canvas' implicitly has an 'any' type.
+src/extras/ImageUtils.js(69,14): error TS2304: Cannot find name 'HTMLImageElement'.
+src/extras/ImageUtils.js(69,31): error TS2304: Cannot find name 'HTMLCanvasElement'.
+src/extras/ImageUtils.js(69,49): error TS2304: Cannot find name 'ImageBitmap'.
+src/extras/ImageUtils.js(70,14): error TS2304: Cannot find name 'HTMLCanvasElement'.
+src/extras/ImageUtils.js(74,17): error TS2304: Cannot find name 'HTMLImageElement'.
+src/extras/ImageUtils.js(74,70): error TS2304: Cannot find name 'HTMLImageElement'.
+src/extras/ImageUtils.js(75,13): error TS2304: Cannot find name 'HTMLCanvasElement'.
+src/extras/ImageUtils.js(75,67): error TS2304: Cannot find name 'HTMLCanvasElement'.
+src/extras/ImageUtils.js(76,13): error TS2304: Cannot find name 'ImageBitmap'.
+src/extras/ImageUtils.js(76,61): error TS2304: Cannot find name 'ImageBitmap'.
 src/extras/PMREMGenerator.js(40,5): error TS7034: Variable '_oldTarget' implicitly has type 'any' in some locations where its type cannot be determined.
 src/extras/PMREMGenerator.js(82,15): error TS7006: Parameter 'renderer' implicitly has an 'any' type.
 src/extras/PMREMGenerator.js(85,3): error TS7022: '_pingPongRenderTarget' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
@@ -27034,23 +27163,30 @@ src/extras/PMREMGenerator.js(702,45): error TS7006: Parameter 'height' implicitl
 src/extras/PMREMGenerator.js(709,26): error TS7006: Parameter 'lodMax' implicitly has an 'any' type.
 src/extras/PMREMGenerator.js(709,34): error TS7006: Parameter 'width' implicitly has an 'any' type.
 src/extras/PMREMGenerator.js(709,41): error TS7006: Parameter 'height' implicitly has an 'any' type.
-src/extras/ShapeUtils.js(7,15): error TS7006: Parameter 'contour' implicitly has an 'any' type.
-src/extras/ShapeUtils.js(22,22): error TS7006: Parameter 'pts' implicitly has an 'any' type.
-src/extras/ShapeUtils.js(28,27): error TS7006: Parameter 'contour' implicitly has an 'any' type.
-src/extras/ShapeUtils.js(28,36): error TS7006: Parameter 'holes' implicitly has an 'any' type.
-src/extras/ShapeUtils.js(30,9): error TS7034: Variable 'vertices' implicitly has type 'any[]' in some locations where its type cannot be determined.
-src/extras/ShapeUtils.js(35,15): error TS7005: Variable 'vertices' implicitly has an 'any[]' type.
-src/extras/ShapeUtils.js(47,16): error TS7005: Variable 'vertices' implicitly has an 'any[]' type.
-src/extras/ShapeUtils.js(53,41): error TS7005: Variable 'vertices' implicitly has an 'any[]' type.
-src/extras/ShapeUtils.js(69,27): error TS7006: Parameter 'points' implicitly has an 'any' type.
-src/extras/ShapeUtils.js(81,22): error TS7006: Parameter 'vertices' implicitly has an 'any' type.
-src/extras/ShapeUtils.js(81,32): error TS7006: Parameter 'contour' implicitly has an 'any' type.
-src/extras/TextureUtils.js(3,19): error TS7006: Parameter 'texture' implicitly has an 'any' type.
-src/extras/TextureUtils.js(3,28): error TS7006: Parameter 'aspect' implicitly has an 'any' type.
-src/extras/TextureUtils.js(29,17): error TS7006: Parameter 'texture' implicitly has an 'any' type.
-src/extras/TextureUtils.js(29,26): error TS7006: Parameter 'aspect' implicitly has an 'any' type.
-src/extras/TextureUtils.js(55,16): error TS7006: Parameter 'texture' implicitly has an 'any' type.
-src/extras/TextureUtils.js(182,36): error TS7006: Parameter 'type' implicitly has an 'any' type.
+src/extras/ShapeUtils.js(13,19): error TS2304: Cannot find name 'Vector2'.
+src/extras/ShapeUtils.js(34,19): error TS2304: Cannot find name 'Vector2'.
+src/extras/ShapeUtils.js(46,19): error TS2304: Cannot find name 'Vector2'.
+src/extras/ShapeUtils.js(47,25): error TS2304: Cannot find name 'Vector2'.
+src/extras/ShapeUtils.js(52,9): error TS7034: Variable 'vertices' implicitly has type 'any[]' in some locations where its type cannot be determined.
+src/extras/ShapeUtils.js(57,15): error TS7005: Variable 'vertices' implicitly has an 'any[]' type.
+src/extras/ShapeUtils.js(69,16): error TS7005: Variable 'vertices' implicitly has an 'any[]' type.
+src/extras/ShapeUtils.js(75,41): error TS7005: Variable 'vertices' implicitly has an 'any[]' type.
+src/extras/ShapeUtils.js(91,27): error TS7006: Parameter 'points' implicitly has an 'any' type.
+src/extras/ShapeUtils.js(103,22): error TS7006: Parameter 'vertices' implicitly has an 'any' type.
+src/extras/ShapeUtils.js(103,32): error TS7006: Parameter 'contour' implicitly has an 'any' type.
+src/extras/TextureUtils.js(8,12): error TS2304: Cannot find name 'Texture'.
+src/extras/TextureUtils.js(10,13): error TS2304: Cannot find name 'Texture'.
+src/extras/TextureUtils.js(43,12): error TS2304: Cannot find name 'Texture'.
+src/extras/TextureUtils.js(45,13): error TS2304: Cannot find name 'Texture'.
+src/extras/TextureUtils.js(76,12): error TS2304: Cannot find name 'Texture'.
+src/extras/TextureUtils.js(77,13): error TS2304: Cannot find name 'Texture'.
+src/extras/TextureUtils.js(203,36): error TS7006: Parameter 'type' implicitly has an 'any' type.
+src/extras/TextureUtils.js(242,13): error TS2304: Cannot find name 'Texture'.
+src/extras/TextureUtils.js(244,14): error TS2304: Cannot find name 'Texture'.
+src/extras/TextureUtils.js(257,13): error TS2304: Cannot find name 'Texture'.
+src/extras/TextureUtils.js(259,14): error TS2304: Cannot find name 'Texture'.
+src/extras/TextureUtils.js(270,13): error TS2304: Cannot find name 'Texture'.
+src/extras/TextureUtils.js(271,14): error TS2304: Cannot find name 'Texture'.
 src/geometries/BoxGeometry.js(32,9): error TS7034: Variable 'indices' implicitly has type 'any[]' in some locations where its type cannot be determined.
 src/geometries/BoxGeometry.js(33,9): error TS7034: Variable 'vertices' implicitly has type 'any[]' in some locations where its type cannot be determined.
 src/geometries/BoxGeometry.js(34,9): error TS7034: Variable 'normals' implicitly has type 'any[]' in some locations where its type cannot be determined.
@@ -27081,6 +27217,9 @@ src/geometries/BoxGeometry.js(172,19): error TS7006: Parameter 'data' implicitly
 src/geometries/CapsuleGeometry.js(4,7): error TS2415: Class 'CapsuleGeometry' incorrectly extends base class 'LatheGeometry'.
   Types of property 'parameters' are incompatible.
     Type '{ radius: number; length: number; capSegments: number; radialSegments: number; }' is missing the following properties from type '{ points: Vector2[]; segments: number; phiStart: number; phiLength: number; }': points, segments, phiStart, phiLength
+src/geometries/CapsuleGeometry.js(12,10): error TS2345: Argument of type '(Vector2 | Vector3)[]' is not assignable to parameter of type 'Vector2[]'.
+  Type 'Vector2 | Vector3' is not assignable to type 'Vector2'.
+    Type 'Vector3' is missing the following properties from type 'Vector2': width, height, angle, rotateAround
 src/geometries/CapsuleGeometry.js(25,19): error TS7006: Parameter 'data' implicitly has an 'any' type.
 src/geometries/CircleGeometry.js(82,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
 src/geometries/CircleGeometry.js(92,19): error TS7006: Parameter 'data' implicitly has an 'any' type.
@@ -33757,79 +33896,79 @@ src/renderers/common/CubeRenderTarget.js(61,36): error TS2345: Argument of type 
 src/renderers/common/DataMap.js(18,13): error TS2314: Generic type 'WeakMap<K, V>' requires 2 type argument(s).
 src/renderers/common/extras/PMREMGenerator.js(49,5): error TS7034: Variable '_oldTarget' implicitly has type 'any' in some locations where its type cannot be determined.
 src/renderers/common/extras/PMREMGenerator.js(84,54): error TS2554: Expected 2 arguments, but got 1.
-src/renderers/common/extras/PMREMGenerator.js(104,15): error TS7006: Parameter 'renderer' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(107,3): error TS7022: '_pingPongRenderTarget' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-src/renderers/common/extras/PMREMGenerator.js(111,3): error TS7008: Member '_lodPlanes' implicitly has an 'any[]' type.
-src/renderers/common/extras/PMREMGenerator.js(112,3): error TS7008: Member '_sizeLods' implicitly has an 'any[]' type.
-src/renderers/common/extras/PMREMGenerator.js(113,3): error TS7008: Member '_sigmas' implicitly has an 'any[]' type.
-src/renderers/common/extras/PMREMGenerator.js(114,3): error TS7008: Member '_lodMeshes' implicitly has an 'any[]' type.
-src/renderers/common/extras/PMREMGenerator.js(119,3): error TS7008: Member '_backgroundBox' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(135,13): error TS2304: Cannot find name 'Scene'.
-src/renderers/common/extras/PMREMGenerator.js(150,4): error TS2339: Property 'position' does not exist on type '{ size?: number | undefined; renderTarget?: Vector3 | undefined; }'.
-src/renderers/common/extras/PMREMGenerator.js(162,4): error TS2322: Type 'RenderTarget | Vector3' is not assignable to type 'Vector3 | undefined'.
+src/renderers/common/extras/PMREMGenerator.js(103,15): error TS7006: Parameter 'renderer' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(106,3): error TS7022: '_pingPongRenderTarget' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
+src/renderers/common/extras/PMREMGenerator.js(110,3): error TS7008: Member '_lodPlanes' implicitly has an 'any[]' type.
+src/renderers/common/extras/PMREMGenerator.js(111,3): error TS7008: Member '_sizeLods' implicitly has an 'any[]' type.
+src/renderers/common/extras/PMREMGenerator.js(112,3): error TS7008: Member '_sigmas' implicitly has an 'any[]' type.
+src/renderers/common/extras/PMREMGenerator.js(113,3): error TS7008: Member '_lodMeshes' implicitly has an 'any[]' type.
+src/renderers/common/extras/PMREMGenerator.js(118,3): error TS7008: Member '_backgroundBox' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(134,13): error TS2304: Cannot find name 'Scene'.
+src/renderers/common/extras/PMREMGenerator.js(149,4): error TS2339: Property 'position' does not exist on type '{ size?: number | undefined; renderTarget?: Vector3 | undefined; }'.
+src/renderers/common/extras/PMREMGenerator.js(161,4): error TS2322: Type 'RenderTarget | Vector3' is not assignable to type 'Vector3 | undefined'.
   Type 'RenderTarget' is missing the following properties from type 'Vector3': x, y, z, set, and 71 more.
-src/renderers/common/extras/PMREMGenerator.js(166,4): error TS2322: Type 'RenderTarget | Vector3' is not assignable to type 'RenderTarget'.
+src/renderers/common/extras/PMREMGenerator.js(165,4): error TS2322: Type 'RenderTarget | Vector3' is not assignable to type 'RenderTarget'.
   Type 'Vector3' is missing the following properties from type 'RenderTarget': isRenderTarget, width, height, depth, and 19 more.
-src/renderers/common/extras/PMREMGenerator.js(175,22): error TS2339: Property 'depthBuffer' does not exist on type 'RenderTarget | Vector3'.
+src/renderers/common/extras/PMREMGenerator.js(174,22): error TS2339: Property 'depthBuffer' does not exist on type 'RenderTarget | Vector3'.
   Property 'depthBuffer' does not exist on type 'Vector3'.
-src/renderers/common/extras/PMREMGenerator.js(181,16): error TS2345: Argument of type 'RenderTarget | Vector3' is not assignable to parameter of type 'RenderTarget'.
+src/renderers/common/extras/PMREMGenerator.js(180,16): error TS2345: Argument of type 'RenderTarget | Vector3' is not assignable to parameter of type 'RenderTarget'.
   Type 'Vector3' is missing the following properties from type 'RenderTarget': isRenderTarget, width, height, depth, and 19 more.
-src/renderers/common/extras/PMREMGenerator.js(189,3): error TS2322: Type 'RenderTarget | Vector3' is not assignable to type 'RenderTarget'.
+src/renderers/common/extras/PMREMGenerator.js(188,3): error TS2322: Type 'RenderTarget | Vector3' is not assignable to type 'RenderTarget'.
   Type 'Vector3' is missing the following properties from type 'RenderTarget': isRenderTarget, width, height, depth, and 19 more.
-src/renderers/common/extras/PMREMGenerator.js(200,13): error TS2304: Cannot find name 'Scene'.
-src/renderers/common/extras/PMREMGenerator.js(224,13): error TS2304: Cannot find name 'Texture'.
-src/renderers/common/extras/PMREMGenerator.js(254,13): error TS2304: Cannot find name 'Texture'.
-src/renderers/common/extras/PMREMGenerator.js(272,13): error TS2304: Cannot find name 'Texture'.
-src/renderers/common/extras/PMREMGenerator.js(302,13): error TS2304: Cannot find name 'Texture'.
-src/renderers/common/extras/PMREMGenerator.js(319,15): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/common/extras/PMREMGenerator.js(336,15): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/common/extras/PMREMGenerator.js(371,23): error TS7006: Parameter 'texture' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(385,12): error TS7006: Parameter 'cubeSize' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(406,12): error TS7006: Parameter 'outputTarget' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(408,35): error TS7005: Variable '_oldTarget' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(414,16): error TS7006: Parameter 'texture' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(414,25): error TS7006: Parameter 'renderTarget' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(469,26): error TS7006: Parameter 'material' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(476,18): error TS7006: Parameter 'scene' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(476,25): error TS7006: Parameter 'near' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(476,31): error TS7006: Parameter 'far' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(476,36): error TS7006: Parameter 'cubeUVRenderTarget' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(476,56): error TS7006: Parameter 'position' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(546,16): error TS2339: Property 'position' does not exist on type 'PerspectiveCamera'.
-src/renderers/common/extras/PMREMGenerator.js(552,16): error TS2339: Property 'position' does not exist on type 'PerspectiveCamera'.
-src/renderers/common/extras/PMREMGenerator.js(559,16): error TS2339: Property 'position' does not exist on type 'PerspectiveCamera'.
-src/renderers/common/extras/PMREMGenerator.js(578,20): error TS7006: Parameter 'texture' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(578,29): error TS7006: Parameter 'cubeUVRenderTarget' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(603,3): error TS18047: 'material' is possibly 'null'.
-src/renderers/common/extras/PMREMGenerator.js(617,15): error TS7006: Parameter 'cubeUVRenderTarget' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(675,13): error TS7006: Parameter 'targetIn' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(675,23): error TS7006: Parameter 'targetOut' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(675,34): error TS7006: Parameter 'lodIn' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(675,41): error TS7006: Parameter 'lodOut' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(675,49): error TS7006: Parameter 'sigmaRadians' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(675,63): error TS7006: Parameter 'direction' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(675,74): error TS7006: Parameter 'poleAxis' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(692,42): error TS2345: Argument of type 'NodeMaterial | null' is not assignable to parameter of type 'WeakKey'.
+src/renderers/common/extras/PMREMGenerator.js(199,13): error TS2304: Cannot find name 'Scene'.
+src/renderers/common/extras/PMREMGenerator.js(223,13): error TS2304: Cannot find name 'Texture'.
+src/renderers/common/extras/PMREMGenerator.js(253,13): error TS2304: Cannot find name 'Texture'.
+src/renderers/common/extras/PMREMGenerator.js(271,13): error TS2304: Cannot find name 'Texture'.
+src/renderers/common/extras/PMREMGenerator.js(301,13): error TS2304: Cannot find name 'Texture'.
+src/renderers/common/extras/PMREMGenerator.js(318,15): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/common/extras/PMREMGenerator.js(335,15): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/common/extras/PMREMGenerator.js(370,23): error TS7006: Parameter 'texture' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(384,12): error TS7006: Parameter 'cubeSize' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(405,12): error TS7006: Parameter 'outputTarget' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(407,35): error TS7005: Variable '_oldTarget' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(413,16): error TS7006: Parameter 'texture' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(413,25): error TS7006: Parameter 'renderTarget' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(468,26): error TS7006: Parameter 'material' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(475,18): error TS7006: Parameter 'scene' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(475,25): error TS7006: Parameter 'near' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(475,31): error TS7006: Parameter 'far' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(475,36): error TS7006: Parameter 'cubeUVRenderTarget' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(475,56): error TS7006: Parameter 'position' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(545,16): error TS2339: Property 'position' does not exist on type 'PerspectiveCamera'.
+src/renderers/common/extras/PMREMGenerator.js(551,16): error TS2339: Property 'position' does not exist on type 'PerspectiveCamera'.
+src/renderers/common/extras/PMREMGenerator.js(558,16): error TS2339: Property 'position' does not exist on type 'PerspectiveCamera'.
+src/renderers/common/extras/PMREMGenerator.js(577,20): error TS7006: Parameter 'texture' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(577,29): error TS7006: Parameter 'cubeUVRenderTarget' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(602,3): error TS18047: 'material' is possibly 'null'.
+src/renderers/common/extras/PMREMGenerator.js(616,15): error TS7006: Parameter 'cubeUVRenderTarget' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(674,13): error TS7006: Parameter 'targetIn' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(674,23): error TS7006: Parameter 'targetOut' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(674,34): error TS7006: Parameter 'lodIn' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(674,41): error TS7006: Parameter 'lodOut' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(674,49): error TS7006: Parameter 'sigmaRadians' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(674,63): error TS7006: Parameter 'direction' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(674,74): error TS7006: Parameter 'poleAxis' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(691,42): error TS2345: Argument of type 'NodeMaterial | null' is not assignable to parameter of type 'WeakKey'.
   Type 'null' is not assignable to type 'WeakKey'.
-src/renderers/common/extras/PMREMGenerator.js(763,25): error TS7006: Parameter 'lodMax' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(833,37): error TS2345: Argument of type 'null' is not assignable to parameter of type 'MeshBasicMaterial | undefined'.
-src/renderers/common/extras/PMREMGenerator.js(847,31): error TS7006: Parameter 'width' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(847,38): error TS7006: Parameter 'height' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(847,46): error TS7006: Parameter 'params' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(852,29): error TS2339: Property 'isPMREMTexture' does not exist on type 'Texture'.
-src/renderers/common/extras/PMREMGenerator.js(858,24): error TS7006: Parameter 'target' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(858,32): error TS7006: Parameter 'x' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(858,35): error TS7006: Parameter 'y' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(858,38): error TS7006: Parameter 'width' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(858,45): error TS7006: Parameter 'height' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(865,24): error TS7006: Parameter 'type' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(877,26): error TS7006: Parameter 'lodMax' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(877,34): error TS7006: Parameter 'width' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(877,41): error TS7006: Parameter 'height' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(879,18): error TS2554: Expected 2 arguments, but got 1.
-src/renderers/common/extras/PMREMGenerator.js(907,80): error TS2339: Property 'equal' does not exist on type 'UniformNode'.
-src/renderers/common/extras/PMREMGenerator.js(915,31): error TS7006: Parameter 'envTexture' implicitly has an 'any' type.
-src/renderers/common/extras/PMREMGenerator.js(924,32): error TS7006: Parameter 'envTexture' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(762,25): error TS7006: Parameter 'lodMax' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(832,37): error TS2345: Argument of type 'null' is not assignable to parameter of type 'MeshBasicMaterial | undefined'.
+src/renderers/common/extras/PMREMGenerator.js(846,31): error TS7006: Parameter 'width' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(846,38): error TS7006: Parameter 'height' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(846,46): error TS7006: Parameter 'params' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(851,29): error TS2339: Property 'isPMREMTexture' does not exist on type 'Texture'.
+src/renderers/common/extras/PMREMGenerator.js(857,24): error TS7006: Parameter 'target' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(857,32): error TS7006: Parameter 'x' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(857,35): error TS7006: Parameter 'y' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(857,38): error TS7006: Parameter 'width' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(857,45): error TS7006: Parameter 'height' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(864,24): error TS7006: Parameter 'type' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(876,26): error TS7006: Parameter 'lodMax' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(876,34): error TS7006: Parameter 'width' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(876,41): error TS7006: Parameter 'height' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(878,18): error TS2554: Expected 2 arguments, but got 1.
+src/renderers/common/extras/PMREMGenerator.js(906,80): error TS2339: Property 'equal' does not exist on type 'UniformNode'.
+src/renderers/common/extras/PMREMGenerator.js(914,31): error TS7006: Parameter 'envTexture' implicitly has an 'any' type.
+src/renderers/common/extras/PMREMGenerator.js(923,32): error TS7006: Parameter 'envTexture' implicitly has an 'any' type.
 src/renderers/common/Geometries.js(12,12): error TS2304: Cannot find name 'BufferGeometry'.
 src/renderers/common/Geometries.js(26,12): error TS2304: Cannot find name 'BufferGeometry'.
 src/renderers/common/Geometries.js(27,13): error TS2304: Cannot find name 'BufferAttribute'.
@@ -38220,6 +38359,8 @@ src/textures/Source.js(16,3): error TS7008: Member 'data' implicitly has an 'any
 src/textures/Source.js(23,6): error TS7032: Property 'needsUpdate' implicitly has type 'any', because its set accessor lacks a parameter type annotation.
 src/textures/Source.js(23,19): error TS7006: Parameter 'value' implicitly has an 'any' type.
 src/textures/Source.js(29,10): error TS7006: Parameter 'meta' implicitly has an 'any' type.
+src/textures/Source.js(78,4): error TS2322: Type 'string | { data: any[]; width: any; height: any; type: any; } | { data?: undefined; width?: undefined; height?: undefined; type?: undefined; } | (string | { data: any[]; width: any; height: any; type: any; } | { ...; })[]' is not assignable to type 'string'.
+  Type '{ data: any[]; width: any; height: any; type: any; }' is not assignable to type 'string'.
 src/textures/Source.js(94,26): error TS7006: Parameter 'image' implicitly has an 'any' type.
 src/textures/Source.js(96,16): error TS2304: Cannot find name 'HTMLImageElement'.
 src/textures/Source.js(96,69): error TS2304: Cannot find name 'HTMLImageElement'.

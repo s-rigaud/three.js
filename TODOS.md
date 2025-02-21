@@ -12,6 +12,9 @@ WebGputexturepassutils _mipmapCreateBundles & _mipmapCreateBundles typing for re
 correct all generic errors ": Generic type "
 Fix eslint for test folder
 Add webgpu node build to .gitignore
+Path.abselipse aRotation should be a number
+Fix type name mistake for position to object passed to fromScene in PMREMGenerator
+Same in fromSceneAsync and probably others
 
 - [ ] Should not be null
 
