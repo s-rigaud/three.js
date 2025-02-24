@@ -3,7 +3,7 @@ import { Object3D } from '../core/Object3D.js';
 /**
  * Represents a non-positional ( global ) audio object.
  *
- * This and related audio module make use of the [Web Audio API]{@link https://www.w3.org/TR/webaudio-1.1/}.
+ * This and related audio modules make use of the [Web Audio API]{@link https://www.w3.org/TR/webaudio-1.1/}.
  *
  * ```js
  * // create an AudioListener and add it to the camera
@@ -308,7 +308,7 @@ class Audio extends Object3D {
 	 * Can only be used with compatible audio sources that allow playback control.
 	 *
 	 * @param {number} [delay=0] - The delay, in seconds, at which the audio should start playing.
-	 * @return {Audio} A reference to this instance.
+	 * @return {Audio|undefined} A reference to this instance.
 	 */
 	play( delay = 0 ) {
 
@@ -352,7 +352,7 @@ class Audio extends Object3D {
 	 *
 	 * Can only be used with compatible audio sources that allow playback control.
 	 *
-	 * @return {Audio} A reference to this instance.
+	 * @return {Audio|undefined} A reference to this instance.
 	 */
 	pause() {
 
@@ -394,7 +394,7 @@ class Audio extends Object3D {
 	 * Can only be used with compatible audio sources that allow playback control.
 	 *
 	 * @param {number} [delay=0] - The delay, in seconds, at which the audio should stop playing.
-	 * @return {Audio} A reference to this instance.
+	 * @return {Audio|undefined} A reference to this instance.
 	 */
 	stop( delay = 0 ) {
 
@@ -456,7 +456,7 @@ class Audio extends Object3D {
 	 * Disconnects to the audio source. This is used internally on
 	 * initialisation and when setting / removing filters.
 	 *
-	 * @return {Audio} A reference to this instance.
+	 * @return {Audio|undefined} A reference to this instance.
 	 */
 	disconnect() {
 
@@ -587,7 +587,7 @@ class Audio extends Object3D {
 	 * Can only be used with compatible audio sources that allow playback control.
 	 *
 	 * @param {number} [value] - The playback rate to set.
-	 * @return {Audio} A reference to this instance.
+	 * @return {Audio|undefined} A reference to this instance.
 	 */
 	setPlaybackRate( value ) {
 
@@ -657,7 +657,7 @@ class Audio extends Object3D {
 	 * Can only be used with compatible audio sources that allow playback control.
 	 *
 	 * @param {boolean} value - Whether the audio should loop or not.
-	 * @return {Audio} A reference to this instance.
+	 * @return {Audio|undefined} A reference to this instance.
 	 */
 	setLoop( value ) {
 
