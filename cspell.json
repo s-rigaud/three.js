@@ -58,7 +58,8 @@
         // Other files
         "tsconfig.tsbuildinfo",
         "TODOS.md",
-        "type-errors.txt"
+        "type-errors.txt",
+        "spelling-errors.txt",
     ]
 }
 
