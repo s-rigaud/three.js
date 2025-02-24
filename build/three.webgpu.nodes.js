@@ -20634,7 +20634,6 @@ const _outputDirection = /*@__PURE__*/ vec3( _direction.x, _direction.y, _direct
  * Paper: Fast, Accurate Image-Based Lighting:
  * {@link https://drive.google.com/file/d/15y8r_UpKlU9SvV4ILb0C3qCPecS8pvLz/view}
 */
-
 class PMREMGenerator {
 
 	constructor( renderer ) {
@@ -58821,7 +58820,15 @@ class WebGLBackend extends Backend {
 
 					for ( let i = 0; i < descriptor.textures.length; i ++ ) {
 
-						gl.clearBufferfv( gl.COLOR, i, [ clearColor.r, clearColor.g, clearColor.b, clearColor.a ] );
+						if ( i === 0 ) {
+
+							gl.clearBufferfv( gl.COLOR, i, [ clearColor.r, clearColor.g, clearColor.b, clearColor.a ] );
+
+						} else {
+
+							gl.clearBufferfv( gl.COLOR, i, [ 0, 0, 0, 1 ] );
+
+						}
 
 					}
 
@@ -67634,13 +67641,23 @@ class WebGPUBackend extends Backend {
 
 				}
 
+				// only apply the user-defined clearValue to the first color attachment like in beginRender()
+
+				let clearValue = { r: 0, g: 0, b: 0, a: 1 };
+
+				if ( i === 0 && colorAttachmentsConfig.clearValue ) {
+
+					clearValue = colorAttachmentsConfig.clearValue;
+
+				}
+
 				colorAttachments.push( {
 					view,
 					depthSlice: sliceIndex,
 					resolveTarget,
-					loadOp: GPULoadOp.Load,
-					storeOp: GPUStoreOp.Store,
-					...colorAttachmentsConfig
+					loadOp: colorAttachmentsConfig.loadOP || GPULoadOp.Load,
+					storeOp: colorAttachmentsConfig.storeOP || GPUStoreOp.Store,
+					clearValue: clearValue
 				} );
 
 			}
