@@ -26999,302 +26999,329 @@ src/extras/TextureUtils.js(257,13): error TS2304: Cannot find name 'Texture'.
 src/extras/TextureUtils.js(259,14): error TS2304: Cannot find name 'Texture'.
 src/extras/TextureUtils.js(270,13): error TS2304: Cannot find name 'Texture'.
 src/extras/TextureUtils.js(271,14): error TS2304: Cannot find name 'Texture'.
-src/geometries/BoxGeometry.js(32,9): error TS7034: Variable 'indices' implicitly has type 'any[]' in some locations where its type cannot be determined.
-src/geometries/BoxGeometry.js(33,9): error TS7034: Variable 'vertices' implicitly has type 'any[]' in some locations where its type cannot be determined.
-src/geometries/BoxGeometry.js(34,9): error TS7034: Variable 'normals' implicitly has type 'any[]' in some locations where its type cannot be determined.
-src/geometries/BoxGeometry.js(35,9): error TS7034: Variable 'uvs' implicitly has type 'any[]' in some locations where its type cannot be determined.
-src/geometries/BoxGeometry.js(53,18): error TS7005: Variable 'indices' implicitly has an 'any[]' type.
-src/geometries/BoxGeometry.js(54,62): error TS7005: Variable 'vertices' implicitly has an 'any[]' type.
-src/geometries/BoxGeometry.js(55,60): error TS7005: Variable 'normals' implicitly has an 'any[]' type.
-src/geometries/BoxGeometry.js(56,56): error TS7005: Variable 'uvs' implicitly has an 'any[]' type.
-src/geometries/BoxGeometry.js(58,24): error TS7006: Parameter 'u' implicitly has an 'any' type.
-src/geometries/BoxGeometry.js(58,27): error TS7006: Parameter 'v' implicitly has an 'any' type.
-src/geometries/BoxGeometry.js(58,30): error TS7006: Parameter 'w' implicitly has an 'any' type.
-src/geometries/BoxGeometry.js(58,33): error TS7006: Parameter 'udir' implicitly has an 'any' type.
-src/geometries/BoxGeometry.js(58,39): error TS7006: Parameter 'vdir' implicitly has an 'any' type.
-src/geometries/BoxGeometry.js(58,45): error TS7006: Parameter 'width' implicitly has an 'any' type.
-src/geometries/BoxGeometry.js(58,52): error TS7006: Parameter 'height' implicitly has an 'any' type.
-src/geometries/BoxGeometry.js(58,60): error TS7006: Parameter 'depth' implicitly has an 'any' type.
-src/geometries/BoxGeometry.js(58,67): error TS7006: Parameter 'gridX' implicitly has an 'any' type.
-src/geometries/BoxGeometry.js(58,74): error TS7006: Parameter 'gridY' implicitly has an 'any' type.
-src/geometries/BoxGeometry.js(58,81): error TS7006: Parameter 'materialIndex' implicitly has an 'any' type.
-src/geometries/BoxGeometry.js(87,6): error TS7052: Element implicitly has an 'any' type because type 'Vector3' has no index signature. Did you mean to call 'vector.set'?
-src/geometries/BoxGeometry.js(88,6): error TS7052: Element implicitly has an 'any' type because type 'Vector3' has no index signature. Did you mean to call 'vector.set'?
-src/geometries/BoxGeometry.js(89,6): error TS7052: Element implicitly has an 'any' type because type 'Vector3' has no index signature. Did you mean to call 'vector.set'?
-src/geometries/BoxGeometry.js(97,6): error TS7052: Element implicitly has an 'any' type because type 'Vector3' has no index signature. Did you mean to call 'vector.set'?
-src/geometries/BoxGeometry.js(98,6): error TS7052: Element implicitly has an 'any' type because type 'Vector3' has no index signature. Did you mean to call 'vector.set'?
-src/geometries/BoxGeometry.js(99,6): error TS7052: Element implicitly has an 'any' type because type 'Vector3' has no index signature. Did you mean to call 'vector.set'?
-src/geometries/BoxGeometry.js(162,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
-src/geometries/BoxGeometry.js(172,19): error TS7006: Parameter 'data' implicitly has an 'any' type.
-src/geometries/CapsuleGeometry.js(4,7): error TS2415: Class 'CapsuleGeometry' incorrectly extends base class 'LatheGeometry'.
-  Types of property 'parameters' are incompatible.
-    Type '{ radius: number; length: number; capSegments: number; radialSegments: number; }' is missing the following properties from type '{ points: Vector2[]; segments: number; phiStart: number; phiLength: number; }': points, segments, phiStart, phiLength
-src/geometries/CapsuleGeometry.js(12,10): error TS2345: Argument of type '(Vector2 | Vector3)[]' is not assignable to parameter of type 'Vector2[]'.
-  Type 'Vector2 | Vector3' is not assignable to type 'Vector2'.
+src/geometries/BoxGeometry.js(63,9): error TS7034: Variable 'indices' implicitly has type 'any[]' in some locations where its type cannot be determined.
+src/geometries/BoxGeometry.js(64,9): error TS7034: Variable 'vertices' implicitly has type 'any[]' in some locations where its type cannot be determined.
+src/geometries/BoxGeometry.js(65,9): error TS7034: Variable 'normals' implicitly has type 'any[]' in some locations where its type cannot be determined.
+src/geometries/BoxGeometry.js(66,9): error TS7034: Variable 'uvs' implicitly has type 'any[]' in some locations where its type cannot be determined.
+src/geometries/BoxGeometry.js(84,18): error TS7005: Variable 'indices' implicitly has an 'any[]' type.
+src/geometries/BoxGeometry.js(85,62): error TS7005: Variable 'vertices' implicitly has an 'any[]' type.
+src/geometries/BoxGeometry.js(86,60): error TS7005: Variable 'normals' implicitly has an 'any[]' type.
+src/geometries/BoxGeometry.js(87,56): error TS7005: Variable 'uvs' implicitly has an 'any[]' type.
+src/geometries/BoxGeometry.js(89,24): error TS7006: Parameter 'u' implicitly has an 'any' type.
+src/geometries/BoxGeometry.js(89,27): error TS7006: Parameter 'v' implicitly has an 'any' type.
+src/geometries/BoxGeometry.js(89,30): error TS7006: Parameter 'w' implicitly has an 'any' type.
+src/geometries/BoxGeometry.js(89,33): error TS7006: Parameter 'udir' implicitly has an 'any' type.
+src/geometries/BoxGeometry.js(89,39): error TS7006: Parameter 'vdir' implicitly has an 'any' type.
+src/geometries/BoxGeometry.js(89,45): error TS7006: Parameter 'width' implicitly has an 'any' type.
+src/geometries/BoxGeometry.js(89,52): error TS7006: Parameter 'height' implicitly has an 'any' type.
+src/geometries/BoxGeometry.js(89,60): error TS7006: Parameter 'depth' implicitly has an 'any' type.
+src/geometries/BoxGeometry.js(89,67): error TS7006: Parameter 'gridX' implicitly has an 'any' type.
+src/geometries/BoxGeometry.js(89,74): error TS7006: Parameter 'gridY' implicitly has an 'any' type.
+src/geometries/BoxGeometry.js(89,81): error TS7006: Parameter 'materialIndex' implicitly has an 'any' type.
+src/geometries/BoxGeometry.js(118,6): error TS7052: Element implicitly has an 'any' type because type 'Vector3' has no index signature. Did you mean to call 'vector.set'?
+src/geometries/BoxGeometry.js(119,6): error TS7052: Element implicitly has an 'any' type because type 'Vector3' has no index signature. Did you mean to call 'vector.set'?
+src/geometries/BoxGeometry.js(120,6): error TS7052: Element implicitly has an 'any' type because type 'Vector3' has no index signature. Did you mean to call 'vector.set'?
+src/geometries/BoxGeometry.js(128,6): error TS7052: Element implicitly has an 'any' type because type 'Vector3' has no index signature. Did you mean to call 'vector.set'?
+src/geometries/BoxGeometry.js(129,6): error TS7052: Element implicitly has an 'any' type because type 'Vector3' has no index signature. Did you mean to call 'vector.set'?
+src/geometries/BoxGeometry.js(130,6): error TS7052: Element implicitly has an 'any' type because type 'Vector3' has no index signature. Did you mean to call 'vector.set'?
+src/geometries/BoxGeometry.js(193,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
+src/geometries/BoxGeometry.js(212,32): error TS2339: Property 'width' does not exist on type 'Object'.
+src/geometries/BoxGeometry.js(212,44): error TS2339: Property 'height' does not exist on type 'Object'.
+src/geometries/BoxGeometry.js(212,57): error TS2339: Property 'depth' does not exist on type 'Object'.
+src/geometries/BoxGeometry.js(212,69): error TS2339: Property 'widthSegments' does not exist on type 'Object'.
+src/geometries/BoxGeometry.js(212,89): error TS2339: Property 'heightSegments' does not exist on type 'Object'.
+src/geometries/BoxGeometry.js(212,110): error TS2339: Property 'depthSegments' does not exist on type 'Object'.
+src/geometries/CapsuleGeometry.js(32,10): error TS2345: Argument of type '(Vector3 | Vector2)[]' is not assignable to parameter of type 'Vector2[]'.
+  Type 'Vector3 | Vector2' is not assignable to type 'Vector2'.
     Type 'Vector3' is missing the following properties from type 'Vector2': width, height, angle, rotateAround
-src/geometries/CapsuleGeometry.js(25,19): error TS7006: Parameter 'data' implicitly has an 'any' type.
-src/geometries/CircleGeometry.js(82,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
-src/geometries/CircleGeometry.js(92,19): error TS7006: Parameter 'data' implicitly has an 'any' type.
-src/geometries/ConeGeometry.js(3,7): error TS2415: Class 'ConeGeometry' incorrectly extends base class 'CylinderGeometry'.
-  Types of property 'parameters' are incompatible.
-    Type '{ radius: number; height: number; radialSegments: number; heightSegments: number; openEnded: boolean; thetaStart: number; thetaLength: number; }' is missing the following properties from type '{ radiusTop: number; radiusBottom: number; height: number; radialSegments: number; heightSegments: number; openEnded: boolean; thetaStart: number; thetaLength: number; }': radiusTop, radiusBottom
-src/geometries/ConeGeometry.js(23,19): error TS7006: Parameter 'data' implicitly has an 'any' type.
-src/geometries/CylinderGeometry.js(32,9): error TS7034: Variable 'indices' implicitly has type 'any[]' in some locations where its type cannot be determined.
-src/geometries/CylinderGeometry.js(33,9): error TS7034: Variable 'vertices' implicitly has type 'any[]' in some locations where its type cannot be determined.
-src/geometries/CylinderGeometry.js(34,9): error TS7034: Variable 'normals' implicitly has type 'any[]' in some locations where its type cannot be determined.
-src/geometries/CylinderGeometry.js(35,9): error TS7034: Variable 'uvs' implicitly has type 'any[]' in some locations where its type cannot be determined.
-src/geometries/CylinderGeometry.js(40,9): error TS7034: Variable 'indexArray' implicitly has type 'any[]' in some locations where its type cannot be determined.
-src/geometries/CylinderGeometry.js(57,18): error TS7005: Variable 'indices' implicitly has an 'any[]' type.
-src/geometries/CylinderGeometry.js(58,62): error TS7005: Variable 'vertices' implicitly has an 'any[]' type.
-src/geometries/CylinderGeometry.js(59,60): error TS7005: Variable 'normals' implicitly has an 'any[]' type.
-src/geometries/CylinderGeometry.js(60,56): error TS7005: Variable 'uvs' implicitly has an 'any[]' type.
-src/geometries/CylinderGeometry.js(129,16): error TS7005: Variable 'indexArray' implicitly has an 'any[]' type.
-src/geometries/CylinderGeometry.js(130,16): error TS7005: Variable 'indexArray' implicitly has an 'any[]' type.
-src/geometries/CylinderGeometry.js(131,16): error TS7005: Variable 'indexArray' implicitly has an 'any[]' type.
-src/geometries/CylinderGeometry.js(132,16): error TS7005: Variable 'indexArray' implicitly has an 'any[]' type.
-src/geometries/CylinderGeometry.js(164,25): error TS7006: Parameter 'top' implicitly has an 'any' type.
-src/geometries/CylinderGeometry.js(274,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
-src/geometries/CylinderGeometry.js(284,19): error TS7006: Parameter 'data' implicitly has an 'any' type.
-src/geometries/DodecahedronGeometry.js(3,7): error TS2415: Class 'DodecahedronGeometry' incorrectly extends base class 'PolyhedronGeometry'.
-  Types of property 'parameters' are incompatible.
-    Type '{ radius: number; detail: number; }' is missing the following properties from type '{ vertices: any[]; indices: any[]; radius: number; detail: number; }': vertices, indices
-src/geometries/DodecahedronGeometry.js(57,19): error TS7006: Parameter 'data' implicitly has an 'any' type.
-src/geometries/EdgesGeometry.js(31,31): error TS2339: Property 'getIndex' does not exist on type 'never'.
-src/geometries/EdgesGeometry.js(32,34): error TS2339: Property 'getAttribute' does not exist on type 'never'.
-src/geometries/EdgesGeometry.js(82,17): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Triangle'.
+src/geometries/CapsuleGeometry.js(61,36): error TS2339: Property 'radius' does not exist on type 'Object'.
+src/geometries/CapsuleGeometry.js(61,49): error TS2339: Property 'length' does not exist on type 'Object'.
+src/geometries/CapsuleGeometry.js(61,62): error TS2339: Property 'capSegments' does not exist on type 'Object'.
+src/geometries/CapsuleGeometry.js(61,80): error TS2339: Property 'radialSegments' does not exist on type 'Object'.
+src/geometries/CircleGeometry.js(115,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
+src/geometries/CircleGeometry.js(134,35): error TS2339: Property 'radius' does not exist on type 'Object'.
+src/geometries/CircleGeometry.js(134,48): error TS2339: Property 'segments' does not exist on type 'Object'.
+src/geometries/CircleGeometry.js(134,63): error TS2339: Property 'thetaStart' does not exist on type 'Object'.
+src/geometries/CircleGeometry.js(134,80): error TS2339: Property 'thetaLength' does not exist on type 'Object'.
+src/geometries/ConeGeometry.js(29,99): error TS2322: Type '0' is not assignable to type 'boolean | undefined'.
+src/geometries/ConeGeometry.js(29,115): error TS2322: Type 'number' is not assignable to type 'boolean | undefined'.
+src/geometries/ConeGeometry.js(63,33): error TS2339: Property 'radius' does not exist on type 'Object'.
+src/geometries/ConeGeometry.js(63,46): error TS2339: Property 'height' does not exist on type 'Object'.
+src/geometries/ConeGeometry.js(63,59): error TS2339: Property 'radialSegments' does not exist on type 'Object'.
+src/geometries/ConeGeometry.js(63,80): error TS2339: Property 'heightSegments' does not exist on type 'Object'.
+src/geometries/ConeGeometry.js(63,101): error TS2339: Property 'openEnded' does not exist on type 'Object'.
+src/geometries/ConeGeometry.js(63,117): error TS2339: Property 'thetaStart' does not exist on type 'Object'.
+src/geometries/ConeGeometry.js(63,134): error TS2339: Property 'thetaLength' does not exist on type 'Object'.
+src/geometries/CylinderGeometry.js(33,120): error TS2322: Type '0' is not assignable to type 'boolean | undefined'.
+src/geometries/CylinderGeometry.js(33,136): error TS2322: Type 'number' is not assignable to type 'boolean | undefined'.
+src/geometries/CylinderGeometry.js(64,9): error TS7034: Variable 'indices' implicitly has type 'any[]' in some locations where its type cannot be determined.
+src/geometries/CylinderGeometry.js(65,9): error TS7034: Variable 'vertices' implicitly has type 'any[]' in some locations where its type cannot be determined.
+src/geometries/CylinderGeometry.js(66,9): error TS7034: Variable 'normals' implicitly has type 'any[]' in some locations where its type cannot be determined.
+src/geometries/CylinderGeometry.js(67,9): error TS7034: Variable 'uvs' implicitly has type 'any[]' in some locations where its type cannot be determined.
+src/geometries/CylinderGeometry.js(72,9): error TS7034: Variable 'indexArray' implicitly has type 'any[]' in some locations where its type cannot be determined.
+src/geometries/CylinderGeometry.js(89,18): error TS7005: Variable 'indices' implicitly has an 'any[]' type.
+src/geometries/CylinderGeometry.js(90,62): error TS7005: Variable 'vertices' implicitly has an 'any[]' type.
+src/geometries/CylinderGeometry.js(91,60): error TS7005: Variable 'normals' implicitly has an 'any[]' type.
+src/geometries/CylinderGeometry.js(92,56): error TS7005: Variable 'uvs' implicitly has an 'any[]' type.
+src/geometries/CylinderGeometry.js(120,20): error TS2365: Operator '+' cannot be applied to types 'number' and 'boolean'.
+src/geometries/CylinderGeometry.js(120,24): error TS2363: The right-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+src/geometries/CylinderGeometry.js(161,16): error TS7005: Variable 'indexArray' implicitly has an 'any[]' type.
+src/geometries/CylinderGeometry.js(162,16): error TS7005: Variable 'indexArray' implicitly has an 'any[]' type.
+src/geometries/CylinderGeometry.js(163,16): error TS7005: Variable 'indexArray' implicitly has an 'any[]' type.
+src/geometries/CylinderGeometry.js(164,16): error TS7005: Variable 'indexArray' implicitly has an 'any[]' type.
+src/geometries/CylinderGeometry.js(196,25): error TS7006: Parameter 'top' implicitly has an 'any' type.
+src/geometries/CylinderGeometry.js(241,19): error TS2365: Operator '+' cannot be applied to types 'number' and 'boolean'.
+src/geometries/CylinderGeometry.js(241,23): error TS2363: The right-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+src/geometries/CylinderGeometry.js(306,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
+src/geometries/CylinderGeometry.js(325,37): error TS2339: Property 'radiusTop' does not exist on type 'Object'.
+src/geometries/CylinderGeometry.js(325,53): error TS2339: Property 'radiusBottom' does not exist on type 'Object'.
+src/geometries/CylinderGeometry.js(325,72): error TS2339: Property 'height' does not exist on type 'Object'.
+src/geometries/CylinderGeometry.js(325,85): error TS2339: Property 'radialSegments' does not exist on type 'Object'.
+src/geometries/CylinderGeometry.js(325,106): error TS2339: Property 'heightSegments' does not exist on type 'Object'.
+src/geometries/CylinderGeometry.js(325,127): error TS2339: Property 'openEnded' does not exist on type 'Object'.
+src/geometries/CylinderGeometry.js(325,143): error TS2339: Property 'thetaStart' does not exist on type 'Object'.
+src/geometries/CylinderGeometry.js(325,160): error TS2339: Property 'thetaLength' does not exist on type 'Object'.
+src/geometries/DodecahedronGeometry.js(91,41): error TS2339: Property 'radius' does not exist on type 'Object'.
+src/geometries/DodecahedronGeometry.js(91,54): error TS2339: Property 'detail' does not exist on type 'Object'.
+src/geometries/EdgesGeometry.js(110,17): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Triangle'.
   No index signature with a parameter of type 'string' was found on type 'Triangle'.
-src/geometries/EdgesGeometry.js(83,17): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Triangle'.
+src/geometries/EdgesGeometry.js(111,17): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Triangle'.
   No index signature with a parameter of type 'string' was found on type 'Triangle'.
-src/geometries/EdgesGeometry.js(88,38): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.
+src/geometries/EdgesGeometry.js(116,38): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.
   No index signature with a parameter of type 'string' was found on type '{}'.
-src/geometries/EdgesGeometry.js(92,25): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.
+src/geometries/EdgesGeometry.js(120,25): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.
   No index signature with a parameter of type 'string' was found on type '{}'.
-src/geometries/EdgesGeometry.js(99,7): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.
+src/geometries/EdgesGeometry.js(127,7): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.
   No index signature with a parameter of type 'string' was found on type '{}'.
-src/geometries/EdgesGeometry.js(104,7): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.
+src/geometries/EdgesGeometry.js(132,7): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.
   No index signature with a parameter of type 'string' was found on type '{}'.
-src/geometries/EdgesGeometry.js(121,10): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.
+src/geometries/EdgesGeometry.js(149,10): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.
   No index signature with a parameter of type 'string' was found on type '{}'.
-src/geometries/EdgesGeometry.js(123,33): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.
+src/geometries/EdgesGeometry.js(151,33): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.
   No index signature with a parameter of type 'string' was found on type '{}'.
-src/geometries/EdgesGeometry.js(140,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(44,3): error TS2322: Type '(Shape & any[]) | Shape[]' is not assignable to type 'Shape'.
-  Type 'Shape[]' is missing the following properties from type 'Shape': uuid, type, holes, getPointsHoles, and 36 more.
-src/geometries/ExtrudeGeometry.js(48,9): error TS7034: Variable 'verticesArray' implicitly has type 'any[]' in some locations where its type cannot be determined.
-src/geometries/ExtrudeGeometry.js(49,9): error TS7034: Variable 'uvArray' implicitly has type 'any[]' in some locations where its type cannot be determined.
-src/geometries/ExtrudeGeometry.js(51,31): error TS2339: Property 'length' does not exist on type 'Shape'.
-src/geometries/ExtrudeGeometry.js(53,18): error TS7053: Element implicitly has an 'any' type because expression of type 'number' can't be used to index type 'Shape'.
-  No index signature with a parameter of type 'number' was found on type 'Shape'.
-src/geometries/ExtrudeGeometry.js(60,62): error TS7005: Variable 'verticesArray' implicitly has an 'any[]' type.
-src/geometries/ExtrudeGeometry.js(61,56): error TS7005: Variable 'uvArray' implicitly has an 'any[]' type.
-src/geometries/ExtrudeGeometry.js(67,22): error TS7006: Parameter 'shape' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(69,10): error TS7034: Variable 'placeholder' implicitly has type 'any[]' in some locations where its type cannot be determined.
-src/geometries/ExtrudeGeometry.js(73,34): error TS2339: Property 'curveSegments' does not exist on type '{}'.
-src/geometries/ExtrudeGeometry.js(73,72): error TS2339: Property 'curveSegments' does not exist on type '{}'.
-src/geometries/ExtrudeGeometry.js(74,26): error TS2339: Property 'steps' does not exist on type '{}'.
-src/geometries/ExtrudeGeometry.js(74,56): error TS2339: Property 'steps' does not exist on type '{}'.
-src/geometries/ExtrudeGeometry.js(75,26): error TS2339: Property 'depth' does not exist on type '{}'.
-src/geometries/ExtrudeGeometry.js(75,56): error TS2339: Property 'depth' does not exist on type '{}'.
-src/geometries/ExtrudeGeometry.js(77,31): error TS2339: Property 'bevelEnabled' does not exist on type '{}'.
-src/geometries/ExtrudeGeometry.js(77,68): error TS2339: Property 'bevelEnabled' does not exist on type '{}'.
-src/geometries/ExtrudeGeometry.js(78,33): error TS2339: Property 'bevelThickness' does not exist on type '{}'.
-src/geometries/ExtrudeGeometry.js(78,72): error TS2339: Property 'bevelThickness' does not exist on type '{}'.
-src/geometries/ExtrudeGeometry.js(79,28): error TS2339: Property 'bevelSize' does not exist on type '{}'.
-src/geometries/ExtrudeGeometry.js(79,62): error TS2339: Property 'bevelSize' does not exist on type '{}'.
-src/geometries/ExtrudeGeometry.js(80,30): error TS2339: Property 'bevelOffset' does not exist on type '{}'.
-src/geometries/ExtrudeGeometry.js(80,66): error TS2339: Property 'bevelOffset' does not exist on type '{}'.
-src/geometries/ExtrudeGeometry.js(81,32): error TS2339: Property 'bevelSegments' does not exist on type '{}'.
-src/geometries/ExtrudeGeometry.js(81,70): error TS2339: Property 'bevelSegments' does not exist on type '{}'.
-src/geometries/ExtrudeGeometry.js(83,32): error TS2339: Property 'extrudePath' does not exist on type '{}'.
-src/geometries/ExtrudeGeometry.js(85,26): error TS2339: Property 'UVGenerator' does not exist on type '{}'.
-src/geometries/ExtrudeGeometry.js(85,62): error TS2339: Property 'UVGenerator' does not exist on type '{}'.
-src/geometries/ExtrudeGeometry.js(169,23): error TS7006: Parameter 'pt' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(169,27): error TS7006: Parameter 'vec' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(169,32): error TS7006: Parameter 'size' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(183,26): error TS7006: Parameter 'inPt' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(183,32): error TS7006: Parameter 'inPrev' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(183,40): error TS7006: Parameter 'inNext' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(401,6): error TS18048: 'normal' is possibly 'undefined'.
-src/geometries/ExtrudeGeometry.js(402,6): error TS18048: 'binormal' is possibly 'undefined'.
-src/geometries/ExtrudeGeometry.js(404,6): error TS18048: 'position2' is possibly 'undefined'.
-src/geometries/ExtrudeGeometry.js(404,45): error TS2345: Argument of type 'Vector3 | undefined' is not assignable to parameter of type 'Vector3'.
+src/geometries/EdgesGeometry.js(168,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(67,13): error TS2304: Cannot find name 'Curve'.
+src/geometries/ExtrudeGeometry.js(92,9): error TS7034: Variable 'verticesArray' implicitly has type 'any[]' in some locations where its type cannot be determined.
+src/geometries/ExtrudeGeometry.js(93,9): error TS7034: Variable 'uvArray' implicitly has type 'any[]' in some locations where its type cannot be determined.
+src/geometries/ExtrudeGeometry.js(104,62): error TS7005: Variable 'verticesArray' implicitly has an 'any[]' type.
+src/geometries/ExtrudeGeometry.js(105,56): error TS7005: Variable 'uvArray' implicitly has an 'any[]' type.
+src/geometries/ExtrudeGeometry.js(111,22): error TS7006: Parameter 'shape' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(113,10): error TS7034: Variable 'placeholder' implicitly has type 'any[]' in some locations where its type cannot be determined.
+src/geometries/ExtrudeGeometry.js(213,23): error TS7006: Parameter 'pt' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(213,27): error TS7006: Parameter 'vec' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(213,32): error TS7006: Parameter 'size' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(227,26): error TS7006: Parameter 'inPt' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(227,32): error TS7006: Parameter 'inPrev' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(227,40): error TS7006: Parameter 'inNext' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(445,6): error TS18048: 'normal' is possibly 'undefined'.
+src/geometries/ExtrudeGeometry.js(446,6): error TS18048: 'binormal' is possibly 'undefined'.
+src/geometries/ExtrudeGeometry.js(448,6): error TS18048: 'position2' is possibly 'undefined'.
+src/geometries/ExtrudeGeometry.js(448,45): error TS2345: Argument of type 'Vector3 | undefined' is not assignable to parameter of type 'Vector3'.
   Type 'undefined' is not assignable to type 'Vector3'.
-src/geometries/ExtrudeGeometry.js(404,59): error TS2345: Argument of type 'Vector3 | undefined' is not assignable to parameter of type 'Vector3'.
+src/geometries/ExtrudeGeometry.js(448,59): error TS2345: Argument of type 'Vector3 | undefined' is not assignable to parameter of type 'Vector3'.
   Type 'undefined' is not assignable to type 'Vector3'.
-src/geometries/ExtrudeGeometry.js(406,9): error TS18048: 'position2' is possibly 'undefined'.
-src/geometries/ExtrudeGeometry.js(406,22): error TS18048: 'position2' is possibly 'undefined'.
-src/geometries/ExtrudeGeometry.js(406,35): error TS18048: 'position2' is possibly 'undefined'.
-src/geometries/ExtrudeGeometry.js(429,7): error TS18048: 'normal' is possibly 'undefined'.
-src/geometries/ExtrudeGeometry.js(430,7): error TS18048: 'binormal' is possibly 'undefined'.
-src/geometries/ExtrudeGeometry.js(432,7): error TS18048: 'position2' is possibly 'undefined'.
-src/geometries/ExtrudeGeometry.js(432,46): error TS2345: Argument of type 'Vector3 | undefined' is not assignable to parameter of type 'Vector3'.
+src/geometries/ExtrudeGeometry.js(450,9): error TS18048: 'position2' is possibly 'undefined'.
+src/geometries/ExtrudeGeometry.js(450,22): error TS18048: 'position2' is possibly 'undefined'.
+src/geometries/ExtrudeGeometry.js(450,35): error TS18048: 'position2' is possibly 'undefined'.
+src/geometries/ExtrudeGeometry.js(473,7): error TS18048: 'normal' is possibly 'undefined'.
+src/geometries/ExtrudeGeometry.js(474,7): error TS18048: 'binormal' is possibly 'undefined'.
+src/geometries/ExtrudeGeometry.js(476,7): error TS18048: 'position2' is possibly 'undefined'.
+src/geometries/ExtrudeGeometry.js(476,46): error TS2345: Argument of type 'Vector3 | undefined' is not assignable to parameter of type 'Vector3'.
   Type 'undefined' is not assignable to type 'Vector3'.
-src/geometries/ExtrudeGeometry.js(432,60): error TS2345: Argument of type 'Vector3 | undefined' is not assignable to parameter of type 'Vector3'.
+src/geometries/ExtrudeGeometry.js(476,60): error TS2345: Argument of type 'Vector3 | undefined' is not assignable to parameter of type 'Vector3'.
   Type 'undefined' is not assignable to type 'Vector3'.
-src/geometries/ExtrudeGeometry.js(434,10): error TS18048: 'position2' is possibly 'undefined'.
-src/geometries/ExtrudeGeometry.js(434,23): error TS18048: 'position2' is possibly 'undefined'.
-src/geometries/ExtrudeGeometry.js(434,36): error TS18048: 'position2' is possibly 'undefined'.
-src/geometries/ExtrudeGeometry.js(582,24): error TS7006: Parameter 'contour' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(582,33): error TS7006: Parameter 'layeroffset' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(612,16): error TS7006: Parameter 'x' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(612,19): error TS7006: Parameter 'y' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(612,22): error TS7006: Parameter 'z' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(621,17): error TS7006: Parameter 'a' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(621,20): error TS7006: Parameter 'b' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(621,23): error TS7006: Parameter 'c' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(628,45): error TS7005: Variable 'verticesArray' implicitly has an 'any[]' type.
-src/geometries/ExtrudeGeometry.js(636,17): error TS7006: Parameter 'a' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(636,20): error TS7006: Parameter 'b' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(636,23): error TS7006: Parameter 'c' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(636,26): error TS7006: Parameter 'd' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(648,50): error TS7005: Variable 'verticesArray' implicitly has an 'any[]' type.
-src/geometries/ExtrudeGeometry.js(660,24): error TS7006: Parameter 'index' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(662,25): error TS7005: Variable 'placeholder' implicitly has an 'any[]' type.
-src/geometries/ExtrudeGeometry.js(663,25): error TS7005: Variable 'placeholder' implicitly has an 'any[]' type.
-src/geometries/ExtrudeGeometry.js(664,25): error TS7005: Variable 'placeholder' implicitly has an 'any[]' type.
-src/geometries/ExtrudeGeometry.js(669,20): error TS7006: Parameter 'vector2' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(680,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(701,19): error TS7006: Parameter 'data' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(701,25): error TS7006: Parameter 'shapes' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(717,35): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type 'typeof import("C:/Users/srigaud/Desktop/three.js/src/extras/curves/Curves")'.
-src/geometries/ExtrudeGeometry.js(721,31): error TS2345: Argument of type 'any[]' is not assignable to parameter of type 'Shape'.
-  Type 'any[]' is missing the following properties from type 'Shape': uuid, type, holes, getPointsHoles, and 36 more.
-src/geometries/ExtrudeGeometry.js(729,28): error TS7006: Parameter 'geometry' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(729,38): error TS7006: Parameter 'vertices' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(729,48): error TS7006: Parameter 'indexA' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(729,56): error TS7006: Parameter 'indexB' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(729,64): error TS7006: Parameter 'indexC' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(746,33): error TS7006: Parameter 'geometry' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(746,43): error TS7006: Parameter 'vertices' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(746,53): error TS7006: Parameter 'indexA' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(746,61): error TS7006: Parameter 'indexB' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(746,69): error TS7006: Parameter 'indexC' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(746,77): error TS7006: Parameter 'indexD' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(785,18): error TS7006: Parameter 'shapes' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(785,26): error TS7006: Parameter 'options' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(785,35): error TS7006: Parameter 'data' implicitly has an 'any' type.
-src/geometries/IcosahedronGeometry.js(3,7): error TS2415: Class 'IcosahedronGeometry' incorrectly extends base class 'PolyhedronGeometry'.
-  Types of property 'parameters' are incompatible.
-    Type '{ radius: number; detail: number; }' is missing the following properties from type '{ vertices: any[]; indices: any[]; radius: number; detail: number; }': vertices, indices
-src/geometries/IcosahedronGeometry.js(33,19): error TS7006: Parameter 'data' implicitly has an 'any' type.
-src/geometries/LatheGeometry.js(170,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
-src/geometries/LatheGeometry.js(180,19): error TS7006: Parameter 'data' implicitly has an 'any' type.
-src/geometries/OctahedronGeometry.js(3,7): error TS2415: Class 'OctahedronGeometry' incorrectly extends base class 'PolyhedronGeometry'.
-  Types of property 'parameters' are incompatible.
-    Type '{ radius: number; detail: number; }' is missing the following properties from type '{ vertices: any[]; indices: any[]; radius: number; detail: number; }': vertices, indices
-src/geometries/OctahedronGeometry.js(29,19): error TS7006: Parameter 'data' implicitly has an 'any' type.
-src/geometries/PlaneGeometry.js(80,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
-src/geometries/PlaneGeometry.js(90,19): error TS7006: Parameter 'data' implicitly has an 'any' type.
-src/geometries/PolyhedronGeometry.js(8,15): error TS7006: Parameter 'vertices' implicitly has an 'any[]' type.
-src/geometries/PolyhedronGeometry.js(8,30): error TS7006: Parameter 'indices' implicitly has an 'any[]' type.
-src/geometries/PolyhedronGeometry.js(23,9): error TS7034: Variable 'vertexBuffer' implicitly has type 'any[]' in some locations where its type cannot be determined.
-src/geometries/PolyhedronGeometry.js(24,9): error TS7034: Variable 'uvBuffer' implicitly has type 'any[]' in some locations where its type cannot be determined.
-src/geometries/PolyhedronGeometry.js(40,62): error TS7005: Variable 'vertexBuffer' implicitly has an 'any[]' type.
-src/geometries/PolyhedronGeometry.js(41,60): error TS7005: Variable 'vertexBuffer' implicitly has an 'any[]' type.
-src/geometries/PolyhedronGeometry.js(42,56): error TS7005: Variable 'uvBuffer' implicitly has an 'any[]' type.
-src/geometries/PolyhedronGeometry.js(56,23): error TS7006: Parameter 'detail' implicitly has an 'any' type.
-src/geometries/PolyhedronGeometry.js(80,27): error TS7006: Parameter 'a' implicitly has an 'any' type.
-src/geometries/PolyhedronGeometry.js(80,30): error TS7006: Parameter 'b' implicitly has an 'any' type.
-src/geometries/PolyhedronGeometry.js(80,33): error TS7006: Parameter 'c' implicitly has an 'any' type.
-src/geometries/PolyhedronGeometry.js(80,36): error TS7006: Parameter 'detail' implicitly has an 'any' type.
-src/geometries/PolyhedronGeometry.js(103,7): error TS2322: Type 'any' is not assignable to type 'never'.
-src/geometries/PolyhedronGeometry.js(107,7): error TS2322: Type 'any' is not assignable to type 'never'.
-src/geometries/PolyhedronGeometry.js(143,25): error TS7006: Parameter 'radius' implicitly has an 'any' type.
-src/geometries/PolyhedronGeometry.js(151,16): error TS7005: Variable 'vertexBuffer' implicitly has an 'any[]' type.
-src/geometries/PolyhedronGeometry.js(152,16): error TS7005: Variable 'vertexBuffer' implicitly has an 'any[]' type.
-src/geometries/PolyhedronGeometry.js(153,16): error TS7005: Variable 'vertexBuffer' implicitly has an 'any[]' type.
-src/geometries/PolyhedronGeometry.js(171,16): error TS7005: Variable 'vertexBuffer' implicitly has an 'any[]' type.
-src/geometries/PolyhedronGeometry.js(172,16): error TS7005: Variable 'vertexBuffer' implicitly has an 'any[]' type.
+src/geometries/ExtrudeGeometry.js(478,10): error TS18048: 'position2' is possibly 'undefined'.
+src/geometries/ExtrudeGeometry.js(478,23): error TS18048: 'position2' is possibly 'undefined'.
+src/geometries/ExtrudeGeometry.js(478,36): error TS18048: 'position2' is possibly 'undefined'.
+src/geometries/ExtrudeGeometry.js(626,24): error TS7006: Parameter 'contour' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(626,33): error TS7006: Parameter 'layeroffset' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(656,16): error TS7006: Parameter 'x' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(656,19): error TS7006: Parameter 'y' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(656,22): error TS7006: Parameter 'z' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(665,17): error TS7006: Parameter 'a' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(665,20): error TS7006: Parameter 'b' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(665,23): error TS7006: Parameter 'c' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(672,23): error TS2339: Property 'generateTopUV' does not exist on type 'Object'.
+src/geometries/ExtrudeGeometry.js(672,45): error TS7005: Variable 'verticesArray' implicitly has an 'any[]' type.
+src/geometries/ExtrudeGeometry.js(680,17): error TS7006: Parameter 'a' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(680,20): error TS7006: Parameter 'b' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(680,23): error TS7006: Parameter 'c' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(680,26): error TS7006: Parameter 'd' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(692,23): error TS2339: Property 'generateSideWallUV' does not exist on type 'Object'.
+src/geometries/ExtrudeGeometry.js(692,50): error TS7005: Variable 'verticesArray' implicitly has an 'any[]' type.
+src/geometries/ExtrudeGeometry.js(704,24): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(706,25): error TS7005: Variable 'placeholder' implicitly has an 'any[]' type.
+src/geometries/ExtrudeGeometry.js(707,25): error TS7005: Variable 'placeholder' implicitly has an 'any[]' type.
+src/geometries/ExtrudeGeometry.js(708,25): error TS7005: Variable 'placeholder' implicitly has an 'any[]' type.
+src/geometries/ExtrudeGeometry.js(713,20): error TS7006: Parameter 'vector2' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(724,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(738,34): error TS2339: Property 'shapes' does not exist on type 'Object'.
+src/geometries/ExtrudeGeometry.js(739,35): error TS2339: Property 'options' does not exist on type 'Object'.
+src/geometries/ExtrudeGeometry.js(757,30): error TS2339: Property 'shapes' does not exist on type 'Object'.
+src/geometries/ExtrudeGeometry.js(759,31): error TS2339: Property 'shapes' does not exist on type 'Object'.
+src/geometries/ExtrudeGeometry.js(765,28): error TS2339: Property 'options' does not exist on type 'Object'.
+src/geometries/ExtrudeGeometry.js(769,9): error TS2339: Property 'options' does not exist on type 'Object'.
+src/geometries/ExtrudeGeometry.js(769,35): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type 'typeof import("C:/Users/srigaud/Desktop/three.js/src/extras/curves/Curves")'.
+src/geometries/ExtrudeGeometry.js(773,52): error TS2339: Property 'options' does not exist on type 'Object'.
+src/geometries/ExtrudeGeometry.js(781,28): error TS7006: Parameter 'geometry' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(781,38): error TS7006: Parameter 'vertices' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(781,48): error TS7006: Parameter 'indexA' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(781,56): error TS7006: Parameter 'indexB' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(781,64): error TS7006: Parameter 'indexC' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(798,33): error TS7006: Parameter 'geometry' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(798,43): error TS7006: Parameter 'vertices' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(798,53): error TS7006: Parameter 'indexA' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(798,61): error TS7006: Parameter 'indexB' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(798,69): error TS7006: Parameter 'indexC' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(798,77): error TS7006: Parameter 'indexD' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(837,18): error TS7006: Parameter 'shapes' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(837,26): error TS7006: Parameter 'options' implicitly has an 'any' type.
+src/geometries/ExtrudeGeometry.js(837,35): error TS7006: Parameter 'data' implicitly has an 'any' type.
+src/geometries/IcosahedronGeometry.js(67,40): error TS2339: Property 'radius' does not exist on type 'Object'.
+src/geometries/IcosahedronGeometry.js(67,53): error TS2339: Property 'detail' does not exist on type 'Object'.
+src/geometries/LatheGeometry.js(203,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
+src/geometries/LatheGeometry.js(222,34): error TS2339: Property 'points' does not exist on type 'Object'.
+src/geometries/LatheGeometry.js(222,47): error TS2339: Property 'segments' does not exist on type 'Object'.
+src/geometries/LatheGeometry.js(222,62): error TS2339: Property 'phiStart' does not exist on type 'Object'.
+src/geometries/LatheGeometry.js(222,77): error TS2339: Property 'phiLength' does not exist on type 'Object'.
+src/geometries/OctahedronGeometry.js(63,39): error TS2339: Property 'radius' does not exist on type 'Object'.
+src/geometries/OctahedronGeometry.js(63,52): error TS2339: Property 'detail' does not exist on type 'Object'.
+src/geometries/PlaneGeometry.js(107,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
+src/geometries/PlaneGeometry.js(126,34): error TS2339: Property 'width' does not exist on type 'Object'.
+src/geometries/PlaneGeometry.js(126,46): error TS2339: Property 'height' does not exist on type 'Object'.
+src/geometries/PlaneGeometry.js(126,59): error TS2339: Property 'widthSegments' does not exist on type 'Object'.
+src/geometries/PlaneGeometry.js(126,79): error TS2339: Property 'heightSegments' does not exist on type 'Object'.
+src/geometries/PolyhedronGeometry.js(45,9): error TS7034: Variable 'vertexBuffer' implicitly has type 'any[]' in some locations where its type cannot be determined.
+src/geometries/PolyhedronGeometry.js(46,9): error TS7034: Variable 'uvBuffer' implicitly has type 'any[]' in some locations where its type cannot be determined.
+src/geometries/PolyhedronGeometry.js(62,62): error TS7005: Variable 'vertexBuffer' implicitly has an 'any[]' type.
+src/geometries/PolyhedronGeometry.js(63,60): error TS7005: Variable 'vertexBuffer' implicitly has an 'any[]' type.
+src/geometries/PolyhedronGeometry.js(64,56): error TS7005: Variable 'uvBuffer' implicitly has an 'any[]' type.
+src/geometries/PolyhedronGeometry.js(78,23): error TS7006: Parameter 'detail' implicitly has an 'any' type.
+src/geometries/PolyhedronGeometry.js(102,27): error TS7006: Parameter 'a' implicitly has an 'any' type.
+src/geometries/PolyhedronGeometry.js(102,30): error TS7006: Parameter 'b' implicitly has an 'any' type.
+src/geometries/PolyhedronGeometry.js(102,33): error TS7006: Parameter 'c' implicitly has an 'any' type.
+src/geometries/PolyhedronGeometry.js(102,36): error TS7006: Parameter 'detail' implicitly has an 'any' type.
+src/geometries/PolyhedronGeometry.js(125,7): error TS2322: Type 'any' is not assignable to type 'never'.
+src/geometries/PolyhedronGeometry.js(129,7): error TS2322: Type 'any' is not assignable to type 'never'.
+src/geometries/PolyhedronGeometry.js(165,25): error TS7006: Parameter 'radius' implicitly has an 'any' type.
 src/geometries/PolyhedronGeometry.js(173,16): error TS7005: Variable 'vertexBuffer' implicitly has an 'any[]' type.
-src/geometries/PolyhedronGeometry.js(195,16): error TS7005: Variable 'uvBuffer' implicitly has an 'any[]' type.
-src/geometries/PolyhedronGeometry.js(196,16): error TS7005: Variable 'uvBuffer' implicitly has an 'any[]' type.
-src/geometries/PolyhedronGeometry.js(197,16): error TS7005: Variable 'uvBuffer' implicitly has an 'any[]' type.
-src/geometries/PolyhedronGeometry.js(206,22): error TS7005: Variable 'uvBuffer' implicitly has an 'any[]' type.
-src/geometries/PolyhedronGeometry.js(207,22): error TS7005: Variable 'uvBuffer' implicitly has an 'any[]' type.
-src/geometries/PolyhedronGeometry.js(208,22): error TS7005: Variable 'uvBuffer' implicitly has an 'any[]' type.
-src/geometries/PolyhedronGeometry.js(216,24): error TS7006: Parameter 'vertex' implicitly has an 'any' type.
-src/geometries/PolyhedronGeometry.js(222,30): error TS7006: Parameter 'index' implicitly has an 'any' type.
-src/geometries/PolyhedronGeometry.js(222,37): error TS7006: Parameter 'vertex' implicitly has an 'any' type.
-src/geometries/PolyhedronGeometry.js(246,12): error TS7005: Variable 'vertexBuffer' implicitly has an 'any[]' type.
-src/geometries/PolyhedronGeometry.js(246,35): error TS7005: Variable 'vertexBuffer' implicitly has an 'any[]' type.
-src/geometries/PolyhedronGeometry.js(246,58): error TS7005: Variable 'vertexBuffer' implicitly has an 'any[]' type.
-src/geometries/PolyhedronGeometry.js(247,12): error TS7005: Variable 'vertexBuffer' implicitly has an 'any[]' type.
-src/geometries/PolyhedronGeometry.js(247,35): error TS7005: Variable 'vertexBuffer' implicitly has an 'any[]' type.
-src/geometries/PolyhedronGeometry.js(247,58): error TS7005: Variable 'vertexBuffer' implicitly has an 'any[]' type.
-src/geometries/PolyhedronGeometry.js(248,12): error TS7005: Variable 'vertexBuffer' implicitly has an 'any[]' type.
-src/geometries/PolyhedronGeometry.js(248,35): error TS7005: Variable 'vertexBuffer' implicitly has an 'any[]' type.
-src/geometries/PolyhedronGeometry.js(248,58): error TS7005: Variable 'vertexBuffer' implicitly has an 'any[]' type.
-src/geometries/PolyhedronGeometry.js(250,14): error TS7005: Variable 'uvBuffer' implicitly has an 'any[]' type.
-src/geometries/PolyhedronGeometry.js(250,33): error TS7005: Variable 'uvBuffer' implicitly has an 'any[]' type.
-src/geometries/PolyhedronGeometry.js(251,14): error TS7005: Variable 'uvBuffer' implicitly has an 'any[]' type.
-src/geometries/PolyhedronGeometry.js(251,33): error TS7005: Variable 'uvBuffer' implicitly has an 'any[]' type.
-src/geometries/PolyhedronGeometry.js(252,14): error TS7005: Variable 'uvBuffer' implicitly has an 'any[]' type.
-src/geometries/PolyhedronGeometry.js(252,33): error TS7005: Variable 'uvBuffer' implicitly has an 'any[]' type.
-src/geometries/PolyhedronGeometry.js(266,23): error TS7006: Parameter 'uv' implicitly has an 'any' type.
-src/geometries/PolyhedronGeometry.js(266,27): error TS7006: Parameter 'stride' implicitly has an 'any' type.
-src/geometries/PolyhedronGeometry.js(266,35): error TS7006: Parameter 'vector' implicitly has an 'any' type.
-src/geometries/PolyhedronGeometry.js(266,43): error TS7006: Parameter 'azimuth' implicitly has an 'any' type.
-src/geometries/PolyhedronGeometry.js(284,21): error TS7006: Parameter 'vector' implicitly has an 'any' type.
-src/geometries/PolyhedronGeometry.js(293,25): error TS7006: Parameter 'vector' implicitly has an 'any' type.
-src/geometries/PolyhedronGeometry.js(301,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
-src/geometries/PolyhedronGeometry.js(311,19): error TS7006: Parameter 'data' implicitly has an 'any' type.
-src/geometries/RingGeometry.js(109,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
-src/geometries/RingGeometry.js(119,19): error TS7006: Parameter 'data' implicitly has an 'any' type.
-src/geometries/ShapeGeometry.js(22,9): error TS7034: Variable 'indices' implicitly has type 'any[]' in some locations where its type cannot be determined.
-src/geometries/ShapeGeometry.js(23,9): error TS7034: Variable 'vertices' implicitly has type 'any[]' in some locations where its type cannot be determined.
-src/geometries/ShapeGeometry.js(24,9): error TS7034: Variable 'normals' implicitly has type 'any[]' in some locations where its type cannot be determined.
-src/geometries/ShapeGeometry.js(25,9): error TS7034: Variable 'uvs' implicitly has type 'any[]' in some locations where its type cannot be determined.
-src/geometries/ShapeGeometry.js(55,18): error TS7005: Variable 'indices' implicitly has an 'any[]' type.
-src/geometries/ShapeGeometry.js(56,62): error TS7005: Variable 'vertices' implicitly has an 'any[]' type.
-src/geometries/ShapeGeometry.js(57,60): error TS7005: Variable 'normals' implicitly has an 'any[]' type.
-src/geometries/ShapeGeometry.js(58,56): error TS7005: Variable 'uvs' implicitly has an 'any[]' type.
-src/geometries/ShapeGeometry.js(63,22): error TS7006: Parameter 'shape' implicitly has an 'any' type.
-src/geometries/ShapeGeometry.js(133,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
-src/geometries/ShapeGeometry.js(153,19): error TS7006: Parameter 'data' implicitly has an 'any' type.
-src/geometries/ShapeGeometry.js(153,25): error TS7006: Parameter 'shapes' implicitly has an 'any' type.
-src/geometries/ShapeGeometry.js(165,29): error TS2345: Argument of type 'any[]' is not assignable to parameter of type 'Shape'.
-  Type 'any[]' is missing the following properties from type 'Shape': uuid, type, holes, getPointsHoles, and 36 more.
-src/geometries/ShapeGeometry.js(171,18): error TS7006: Parameter 'shapes' implicitly has an 'any' type.
-src/geometries/ShapeGeometry.js(171,26): error TS7006: Parameter 'data' implicitly has an 'any' type.
-src/geometries/SphereGeometry.js(119,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
-src/geometries/SphereGeometry.js(129,19): error TS7006: Parameter 'data' implicitly has an 'any' type.
-src/geometries/TetrahedronGeometry.js(3,7): error TS2415: Class 'TetrahedronGeometry' incorrectly extends base class 'PolyhedronGeometry'.
-  Types of property 'parameters' are incompatible.
-    Type '{ radius: number; detail: number; }' is missing the following properties from type '{ vertices: any[]; indices: any[]; radius: number; detail: number; }': vertices, indices
-src/geometries/TetrahedronGeometry.js(26,19): error TS7006: Parameter 'data' implicitly has an 'any' type.
-src/geometries/TorusGeometry.js(102,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
-src/geometries/TorusGeometry.js(112,19): error TS7006: Parameter 'data' implicitly has an 'any' type.
-src/geometries/TorusKnotGeometry.js(134,38): error TS7006: Parameter 'u' implicitly has an 'any' type.
-src/geometries/TorusKnotGeometry.js(134,41): error TS7006: Parameter 'p' implicitly has an 'any' type.
-src/geometries/TorusKnotGeometry.js(134,44): error TS7006: Parameter 'q' implicitly has an 'any' type.
-src/geometries/TorusKnotGeometry.js(134,47): error TS7006: Parameter 'radius' implicitly has an 'any' type.
-src/geometries/TorusKnotGeometry.js(134,55): error TS7006: Parameter 'position' implicitly has an 'any' type.
-src/geometries/TorusKnotGeometry.js(149,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
-src/geometries/TorusKnotGeometry.js(159,19): error TS7006: Parameter 'data' implicitly has an 'any' type.
-src/geometries/TubeGeometry.js(40,9): error TS7034: Variable 'vertices' implicitly has type 'any[]' in some locations where its type cannot be determined.
-src/geometries/TubeGeometry.js(41,9): error TS7034: Variable 'normals' implicitly has type 'any[]' in some locations where its type cannot be determined.
-src/geometries/TubeGeometry.js(42,9): error TS7034: Variable 'uvs' implicitly has type 'any[]' in some locations where its type cannot be determined.
-src/geometries/TubeGeometry.js(43,9): error TS7034: Variable 'indices' implicitly has type 'any[]' in some locations where its type cannot be determined.
-src/geometries/TubeGeometry.js(51,18): error TS7005: Variable 'indices' implicitly has an 'any[]' type.
-src/geometries/TubeGeometry.js(52,62): error TS7005: Variable 'vertices' implicitly has an 'any[]' type.
-src/geometries/TubeGeometry.js(53,60): error TS7005: Variable 'normals' implicitly has an 'any[]' type.
-src/geometries/TubeGeometry.js(54,56): error TS7005: Variable 'uvs' implicitly has an 'any[]' type.
-src/geometries/TubeGeometry.js(84,29): error TS7006: Parameter 'i' implicitly has an 'any' type.
-src/geometries/TubeGeometry.js(88,4): error TS2322: Type 'Vector2 | Vector3' is not assignable to type 'Vector3'.
-  Type 'Vector2' is missing the following properties from type 'Vector3': z, setZ, multiplyVectors, applyEuler, and 22 more.
-src/geometries/TubeGeometry.js(166,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
-src/geometries/TubeGeometry.js(180,8): error TS2339: Property 'path' does not exist on type '{ metadata: { version: number; type: string; generator: string; }; }'.
-src/geometries/TubeGeometry.js(186,19): error TS7006: Parameter 'data' implicitly has an 'any' type.
-src/geometries/TubeGeometry.js(191,8): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type 'typeof import("C:/Users/srigaud/Desktop/three.js/src/extras/curves/Curves")'.
-src/geometries/WireframeGeometry.js(29,18): error TS2339: Property 'index' does not exist on type 'never'.
-src/geometries/WireframeGeometry.js(33,31): error TS2339: Property 'attributes' does not exist on type 'never'.
-src/geometries/WireframeGeometry.js(34,30): error TS2339: Property 'index' does not exist on type 'never'.
-src/geometries/WireframeGeometry.js(35,27): error TS2339: Property 'groups' does not exist on type 'never'.
-src/geometries/WireframeGeometry.js(79,31): error TS2339: Property 'attributes' does not exist on type 'never'.
-src/geometries/WireframeGeometry.js(115,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
-src/geometries/WireframeGeometry.js(127,24): error TS7006: Parameter 'start' implicitly has an 'any' type.
-src/geometries/WireframeGeometry.js(127,31): error TS7006: Parameter 'end' implicitly has an 'any' type.
-src/geometries/WireframeGeometry.js(127,36): error TS7006: Parameter 'edges' implicitly has an 'any' type.
+src/geometries/PolyhedronGeometry.js(174,16): error TS7005: Variable 'vertexBuffer' implicitly has an 'any[]' type.
+src/geometries/PolyhedronGeometry.js(175,16): error TS7005: Variable 'vertexBuffer' implicitly has an 'any[]' type.
+src/geometries/PolyhedronGeometry.js(193,16): error TS7005: Variable 'vertexBuffer' implicitly has an 'any[]' type.
+src/geometries/PolyhedronGeometry.js(194,16): error TS7005: Variable 'vertexBuffer' implicitly has an 'any[]' type.
+src/geometries/PolyhedronGeometry.js(195,16): error TS7005: Variable 'vertexBuffer' implicitly has an 'any[]' type.
+src/geometries/PolyhedronGeometry.js(217,16): error TS7005: Variable 'uvBuffer' implicitly has an 'any[]' type.
+src/geometries/PolyhedronGeometry.js(218,16): error TS7005: Variable 'uvBuffer' implicitly has an 'any[]' type.
+src/geometries/PolyhedronGeometry.js(219,16): error TS7005: Variable 'uvBuffer' implicitly has an 'any[]' type.
+src/geometries/PolyhedronGeometry.js(228,22): error TS7005: Variable 'uvBuffer' implicitly has an 'any[]' type.
+src/geometries/PolyhedronGeometry.js(229,22): error TS7005: Variable 'uvBuffer' implicitly has an 'any[]' type.
+src/geometries/PolyhedronGeometry.js(230,22): error TS7005: Variable 'uvBuffer' implicitly has an 'any[]' type.
+src/geometries/PolyhedronGeometry.js(238,24): error TS7006: Parameter 'vertex' implicitly has an 'any' type.
+src/geometries/PolyhedronGeometry.js(244,30): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/geometries/PolyhedronGeometry.js(244,37): error TS7006: Parameter 'vertex' implicitly has an 'any' type.
+src/geometries/PolyhedronGeometry.js(268,12): error TS7005: Variable 'vertexBuffer' implicitly has an 'any[]' type.
+src/geometries/PolyhedronGeometry.js(268,35): error TS7005: Variable 'vertexBuffer' implicitly has an 'any[]' type.
+src/geometries/PolyhedronGeometry.js(268,58): error TS7005: Variable 'vertexBuffer' implicitly has an 'any[]' type.
+src/geometries/PolyhedronGeometry.js(269,12): error TS7005: Variable 'vertexBuffer' implicitly has an 'any[]' type.
+src/geometries/PolyhedronGeometry.js(269,35): error TS7005: Variable 'vertexBuffer' implicitly has an 'any[]' type.
+src/geometries/PolyhedronGeometry.js(269,58): error TS7005: Variable 'vertexBuffer' implicitly has an 'any[]' type.
+src/geometries/PolyhedronGeometry.js(270,12): error TS7005: Variable 'vertexBuffer' implicitly has an 'any[]' type.
+src/geometries/PolyhedronGeometry.js(270,35): error TS7005: Variable 'vertexBuffer' implicitly has an 'any[]' type.
+src/geometries/PolyhedronGeometry.js(270,58): error TS7005: Variable 'vertexBuffer' implicitly has an 'any[]' type.
+src/geometries/PolyhedronGeometry.js(272,14): error TS7005: Variable 'uvBuffer' implicitly has an 'any[]' type.
+src/geometries/PolyhedronGeometry.js(272,33): error TS7005: Variable 'uvBuffer' implicitly has an 'any[]' type.
+src/geometries/PolyhedronGeometry.js(273,14): error TS7005: Variable 'uvBuffer' implicitly has an 'any[]' type.
+src/geometries/PolyhedronGeometry.js(273,33): error TS7005: Variable 'uvBuffer' implicitly has an 'any[]' type.
+src/geometries/PolyhedronGeometry.js(274,14): error TS7005: Variable 'uvBuffer' implicitly has an 'any[]' type.
+src/geometries/PolyhedronGeometry.js(274,33): error TS7005: Variable 'uvBuffer' implicitly has an 'any[]' type.
+src/geometries/PolyhedronGeometry.js(288,23): error TS7006: Parameter 'uv' implicitly has an 'any' type.
+src/geometries/PolyhedronGeometry.js(288,27): error TS7006: Parameter 'stride' implicitly has an 'any' type.
+src/geometries/PolyhedronGeometry.js(288,35): error TS7006: Parameter 'vector' implicitly has an 'any' type.
+src/geometries/PolyhedronGeometry.js(288,43): error TS7006: Parameter 'azimuth' implicitly has an 'any' type.
+src/geometries/PolyhedronGeometry.js(306,21): error TS7006: Parameter 'vector' implicitly has an 'any' type.
+src/geometries/PolyhedronGeometry.js(315,25): error TS7006: Parameter 'vector' implicitly has an 'any' type.
+src/geometries/PolyhedronGeometry.js(323,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
+src/geometries/PolyhedronGeometry.js(342,39): error TS2339: Property 'vertices' does not exist on type 'Object'.
+src/geometries/PolyhedronGeometry.js(342,54): error TS2339: Property 'indices' does not exist on type 'Object'.
+src/geometries/PolyhedronGeometry.js(342,68): error TS2339: Property 'radius' does not exist on type 'Object'.
+src/geometries/PolyhedronGeometry.js(342,81): error TS2339: Property 'details' does not exist on type 'Object'.
+src/geometries/RingGeometry.js(138,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
+src/geometries/RingGeometry.js(157,33): error TS2339: Property 'innerRadius' does not exist on type 'Object'.
+src/geometries/RingGeometry.js(157,51): error TS2339: Property 'outerRadius' does not exist on type 'Object'.
+src/geometries/RingGeometry.js(157,69): error TS2339: Property 'thetaSegments' does not exist on type 'Object'.
+src/geometries/RingGeometry.js(157,89): error TS2339: Property 'phiSegments' does not exist on type 'Object'.
+src/geometries/RingGeometry.js(157,107): error TS2339: Property 'thetaStart' does not exist on type 'Object'.
+src/geometries/RingGeometry.js(157,124): error TS2339: Property 'thetaLength' does not exist on type 'Object'.
+src/geometries/ShapeGeometry.js(51,9): error TS7034: Variable 'indices' implicitly has type 'any[]' in some locations where its type cannot be determined.
+src/geometries/ShapeGeometry.js(52,9): error TS7034: Variable 'vertices' implicitly has type 'any[]' in some locations where its type cannot be determined.
+src/geometries/ShapeGeometry.js(53,9): error TS7034: Variable 'normals' implicitly has type 'any[]' in some locations where its type cannot be determined.
+src/geometries/ShapeGeometry.js(54,9): error TS7034: Variable 'uvs' implicitly has type 'any[]' in some locations where its type cannot be determined.
+src/geometries/ShapeGeometry.js(84,18): error TS7005: Variable 'indices' implicitly has an 'any[]' type.
+src/geometries/ShapeGeometry.js(85,62): error TS7005: Variable 'vertices' implicitly has an 'any[]' type.
+src/geometries/ShapeGeometry.js(86,60): error TS7005: Variable 'normals' implicitly has an 'any[]' type.
+src/geometries/ShapeGeometry.js(87,56): error TS7005: Variable 'uvs' implicitly has an 'any[]' type.
+src/geometries/ShapeGeometry.js(92,22): error TS7006: Parameter 'shape' implicitly has an 'any' type.
+src/geometries/ShapeGeometry.js(162,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
+src/geometries/ShapeGeometry.js(176,34): error TS2339: Property 'shapes' does not exist on type 'Object'.
+src/geometries/ShapeGeometry.js(194,30): error TS2339: Property 'shapes' does not exist on type 'Object'.
+src/geometries/ShapeGeometry.js(196,31): error TS2339: Property 'shapes' does not exist on type 'Object'.
+src/geometries/ShapeGeometry.js(202,50): error TS2339: Property 'curveSegments' does not exist on type 'Object'.
+src/geometries/ShapeGeometry.js(208,18): error TS7006: Parameter 'shapes' implicitly has an 'any' type.
+src/geometries/ShapeGeometry.js(208,26): error TS7006: Parameter 'data' implicitly has an 'any' type.
+src/geometries/SphereGeometry.js(149,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
+src/geometries/SphereGeometry.js(168,35): error TS2339: Property 'radius' does not exist on type 'Object'.
+src/geometries/SphereGeometry.js(168,48): error TS2339: Property 'widthSegments' does not exist on type 'Object'.
+src/geometries/SphereGeometry.js(168,68): error TS2339: Property 'heightSegments' does not exist on type 'Object'.
+src/geometries/SphereGeometry.js(168,89): error TS2339: Property 'phiStart' does not exist on type 'Object'.
+src/geometries/SphereGeometry.js(168,104): error TS2339: Property 'phiLength' does not exist on type 'Object'.
+src/geometries/SphereGeometry.js(168,120): error TS2339: Property 'thetaStart' does not exist on type 'Object'.
+src/geometries/SphereGeometry.js(168,137): error TS2339: Property 'thetaLength' does not exist on type 'Object'.
+src/geometries/TetrahedronGeometry.js(60,40): error TS2339: Property 'radius' does not exist on type 'Object'.
+src/geometries/TetrahedronGeometry.js(60,53): error TS2339: Property 'detail' does not exist on type 'Object'.
+src/geometries/TorusGeometry.js(130,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
+src/geometries/TorusGeometry.js(149,34): error TS2339: Property 'radius' does not exist on type 'Object'.
+src/geometries/TorusGeometry.js(149,47): error TS2339: Property 'tube' does not exist on type 'Object'.
+src/geometries/TorusGeometry.js(149,58): error TS2339: Property 'radialSegments' does not exist on type 'Object'.
+src/geometries/TorusGeometry.js(149,79): error TS2339: Property 'tubularSegments' does not exist on type 'Object'.
+src/geometries/TorusGeometry.js(149,101): error TS2339: Property 'arc' does not exist on type 'Object'.
+src/geometries/TorusKnotGeometry.js(165,38): error TS7006: Parameter 'u' implicitly has an 'any' type.
+src/geometries/TorusKnotGeometry.js(165,41): error TS7006: Parameter 'p' implicitly has an 'any' type.
+src/geometries/TorusKnotGeometry.js(165,44): error TS7006: Parameter 'q' implicitly has an 'any' type.
+src/geometries/TorusKnotGeometry.js(165,47): error TS7006: Parameter 'radius' implicitly has an 'any' type.
+src/geometries/TorusKnotGeometry.js(165,55): error TS7006: Parameter 'position' implicitly has an 'any' type.
+src/geometries/TorusKnotGeometry.js(180,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
+src/geometries/TorusKnotGeometry.js(199,38): error TS2339: Property 'radius' does not exist on type 'Object'.
+src/geometries/TorusKnotGeometry.js(199,51): error TS2339: Property 'tube' does not exist on type 'Object'.
+src/geometries/TorusKnotGeometry.js(199,62): error TS2339: Property 'tubularSegments' does not exist on type 'Object'.
+src/geometries/TorusKnotGeometry.js(199,84): error TS2339: Property 'radialSegments' does not exist on type 'Object'.
+src/geometries/TorusKnotGeometry.js(199,105): error TS2339: Property 'p' does not exist on type 'Object'.
+src/geometries/TorusKnotGeometry.js(199,113): error TS2339: Property 'q' does not exist on type 'Object'.
+src/geometries/TubeGeometry.js(38,13): error TS2304: Cannot find name 'Curve'.
+src/geometries/TubeGeometry.js(82,9): error TS7034: Variable 'vertices' implicitly has type 'any[]' in some locations where its type cannot be determined.
+src/geometries/TubeGeometry.js(83,9): error TS7034: Variable 'normals' implicitly has type 'any[]' in some locations where its type cannot be determined.
+src/geometries/TubeGeometry.js(84,9): error TS7034: Variable 'uvs' implicitly has type 'any[]' in some locations where its type cannot be determined.
+src/geometries/TubeGeometry.js(85,9): error TS7034: Variable 'indices' implicitly has type 'any[]' in some locations where its type cannot be determined.
+src/geometries/TubeGeometry.js(93,18): error TS7005: Variable 'indices' implicitly has an 'any[]' type.
+src/geometries/TubeGeometry.js(94,62): error TS7005: Variable 'vertices' implicitly has an 'any[]' type.
+src/geometries/TubeGeometry.js(95,60): error TS7005: Variable 'normals' implicitly has an 'any[]' type.
+src/geometries/TubeGeometry.js(96,56): error TS7005: Variable 'uvs' implicitly has an 'any[]' type.
+src/geometries/TubeGeometry.js(126,29): error TS7006: Parameter 'i' implicitly has an 'any' type.
+src/geometries/TubeGeometry.js(208,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
+src/geometries/TubeGeometry.js(222,8): error TS2339: Property 'path' does not exist on type '{ metadata: { version: number; type: string; generator: string; }; }'.
+src/geometries/TubeGeometry.js(222,31): error TS2339: Property 'path' does not exist on type 'Object'.
+src/geometries/TubeGeometry.js(240,8): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type 'typeof import("C:/Users/srigaud/Desktop/three.js/src/extras/curves/Curves")'.
+src/geometries/TubeGeometry.js(240,21): error TS2339: Property 'path' does not exist on type 'Object'.
+src/geometries/TubeGeometry.js(240,50): error TS2339: Property 'path' does not exist on type 'Object'.
+src/geometries/TubeGeometry.js(241,9): error TS2339: Property 'tubularSegments' does not exist on type 'Object'.
+src/geometries/TubeGeometry.js(242,9): error TS2339: Property 'radius' does not exist on type 'Object'.
+src/geometries/TubeGeometry.js(243,9): error TS2339: Property 'radialSegments' does not exist on type 'Object'.
+src/geometries/TubeGeometry.js(244,9): error TS2339: Property 'closed' does not exist on type 'Object'.
+src/geometries/WireframeGeometry.js(65,42): error TS2339: Property 'position' does not exist on type '{}'.
+src/geometries/WireframeGeometry.js(111,42): error TS2339: Property 'position' does not exist on type '{}'.
+src/geometries/WireframeGeometry.js(147,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
+src/geometries/WireframeGeometry.js(159,24): error TS7006: Parameter 'start' implicitly has an 'any' type.
+src/geometries/WireframeGeometry.js(159,31): error TS7006: Parameter 'end' implicitly has an 'any' type.
+src/geometries/WireframeGeometry.js(159,36): error TS7006: Parameter 'edges' implicitly has an 'any' type.
 src/helpers/ArrowHelper.js(12,5): error TS7034: Variable '_lineGeometry' implicitly has type 'any' in some locations where its type cannot be determined.
 src/helpers/ArrowHelper.js(12,20): error TS7034: Variable '_coneGeometry' implicitly has type 'any' in some locations where its type cannot be determined.
 src/helpers/ArrowHelper.js(41,21): error TS2304: Cannot find name 'Color'.
@@ -27856,40 +27883,40 @@ src/loaders/ObjectLoader.js(924,12): error TS2339: Property '_active' does not e
 src/loaders/ObjectLoader.js(925,12): error TS2339: Property '_bounds' does not exist on type 'BatchedMesh'.
 src/loaders/ObjectLoader.js(925,39): error TS7006: Parameter 'bound' implicitly has an 'any' type.
 src/loaders/ObjectLoader.js(1012,10): error TS2540: Cannot assign to 'uuid' because it is a read-only property.
-src/loaders/ObjectLoader.js(1021,67): error TS2339: Property 'position' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1021,67): error TS2339: Property 'position' does not exist on type 'Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | PerspectiveCamera | OrthographicCamera'.
   Property 'position' does not exist on type 'Object3D'.
-src/loaders/ObjectLoader.js(1021,84): error TS2339: Property 'quaternion' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1021,84): error TS2339: Property 'quaternion' does not exist on type 'Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | PerspectiveCamera | OrthographicCamera'.
   Property 'quaternion' does not exist on type 'Object3D'.
-src/loaders/ObjectLoader.js(1021,103): error TS2339: Property 'scale' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1021,103): error TS2339: Property 'scale' does not exist on type 'Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | PerspectiveCamera | OrthographicCamera'.
   Property 'scale' does not exist on type 'Object3D'.
-src/loaders/ObjectLoader.js(1025,46): error TS2339: Property 'position' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1025,46): error TS2339: Property 'position' does not exist on type 'Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | PerspectiveCamera | OrthographicCamera'.
   Property 'position' does not exist on type 'Object3D'.
-src/loaders/ObjectLoader.js(1026,46): error TS2339: Property 'rotation' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1026,46): error TS2339: Property 'rotation' does not exist on type 'Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | PerspectiveCamera | OrthographicCamera'.
   Property 'rotation' does not exist on type 'Object3D'.
-src/loaders/ObjectLoader.js(1027,48): error TS2339: Property 'quaternion' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1027,48): error TS2339: Property 'quaternion' does not exist on type 'Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | PerspectiveCamera | OrthographicCamera'.
   Property 'quaternion' does not exist on type 'Object3D'.
-src/loaders/ObjectLoader.js(1028,43): error TS2339: Property 'scale' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1028,43): error TS2339: Property 'scale' does not exist on type 'Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | PerspectiveCamera | OrthographicCamera'.
   Property 'scale' does not exist on type 'Object3D'.
-src/loaders/ObjectLoader.js(1039,54): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1039,54): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | PerspectiveCamera | OrthographicCamera'.
   Property 'shadow' does not exist on type 'Object3D'.
-src/loaders/ObjectLoader.js(1040,49): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1040,49): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | PerspectiveCamera | OrthographicCamera'.
   Property 'shadow' does not exist on type 'Object3D'.
-src/loaders/ObjectLoader.js(1041,55): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1041,55): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | PerspectiveCamera | OrthographicCamera'.
   Property 'shadow' does not exist on type 'Object3D'.
-src/loaders/ObjectLoader.js(1042,51): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1042,51): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | PerspectiveCamera | OrthographicCamera'.
   Property 'shadow' does not exist on type 'Object3D'.
-src/loaders/ObjectLoader.js(1043,52): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1043,52): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | PerspectiveCamera | OrthographicCamera'.
   Property 'shadow' does not exist on type 'Object3D'.
-src/loaders/ObjectLoader.js(1044,51): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1044,51): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | PerspectiveCamera | OrthographicCamera'.
   Property 'shadow' does not exist on type 'Object3D'.
-src/loaders/ObjectLoader.js(1060,17): error TS2345: Argument of type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera' is not assignable to parameter of type 'Object3D'.
+src/loaders/ObjectLoader.js(1060,17): error TS2345: Argument of type 'Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | PerspectiveCamera | OrthographicCamera' is not assignable to parameter of type 'Object3D'.
   Type 'Mesh' is not assignable to type 'Object3D'.
     Types of property 'raycast' are incompatible.
       Type '(raycaster: Raycaster, intersects: Object[]) => void' is not assignable to type '() => void'.
         Target signature provides too few arguments. Expected 2 or more, but got 0.
-src/loaders/ObjectLoader.js(1082,48): error TS2339: Property 'autoUpdate' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1082,48): error TS2339: Property 'autoUpdate' does not exist on type 'Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | PerspectiveCamera | OrthographicCamera'.
   Property 'autoUpdate' does not exist on type 'Object3D'.
-src/loaders/ObjectLoader.js(1093,13): error TS2339: Property 'addLevel' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1093,13): error TS2339: Property 'addLevel' does not exist on type 'Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | PerspectiveCamera | OrthographicCamera'.
   Property 'addLevel' does not exist on type 'Object3D'.
 src/loaders/ObjectLoader.js(1105,17): error TS7006: Parameter 'object' implicitly has an 'any' type.
 src/loaders/ObjectLoader.js(1105,25): error TS7006: Parameter 'skeletons' implicitly has an 'any' type.
@@ -28443,6 +28470,7 @@ src/materials/nodes/MeshBasicNodeMaterial.js(64,14): error TS2304: Cannot find n
 src/materials/nodes/MeshBasicNodeMaterial.js(64,19): error TS2304: Cannot find name 'vec3'.
 src/materials/nodes/MeshBasicNodeMaterial.js(76,13): error TS2304: Cannot find name 'NodeBuilder'.
 src/materials/nodes/MeshBasicNodeMaterial.js(77,15): error TS2315: Type 'BasicEnvironmentNode' is not generic.
+src/materials/nodes/MeshBasicNodeMaterial.js(77,36): error TS2304: Cannot find name 'vec3'.
 src/materials/nodes/MeshBasicNodeMaterial.js(79,2): error TS2416: Property 'setupEnvironment' in type 'MeshBasicNodeMaterial' is not assignable to the same property in base type 'NodeMaterial'.
   Type '(builder: NodeBuilder) => any' is not assignable to type '() => Node<any>'.
     Target signature provides too few arguments. Expected 1 or more, but got 0.
@@ -28453,6 +28481,7 @@ src/materials/nodes/MeshBasicNodeMaterial.js(112,14): error TS2304: Cannot find 
 src/materials/nodes/MeshBasicNodeMaterial.js(112,19): error TS2304: Cannot find name 'vec3'.
 src/materials/nodes/MeshLambertNodeMaterial.js(58,13): error TS2304: Cannot find name 'NodeBuilder'.
 src/materials/nodes/MeshLambertNodeMaterial.js(59,15): error TS2315: Type 'BasicEnvironmentNode' is not generic.
+src/materials/nodes/MeshLambertNodeMaterial.js(59,36): error TS2304: Cannot find name 'vec3'.
 src/materials/nodes/MeshLambertNodeMaterial.js(61,2): error TS2416: Property 'setupEnvironment' in type 'MeshLambertNodeMaterial' is not assignable to the same property in base type 'NodeMaterial'.
   Type '(builder: NodeBuilder) => any' is not assignable to type '() => Node<any>'.
     Target signature provides too few arguments. Expected 1 or more, but got 0.
@@ -28467,6 +28496,7 @@ src/materials/nodes/MeshPhongNodeMaterial.js(72,14): error TS2304: Cannot find n
 src/materials/nodes/MeshPhongNodeMaterial.js(72,19): error TS2304: Cannot find name 'vec3'.
 src/materials/nodes/MeshPhongNodeMaterial.js(87,13): error TS2304: Cannot find name 'NodeBuilder'.
 src/materials/nodes/MeshPhongNodeMaterial.js(88,15): error TS2315: Type 'BasicEnvironmentNode' is not generic.
+src/materials/nodes/MeshPhongNodeMaterial.js(88,36): error TS2304: Cannot find name 'vec3'.
 src/materials/nodes/MeshPhongNodeMaterial.js(90,2): error TS2416: Property 'setupEnvironment' in type 'MeshPhongNodeMaterial' is not assignable to the same property in base type 'NodeMaterial'.
   Type '(builder: NodeBuilder) => any' is not assignable to type '() => Node<any>'.
     Target signature provides too few arguments. Expected 1 or more, but got 0.
@@ -30161,8 +30191,8 @@ src/nodes/core/NodeBuilder.js(530,58): error TS7053: Element implicitly has an '
 src/nodes/core/NodeBuilder.js(538,57): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Object'.
   No index signature with a parameter of type 'string' was found on type 'Object'.
 src/nodes/core/NodeBuilder.js(551,20): error TS2304: Cannot find name 'NodeUniformsGroup'.
-src/nodes/core/NodeBuilder.js(555,20): error TS7053: Element implicitly has an 'any' type because expression of type '"compute" | "vertex" | "fragment" | "any"' can't be used to index type 'Object'.
-  Property 'compute' does not exist on type 'Object'.
+src/nodes/core/NodeBuilder.js(555,20): error TS7053: Element implicitly has an 'any' type because expression of type '"vertex" | "fragment" | "compute" | "any"' can't be used to index type 'Object'.
+  Property 'vertex' does not exist on type 'Object'.
 src/nodes/core/NodeBuilder.js(561,9): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Object'.
   No index signature with a parameter of type 'string' was found on type 'Object'.
 src/nodes/core/NodeBuilder.js(563,5): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Object'.
@@ -30238,17 +30268,17 @@ src/nodes/core/NodeBuilder.js(1419,13): error TS2304: Cannot find name 'BufferAt
 src/nodes/core/NodeBuilder.js(1511,14): error TS2304: Cannot find name 'StackNode'.
 src/nodes/core/NodeBuilder.js(1527,14): error TS2304: Cannot find name 'StackNode'.
 src/nodes/core/NodeBuilder.js(1544,13): error TS2304: Cannot find name 'Node'.
-src/nodes/core/NodeBuilder.js(1549,25): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | undefined'.
-  Type 'null' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | undefined'.
+src/nodes/core/NodeBuilder.js(1549,25): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type '"vertex" | "fragment" | "compute" | "any" | undefined'.
+  Type 'null' is not assignable to type '"vertex" | "fragment" | "compute" | "any" | undefined'.
 src/nodes/core/NodeBuilder.js(1563,8): error TS18047: 'nodeData' is possibly 'null'.
-src/nodes/core/NodeBuilder.js(1563,8): error TS7053: Element implicitly has an 'any' type because expression of type '"compute" | "vertex" | "fragment" | "any"' can't be used to index type 'Object'.
-  Property 'compute' does not exist on type 'Object'.
+src/nodes/core/NodeBuilder.js(1563,8): error TS7053: Element implicitly has an 'any' type because expression of type '"vertex" | "fragment" | "compute" | "any"' can't be used to index type 'Object'.
+  Property 'vertex' does not exist on type 'Object'.
 src/nodes/core/NodeBuilder.js(1563,48): error TS18047: 'nodeData' is possibly 'null'.
-src/nodes/core/NodeBuilder.js(1563,48): error TS7053: Element implicitly has an 'any' type because expression of type '"compute" | "vertex" | "fragment" | "any"' can't be used to index type 'Object'.
-  Property 'compute' does not exist on type 'Object'.
+src/nodes/core/NodeBuilder.js(1563,48): error TS7053: Element implicitly has an 'any' type because expression of type '"vertex" | "fragment" | "compute" | "any"' can't be used to index type 'Object'.
+  Property 'vertex' does not exist on type 'Object'.
 src/nodes/core/NodeBuilder.js(1565,10): error TS18047: 'nodeData' is possibly 'null'.
-src/nodes/core/NodeBuilder.js(1565,10): error TS7053: Element implicitly has an 'any' type because expression of type '"compute" | "vertex" | "fragment" | "any"' can't be used to index type 'Object'.
-  Property 'compute' does not exist on type 'Object'.
+src/nodes/core/NodeBuilder.js(1565,10): error TS7053: Element implicitly has an 'any' type because expression of type '"vertex" | "fragment" | "compute" | "any"' can't be used to index type 'Object'.
+  Property 'vertex' does not exist on type 'Object'.
 src/nodes/core/NodeBuilder.js(1572,13): error TS2304: Cannot find name 'Node'.
 src/nodes/core/NodeBuilder.js(1580,19): error TS2339: Property 'properties' does not exist on type 'Object'.
 src/nodes/core/NodeBuilder.js(1580,44): error TS2339: Property 'properties' does not exist on type 'Object'.
@@ -30257,26 +30287,26 @@ src/nodes/core/NodeBuilder.js(1595,34): error TS2339: Property 'bufferAttribute'
 src/nodes/core/NodeBuilder.js(1599,32): error TS2339: Property 'index' does not exist on type 'Object'.
 src/nodes/core/NodeBuilder.js(1605,13): error TS2339: Property 'bufferAttribute' does not exist on type 'Object'.
 src/nodes/core/NodeBuilder.js(1616,13): error TS2304: Cannot find name 'OutputStructNode'.
-src/nodes/core/NodeBuilder.js(1622,59): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | undefined'.
-  Type 'null' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | undefined'.
+src/nodes/core/NodeBuilder.js(1622,59): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type '"vertex" | "fragment" | "compute" | "any" | undefined'.
+  Type 'null' is not assignable to type '"vertex" | "fragment" | "compute" | "any" | undefined'.
 src/nodes/core/NodeBuilder.js(1626,29): error TS2339: Property 'structType' does not exist on type 'Object'.
 src/nodes/core/NodeBuilder.js(1630,31): error TS2339: Property 'index' does not exist on type 'Object'.
-src/nodes/core/NodeBuilder.js(1636,4): error TS7053: Element implicitly has an 'any' type because expression of type '"compute" | "vertex" | "fragment" | "any"' can't be used to index type 'Object'.
-  Property 'compute' does not exist on type 'Object'.
+src/nodes/core/NodeBuilder.js(1636,4): error TS7053: Element implicitly has an 'any' type because expression of type '"vertex" | "fragment" | "compute" | "any"' can't be used to index type 'Object'.
+  Property 'vertex' does not exist on type 'Object'.
 src/nodes/core/NodeBuilder.js(1638,13): error TS2339: Property 'structType' does not exist on type 'Object'.
 src/nodes/core/NodeBuilder.js(1649,13): error TS2304: Cannot find name 'OutputStructNode'.
 src/nodes/core/NodeBuilder.js(1665,13): error TS2304: Cannot find name 'UniformNode'.
-src/nodes/core/NodeBuilder.js(1671,34): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | undefined'.
-  Type 'null' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | undefined'.
+src/nodes/core/NodeBuilder.js(1671,34): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type '"vertex" | "fragment" | "compute" | "any" | undefined'.
+  Type 'null' is not assignable to type '"vertex" | "fragment" | "compute" | "any" | undefined'.
 src/nodes/core/NodeBuilder.js(1675,30): error TS2339: Property 'uniform' does not exist on type 'Object'.
 src/nodes/core/NodeBuilder.js(1679,32): error TS2339: Property 'index' does not exist on type 'Object'.
-src/nodes/core/NodeBuilder.js(1683,4): error TS7053: Element implicitly has an 'any' type because expression of type '"compute" | "vertex" | "fragment" | "any"' can't be used to index type 'Object'.
-  Property 'compute' does not exist on type 'Object'.
+src/nodes/core/NodeBuilder.js(1683,4): error TS7053: Element implicitly has an 'any' type because expression of type '"vertex" | "fragment" | "compute" | "any"' can't be used to index type 'Object'.
+  Property 'vertex' does not exist on type 'Object'.
 src/nodes/core/NodeBuilder.js(1685,13): error TS2339: Property 'uniform' does not exist on type 'Object'.
 src/nodes/core/NodeBuilder.js(1696,13): error TS2304: Cannot find name 'Node'.
 src/nodes/core/NodeBuilder.js(1713,13): error TS2304: Cannot find name 'VarNode'.
-src/nodes/core/NodeBuilder.js(1721,70): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | undefined'.
-  Type 'null' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | undefined'.
+src/nodes/core/NodeBuilder.js(1721,70): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type '"vertex" | "fragment" | "compute" | "any" | undefined'.
+  Type 'null' is not assignable to type '"vertex" | "fragment" | "compute" | "any" | undefined'.
 src/nodes/core/NodeBuilder.js(1725,26): error TS2339: Property 'variable' does not exist on type 'Object'.
 src/nodes/core/NodeBuilder.js(1732,38): error TS2322: Type 'number' is not assignable to type 'NodeVar[]'.
 src/nodes/core/NodeBuilder.js(1738,5): error TS2356: An arithmetic operand must be of type 'any', 'number', 'bigint' or an enum type.
@@ -30287,8 +30317,8 @@ src/nodes/core/NodeBuilder.js(1812,26): error TS2304: Cannot find name 'Property
 src/nodes/core/NodeBuilder.js(1821,30): error TS2339: Property 'varying' does not exist on type 'Object'.
 src/nodes/core/NodeBuilder.js(1834,13): error TS2339: Property 'varying' does not exist on type 'Object'.
 src/nodes/core/NodeBuilder.js(1845,13): error TS2304: Cannot find name 'CodeNode'.
-src/nodes/core/NodeBuilder.js(1850,31): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | undefined'.
-  Type 'null' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | undefined'.
+src/nodes/core/NodeBuilder.js(1850,31): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type '"vertex" | "fragment" | "compute" | "any" | undefined'.
+  Type 'null' is not assignable to type '"vertex" | "fragment" | "compute" | "any" | undefined'.
 src/nodes/core/NodeBuilder.js(1854,27): error TS2339: Property 'code' does not exist on type 'Object'.
 src/nodes/core/NodeBuilder.js(1865,13): error TS2339: Property 'code' does not exist on type 'Object'.
 src/nodes/core/NodeBuilder.js(1879,13): error TS2304: Cannot find name 'Node'.
@@ -30317,8 +30347,8 @@ src/nodes/core/NodeBuilder.js(2121,13): error TS2304: Cannot find name 'Node'.
 src/nodes/core/NodeBuilder.js(2144,24): error TS2345: Argument of type 'string' is not assignable to parameter of type '"setup" | "analyze" | "generate" | null'.
 src/nodes/core/NodeBuilder.js(2146,9): error TS2339: Property 'result' does not exist on type '{ code: string; }'.
 src/nodes/core/NodeBuilder.js(2150,8): error TS2339: Property 'vars' does not exist on type '{ code: string; }'.
-src/nodes/core/NodeBuilder.js(2150,29): error TS2345: Argument of type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any"'.
-  Type 'null' is not assignable to type '"compute" | "vertex" | "fragment" | "any"'.
+src/nodes/core/NodeBuilder.js(2150,29): error TS2345: Argument of type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to parameter of type '"vertex" | "fragment" | "compute" | "any"'.
+  Type 'null' is not assignable to type '"vertex" | "fragment" | "compute" | "any"'.
 src/nodes/core/NodeBuilder.js(2168,21): error TS8024: JSDoc '@param' tag has name 'op', but there is no parameter with that name.
 src/nodes/core/NodeBuilder.js(2173,3): error TS2322: Type 'null' is not assignable to type 'string'.
 src/nodes/core/NodeBuilder.js(2180,13): error TS2304: Cannot find name 'Node'.
@@ -30339,7 +30369,7 @@ src/nodes/core/NodeBuilder.js(2453,24): error TS2345: Argument of type 'string' 
 src/nodes/core/NodeBuilder.js(2455,22): error TS2339: Property 'vertex' does not exist on type 'Object'.
 src/nodes/core/NodeBuilder.js(2455,45): error TS2339: Property 'vertex' does not exist on type 'Object'.
 src/nodes/core/NodeBuilder.js(2457,58): error TS2339: Property 'vertex' does not exist on type 'Object'.
-src/nodes/core/NodeBuilder.js(2463,26): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any" | null'.
+src/nodes/core/NodeBuilder.js(2463,26): error TS2345: Argument of type 'string' is not assignable to parameter of type '"vertex" | "fragment" | "compute" | "any" | null'.
 src/nodes/core/NodeBuilder.js(2502,14): error TS2304: Cannot find name 'Uniform'.
 src/nodes/core/NodeCache.js(27,21): error TS2304: Cannot find name 'Node'.
 src/nodes/core/NodeCache.js(44,13): error TS2304: Cannot find name 'Node'.
@@ -33256,7 +33286,7 @@ src/renderers/common/extras/PMREMGenerator.js(113,3): error TS7008: Member '_lod
 src/renderers/common/extras/PMREMGenerator.js(118,3): error TS7008: Member '_backgroundBox' implicitly has an 'any' type.
 src/renderers/common/extras/PMREMGenerator.js(134,13): error TS2304: Cannot find name 'Scene'.
 src/renderers/common/extras/PMREMGenerator.js(199,13): error TS2304: Cannot find name 'Scene'.
-src/renderers/common/extras/PMREMGenerator.js(223,13): error TS2304: Cannot find name 'Texture'.
+src/renderers/common/extras/PMREMGenerator.js(223,13): error TS2552: Cannot find name 'Texture'. Did you mean 'texture'?
 src/renderers/common/extras/PMREMGenerator.js(253,13): error TS2304: Cannot find name 'Texture'.
 src/renderers/common/extras/PMREMGenerator.js(271,13): error TS2304: Cannot find name 'Texture'.
 src/renderers/common/extras/PMREMGenerator.js(301,13): error TS2304: Cannot find name 'Texture'.
@@ -33703,6 +33733,11 @@ src/renderers/common/Renderer.js(2081,3): error TS2531: Object is possibly 'null
 src/renderers/common/Renderer.js(2092,26): error TS2345: Argument of type 'null' is not assignable to parameter of type 'Function'.
 src/renderers/common/Renderer.js(2131,3): error TS2696: The 'Object' type is assignable to very few other types. Did you mean to use the 'any' type instead?
   Type 'Object' is missing the following properties from type 'RenderTarget': isRenderTarget, width, height, depth, and 21 more.
+src/renderers/common/Renderer.js(2150,13): error TS2304: Cannot find name 'Object3D'.
+src/renderers/common/Renderer.js(2152,13): error TS2304: Cannot find name 'Camera'.
+src/renderers/common/Renderer.js(2153,13): error TS2304: Cannot find name 'BufferGeometry'.
+src/renderers/common/Renderer.js(2154,13): error TS2304: Cannot find name 'Material'.
+src/renderers/common/Renderer.js(2156,13): error TS2304: Cannot find name 'LightsNode'.
 src/renderers/common/Renderer.js(2193,13): error TS2304: Cannot find name 'Node'.
 src/renderers/common/Renderer.js(2193,24): error TS2304: Cannot find name 'Node'.
 src/renderers/common/Renderer.js(2194,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
@@ -34255,7 +34290,7 @@ src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(249,59): error TS2345: Arg
   Type 'null' is not assignable to type 'string'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(249,90): error TS2339: Property 'label' does not exist on type 'Object'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(258,13): error TS2304: Cannot find name 'Node'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(262,25): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(262,25): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
   Type 'null' is not assignable to type 'string | undefined'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(270,39): error TS2554: Expected 1 arguments, but got 2.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(278,13): error TS2304: Cannot find name 'StorageArrayElementNode'.
@@ -34276,7 +34311,7 @@ src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(430,13): error TS2304: Can
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(445,13): error TS2304: Cannot find name 'Texture'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(461,13): error TS2304: Cannot find name 'Texture'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(467,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(469,93): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(469,93): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
   Type 'null' is not assignable to type 'string | undefined'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(515,2): error TS2416: Property 'getUniforms' in type 'GLSLNodeBuilder' is not assignable to the same property in base type 'NodeBuilder'.
   Type '(shaderStage: string) => string' is not assignable to type '() => string'.
@@ -34304,7 +34339,7 @@ src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(858,2): error TS2416: Prop
   Type '() => string | null' is not assignable to type '() => string'.
     Type 'string | null' is not assignable to type 'string'.
       Type 'null' is not assignable to type 'string'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(912,35): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(912,35): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
   Type 'null' is not assignable to type 'string | undefined'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(954,18): error TS2339: Property 'name' does not exist on type 'Object'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(954,24): error TS2339: Property 'behavior' does not exist on type 'Object'.
@@ -34341,7 +34376,7 @@ src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1234,32): error TS2339: Pr
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1241,33): error TS2339: Property 'result' does not exist on type 'Object'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1251,22): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ fragment: {}; vertex: {}; compute?: undefined; } | { compute: {}; fragment?: undefined; vertex?: undefined; }'.
   No index signature with a parameter of type 'string' was found on type '{ fragment: {}; vertex: {}; compute?: undefined; } | { compute: {}; fragment?: undefined; vertex?: undefined; }'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1259,37): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any"'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1259,37): error TS2345: Argument of type 'string' is not assignable to parameter of type '"vertex" | "fragment" | "compute" | "any"'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1260,47): error TS2554: Expected 0 arguments, but got 1.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1267,49): error TS2345: Argument of type '{} | undefined' is not assignable to parameter of type 'Object'.
   Type 'undefined' is not assignable to type 'Object'.
@@ -34352,14 +34387,14 @@ src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1272,50): error TS2345: Ar
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1285,13): error TS2304: Cannot find name 'UniformNode'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1289,14): error TS2304: Cannot find name 'NodeUniform'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1291,2): error TS2416: Property 'getUniformFromNode' in type 'GLSLNodeBuilder' is not assignable to the same property in base type 'NodeBuilder'.
-  Type '(node: UniformNode, type: string, shaderStage: string, name?: string | null | undefined) => NodeUniform' is not assignable to type '(node: UniformNode, type: string, shaderStage?: "compute" | "vertex" | "fragment" | "any" | undefined, name?: string | null) => NodeUniform'.
+  Type '(node: UniformNode, type: string, shaderStage: string, name?: string | null | undefined) => NodeUniform' is not assignable to type '(node: UniformNode, type: string, shaderStage?: "vertex" | "fragment" | "compute" | "any" | undefined, name?: string | null) => NodeUniform'.
     Types of parameters 'shaderStage' and 'shaderStage' are incompatible.
       Type 'string | undefined' is not assignable to type 'string'.
         Type 'undefined' is not assignable to type 'string'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1293,61): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any" | undefined'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1294,48): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any" | undefined'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1293,61): error TS2345: Argument of type 'string' is not assignable to parameter of type '"vertex" | "fragment" | "compute" | "any" | undefined'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1294,48): error TS2345: Argument of type 'string' is not assignable to parameter of type '"vertex" | "fragment" | "compute" | "any" | undefined'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1296,29): error TS2339: Property 'uniformGPU' does not exist on type 'Object'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1303,56): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any"'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1303,56): error TS2345: Argument of type 'string' is not assignable to parameter of type '"vertex" | "fragment" | "compute" | "any"'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1355,13): error TS2339: Property 'uniformGPU' does not exist on type 'Object'.
 src/renderers/webgl-fallback/utils/WebGLAttributeUtils.js(15,15): error TS7006: Parameter 'attributeData' implicitly has an 'any' type.
 src/renderers/webgl-fallback/utils/WebGLAttributeUtils.js(15,30): error TS7006: Parameter 'dualBuffer' implicitly has an 'any' type.
@@ -36529,13 +36564,13 @@ src/renderers/webgpu/nodes/WGSLNodeBuilder.js(220,2): error TS2416: Property 'ne
   Type '(texture: Texture) => boolean' is not assignable to type '() => boolean'.
     Target signature provides too few arguments. Expected 1 or more, but got 0.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(230,13): error TS2304: Cannot find name 'Texture'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(237,77): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(237,77): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
   Type 'null' is not assignable to type 'string | undefined'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(270,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(272,52): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(272,52): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
   Type 'null' is not assignable to type 'string | undefined'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(290,13): error TS2304: Cannot find name 'Texture'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(298,96): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(298,96): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
   Type 'null' is not assignable to type 'string | undefined'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(319,13): error TS2304: Cannot find name 'Texture'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(324,38): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{ 1000: string; 1001: string; 1002: string; }'.
@@ -36549,8 +36584,8 @@ src/renderers/webgpu/nodes/WGSLNodeBuilder.js(381,4): error TS7053: Element impl
   No index signature with a parameter of type 'string' was found on type '{}'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(381,67): error TS7005: Variable 'includes' implicitly has an 'any[]' type.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(409,13): error TS2304: Cannot find name 'Texture'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(416,54): error TS2345: Argument of type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any" | undefined'.
-  Type 'null' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(416,54): error TS2345: Argument of type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to parameter of type '"vertex" | "fragment" | "compute" | "any" | undefined'.
+  Type 'null' is not assignable to type '"vertex" | "fragment" | "compute" | "any" | undefined'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(418,20): error TS2339: Property 'dimensionsSnippet' does not exist on type 'Object'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(418,66): error TS2339: Property 'dimensionsSnippet' does not exist on type 'Object'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(420,42): error TS2339: Property 'dimensionsSnippet' does not exist on type 'Object'.
@@ -36571,26 +36606,26 @@ src/renderers/webgpu/nodes/WGSLNodeBuilder.js(598,13): error TS2304: Cannot find
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(605,2): error TS2416: Property 'generateTexture' in type 'WGSLNodeBuilder' is not assignable to the same property in base type 'NodeBuilder'.
   Type '(texture: Texture, textureProperty: string, uvSnippet: string, depthSnippet: string | null, shaderStage?: string | undefined) => string' is not assignable to type '() => string'.
     Target signature provides too few arguments. Expected 4 or more, but got 0.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(605,70): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(605,70): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
   Type 'null' is not assignable to type 'string | undefined'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(615,95): error TS2554: Expected 4-5 arguments, but got 6.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(630,13): error TS2304: Cannot find name 'Texture'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(636,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(638,87): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(638,87): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
   Type 'null' is not assignable to type 'string | undefined'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(657,13): error TS2304: Cannot find name 'Texture'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(663,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(665,93): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(665,93): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
   Type 'null' is not assignable to type 'string | undefined'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(682,13): error TS2304: Cannot find name 'Texture'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(690,89): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(690,89): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
   Type 'null' is not assignable to type 'string | undefined'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(711,13): error TS2304: Cannot find name 'Texture'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(717,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(719,87): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(719,87): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
   Type 'null' is not assignable to type 'string | undefined'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(736,13): error TS2304: Cannot find name 'Node'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(740,25): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(740,25): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
   Type 'null' is not assignable to type 'string | undefined'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(798,2): error TS2416: Property 'getFunctionOperator' in type 'WGSLNodeBuilder' is not assignable to the same property in base type 'NodeBuilder'.
   Type '(op: string) => string | null' is not assignable to type '() => string'.
@@ -36604,14 +36639,14 @@ src/renderers/webgpu/nodes/WGSLNodeBuilder.js(833,32): error TS2304: Cannot find
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(850,13): error TS2304: Cannot find name 'UniformNode'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(854,14): error TS2304: Cannot find name 'NodeUniform'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(856,2): error TS2416: Property 'getUniformFromNode' in type 'WGSLNodeBuilder' is not assignable to the same property in base type 'NodeBuilder'.
-  Type '(node: UniformNode, type: string, shaderStage: string, name?: string | null | undefined) => NodeUniform' is not assignable to type '(node: UniformNode, type: string, shaderStage?: "compute" | "vertex" | "fragment" | "any" | undefined, name?: string | null) => NodeUniform'.
+  Type '(node: UniformNode, type: string, shaderStage: string, name?: string | null | undefined) => NodeUniform' is not assignable to type '(node: UniformNode, type: string, shaderStage?: "vertex" | "fragment" | "compute" | "any" | undefined, name?: string | null) => NodeUniform'.
     Types of parameters 'shaderStage' and 'shaderStage' are incompatible.
       Type 'string | undefined' is not assignable to type 'string'.
         Type 'undefined' is not assignable to type 'string'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(858,61): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any" | undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(859,48): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any" | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(858,61): error TS2345: Argument of type 'string' is not assignable to parameter of type '"vertex" | "fragment" | "compute" | "any" | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(859,48): error TS2345: Argument of type 'string' is not assignable to parameter of type '"vertex" | "fragment" | "compute" | "any" | undefined'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(861,17): error TS2339: Property 'uniformGPU' does not exist on type 'Object'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(868,56): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any"'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(868,56): error TS2345: Argument of type 'string' is not assignable to parameter of type '"vertex" | "fragment" | "compute" | "any"'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(890,5): error TS18047: 'texture' is possibly 'null'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(891,5): error TS18047: 'texture' is possibly 'null'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(891,28): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ vertex: any; fragment: any; compute: any; }'.
@@ -36622,9 +36657,9 @@ src/renderers/webgpu/nodes/WGSLNodeBuilder.js(915,27): error TS7053: Element imp
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(932,35): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ vertex: any; fragment: any; compute: any; }'.
   No index signature with a parameter of type 'string' was found on type '{ vertex: any; fragment: any; compute: any; }'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(946,13): error TS2339: Property 'uniformGPU' does not exist on type 'Object'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(965,36): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(965,36): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
   Type 'null' is not assignable to type 'string | undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(990,20): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(990,20): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
   Type 'null' is not assignable to type 'string | undefined'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1016,13): error TS2304: Cannot find name 'ShaderNodeInternal'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1035,13): error TS2339: Property 'vars' does not exist on type 'Object'.
@@ -36634,7 +36669,7 @@ src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1041,34): error TS2339: Property '
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1125,2): error TS2416: Property 'getDrawIndex' in type 'WGSLNodeBuilder' is not assignable to the same property in base type 'NodeBuilder'.
   Type '() => null' is not assignable to type '() => string'.
     Type 'null' is not assignable to type 'string'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1192,25): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1192,25): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
   Type 'null' is not assignable to type 'string | undefined'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1294,18): error TS2339: Property 'name' does not exist on type 'Object'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1294,24): error TS2339: Property 'property' does not exist on type 'Object'.
@@ -36663,10 +36698,10 @@ src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1711,19): error TS7053: Element im
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1711,51): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{}'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1725,18): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.
   No index signature with a parameter of type 'string' was found on type '{}'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1750,4): error TS2322: Type 'string' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | null'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1750,4): error TS2322: Type 'string' is not assignable to type '"vertex" | "fragment" | "compute" | "any" | null'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1752,22): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ fragment: {}; vertex: {}; compute?: undefined; } | { compute: {}; fragment?: undefined; vertex?: undefined; }'.
   No index signature with a parameter of type 'string' was found on type '{ fragment: {}; vertex: {}; compute?: undefined; } | { compute: {}; fragment?: undefined; vertex?: undefined; }'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1758,37): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any"'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1758,37): error TS2345: Argument of type 'string' is not assignable to parameter of type '"vertex" | "fragment" | "compute" | "any"'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1786,30): error TS2339: Property 'code' does not exist on type 'Object'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1794,50): error TS2339: Property 'result' does not exist on type 'Object'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1803,40): error TS2339: Property 'result' does not exist on type 'Object'.

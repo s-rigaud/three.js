@@ -10,6 +10,8 @@ AudioListener.filter should be @link
 AudioListener.getFilter can return null
 PositionalAudio methods returning not Audio
 AudioAnalyser constructor
+CylinderGeometry.thetastart & thetaLength is number
+ExtrudeGeometry.extrudepath constructor is number
 
 - [ ] Should not be null
 
