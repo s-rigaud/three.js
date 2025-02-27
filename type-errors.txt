@@ -1157,7 +1157,6 @@ build/three.core.js(17514,31): error TS7006: Parameter 'src' implicitly has an '
 build/three.core.js(17528,37): error TS7006: Parameter 'renderer' implicitly has an 'any' type.
 build/three.core.js(17560,15): error TS7006: Parameter 'parameters' implicitly has an 'any' type.
 build/three.core.js(17570,3): error TS7008: Member 'uniformsGroups' implicitly has an 'any[]' type.
-build/three.core.js(17599,3): error TS7008: Member 'index0AttributeName' implicitly has an 'any' type.
 build/three.core.js(17612,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
 build/three.core.js(17639,10): error TS7006: Parameter 'meta' implicitly has an 'any' type.
 build/three.core.js(17643,8): error TS2339: Property 'glslVersion' does not exist on type 'Object'.
@@ -1755,9 +1754,9 @@ build/three.core.js(25164,30): error TS2554: Expected 0 arguments, but got 1.
 build/three.core.js(25166,41): error TS18047: 'pt1' is possibly 'null'.
 build/three.core.js(25166,45): error TS2339: Property 'isVector2' does not exist on type 'Vector2 | Vector3'.
   Property 'isVector2' does not exist on type 'Vector2'.
-build/three.core.js(25168,17): error TS2345: Argument of type 'Vector2 | Vector3 | null' is not assignable to parameter of type 'Vector3 & Vector2'.
-  Type 'null' is not assignable to type 'Vector3 & Vector2'.
-    Type 'null' is not assignable to type 'Vector3'.
+build/three.core.js(25168,17): error TS2345: Argument of type 'Vector2 | Vector3 | null' is not assignable to parameter of type 'Vector2 & Vector3'.
+  Type 'null' is not assignable to type 'Vector2 & Vector3'.
+    Type 'null' is not assignable to type 'Vector2'.
 build/three.core.js(25168,28): error TS2345: Argument of type 'Vector2 | Vector3 | null' is not assignable to parameter of type 'Vector3 & Vector2'.
   Type 'null' is not assignable to type 'Vector3 & Vector2'.
     Type 'null' is not assignable to type 'Vector3'.
@@ -1771,12 +1770,12 @@ build/three.core.js(25253,32): error TS2345: Argument of type 'Vector2 | Vector3
   Type 'Vector2' is missing the following properties from type 'Vector3': z, setZ, multiplyVectors, applyEuler, and 22 more.
 build/three.core.js(25264,22): error TS2345: Argument of type 'Vector2 | Vector3' is not assignable to parameter of type 'Vector3'.
   Type 'Vector2' is missing the following properties from type 'Vector3': z, setZ, multiplyVectors, applyEuler, and 22 more.
-build/three.core.js(25270,60): error TS2345: Argument of type 'Vector2 | Vector3' is not assignable to parameter of type 'Vector3 & Vector2'.
-  Type 'Vector2' is not assignable to type 'Vector3 & Vector2'.
+build/three.core.js(25270,60): error TS2345: Argument of type 'Vector2 | Vector3' is not assignable to parameter of type 'Vector2 & Vector3'.
+  Type 'Vector2' is not assignable to type 'Vector2 & Vector3'.
     Type 'Vector2' is missing the following properties from type 'Vector3': z, setZ, multiplyVectors, applyEuler, and 22 more.
 build/three.core.js(25276,33): error TS2345: Argument of type 'Vector2 | Vector3' is not assignable to parameter of type 'Vector3'.
   Type 'Vector2' is missing the following properties from type 'Vector3': z, setZ, multiplyVectors, applyEuler, and 22 more.
-build/three.core.js(25287,28): error TS2345: Argument of type 'Vector3' is not assignable to parameter of type 'Vector3 & Vector2'.
+build/three.core.js(25287,28): error TS2345: Argument of type 'Vector3' is not assignable to parameter of type 'Vector2 & Vector3'.
   Type 'Vector3' is missing the following properties from type 'Vector2': width, height, angle, rotateAround
 build/three.core.js(25296,54): error TS2345: Argument of type 'Vector2 | Vector3' is not assignable to parameter of type 'Vector3'.
   Type 'Vector2' is missing the following properties from type 'Vector3': z, setZ, multiplyVectors, applyEuler, and 22 more.
@@ -2772,7 +2771,6 @@ build/three.core.js(35784,30): error TS8024: JSDoc '@param' tag has name 'onErro
 build/three.core.js(35793,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
 build/three.core.js(35801,16): error TS2554: Expected 0 arguments, but got 4.
 build/three.core.js(35811,18): error TS8024: JSDoc '@param' tag has name 'data', but there is no parameter with that name.
-build/three.core.js(35892,12): error TS2304: Cannot find name 'ProgressEvent'.
 build/three.core.js(35919,15): error TS7006: Parameter 'message' implicitly has an 'any' type.
 build/three.core.js(35919,24): error TS7006: Parameter 'response' implicitly has an 'any' type.
 build/three.core.js(35930,15): error TS7006: Parameter 'manager' implicitly has an 'any' type.
@@ -3134,40 +3132,40 @@ build/three.core.js(40056,12): error TS2339: Property '_active' does not exist o
 build/three.core.js(40057,12): error TS2339: Property '_bounds' does not exist on type 'BatchedMesh'.
 build/three.core.js(40057,39): error TS7006: Parameter 'bound' implicitly has an 'any' type.
 build/three.core.js(40144,10): error TS2540: Cannot assign to 'uuid' because it is a read-only property.
-build/three.core.js(40153,67): error TS2339: Property 'position' does not exist on type 'Object3D | PerspectiveCamera | Line | BatchedMesh | Mesh | LOD | OrthographicCamera | Points | SkinnedMesh | Sprite'.
+build/three.core.js(40153,67): error TS2339: Property 'position' does not exist on type 'Object3D | PerspectiveCamera | OrthographicCamera | Mesh | Sprite | LOD | SkinnedMesh | BatchedMesh | Line | Points'.
   Property 'position' does not exist on type 'Object3D'.
-build/three.core.js(40153,84): error TS2339: Property 'quaternion' does not exist on type 'Object3D | PerspectiveCamera | Line | BatchedMesh | Mesh | LOD | OrthographicCamera | Points | SkinnedMesh | Sprite'.
+build/three.core.js(40153,84): error TS2339: Property 'quaternion' does not exist on type 'Object3D | PerspectiveCamera | OrthographicCamera | Mesh | Sprite | LOD | SkinnedMesh | BatchedMesh | Line | Points'.
   Property 'quaternion' does not exist on type 'Object3D'.
-build/three.core.js(40153,103): error TS2339: Property 'scale' does not exist on type 'Object3D | PerspectiveCamera | Line | BatchedMesh | Mesh | LOD | OrthographicCamera | Points | SkinnedMesh | Sprite'.
+build/three.core.js(40153,103): error TS2339: Property 'scale' does not exist on type 'Object3D | PerspectiveCamera | OrthographicCamera | Mesh | Sprite | LOD | SkinnedMesh | BatchedMesh | Line | Points'.
   Property 'scale' does not exist on type 'Object3D'.
-build/three.core.js(40157,46): error TS2339: Property 'position' does not exist on type 'Object3D | PerspectiveCamera | Line | BatchedMesh | Mesh | LOD | OrthographicCamera | Points | SkinnedMesh | Sprite'.
+build/three.core.js(40157,46): error TS2339: Property 'position' does not exist on type 'Object3D | PerspectiveCamera | OrthographicCamera | Mesh | Sprite | LOD | SkinnedMesh | BatchedMesh | Line | Points'.
   Property 'position' does not exist on type 'Object3D'.
-build/three.core.js(40158,46): error TS2339: Property 'rotation' does not exist on type 'Object3D | PerspectiveCamera | Line | BatchedMesh | Mesh | LOD | OrthographicCamera | Points | SkinnedMesh | Sprite'.
+build/three.core.js(40158,46): error TS2339: Property 'rotation' does not exist on type 'Object3D | PerspectiveCamera | OrthographicCamera | Mesh | Sprite | LOD | SkinnedMesh | BatchedMesh | Line | Points'.
   Property 'rotation' does not exist on type 'Object3D'.
-build/three.core.js(40159,48): error TS2339: Property 'quaternion' does not exist on type 'Object3D | PerspectiveCamera | Line | BatchedMesh | Mesh | LOD | OrthographicCamera | Points | SkinnedMesh | Sprite'.
+build/three.core.js(40159,48): error TS2339: Property 'quaternion' does not exist on type 'Object3D | PerspectiveCamera | OrthographicCamera | Mesh | Sprite | LOD | SkinnedMesh | BatchedMesh | Line | Points'.
   Property 'quaternion' does not exist on type 'Object3D'.
-build/three.core.js(40160,43): error TS2339: Property 'scale' does not exist on type 'Object3D | PerspectiveCamera | Line | BatchedMesh | Mesh | LOD | OrthographicCamera | Points | SkinnedMesh | Sprite'.
+build/three.core.js(40160,43): error TS2339: Property 'scale' does not exist on type 'Object3D | PerspectiveCamera | OrthographicCamera | Mesh | Sprite | LOD | SkinnedMesh | BatchedMesh | Line | Points'.
   Property 'scale' does not exist on type 'Object3D'.
-build/three.core.js(40171,54): error TS2339: Property 'shadow' does not exist on type 'Object3D | PerspectiveCamera | Line | BatchedMesh | Mesh | LOD | OrthographicCamera | Points | SkinnedMesh | Sprite'.
+build/three.core.js(40171,54): error TS2339: Property 'shadow' does not exist on type 'Object3D | PerspectiveCamera | OrthographicCamera | Mesh | Sprite | LOD | SkinnedMesh | BatchedMesh | Line | Points'.
   Property 'shadow' does not exist on type 'Object3D'.
-build/three.core.js(40172,49): error TS2339: Property 'shadow' does not exist on type 'Object3D | PerspectiveCamera | Line | BatchedMesh | Mesh | LOD | OrthographicCamera | Points | SkinnedMesh | Sprite'.
+build/three.core.js(40172,49): error TS2339: Property 'shadow' does not exist on type 'Object3D | PerspectiveCamera | OrthographicCamera | Mesh | Sprite | LOD | SkinnedMesh | BatchedMesh | Line | Points'.
   Property 'shadow' does not exist on type 'Object3D'.
-build/three.core.js(40173,55): error TS2339: Property 'shadow' does not exist on type 'Object3D | PerspectiveCamera | Line | BatchedMesh | Mesh | LOD | OrthographicCamera | Points | SkinnedMesh | Sprite'.
+build/three.core.js(40173,55): error TS2339: Property 'shadow' does not exist on type 'Object3D | PerspectiveCamera | OrthographicCamera | Mesh | Sprite | LOD | SkinnedMesh | BatchedMesh | Line | Points'.
   Property 'shadow' does not exist on type 'Object3D'.
-build/three.core.js(40174,51): error TS2339: Property 'shadow' does not exist on type 'Object3D | PerspectiveCamera | Line | BatchedMesh | Mesh | LOD | OrthographicCamera | Points | SkinnedMesh | Sprite'.
+build/three.core.js(40174,51): error TS2339: Property 'shadow' does not exist on type 'Object3D | PerspectiveCamera | OrthographicCamera | Mesh | Sprite | LOD | SkinnedMesh | BatchedMesh | Line | Points'.
   Property 'shadow' does not exist on type 'Object3D'.
-build/three.core.js(40175,52): error TS2339: Property 'shadow' does not exist on type 'Object3D | PerspectiveCamera | Line | BatchedMesh | Mesh | LOD | OrthographicCamera | Points | SkinnedMesh | Sprite'.
+build/three.core.js(40175,52): error TS2339: Property 'shadow' does not exist on type 'Object3D | PerspectiveCamera | OrthographicCamera | Mesh | Sprite | LOD | SkinnedMesh | BatchedMesh | Line | Points'.
   Property 'shadow' does not exist on type 'Object3D'.
-build/three.core.js(40176,51): error TS2339: Property 'shadow' does not exist on type 'Object3D | PerspectiveCamera | Line | BatchedMesh | Mesh | LOD | OrthographicCamera | Points | SkinnedMesh | Sprite'.
+build/three.core.js(40176,51): error TS2339: Property 'shadow' does not exist on type 'Object3D | PerspectiveCamera | OrthographicCamera | Mesh | Sprite | LOD | SkinnedMesh | BatchedMesh | Line | Points'.
   Property 'shadow' does not exist on type 'Object3D'.
-build/three.core.js(40192,17): error TS2345: Argument of type 'Object3D | PerspectiveCamera | Line | BatchedMesh | Mesh | LOD | OrthographicCamera | Points | SkinnedMesh | Sprite' is not assignable to parameter of type 'Object3D'.
-  Type 'Line' is not assignable to type 'Object3D'.
+build/three.core.js(40192,17): error TS2345: Argument of type 'Object3D | PerspectiveCamera | OrthographicCamera | Mesh | Sprite | LOD | SkinnedMesh | BatchedMesh | Line | Points' is not assignable to parameter of type 'Object3D'.
+  Type 'Mesh' is not assignable to type 'Object3D'.
     Types of property 'raycast' are incompatible.
       Type '(raycaster: Raycaster, intersects: Object[]) => void' is not assignable to type '() => void'.
         Target signature provides too few arguments. Expected 2 or more, but got 0.
-build/three.core.js(40214,48): error TS2339: Property 'autoUpdate' does not exist on type 'Object3D | PerspectiveCamera | Line | BatchedMesh | Mesh | LOD | OrthographicCamera | Points | SkinnedMesh | Sprite'.
+build/three.core.js(40214,48): error TS2339: Property 'autoUpdate' does not exist on type 'Object3D | PerspectiveCamera | OrthographicCamera | Mesh | Sprite | LOD | SkinnedMesh | BatchedMesh | Line | Points'.
   Property 'autoUpdate' does not exist on type 'Object3D'.
-build/three.core.js(40225,13): error TS2339: Property 'addLevel' does not exist on type 'Object3D | PerspectiveCamera | Line | BatchedMesh | Mesh | LOD | OrthographicCamera | Points | SkinnedMesh | Sprite'.
+build/three.core.js(40225,13): error TS2339: Property 'addLevel' does not exist on type 'Object3D | PerspectiveCamera | OrthographicCamera | Mesh | Sprite | LOD | SkinnedMesh | BatchedMesh | Line | Points'.
   Property 'addLevel' does not exist on type 'Object3D'.
 build/three.core.js(40237,17): error TS7006: Parameter 'object' implicitly has an 'any' type.
 build/three.core.js(40237,25): error TS7006: Parameter 'skeletons' implicitly has an 'any' type.
@@ -3435,8 +3433,6 @@ build/three.core.js(43546,4): error TS7053: Element implicitly has an 'any' type
 build/three.core.js(43565,15): error TS7006: Parameter 'mixer' implicitly has an 'any' type.
 build/three.core.js(43565,22): error TS7006: Parameter 'clip' implicitly has an 'any' type.
 build/three.core.js(43569,3): error TS7008: Member '_localRoot' implicitly has an 'any' type.
-build/three.core.js(43596,3): error TS7008: Member '_cacheIndex' implicitly has an 'any' type.
-build/three.core.js(43597,3): error TS7008: Member '_byClipCacheIndex' implicitly has an 'any' type.
 build/three.core.js(43599,3): error TS7022: '_timeScaleInterpolant' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
 build/three.core.js(43600,3): error TS7022: '_weightInterpolant' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
 build/three.core.js(43676,11): error TS7006: Parameter 'time' implicitly has an 'any' type.
@@ -7834,45 +7830,41 @@ examples/jsm/geometries/DecalGeometry.js(390,15): error TS7006: Parameter 'posit
 examples/jsm/geometries/DecalGeometry.js(393,3): error TS7008: Member 'normal' implicitly has an 'any' type.
 examples/jsm/geometries/DecalGeometry.js(402,14): error TS2351: This expression is not constructable.
   Type 'Function' has no construct signatures.
-examples/jsm/geometries/ParametricGeometries.js(14,20): error TS7006: Parameter 'v' implicitly has an 'any' type.
-examples/jsm/geometries/ParametricGeometries.js(14,23): error TS7006: Parameter 'u' implicitly has an 'any' type.
-examples/jsm/geometries/ParametricGeometries.js(14,26): error TS7006: Parameter 'target' implicitly has an 'any' type.
-examples/jsm/geometries/ParametricGeometries.js(39,20): error TS7006: Parameter 'width' implicitly has an 'any' type.
-examples/jsm/geometries/ParametricGeometries.js(39,27): error TS7006: Parameter 'height' implicitly has an 'any' type.
-examples/jsm/geometries/ParametricGeometries.js(41,21): error TS7006: Parameter 'u' implicitly has an 'any' type.
-examples/jsm/geometries/ParametricGeometries.js(41,24): error TS7006: Parameter 'v' implicitly has an 'any' type.
-examples/jsm/geometries/ParametricGeometries.js(41,27): error TS7006: Parameter 'target' implicitly has an 'any' type.
-examples/jsm/geometries/ParametricGeometries.js(53,21): error TS7006: Parameter 'u' implicitly has an 'any' type.
-examples/jsm/geometries/ParametricGeometries.js(53,24): error TS7006: Parameter 't' implicitly has an 'any' type.
-examples/jsm/geometries/ParametricGeometries.js(53,27): error TS7006: Parameter 'target' implicitly has an 'any' type.
-examples/jsm/geometries/ParametricGeometries.js(70,23): error TS7006: Parameter 'u' implicitly has an 'any' type.
-examples/jsm/geometries/ParametricGeometries.js(70,26): error TS7006: Parameter 't' implicitly has an 'any' type.
-examples/jsm/geometries/ParametricGeometries.js(70,29): error TS7006: Parameter 'target' implicitly has an 'any' type.
-examples/jsm/geometries/ParametricGeometries.js(99,22): error TS2339: Property 'TubeGeometry' does not exist on type '{ klein: (v: any, u: any, target: any) => void; plane: (width: any, height: any) => (u: any, v: any, target: any) => void; mobius: (u: any, t: any, target: any) => void; mobius3d: (u: any, t: any, target: any) => void; }'.
-examples/jsm/geometries/ParametricGeometries.js(101,15): error TS7006: Parameter 'path' implicitly has an 'any' type.
-examples/jsm/geometries/ParametricGeometries.js(112,28): error TS7006: Parameter 'u' implicitly has an 'any' type.
-examples/jsm/geometries/ParametricGeometries.js(112,31): error TS7006: Parameter 'v' implicitly has an 'any' type.
-examples/jsm/geometries/ParametricGeometries.js(112,34): error TS7006: Parameter 'target' implicitly has an 'any' type.
-examples/jsm/geometries/ParametricGeometries.js(158,22): error TS2339: Property 'TorusKnotGeometry' does not exist on type '{ klein: (v: any, u: any, target: any) => void; plane: (width: any, height: any) => (u: any, v: any, target: any) => void; mobius: (u: any, t: any, target: any) => void; mobius3d: (u: any, t: any, target: any) => void; }'.
-examples/jsm/geometries/ParametricGeometries.js(158,95): error TS2339: Property 'TubeGeometry' does not exist on type '{ klein: (v: any, u: any, target: any) => void; plane: (width: any, height: any) => (u: any, v: any, target: any) => void; mobius: (u: any, t: any, target: any) => void; mobius3d: (u: any, t: any, target: any) => void; }'.
-examples/jsm/geometries/ParametricGeometries.js(162,32): error TS8026: Expected Curve<TVector> type arguments; provide these with an '@extends' tag.
-examples/jsm/geometries/ParametricGeometries.js(164,14): error TS7006: Parameter 't' implicitly has an 'any' type.
-examples/jsm/geometries/ParametricGeometries.js(184,23): error TS2674: Constructor of class 'Curve<TVector>' is protected and only accessible within the class declaration.
-examples/jsm/geometries/ParametricGeometries.js(204,22): error TS2339: Property 'SphereGeometry' does not exist on type '{ klein: (v: any, u: any, target: any) => void; plane: (width: any, height: any) => (u: any, v: any, target: any) => void; mobius: (u: any, t: any, target: any) => void; mobius3d: (u: any, t: any, target: any) => void; }'.
-examples/jsm/geometries/ParametricGeometries.js(206,15): error TS7006: Parameter 'size' implicitly has an 'any' type.
-examples/jsm/geometries/ParametricGeometries.js(206,21): error TS7006: Parameter 'u' implicitly has an 'any' type.
-examples/jsm/geometries/ParametricGeometries.js(206,24): error TS7006: Parameter 'v' implicitly has an 'any' type.
-examples/jsm/geometries/ParametricGeometries.js(208,20): error TS7006: Parameter 'u' implicitly has an 'any' type.
-examples/jsm/geometries/ParametricGeometries.js(208,23): error TS7006: Parameter 'v' implicitly has an 'any' type.
-examples/jsm/geometries/ParametricGeometries.js(208,26): error TS7006: Parameter 'target' implicitly has an 'any' type.
-examples/jsm/geometries/ParametricGeometries.js(234,22): error TS2339: Property 'PlaneGeometry' does not exist on type '{ klein: (v: any, u: any, target: any) => void; plane: (width: any, height: any) => (u: any, v: any, target: any) => void; mobius: (u: any, t: any, target: any) => void; mobius3d: (u: any, t: any, target: any) => void; }'.
-examples/jsm/geometries/ParametricGeometries.js(236,15): error TS7006: Parameter 'width' implicitly has an 'any' type.
-examples/jsm/geometries/ParametricGeometries.js(236,22): error TS7006: Parameter 'depth' implicitly has an 'any' type.
-examples/jsm/geometries/ParametricGeometries.js(236,29): error TS7006: Parameter 'segmentsWidth' implicitly has an 'any' type.
-examples/jsm/geometries/ParametricGeometries.js(236,44): error TS7006: Parameter 'segmentsDepth' implicitly has an 'any' type.
-examples/jsm/geometries/ParametricGeometries.js(238,19): error TS7006: Parameter 'u' implicitly has an 'any' type.
-examples/jsm/geometries/ParametricGeometries.js(238,22): error TS7006: Parameter 'v' implicitly has an 'any' type.
-examples/jsm/geometries/ParametricGeometries.js(238,25): error TS7006: Parameter 'target' implicitly has an 'any' type.
+examples/jsm/geometries/ParametricGeometries.js(16,15): error TS7006: Parameter 'path' implicitly has an 'any' type.
+examples/jsm/geometries/ParametricGeometries.js(27,28): error TS7006: Parameter 'u' implicitly has an 'any' type.
+examples/jsm/geometries/ParametricGeometries.js(27,31): error TS7006: Parameter 'v' implicitly has an 'any' type.
+examples/jsm/geometries/ParametricGeometries.js(27,34): error TS7006: Parameter 'target' implicitly has an 'any' type.
+examples/jsm/geometries/ParametricGeometries.js(77,32): error TS8026: Expected Curve<TVector> type arguments; provide these with an '@extends' tag.
+examples/jsm/geometries/ParametricGeometries.js(79,14): error TS7006: Parameter 't' implicitly has an 'any' type.
+examples/jsm/geometries/ParametricGeometries.js(99,23): error TS2674: Constructor of class 'Curve<TVector>' is protected and only accessible within the class declaration.
+examples/jsm/geometries/ParametricGeometries.js(101,61): error TS2554: Expected 0-5 arguments, but got 6.
+examples/jsm/geometries/ParametricGeometries.js(121,15): error TS7006: Parameter 'size' implicitly has an 'any' type.
+examples/jsm/geometries/ParametricGeometries.js(121,21): error TS7006: Parameter 'u' implicitly has an 'any' type.
+examples/jsm/geometries/ParametricGeometries.js(121,24): error TS7006: Parameter 'v' implicitly has an 'any' type.
+examples/jsm/geometries/ParametricGeometries.js(123,20): error TS7006: Parameter 'u' implicitly has an 'any' type.
+examples/jsm/geometries/ParametricGeometries.js(123,23): error TS7006: Parameter 'v' implicitly has an 'any' type.
+examples/jsm/geometries/ParametricGeometries.js(123,26): error TS7006: Parameter 'target' implicitly has an 'any' type.
+examples/jsm/geometries/ParametricGeometries.js(150,15): error TS7006: Parameter 'width' implicitly has an 'any' type.
+examples/jsm/geometries/ParametricGeometries.js(150,22): error TS7006: Parameter 'depth' implicitly has an 'any' type.
+examples/jsm/geometries/ParametricGeometries.js(150,29): error TS7006: Parameter 'segmentsWidth' implicitly has an 'any' type.
+examples/jsm/geometries/ParametricGeometries.js(150,44): error TS7006: Parameter 'segmentsDepth' implicitly has an 'any' type.
+examples/jsm/geometries/ParametricGeometries.js(152,19): error TS7006: Parameter 'u' implicitly has an 'any' type.
+examples/jsm/geometries/ParametricGeometries.js(152,22): error TS7006: Parameter 'v' implicitly has an 'any' type.
+examples/jsm/geometries/ParametricGeometries.js(152,25): error TS7006: Parameter 'target' implicitly has an 'any' type.
+examples/jsm/geometries/ParametricGeometries.js(174,20): error TS7006: Parameter 'v' implicitly has an 'any' type.
+examples/jsm/geometries/ParametricGeometries.js(174,23): error TS7006: Parameter 'u' implicitly has an 'any' type.
+examples/jsm/geometries/ParametricGeometries.js(174,26): error TS7006: Parameter 'target' implicitly has an 'any' type.
+examples/jsm/geometries/ParametricGeometries.js(199,20): error TS7006: Parameter 'width' implicitly has an 'any' type.
+examples/jsm/geometries/ParametricGeometries.js(199,27): error TS7006: Parameter 'height' implicitly has an 'any' type.
+examples/jsm/geometries/ParametricGeometries.js(201,21): error TS7006: Parameter 'u' implicitly has an 'any' type.
+examples/jsm/geometries/ParametricGeometries.js(201,24): error TS7006: Parameter 'v' implicitly has an 'any' type.
+examples/jsm/geometries/ParametricGeometries.js(201,27): error TS7006: Parameter 'target' implicitly has an 'any' type.
+examples/jsm/geometries/ParametricGeometries.js(213,21): error TS7006: Parameter 'u' implicitly has an 'any' type.
+examples/jsm/geometries/ParametricGeometries.js(213,24): error TS7006: Parameter 't' implicitly has an 'any' type.
+examples/jsm/geometries/ParametricGeometries.js(213,27): error TS7006: Parameter 'target' implicitly has an 'any' type.
+examples/jsm/geometries/ParametricGeometries.js(230,23): error TS7006: Parameter 'u' implicitly has an 'any' type.
+examples/jsm/geometries/ParametricGeometries.js(230,26): error TS7006: Parameter 't' implicitly has an 'any' type.
+examples/jsm/geometries/ParametricGeometries.js(230,29): error TS7006: Parameter 'target' implicitly has an 'any' type.
 examples/jsm/geometries/ParametricGeometry.js(14,24): error TS7006: Parameter 'u' implicitly has an 'any' type.
 examples/jsm/geometries/ParametricGeometry.js(14,27): error TS7006: Parameter 'v' implicitly has an 'any' type.
 examples/jsm/geometries/ParametricGeometry.js(14,30): error TS7006: Parameter 'target' implicitly has an 'any' type.
@@ -25354,8 +25346,6 @@ examples/jsm/webxr/XRPlanes.js(90,27): error TS2322: Type '"planeschanged"' is n
 src/animation/AnimationAction.js(12,13): error TS2304: Cannot find name 'AnimationMixer'.
 src/animation/AnimationAction.js(13,13): error TS2304: Cannot find name 'AnimationClip'.
 src/animation/AnimationAction.js(14,14): error TS2304: Cannot find name 'Object3D'.
-src/animation/AnimationAction.js(55,3): error TS7008: Member '_cacheIndex' implicitly has an 'any' type.
-src/animation/AnimationAction.js(56,3): error TS7008: Member '_byClipCacheIndex' implicitly has an 'any' type.
 src/animation/AnimationAction.js(58,3): error TS7022: '_timeScaleInterpolant' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
 src/animation/AnimationAction.js(59,3): error TS7022: '_weightInterpolant' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
 src/animation/AnimationAction.js(476,7): error TS7022: 'interpolant' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
@@ -25395,7 +25385,6 @@ src/animation/AnimationClip.js(264,6): error TS7053: Element implicitly has an '
 src/animation/AnimationClip.js(278,58): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.
   No index signature with a parameter of type 'string' was found on type '{}'.
 src/animation/AnimationClip.js(291,19): error TS2304: Cannot find name 'Bones'.
-src/animation/AnimationClip.js(299,4): error TS2322: Type 'null' is not assignable to type 'AnimationClip'.
 src/animation/AnimationClip.js(303,39): error TS7006: Parameter 'trackType' implicitly has an 'any' type.
 src/animation/AnimationClip.js(303,50): error TS7006: Parameter 'trackName' implicitly has an 'any' type.
 src/animation/AnimationClip.js(303,61): error TS7006: Parameter 'animationKeys' implicitly has an 'any' type.
@@ -25414,7 +25403,6 @@ src/animation/AnimationClip.js(331,28): error TS2339: Property 'length' does not
 src/animation/AnimationClip.js(333,37): error TS2339: Property 'hierarchy' does not exist on type 'Object'.
 src/animation/AnimationClip.js(356,8): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{}'.
 src/animation/AnimationClip.js(385,33): error TS2339: Property 'length' does not exist on type '{}'.
-src/animation/AnimationClip.js(411,4): error TS2322: Type 'null' is not assignable to type 'AnimationClip'.
 src/animation/AnimationClip.js(515,14): error TS2351: This expression is not constructable.
   Type 'Function' has no construct signatures.
 src/animation/AnimationClip.js(526,27): error TS2339: Property 'toJSON' does not exist on type 'Function'.
@@ -25427,10 +25415,10 @@ src/animation/AnimationClip.js(588,49): error TS7005: Variable 'values' implicit
 src/animation/AnimationClip.js(588,57): error TS2345: Argument of type 'string' is not assignable to parameter of type '{ [x: string]: any; }'.
 src/animation/AnimationClip.js(590,16): error TS7005: Variable 'times' implicitly has an 'any[]' type.
 src/animation/AnimationClip.js(591,17): error TS7005: Variable 'values' implicitly has an 'any[]' type.
-src/animation/AnimationClip.js(596,17): error TS2339: Property 'parse' does not exist on type 'typeof StringKeyframeTrack | typeof QuaternionKeyframeTrack'.
-  Property 'parse' does not exist on type 'typeof StringKeyframeTrack'.
-src/animation/AnimationClip.js(598,20): error TS2339: Property 'parse' does not exist on type 'typeof StringKeyframeTrack | typeof QuaternionKeyframeTrack'.
-  Property 'parse' does not exist on type 'typeof StringKeyframeTrack'.
+src/animation/AnimationClip.js(596,17): error TS2339: Property 'parse' does not exist on type 'typeof BooleanKeyframeTrack | typeof QuaternionKeyframeTrack'.
+  Property 'parse' does not exist on type 'typeof BooleanKeyframeTrack'.
+src/animation/AnimationClip.js(598,20): error TS2339: Property 'parse' does not exist on type 'typeof BooleanKeyframeTrack | typeof QuaternionKeyframeTrack'.
+  Property 'parse' does not exist on type 'typeof BooleanKeyframeTrack'.
 src/animation/AnimationMixer.js(21,13): error TS2304: Cannot find name 'Object3D'.
 src/animation/AnimationMixer.js(53,15): error TS7006: Parameter 'action' implicitly has an 'any' type.
 src/animation/AnimationMixer.js(53,23): error TS7006: Parameter 'prototypeAction' implicitly has an 'any' type.
@@ -25521,7 +25509,6 @@ src/animation/AnimationMixer.js(560,26): error TS2532: Object is possibly 'undef
 src/animation/AnimationMixer.js(560,26): error TS7053: Element implicitly has an 'any' type because expression of type 'string | AnimationClip' can't be used to index type '{}'.
   No index signature with a parameter of type 'string' was found on type '{}'.
 src/animation/AnimationMixer.js(560,47): error TS2538: Type 'AnimationClip' cannot be used as an index type.
-src/animation/AnimationMixer.js(598,30): error TS2322: Type 'null' is not assignable to type 'AnimationAction'.
 src/animation/AnimationMixer.js(616,13): error TS2304: Cannot find name 'Object3D'.
 src/animation/AnimationMixer.js(629,21): error TS2532: Object is possibly 'undefined'.
 src/animation/AnimationMixer.js(629,21): error TS7053: Element implicitly has an 'any' type because expression of type 'string | AnimationClip' can't be used to index type '{}'.
@@ -25629,7 +25616,6 @@ src/animation/PropertyBinding.js(48,12): error TS7006: Parameter 'array' implici
 src/animation/PropertyBinding.js(48,19): error TS7006: Parameter 'offset' implicitly has an 'any' type.
 src/animation/PropertyBinding.js(60,12): error TS7006: Parameter 'array' implicitly has an 'any' type.
 src/animation/PropertyBinding.js(60,19): error TS7006: Parameter 'offset' implicitly has an 'any' type.
-src/animation/PropertyBinding.js(124,3): error TS2322: Type 'string' is not assignable to type 'PropertyBinding'.
 src/animation/PropertyBinding.js(138,3): error TS2322: Type 'Object | null' is not assignable to type 'Object'.
   Type 'null' is not assignable to type 'Object'.
 src/animation/PropertyBinding.js(138,67): error TS2339: Property 'nodeName' does not exist on type 'Object'.
@@ -25844,7 +25830,6 @@ src/audio/Audio.js(769,9): error TS7006: Parameter 'recursive' implicitly has an
 src/audio/Audio.js(771,14): error TS2351: This expression is not constructable.
   Type 'Function' has no construct signatures.
 src/audio/AudioAnalyser.js(33,13): error TS2304: Cannot find name 'Audio'.
-src/audio/AudioAnalyser.js(34,13): error TS2304: Cannot find name 'Audio'.
 src/audio/AudioAnalyser.js(41,13): error TS2304: Cannot find name 'AnalyserNode'.
 src/audio/AudioContext.js(1,5): error TS7034: Variable '_context' implicitly has type 'any' in some locations where its type cannot be determined.
 src/audio/AudioContext.js(17,8): error TS7005: Variable '_context' implicitly has an 'any' type.
@@ -25859,7 +25844,7 @@ src/audio/AudioListener.js(81,14): error TS2304: Cannot find name 'GainNode'.
 src/audio/AudioListener.js(99,41): error TS2339: Property 'destination' does not exist on type 'AudioContext'.
 src/audio/AudioListener.js(100,36): error TS2339: Property 'destination' does not exist on type 'AudioContext'.
 src/audio/AudioListener.js(101,9): error TS2540: Cannot assign to 'filter' because it is a read-only property.
-src/audio/AudioListener.js(112,14): error TS2304: Cannot find name 'AudioNode'.
+src/audio/AudioListener.js(112,15): error TS2304: Cannot find name 'AudioNode'.
 src/audio/AudioListener.js(123,13): error TS2304: Cannot find name 'AudioNode'.
 src/audio/AudioListener.js(131,41): error TS2339: Property 'destination' does not exist on type 'AudioContext'.
 src/audio/AudioListener.js(135,39): error TS2339: Property 'destination' does not exist on type 'AudioContext'.
@@ -26582,9 +26567,9 @@ src/extras/core/Curve.js(304,30): error TS2554: Expected 0 arguments, but got 1.
 src/extras/core/Curve.js(306,41): error TS18047: 'pt1' is possibly 'null'.
 src/extras/core/Curve.js(306,45): error TS2339: Property 'isVector2' does not exist on type 'Vector2 | Vector3'.
   Property 'isVector2' does not exist on type 'Vector2'.
-src/extras/core/Curve.js(308,17): error TS2345: Argument of type 'Vector2 | Vector3 | null' is not assignable to parameter of type 'Vector3 & Vector2'.
-  Type 'null' is not assignable to type 'Vector3 & Vector2'.
-    Type 'null' is not assignable to type 'Vector3'.
+src/extras/core/Curve.js(308,17): error TS2345: Argument of type 'Vector2 | Vector3 | null' is not assignable to parameter of type 'Vector2 & Vector3'.
+  Type 'null' is not assignable to type 'Vector2 & Vector3'.
+    Type 'null' is not assignable to type 'Vector2'.
 src/extras/core/Curve.js(308,28): error TS2345: Argument of type 'Vector2 | Vector3 | null' is not assignable to parameter of type 'Vector3 & Vector2'.
   Type 'null' is not assignable to type 'Vector3 & Vector2'.
     Type 'null' is not assignable to type 'Vector3'.
@@ -26598,12 +26583,12 @@ src/extras/core/Curve.js(393,32): error TS2345: Argument of type 'Vector2 | Vect
   Type 'Vector2' is missing the following properties from type 'Vector3': z, setZ, multiplyVectors, applyEuler, and 22 more.
 src/extras/core/Curve.js(404,22): error TS2345: Argument of type 'Vector2 | Vector3' is not assignable to parameter of type 'Vector3'.
   Type 'Vector2' is missing the following properties from type 'Vector3': z, setZ, multiplyVectors, applyEuler, and 22 more.
-src/extras/core/Curve.js(410,60): error TS2345: Argument of type 'Vector2 | Vector3' is not assignable to parameter of type 'Vector3 & Vector2'.
-  Type 'Vector2' is not assignable to type 'Vector3 & Vector2'.
+src/extras/core/Curve.js(410,60): error TS2345: Argument of type 'Vector2 | Vector3' is not assignable to parameter of type 'Vector2 & Vector3'.
+  Type 'Vector2' is not assignable to type 'Vector2 & Vector3'.
     Type 'Vector2' is missing the following properties from type 'Vector3': z, setZ, multiplyVectors, applyEuler, and 22 more.
 src/extras/core/Curve.js(416,33): error TS2345: Argument of type 'Vector2 | Vector3' is not assignable to parameter of type 'Vector3'.
   Type 'Vector2' is missing the following properties from type 'Vector3': z, setZ, multiplyVectors, applyEuler, and 22 more.
-src/extras/core/Curve.js(427,28): error TS2345: Argument of type 'Vector3' is not assignable to parameter of type 'Vector3 & Vector2'.
+src/extras/core/Curve.js(427,28): error TS2345: Argument of type 'Vector3' is not assignable to parameter of type 'Vector2 & Vector3'.
   Type 'Vector3' is missing the following properties from type 'Vector2': width, height, angle, rotateAround
 src/extras/core/Curve.js(436,54): error TS2345: Argument of type 'Vector2 | Vector3' is not assignable to parameter of type 'Vector3'.
   Type 'Vector2' is missing the following properties from type 'Vector3': z, setZ, multiplyVectors, applyEuler, and 22 more.
@@ -26701,8 +26686,6 @@ src/extras/core/Path.js(181,21): error TS2345: Argument of type 'SplineCurve' is
   Types of property 'getPoint' are incompatible.
     Type '(t: number, optionalTarget?: Vector2 | undefined) => Vector2' is not assignable to type '() => Vector2 | Vector3 | null'.
       Target signature provides too few arguments. Expected 1 or more, but got 0.
-src/extras/core/Path.js(251,92): error TS2345: Argument of type 'boolean | undefined' is not assignable to parameter of type 'number | undefined'.
-  Type 'boolean' is not assignable to type 'number'.
 src/extras/core/Path.js(287,21): error TS2345: Argument of type 'EllipseCurve' is not assignable to parameter of type 'Curve'.
   Types of property 'getPoint' are incompatible.
     Type '(t: number, optionalTarget?: Vector2 | undefined) => Vector2' is not assignable to type '() => Vector2 | Vector3 | null'.
@@ -27230,8 +27213,6 @@ src/geometries/CircleGeometry.js(134,35): error TS2339: Property 'radius' does n
 src/geometries/CircleGeometry.js(134,48): error TS2339: Property 'segments' does not exist on type 'Object'.
 src/geometries/CircleGeometry.js(134,63): error TS2339: Property 'thetaStart' does not exist on type 'Object'.
 src/geometries/CircleGeometry.js(134,80): error TS2339: Property 'thetaLength' does not exist on type 'Object'.
-src/geometries/ConeGeometry.js(29,99): error TS2322: Type '0' is not assignable to type 'boolean | undefined'.
-src/geometries/ConeGeometry.js(29,115): error TS2322: Type 'number' is not assignable to type 'boolean | undefined'.
 src/geometries/ConeGeometry.js(63,33): error TS2339: Property 'radius' does not exist on type 'Object'.
 src/geometries/ConeGeometry.js(63,46): error TS2339: Property 'height' does not exist on type 'Object'.
 src/geometries/ConeGeometry.js(63,59): error TS2339: Property 'radialSegments' does not exist on type 'Object'.
@@ -27239,8 +27220,6 @@ src/geometries/ConeGeometry.js(63,80): error TS2339: Property 'heightSegments' d
 src/geometries/ConeGeometry.js(63,101): error TS2339: Property 'openEnded' does not exist on type 'Object'.
 src/geometries/ConeGeometry.js(63,117): error TS2339: Property 'thetaStart' does not exist on type 'Object'.
 src/geometries/ConeGeometry.js(63,134): error TS2339: Property 'thetaLength' does not exist on type 'Object'.
-src/geometries/CylinderGeometry.js(33,120): error TS2322: Type '0' is not assignable to type 'boolean | undefined'.
-src/geometries/CylinderGeometry.js(33,136): error TS2322: Type 'number' is not assignable to type 'boolean | undefined'.
 src/geometries/CylinderGeometry.js(64,9): error TS7034: Variable 'indices' implicitly has type 'any[]' in some locations where its type cannot be determined.
 src/geometries/CylinderGeometry.js(65,9): error TS7034: Variable 'vertices' implicitly has type 'any[]' in some locations where its type cannot be determined.
 src/geometries/CylinderGeometry.js(66,9): error TS7034: Variable 'normals' implicitly has type 'any[]' in some locations where its type cannot be determined.
@@ -27250,15 +27229,11 @@ src/geometries/CylinderGeometry.js(89,18): error TS7005: Variable 'indices' impl
 src/geometries/CylinderGeometry.js(90,62): error TS7005: Variable 'vertices' implicitly has an 'any[]' type.
 src/geometries/CylinderGeometry.js(91,60): error TS7005: Variable 'normals' implicitly has an 'any[]' type.
 src/geometries/CylinderGeometry.js(92,56): error TS7005: Variable 'uvs' implicitly has an 'any[]' type.
-src/geometries/CylinderGeometry.js(120,20): error TS2365: Operator '+' cannot be applied to types 'number' and 'boolean'.
-src/geometries/CylinderGeometry.js(120,24): error TS2363: The right-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
 src/geometries/CylinderGeometry.js(161,16): error TS7005: Variable 'indexArray' implicitly has an 'any[]' type.
 src/geometries/CylinderGeometry.js(162,16): error TS7005: Variable 'indexArray' implicitly has an 'any[]' type.
 src/geometries/CylinderGeometry.js(163,16): error TS7005: Variable 'indexArray' implicitly has an 'any[]' type.
 src/geometries/CylinderGeometry.js(164,16): error TS7005: Variable 'indexArray' implicitly has an 'any[]' type.
 src/geometries/CylinderGeometry.js(196,25): error TS7006: Parameter 'top' implicitly has an 'any' type.
-src/geometries/CylinderGeometry.js(241,19): error TS2365: Operator '+' cannot be applied to types 'number' and 'boolean'.
-src/geometries/CylinderGeometry.js(241,23): error TS2363: The right-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
 src/geometries/CylinderGeometry.js(306,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
 src/geometries/CylinderGeometry.js(325,37): error TS2339: Property 'radiusTop' does not exist on type 'Object'.
 src/geometries/CylinderGeometry.js(325,53): error TS2339: Property 'radiusBottom' does not exist on type 'Object'.
@@ -27287,7 +27262,7 @@ src/geometries/EdgesGeometry.js(149,10): error TS7053: Element implicitly has an
 src/geometries/EdgesGeometry.js(151,33): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.
   No index signature with a parameter of type 'string' was found on type '{}'.
 src/geometries/EdgesGeometry.js(168,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
-src/geometries/ExtrudeGeometry.js(67,13): error TS2304: Cannot find name 'Curve'.
+src/geometries/ExtrudeGeometry.js(67,14): error TS2304: Cannot find name 'Curve'.
 src/geometries/ExtrudeGeometry.js(92,9): error TS7034: Variable 'verticesArray' implicitly has type 'any[]' in some locations where its type cannot be determined.
 src/geometries/ExtrudeGeometry.js(93,9): error TS7034: Variable 'uvArray' implicitly has type 'any[]' in some locations where its type cannot be determined.
 src/geometries/ExtrudeGeometry.js(104,62): error TS7005: Variable 'verticesArray' implicitly has an 'any[]' type.
@@ -27933,7 +27908,6 @@ src/loaders/Loader.js(73,30): error TS8024: JSDoc '@param' tag has name 'onError
 src/loaders/Loader.js(82,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
 src/loaders/Loader.js(90,16): error TS2554: Expected 0 arguments, but got 4.
 src/loaders/Loader.js(100,18): error TS8024: JSDoc '@param' tag has name 'data', but there is no parameter with that name.
-src/loaders/Loader.js(180,12): error TS2304: Cannot find name 'ProgressEvent'.
 src/loaders/LoadingManager.js(34,7): error TS7034: Variable 'urlModifier' implicitly has type 'any' in some locations where its type cannot be determined.
 src/loaders/LoadingManager.js(35,9): error TS7034: Variable 'handlers' implicitly has type 'any[]' in some locations where its type cannot be determined.
 src/loaders/LoadingManager.js(151,9): error TS7005: Variable 'urlModifier' implicitly has an 'any' type.
@@ -28308,7 +28282,7 @@ src/loaders/MaterialLoader.js(369,56): error TS2339: Property 'sheenRoughnessMap
 src/loaders/MaterialLoader.js(369,93): error TS2339: Property 'sheenRoughnessMap' does not exist on type 'Object'.
 src/loaders/MaterialLoader.js(431,14): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ ShadowMaterial: typeof ShadowMaterial; SpriteMaterial: typeof SpriteMaterial; RawShaderMaterial: typeof RawShaderMaterial; ShaderMaterial: typeof ShaderMaterial; ... 13 more ...; Material: typeof Material; }'.
   No index signature with a parameter of type 'string' was found on type '{ ShadowMaterial: typeof ShadowMaterial; SpriteMaterial: typeof SpriteMaterial; RawShaderMaterial: typeof RawShaderMaterial; ShaderMaterial: typeof ShaderMaterial; ... 13 more ...; Material: typeof Material; }'.
-src/loaders/nodes/NodeLoader.js(16,14): error TS2304: Cannot find name 'LoadingManager'.
+src/loaders/nodes/NodeLoader.js(16,13): error TS2304: Cannot find name 'LoadingManager'.
 src/loaders/nodes/NodeLoader.js(25,27): error TS2304: Cannot find name 'Texture'.
 src/loaders/nodes/NodeLoader.js(32,27): error TS2503: Cannot find namespace 'Node'.
 src/loaders/nodes/NodeLoader.js(46,2): error TS2416: Property 'load' in type 'NodeLoader' is not assignable to the same property in base type 'Loader'.
@@ -28332,7 +28306,7 @@ src/loaders/nodes/NodeLoader.js(136,15): error TS2339: Property 'meta' does not 
 src/loaders/nodes/NodeLoader.js(145,27): error TS2304: Cannot find name 'Texture'.
 src/loaders/nodes/NodeLoader.js(158,27): error TS2503: Cannot find namespace 'Node'.
 src/loaders/nodes/NodeLoader.js(172,14): error TS2304: Cannot find name 'Node'.
-src/loaders/nodes/NodeMaterialLoader.js(13,14): error TS2304: Cannot find name 'LoadingManager'.
+src/loaders/nodes/NodeMaterialLoader.js(13,13): error TS2304: Cannot find name 'LoadingManager'.
 src/loaders/nodes/NodeMaterialLoader.js(22,27): error TS2503: Cannot find namespace 'Node'.
 src/loaders/nodes/NodeMaterialLoader.js(29,27): error TS2503: Cannot find namespace 'NodeMaterial'.
 src/loaders/nodes/NodeMaterialLoader.js(39,14): error TS2304: Cannot find name 'NodeMaterial'.
@@ -28344,25 +28318,19 @@ src/loaders/nodes/NodeMaterialLoader.js(64,14): error TS2304: Cannot find name '
 src/loaders/nodes/NodeMaterialLoader.js(76,27): error TS2503: Cannot find namespace 'NodeMaterial'.
 src/loaders/nodes/NodeMaterialLoader.js(77,14): error TS2304: Cannot find name 'NodeLoader'.
 src/loaders/nodes/NodeMaterialLoader.js(90,14): error TS2304: Cannot find name 'Node'.
-src/loaders/nodes/NodeObjectLoader.js(17,14): error TS2304: Cannot find name 'LoadingManager'.
+src/loaders/nodes/NodeObjectLoader.js(17,13): error TS2304: Cannot find name 'LoadingManager'.
 src/loaders/nodes/NodeObjectLoader.js(26,27): error TS2503: Cannot find namespace 'Node'.
 src/loaders/nodes/NodeObjectLoader.js(33,27): error TS2503: Cannot find namespace 'NodeMaterial'.
 src/loaders/nodes/NodeObjectLoader.js(50,27): error TS2503: Cannot find namespace 'Node'.
-src/loaders/nodes/NodeObjectLoader.js(56,3): error TS2322: Type 'this' is not assignable to type 'NodeLoader'.
-  Type 'NodeObjectLoader' is missing the following properties from type 'NodeLoader': textures, setTextures, createNodeFromType
 src/loaders/nodes/NodeObjectLoader.js(63,27): error TS2503: Cannot find namespace 'NodeMaterial'.
-src/loaders/nodes/NodeObjectLoader.js(69,3): error TS2322: Type 'this' is not assignable to type 'NodeLoader'.
-  Type 'NodeObjectLoader' is missing the following properties from type 'NodeLoader': textures, setTextures, createNodeFromType
 src/loaders/nodes/NodeObjectLoader.js(78,14): error TS2304: Cannot find name 'Object3D'.
 src/loaders/nodes/NodeObjectLoader.js(82,26): error TS2339: Property 'nodes' does not exist on type 'Object'.
 src/loaders/nodes/NodeObjectLoader.js(96,27): error TS2304: Cannot find name 'Texture'.
 src/loaders/nodes/NodeObjectLoader.js(97,28): error TS2304: Cannot find name 'Node'.
-src/loaders/nodes/NodeObjectLoader.js(103,19): error TS2554: Expected 1 arguments, but got 0.
 src/loaders/nodes/NodeObjectLoader.js(119,27): error TS2304: Cannot find name 'Texture'.
 src/loaders/nodes/NodeObjectLoader.js(120,28): error TS2304: Cannot find name 'NodeMaterial'.
 src/loaders/nodes/NodeObjectLoader.js(128,35): error TS2345: Argument of type 'Object | null' is not assignable to parameter of type 'Object'.
   Type 'null' is not assignable to type 'Object'.
-src/loaders/nodes/NodeObjectLoader.js(130,19): error TS2554: Expected 1 arguments, but got 0.
 src/loaders/nodes/NodeObjectLoader.js(135,30): error TS2339: Property 'length' does not exist on type 'Object'.
 src/loaders/nodes/NodeObjectLoader.js(137,18): error TS7053: Element implicitly has an 'any' type because expression of type 'number' can't be used to index type 'Object'.
   No index signature with a parameter of type 'number' was found on type 'Object'.
@@ -28390,7 +28358,7 @@ src/loaders/ObjectLoader.js(209,47): error TS2339: Property 'skeletons' does not
 src/loaders/ObjectLoader.js(222,10): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.
   No index signature with a parameter of type 'string' was found on type '{}'.
 src/loaders/ObjectLoader.js(222,41): error TS2304: Cannot find name 'HTMLImageElement'.
-src/loaders/ObjectLoader.js(235,3): error TS2322: Type 'PerspectiveCamera | Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera' is not assignable to type 'Object3D'.
+src/loaders/ObjectLoader.js(235,3): error TS2322: Type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera' is not assignable to type 'Object3D'.
   Type 'Mesh' is not assignable to type 'Object3D'.
     Types of property 'raycast' are incompatible.
       Type '(raycaster: Raycaster, intersects: Object[]) => void' is not assignable to type '() => void'.
@@ -28403,7 +28371,7 @@ src/loaders/ObjectLoader.js(253,45): error TS2339: Property 'textures' does not 
 src/loaders/ObjectLoader.js(254,47): error TS2339: Property 'materials' does not exist on type 'Object'.
 src/loaders/ObjectLoader.js(256,41): error TS2339: Property 'object' does not exist on type 'Object'.
 src/loaders/ObjectLoader.js(257,47): error TS2339: Property 'skeletons' does not exist on type 'Object'.
-src/loaders/ObjectLoader.js(262,3): error TS2322: Type 'PerspectiveCamera | Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera' is not assignable to type 'Object3D'.
+src/loaders/ObjectLoader.js(262,3): error TS2322: Type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera' is not assignable to type 'Object3D'.
   Type 'Mesh' is not assignable to type 'Object3D'.
     Types of property 'raycast' are incompatible.
       Type '(raycaster: Raycaster, intersects: Object[]) => void' is not assignable to type '() => void'.
@@ -28472,41 +28440,41 @@ src/loaders/ObjectLoader.js(977,12): error TS2339: Property '_active' does not e
 src/loaders/ObjectLoader.js(978,12): error TS2339: Property '_bounds' does not exist on type 'BatchedMesh'.
 src/loaders/ObjectLoader.js(978,39): error TS7006: Parameter 'bound' implicitly has an 'any' type.
 src/loaders/ObjectLoader.js(1065,10): error TS2540: Cannot assign to 'uuid' because it is a read-only property.
-src/loaders/ObjectLoader.js(1074,67): error TS2339: Property 'position' does not exist on type 'PerspectiveCamera | Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
-  Property 'position' does not exist on type 'PerspectiveCamera'.
-src/loaders/ObjectLoader.js(1074,84): error TS2339: Property 'quaternion' does not exist on type 'PerspectiveCamera | Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
-  Property 'quaternion' does not exist on type 'PerspectiveCamera'.
-src/loaders/ObjectLoader.js(1074,103): error TS2339: Property 'scale' does not exist on type 'PerspectiveCamera | Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
-  Property 'scale' does not exist on type 'PerspectiveCamera'.
-src/loaders/ObjectLoader.js(1078,46): error TS2339: Property 'position' does not exist on type 'PerspectiveCamera | Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
-  Property 'position' does not exist on type 'PerspectiveCamera'.
-src/loaders/ObjectLoader.js(1079,46): error TS2339: Property 'rotation' does not exist on type 'PerspectiveCamera | Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
-  Property 'rotation' does not exist on type 'PerspectiveCamera'.
-src/loaders/ObjectLoader.js(1080,48): error TS2339: Property 'quaternion' does not exist on type 'PerspectiveCamera | Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
-  Property 'quaternion' does not exist on type 'PerspectiveCamera'.
-src/loaders/ObjectLoader.js(1081,43): error TS2339: Property 'scale' does not exist on type 'PerspectiveCamera | Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
-  Property 'scale' does not exist on type 'PerspectiveCamera'.
-src/loaders/ObjectLoader.js(1092,54): error TS2339: Property 'shadow' does not exist on type 'PerspectiveCamera | Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
-  Property 'shadow' does not exist on type 'PerspectiveCamera'.
-src/loaders/ObjectLoader.js(1093,49): error TS2339: Property 'shadow' does not exist on type 'PerspectiveCamera | Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
-  Property 'shadow' does not exist on type 'PerspectiveCamera'.
-src/loaders/ObjectLoader.js(1094,55): error TS2339: Property 'shadow' does not exist on type 'PerspectiveCamera | Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
-  Property 'shadow' does not exist on type 'PerspectiveCamera'.
-src/loaders/ObjectLoader.js(1095,51): error TS2339: Property 'shadow' does not exist on type 'PerspectiveCamera | Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
-  Property 'shadow' does not exist on type 'PerspectiveCamera'.
-src/loaders/ObjectLoader.js(1096,52): error TS2339: Property 'shadow' does not exist on type 'PerspectiveCamera | Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
-  Property 'shadow' does not exist on type 'PerspectiveCamera'.
-src/loaders/ObjectLoader.js(1097,51): error TS2339: Property 'shadow' does not exist on type 'PerspectiveCamera | Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
-  Property 'shadow' does not exist on type 'PerspectiveCamera'.
-src/loaders/ObjectLoader.js(1113,17): error TS2345: Argument of type 'PerspectiveCamera | Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera' is not assignable to parameter of type 'Object3D'.
+src/loaders/ObjectLoader.js(1074,67): error TS2339: Property 'position' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+  Property 'position' does not exist on type 'Object3D'.
+src/loaders/ObjectLoader.js(1074,84): error TS2339: Property 'quaternion' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+  Property 'quaternion' does not exist on type 'Object3D'.
+src/loaders/ObjectLoader.js(1074,103): error TS2339: Property 'scale' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+  Property 'scale' does not exist on type 'Object3D'.
+src/loaders/ObjectLoader.js(1078,46): error TS2339: Property 'position' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+  Property 'position' does not exist on type 'Object3D'.
+src/loaders/ObjectLoader.js(1079,46): error TS2339: Property 'rotation' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+  Property 'rotation' does not exist on type 'Object3D'.
+src/loaders/ObjectLoader.js(1080,48): error TS2339: Property 'quaternion' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+  Property 'quaternion' does not exist on type 'Object3D'.
+src/loaders/ObjectLoader.js(1081,43): error TS2339: Property 'scale' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+  Property 'scale' does not exist on type 'Object3D'.
+src/loaders/ObjectLoader.js(1092,54): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+  Property 'shadow' does not exist on type 'Object3D'.
+src/loaders/ObjectLoader.js(1093,49): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+  Property 'shadow' does not exist on type 'Object3D'.
+src/loaders/ObjectLoader.js(1094,55): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+  Property 'shadow' does not exist on type 'Object3D'.
+src/loaders/ObjectLoader.js(1095,51): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+  Property 'shadow' does not exist on type 'Object3D'.
+src/loaders/ObjectLoader.js(1096,52): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+  Property 'shadow' does not exist on type 'Object3D'.
+src/loaders/ObjectLoader.js(1097,51): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+  Property 'shadow' does not exist on type 'Object3D'.
+src/loaders/ObjectLoader.js(1113,17): error TS2345: Argument of type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera' is not assignable to parameter of type 'Object3D'.
   Type 'Mesh' is not assignable to type 'Object3D'.
     Types of property 'raycast' are incompatible.
       Type '(raycaster: Raycaster, intersects: Object[]) => void' is not assignable to type '() => void'.
         Target signature provides too few arguments. Expected 2 or more, but got 0.
-src/loaders/ObjectLoader.js(1135,48): error TS2339: Property 'autoUpdate' does not exist on type 'PerspectiveCamera | Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
-  Property 'autoUpdate' does not exist on type 'PerspectiveCamera'.
-src/loaders/ObjectLoader.js(1146,13): error TS2339: Property 'addLevel' does not exist on type 'PerspectiveCamera | Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
-  Property 'addLevel' does not exist on type 'PerspectiveCamera'.
+src/loaders/ObjectLoader.js(1135,48): error TS2339: Property 'autoUpdate' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+  Property 'autoUpdate' does not exist on type 'Object3D'.
+src/loaders/ObjectLoader.js(1146,13): error TS2339: Property 'addLevel' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+  Property 'addLevel' does not exist on type 'Object3D'.
 src/loaders/ObjectLoader.js(1158,17): error TS7006: Parameter 'object' implicitly has an 'any' type.
 src/loaders/ObjectLoader.js(1158,25): error TS7006: Parameter 'skeletons' implicitly has an 'any' type.
 src/loaders/ObjectLoader.js(1162,31): error TS7006: Parameter 'child' implicitly has an 'any' type.
@@ -29060,7 +29028,6 @@ src/materials/nodes/MeshBasicNodeMaterial.js(64,14): error TS2304: Cannot find n
 src/materials/nodes/MeshBasicNodeMaterial.js(64,19): error TS2304: Cannot find name 'vec3'.
 src/materials/nodes/MeshBasicNodeMaterial.js(76,13): error TS2304: Cannot find name 'NodeBuilder'.
 src/materials/nodes/MeshBasicNodeMaterial.js(77,15): error TS2315: Type 'BasicEnvironmentNode' is not generic.
-src/materials/nodes/MeshBasicNodeMaterial.js(77,36): error TS2304: Cannot find name 'vec3'.
 src/materials/nodes/MeshBasicNodeMaterial.js(79,2): error TS2416: Property 'setupEnvironment' in type 'MeshBasicNodeMaterial' is not assignable to the same property in base type 'NodeMaterial'.
   Type '(builder: NodeBuilder) => any' is not assignable to type '() => Node<any>'.
     Target signature provides too few arguments. Expected 1 or more, but got 0.
@@ -29071,7 +29038,6 @@ src/materials/nodes/MeshBasicNodeMaterial.js(112,14): error TS2304: Cannot find 
 src/materials/nodes/MeshBasicNodeMaterial.js(112,19): error TS2304: Cannot find name 'vec3'.
 src/materials/nodes/MeshLambertNodeMaterial.js(58,13): error TS2304: Cannot find name 'NodeBuilder'.
 src/materials/nodes/MeshLambertNodeMaterial.js(59,15): error TS2315: Type 'BasicEnvironmentNode' is not generic.
-src/materials/nodes/MeshLambertNodeMaterial.js(59,36): error TS2304: Cannot find name 'vec3'.
 src/materials/nodes/MeshLambertNodeMaterial.js(61,2): error TS2416: Property 'setupEnvironment' in type 'MeshLambertNodeMaterial' is not assignable to the same property in base type 'NodeMaterial'.
   Type '(builder: NodeBuilder) => any' is not assignable to type '() => Node<any>'.
     Target signature provides too few arguments. Expected 1 or more, but got 0.
@@ -29086,7 +29052,6 @@ src/materials/nodes/MeshPhongNodeMaterial.js(72,14): error TS2304: Cannot find n
 src/materials/nodes/MeshPhongNodeMaterial.js(72,19): error TS2304: Cannot find name 'vec3'.
 src/materials/nodes/MeshPhongNodeMaterial.js(87,13): error TS2304: Cannot find name 'NodeBuilder'.
 src/materials/nodes/MeshPhongNodeMaterial.js(88,15): error TS2315: Type 'BasicEnvironmentNode' is not generic.
-src/materials/nodes/MeshPhongNodeMaterial.js(88,36): error TS2304: Cannot find name 'vec3'.
 src/materials/nodes/MeshPhongNodeMaterial.js(90,2): error TS2416: Property 'setupEnvironment' in type 'MeshPhongNodeMaterial' is not assignable to the same property in base type 'NodeMaterial'.
   Type '(builder: NodeBuilder) => any' is not assignable to type '() => Node<any>'.
     Target signature provides too few arguments. Expected 1 or more, but got 0.
@@ -29283,7 +29248,6 @@ src/materials/PointsMaterial.js(29,8): error TS7006: Parameter 'source' implicit
 src/materials/RawShaderMaterial.js(5,15): error TS7006: Parameter 'parameters' implicitly has an 'any' type.
 src/materials/ShaderMaterial.js(9,15): error TS7006: Parameter 'parameters' implicitly has an 'any' type.
 src/materials/ShaderMaterial.js(19,3): error TS7008: Member 'uniformsGroups' implicitly has an 'any[]' type.
-src/materials/ShaderMaterial.js(48,3): error TS7008: Member 'index0AttributeName' implicitly has an 'any' type.
 src/materials/ShaderMaterial.js(61,8): error TS7006: Parameter 'source' implicitly has an 'any' type.
 src/materials/ShaderMaterial.js(88,10): error TS7006: Parameter 'meta' implicitly has an 'any' type.
 src/materials/ShaderMaterial.js(92,8): error TS2339: Property 'glslVersion' does not exist on type 'Object'.
@@ -30151,7 +30115,6 @@ src/nodes/accessors/SkinningNode.js(113,3): error TS2322: Type 'BufferNode | Ref
 src/nodes/accessors/SkinningNode.js(130,13): error TS2315: Type 'Node' is not generic.
 src/nodes/accessors/SkinningNode.js(130,18): error TS2304: Cannot find name 'vec3'.
 src/nodes/accessors/SkinningNode.js(131,14): error TS2315: Type 'Node' is not generic.
-src/nodes/accessors/SkinningNode.js(131,19): error TS2304: Cannot find name 'vec3'.
 src/nodes/accessors/SkinningNode.js(137,33): error TS2339: Property 'element' does not exist on type 'Node'.
 src/nodes/accessors/SkinningNode.js(138,33): error TS2339: Property 'element' does not exist on type 'Node'.
 src/nodes/accessors/SkinningNode.js(139,33): error TS2339: Property 'element' does not exist on type 'Node'.
@@ -30159,14 +30122,12 @@ src/nodes/accessors/SkinningNode.js(140,33): error TS2339: Property 'element' do
 src/nodes/accessors/SkinningNode.js(161,13): error TS2315: Type 'Node' is not generic.
 src/nodes/accessors/SkinningNode.js(161,18): error TS2304: Cannot find name 'vec3'.
 src/nodes/accessors/SkinningNode.js(162,14): error TS2315: Type 'Node' is not generic.
-src/nodes/accessors/SkinningNode.js(162,19): error TS2304: Cannot find name 'vec3'.
 src/nodes/accessors/SkinningNode.js(168,33): error TS2339: Property 'element' does not exist on type 'Node'.
 src/nodes/accessors/SkinningNode.js(169,33): error TS2339: Property 'element' does not exist on type 'Node'.
 src/nodes/accessors/SkinningNode.js(170,33): error TS2339: Property 'element' does not exist on type 'Node'.
 src/nodes/accessors/SkinningNode.js(171,33): error TS2339: Property 'element' does not exist on type 'Node'.
 src/nodes/accessors/SkinningNode.js(191,13): error TS2304: Cannot find name 'NodeBuilder'.
 src/nodes/accessors/SkinningNode.js(192,14): error TS2315: Type 'Node' is not generic.
-src/nodes/accessors/SkinningNode.js(192,19): error TS2304: Cannot find name 'vec3'.
 src/nodes/accessors/SkinningNode.js(202,4): error TS2322: Type 'ReferenceNode' is not assignable to type 'Node'.
   The types returned by 'update()' are incompatible between these types.
     Type 'void' is not assignable to type 'boolean | null'.
@@ -30459,7 +30420,7 @@ src/nodes/accessors/VertexColorNode.js(60,12): error TS7006: Parameter 'builder'
 src/nodes/accessors/VertexColorNode.js(62,48): error TS2554: Expected 0 arguments, but got 1.
 src/nodes/accessors/VertexColorNode.js(82,13): error TS7006: Parameter 'data' implicitly has an 'any' type.
 src/nodes/accessors/VertexColorNode.js(90,15): error TS7006: Parameter 'data' implicitly has an 'any' type.
-src/nodes/code/CodeNode.js(26,41): error TS2322: Type '""' is not assignable to type '"glsl" | "wgsl" | "js" | undefined'.
+src/nodes/code/CodeNode.js(26,41): error TS2322: Type '""' is not assignable to type '"js" | "wgsl" | "glsl" | undefined'.
 src/nodes/code/CodeNode.js(93,13): error TS2304: Cannot find name 'NodeBuilder'.
 src/nodes/code/CodeNode.js(93,26): error TS8024: JSDoc '@param' tag has name 'builder', but there is no parameter with that name.
 src/nodes/code/CodeNode.js(102,12): error TS7006: Parameter 'builder' implicitly has an 'any' type.
@@ -30481,7 +30442,7 @@ src/nodes/code/FunctionCallNode.js(87,33): error TS7006: Parameter 'inputNode' i
 src/nodes/code/FunctionCallNode.js(139,23): error TS7006: Parameter 'func' implicitly has an 'any' type.
 src/nodes/code/FunctionCallNode.js(139,29): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
 src/nodes/code/FunctionNode.js(42,19): error TS2304: Cannot find name 'Node'.
-src/nodes/code/FunctionNode.js(45,41): error TS2322: Type '""' is not assignable to type '"glsl" | "wgsl" | "js" | undefined'.
+src/nodes/code/FunctionNode.js(45,41): error TS2322: Type '""' is not assignable to type '"js" | "wgsl" | "glsl" | undefined'.
 src/nodes/code/FunctionNode.js(51,15): error TS7006: Parameter 'builder' implicitly has an 'any' type.
 src/nodes/code/FunctionNode.js(60,13): error TS2304: Cannot find name 'NodeBuilder'.
 src/nodes/code/FunctionNode.js(61,20): error TS2304: Cannot find name 'NodeFunctionInput'.
@@ -30491,7 +30452,7 @@ src/nodes/code/FunctionNode.js(93,12): error TS7006: Parameter 'builder' implici
 src/nodes/code/FunctionNode.js(93,21): error TS7006: Parameter 'output' implicitly has an 'any' type.
 src/nodes/code/FunctionNode.js(134,20): error TS7006: Parameter 'code' implicitly has an 'any' type.
 src/nodes/code/FunctionNode.js(134,26): error TS7006: Parameter 'includes' implicitly has an 'any[]' type.
-src/nodes/code/FunctionNode.js(150,69): error TS2345: Argument of type 'string' is not assignable to parameter of type '"glsl" | "wgsl" | "js" | undefined'.
+src/nodes/code/FunctionNode.js(150,69): error TS2345: Argument of type 'string' is not assignable to parameter of type '"js" | "wgsl" | "glsl" | undefined'.
 src/nodes/code/FunctionNode.js(152,15): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
 src/nodes/code/FunctionNode.js(159,25): error TS7006: Parameter 'code' implicitly has an 'any' type.
 src/nodes/code/FunctionNode.js(159,31): error TS7006: Parameter 'includes' implicitly has an 'any' type.
@@ -31369,7 +31330,6 @@ src/nodes/display/ToneMappingNode.js(107,12): error TS2304: Cannot find name 'No
 src/nodes/display/ToneMappingNode.js(107,17): error TS2304: Cannot find name 'vec3'.
 src/nodes/display/ToneMappingNode.js(107,25): error TS2304: Cannot find name 'Color'.
 src/nodes/display/ToneMappingNode.js(108,14): error TS2315: Type 'ToneMappingNode' is not generic.
-src/nodes/display/ToneMappingNode.js(108,30): error TS2304: Cannot find name 'vec3'.
 src/nodes/display/ToneMappingNode.js(116,11): error TS2304: Cannot find name 'RendererReferenceNode'.
 src/nodes/display/ToneMappingNode.js(116,33): error TS2304: Cannot find name 'vec3'.
 src/nodes/display/ToneMappingNode.js(120,37): error TS7006: Parameter 'color' implicitly has an 'any' type.
@@ -33311,7 +33271,6 @@ src/objects/BatchedMesh.js(248,3): error TS7008: Member '_instanceInfo' implicit
 src/objects/BatchedMesh.js(249,3): error TS7008: Member '_geometryInfo' implicitly has an 'any[]' type.
 src/objects/BatchedMesh.js(252,3): error TS7008: Member '_availableInstanceIds' implicitly has an 'any[]' type.
 src/objects/BatchedMesh.js(253,3): error TS7008: Member '_availableGeometryIds' implicitly has an 'any[]' type.
-src/objects/BatchedMesh.js(273,3): error TS7008: Member '_multiDrawInstances' implicitly has an 'any' type.
 src/objects/BatchedMesh.js(347,44): error TS2345: Argument of type 'Float32Array<ArrayBuffer>' is not assignable to parameter of type 'null | undefined'.
 src/objects/BatchedMesh.js(359,44): error TS2345: Argument of type 'Uint32Array<ArrayBuffer>' is not assignable to parameter of type 'null | undefined'.
 src/objects/BatchedMesh.js(372,42): error TS2345: Argument of type 'Float32Array<ArrayBuffer>' is not assignable to parameter of type 'null | undefined'.
@@ -34167,7 +34126,7 @@ src/renderers/common/Pipelines.js(452,13): error TS2304: Cannot find name 'Rende
 src/renderers/common/Pipelines.js(459,15): error TS2339: Property 'pipeline' does not exist on type 'Object'.
 src/renderers/common/PostProcessing.js(23,13): error TS2304: Cannot find name 'Renderer'.
 src/renderers/common/PostProcessing.js(24,13): error TS2304: Cannot find name 'Node'.
-src/renderers/common/PostProcessing.js(31,13): error TS2552: Cannot find name 'Renderer'. Did you mean 'renderer'?
+src/renderers/common/PostProcessing.js(31,13): error TS2304: Cannot find name 'Renderer'.
 src/renderers/common/PostProcessing.js(40,13): error TS2304: Cannot find name 'Node'.
 src/renderers/common/PostProcessing.js(67,13): error TS2304: Cannot find name 'Node'.
 src/renderers/common/PostProcessing.js(156,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
@@ -34329,11 +34288,6 @@ src/renderers/common/Renderer.js(2081,3): error TS2531: Object is possibly 'null
 src/renderers/common/Renderer.js(2092,26): error TS2345: Argument of type 'null' is not assignable to parameter of type 'Function'.
 src/renderers/common/Renderer.js(2131,3): error TS2696: The 'Object' type is assignable to very few other types. Did you mean to use the 'any' type instead?
   Type 'Object' is missing the following properties from type 'RenderTarget': isRenderTarget, width, height, depth, and 21 more.
-src/renderers/common/Renderer.js(2150,13): error TS2304: Cannot find name 'Object3D'.
-src/renderers/common/Renderer.js(2152,13): error TS2304: Cannot find name 'Camera'.
-src/renderers/common/Renderer.js(2153,13): error TS2304: Cannot find name 'BufferGeometry'.
-src/renderers/common/Renderer.js(2154,13): error TS2304: Cannot find name 'Material'.
-src/renderers/common/Renderer.js(2156,13): error TS2304: Cannot find name 'LightsNode'.
 src/renderers/common/Renderer.js(2193,13): error TS2304: Cannot find name 'Node'.
 src/renderers/common/Renderer.js(2193,24): error TS2304: Cannot find name 'Node'.
 src/renderers/common/Renderer.js(2194,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
@@ -34360,11 +34314,11 @@ src/renderers/common/Renderer.js(2369,3): error TS2531: Object is possibly 'null
 src/renderers/common/Renderer.js(2379,13): error TS2304: Cannot find name 'Texture'.
 src/renderers/common/Renderer.js(2389,3): error TS2531: Object is possibly 'null'.
 src/renderers/common/Renderer.js(2396,13): error TS2304: Cannot find name 'FramebufferTexture'.
-src/renderers/common/Renderer.js(2399,48): error TS2322: Type 'null' is not assignable to type 'Vector4 | Vector2'.
-src/renderers/common/Renderer.js(2403,19): error TS2339: Property 'isVector2' does not exist on type 'Vector4 | Vector2'.
-  Property 'isVector2' does not exist on type 'Vector4'.
-src/renderers/common/Renderer.js(2407,26): error TS2339: Property 'isVector4' does not exist on type 'Vector4 | Vector2'.
-  Property 'isVector4' does not exist on type 'Vector4'.
+src/renderers/common/Renderer.js(2399,48): error TS2322: Type 'null' is not assignable to type 'Vector2 | Vector4'.
+src/renderers/common/Renderer.js(2403,19): error TS2339: Property 'isVector2' does not exist on type 'Vector2 | Vector4'.
+  Property 'isVector2' does not exist on type 'Vector2'.
+src/renderers/common/Renderer.js(2407,26): error TS2339: Property 'isVector4' does not exist on type 'Vector2 | Vector4'.
+  Property 'isVector4' does not exist on type 'Vector2'.
 src/renderers/common/Renderer.js(2440,5): error TS2531: Object is possibly 'null'.
 src/renderers/common/Renderer.js(2442,21): error TS2531: Object is possibly 'null'.
 src/renderers/common/Renderer.js(2450,3): error TS2531: Object is possibly 'null'.
@@ -35073,6 +35027,7 @@ src/renderers/webgl-fallback/utils/WebGLState.js(964,47): error TS7005: Variable
 src/renderers/webgl-fallback/utils/WebGLState.js(988,9): error TS7005: Variable 'drawBuffers' implicitly has an 'any[]' type.
 src/renderers/webgl-fallback/utils/WebGLState.js(1019,15): error TS7022: 'currentTextureSlot' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
 src/renderers/webgl-fallback/utils/WebGLState.js(1039,13): error TS2304: Cannot find name 'WebGLTexture'.
+src/renderers/webgl-fallback/utils/WebGLState.js(1044,15): error TS7022: 'currentTextureSlot' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
 src/renderers/webgl-fallback/utils/WebGLState.js(1060,22): error TS7053: Element implicitly has an 'any' type because expression of type 'number' can't be used to index type '{}'.
   No index signature with a parameter of type 'number' was found on type '{}'.
 src/renderers/webgl-fallback/utils/WebGLState.js(1065,4): error TS7053: Element implicitly has an 'any' type because expression of type 'number' can't be used to index type '{}'.
@@ -36620,7 +36575,6 @@ src/renderers/webgl/WebGLUniforms.js(1059,20): error TS2322: Type 'number' is no
 src/renderers/webgl/WebGLUniforms.js(1059,25): error TS2362: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
 src/renderers/webgl/WebGLUniforms.js(1097,15): error TS7006: Parameter 'gl' implicitly has an 'any' type.
 src/renderers/webgl/WebGLUniforms.js(1097,19): error TS7006: Parameter 'program' implicitly has an 'any' type.
-src/renderers/webgl/WebGLUniforms.js(1099,3): error TS7008: Member 'seq' implicitly has an 'any[]' type.
 src/renderers/webgl/WebGLUniforms.js(1115,12): error TS7006: Parameter 'gl' implicitly has an 'any' type.
 src/renderers/webgl/WebGLUniforms.js(1115,16): error TS7006: Parameter 'name' implicitly has an 'any' type.
 src/renderers/webgl/WebGLUniforms.js(1115,22): error TS7006: Parameter 'value' implicitly has an 'any' type.
