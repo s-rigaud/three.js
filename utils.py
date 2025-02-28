@@ -44,3 +44,11 @@ def clean_ts_errors():
 
 sort_valid_words()
 # clean_ts_errors()
+
+
+# Remove TS errors in /build
+# Remove any and any[] type errors
+# Remove lines starting with spaces
+# remove errors like TS2304: Cannot find name 'Node'
+# remove TS7053
+# remove errors like does not exist on type '{}'.
