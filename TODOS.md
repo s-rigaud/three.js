@@ -42,6 +42,7 @@ Fix RenderObjects.getChainMap at the same time
 NodeBuilder.getDrawIndex return string or null
 WebGLUtils.convert can return null
 Overrite WebGPUTimestampQueryPoll.pendingResolve type to promise?
+https://github.com/s-rigaud/three.js/security/code-scanning/46
 
 - [ ] Should not be null
 
