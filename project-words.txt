@@ -13,9 +13,6 @@ accu
 accus
 ACUBIC
 ADAT
-offsetted
-Unprojects
-Travelled
 Aders
 adipiscing
 ADTR
@@ -1634,6 +1631,7 @@ OETF
 offscreencanvas
 Offseting
 offseting
+offsetted
 offsetx
 offsety
 offsetz
@@ -2297,6 +2295,7 @@ transmissionmap
 Transparents
 Trasformazioni
 trasvesti
+Travelled
 traycaster
 treemap
 treeview
@@ -2371,6 +2370,7 @@ Unproject
 unproject
 unprojected
 unprojection
+Unprojects
 Unrecognised
 unsets
 Unskew
