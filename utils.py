@@ -19,19 +19,27 @@ def clean_ts_errors():
 
     original_error_count = len(lines)
 
-    banned_folders = ["build/", "  ", "examples/jsm/libs/opentype.module.js"]
+    banned_folders = [
+        "  ",
+        "build/",
+        "examples/jsm/libs/",
+    ]
     banned_ts_errors = [
         "TS2304",  # "Cannot find name 'x'."
         "TS2584",  # "Cannot find name 'x'. Do you need to install type definitions for node? Try `npm i @types/node` and then add `node` to the types field in your tsconfig."
         "TS7005",  # "Parameter 'x' implicitly has an 'any[]' type."
         "TS7006",  # "Parameter 'x' implicitly has an 'any' type."
+        "TS7008",  # "Member 'x' implicitly has an 'any' type."
         "TS7034",  # "Variable 'x' implicitly has an 'any' type."
+        "TS7053",  # "Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'x'."
+        "TS2683",  # "'this' implicitly has type 'any' because it does not have a type annotation."
     ]
     banned_text_errors = [
-        "remove errors like does not exist on type '{}'.",
-        "does not exist on type 'Object'."
+        "does not exist on type '{}'.",
+        "does not exist on type 'Object'.",
+        "does not exist on type 'never'.",
+        "Cannot find namespace 'THREE'.",
     ]
-
 
     accepted_lines = []
     for line in lines:
@@ -52,7 +60,9 @@ def clean_ts_errors():
     with open("type-errors.txt", "w", encoding="utf-8") as f:
         f.write("\n".join(accepted_lines))
 
-    print(f"Errors cleaned! (error count: {original_error_count} => {len(accepted_lines)})")
+    print(
+        f"Errors cleaned! (error count: {original_error_count} => {len(accepted_lines)})"
+    )
 
 
 sort_valid_words()
