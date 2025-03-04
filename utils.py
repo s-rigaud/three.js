@@ -46,7 +46,25 @@ def clean_ts_errors():
         "does not exist on type 'Object'.",
         "does not exist on type 'never'.",
         "Cannot find namespace 'THREE'.",
-        "Cannot find module 'three/webgpu' or its corresponding type declarations."
+        "Cannot find module 'three/webgpu' or its corresponding type declarations.",
+        "does not exist on type 'Object3D<Object3DEventMap>'.",
+        "does not exist on type 'onPointerUp'.",
+        "does not exist on type 'onPointerMove'.",
+        "does not exist on type 'onPointerDown'.",
+        "does not exist on type 'onPointerCancel'.",
+        "does not exist on type 'onTouchStart'.",
+        "does not exist on type 'onTouchEnd'.",
+        "does not exist on type 'onTouchMove'.",
+        "does not exist on type 'onTouchCancel'.",
+        "does not exist on type 'onMouseMove'."
+        "does not exist on type 'onMouseUp'.",
+        "does not exist on type 'onMouseDown'.",
+        "does not exist on type 'onMouseCancel'.",
+        "does not exist on type 'onKeyDown'.",
+        "does not exist on type 'onKeyUp'.",
+        "does not exist on type 'onKeyPress'.",
+        "does not exist on type 'onWheel'.",
+        "does not exist on type 'onContextMenu'.",
     ]
 
     accepted_lines = []

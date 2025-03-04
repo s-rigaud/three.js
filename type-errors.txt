@@ -1,29 +1,18 @@
-examples/jsm/animation/AnimationClipCreator.js(33,29): error TS2345: Argument of type 'null' is not assignable to parameter of type 'string | undefined'.
-examples/jsm/animation/AnimationClipCreator.js(53,29): error TS2345: Argument of type 'null' is not assignable to parameter of type 'string | undefined'.
-examples/jsm/animation/AnimationClipCreator.js(74,15): error TS2345: Argument of type 'number' is not assignable to parameter of type 'Vector3Like'.
-examples/jsm/animation/AnimationClipCreator.js(83,29): error TS2345: Argument of type 'null' is not assignable to parameter of type 'string | undefined'.
-examples/jsm/animation/AnimationClipCreator.js(113,29): error TS2345: Argument of type 'null' is not assignable to parameter of type 'string | undefined'.
-examples/jsm/animation/AnimationClipCreator.js(131,29): error TS2345: Argument of type 'null' is not assignable to parameter of type 'string | undefined'.
-examples/jsm/animation/AnimationClipCreator.js(161,29): error TS2345: Argument of type 'null' is not assignable to parameter of type 'string | undefined'.
+examples/jsm/animation/CCDIKSolver.js(277,31): error TS2339: Property 'effector' does not exist on type 'CCDIKSolver'.
+examples/jsm/animation/CCDIKSolver.js(278,21): error TS2551: Property 'links' does not exist on type 'CCDIKSolver'. Did you mean 'iks'?
 examples/jsm/animation/CCDIKSolver.js(430,34): error TS2339: Property 'target' does not exist on type 'CCDIKSolver'.
 examples/jsm/animation/CCDIKSolver.js(431,36): error TS2339: Property 'effector' does not exist on type 'CCDIKSolver'.
 examples/jsm/animation/CCDIKSolver.js(439,30): error TS2551: Property 'links' does not exist on type 'CCDIKSolver'. Did you mean 'iks'?
 examples/jsm/animation/CCDIKSolver.js(441,22): error TS2551: Property 'links' does not exist on type 'CCDIKSolver'. Did you mean 'iks'?
-examples/jsm/animation/CCDIKSolver.js(451,24): error TS2339: Property 'geometry' does not exist on type 'Object3D<Object3DEventMap>'.
 examples/jsm/animation/CCDIKSolver.js(456,30): error TS2551: Property 'links' does not exist on type 'CCDIKSolver'. Did you mean 'iks'?
 examples/jsm/animation/CCDIKSolver.js(458,22): error TS2551: Property 'links' does not exist on type 'CCDIKSolver'. Did you mean 'iks'?
-examples/jsm/animation/CCDIKSolver.js(464,10): error TS2339: Property 'geometry' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/animation/CCDIKSolver.js(495,15): error TS2339: Property 'isLine' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/animation/CCDIKSolver.js(495,30): error TS2339: Property 'geometry' does not exist on type 'Object3D<Object3DEventMap>'.
 examples/jsm/animation/CCDIKSolver.js(549,29): error TS2551: Property 'links' does not exist on type 'CCDIKSolver'. Did you mean 'iks'?
 examples/jsm/animation/CCDIKSolver.js(588,10): error TS2484: Export declaration conflicts with exported declaration of 'CCDIKSolver'.
 examples/jsm/controls/ArcballControls.js(109,14): error TS2314: Generic type 'Controls<TEventMap>' requires 1 type argument(s).
 examples/jsm/controls/ArcballControls.js(507,26): error TS2345: Argument of type 'symbol' is not assignable to parameter of type '{ IDLE: symbol; ROTATE: symbol; PAN: symbol; SCALE: symbol; FOV: symbol; FOCUS: symbol; ZROTATE: symbol; TOUCH_MULTI: symbol; ANIMATION_FOCUS: symbol; ANIMATION_ROTATE: symbol; }'.
 examples/jsm/controls/ArcballControls.js(534,26): error TS2345: Argument of type 'symbol' is not assignable to parameter of type '{ IDLE: symbol; ROTATE: symbol; PAN: symbol; SCALE: symbol; FOV: symbol; FOCUS: symbol; ZROTATE: symbol; TOUCH_MULTI: symbol; ANIMATION_FOCUS: symbol; ANIMATION_ROTATE: symbol; }'.
-examples/jsm/controls/ArcballControls.js(553,25): error TS2339: Property 'isPerspectiveCamera' does not exist on type 'Object3D<Object3DEventMap>'.
 examples/jsm/controls/ArcballControls.js(570,26): error TS2345: Argument of type 'symbol' is not assignable to parameter of type '{ IDLE: symbol; ROTATE: symbol; PAN: symbol; SCALE: symbol; FOV: symbol; FOCUS: symbol; ZROTATE: symbol; TOUCH_MULTI: symbol; ANIMATION_FOCUS: symbol; ANIMATION_ROTATE: symbol; }'.
 examples/jsm/controls/ArcballControls.js(594,26): error TS2345: Argument of type 'symbol' is not assignable to parameter of type '{ IDLE: symbol; ROTATE: symbol; PAN: symbol; SCALE: symbol; FOV: symbol; FOCUS: symbol; ZROTATE: symbol; TOUCH_MULTI: symbol; ANIMATION_FOCUS: symbol; ANIMATION_ROTATE: symbol; }'.
-examples/jsm/controls/ArcballControls.js(754,42): error TS2339: Property 'isPerspectiveCamera' does not exist on type 'Object3D<Object3DEventMap>'.
 examples/jsm/controls/ArcballControls.js(857,27): error TS2345: Argument of type 'symbol' is not assignable to parameter of type '{ IDLE: symbol; ROTATE: symbol; PAN: symbol; SCALE: symbol; FOV: symbol; FOCUS: symbol; ZROTATE: symbol; TOUCH_MULTI: symbol; ANIMATION_FOCUS: symbol; ANIMATION_ROTATE: symbol; }'.
 examples/jsm/controls/ArcballControls.js(867,26): error TS2345: Argument of type 'symbol' is not assignable to parameter of type '{ IDLE: symbol; ROTATE: symbol; PAN: symbol; SCALE: symbol; FOV: symbol; FOCUS: symbol; ZROTATE: symbol; TOUCH_MULTI: symbol; ANIMATION_FOCUS: symbol; ANIMATION_ROTATE: symbol; }'.
 examples/jsm/controls/ArcballControls.js(875,25): error TS2345: Argument of type 'symbol' is not assignable to parameter of type '{ IDLE: symbol; ROTATE: symbol; PAN: symbol; SCALE: symbol; FOV: symbol; FOCUS: symbol; ZROTATE: symbol; TOUCH_MULTI: symbol; ANIMATION_FOCUS: symbol; ANIMATION_ROTATE: symbol; }'.
@@ -36,123 +25,25 @@ examples/jsm/controls/ArcballControls.js(968,25): error TS2345: Argument of type
 examples/jsm/controls/ArcballControls.js(983,23): error TS2345: Argument of type 'symbol' is not assignable to parameter of type '{ IDLE: symbol; ROTATE: symbol; PAN: symbol; SCALE: symbol; FOV: symbol; FOCUS: symbol; ZROTATE: symbol; TOUCH_MULTI: symbol; ANIMATION_FOCUS: symbol; ANIMATION_ROTATE: symbol; }'.
 examples/jsm/controls/ArcballControls.js(994,24): error TS2345: Argument of type 'symbol' is not assignable to parameter of type '{ IDLE: symbol; ROTATE: symbol; PAN: symbol; SCALE: symbol; FOV: symbol; FOCUS: symbol; ZROTATE: symbol; TOUCH_MULTI: symbol; ANIMATION_FOCUS: symbol; ANIMATION_ROTATE: symbol; }'.
 examples/jsm/controls/ArcballControls.js(1022,25): error TS2345: Argument of type 'symbol' is not assignable to parameter of type '{ IDLE: symbol; ROTATE: symbol; PAN: symbol; SCALE: symbol; FOV: symbol; FOCUS: symbol; ZROTATE: symbol; TOUCH_MULTI: symbol; ANIMATION_FOCUS: symbol; ANIMATION_ROTATE: symbol; }'.
-examples/jsm/controls/ArcballControls.js(1037,173): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
 examples/jsm/controls/ArcballControls.js(1052,23): error TS2345: Argument of type 'symbol' is not assignable to parameter of type '{ IDLE: symbol; ROTATE: symbol; PAN: symbol; SCALE: symbol; FOV: symbol; FOCUS: symbol; ZROTATE: symbol; TOUCH_MULTI: symbol; ANIMATION_FOCUS: symbol; ANIMATION_ROTATE: symbol; }'.
 examples/jsm/controls/ArcballControls.js(1063,24): error TS2345: Argument of type 'symbol' is not assignable to parameter of type '{ IDLE: symbol; ROTATE: symbol; PAN: symbol; SCALE: symbol; FOV: symbol; FOCUS: symbol; ZROTATE: symbol; TOUCH_MULTI: symbol; ANIMATION_FOCUS: symbol; ANIMATION_ROTATE: symbol; }'.
 examples/jsm/controls/ArcballControls.js(1084,25): error TS2345: Argument of type 'symbol' is not assignable to parameter of type '{ IDLE: symbol; ROTATE: symbol; PAN: symbol; SCALE: symbol; FOV: symbol; FOCUS: symbol; ZROTATE: symbol; TOUCH_MULTI: symbol; ANIMATION_FOCUS: symbol; ANIMATION_ROTATE: symbol; }'.
-examples/jsm/controls/ArcballControls.js(1099,22): error TS2339: Property 'isOrthographicCamera' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(1103,40): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(1106,29): error TS2339: Property 'isPerspectiveCamera' does not exist on type 'Object3D<Object3DEventMap>'.
 examples/jsm/controls/ArcballControls.js(1116,51): error TS2345: Argument of type 'Vector3 | undefined' is not assignable to parameter of type 'Vector3'.
 examples/jsm/controls/ArcballControls.js(1125,23): error TS2345: Argument of type 'symbol' is not assignable to parameter of type '{ IDLE: symbol; ROTATE: symbol; PAN: symbol; SCALE: symbol; FOV: symbol; FOCUS: symbol; ZROTATE: symbol; TOUCH_MULTI: symbol; ANIMATION_FOCUS: symbol; ANIMATION_ROTATE: symbol; }'.
 examples/jsm/controls/ArcballControls.js(1136,24): error TS2345: Argument of type 'symbol' is not assignable to parameter of type '{ IDLE: symbol; ROTATE: symbol; PAN: symbol; SCALE: symbol; FOV: symbol; FOCUS: symbol; ZROTATE: symbol; TOUCH_MULTI: symbol; ANIMATION_FOCUS: symbol; ANIMATION_ROTATE: symbol; }'.
 examples/jsm/controls/ArcballControls.js(1238,23): error TS2345: Argument of type 'symbol' is not assignable to parameter of type '{ IDLE: symbol; ROTATE: symbol; PAN: symbol; SCALE: symbol; FOV: symbol; FOCUS: symbol; ZROTATE: symbol; TOUCH_MULTI: symbol; ANIMATION_FOCUS: symbol; ANIMATION_ROTATE: symbol; }'.
-examples/jsm/controls/ArcballControls.js(1582,17): error TS2339: Property 'near' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(1589,17): error TS2339: Property 'far' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(1591,17): error TS2339: Property 'updateProjectionMatrix' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(1597,22): error TS2339: Property 'near' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(1599,18): error TS2339: Property 'near' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(1604,22): error TS2339: Property 'far' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(1606,18): error TS2339: Property 'far' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(1613,18): error TS2339: Property 'updateProjectionMatrix' does not exist on type 'Object3D<Object3DEventMap>'.
 examples/jsm/controls/ArcballControls.js(1684,15): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
-examples/jsm/controls/ArcballControls.js(1751,21): error TS2339: Property 'isOrthographicCamera' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(1753,31): error TS2339: Property 'right' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(1753,51): error TS2339: Property 'left' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(1754,32): error TS2339: Property 'bottom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(1754,53): error TS2339: Property 'top' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(1759,36): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(1760,43): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(1762,28): error TS2339: Property 'isPerspectiveCamera' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(1765,54): error TS2339: Property 'fov' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(1766,47): error TS2339: Property 'aspect' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(1847,11): error TS2339: Property 'material' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(1848,11): error TS2339: Property 'material' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(1849,11): error TS2339: Property 'material' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(1853,11): error TS2339: Property 'material' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(1854,11): error TS2339: Property 'material' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(1855,11): error TS2339: Property 'material' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(1891,33): error TS2339: Property 'right' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(1891,53): error TS2339: Property 'left' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(1892,33): error TS2339: Property 'top' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(1892,51): error TS2339: Property 'bottom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(1933,15): error TS2339: Property 'updateProjectionMatrix' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(1970,35): error TS2339: Property 'geometry' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2012,20): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2015,33): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2031,16): error TS2339: Property 'isLine' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2033,12): error TS2339: Property 'geometry' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2034,12): error TS2339: Property 'material' does not exist on type 'Object3D<Object3DEventMap>'.
 examples/jsm/controls/ArcballControls.js(2084,25): error TS2345: Argument of type 'symbol' is not assignable to parameter of type '{ IDLE: symbol; ROTATE: symbol; PAN: symbol; SCALE: symbol; FOV: symbol; FOCUS: symbol; ZROTATE: symbol; TOUCH_MULTI: symbol; ANIMATION_FOCUS: symbol; ANIMATION_ROTATE: symbol; }'.
 examples/jsm/controls/ArcballControls.js(2161,25): error TS2345: Argument of type 'symbol' is not assignable to parameter of type '{ IDLE: symbol; ROTATE: symbol; PAN: symbol; SCALE: symbol; FOV: symbol; FOCUS: symbol; ZROTATE: symbol; TOUCH_MULTI: symbol; ANIMATION_FOCUS: symbol; ANIMATION_ROTATE: symbol; }'.
-examples/jsm/controls/ArcballControls.js(2200,20): error TS2339: Property 'isOrthographicCamera' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2203,45): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2205,27): error TS2339: Property 'isPerspectiveCamera' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2229,15): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2231,20): error TS2339: Property 'isPerspectiveCamera' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2233,16): error TS2339: Property 'fov' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2237,15): error TS2339: Property 'near' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2238,15): error TS2339: Property 'far' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2244,15): error TS2339: Property 'updateProjectionMatrix' does not exist on type 'Object3D<Object3DEventMap>'.
 examples/jsm/controls/ArcballControls.js(2255,23): error TS2345: Argument of type 'symbol' is not assignable to parameter of type '{ IDLE: symbol; ROTATE: symbol; PAN: symbol; SCALE: symbol; FOV: symbol; FOCUS: symbol; ZROTATE: symbol; TOUCH_MULTI: symbol; ANIMATION_FOCUS: symbol; ANIMATION_ROTATE: symbol; }'.
-examples/jsm/controls/ArcballControls.js(2292,20): error TS2339: Property 'isOrthographicCamera' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2296,29): error TS2339: Property 'far' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2298,30): error TS2339: Property 'near' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2300,30): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2306,27): error TS2339: Property 'isPerspectiveCamera' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2310,29): error TS2339: Property 'far' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2311,29): error TS2339: Property 'fov' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2313,30): error TS2339: Property 'near' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2315,30): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2349,31): error TS2339: Property 'near' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2350,30): error TS2339: Property 'far' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2351,29): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2354,20): error TS2339: Property 'isPerspectiveCamera' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2356,29): error TS2339: Property 'fov' does not exist on type 'Object3D<Object3DEventMap>'.
 examples/jsm/controls/ArcballControls.js(2369,15): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
-examples/jsm/controls/ArcballControls.js(2376,20): error TS2339: Property 'isOrthographicCamera' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2379,16): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2380,16): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2383,21): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2385,17): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2388,28): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2390,17): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2395,16): error TS2339: Property 'updateProjectionMatrix' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2419,27): error TS2339: Property 'isPerspectiveCamera' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2488,20): error TS2339: Property 'isPerspectiveCamera' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2490,16): error TS2339: Property 'fov' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2491,16): error TS2339: Property 'updateProjectionMatrix' does not exist on type 'Object3D<Object3DEventMap>'.
 examples/jsm/controls/ArcballControls.js(2504,29): error TS2322: Type 'null' is not assignable to type 'Matrix4 | undefined'.
 examples/jsm/controls/ArcballControls.js(2504,44): error TS2322: Type 'null' is not assignable to type 'Matrix4 | undefined'.
 examples/jsm/controls/ArcballControls.js(2520,4): error TS2322: Type 'null' is not assignable to type 'Matrix4'.
 examples/jsm/controls/ArcballControls.js(2538,4): error TS2322: Type 'null' is not assignable to type 'Matrix4'.
 examples/jsm/controls/ArcballControls.js(2625,15): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
 examples/jsm/controls/ArcballControls.js(2757,15): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
-examples/jsm/controls/ArcballControls.js(2841,20): error TS2339: Property 'isOrthographicCamera' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2843,50): error TS2339: Property 'projectionMatrix' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2844,16): error TS2339: Property 'updateProjectionMatrix' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2845,34): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2847,27): error TS2339: Property 'isPerspectiveCamera' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2849,33): error TS2339: Property 'fov' does not exist on type 'Object3D<Object3DEventMap>'.
 examples/jsm/controls/ArcballControls.js(2864,3): error TS2322: Type '{ IDLE: symbol; ROTATE: symbol; PAN: symbol; SCALE: symbol; FOV: symbol; FOCUS: symbol; ZROTATE: symbol; TOUCH_MULTI: symbol; ANIMATION_FOCUS: symbol; ANIMATION_ROTATE: symbol; }' is not assignable to type 'symbol'.
-examples/jsm/controls/ArcballControls.js(2885,20): error TS2339: Property 'isOrthographicCamera' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2888,21): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2888,56): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2890,50): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2891,66): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2895,27): error TS2339: Property 'isPerspectiveCamera' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2909,21): error TS2339: Property 'fov' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2909,54): error TS2339: Property 'fov' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2911,17): error TS2339: Property 'fov' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2911,52): error TS2339: Property 'fov' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2912,17): error TS2339: Property 'updateProjectionMatrix' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2929,37): error TS2339: Property 'geometry' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2951,16): error TS2339: Property 'near' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2952,16): error TS2339: Property 'far' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2954,16): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2956,21): error TS2339: Property 'isPerspectiveCamera' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2958,17): error TS2339: Property 'fov' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/ArcballControls.js(2966,16): error TS2339: Property 'updateProjectionMatrix' does not exist on type 'Object3D<Object3DEventMap>'.
 examples/jsm/controls/ArcballControls.js(2976,24): error TS2345: Argument of type 'symbol' is not assignable to parameter of type '{ IDLE: symbol; ROTATE: symbol; PAN: symbol; SCALE: symbol; FOV: symbol; FOCUS: symbol; ZROTATE: symbol; TOUCH_MULTI: symbol; ANIMATION_FOCUS: symbol; ANIMATION_ROTATE: symbol; }'.
 examples/jsm/controls/ArcballControls.js(2990,23): error TS2339: Property '_gizmos' does not exist on type 'onWindowResize'.
 examples/jsm/controls/ArcballControls.js(2990,46): error TS2339: Property '_gizmos' does not exist on type 'onWindowResize'.
@@ -163,248 +54,36 @@ examples/jsm/controls/ArcballControls.js(2995,39): error TS2339: Property '_curv
 examples/jsm/controls/ArcballControls.js(2999,28): error TS2339: Property '_gizmos' does not exist on type 'onWindowResize'.
 examples/jsm/controls/ArcballControls.js(3001,8): error TS2339: Property '_gizmos' does not exist on type 'onWindowResize'.
 examples/jsm/controls/ArcballControls.js(3005,7): error TS2339: Property 'dispatchEvent' does not exist on type 'onWindowResize'.
-examples/jsm/controls/ArcballControls.js(3033,7): error TS2339: Property '_touchStart' does not exist on type 'onPointerCancel'.
-examples/jsm/controls/ArcballControls.js(3033,35): error TS2339: Property '_touchStart' does not exist on type 'onPointerCancel'.
-examples/jsm/controls/ArcballControls.js(3034,7): error TS2339: Property '_touchCurrent' does not exist on type 'onPointerCancel'.
-examples/jsm/controls/ArcballControls.js(3034,37): error TS2339: Property '_touchCurrent' does not exist on type 'onPointerCancel'.
-examples/jsm/controls/ArcballControls.js(3044,8): error TS2339: Property '_downEvents' does not exist on type 'onPointerDown'.
-examples/jsm/controls/ArcballControls.js(3055,8): error TS2339: Property '_touchStart' does not exist on type 'onPointerDown'.
-examples/jsm/controls/ArcballControls.js(3056,8): error TS2339: Property '_touchCurrent' does not exist on type 'onPointerDown'.
 examples/jsm/controls/ArcballControls.js(3060,9): error TS2678: Type 'symbol' is not comparable to type 'undefined'.
-examples/jsm/controls/ArcballControls.js(3064,10): error TS2339: Property 'onSinglePanStart' does not exist on type 'onPointerDown'.
-examples/jsm/controls/ArcballControls.js(3066,50): error TS2339: Property '_onPointerMove' does not exist on type 'onPointerDown'.
-examples/jsm/controls/ArcballControls.js(3067,48): error TS2339: Property '_onPointerUp' does not exist on type 'onPointerDown'.
 examples/jsm/controls/ArcballControls.js(3071,9): error TS2678: Type 'symbol' is not comparable to type 'undefined'.
 examples/jsm/controls/ArcballControls.js(3072,9): error TS2678: Type 'symbol' is not comparable to type 'undefined'.
-examples/jsm/controls/ArcballControls.js(3077,10): error TS2339: Property 'onRotateStart' does not exist on type 'onPointerDown'.
-examples/jsm/controls/ArcballControls.js(3078,10): error TS2339: Property 'onPinchStart' does not exist on type 'onPointerDown'.
-examples/jsm/controls/ArcballControls.js(3079,10): error TS2339: Property 'onDoublePanStart' does not exist on type 'onPointerDown'.
 examples/jsm/controls/ArcballControls.js(3083,9): error TS2678: Type 'symbol' is not comparable to type 'undefined'.
-examples/jsm/controls/ArcballControls.js(3087,10): error TS2339: Property 'onTriplePanStart' does not exist on type 'onPointerDown'.
-examples/jsm/controls/ArcballControls.js(3106,24): error TS2339: Property 'getOpFromAction' does not exist on type 'onPointerDown'.
-examples/jsm/controls/ArcballControls.js(3109,49): error TS2339: Property '_onPointerMove' does not exist on type 'onPointerDown'.
-examples/jsm/controls/ArcballControls.js(3110,47): error TS2339: Property '_onPointerUp' does not exist on type 'onPointerDown'.
-examples/jsm/controls/ArcballControls.js(3115,9): error TS2339: Property 'onSinglePanStart' does not exist on type 'onPointerDown'.
 examples/jsm/controls/ArcballControls.js(3129,9): error TS2678: Type 'symbol' is not comparable to type 'undefined'.
-examples/jsm/controls/ArcballControls.js(3132,10): error TS2339: Property 'updateTouchEvent' does not exist on type 'onPointerMove'.
-examples/jsm/controls/ArcballControls.js(3134,10): error TS2339: Property 'onSinglePanMove' does not exist on type 'onPointerMove'.
 examples/jsm/controls/ArcballControls.js(3137,9): error TS2678: Type 'symbol' is not comparable to type 'undefined'.
-examples/jsm/controls/ArcballControls.js(3139,27): error TS2339: Property 'calculatePointersDistance' does not exist on type 'onPointerMove'.
-examples/jsm/controls/ArcballControls.js(3139,59): error TS2339: Property '_touchCurrent' does not exist on type 'onPointerMove'.
-examples/jsm/controls/ArcballControls.js(3139,94): error TS2339: Property '_devPxRatio' does not exist on type 'onPointerMove'.
-examples/jsm/controls/ArcballControls.js(3141,27): error TS2339: Property '_switchSensibility' does not exist on type 'onPointerMove'.
-examples/jsm/controls/ArcballControls.js(3145,11): error TS2339: Property 'updateTouchEvent' does not exist on type 'onPointerMove'.
-examples/jsm/controls/ArcballControls.js(3147,11): error TS2339: Property 'onSinglePanStart' does not exist on type 'onPointerMove'.
 examples/jsm/controls/ArcballControls.js(3154,9): error TS2678: Type 'symbol' is not comparable to type 'undefined'.
-examples/jsm/controls/ArcballControls.js(3157,10): error TS2339: Property 'updateTouchEvent' does not exist on type 'onPointerMove'.
-examples/jsm/controls/ArcballControls.js(3159,10): error TS2339: Property 'onRotateMove' does not exist on type 'onPointerMove'.
-examples/jsm/controls/ArcballControls.js(3160,10): error TS2339: Property 'onPinchMove' does not exist on type 'onPointerMove'.
-examples/jsm/controls/ArcballControls.js(3161,10): error TS2339: Property 'onDoublePanMove' does not exist on type 'onPointerMove'.
 examples/jsm/controls/ArcballControls.js(3165,9): error TS2678: Type 'symbol' is not comparable to type 'undefined'.
-examples/jsm/controls/ArcballControls.js(3168,10): error TS2339: Property 'updateTouchEvent' does not exist on type 'onPointerMove'.
-examples/jsm/controls/ArcballControls.js(3170,10): error TS2339: Property 'onTriplePanMove' does not exist on type 'onPointerMove'.
-examples/jsm/controls/ArcballControls.js(3189,29): error TS2339: Property 'getOpStateFromAction' does not exist on type 'onPointerMove'.
-examples/jsm/controls/ArcballControls.js(3189,56): error TS2339: Property '_button' does not exist on type 'onPointerMove'.
-examples/jsm/controls/ArcballControls.js(3193,9): error TS2339: Property 'onSinglePanMove' does not exist on type 'onPointerMove'.
-examples/jsm/controls/ArcballControls.js(3202,25): error TS2339: Property 'calculatePointersDistance' does not exist on type 'onPointerMove'.
-examples/jsm/controls/ArcballControls.js(3202,57): error TS2339: Property '_downEvents' does not exist on type 'onPointerMove'.
-examples/jsm/controls/ArcballControls.js(3202,75): error TS2339: Property '_downEvents' does not exist on type 'onPointerMove'.
-examples/jsm/controls/ArcballControls.js(3202,116): error TS2339: Property '_devPxRatio' does not exist on type 'onPointerMove'.
-examples/jsm/controls/ArcballControls.js(3203,24): error TS2339: Property '_movementThreshold' does not exist on type 'onPointerMove'.
-examples/jsm/controls/ArcballControls.js(3217,23): error TS2339: Property '_touchCurrent' does not exist on type 'onPointerUp'.
-examples/jsm/controls/ArcballControls.js(3221,14): error TS2339: Property '_touchCurrent' does not exist on type 'onPointerUp'.
-examples/jsm/controls/ArcballControls.js(3223,10): error TS2339: Property '_touchCurrent' does not exist on type 'onPointerUp'.
-examples/jsm/controls/ArcballControls.js(3224,10): error TS2339: Property '_touchStart' does not exist on type 'onPointerUp'.
 examples/jsm/controls/ArcballControls.js(3233,9): error TS2678: Type 'symbol' is not comparable to type 'undefined'.
 examples/jsm/controls/ArcballControls.js(3234,9): error TS2678: Type 'symbol' is not comparable to type 'undefined'.
-examples/jsm/controls/ArcballControls.js(3237,53): error TS2339: Property '_onPointerMove' does not exist on type 'onPointerUp'.
-examples/jsm/controls/ArcballControls.js(3238,51): error TS2339: Property '_onPointerUp' does not exist on type 'onPointerUp'.
-examples/jsm/controls/ArcballControls.js(3241,10): error TS2339: Property 'onSinglePanEnd' does not exist on type 'onPointerUp'.
 examples/jsm/controls/ArcballControls.js(3245,9): error TS2678: Type 'symbol' is not comparable to type 'undefined'.
-examples/jsm/controls/ArcballControls.js(3248,10): error TS2339: Property 'onDoublePanEnd' does not exist on type 'onPointerUp'.
-examples/jsm/controls/ArcballControls.js(3249,10): error TS2339: Property 'onPinchEnd' does not exist on type 'onPointerUp'.
-examples/jsm/controls/ArcballControls.js(3250,10): error TS2339: Property 'onRotateEnd' does not exist on type 'onPointerUp'.
 examples/jsm/controls/ArcballControls.js(3257,9): error TS2678: Type 'symbol' is not comparable to type 'undefined'.
-examples/jsm/controls/ArcballControls.js(3259,15): error TS2339: Property '_touchCurrent' does not exist on type 'onPointerUp'.
-examples/jsm/controls/ArcballControls.js(3261,54): error TS2339: Property '_onPointerMove' does not exist on type 'onPointerUp'.
-examples/jsm/controls/ArcballControls.js(3262,52): error TS2339: Property '_onPointerUp' does not exist on type 'onPointerUp'.
-examples/jsm/controls/ArcballControls.js(3266,11): error TS2339: Property 'onTriplePanEnd' does not exist on type 'onPointerUp'.
-examples/jsm/controls/ArcballControls.js(3276,51): error TS2339: Property '_onPointerMove' does not exist on type 'onPointerUp'.
-examples/jsm/controls/ArcballControls.js(3277,49): error TS2339: Property '_onPointerUp' does not exist on type 'onPointerUp'.
-examples/jsm/controls/ArcballControls.js(3280,8): error TS2339: Property 'onSinglePanEnd' does not exist on type 'onPointerUp'.
-examples/jsm/controls/ArcballControls.js(3289,44): error TS2339: Property '_downEvents' does not exist on type 'onPointerUp'.
-examples/jsm/controls/ArcballControls.js(3289,62): error TS2339: Property '_downEvents' does not exist on type 'onPointerUp'.
-examples/jsm/controls/ArcballControls.js(3291,26): error TS2339: Property '_maxDownTime' does not exist on type 'onPointerUp'.
 examples/jsm/controls/ArcballControls.js(3301,46): error TS2532: Object is possibly 'undefined'.
-examples/jsm/controls/ArcballControls.js(3302,28): error TS2339: Property 'calculatePointersDistance' does not exist on type 'onPointerUp'.
-examples/jsm/controls/ArcballControls.js(3302,60): error TS2339: Property '_downEvents' does not exist on type 'onPointerUp'.
-examples/jsm/controls/ArcballControls.js(3302,83): error TS2339: Property '_downEvents' does not exist on type 'onPointerUp'.
-examples/jsm/controls/ArcballControls.js(3302,109): error TS2339: Property '_devPxRatio' does not exist on type 'onPointerUp'.
-examples/jsm/controls/ArcballControls.js(3304,33): error TS2339: Property '_maxInterval' does not exist on type 'onPointerUp'.
-examples/jsm/controls/ArcballControls.js(3304,66): error TS2339: Property '_posThreshold' does not exist on type 'onPointerUp'.
-examples/jsm/controls/ArcballControls.js(3309,12): error TS2339: Property '_downEvents' does not exist on type 'onPointerUp'.
-examples/jsm/controls/ArcballControls.js(3309,40): error TS2339: Property '_downEvents' does not exist on type 'onPointerUp'.
-examples/jsm/controls/ArcballControls.js(3310,12): error TS2339: Property 'onDoubleTap' does not exist on type 'onPointerUp'.
-examples/jsm/controls/ArcballControls.js(3316,12): error TS2339: Property '_downEvents' does not exist on type 'onPointerUp'.
-examples/jsm/controls/ArcballControls.js(3327,10): error TS2339: Property '_downEvents' does not exist on type 'onPointerUp'.
-examples/jsm/controls/ArcballControls.js(3327,38): error TS2339: Property '_downEvents' does not exist on type 'onPointerUp'.
-examples/jsm/controls/ArcballControls.js(3334,9): error TS2339: Property '_downEvents' does not exist on type 'onPointerUp'.
-examples/jsm/controls/ArcballControls.js(3334,37): error TS2339: Property '_downEvents' does not exist on type 'onPointerUp'.
 examples/jsm/controls/DragControls.js(54,14): error TS2314: Generic type 'Controls<TEventMap>' requires 1 type argument(s).
 examples/jsm/controls/DragControls.js(278,6): error TS2378: A 'get' accessor must return a value.
-examples/jsm/controls/DragControls.js(437,12): error TS2339: Property 'enabled' does not exist on type 'onPointerCancel'.
-examples/jsm/controls/DragControls.js(441,8): error TS2339: Property 'dispatchEvent' does not exist on type 'onPointerCancel'.
-examples/jsm/controls/DragControls.js(447,7): error TS2339: Property 'domElement' does not exist on type 'onPointerCancel'.
 examples/jsm/controls/FirstPersonControls.js(16,14): error TS2314: Generic type 'Controls<TEventMap>' requires 1 type argument(s).
 examples/jsm/controls/FirstPersonControls.js(236,10): error TS2339: Property 'isVector3' does not exist on type 'number | Vector3'.
 examples/jsm/controls/FirstPersonControls.js(238,18): error TS2345: Argument of type 'number | Vector3' is not assignable to parameter of type 'Vector3Like'.
 examples/jsm/controls/FirstPersonControls.js(242,17): error TS2345: Argument of type 'number | Vector3' is not assignable to parameter of type 'number'.
 examples/jsm/controls/FirstPersonControls.js(279,13): error TS2339: Property '_moveUp' does not exist on type 'FirstPersonControls'.
 examples/jsm/controls/FirstPersonControls.js(280,13): error TS2339: Property '_moveDown' does not exist on type 'FirstPersonControls'.
-examples/jsm/controls/FirstPersonControls.js(336,12): error TS2339: Property 'domElement' does not exist on type 'onPointerDown'.
-examples/jsm/controls/FirstPersonControls.js(338,8): error TS2339: Property 'domElement' does not exist on type 'onPointerDown'.
-examples/jsm/controls/FirstPersonControls.js(342,12): error TS2339: Property 'activeLook' does not exist on type 'onPointerDown'.
-examples/jsm/controls/FirstPersonControls.js(359,12): error TS2339: Property 'activeLook' does not exist on type 'onPointerUp'.
-examples/jsm/controls/FirstPersonControls.js(376,12): error TS2339: Property 'domElement' does not exist on type 'onPointerMove'.
-examples/jsm/controls/FirstPersonControls.js(378,39): error TS2339: Property '_viewHalfX' does not exist on type 'onPointerMove'.
-examples/jsm/controls/FirstPersonControls.js(379,39): error TS2339: Property '_viewHalfY' does not exist on type 'onPointerMove'.
-examples/jsm/controls/FirstPersonControls.js(383,39): error TS2339: Property 'domElement' does not exist on type 'onPointerMove'.
-examples/jsm/controls/FirstPersonControls.js(383,68): error TS2339: Property '_viewHalfX' does not exist on type 'onPointerMove'.
-examples/jsm/controls/FirstPersonControls.js(384,39): error TS2339: Property 'domElement' does not exist on type 'onPointerMove'.
-examples/jsm/controls/FirstPersonControls.js(384,67): error TS2339: Property '_viewHalfY' does not exist on type 'onPointerMove'.
 examples/jsm/controls/FlyControls.js(23,14): error TS2314: Generic type 'Controls<TEventMap>' requires 1 type argument(s).
-examples/jsm/controls/FlyControls.js(207,28): error TS2339: Property 'enabled' does not exist on type 'onKeyDown'.
-examples/jsm/controls/FlyControls.js(218,21): error TS2339: Property '_moveState' does not exist on type 'onKeyDown'.
-examples/jsm/controls/FlyControls.js(219,21): error TS2339: Property '_moveState' does not exist on type 'onKeyDown'.
-examples/jsm/controls/FlyControls.js(221,21): error TS2339: Property '_moveState' does not exist on type 'onKeyDown'.
-examples/jsm/controls/FlyControls.js(222,21): error TS2339: Property '_moveState' does not exist on type 'onKeyDown'.
-examples/jsm/controls/FlyControls.js(224,21): error TS2339: Property '_moveState' does not exist on type 'onKeyDown'.
-examples/jsm/controls/FlyControls.js(225,21): error TS2339: Property '_moveState' does not exist on type 'onKeyDown'.
-examples/jsm/controls/FlyControls.js(227,24): error TS2339: Property '_moveState' does not exist on type 'onKeyDown'.
-examples/jsm/controls/FlyControls.js(228,26): error TS2339: Property '_moveState' does not exist on type 'onKeyDown'.
-examples/jsm/controls/FlyControls.js(230,26): error TS2339: Property '_moveState' does not exist on type 'onKeyDown'.
-examples/jsm/controls/FlyControls.js(231,27): error TS2339: Property '_moveState' does not exist on type 'onKeyDown'.
-examples/jsm/controls/FlyControls.js(233,21): error TS2339: Property '_moveState' does not exist on type 'onKeyDown'.
-examples/jsm/controls/FlyControls.js(234,21): error TS2339: Property '_moveState' does not exist on type 'onKeyDown'.
-examples/jsm/controls/FlyControls.js(238,7): error TS2339: Property '_updateMovementVector' does not exist on type 'onKeyDown'.
-examples/jsm/controls/FlyControls.js(239,7): error TS2339: Property '_updateRotationVector' does not exist on type 'onKeyDown'.
-examples/jsm/controls/FlyControls.js(245,12): error TS2339: Property 'enabled' does not exist on type 'onKeyUp'.
-examples/jsm/controls/FlyControls.js(252,21): error TS2339: Property '_moveState' does not exist on type 'onKeyUp'.
-examples/jsm/controls/FlyControls.js(253,21): error TS2339: Property '_moveState' does not exist on type 'onKeyUp'.
-examples/jsm/controls/FlyControls.js(255,21): error TS2339: Property '_moveState' does not exist on type 'onKeyUp'.
-examples/jsm/controls/FlyControls.js(256,21): error TS2339: Property '_moveState' does not exist on type 'onKeyUp'.
-examples/jsm/controls/FlyControls.js(258,21): error TS2339: Property '_moveState' does not exist on type 'onKeyUp'.
-examples/jsm/controls/FlyControls.js(259,21): error TS2339: Property '_moveState' does not exist on type 'onKeyUp'.
-examples/jsm/controls/FlyControls.js(261,24): error TS2339: Property '_moveState' does not exist on type 'onKeyUp'.
-examples/jsm/controls/FlyControls.js(262,26): error TS2339: Property '_moveState' does not exist on type 'onKeyUp'.
-examples/jsm/controls/FlyControls.js(264,26): error TS2339: Property '_moveState' does not exist on type 'onKeyUp'.
-examples/jsm/controls/FlyControls.js(265,27): error TS2339: Property '_moveState' does not exist on type 'onKeyUp'.
-examples/jsm/controls/FlyControls.js(267,21): error TS2339: Property '_moveState' does not exist on type 'onKeyUp'.
-examples/jsm/controls/FlyControls.js(268,21): error TS2339: Property '_moveState' does not exist on type 'onKeyUp'.
-examples/jsm/controls/FlyControls.js(272,7): error TS2339: Property '_updateMovementVector' does not exist on type 'onKeyUp'.
-examples/jsm/controls/FlyControls.js(273,7): error TS2339: Property '_updateRotationVector' does not exist on type 'onKeyUp'.
-examples/jsm/controls/FlyControls.js(348,12): error TS2339: Property 'enabled' does not exist on type 'onPointerCancel'.
-examples/jsm/controls/FlyControls.js(350,12): error TS2339: Property 'dragToLook' does not exist on type 'onPointerCancel'.
-examples/jsm/controls/FlyControls.js(354,8): error TS2339: Property '_moveState' does not exist on type 'onPointerCancel'.
-examples/jsm/controls/FlyControls.js(354,34): error TS2339: Property '_moveState' does not exist on type 'onPointerCancel'.
-examples/jsm/controls/FlyControls.js(358,8): error TS2339: Property '_moveState' does not exist on type 'onPointerCancel'.
-examples/jsm/controls/FlyControls.js(359,8): error TS2339: Property '_moveState' does not exist on type 'onPointerCancel'.
-examples/jsm/controls/FlyControls.js(361,8): error TS2339: Property '_updateMovementVector' does not exist on type 'onPointerCancel'.
-examples/jsm/controls/FlyControls.js(365,7): error TS2339: Property '_updateRotationVector' does not exist on type 'onPointerCancel'.
 examples/jsm/controls/OrbitControls.js(85,14): error TS2314: Generic type 'Controls<TEventMap>' requires 1 type argument(s).
-examples/jsm/controls/OrbitControls.js(391,28): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/OrbitControls.js(571,28): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/OrbitControls.js(583,15): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/OrbitControls.js(585,15): error TS2339: Property 'updateProjectionMatrix' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/OrbitControls.js(675,68): error TS2339: Property 'isOrthographicCamera' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/OrbitControls.js(715,21): error TS2339: Property 'isPerspectiveCamera' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/OrbitControls.js(728,28): error TS2339: Property 'isOrthographicCamera' does not exist on type 'Object3D<Object3DEventMap>'.
 examples/jsm/controls/OrbitControls.js(732,28): error TS2345: Argument of type 'Object3D<Object3DEventMap>' is not assignable to parameter of type 'Camera'.
-examples/jsm/controls/OrbitControls.js(734,34): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/OrbitControls.js(735,17): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/OrbitControls.js(735,84): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/OrbitControls.js(736,17): error TS2339: Property 'updateProjectionMatrix' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/OrbitControls.js(738,44): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
 examples/jsm/controls/OrbitControls.js(741,27): error TS2345: Argument of type 'Object3D<Object3DEventMap>' is not assignable to parameter of type 'Camera'.
-examples/jsm/controls/OrbitControls.js(789,27): error TS2339: Property 'isOrthographicCamera' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/OrbitControls.js(791,33): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/OrbitControls.js(792,16): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/OrbitControls.js(792,83): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/OrbitControls.js(794,34): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/OrbitControls.js(796,17): error TS2339: Property 'updateProjectionMatrix' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/OrbitControls.js(895,20): error TS2339: Property 'isPerspectiveCamera' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/OrbitControls.js(903,46): error TS2339: Property 'fov' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/OrbitControls.js(909,27): error TS2339: Property 'isOrthographicCamera' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/OrbitControls.js(912,42): error TS2339: Property 'right' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/OrbitControls.js(912,62): error TS2339: Property 'left' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/OrbitControls.js(912,83): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/OrbitControls.js(913,40): error TS2339: Property 'top' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/OrbitControls.js(913,58): error TS2339: Property 'bottom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/OrbitControls.js(913,81): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/OrbitControls.js(927,20): error TS2339: Property 'isPerspectiveCamera' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/OrbitControls.js(927,55): error TS2339: Property 'isOrthographicCamera' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/OrbitControls.js(942,20): error TS2339: Property 'isPerspectiveCamera' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/OrbitControls.js(942,55): error TS2339: Property 'isOrthographicCamera' does not exist on type 'Object3D<Object3DEventMap>'.
 examples/jsm/controls/OrbitControls.js(974,74): error TS2345: Argument of type 'Object3D<Object3DEventMap>' is not assignable to parameter of type 'Camera'.
-examples/jsm/controls/OrbitControls.js(1501,7): error TS2339: Property '_removePointer' does not exist on type 'onPointerUp'.
-examples/jsm/controls/OrbitControls.js(1503,16): error TS2339: Property '_pointers' does not exist on type 'onPointerUp'.
-examples/jsm/controls/OrbitControls.js(1507,9): error TS2339: Property 'domElement' does not exist on type 'onPointerUp'.
-examples/jsm/controls/OrbitControls.js(1509,9): error TS2339: Property 'domElement' does not exist on type 'onPointerUp'.
-examples/jsm/controls/OrbitControls.js(1509,61): error TS2339: Property '_onPointerMove' does not exist on type 'onPointerUp'.
-examples/jsm/controls/OrbitControls.js(1510,9): error TS2339: Property 'domElement' does not exist on type 'onPointerUp'.
-examples/jsm/controls/OrbitControls.js(1510,59): error TS2339: Property '_onPointerUp' does not exist on type 'onPointerUp'.
-examples/jsm/controls/OrbitControls.js(1512,9): error TS2339: Property 'dispatchEvent' does not exist on type 'onPointerUp'.
-examples/jsm/controls/OrbitControls.js(1520,27): error TS2339: Property '_pointers' does not exist on type 'onPointerUp'.
-examples/jsm/controls/OrbitControls.js(1521,26): error TS2339: Property '_pointerPositions' does not exist on type 'onPointerUp'.
-examples/jsm/controls/OrbitControls.js(1524,9): error TS2339: Property '_onTouchStart' does not exist on type 'onPointerUp'.
-examples/jsm/controls/OrbitControls.js(1540,23): error TS2339: Property 'mouseButtons' does not exist on type 'onMouseDown'.
-examples/jsm/controls/OrbitControls.js(1545,23): error TS2339: Property 'mouseButtons' does not exist on type 'onMouseDown'.
-examples/jsm/controls/OrbitControls.js(1550,23): error TS2339: Property 'mouseButtons' does not exist on type 'onMouseDown'.
-examples/jsm/controls/OrbitControls.js(1563,14): error TS2339: Property 'enableZoom' does not exist on type 'onMouseDown'.
-examples/jsm/controls/OrbitControls.js(1565,9): error TS2339: Property '_handleMouseDownDolly' does not exist on type 'onMouseDown'.
-examples/jsm/controls/OrbitControls.js(1575,15): error TS2339: Property 'enablePan' does not exist on type 'onMouseDown'.
-examples/jsm/controls/OrbitControls.js(1577,10): error TS2339: Property '_handleMouseDownPan' does not exist on type 'onMouseDown'.
-examples/jsm/controls/OrbitControls.js(1583,15): error TS2339: Property 'enableRotate' does not exist on type 'onMouseDown'.
-examples/jsm/controls/OrbitControls.js(1585,10): error TS2339: Property '_handleMouseDownRotate' does not exist on type 'onMouseDown'.
-examples/jsm/controls/OrbitControls.js(1597,15): error TS2339: Property 'enableRotate' does not exist on type 'onMouseDown'.
-examples/jsm/controls/OrbitControls.js(1599,10): error TS2339: Property '_handleMouseDownRotate' does not exist on type 'onMouseDown'.
-examples/jsm/controls/OrbitControls.js(1605,15): error TS2339: Property 'enablePan' does not exist on type 'onMouseDown'.
-examples/jsm/controls/OrbitControls.js(1607,10): error TS2339: Property '_handleMouseDownPan' does not exist on type 'onMouseDown'.
-examples/jsm/controls/OrbitControls.js(1623,8): error TS2339: Property 'dispatchEvent' does not exist on type 'onMouseDown'.
-examples/jsm/controls/OrbitControls.js(1685,7): error TS2339: Property '_trackPointer' does not exist on type 'onTouchStart'.
-examples/jsm/controls/OrbitControls.js(1687,16): error TS2339: Property '_pointers' does not exist on type 'onTouchStart'.
-examples/jsm/controls/OrbitControls.js(1691,18): error TS2339: Property 'touches' does not exist on type 'onTouchStart'.
-examples/jsm/controls/OrbitControls.js(1695,16): error TS2339: Property 'enableRotate' does not exist on type 'onTouchStart'.
-examples/jsm/controls/OrbitControls.js(1697,11): error TS2339: Property '_handleTouchStartRotate' does not exist on type 'onTouchStart'.
-examples/jsm/controls/OrbitControls.js(1705,16): error TS2339: Property 'enablePan' does not exist on type 'onTouchStart'.
-examples/jsm/controls/OrbitControls.js(1707,11): error TS2339: Property '_handleTouchStartPan' does not exist on type 'onTouchStart'.
-examples/jsm/controls/OrbitControls.js(1723,18): error TS2339: Property 'touches' does not exist on type 'onTouchStart'.
-examples/jsm/controls/OrbitControls.js(1727,16): error TS2339: Property 'enableZoom' does not exist on type 'onTouchStart'.
-examples/jsm/controls/OrbitControls.js(1727,45): error TS2339: Property 'enablePan' does not exist on type 'onTouchStart'.
-examples/jsm/controls/OrbitControls.js(1729,11): error TS2339: Property '_handleTouchStartDollyPan' does not exist on type 'onTouchStart'.
-examples/jsm/controls/OrbitControls.js(1737,16): error TS2339: Property 'enableZoom' does not exist on type 'onTouchStart'.
-examples/jsm/controls/OrbitControls.js(1737,45): error TS2339: Property 'enableRotate' does not exist on type 'onTouchStart'.
-examples/jsm/controls/OrbitControls.js(1739,11): error TS2339: Property '_handleTouchStartDollyRotate' does not exist on type 'onTouchStart'.
-examples/jsm/controls/OrbitControls.js(1761,8): error TS2339: Property 'dispatchEvent' does not exist on type 'onTouchStart'.
-examples/jsm/controls/OrbitControls.js(1769,7): error TS2339: Property '_trackPointer' does not exist on type 'onTouchMove'.
 examples/jsm/controls/OrbitControls.js(1773,8): error TS2678: Type 'number' is not comparable to type 'undefined'.
-examples/jsm/controls/OrbitControls.js(1775,14): error TS2339: Property 'enableRotate' does not exist on type 'onTouchMove'.
-examples/jsm/controls/OrbitControls.js(1777,9): error TS2339: Property '_handleTouchMoveRotate' does not exist on type 'onTouchMove'.
-examples/jsm/controls/OrbitControls.js(1779,9): error TS2339: Property 'update' does not exist on type 'onTouchMove'.
 examples/jsm/controls/OrbitControls.js(1783,8): error TS2678: Type 'number' is not comparable to type 'undefined'.
-examples/jsm/controls/OrbitControls.js(1785,14): error TS2339: Property 'enablePan' does not exist on type 'onTouchMove'.
-examples/jsm/controls/OrbitControls.js(1787,9): error TS2339: Property '_handleTouchMovePan' does not exist on type 'onTouchMove'.
-examples/jsm/controls/OrbitControls.js(1789,9): error TS2339: Property 'update' does not exist on type 'onTouchMove'.
 examples/jsm/controls/OrbitControls.js(1793,8): error TS2678: Type 'number' is not comparable to type 'undefined'.
-examples/jsm/controls/OrbitControls.js(1795,14): error TS2339: Property 'enableZoom' does not exist on type 'onTouchMove'.
-examples/jsm/controls/OrbitControls.js(1795,43): error TS2339: Property 'enablePan' does not exist on type 'onTouchMove'.
-examples/jsm/controls/OrbitControls.js(1797,9): error TS2339: Property '_handleTouchMoveDollyPan' does not exist on type 'onTouchMove'.
-examples/jsm/controls/OrbitControls.js(1799,9): error TS2339: Property 'update' does not exist on type 'onTouchMove'.
 examples/jsm/controls/OrbitControls.js(1803,8): error TS2678: Type 'number' is not comparable to type 'undefined'.
-examples/jsm/controls/OrbitControls.js(1805,14): error TS2339: Property 'enableZoom' does not exist on type 'onTouchMove'.
-examples/jsm/controls/OrbitControls.js(1805,43): error TS2339: Property 'enableRotate' does not exist on type 'onTouchMove'.
-examples/jsm/controls/OrbitControls.js(1807,9): error TS2339: Property '_handleTouchMoveDollyRotate' does not exist on type 'onTouchMove'.
-examples/jsm/controls/OrbitControls.js(1809,9): error TS2339: Property 'update' does not exist on type 'onTouchMove'.
 examples/jsm/controls/OrbitControls.js(1835,25): error TS2339: Property 'domElement' does not exist on type 'interceptControlDown'.
 examples/jsm/controls/OrbitControls.js(1837,44): error TS2339: Property '_interceptControlUp' does not exist on type 'interceptControlDown'.
 examples/jsm/controls/OrbitControls.js(1849,25): error TS2339: Property 'domElement' does not exist on type 'interceptControlUp'.
@@ -415,109 +94,7 @@ examples/jsm/controls/PointerLockControls.js(241,65): error TS2339: Property 'do
 examples/jsm/controls/PointerLockControls.js(243,8): error TS2339: Property 'dispatchEvent' does not exist on type 'onPointerlockChange'.
 examples/jsm/controls/PointerLockControls.js(249,8): error TS2339: Property 'dispatchEvent' does not exist on type 'onPointerlockChange'.
 examples/jsm/controls/TrackballControls.js(53,14): error TS2314: Generic type 'Controls<TEventMap>' requires 1 type argument(s).
-examples/jsm/controls/TrackballControls.js(256,29): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/TrackballControls.js(347,20): error TS2339: Property 'isPerspectiveCamera' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/TrackballControls.js(361,27): error TS2339: Property 'isOrthographicCamera' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/TrackballControls.js(365,111): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/TrackballControls.js(370,34): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/TrackballControls.js(393,15): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/TrackballControls.js(395,15): error TS2339: Property 'updateProjectionMatrix' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/TrackballControls.js(404,32): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/TrackballControls.js(414,21): error TS2339: Property 'isOrthographicCamera' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/TrackballControls.js(416,35): error TS2339: Property 'right' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/TrackballControls.js(416,55): error TS2339: Property 'left' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/TrackballControls.js(416,76): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/TrackballControls.js(417,35): error TS2339: Property 'top' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/TrackballControls.js(417,53): error TS2339: Property 'bottom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/TrackballControls.js(417,76): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/TrackballControls.js(498,21): error TS2339: Property 'isPerspectiveCamera' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/TrackballControls.js(502,28): error TS2339: Property 'isOrthographicCamera' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/TrackballControls.js(504,17): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/TrackballControls.js(504,53): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/TrackballControls.js(506,41): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/TrackballControls.js(508,18): error TS2339: Property 'updateProjectionMatrix' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/TrackballControls.js(524,22): error TS2339: Property 'isPerspectiveCamera' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/TrackballControls.js(528,29): error TS2339: Property 'isOrthographicCamera' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/TrackballControls.js(530,18): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/TrackballControls.js(530,54): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/TrackballControls.js(532,42): error TS2339: Property 'zoom' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/TrackballControls.js(534,19): error TS2339: Property 'updateProjectionMatrix' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/TrackballControls.js(734,12): error TS2339: Property 'enabled' does not exist on type 'onKeyUp'.
-examples/jsm/controls/TrackballControls.js(738,43): error TS2339: Property '_onKeyDown' does not exist on type 'onKeyUp'.
-examples/jsm/controls/TrackballControls.js(744,12): error TS2339: Property 'enabled' does not exist on type 'onKeyDown'.
-examples/jsm/controls/TrackballControls.js(746,46): error TS2339: Property '_onKeyDown' does not exist on type 'onKeyDown'.
-examples/jsm/controls/TrackballControls.js(752,34): error TS2339: Property 'keys' does not exist on type 'onKeyDown'.
-examples/jsm/controls/TrackballControls.js(752,66): error TS2339: Property 'noRotate' does not exist on type 'onKeyDown'.
-examples/jsm/controls/TrackballControls.js(756,34): error TS2339: Property 'keys' does not exist on type 'onKeyDown'.
-examples/jsm/controls/TrackballControls.js(756,64): error TS2339: Property 'noZoom' does not exist on type 'onKeyDown'.
-examples/jsm/controls/TrackballControls.js(760,34): error TS2339: Property 'keys' does not exist on type 'onKeyDown'.
-examples/jsm/controls/TrackballControls.js(760,63): error TS2339: Property 'noPan' does not exist on type 'onKeyDown'.
-examples/jsm/controls/TrackballControls.js(775,23): error TS2339: Property 'mouseButtons' does not exist on type 'onMouseDown'.
-examples/jsm/controls/TrackballControls.js(779,23): error TS2339: Property 'mouseButtons' does not exist on type 'onMouseDown'.
-examples/jsm/controls/TrackballControls.js(783,23): error TS2339: Property 'mouseButtons' does not exist on type 'onMouseDown'.
-examples/jsm/controls/TrackballControls.js(810,23): error TS2339: Property 'keyState' does not exist on type 'onMouseDown'.
-examples/jsm/controls/TrackballControls.js(810,57): error TS2339: Property 'keyState' does not exist on type 'onMouseDown'.
-examples/jsm/controls/TrackballControls.js(812,41): error TS2339: Property 'noRotate' does not exist on type 'onMouseDown'.
-examples/jsm/controls/TrackballControls.js(814,8): error TS2339: Property '_moveCurr' does not exist on type 'onMouseDown'.
-examples/jsm/controls/TrackballControls.js(814,29): error TS2339: Property '_getMouseOnCircle' does not exist on type 'onMouseDown'.
-examples/jsm/controls/TrackballControls.js(815,8): error TS2339: Property '_movePrev' does not exist on type 'onMouseDown'.
-examples/jsm/controls/TrackballControls.js(815,29): error TS2339: Property '_moveCurr' does not exist on type 'onMouseDown'.
-examples/jsm/controls/TrackballControls.js(817,46): error TS2339: Property 'noZoom' does not exist on type 'onMouseDown'.
-examples/jsm/controls/TrackballControls.js(819,8): error TS2339: Property '_zoomStart' does not exist on type 'onMouseDown'.
-examples/jsm/controls/TrackballControls.js(819,30): error TS2339: Property '_getMouseOnScreen' does not exist on type 'onMouseDown'.
-examples/jsm/controls/TrackballControls.js(820,8): error TS2339: Property '_zoomEnd' does not exist on type 'onMouseDown'.
-examples/jsm/controls/TrackballControls.js(820,28): error TS2339: Property '_zoomStart' does not exist on type 'onMouseDown'.
-examples/jsm/controls/TrackballControls.js(822,45): error TS2339: Property 'noPan' does not exist on type 'onMouseDown'.
-examples/jsm/controls/TrackballControls.js(824,8): error TS2339: Property '_panStart' does not exist on type 'onMouseDown'.
-examples/jsm/controls/TrackballControls.js(824,29): error TS2339: Property '_getMouseOnScreen' does not exist on type 'onMouseDown'.
-examples/jsm/controls/TrackballControls.js(825,8): error TS2339: Property '_panEnd' does not exist on type 'onMouseDown'.
-examples/jsm/controls/TrackballControls.js(825,27): error TS2339: Property '_panStart' does not exist on type 'onMouseDown'.
-examples/jsm/controls/TrackballControls.js(829,7): error TS2339: Property 'dispatchEvent' does not exist on type 'onMouseDown'.
 examples/jsm/controls/TrackballControls.js(858,7): error TS2339: Property 'dispatchEvent' does not exist on type 'onMouseUp'.
-examples/jsm/controls/TrackballControls.js(904,7): error TS2339: Property '_trackPointer' does not exist on type 'onTouchStart'.
-examples/jsm/controls/TrackballControls.js(906,16): error TS2339: Property '_pointers' does not exist on type 'onTouchStart'.
-examples/jsm/controls/TrackballControls.js(910,9): error TS2339: Property '_moveCurr' does not exist on type 'onTouchStart'.
-examples/jsm/controls/TrackballControls.js(910,30): error TS2339: Property '_getMouseOnCircle' does not exist on type 'onTouchStart'.
-examples/jsm/controls/TrackballControls.js(910,54): error TS2339: Property '_pointers' does not exist on type 'onTouchStart'.
-examples/jsm/controls/TrackballControls.js(910,81): error TS2339: Property '_pointers' does not exist on type 'onTouchStart'.
-examples/jsm/controls/TrackballControls.js(911,9): error TS2339: Property '_movePrev' does not exist on type 'onTouchStart'.
-examples/jsm/controls/TrackballControls.js(911,30): error TS2339: Property '_moveCurr' does not exist on type 'onTouchStart'.
-examples/jsm/controls/TrackballControls.js(916,20): error TS2339: Property '_pointers' does not exist on type 'onTouchStart'.
-examples/jsm/controls/TrackballControls.js(916,48): error TS2339: Property '_pointers' does not exist on type 'onTouchStart'.
-examples/jsm/controls/TrackballControls.js(917,20): error TS2339: Property '_pointers' does not exist on type 'onTouchStart'.
-examples/jsm/controls/TrackballControls.js(917,48): error TS2339: Property '_pointers' does not exist on type 'onTouchStart'.
-examples/jsm/controls/TrackballControls.js(920,21): error TS2339: Property '_pointers' does not exist on type 'onTouchStart'.
-examples/jsm/controls/TrackballControls.js(920,49): error TS2339: Property '_pointers' does not exist on type 'onTouchStart'.
-examples/jsm/controls/TrackballControls.js(921,21): error TS2339: Property '_pointers' does not exist on type 'onTouchStart'.
-examples/jsm/controls/TrackballControls.js(921,49): error TS2339: Property '_pointers' does not exist on type 'onTouchStart'.
-examples/jsm/controls/TrackballControls.js(922,9): error TS2339: Property '_panStart' does not exist on type 'onTouchStart'.
-examples/jsm/controls/TrackballControls.js(922,30): error TS2339: Property '_getMouseOnScreen' does not exist on type 'onTouchStart'.
-examples/jsm/controls/TrackballControls.js(923,9): error TS2339: Property '_panEnd' does not exist on type 'onTouchStart'.
-examples/jsm/controls/TrackballControls.js(923,28): error TS2339: Property '_panStart' does not exist on type 'onTouchStart'.
-examples/jsm/controls/TrackballControls.js(928,7): error TS2339: Property 'dispatchEvent' does not exist on type 'onTouchStart'.
-examples/jsm/controls/TrackballControls.js(934,7): error TS2339: Property '_trackPointer' does not exist on type 'onTouchMove'.
-examples/jsm/controls/TrackballControls.js(936,16): error TS2339: Property '_pointers' does not exist on type 'onTouchMove'.
-examples/jsm/controls/TrackballControls.js(939,9): error TS2339: Property '_movePrev' does not exist on type 'onTouchMove'.
-examples/jsm/controls/TrackballControls.js(939,30): error TS2339: Property '_moveCurr' does not exist on type 'onTouchMove'.
-examples/jsm/controls/TrackballControls.js(940,9): error TS2339: Property '_moveCurr' does not exist on type 'onTouchMove'.
-examples/jsm/controls/TrackballControls.js(940,30): error TS2339: Property '_getMouseOnCircle' does not exist on type 'onTouchMove'.
-examples/jsm/controls/TrackballControls.js(945,26): error TS2339: Property '_getSecondPointerPosition' does not exist on type 'onTouchMove'.
-examples/jsm/controls/TrackballControls.js(953,9): error TS2339: Property '_panEnd' does not exist on type 'onTouchMove'.
-examples/jsm/controls/TrackballControls.js(953,28): error TS2339: Property '_getMouseOnScreen' does not exist on type 'onTouchMove'.
-examples/jsm/controls/TrackballControls.js(962,16): error TS2339: Property '_pointers' does not exist on type 'onTouchEnd'.
-examples/jsm/controls/TrackballControls.js(970,9): error TS2339: Property '_moveCurr' does not exist on type 'onTouchEnd'.
-examples/jsm/controls/TrackballControls.js(970,30): error TS2339: Property '_getMouseOnCircle' does not exist on type 'onTouchEnd'.
-examples/jsm/controls/TrackballControls.js(971,9): error TS2339: Property '_movePrev' does not exist on type 'onTouchEnd'.
-examples/jsm/controls/TrackballControls.js(971,30): error TS2339: Property '_moveCurr' does not exist on type 'onTouchEnd'.
-examples/jsm/controls/TrackballControls.js(977,30): error TS2339: Property '_pointers' does not exist on type 'onTouchEnd'.
-examples/jsm/controls/TrackballControls.js(979,15): error TS2339: Property '_pointers' does not exist on type 'onTouchEnd'.
-examples/jsm/controls/TrackballControls.js(981,28): error TS2339: Property '_pointerPositions' does not exist on type 'onTouchEnd'.
-examples/jsm/controls/TrackballControls.js(981,52): error TS2339: Property '_pointers' does not exist on type 'onTouchEnd'.
-examples/jsm/controls/TrackballControls.js(982,11): error TS2339: Property '_moveCurr' does not exist on type 'onTouchEnd'.
-examples/jsm/controls/TrackballControls.js(982,32): error TS2339: Property '_getMouseOnCircle' does not exist on type 'onTouchEnd'.
-examples/jsm/controls/TrackballControls.js(983,11): error TS2339: Property '_movePrev' does not exist on type 'onTouchEnd'.
-examples/jsm/controls/TrackballControls.js(983,32): error TS2339: Property '_moveCurr' does not exist on type 'onTouchEnd'.
-examples/jsm/controls/TrackballControls.js(994,7): error TS2339: Property 'dispatchEvent' does not exist on type 'onTouchEnd'.
 examples/jsm/controls/TransformControls.js(74,14): error TS2314: Generic type 'Controls<TEventMap>' requires 1 type argument(s).
 examples/jsm/controls/TransformControls.js(86,10): error TS2345: Argument of type 'undefined' is not assignable to parameter of type 'Object3D<Object3DEventMap>'.
 examples/jsm/controls/TransformControls.js(404,67): error TS2339: Property 'camera' does not exist on type 'TransformControls'.
@@ -570,10 +147,6 @@ examples/jsm/controls/TransformControls.js(768,3): error TS2322: Type 'undefined
 examples/jsm/controls/TransformControls.js(793,9): error TS2339: Property 'pointStart' does not exist on type 'TransformControls'.
 examples/jsm/controls/TransformControls.js(793,31): error TS2339: Property 'pointEnd' does not exist on type 'TransformControls'.
 examples/jsm/controls/TransformControls.js(818,3): error TS2322: Type '"scale" | "translate" | "rotate" | undefined' is not assignable to type '"scale" | "translate" | "rotate"'.
-examples/jsm/controls/TransformControls.js(1067,15): error TS2339: Property 'geometry' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/TransformControls.js(1067,32): error TS2339: Property 'geometry' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/TransformControls.js(1068,15): error TS2339: Property 'material' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/controls/TransformControls.js(1068,32): error TS2339: Property 'material' does not exist on type 'Object3D<Object3DEventMap>'.
 examples/jsm/controls/TransformControls.js(1449,3): error TS2532: Object is possibly 'undefined'.
 examples/jsm/controls/TransformControls.js(1450,3): error TS2532: Object is possibly 'undefined'.
 examples/jsm/controls/TransformControls.js(1451,3): error TS2532: Object is possibly 'undefined'.
@@ -701,12 +274,6 @@ examples/jsm/effects/AsciiEffect.js(300,10): error TS2484: Export declaration co
 examples/jsm/effects/OutlineEffect.js(145,5): error TS2353: Object literal may only specify known properties, and 'type' does not exist in type 'ShaderMaterialParameters'.
 examples/jsm/effects/OutlineEffect.js(399,30): error TS2339: Property 'autoClear' does not exist on type 'OutlineEffect'.
 examples/jsm/effects/OutlineEffect.js(487,10): error TS2484: Export declaration conflicts with exported declaration of 'OutlineEffect'.
-examples/jsm/environments/DebugEnvironment.js(82,16): error TS2339: Property 'isMesh' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/environments/DebugEnvironment.js(84,27): error TS2339: Property 'geometry' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/environments/DebugEnvironment.js(85,27): error TS2339: Property 'material' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/environments/RoomEnvironment.js(136,16): error TS2339: Property 'isMesh' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/environments/RoomEnvironment.js(138,27): error TS2339: Property 'geometry' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/environments/RoomEnvironment.js(139,27): error TS2339: Property 'material' does not exist on type 'Object3D<Object3DEventMap>'.
 examples/jsm/exporters/DRACOExporter.js(219,3): error TS2740: Type 'Int8Array<ArrayBuffer>' is missing the following properties from type 'ArrayBuffer': maxByteLength, resizable, resize, detached, and 2 more.
 examples/jsm/exporters/DRACOExporter.js(309,10): error TS2484: Export declaration conflicts with exported declaration of 'DRACOExporter'.
 examples/jsm/exporters/EXRExporter.js(43,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
@@ -853,14 +420,10 @@ examples/jsm/helpers/LightProbeHelperGPU.js(6,88): error TS2307: Cannot find mod
 examples/jsm/helpers/LightProbeHelperGPU.js(84,17): error TS2339: Property 'dispose' does not exist on type 'Material | Material[]'.
 examples/jsm/helpers/OctreeHelper.js(102,17): error TS2339: Property 'dispose' does not exist on type 'Material | Material[]'.
 examples/jsm/helpers/RectAreaLightHelper.js(79,18): error TS2339: Property 'color' does not exist on type 'Material | Material[]'.
-examples/jsm/helpers/RectAreaLightHelper.js(80,23): error TS2339: Property 'material' does not exist on type 'Object3D<Object3DEventMap>'.
 examples/jsm/helpers/RectAreaLightHelper.js(84,18): error TS2339: Property 'color' does not exist on type 'Material | Material[]'.
 examples/jsm/helpers/RectAreaLightHelper.js(87,28): error TS2339: Property 'color' does not exist on type 'Material | Material[]'.
-examples/jsm/helpers/RectAreaLightHelper.js(91,23): error TS2339: Property 'material' does not exist on type 'Object3D<Object3DEventMap>'.
 examples/jsm/helpers/RectAreaLightHelper.js(91,58): error TS2339: Property 'color' does not exist on type 'Material | Material[]'.
 examples/jsm/helpers/RectAreaLightHelper.js(109,17): error TS2339: Property 'dispose' does not exist on type 'Material | Material[]'.
-examples/jsm/helpers/RectAreaLightHelper.js(110,22): error TS2339: Property 'geometry' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/helpers/RectAreaLightHelper.js(111,22): error TS2339: Property 'material' does not exist on type 'Object3D<Object3DEventMap>'.
 examples/jsm/helpers/TextureHelper.js(36,4): error TS2353: Object literal may only specify known properties, and 'type' does not exist in type 'ShaderMaterialParameters'.
 examples/jsm/helpers/TextureHelper.js(119,17): error TS2339: Property 'dispose' does not exist on type 'Material | Material[]'.
 examples/jsm/helpers/TextureHelperGPU.js(2,2): error TS2724: '"three"' has no exported member named 'NodeMaterial'. Did you mean 'Material'?
@@ -1158,7 +721,6 @@ examples/jsm/loaders/FBXLoader.js(746,15): error TS2339: Property 'geometryID' d
 examples/jsm/loaders/FBXLoader.js(756,18): error TS2339: Property 'rawTargets' does not exist on type '{ id: string; }'.
 examples/jsm/loaders/FBXLoader.js(844,19): error TS2339: Property 'geoID' does not exist on type '{ name: any; initialWeight: any; id: any; fullWeights: any; }'.
 examples/jsm/loaders/FBXLoader.js(909,10): error TS2554: Expected 2 arguments, but got 0.
-examples/jsm/loaders/FBXLoader.js(918,69): error TS2339: Property 'isGroup' does not exist on type 'Object3D<Object3DEventMap>'.
 examples/jsm/loaders/FBXLoader.js(948,7): error TS2322: Type 'Object3D<Object3DEventMap>' is not assignable to type 'null'.
 examples/jsm/loaders/FBXLoader.js(951,7): error TS2322: Type 'Object3D<Object3DEventMap>' is not assignable to type 'null'.
 examples/jsm/loaders/FBXLoader.js(954,7): error TS2322: Type 'Mesh<BufferGeometry<NormalBufferAttributes>, any, Object3DEventMap>' is not assignable to type 'null'.
@@ -1214,11 +776,6 @@ examples/jsm/loaders/GLTFLoader.js(2673,28): error TS2345: Argument of type '{ s
 examples/jsm/loaders/GLTFLoader.js(3015,72): error TS2345: Argument of type '(value: ArrayBuffer | PromiseLike<ArrayBuffer>) => void' is not assignable to parameter of type '(data: string | ArrayBuffer) => void'.
 examples/jsm/loaders/GLTFLoader.js(3277,32): error TS2339: Property 'webkitURL' does not exist on type 'typeof self'.
 examples/jsm/loaders/GLTFLoader.js(3289,22): error TS2693: 'Blob' only refers to a type, but is being used as a value here.
-examples/jsm/loaders/GLTFLoader.js(3414,25): error TS2339: Property 'geometry' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/loaders/GLTFLoader.js(3415,23): error TS2339: Property 'material' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/loaders/GLTFLoader.js(3421,13): error TS2339: Property 'isPoints' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/loaders/GLTFLoader.js(3441,20): error TS2339: Property 'isLine' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/loaders/GLTFLoader.js(3498,8): error TS2339: Property 'material' does not exist on type 'Object3D<Object3DEventMap>'.
 examples/jsm/loaders/GLTFLoader.js(3562,26): error TS2554: Expected 4 arguments, but got 3.
 examples/jsm/loaders/GLTFLoader.js(3563,26): error TS2554: Expected 4 arguments, but got 3.
 examples/jsm/loaders/GLTFLoader.js(3610,25): error TS2554: Expected 4 arguments, but got 3.
@@ -1230,7 +787,7 @@ examples/jsm/loaders/GLTFLoader.js(3820,12): error TS2339: Property 'normalizeSk
 examples/jsm/loaders/GLTFLoader.js(3858,26): error TS2345: Argument of type 'Mesh<any, any, Object3DEventMap> | Line<any, any, Object3DEventMap> | Points<any, any, Object3DEventMap>' is not assignable to parameter of type 'Mesh<BufferGeometry<NormalBufferAttributes>, Material | Material[], Object3DEventMap>'.
 examples/jsm/loaders/GLTFLoader.js(3923,4): error TS2322: Type 'undefined' is not assignable to type 'Promise<THREE.Camera>'.
 examples/jsm/loaders/GLTFLoader.js(3937,25): error TS18048: 'camera' is possibly 'undefined'.
-examples/jsm/loaders/ .js(3939,27): error TS2345: Argument of type 'PerspectiveCamera | OrthographicCamera | undefined' is not assignable to parameter of type 'Material | Object3D<Object3DEventMap> | BufferGeometry<NormalBufferAttributes>'.
+examples/jsm/loaders/GLTFLoader.js(3939,27): error TS2345: Argument of type 'PerspectiveCamera | OrthographicCamera | undefined' is not assignable to parameter of type 'Material | Object3D<Object3DEventMap> | BufferGeometry<NormalBufferAttributes>'.
 examples/jsm/loaders/GLTFLoader.js(4466,25): error TS2339: Property 'position' does not exist on type '{ scale: string; translation: string; rotation: string; weights: string; }'.
 examples/jsm/loaders/GLTFLoader.js(4566,12): error TS2503: Cannot find namespace 'GLTF'.
 examples/jsm/loaders/GLTFLoader.js(4681,12): error TS2503: Cannot find namespace 'GLTF'.
@@ -2582,9 +2139,6 @@ examples/jsm/webxr/OculusHandPointerModel.js(316,40): error TS2531: Object is po
 examples/jsm/webxr/OculusHandPointerModel.js(380,5): error TS2531: Object is possibly 'null'.
 examples/jsm/webxr/OculusHandPointerModel.js(384,5): error TS2531: Object is possibly 'null'.
 examples/jsm/webxr/OculusHandPointerModel.js(397,4): error TS2531: Object is possibly 'null'.
-examples/jsm/webxr/XRControllerModelFactory.js(41,15): error TS2339: Property 'isMesh' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/webxr/XRControllerModelFactory.js(43,11): error TS2339: Property 'material' does not exist on type 'Object3D<Object3DEventMap>'.
-examples/jsm/webxr/XRControllerModelFactory.js(44,11): error TS2339: Property 'material' does not exist on type 'Object3D<Object3DEventMap>'.
 examples/jsm/webxr/XRControllerModelFactory.js(249,44): error TS2345: Argument of type '"generic-trigger"' is not assignable to parameter of type 'null | undefined'.
 examples/jsm/webxr/XRControllerModelFactory.js(254,6): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'Object'.
 examples/jsm/webxr/XREstimatedLight.js(66,20): error TS2531: Object is possibly 'null'.
