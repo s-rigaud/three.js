@@ -33,12 +33,20 @@ def clean_ts_errors():
         "TS7034",  # "Variable 'x' implicitly has an 'any' type."
         "TS7053",  # "Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'x'."
         "TS2683",  # "'this' implicitly has type 'any' because it does not have a type annotation."
+        "TS2416",  # "Property 'x' in type 'y' is not assignable to the same property in base type 'z'."
+        "TS2540",  # "Cannot assign to 'x' because it is a read-only property."
+        "TS2351",  # "Cannot use 'new' with an expression whose type lacks a call or construct signature."
+        "TS2300",  # "Duplicate identifier 'x'."
+        "TS8024",  # js doc
+        "TS1005",  # js doc
+        "TS7009",  # new FUnction
     ]
     banned_text_errors = [
         "does not exist on type '{}'.",
         "does not exist on type 'Object'.",
         "does not exist on type 'never'.",
         "Cannot find namespace 'THREE'.",
+        "Cannot find module 'three/webgpu' or its corresponding type declarations."
     ]
 
     accepted_lines = []
