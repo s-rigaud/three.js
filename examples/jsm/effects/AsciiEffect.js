@@ -118,8 +118,8 @@ class AsciiEffect {
 		}
 
 
-		const aDefaultCharList = ( ' .,:;i1tfLCG08@' ).split( '' );
-		const aDefaultColorCharList = ( ' CGO08@' ).split( '' );
+		const aDefaultCharList = ' .,:;i1tfLCG08@';
+		const aDefaultColorCharList = ' CGO08@';
 		const strFont = 'courier new, monospace';
 
 		const oCanvasImg = renderer.domElement;
