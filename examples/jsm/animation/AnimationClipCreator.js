@@ -30,7 +30,7 @@ class AnimationClipCreator {
 
 		const track = new NumberKeyframeTrack( trackName, times, values );
 
-		return new AnimationClip( null, period, [ track ] );
+		return new AnimationClip( undefined, period, [ track ] );
 
 	}
 
@@ -50,7 +50,7 @@ class AnimationClipCreator {
 
 		const track = new NumberKeyframeTrack( trackName, times, values );
 
-		return new AnimationClip( null, period, [ track ] );
+		return new AnimationClip( undefined, period, [ track ] );
 
 	}
 
@@ -80,7 +80,7 @@ class AnimationClipCreator {
 
 		const track = new VectorKeyframeTrack( trackName, times, values );
 
-		return new AnimationClip( null, duration, [ track ] );
+		return new AnimationClip( undefined, duration, [ track ] );
 
 	}
 
@@ -110,7 +110,7 @@ class AnimationClipCreator {
 
 		const track = new VectorKeyframeTrack( trackName, times, values );
 
-		return new AnimationClip( null, duration, [ track ] );
+		return new AnimationClip( undefined, duration, [ track ] );
 
 	}
 
@@ -128,7 +128,7 @@ class AnimationClipCreator {
 
 		const track = new BooleanKeyframeTrack( trackName, times, values );
 
-		return new AnimationClip( null, duration, [ track ] );
+		return new AnimationClip( undefined, duration, [ track ] );
 
 	}
 
@@ -158,7 +158,7 @@ class AnimationClipCreator {
 
 		const track = new ColorKeyframeTrack( trackName, times, values );
 
-		return new AnimationClip( null, duration, [ track ] );
+		return new AnimationClip( undefined, duration, [ track ] );
 
 	}
 

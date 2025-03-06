@@ -177,7 +177,7 @@ export class CSM {
 		/**
 		 * A Map holding enhanced material shaders.
 		 *
-		 * @type {Map<Material,Object>}
+		 * @type {Map<Material,?Object>}
 		 */
 		this.shaders = new Map();
 
@@ -463,24 +463,25 @@ export class CSM {
 
 		const far = Math.min( this.camera.far, this.maxFar );
 		const shaders = this.shaders;
+		const scope = this;
 
 		shaders.forEach( function ( shader, material ) {
 
 			if ( shader !== null ) {
 
 				const uniforms = shader.uniforms;
-				this._getExtendedBreaks( uniforms.CSM_cascades.value );
-				uniforms.cameraNear.value = this.camera.near;
+				scope._getExtendedBreaks( uniforms.CSM_cascades.value );
+				uniforms.cameraNear.value = scope.camera.near;
 				uniforms.shadowFar.value = far;
 
 			}
 
-			if ( ! this.fade && 'CSM_FADE' in material.defines ) {
+			if ( ! scope.fade && 'CSM_FADE' in material.defines ) {
 
 				delete material.defines.CSM_FADE;
 				material.needsUpdate = true;
 
-			} else if ( this.fade && ! ( 'CSM_FADE' in material.defines ) ) {
+			} else if ( scope.fade && ! ( 'CSM_FADE' in material.defines ) ) {
 
 				material.defines.CSM_FADE = '';
 				material.needsUpdate = true;
