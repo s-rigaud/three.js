@@ -1294,7 +1294,7 @@ class WebGLRenderer {
 		 *
 		 * Note that the (target) scene's lighting and environment must be configured before calling this method.
 		 *
-		 * @param {Object3D} scene - The scene or anohter type of 3D object to precompile.
+		 * @param {Object3D} scene - The scene or another type of 3D object to precompile.
 		 * @param {Camera} camera - The camera.
 		 * @param {?Scene} [targetScene=null] - The target scene.
 		 * @return {?Set} The precompiled materials.
@@ -1401,7 +1401,7 @@ class WebGLRenderer {
 		 * it is recommended to use this version of `compile()` whenever possible.
 		 *
 		 * @async
-		 * @param {Object3D} scene - The scene or anohter type of 3D object to precompile.
+		 * @param {Object3D} scene - The scene or another type of 3D object to precompile.
 		 * @param {Camera} camera - The camera.
 		 * @param {?Scene} [targetScene=null] - The target scene.
 		 * @return {Promise} A Promise that resolves when the given scene can be rendered without unnecessary stalling due to shader compilation.
@@ -2931,27 +2931,27 @@ class WebGLRenderer {
 
 			if ( framebuffer ) {
 
-				const texture = renderTarget.texture;
-				const textureFormat = texture.format;
-				const textureType = texture.type;
-
-				if ( ! capabilities.textureFormatReadable( textureFormat ) ) {
-
-					throw new Error( 'THREE.WebGLRenderer.readRenderTargetPixelsAsync: renderTarget is not in RGBA or implementation defined format.' );
-
-				}
-
-				if ( ! capabilities.textureTypeReadable( textureType ) ) {
-
-					throw new Error( 'THREE.WebGLRenderer.readRenderTargetPixelsAsync: renderTarget is not in UnsignedByteType or implementation defined type.' );
-
-				}
-
 				// the following if statement ensures valid read requests (no out-of-bounds pixels, see #8604)
 				if ( ( x >= 0 && x <= ( renderTarget.width - width ) ) && ( y >= 0 && y <= ( renderTarget.height - height ) ) ) {
 
 					// set the active frame buffer to the one we want to read
 					state.bindFramebuffer( _gl.FRAMEBUFFER, framebuffer );
+
+					const texture = renderTarget.texture;
+					const textureFormat = texture.format;
+					const textureType = texture.type;
+
+					if ( ! capabilities.textureFormatReadable( textureFormat ) ) {
+
+						throw new Error( 'THREE.WebGLRenderer.readRenderTargetPixelsAsync: renderTarget is not in RGBA or implementation defined format.' );
+
+					}
+
+					if ( ! capabilities.textureTypeReadable( textureType ) ) {
+
+						throw new Error( 'THREE.WebGLRenderer.readRenderTargetPixelsAsync: renderTarget is not in UnsignedByteType or implementation defined type.' );
+
+					}
 
 					const glBuffer = _gl.createBuffer();
 					_gl.bindBuffer( _gl.PIXEL_PACK_BUFFER, glBuffer );
