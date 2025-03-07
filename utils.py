@@ -40,6 +40,10 @@ def clean_ts_errors():
         "TS8024",  # js doc
         "TS1005",  # js doc
         "TS7009",  # new FUnction
+        "TS7022",
+        "TS7031",
+        "TS7023",
+        "TS2307"
     ]
     banned_text_errors = [
         "does not exist on type '{}'.",

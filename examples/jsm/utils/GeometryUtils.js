@@ -14,7 +14,7 @@ import { Vector3 } from 'three';
  * @param {number} [v1=1] - Corner index -X, +Z.
  * @param {number} [v2=2] - Corner index +X, +Z.
  * @param {number} [v3=3] - Corner index +X, -Z.
- * @returns {Array<Array<number>>} The Hilbert curve points.
+ * @returns {Array<Vector3>} The Hilbert curve points.
  */
 function hilbert2D( center = new Vector3( 0, 0, 0 ), size = 10, iterations = 1, v0 = 0, v1 = 1, v2 = 2, v3 = 3 ) {
 

@@ -12,7 +12,7 @@ const _quadMesh = /*@__PURE__*/ new QuadMesh();
 export async function decompress( blitTexture, maxTextureSize = Infinity, renderer = null ) {
 
 	if ( renderer === null ) {
-
+	
 		renderer = _renderer = new WebGPURenderer();
 		await renderer.init();
 

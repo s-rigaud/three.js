@@ -250,7 +250,6 @@ examples/jsm/csm/CSM.js(581,22): error TS2395: Individual declarations in merged
 examples/jsm/csm/CSMFrustum.js(123,17): error TS2554: Expected 1 arguments, but got 0.
 examples/jsm/csm/CSMFrustum.js(207,10): error TS2484: Export declaration conflicts with exported declaration of 'CSMFrustum'.
 examples/jsm/csm/CSMShadowNode.js(12,10): error TS18042: 'CSMFrustum' is a type and cannot be imported in JavaScript files. Use 'import("./CSMFrustum.js").CSMFrustum' in a JSDoc type annotation.
-examples/jsm/csm/CSMShadowNode.js(13,129): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
 examples/jsm/csm/CSMShadowNode.js(16,28): error TS2554: Expected 1 arguments, but got 0.
 examples/jsm/csm/CSMShadowNode.js(162,3): error TS2559: Type 'CSMFrustum' has no properties in common with type 'CSMFrustum'.
 examples/jsm/csm/CSMShadowNode.js(164,22): error TS2551: Property 'light' does not exist on type 'CSMShadowNode'. Did you mean 'lights'?
@@ -289,7 +288,6 @@ examples/jsm/curves/NURBSCurve.js(130,8): error TS2339: Property 'controlPoints'
 examples/jsm/curves/NURBSCurve.js(131,8): error TS2339: Property 'startKnot' does not exist on type 'CurveJSON'.
 examples/jsm/curves/NURBSCurve.js(132,8): error TS2339: Property 'endKnot' does not exist on type 'CurveJSON'.
 examples/jsm/curves/NURBSSurface.js(90,86): error TS2345: Argument of type 'any[][]' is not assignable to parameter of type 'Vector4[]'.
-examples/jsm/curves/NURBSUtils.js(83,10): error TS7022: 'temp' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
 examples/jsm/curves/NURBSUtils.js(386,2): error TS2322: Type 'Vector3[]' is not assignable to type 'Vector4[]'.
 examples/jsm/curves/NURBSUtils.js(486,4): error TS2322: Type 'Vector4' is not assignable to type 'never'.
 examples/jsm/curves/NURBSVolume.js(45,5): error TS2322: Type 'never[]' is not assignable to type 'never'.
@@ -443,7 +441,6 @@ examples/jsm/helpers/LightProbeHelper.js(32,4): error TS2353: Object literal may
 examples/jsm/helpers/LightProbeHelper.js(148,17): error TS2339: Property 'dispose' does not exist on type 'Material | Material[]'.
 examples/jsm/helpers/LightProbeHelper.js(158,17): error TS2339: Property 'uniforms' does not exist on type 'Material | Material[]'.
 examples/jsm/helpers/LightProbeHelperGPU.js(3,2): error TS2724: '"three"' has no exported member named 'NodeMaterial'. Did you mean 'Material'?
-examples/jsm/helpers/LightProbeHelperGPU.js(6,88): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
 examples/jsm/helpers/LightProbeHelperGPU.js(84,17): error TS2339: Property 'dispose' does not exist on type 'Material | Material[]'.
 examples/jsm/helpers/OctreeHelper.js(102,17): error TS2339: Property 'dispose' does not exist on type 'Material | Material[]'.
 examples/jsm/helpers/RectAreaLightHelper.js(79,18): error TS2339: Property 'color' does not exist on type 'Material | Material[]'.
@@ -454,7 +451,6 @@ examples/jsm/helpers/RectAreaLightHelper.js(109,17): error TS2339: Property 'dis
 examples/jsm/helpers/TextureHelper.js(36,4): error TS2353: Object literal may only specify known properties, and 'type' does not exist in type 'ShaderMaterialParameters'.
 examples/jsm/helpers/TextureHelper.js(119,17): error TS2339: Property 'dispose' does not exist on type 'Material | Material[]'.
 examples/jsm/helpers/TextureHelperGPU.js(2,2): error TS2724: '"three"' has no exported member named 'NodeMaterial'. Did you mean 'Material'?
-examples/jsm/helpers/TextureHelperGPU.js(10,88): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
 examples/jsm/helpers/TextureHelperGPU.js(90,17): error TS2339: Property 'dispose' does not exist on type 'Material | Material[]'.
 examples/jsm/helpers/VertexNormalsHelper.js(148,17): error TS2339: Property 'dispose' does not exist on type 'Material | Material[]'.
 examples/jsm/helpers/VertexTangentsHelper.js(126,17): error TS2339: Property 'dispose' does not exist on type 'Material | Material[]'.
@@ -559,8 +555,6 @@ examples/jsm/loaders/3DMLoader.js(1501,11): error TS2551: Property 'postMessage'
 examples/jsm/loaders/3DMLoader.js(1543,10): error TS2551: Property 'postMessage' does not exist on type 'typeof self'. Did you mean 'onmessage'?
 examples/jsm/loaders/3DMLoader.js(1580,10): error TS2551: Property 'postMessage' does not exist on type 'typeof self'. Did you mean 'onmessage'?
 examples/jsm/loaders/3DMLoader.js(1599,9): error TS2551: Property 'postMessage' does not exist on type 'typeof self'. Did you mean 'onmessage'?
-examples/jsm/loaders/3DMLoader.js(1648,11): error TS7023: 'curveToPoints' implicitly has return type 'any' because it does not have a return type annotation and is referenced directly or indirectly in one of its return expressions.
-examples/jsm/loaders/3DMLoader.js(1680,11): error TS7022: 'segmentArray' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
 examples/jsm/loaders/3MFLoader.js(112,18): error TS2554: Expected 2 arguments, but got 1.
 examples/jsm/loaders/3MFLoader.js(159,21): error TS18047: 'zip' is possibly 'null'.
 examples/jsm/loaders/3MFLoader.js(167,22): error TS18047: 'zip' is possibly 'null'.
@@ -1146,13 +1140,10 @@ examples/jsm/loaders/LWOLoader.js(499,66): error TS2554: Expected 0-1 arguments,
 examples/jsm/loaders/LWOLoader.js(579,53): error TS2554: Expected 0-2 arguments, but got 3.
 examples/jsm/loaders/LWOLoader.js(786,35): error TS2554: Expected 0-2 arguments, but got 3.
 examples/jsm/loaders/LWOLoader.js(787,44): error TS2554: Expected 0-2 arguments, but got 3.
-examples/jsm/loaders/MaterialXLoader.js(18,8): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
 examples/jsm/loaders/MaterialXLoader.js(172,24): error TS2339: Property 'manager' does not exist on type 'MaterialXLoader'.
 examples/jsm/loaders/MaterialXLoader.js(173,19): error TS2339: Property 'path' does not exist on type 'MaterialXLoader'.
 examples/jsm/loaders/MaterialXLoader.js(194,30): error TS2339: Property 'manager' does not exist on type 'MaterialXLoader'.
 examples/jsm/loaders/MaterialXLoader.js(194,44): error TS2339: Property 'path' does not exist on type 'MaterialXLoader'.
-examples/jsm/loaders/MaterialXLoader.js(210,3): error TS7022: 'node' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/loaders/MaterialXLoader.js(379,7): error TS7022: 'node' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
 examples/jsm/loaders/MaterialXLoader.js(568,19): error TS7019: Rest parameter 'names' implicitly has an 'any[]' type.
 examples/jsm/loaders/MaterialXLoader.js(833,20): error TS7019: Rest parameter 'names' implicitly has an 'any[]' type.
 examples/jsm/loaders/MD2Loader.js(272,26): error TS2345: Argument of type 'number' is not assignable to parameter of type 'never'.
@@ -1213,11 +1204,9 @@ examples/jsm/loaders/NRRDLoader.js(560,10): error TS2339: Property '__array' doe
 examples/jsm/loaders/NRRDLoader.js(563,10): error TS2339: Property '__array' does not exist on type '{ type: typeof type; endian: typeof endian; encoding: typeof encoding; dimension: typeof dimension; sizes: typeof sizes; space: typeof space; 'space origin': typeof 'space origin'; 'space directions': typeof 'space directions'; spacings: typeof spacings; }'.
 examples/jsm/loaders/NRRDLoader.js(566,10): error TS2339: Property '__array' does not exist on type '{ type: typeof type; endian: typeof endian; encoding: typeof encoding; dimension: typeof dimension; sizes: typeof sizes; space: typeof space; 'space origin': typeof 'space origin'; 'space directions': typeof 'space directions'; spacings: typeof spacings; }'.
 examples/jsm/loaders/NRRDLoader.js(591,15): error TS2339: Property 'dim' does not exist on type '{ type: typeof type; endian: typeof endian; encoding: typeof encoding; dimension: typeof dimension; sizes: typeof sizes; space: typeof space; 'space origin': typeof 'space origin'; 'space directions': typeof 'space directions'; spacings: typeof spacings; }'.
-examples/jsm/loaders/NRRDLoader.js(595,2): error TS7023: 'sizes' implicitly has return type 'any' because it does not have a return type annotation and is referenced directly or indirectly in one of its return expressions.
 examples/jsm/loaders/NRRDLoader.js(598,10): error TS2322: Type 'number[]' is not assignable to type 'typeof sizes'.
 examples/jsm/loaders/NRRDLoader.js(624,15): error TS2551: Property 'space_origin' does not exist on type '{ type: typeof type; endian: typeof endian; encoding: typeof encoding; dimension: typeof dimension; sizes: typeof sizes; space: typeof space; 'space origin': typeof 'space origin'; 'space directions': typeof 'space directions'; spacings: typeof spacings; }'. Did you mean 'space origin'?
 examples/jsm/loaders/NRRDLoader.js(632,15): error TS2339: Property 'vectors' does not exist on type '{ type: typeof type; endian: typeof endian; encoding: typeof encoding; dimension: typeof dimension; sizes: typeof sizes; space: typeof space; 'space origin': typeof 'space origin'; 'space directions': typeof 'space directions'; spacings: typeof spacings; }'.
-examples/jsm/loaders/NRRDLoader.js(663,2): error TS7023: 'spacings' implicitly has return type 'any' because it does not have a return type annotation and is referenced directly or indirectly in one of its return expressions.
 examples/jsm/loaders/NRRDLoader.js(667,10): error TS2322: Type 'number[]' is not assignable to type 'typeof spacings'.
 examples/jsm/loaders/OBJLoader.js(120,15): error TS2339: Property 'clone' does not exist on type '{ index: number; name: any; mtllib: any; smooth: any; groupStart: number; groupEnd: number; groupCount: number; inherited: boolean; }'.
 examples/jsm/loaders/OBJLoader.js(126,27): error TS2345: Argument of type '{ index: number; name: any; mtllib: any; smooth: any; groupStart: any; groupEnd: number; groupCount: number; inherited: boolean; clone: (index: any) => { index: number; name: any; mtllib: any; smooth: any; groupStart: number; groupEnd: number; groupCount: number; inherited: boolean; }; }' is not assignable to parameter of type 'never'.
@@ -1227,16 +1216,6 @@ examples/jsm/loaders/OBJLoader.js(639,18): error TS2322: Type 'RegExpExecArray |
 examples/jsm/loaders/OBJLoader.js(721,13): error TS2339: Property 'materialLibraries' does not exist on type 'Group<Object3DEventMap>'.
 examples/jsm/loaders/PCDLoader.js(121,21): error TS18047: 'result2' is possibly 'null'.
 examples/jsm/loaders/PCDLoader.js(122,26): error TS18047: 'result2' is possibly 'null'.
-examples/jsm/loaders/PCDLoader.js(123,4): error TS7022: 'str' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/loaders/PCDLoader.js(131,4): error TS7022: 'version' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/loaders/PCDLoader.js(132,4): error TS7022: 'fields' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/loaders/PCDLoader.js(133,4): error TS7022: 'size' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/loaders/PCDLoader.js(134,4): error TS7022: 'type' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/loaders/PCDLoader.js(135,4): error TS7022: 'count' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/loaders/PCDLoader.js(136,4): error TS7022: 'width' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/loaders/PCDLoader.js(137,4): error TS7022: 'height' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/loaders/PCDLoader.js(138,4): error TS7022: 'viewpoint' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/loaders/PCDLoader.js(139,4): error TS7022: 'points' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
 examples/jsm/loaders/PLYLoader.js(136,15): error TS2339: Property 'name' does not exist on type '{ type: any; }'.
 examples/jsm/loaders/PLYLoader.js(137,15): error TS2339: Property 'countType' does not exist on type '{ type: any; }'.
 examples/jsm/loaders/PLYLoader.js(138,15): error TS2339: Property 'itemType' does not exist on type '{ type: any; }'.
@@ -1353,10 +1332,6 @@ examples/jsm/loaders/USDZLoader.js(176,23): error TS2693: 'Blob' only refers to 
 examples/jsm/loaders/USDZLoader.js(189,26): error TS2554: Expected 2 arguments, but got 1.
 examples/jsm/loaders/USDZLoader.js(250,22): error TS2554: Expected 2 arguments, but got 1.
 examples/jsm/loaders/USDZLoader.js(262,23): error TS2554: Expected 2 arguments, but got 1.
-examples/jsm/loaders/USDZLoader.js(286,12): error TS7023: 'findGeometry' implicitly has return type 'any' because it does not have a return type annotation and is referenced directly or indirectly in one of its return expressions.
-examples/jsm/loaders/USDZLoader.js(315,12): error TS7022: 'geometry' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/loaders/USDZLoader.js(519,12): error TS7023: 'findMaterial' implicitly has return type 'any' because it does not have a return type annotation and is referenced directly or indirectly in one of its return expressions.
-examples/jsm/loaders/USDZLoader.js(533,12): error TS7022: 'material' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
 examples/jsm/loaders/USDZLoader.js(574,25): error TS2531: Object is possibly 'null'.
 examples/jsm/loaders/USDZLoader.js(582,42): error TS2531: Object is possibly 'null'.
 examples/jsm/loaders/USDZLoader.js(585,7): error TS18047: 'material.map' is possibly 'null'.
@@ -1374,8 +1349,6 @@ examples/jsm/loaders/USDZLoader.js(704,42): error TS2531: Object is possibly 'nu
 examples/jsm/loaders/USDZLoader.js(708,7): error TS18047: 'material.clearcoatRoughnessMap' is possibly 'null'.
 examples/jsm/loaders/USDZLoader.js(731,42): error TS2531: Object is possibly 'null'.
 examples/jsm/loaders/USDZLoader.js(734,7): error TS18047: 'material.aoMap' is possibly 'null'.
-examples/jsm/loaders/USDZLoader.js(752,12): error TS7023: 'findTexture' implicitly has return type 'any' because it does not have a return type annotation and is referenced directly or indirectly in one of its return expressions.
-examples/jsm/loaders/USDZLoader.js(766,12): error TS7022: 'texture' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
 examples/jsm/loaders/USDZLoader.js(846,19): error TS2531: Object is possibly 'null'.
 examples/jsm/loaders/VOXLoader.js(144,5): error TS18048: 'chunk' is possibly 'undefined'.
 examples/jsm/loaders/VOXLoader.js(144,11): error TS2339: Property 'data' does not exist on type '{ palette: number[]; size: { x: number; y: number; z: number; }; }'.
@@ -1400,7 +1373,6 @@ examples/jsm/loaders/VRMLLoader.js(497,6): error TS2322: Type '"boolean"' is not
 examples/jsm/loaders/VRMLLoader.js(503,64): error TS2345: Argument of type 'false' is not assignable to parameter of type 'never'.
 examples/jsm/loaders/VRMLLoader.js(511,6): error TS2322: Type '"null"' is not assignable to type 'null'.
 examples/jsm/loaders/VRMLLoader.js(515,26): error TS2345: Argument of type 'null' is not assignable to parameter of type 'never'.
-examples/jsm/loaders/VRMLLoader.js(595,12): error TS7023: 'getNode' implicitly has return type 'any' because it does not have a return type annotation and is referenced directly or indirectly in one of its return expressions.
 examples/jsm/loaders/VRMLLoader.js(1028,21): error TS2339: Property 'isMeshPhongMaterial' does not exist on type 'MeshBasicMaterial'.
 examples/jsm/loaders/VRMLLoader.js(1030,44): error TS2339: Property 'emissive' does not exist on type 'MeshBasicMaterial'.
 examples/jsm/loaders/VRMLLoader.js(1055,21): error TS2339: Property 'isMeshPhongMaterial' does not exist on type 'MeshBasicMaterial'.
@@ -1422,8 +1394,6 @@ examples/jsm/loaders/VRMLLoader.js(2469,13): error TS2339: Property '_solid' doe
 examples/jsm/loaders/VRMLLoader.js(2470,13): error TS2551: Property '_type' does not exist on type 'BufferGeometry<NormalBufferAttributes>'. Did you mean 'type'?
 examples/jsm/loaders/VRMLLoader.js(2713,13): error TS2339: Property '_solid' does not exist on type 'BufferGeometry<NormalBufferAttributes>'.
 examples/jsm/loaders/VRMLLoader.js(2714,13): error TS2551: Property '_type' does not exist on type 'BufferGeometry<NormalBufferAttributes>'. Did you mean 'type'?
-examples/jsm/loaders/VRMLLoader.js(2722,12): error TS7023: 'resolveUSE' implicitly has return type 'any' because it does not have a return type annotation and is referenced directly or indirectly in one of its return expressions.
-examples/jsm/loaders/VRMLLoader.js(2725,10): error TS7022: 'build' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
 examples/jsm/loaders/VRMLLoader.js(3170,25): error TS18047: 'indices' is possibly 'null'.
 examples/jsm/loaders/VRMLLoader.js(3172,19): error TS18047: 'indices' is possibly 'null'.
 examples/jsm/loaders/VTKLoader.js(401,6): error TS2740: Type 'Float32Array<ArrayBuffer>' is missing the following properties from type 'any[]': pop, push, concat, shift, and 6 more.
@@ -1457,7 +1427,6 @@ examples/jsm/materials/LDrawConditionalLineMaterial.js(136,4): error TS2322: Typ
 examples/jsm/materials/LDrawConditionalLineMaterial.js(136,4): error TS2322: Type '{ get: {}; set: {}; }' is not assignable to type 'number'.
 examples/jsm/materials/LDrawConditionalLineMaterial.js(158,5): error TS2353: Object literal may only specify known properties, and 'get' does not exist in type 'Color'.
 examples/jsm/materials/LDrawConditionalLineMaterial.js(167,19): error TS2345: Argument of type 'Object | undefined' is not assignable to parameter of type 'ShaderMaterialParameters'.
-examples/jsm/materials/LDrawConditionalLineNodeMaterial.js(2,192): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
 examples/jsm/materials/LDrawConditionalLineNodeMaterial.js(101,4): error TS2559: Type 'number' has no properties in common with type 'PropertyDescriptor'.
 examples/jsm/materials/LDrawConditionalLineNodeMaterial.js(101,4): error TS2322: Type '{ get: () => any; set: (value: any) => void; }' is not assignable to type 'number'.
 examples/jsm/materials/LDrawConditionalLineNodeMaterial.js(101,4): error TS2322: Type '{ get: {}; set: {}; }' is not assignable to type 'number'.
@@ -1534,7 +1503,6 @@ examples/jsm/misc/ProgressiveLightMap.js(198,14): error TS2339: Property 'unifor
 examples/jsm/misc/ProgressiveLightMap.js(199,31): error TS2339: Property 'uniforms' does not exist on type 'MeshBasicMaterial'.
 examples/jsm/misc/ProgressiveLightMap.js(261,16): error TS2339: Property 'uniforms' does not exist on type 'MeshBasicMaterial'.
 examples/jsm/misc/ProgressiveLightMap.js(293,17): error TS2339: Property 'uniforms' does not exist on type 'MeshBasicMaterial'.
-examples/jsm/misc/ProgressiveLightMapGPU.js(2,80): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
 examples/jsm/misc/ProgressiveLightMapGPU.js(114,45): error TS2339: Property 'x' does not exist on type '{ w: number; h: number; index: number; }'.
 examples/jsm/misc/ProgressiveLightMapGPU.js(115,59): error TS2339: Property 'y' does not exist on type '{ w: number; h: number; index: number; }'.
 examples/jsm/misc/Volume.js(224,10): error TS2532: Object is possibly 'undefined'.
@@ -1595,7 +1563,6 @@ examples/jsm/misc/VolumeSlice.js(200,76): error TS2339: Property 'index' does no
 examples/jsm/modifiers/CurveModifier.js(38,14): error TS2551: Property 'wrapY' does not exist on type 'DataTexture'. Did you mean 'wrapS'?
 examples/jsm/modifiers/CurveModifier.js(339,17): error TS2339: Property 'setMatrixAt' does not exist on type 'Mesh<BufferGeometry<NormalBufferAttributes>, Material | Material[], Object3DEventMap>'.
 examples/jsm/modifiers/CurveModifier.js(340,17): error TS2339: Property 'instanceMatrix' does not exist on type 'Mesh<BufferGeometry<NormalBufferAttributes>, Material | Material[], Object3DEventMap>'.
-examples/jsm/modifiers/CurveModifierGPU.js(17,135): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
 examples/jsm/modifiers/CurveModifierGPU.js(38,14): error TS2551: Property 'wrapY' does not exist on type 'DataTexture'. Did you mean 'wrapS'?
 examples/jsm/modifiers/EdgeSplitModifier.js(115,31): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
 examples/jsm/modifiers/EdgeSplitModifier.js(199,19): error TS18047: 'geometry.index' is possibly 'null'.
@@ -1653,8 +1620,6 @@ examples/jsm/modifiers/TessellateModifier.js(310,66): error TS2345: Argument of 
 examples/jsm/modifiers/TessellateModifier.js(316,65): error TS2345: Argument of type 'TypedArray | null' is not assignable to parameter of type 'number | ArrayBuffer | Iterable<number> | ArrayLike<number>'.
 examples/jsm/modifiers/TessellateModifier.js(322,62): error TS2345: Argument of type 'TypedArray | null' is not assignable to parameter of type 'number | ArrayBuffer | Iterable<number> | ArrayLike<number>'.
 examples/jsm/modifiers/TessellateModifier.js(328,63): error TS2345: Argument of type 'TypedArray | null' is not assignable to parameter of type 'number | ArrayBuffer | Iterable<number> | ArrayLike<number>'.
-examples/jsm/objects/LensflareMesh.js(19,130): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
-examples/jsm/objects/LensflareMesh.js(104,34): error TS7031: Binding element 'material' implicitly has an 'any' type.
 examples/jsm/objects/LensflareMesh.js(199,45): error TS2339: Property 'matrixWorld' does not exist on type 'LensflareMesh'.
 examples/jsm/objects/MarchingCubes.js(81,14): error TS2339: Property 'enableUvs' does not exist on type 'init'.
 examples/jsm/objects/MarchingCubes.js(90,14): error TS2339: Property 'enableColors' does not exist on type 'init'.
@@ -1821,13 +1786,9 @@ examples/jsm/objects/MarchingCubes.js(854,9): error TS2339: Property 'geometry' 
 examples/jsm/objects/MarchingCubes.js(861,14): error TS2339: Property 'enableUvs' does not exist on type 'update'.
 examples/jsm/objects/MarchingCubes.js(862,14): error TS2339: Property 'enableColors' does not exist on type 'update'.
 examples/jsm/objects/ReflectorForSSRPass.js(99,19): error TS2554: Expected 2-10 arguments, but got 0.
-examples/jsm/objects/SkyMesh.js(9,207): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
 examples/jsm/objects/Water2.js(106,5): error TS2353: Object literal may only specify known properties, and 'type' does not exist in type 'IUniform<any>'.
 examples/jsm/objects/Water2.js(113,5): error TS2353: Object literal may only specify known properties, and 'type' does not exist in type 'IUniform<any>'.
 examples/jsm/objects/Water2.js(162,34): error TS2339: Property 'uniforms' does not exist on type 'Material | Material[]'.
-examples/jsm/objects/Water2Mesh.js(11,194): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
-examples/jsm/objects/WaterMesh.js(8,187): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
-examples/jsm/objects/WaterMesh.js(41,28): error TS7031: Binding element 'uv' implicitly has an 'any' type.
 examples/jsm/objects/WaterMesh.js(92,9): error TS2339: Property 'add' does not exist on type 'WaterMesh'.
 examples/jsm/offscreen/scene.js(8,9): error TS2339: Property 'position' does not exist on type 'PerspectiveCamera'.
 examples/jsm/offscreen/scene.js(20,9): error TS2339: Property 'setOptions' does not exist on type 'Loader'.
@@ -1866,7 +1827,6 @@ examples/jsm/postprocessing/OutlinePass.js(331,4): error TS2322: Type 'Texture' 
 examples/jsm/postprocessing/OutlinePass.js(389,67): error TS2551: Property 'patternTexture' does not exist on type 'OutlinePass'. Did you mean 'usePatternTexture'?
 examples/jsm/postprocessing/RenderPixelatedPass.js(37,42): error TS2554: Expected 2-10 arguments, but got 0.
 examples/jsm/postprocessing/SAOPass.js(63,24): error TS2554: Expected 2-10 arguments, but got 0.
-examples/jsm/postprocessing/SAOPass.js(178,4): error TS7022: 'prevStdDev' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
 examples/jsm/postprocessing/ShaderPass.js(69,3): error TS2532: Object is possibly 'undefined'.
 examples/jsm/postprocessing/SMAAPass.js(87,3): error TS2322: Type 'Texture' is not assignable to type 'null'.
 examples/jsm/postprocessing/SMAAPass.js(88,3): error TS2322: Type 'Texture' is not assignable to type 'null'.
@@ -1875,13 +1835,6 @@ examples/jsm/postprocessing/SMAAPass.js(103,3): error TS2322: Type 'Texture' is 
 examples/jsm/postprocessing/SSAARenderPass.js(99,3): error TS2322: Type 'Texture' is not assignable to type 'null'.
 examples/jsm/postprocessing/SSAOPass.js(62,24): error TS2554: Expected 2-10 arguments, but got 0.
 examples/jsm/postprocessing/SSAOPass.js(111,47): error TS2339: Property 'defines' does not exist on type '{ name: string; uniforms: { tDiffuse: { value: null; }; resolution: { value: Vector2; }; }; vertexShader: string; fragmentShader: string; }'.
-examples/jsm/postprocessing/SSRPass.js(24,17): error TS7031: Binding element 'renderer' implicitly has an 'any' type.
-examples/jsm/postprocessing/SSRPass.js(24,27): error TS7031: Binding element 'scene' implicitly has an 'any' type.
-examples/jsm/postprocessing/SSRPass.js(24,34): error TS7031: Binding element 'camera' implicitly has an 'any' type.
-examples/jsm/postprocessing/SSRPass.js(24,42): error TS7031: Binding element 'width' implicitly has an 'any' type.
-examples/jsm/postprocessing/SSRPass.js(24,49): error TS7031: Binding element 'height' implicitly has an 'any' type.
-examples/jsm/postprocessing/SSRPass.js(24,57): error TS7031: Binding element 'selects' implicitly has an 'any' type.
-examples/jsm/postprocessing/SSRPass.js(24,84): error TS7031: Binding element 'groundReflector' implicitly has an 'any' type.
 examples/jsm/postprocessing/SSRPass.js(155,24): error TS2554: Expected 2-10 arguments, but got 0.
 examples/jsm/postprocessing/SSRPass.js(248,46): error TS2339: Property 'defines' does not exist on type '{ name: string; uniforms: { tDiffuse: { value: null; }; resolution: { value: Vector2; }; opacity: { value: number; }; }; vertexShader: string; fragmentShader: string; }'.
 examples/jsm/postprocessing/SSRPass.js(259,46): error TS2339: Property 'defines' does not exist on type '{ name: string; uniforms: { tDiffuse: { value: null; }; resolution: { value: Vector2; }; opacity: { value: number; }; }; vertexShader: string; fragmentShader: string; }'.
@@ -1907,152 +1860,22 @@ examples/jsm/renderers/SVGRenderer.js(385,7): error TS2740: Type 'Vector4' is mi
 examples/jsm/renderers/SVGRenderer.js(386,7): error TS2740: Type 'Vector4' is missing the following properties from type 'Vector2': isVector2, applyMatrix3, clampLength, cross, and 6 more.
 examples/jsm/textures/FlakesTexture.js(13,14): error TS1093: Type annotation cannot appear on a constructor declaration.
 examples/jsm/transpiler/GLSLDecoder.js(164,8): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
-examples/jsm/transpiler/GLSLDecoder.js(192,2): error TS7023: 'readToken' implicitly has return type 'any' because it does not have a return type annotation and is referenced directly or indirectly in one of its return expressions.
-examples/jsm/transpiler/GLSLDecoder.js(209,12): error TS7022: 'nextToken' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
 examples/jsm/transpiler/GLSLDecoder.js(257,10): error TS2531: Object is possibly 'null'.
-examples/jsm/transpiler/GLSLDecoder.js(309,2): error TS7023: 'parseExpressionFromTokens' implicitly has return type 'any' because it does not have a return type annotation and is referenced directly or indirectly in one of its return expressions.
-examples/jsm/transpiler/GLSLDecoder.js(322,10): error TS7023: 'parseToken' implicitly has return type 'any' because it does not have a return type annotation and is referenced directly or indirectly in one of its return expressions.
-examples/jsm/transpiler/GLSLDecoder.js(338,13): error TS7022: 'condition' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/transpiler/GLSLDecoder.js(339,13): error TS7022: 'left' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/transpiler/GLSLDecoder.js(340,13): error TS7022: 'right' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/transpiler/GLSLDecoder.js(346,13): error TS7022: 'left' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/transpiler/GLSLDecoder.js(347,13): error TS7022: 'right' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/transpiler/GLSLDecoder.js(379,12): error TS7022: 'result' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/transpiler/GLSLDecoder.js(407,12): error TS7022: 'right' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/transpiler/GLSLDecoder.js(426,12): error TS7022: 'left' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/transpiler/GLSLDecoder.js(442,10): error TS7022: 'left' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/transpiler/GLSLDecoder.js(449,11): error TS7022: 'right' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/transpiler/GLSLDecoder.js(508,12): error TS7022: 'paramsTokens' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/transpiler/GLSLDecoder.js(510,12): error TS7022: 'functionCall' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/transpiler/GLSLDecoder.js(516,13): error TS7022: 'elements' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/transpiler/GLSLDecoder.js(542,2): error TS7023: 'parseAccessorElementsFromTokens' implicitly has return type 'any' because it does not have a return type annotation and is referenced directly or indirectly in one of its return expressions.
-examples/jsm/transpiler/GLSLDecoder.js(556,11): error TS7022: 'element' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/transpiler/GLSLDecoder.js(566,11): error TS7022: 'element' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/transpiler/GLSLDecoder.js(586,2): error TS7023: 'parseFunctionParametersFromTokens' implicitly has return type 'any' because it does not have a return type annotation and is referenced directly or indirectly in one of its return expressions.
-examples/jsm/transpiler/GLSLDecoder.js(590,9): error TS7022: 'expression' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/transpiler/GLSLDecoder.js(593,7): error TS7022: 'current' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/transpiler/GLSLDecoder.js(674,2): error TS7023: 'parseVariablesFromToken' implicitly has return type 'any' because it does not have a return type annotation and is referenced directly or indirectly in one of its return expressions.
-examples/jsm/transpiler/GLSLDecoder.js(712,9): error TS7022: 'variable' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
 examples/jsm/transpiler/ShaderToyDecoder.js(24,9): error TS2339: Property 'layout' does not exist on type 'FunctionDeclaration'.
-examples/jsm/transpiler/TSLEncoder.js(2,22): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
-examples/jsm/transpiler/TSLEncoder.js(132,2): error TS7023: 'emitExpression' implicitly has return type 'any' because it does not have a return type annotation and is referenced directly or indirectly in one of its return expressions.
-examples/jsm/transpiler/TSLEncoder.js(164,10): error TS7022: 'left' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/transpiler/TSLEncoder.js(165,10): error TS7022: 'right' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/transpiler/TSLEncoder.js(329,10): error TS7022: 'exp' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/transpiler/TSLEncoder.js(385,2): error TS7023: 'emitTernary' implicitly has return type 'any' because it does not have a return type annotation and is referenced directly or indirectly in one of its return expressions.
-examples/jsm/transpiler/TSLEncoder.js(387,9): error TS7022: 'condStr' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/transpiler/TSLEncoder.js(388,9): error TS7022: 'leftStr' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/transpiler/TSLEncoder.js(389,9): error TS7022: 'rightStr' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/transpiler/TSLEncoder.js(397,2): error TS7023: 'emitConditional' implicitly has return type 'any' because it does not have a return type annotation and is referenced directly or indirectly in one of its return expressions.
-examples/jsm/transpiler/TSLEncoder.js(399,9): error TS7022: 'condStr' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/transpiler/TSLEncoder.js(402,7): error TS7022: 'ifStr' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/transpiler/TSLEncoder.js(445,2): error TS7023: 'emitLoop' implicitly has return type 'any' because it does not have a return type annotation and is referenced directly or indirectly in one of its return expressions.
-examples/jsm/transpiler/TSLEncoder.js(447,9): error TS7022: 'start' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/transpiler/TSLEncoder.js(448,9): error TS7022: 'end' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/transpiler/TSLEncoder.js(460,7): error TS7022: 'loopStr' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/transpiler/TSLEncoder.js(472,2): error TS7023: 'emitFor' implicitly has return type 'any' because it does not have a return type annotation and is referenced directly or indirectly in one of its return expressions.
-examples/jsm/transpiler/TSLEncoder.js(490,2): error TS7023: 'emitForWhile' implicitly has return type 'any' because it does not have a return type annotation and is referenced directly or indirectly in one of its return expressions.
-examples/jsm/transpiler/TSLEncoder.js(492,9): error TS7022: 'initialization' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-examples/jsm/transpiler/TSLEncoder.js(498,7): error TS7022: 'forStr' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
 examples/jsm/transpiler/TSLEncoder.js(632,72): error TS2345: Argument of type 'Accessor' is not assignable to parameter of type 'null | undefined'.
-examples/jsm/tsl/display/AfterImageNode.js(2,103): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
-examples/jsm/tsl/display/AnaglyphPassNode.js(2,63): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
 examples/jsm/tsl/display/AnaglyphPassNode.js(89,16): error TS2339: Property 'setup' does not exist on type 'StereoCompositePassNode'.
-examples/jsm/tsl/display/AnamorphicNode.js(2,133): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
-examples/jsm/tsl/display/AnamorphicNode.js(199,58): error TS7031: Binding element 'i' implicitly has an 'any' type.
-examples/jsm/tsl/display/BleachBypass.js(1,65): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
-examples/jsm/tsl/display/BleachBypass.js(12,45): error TS7031: Binding element 'color' implicitly has an 'any' type.
-examples/jsm/tsl/display/BloomNode.js(2,138): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
-examples/jsm/tsl/display/BloomNode.js(379,35): error TS7031: Binding element 'factor' implicitly has an 'any' type.
-examples/jsm/tsl/display/BloomNode.js(379,43): error TS7031: Binding element 'radius' implicitly has an 'any' type.
-examples/jsm/tsl/display/BloomNode.js(473,90): error TS7031: Binding element 'i' implicitly has an 'any' type.
-examples/jsm/tsl/display/DenoiseNode.js(2,243): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
-examples/jsm/tsl/display/DenoiseNode.js(163,33): error TS7031: Binding element 'center' implicitly has an 'any' type.
-examples/jsm/tsl/display/DenoiseNode.js(163,41): error TS7031: Binding element 'viewNormal' implicitly has an 'any' type.
-examples/jsm/tsl/display/DenoiseNode.js(163,53): error TS7031: Binding element 'viewPosition' implicitly has an 'any' type.
-examples/jsm/tsl/display/DenoiseNode.js(163,67): error TS7031: Binding element 'sampleUv' implicitly has an 'any' type.
-examples/jsm/tsl/display/DenoiseNode.js(183,27): error TS7031: Binding element 'uvNode' implicitly has an 'any' type.
-examples/jsm/tsl/display/DenoiseNode.js(214,80): error TS7031: Binding element 'i' implicitly has an 'any' type.
-examples/jsm/tsl/display/DepthOfFieldNode.js(2,82): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
-examples/jsm/tsl/display/DotScreenNode.js(2,90): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
-examples/jsm/tsl/display/FilmNode.js(2,72): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
-examples/jsm/tsl/display/FXAANode.js(2,182): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
-examples/jsm/tsl/display/FXAANode.js(85,26): error TS7031: Binding element 'uv' implicitly has an 'any' type.
-examples/jsm/tsl/display/FXAANode.js(91,35): error TS7031: Binding element 'uv' implicitly has an 'any' type.
-examples/jsm/tsl/display/FXAANode.js(97,41): error TS7031: Binding element 'texSize' implicitly has an 'any' type.
-examples/jsm/tsl/display/FXAANode.js(97,50): error TS7031: Binding element 'uv' implicitly has an 'any' type.
-examples/jsm/tsl/display/FXAANode.js(97,54): error TS7031: Binding element 'uOffset' implicitly has an 'any' type.
-examples/jsm/tsl/display/FXAANode.js(97,63): error TS7031: Binding element 'vOffset' implicitly has an 'any' type.
-examples/jsm/tsl/display/FXAANode.js(213,50): error TS7031: Binding element 'i' implicitly has an 'any' type.
-examples/jsm/tsl/display/FXAANode.js(237,50): error TS7031: Binding element 'i' implicitly has an 'any' type.
-examples/jsm/tsl/display/FXAANode.js(303,29): error TS7031: Binding element 'uv' implicitly has an 'any' type.
-examples/jsm/tsl/display/FXAANode.js(303,33): error TS7031: Binding element 'texSize' implicitly has an 'any' type.
-examples/jsm/tsl/display/GaussianBlurNode.js(2,104): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
-examples/jsm/tsl/display/GaussianBlurNode.js(8,39): error TS7031: Binding element 'color' implicitly has an 'any' type.
-examples/jsm/tsl/display/GaussianBlurNode.js(20,41): error TS7031: Binding element 'color' implicitly has an 'any' type.
-examples/jsm/tsl/display/GTAONode.js(2,355): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
-examples/jsm/tsl/display/GTAONode.js(325,81): error TS7031: Binding element 'i' implicitly has an 'any' type.
-examples/jsm/tsl/display/GTAONode.js(339,71): error TS7031: Binding element 'j' implicitly has an 'any' type.
-examples/jsm/tsl/display/hashBlur.js(1,74): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
-examples/jsm/tsl/display/hashBlur.js(15,47): error TS7031: Binding element 'textureNode' implicitly has an 'any' type.
-examples/jsm/tsl/display/hashBlur.js(22,56): error TS7031: Binding element 'i' implicitly has an 'any' type.
-examples/jsm/tsl/display/LensflareNode.js(2,135): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
-examples/jsm/tsl/display/LensflareNode.js(216,99): error TS7031: Binding element 'i' implicitly has an 'any' type.
-examples/jsm/tsl/display/Lut3DNode.js(2,65): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
-examples/jsm/tsl/display/MotionBlur.js(1,42): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
-examples/jsm/tsl/display/MotionBlur.js(13,49): error TS7031: Binding element 'inputNode' implicitly has an 'any' type.
-examples/jsm/tsl/display/MotionBlur.js(13,60): error TS7031: Binding element 'velocity' implicitly has an 'any' type.
-examples/jsm/tsl/display/MotionBlur.js(22,80): error TS7031: Binding element 'i' implicitly has an 'any' type.
-examples/jsm/tsl/display/OutlineNode.js(2,217): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
 examples/jsm/tsl/display/OutlineNode.js(63,30): error TS2741: Property 'selectedObjects' is missing in type '{}' but required in type '{ selectedObjects: Object3D[]; edgeThickness?: any; edgeGlow?: any; downSampleRatio?: number | undefined; }'.
 examples/jsm/tsl/display/OutlineNode.js(377,15): error TS2339: Property 'r' does not exist on type 'OutlineNode'.
 examples/jsm/tsl/display/OutlineNode.js(388,15): error TS2339: Property 'g' does not exist on type 'OutlineNode'.
 examples/jsm/tsl/display/OutlineNode.js(462,47): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
 examples/jsm/tsl/display/OutlineNode.js(479,47): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
-examples/jsm/tsl/display/OutlineNode.js(622,31): error TS7031: Binding element 'x' implicitly has an 'any' type.
-examples/jsm/tsl/display/OutlineNode.js(622,34): error TS7031: Binding element 'sigma' implicitly has an 'any' type.
-examples/jsm/tsl/display/OutlineNode.js(628,33): error TS7031: Binding element 'kernelRadius' implicitly has an 'any' type.
-examples/jsm/tsl/display/OutlineNode.js(641,89): error TS7031: Binding element 'i' implicitly has an 'any' type.
-examples/jsm/tsl/display/ParallaxBarrierPassNode.js(2,69): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
 examples/jsm/tsl/display/ParallaxBarrierPassNode.js(71,16): error TS2339: Property 'setup' does not exist on type 'StereoCompositePassNode'.
-examples/jsm/tsl/display/PixelationPassNode.js(2,164): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
 examples/jsm/tsl/display/PixelationPassNode.js(237,55): error TS1121: Octal literals are not allowed. Use the syntax '0o3'.
 examples/jsm/tsl/display/PixelationPassNode.js(238,54): error TS1121: Octal literals are not allowed. Use the syntax '0o3'.
 examples/jsm/tsl/display/PixelationPassNode.js(292,36): error TS2551: Property 'value' does not exist on type 'number'. Did you mean 'valueOf'?
 examples/jsm/tsl/display/PixelationPassNode.js(292,59): error TS2551: Property 'value' does not exist on type 'number'. Did you mean 'valueOf'?
 examples/jsm/tsl/display/PixelationPassNode.js(327,54): error TS1121: Octal literals are not allowed. Use the syntax '0o3'.
 examples/jsm/tsl/display/PixelationPassNode.js(328,53): error TS1121: Octal literals are not allowed. Use the syntax '0o3'.
-examples/jsm/tsl/display/RGBShiftNode.js(2,85): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
-examples/jsm/tsl/display/Sepia.js(1,37): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
-examples/jsm/tsl/display/Sepia.js(11,44): error TS7031: Binding element 'color' implicitly has an 'any' type.
-examples/jsm/tsl/display/SMAANode.js(2,218): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
-examples/jsm/tsl/display/SMAANode.js(368,36): error TS7031: Binding element 'searchTex' implicitly has an 'any' type.
-examples/jsm/tsl/display/SMAANode.js(368,47): error TS7031: Binding element 'e' implicitly has an 'any' type.
-examples/jsm/tsl/display/SMAANode.js(368,50): error TS7031: Binding element 'bias' implicitly has an 'any' type.
-examples/jsm/tsl/display/SMAANode.js(368,56): error TS7031: Binding element 'scale' implicitly has an 'any' type.
-examples/jsm/tsl/display/SMAANode.js(379,28): error TS7031: Binding element 'areaTex' implicitly has an 'any' type.
-examples/jsm/tsl/display/SMAANode.js(379,37): error TS7031: Binding element 'dist' implicitly has an 'any' type.
-examples/jsm/tsl/display/SMAANode.js(379,43): error TS7031: Binding element 'e1' implicitly has an 'any' type.
-examples/jsm/tsl/display/SMAANode.js(379,47): error TS7031: Binding element 'e2' implicitly has an 'any' type.
-examples/jsm/tsl/display/SMAANode.js(379,51): error TS7031: Binding element 'offset' implicitly has an 'any' type.
-examples/jsm/tsl/display/SMAANode.js(394,35): error TS7031: Binding element 'edgesTex' implicitly has an 'any' type.
-examples/jsm/tsl/display/SMAANode.js(394,45): error TS7031: Binding element 'searchTex' implicitly has an 'any' type.
-examples/jsm/tsl/display/SMAANode.js(394,56): error TS7031: Binding element 'texcoord' implicitly has an 'any' type.
-examples/jsm/tsl/display/SMAANode.js(394,66): error TS7031: Binding element 'end' implicitly has an 'any' type.
-examples/jsm/tsl/display/SMAANode.js(434,36): error TS7031: Binding element 'edgesTex' implicitly has an 'any' type.
-examples/jsm/tsl/display/SMAANode.js(434,46): error TS7031: Binding element 'searchTex' implicitly has an 'any' type.
-examples/jsm/tsl/display/SMAANode.js(434,57): error TS7031: Binding element 'texcoord' implicitly has an 'any' type.
-examples/jsm/tsl/display/SMAANode.js(434,67): error TS7031: Binding element 'end' implicitly has an 'any' type.
-examples/jsm/tsl/display/SMAANode.js(461,33): error TS7031: Binding element 'edgesTex' implicitly has an 'any' type.
-examples/jsm/tsl/display/SMAANode.js(461,43): error TS7031: Binding element 'searchTex' implicitly has an 'any' type.
-examples/jsm/tsl/display/SMAANode.js(461,54): error TS7031: Binding element 'texcoord' implicitly has an 'any' type.
-examples/jsm/tsl/display/SMAANode.js(461,64): error TS7031: Binding element 'end' implicitly has an 'any' type.
-examples/jsm/tsl/display/SMAANode.js(488,35): error TS7031: Binding element 'edgesTex' implicitly has an 'any' type.
-examples/jsm/tsl/display/SMAANode.js(488,45): error TS7031: Binding element 'searchTex' implicitly has an 'any' type.
-examples/jsm/tsl/display/SMAANode.js(488,56): error TS7031: Binding element 'texcoord' implicitly has an 'any' type.
-examples/jsm/tsl/display/SMAANode.js(488,66): error TS7031: Binding element 'end' implicitly has an 'any' type.
-examples/jsm/tsl/display/SobelOperatorNode.js(2,103): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
-examples/jsm/tsl/display/SSAAPassNode.js(2,68): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
 examples/jsm/tsl/display/SSAAPassNode.js(114,11): error TS2339: Property 'scene' does not exist on type 'SSAAPassNode'.
 examples/jsm/tsl/display/SSAAPassNode.js(114,18): error TS2339: Property 'camera' does not exist on type 'SSAAPassNode'.
 examples/jsm/tsl/display/SSAAPassNode.js(124,8): error TS2339: Property 'setSize' does not exist on type 'SSAAPassNode'.
@@ -2069,16 +1892,6 @@ examples/jsm/tsl/display/SSAAPassNode.js(195,35): error TS2339: Property 'render
 examples/jsm/tsl/display/SSAAPassNode.js(208,78): error TS2339: Property 'renderTarget' does not exist on type 'SSAAPassNode'.
 examples/jsm/tsl/display/SSAAPassNode.js(246,36): error TS2339: Property 'renderTarget' does not exist on type 'SSAAPassNode'.
 examples/jsm/tsl/display/SSAAPassNode.js(252,24): error TS2339: Property 'getMRT' does not exist on type 'SSAAPassNode'.
-examples/jsm/tsl/display/SSRNode.js(2,344): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
-examples/jsm/tsl/display/SSRNode.js(270,39): error TS7031: Binding element 'point' implicitly has an 'any' type.
-examples/jsm/tsl/display/SSRNode.js(270,46): error TS7031: Binding element 'linePointA' implicitly has an 'any' type.
-examples/jsm/tsl/display/SSRNode.js(270,58): error TS7031: Binding element 'linePointB' implicitly has an 'any' type.
-examples/jsm/tsl/display/SSRNode.js(278,38): error TS7031: Binding element 'point' implicitly has an 'any' type.
-examples/jsm/tsl/display/SSRNode.js(278,45): error TS7031: Binding element 'planePoint' implicitly has an 'any' type.
-examples/jsm/tsl/display/SSRNode.js(278,57): error TS7031: Binding element 'planeNormal' implicitly has an 'any' type.
-examples/jsm/tsl/display/SSRNode.js(292,28): error TS7031: Binding element 'depth' implicitly has an 'any' type.
-examples/jsm/tsl/display/SSRNode.js(387,91): error TS7031: Binding element 'i' implicitly has an 'any' type.
-examples/jsm/tsl/display/StereoCompositePassNode.js(2,25): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
 examples/jsm/tsl/display/StereoCompositePassNode.js(101,28): error TS2339: Property 'camera' does not exist on type 'StereoCompositePassNode'.
 examples/jsm/tsl/display/StereoCompositePassNode.js(115,37): error TS2551: Property 'renderTarget' does not exist on type 'StereoCompositePassNode'. Did you mean '_renderTargetL'?
 examples/jsm/tsl/display/StereoCompositePassNode.js(115,62): error TS2551: Property 'renderTarget' does not exist on type 'StereoCompositePassNode'. Did you mean '_renderTargetL'?
@@ -2086,7 +1899,6 @@ examples/jsm/tsl/display/StereoCompositePassNode.js(116,37): error TS2551: Prope
 examples/jsm/tsl/display/StereoCompositePassNode.js(116,62): error TS2551: Property 'renderTarget' does not exist on type 'StereoCompositePassNode'. Did you mean '_renderTargetL'?
 examples/jsm/tsl/display/StereoCompositePassNode.js(128,11): error TS2339: Property 'scene' does not exist on type 'StereoCompositePassNode'.
 examples/jsm/tsl/display/StereoCompositePassNode.js(128,26): error TS2339: Property 'renderTarget' does not exist on type 'StereoCompositePassNode'.
-examples/jsm/tsl/display/StereoPassNode.js(2,28): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
 examples/jsm/tsl/display/StereoPassNode.js(58,11): error TS2339: Property 'scene' does not exist on type 'StereoPassNode'.
 examples/jsm/tsl/display/StereoPassNode.js(58,18): error TS2339: Property 'camera' does not exist on type 'StereoPassNode'.
 examples/jsm/tsl/display/StereoPassNode.js(58,34): error TS2339: Property 'renderTarget' does not exist on type 'StereoPassNode'.
@@ -2096,7 +1908,6 @@ examples/jsm/tsl/display/StereoPassNode.js(76,8): error TS2339: Property '_camer
 examples/jsm/tsl/display/StereoPassNode.js(78,28): error TS2339: Property '_previousTextures' does not exist on type 'StereoPassNode'.
 examples/jsm/tsl/display/StereoPassNode.js(80,9): error TS2339: Property 'toggleTexture' does not exist on type 'StereoPassNode'.
 examples/jsm/tsl/display/StereoPassNode.js(85,25): error TS2339: Property '_mrt' does not exist on type 'StereoPassNode'.
-examples/jsm/tsl/display/TRAAPassNode.js(2,121): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
 examples/jsm/tsl/display/TRAAPassNode.js(131,13): error TS2339: Property 'renderTarget' does not exist on type 'TRAAPassNode'.
 examples/jsm/tsl/display/TRAAPassNode.js(131,75): error TS2339: Property 'renderTarget' does not exist on type 'TRAAPassNode'.
 examples/jsm/tsl/display/TRAAPassNode.js(133,43): error TS2339: Property 'renderTarget' does not exist on type 'TRAAPassNode'.
@@ -2121,22 +1932,7 @@ examples/jsm/tsl/display/TRAAPassNode.js(259,40): error TS2339: Property 'render
 examples/jsm/tsl/display/TRAAPassNode.js(265,78): error TS2339: Property 'renderTarget' does not exist on type 'TRAAPassNode'.
 examples/jsm/tsl/display/TRAAPassNode.js(308,36): error TS2339: Property 'renderTarget' does not exist on type 'TRAAPassNode'.
 examples/jsm/tsl/display/TRAAPassNode.js(309,37): error TS2339: Property 'renderTarget' does not exist on type 'TRAAPassNode'.
-examples/jsm/tsl/display/TRAAPassNode.js(341,93): error TS7031: Binding element 'x' implicitly has an 'any' type.
-examples/jsm/tsl/display/TRAAPassNode.js(343,94): error TS7031: Binding element 'y' implicitly has an 'any' type.
-examples/jsm/tsl/display/TransitionNode.js(2,93): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
-examples/jsm/tsl/lighting/TiledLightsNode.js(6,8): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
-examples/jsm/tsl/lighting/TiledLightsNode.js(8,59): error TS7031: Binding element 'circleCenter' implicitly has an 'any' type.
-examples/jsm/tsl/lighting/TiledLightsNode.js(8,73): error TS7031: Binding element 'radius' implicitly has an 'any' type.
-examples/jsm/tsl/lighting/TiledLightsNode.js(8,81): error TS7031: Binding element 'minBounds' implicitly has an 'any' type.
-examples/jsm/tsl/lighting/TiledLightsNode.js(8,92): error TS7031: Binding element 'maxBounds' implicitly has an 'any' type.
 examples/jsm/tsl/lighting/TiledLightsNode.js(120,29): error TS2554: Expected 0 arguments, but got 1.
-examples/jsm/tsl/lighting/TiledLightsNode.js(217,36): error TS7031: Binding element 'i' implicitly has an 'any' type.
-examples/jsm/tsl/lighting/TiledLightsNode.js(342,30): error TS7031: Binding element 'i' implicitly has an 'any' type.
-examples/jsm/tsl/math/Bayer.js(2,45): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
-examples/jsm/tsl/math/Bayer.js(6,32): error TS7031: Binding element 'uv' implicitly has an 'any' type.
-examples/jsm/tsl/utils/Raymarching.js(1,129): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
-examples/jsm/tsl/utils/Raymarching.js(3,38): error TS7031: Binding element 'orig' implicitly has an 'any' type.
-examples/jsm/tsl/utils/Raymarching.js(3,44): error TS7031: Binding element 'dir' implicitly has an 'any' type.
 examples/jsm/utils/BufferGeometryUtils.js(133,4): error TS2322: Type 'null' is not assignable to type 'BufferGeometry<NormalBufferAttributes>'.
 examples/jsm/utils/BufferGeometryUtils.js(144,5): error TS2322: Type 'null' is not assignable to type 'BufferGeometry<NormalBufferAttributes>'.
 examples/jsm/utils/BufferGeometryUtils.js(161,4): error TS2322: Type 'null' is not assignable to type 'BufferGeometry<NormalBufferAttributes>'.
@@ -2211,11 +2007,7 @@ examples/jsm/utils/GeometryUtils.js(117,2): error TS2322: Type 'Vector3[]' is no
 examples/jsm/utils/GeometryUtils.js(214,2): error TS2322: Type 'number[]' is not assignable to type '[number, number, number][]'.
 examples/jsm/utils/LDrawUtils.js(188,14): error TS2339: Property 'isConditionalLine' does not exist on type 'LineSegments<BufferGeometry<NormalBufferAttributes>, any, Object3DEventMap>'.
 examples/jsm/utils/SceneUtils.js(222,22): error TS18047: 'instanceColorRef' is possibly 'null'.
-examples/jsm/utils/SceneUtils.js(252,11): error TS7023: 'traverseGenerator' implicitly has return type 'any' because it does not have a return type annotation and is referenced directly or indirectly in one of its return expressions.
-examples/jsm/utils/SceneUtils.js(270,11): error TS7023: 'traverseVisibleGenerator' implicitly has return type 'any' because it does not have a return type annotation and is referenced directly or indirectly in one of its return expressions.
-examples/jsm/utils/SceneUtils.js(290,11): error TS7023: 'traverseAncestorsGenerator' implicitly has return type 'any' because it does not have a return type annotation and is referenced directly or indirectly in one of its return expressions.
 examples/jsm/utils/ShadowMapViewerGPU.js(6,2): error TS2724: '"three"' has no exported member named 'NodeMaterial'. Did you mean 'Material'?
-examples/jsm/utils/ShadowMapViewerGPU.js(12,25): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
 examples/jsm/utils/SkeletonUtils.js(181,25): error TS18048: 'bonesPosition' is possibly 'undefined'.
 examples/jsm/utils/SkeletonUtils.js(420,9): error TS2339: Property 'skeleton' does not exist on type 'SkeletonHelper'.
 examples/jsm/utils/WebGLTextureUtils.js(61,3): error TS2322: Type 'WebGLRenderer' is not assignable to type 'null'.
@@ -2226,7 +2018,6 @@ examples/jsm/utils/WebGLTextureUtils.js(78,21): error TS18047: 'renderer' is pos
 examples/jsm/utils/WebGPUTextureUtils.js(2,2): error TS2305: Module '"three"' has no exported member 'QuadMesh'.
 examples/jsm/utils/WebGPUTextureUtils.js(3,2): error TS2724: '"three"' has no exported member named 'NodeMaterial'. Did you mean 'Material'?
 examples/jsm/utils/WebGPUTextureUtils.js(4,2): error TS2724: '"three"' has no exported member named 'WebGPURenderer'. Did you mean 'WebGLRenderer'?
-examples/jsm/utils/WebGPUTextureUtils.js(7,29): error TS2307: Cannot find module 'three/tsl' or its corresponding type declarations.
 examples/jsm/utils/WebGPUTextureUtils.js(17,9): error TS18047: 'renderer' is possibly 'null'.
 examples/jsm/utils/WebGPUTextureUtils.js(28,34): error TS18047: 'renderer' is possibly 'null'.
 examples/jsm/utils/WebGPUTextureUtils.js(30,2): error TS18047: 'renderer' is possibly 'null'.
@@ -2267,10 +2058,6 @@ examples/jsm/webxr/XRHandMeshModel.js(21,3): error TS18047: 'loader' is possibly
 examples/jsm/webxr/XRHandMeshModel.js(77,18): error TS2349: This expression is not callable.
 examples/jsm/webxr/XRHandModelFactory.js(69,15): error TS2339: Property 'xrInputSource' does not exist on type 'XRHandModel'.
 examples/jsm/webxr/XRPlanes.js(90,27): error TS2322: Type '"planeschanged"' is not assignable to type 'keyof Object3DEventMap'.
-src/animation/AnimationAction.js(58,3): error TS7022: '_timeScaleInterpolant' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-src/animation/AnimationAction.js(59,3): error TS7022: '_weightInterpolant' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-src/animation/AnimationAction.js(476,7): error TS7022: 'interpolant' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-src/animation/AnimationAction.js(908,7): error TS7022: 'interpolant' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
 src/animation/AnimationClip.js(529,27): error TS2339: Property 'toJSON' does not exist on type 'Function'.
 src/animation/AnimationClip.js(591,57): error TS2345: Argument of type 'string' is not assignable to parameter of type '{ [x: string]: any; }'.
 src/animation/AnimationClip.js(599,17): error TS2339: Property 'parse' does not exist on type 'typeof StringKeyframeTrack | typeof QuaternionKeyframeTrack'.
@@ -2362,8 +2149,6 @@ src/animation/KeyframeTrack.js(575,22): error TS2314: Generic type 'Array<T>' re
 src/animation/KeyframeTrack.js(583,22): error TS2314: Generic type 'Array<T>' requires 1 type argument(s).
 src/animation/PropertyBinding.js(231,51): error TS2365: Operator '+' cannot be applied to types 'string | number' and 'number'.
 src/animation/PropertyBinding.js(239,55): error TS2345: Argument of type 'number | ""' is not assignable to parameter of type 'number | undefined'.
-src/animation/PropertyBinding.js(289,10): error TS7023: 'searchNodeSubtree' implicitly has return type 'any' because it does not have a return type annotation and is referenced directly or indirectly in one of its return expressions.
-src/animation/PropertyBinding.js(301,12): error TS7022: 'result' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
 src/animation/PropertyBinding.js(333,22): error TS2533: Object is possibly 'null' or 'undefined'.
 src/animation/PropertyBinding.js(365,3): error TS2533: Object is possibly 'null' or 'undefined'.
 src/animation/PropertyBinding.js(371,3): error TS2533: Object is possibly 'null' or 'undefined'.
@@ -2522,9 +2307,7 @@ src/core/Object3D.js(1316,34): error TS2339: Property '_matricesTexture' does no
 src/core/Object3D.js(1318,14): error TS2339: Property '_colorsTexture' does not exist on type 'Object3D'.
 src/core/Object3D.js(1318,68): error TS2339: Property '_colorsTexture' does not exist on type 'Object3D'.
 src/core/Object3D.js(1320,14): error TS2339: Property 'boundingSphere' does not exist on type 'Object3D'.
-src/core/Object3D.js(1322,5): error TS7022: 'boundingSphere' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
 src/core/Object3D.js(1329,14): error TS2339: Property 'boundingBox' does not exist on type 'Object3D'.
-src/core/Object3D.js(1331,5): error TS7022: 'boundingBox' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
 src/core/Object3D.js(1354,13): error TS2339: Property 'isScene' does not exist on type 'Object3D'.
 src/core/Object3D.js(1356,14): error TS2339: Property 'background' does not exist on type 'Object3D'.
 src/core/Object3D.js(1358,15): error TS2339: Property 'background' does not exist on type 'Object3D'.
@@ -2650,7 +2433,6 @@ src/extras/core/ShapePath.js(305,40): error TS2532: Object is possibly 'undefine
 src/extras/core/ShapePath.js(312,41): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
 src/extras/core/ShapePath.js(326,38): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
 src/extras/core/ShapePath.js(346,15): error TS2532: Object is possibly 'undefined'.
-src/extras/PMREMGenerator.js(89,3): error TS7022: '_pingPongRenderTarget' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
 src/extras/PMREMGenerator.js(124,4): error TS2339: Property 'position' does not exist on type '{ size?: number | undefined; renderTarget?: Vector3 | undefined; }'.
 src/extras/PMREMGenerator.js(386,16): error TS2339: Property 'position' does not exist on type 'PerspectiveCamera'.
 src/extras/PMREMGenerator.js(392,16): error TS2339: Property 'position' does not exist on type 'PerspectiveCamera'.
@@ -2711,7 +2493,6 @@ src/helpers/PlaneHelper.js(69,8): error TS2339: Property 'position' does not exi
 src/helpers/PlaneHelper.js(71,8): error TS2339: Property 'scale' does not exist on type 'PlaneHelper'.
 src/helpers/PlaneHelper.js(89,22): error TS2339: Property 'geometry' does not exist on type 'Object3D'.
 src/helpers/PlaneHelper.js(90,22): error TS2339: Property 'material' does not exist on type 'Object3D'.
-src/helpers/SkeletonHelper.js(144,10): error TS7023: 'getBoneList' implicitly has return type 'any' because it does not have a return type annotation and is referenced directly or indirectly in one of its return expressions.
 src/helpers/SpotLightHelper.js(83,13): error TS2345: Argument of type 'LineSegments' is not assignable to parameter of type 'Object3D'.
 src/helpers/SpotLightHelper.js(130,13): error TS2339: Property 'scale' does not exist on type 'LineSegments'.
 src/lights/DirectionalLight.js(55,8): error TS2339: Property 'position' does not exist on type 'DirectionalLight'.
@@ -2799,8 +2580,6 @@ src/loaders/DataTextureLoader.js(132,17): error TS2339: Property 'generateMipmap
 src/loaders/DataTextureLoader.js(134,39): error TS2339: Property 'generateMipmaps' does not exist on type 'void'.
 src/loaders/DataTextureLoader.js(140,35): error TS2554: Expected 1 arguments, but got 2.
 src/loaders/FileLoader.js(64,13): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
-src/loaders/FileLoader.js(172,33): error TS7031: Binding element 'done' implicitly has an 'any' type.
-src/loaders/FileLoader.js(172,39): error TS7031: Binding element 'value' implicitly has an 'any' type.
 src/loaders/ImageBitmapLoader.js(88,13): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
 src/loaders/ImageLoader.js(38,13): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
 src/loaders/Loader.js(82,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
@@ -3237,8 +3016,6 @@ src/materials/Material.js(851,42): error TS2339: Property 'images' does not exis
 src/materials/Material.js(853,36): error TS2339: Property 'textures' does not exist on type '{ metadata: { version: number; type: string; generator: string; }; }'.
 src/materials/Material.js(854,34): error TS2339: Property 'images' does not exist on type '{ metadata: { version: number; type: string; generator: string; }; }'.
 src/materials/MeshPhysicalMaterial.js(181,13): error TS2314: Generic type 'Array<T>' requires 1 type argument(s).
-src/materials/nodes/Line2NodeMaterial.js(148,31): error TS7031: Binding element 'start' implicitly has an 'any' type.
-src/materials/nodes/Line2NodeMaterial.js(148,38): error TS7031: Binding element 'end' implicitly has an 'any' type.
 src/materials/nodes/Line2NodeMaterial.js(188,48): error TS2339: Property 'assign' does not exist on type 'PropertyNode'.
 src/materials/nodes/Line2NodeMaterial.js(194,45): error TS2339: Property 'assign' does not exist on type 'PropertyNode'.
 src/materials/nodes/Line2NodeMaterial.js(195,43): error TS2339: Property 'assign' does not exist on type 'PropertyNode'.
@@ -3247,10 +3024,6 @@ src/materials/nodes/Line2NodeMaterial.js(254,14): error TS2339: Property 'addAss
 src/materials/nodes/Line2NodeMaterial.js(261,15): error TS2339: Property 'addAssign' does not exist on type 'PropertyNode'.
 src/materials/nodes/Line2NodeMaterial.js(264,15): error TS2339: Property 'addAssign' does not exist on type 'PropertyNode'.
 src/materials/nodes/Line2NodeMaterial.js(269,16): error TS2339: Property 'subAssign' does not exist on type 'PropertyNode'.
-src/materials/nodes/Line2NodeMaterial.js(327,37): error TS7031: Binding element 'p1' implicitly has an 'any' type.
-src/materials/nodes/Line2NodeMaterial.js(327,41): error TS7031: Binding element 'p2' implicitly has an 'any' type.
-src/materials/nodes/Line2NodeMaterial.js(327,45): error TS7031: Binding element 'p3' implicitly has an 'any' type.
-src/materials/nodes/Line2NodeMaterial.js(327,49): error TS7031: Binding element 'p4' implicitly has an 'any' type.
 src/materials/nodes/Line2NodeMaterial.js(365,19): error TS2339: Property 'mod' does not exist on type 'PropertyNode'.
 src/materials/nodes/Line2NodeMaterial.js(377,58): error TS2339: Property 'xyz' does not exist on type 'PropertyNode'.
 src/materials/nodes/Line2NodeMaterial.js(378,30): error TS2339: Property 'sub' does not exist on type 'PropertyNode'.
@@ -3302,7 +3075,6 @@ src/materials/nodes/NodeMaterial.js(1130,36): error TS18047: 'meta' is possibly 
 src/materials/nodes/NodeMaterial.js(1130,41): error TS2339: Property 'nodes' does not exist on type 'string | Object'.
 src/materials/nodes/NodeMaterial.js(1174,3): error TS2740: Type 'Material' is missing the following properties from type 'NodeMaterial': isNodeMaterial, fog, lights, hardwareClipping, and 41 more.
 src/materials/nodes/PointsNodeMaterial.js(134,6): error TS2611: 'alphaToCoverage' is defined as a property in class 'SpriteNodeMaterial', but is overridden here in 'PointsNodeMaterial' as an accessor.
-src/materials/nodes/PointsNodeMaterial.js(144,4): error TS7022: '_useAlphaToCoverage' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
 src/materials/nodes/SpriteNodeMaterial.js(149,50): error TS2339: Property 'sub' does not exist on type 'ReferenceBaseNode'.
 src/math/Color.js(156,24): error TS2339: Property 'isColor' does not exist on type 'string | number | Color'.
 src/math/Color.js(158,16): error TS2345: Argument of type 'string | number | Color' is not assignable to parameter of type 'Color'.
@@ -3325,7 +3097,6 @@ src/math/Frustum.js(56,21): error TS2345: Argument of type 'Plane | undefined' i
 src/math/Frustum.js(57,21): error TS2345: Argument of type 'Plane | undefined' is not assignable to parameter of type 'Plane'.
 src/math/Frustum.js(58,21): error TS2345: Argument of type 'Plane | undefined' is not assignable to parameter of type 'Plane'.
 src/math/Frustum.js(59,21): error TS2345: Argument of type 'Plane | undefined' is not assignable to parameter of type 'Plane'.
-src/math/Interpolant.js(206,12): error TS7022: 'mid' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
 src/math/Interpolant.js(244,27): error TS2554: Expected 0 arguments, but got 3.
 src/math/Interpolant.js(248,29): error TS2554: Expected 0 arguments, but got 4.
 src/math/Matrix2.js(48,21): error TS2339: Property 'isMatrix2' does not exist on type 'Matrix2'.
@@ -3370,9 +3141,7 @@ src/math/Matrix4.js(824,14): error TS2345: Argument of type 'number | Vector3' i
 src/math/Vector2.js(45,21): error TS2339: Property 'isVector2' does not exist on type 'Vector2'.
 src/math/Vector3.js(47,21): error TS2339: Property 'isVector3' does not exist on type 'Vector3'.
 src/math/Vector4.js(46,21): error TS2339: Property 'isVector4' does not exist on type 'Vector4'.
-src/nodes/accessors/BatchNode.js(75,36): error TS7031: Binding element 'id' implicitly has an 'any' type.
 src/nodes/accessors/BatchNode.js(80,73): error TS2339: Property 'x' does not exist on type 'TextureNode'.
-src/nodes/accessors/BatchNode.js(111,37): error TS7031: Binding element 'id' implicitly has an 'any' type.
 src/nodes/accessors/BatchNode.js(117,56): error TS2339: Property 'rgb' does not exist on type 'TextureNode'.
 src/nodes/accessors/BatchNode.js(129,45): error TS2339: Property 'assign' does not exist on type 'PropertyNode'.
 src/nodes/accessors/BufferAttributeNode.js(173,3): error TS2322: Type 'string | null' is not assignable to type 'string'.
@@ -3380,39 +3149,24 @@ src/nodes/accessors/BufferNode.js(71,3): error TS2322: Type 'string | null' is n
 src/nodes/accessors/BufferNode.js(71,28): error TS2554: Expected 0 arguments, but got 1.
 src/nodes/accessors/BufferNode.js(96,12): error TS2314: Generic type 'Array<T>' requires 1 type argument(s).
 src/nodes/accessors/Camera.js(13,111): error TS2339: Property 'toVarying' does not exist on type 'UniformNode'.
-src/nodes/accessors/Camera.js(21,126): error TS7031: Binding element 'camera' implicitly has an 'any' type.
-src/nodes/accessors/Camera.js(29,124): error TS7031: Binding element 'camera' implicitly has an 'any' type.
-src/nodes/accessors/Camera.js(37,63): error TS7031: Binding element 'camera' implicitly has an 'any' type.
 src/nodes/accessors/Camera.js(51,36): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/accessors/Camera.js(53,53): error TS2339: Property 'element' does not exist on type 'UniformNode'.
-src/nodes/accessors/Camera.js(57,124): error TS7031: Binding element 'camera' implicitly has an 'any' type.
-src/nodes/accessors/Camera.js(71,163): error TS7031: Binding element 'camera' implicitly has an 'any' type.
-src/nodes/accessors/Camera.js(79,57): error TS7031: Binding element 'camera' implicitly has an 'any' type.
 src/nodes/accessors/Camera.js(93,30): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/accessors/Camera.js(95,41): error TS2339: Property 'element' does not exist on type 'UniformNode'.
-src/nodes/accessors/Camera.js(99,112): error TS7031: Binding element 'camera' implicitly has an 'any' type.
-src/nodes/accessors/Camera.js(113,139): error TS7031: Binding element 'camera' implicitly has an 'any' type.
-src/nodes/accessors/Camera.js(121,141): error TS7031: Binding element 'camera' implicitly has an 'any' type.
-src/nodes/accessors/Camera.js(129,140): error TS7031: Binding element 'camera' implicitly has an 'any' type.
 src/nodes/accessors/ClippingNode.js(32,15): error TS2322: Type 'string' is not assignable to type '"alphaToCoverage" | "default" | "hardware" | undefined'.
 src/nodes/accessors/ClippingNode.js(97,28): error TS2554: Expected 2 arguments, but got 1.
-src/nodes/accessors/ClippingNode.js(99,31): error TS7031: Binding element 'i' implicitly has an 'any' type.
 src/nodes/accessors/ClippingNode.js(103,54): error TS2339: Property 'xyz' does not exist on type 'UniformArrayElementNode'.
 src/nodes/accessors/ClippingNode.js(103,80): error TS2339: Property 'w' does not exist on type 'UniformArrayElementNode'.
 src/nodes/accessors/ClippingNode.js(116,28): error TS2554: Expected 2 arguments, but got 1.
-src/nodes/accessors/ClippingNode.js(119,38): error TS7031: Binding element 'i' implicitly has an 'any' type.
 src/nodes/accessors/ClippingNode.js(123,54): error TS2339: Property 'xyz' does not exist on type 'UniformArrayElementNode'.
 src/nodes/accessors/ClippingNode.js(123,80): error TS2339: Property 'w' does not exist on type 'UniformArrayElementNode'.
 src/nodes/accessors/ClippingNode.js(157,28): error TS2554: Expected 2 arguments, but got 1.
-src/nodes/accessors/ClippingNode.js(159,31): error TS7031: Binding element 'i' implicitly has an 'any' type.
 src/nodes/accessors/ClippingNode.js(162,30): error TS2339: Property 'xyz' does not exist on type 'UniformArrayElementNode'.
 src/nodes/accessors/ClippingNode.js(162,55): error TS2339: Property 'w' does not exist on type 'UniformArrayElementNode'.
 src/nodes/accessors/ClippingNode.js(172,28): error TS2554: Expected 2 arguments, but got 1.
-src/nodes/accessors/ClippingNode.js(175,38): error TS7031: Binding element 'i' implicitly has an 'any' type.
 src/nodes/accessors/ClippingNode.js(178,46): error TS2339: Property 'xyz' does not exist on type 'UniformArrayElementNode'.
 src/nodes/accessors/ClippingNode.js(178,71): error TS2339: Property 'w' does not exist on type 'UniformArrayElementNode'.
 src/nodes/accessors/ClippingNode.js(205,27): error TS2554: Expected 2 arguments, but got 1.
-src/nodes/accessors/ClippingNode.js(208,30): error TS7031: Binding element 'i' implicitly has an 'any' type.
 src/nodes/accessors/ClippingNode.js(212,46): error TS2339: Property 'xyz' does not exist on type 'UniformArrayElementNode'.
 src/nodes/accessors/ClippingNode.js(212,63): error TS2339: Property 'w' does not exist on type 'UniformArrayElementNode'.
 src/nodes/accessors/ClippingNode.js(245,66): error TS2345: Argument of type 'string' is not assignable to parameter of type '"alphaToCoverage" | "default" | "hardware" | undefined'.
@@ -3421,7 +3175,6 @@ src/nodes/accessors/InstanceNode.js(121,87): error TS2339: Property 'element' do
 src/nodes/accessors/InstanceNode.js(163,28): error TS18047: 'instanceMatrixNode' is possibly 'null'.
 src/nodes/accessors/InstanceNode.js(163,47): error TS2339: Property 'mul' does not exist on type 'Node'.
 src/nodes/accessors/InstanceNode.js(182,48): error TS2339: Property 'assign' does not exist on type 'PropertyNode'.
-src/nodes/accessors/Lights.js(110,121): error TS7031: Binding element 'camera' implicitly has an 'any' type.
 src/nodes/accessors/MaterialNode.js(341,40): error TS2339: Property 'sub' does not exist on type 'ReferenceNode'.
 src/nodes/accessors/MaterialNode.js(447,11): error TS2315: Type 'Node' is not generic.
 src/nodes/accessors/MaterialNode.js(456,11): error TS2315: Type 'Node' is not generic.
@@ -3461,14 +3214,6 @@ src/nodes/accessors/MaterialNode.js(735,11): error TS2315: Type 'Node' is not ge
 src/nodes/accessors/MaterialNode.js(744,11): error TS2315: Type 'Node' is not generic.
 src/nodes/accessors/MaterialNode.js(753,11): error TS2315: Type 'Node' is not generic.
 src/nodes/accessors/MaterialNode.js(761,11): error TS2315: Type 'Node' is not generic.
-src/nodes/accessors/MaterialNode.js(767,34): error TS7031: Binding element 'material' implicitly has an 'any' type.
-src/nodes/accessors/MaterialProperties.js(14,84): error TS7031: Binding element 'material' implicitly has an 'any' type.
-src/nodes/accessors/MaterialProperties.js(14,131): error TS7031: Binding element 'material' implicitly has an 'any' type.
-src/nodes/accessors/MaterialProperties.js(23,81): error TS7031: Binding element 'material' implicitly has an 'any' type.
-src/nodes/accessors/MaterialProperties.js(23,137): error TS7031: Binding element 'material' implicitly has an 'any' type.
-src/nodes/accessors/MaterialProperties.js(23,147): error TS7031: Binding element 'scene' implicitly has an 'any' type.
-src/nodes/accessors/MaterialProperties.js(41,34): error TS7031: Binding element 'material' implicitly has an 'any' type.
-src/nodes/accessors/MaterialProperties.js(41,44): error TS7031: Binding element 'scene' implicitly has an 'any' type.
 src/nodes/accessors/MaterialReferenceNode.js(66,3): error TS2322: Type 'Object | null' is not assignable to type 'Object'.
 src/nodes/accessors/ModelNode.js(58,11): error TS2315: Type 'ModelNode' is not generic.
 src/nodes/accessors/ModelNode.js(66,11): error TS2315: Type 'ModelNode' is not generic.
@@ -3476,25 +3221,10 @@ src/nodes/accessors/ModelNode.js(74,11): error TS2315: Type 'ModelNode' is not g
 src/nodes/accessors/ModelNode.js(82,11): error TS2315: Type 'ModelNode' is not generic.
 src/nodes/accessors/ModelNode.js(90,11): error TS2315: Type 'ModelNode' is not generic.
 src/nodes/accessors/ModelNode.js(98,11): error TS2315: Type 'ModelNode' is not generic.
-src/nodes/accessors/ModelNode.js(108,93): error TS7031: Binding element 'object' implicitly has an 'any' type.
-src/nodes/accessors/ModelNode.js(116,99): error TS7031: Binding element 'object' implicitly has an 'any' type.
-src/nodes/accessors/ModelNode.js(153,47): error TS7031: Binding element 'object' implicitly has an 'any' type.
-src/nodes/accessors/ModelNode.js(153,55): error TS7031: Binding element 'camera' implicitly has an 'any' type.
-src/nodes/accessors/ModelNode.js(172,47): error TS7031: Binding element 'object' implicitly has an 'any' type.
-src/nodes/accessors/ModelNode.js(172,55): error TS7031: Binding element 'camera' implicitly has an 'any' type.
-src/nodes/accessors/MorphNode.js(20,40): error TS7031: Binding element 'bufferMap' implicitly has an 'any' type.
-src/nodes/accessors/MorphNode.js(20,51): error TS7031: Binding element 'influence' implicitly has an 'any' type.
-src/nodes/accessors/MorphNode.js(20,62): error TS7031: Binding element 'stride' implicitly has an 'any' type.
-src/nodes/accessors/MorphNode.js(20,70): error TS7031: Binding element 'width' implicitly has an 'any' type.
-src/nodes/accessors/MorphNode.js(20,77): error TS7031: Binding element 'depth' implicitly has an 'any' type.
-src/nodes/accessors/MorphNode.js(20,84): error TS7031: Binding element 'offset' implicitly has an 'any' type.
 src/nodes/accessors/MorphNode.js(29,22): error TS2339: Property 'mul' does not exist on type 'TextureNode'.
-src/nodes/accessors/MorphNode.js(229,32): error TS7031: Binding element 'i' implicitly has an 'any' type.
 src/nodes/accessors/MorphNode.js(235,111): error TS2339: Property 'r' does not exist on type 'TextureNode'.
 src/nodes/accessors/MorphNode.js(239,23): error TS2554: Expected 3 arguments, but got 2.
 src/nodes/accessors/MorphNode.js(239,82): error TS2339: Property 'toVar' does not exist on type 'ReferenceElementNode'.
-src/nodes/accessors/Normal.js(121,54): error TS7031: Binding element 'normal' implicitly has an 'any' type.
-src/nodes/accessors/Normal.js(140,60): error TS7031: Binding element 'normal' implicitly has an 'any' type.
 src/nodes/accessors/Object3DNode.js(77,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
 src/nodes/accessors/Object3DNode.js(180,3): error TS2322: Type 'string | null' is not assignable to type 'string'.
 src/nodes/accessors/ReferenceBaseNode.js(32,10): error TS2345: Argument of type 'ReferenceBaseNode' is not assignable to parameter of type 'Node'.
@@ -3541,9 +3271,6 @@ src/nodes/accessors/SkinningNode.js(263,14): error TS2366: Function lacks ending
 src/nodes/accessors/StorageBufferNode.js(322,4): error TS2322: Type 'string | null' is not assignable to type 'string'.
 src/nodes/accessors/StorageBufferNode.js(322,30): error TS2554: Expected 0 arguments, but got 1.
 src/nodes/accessors/StorageTextureNode.js(138,3): error TS2322: Type 'string | void' is not assignable to type 'string'.
-src/nodes/accessors/Texture3DNode.js(5,24): error TS7031: Binding element 'texture' implicitly has an 'any' type.
-src/nodes/accessors/Texture3DNode.js(5,33): error TS7031: Binding element 'uv' implicitly has an 'any' type.
-src/nodes/accessors/TextureBicubic.js(63,53): error TS7031: Binding element 'textureNode' implicitly has an 'any' type.
 src/nodes/accessors/TextureNode.js(142,14): error TS2315: Type 'UniformNode' is not generic.
 src/nodes/accessors/TextureNode.js(150,6): error TS2611: 'value' is defined as a property in class 'UniformNode', but is overridden here in 'TextureNode' as an accessor.
 src/nodes/accessors/TextureNode.js(481,39): error TS2554: Expected 0 arguments, but got 1.
@@ -3698,25 +3425,6 @@ src/nodes/core/VarNode.js(85,35): error TS2554: Expected 0 arguments, but got 2.
 src/nodes/core/VaryingNode.js(74,38): error TS2554: Expected 0 arguments, but got 1.
 src/nodes/core/VaryingNode.js(193,33): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
 src/nodes/core/VaryingNode.js(200,37): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
-src/nodes/display/BlendModes.js(17,48): error TS7031: Binding element 'base' implicitly has an 'any' type.
-src/nodes/display/BlendModes.js(17,54): error TS7031: Binding element 'blend' implicitly has an 'any' type.
-src/nodes/display/BlendModes.js(43,49): error TS7031: Binding element 'base' implicitly has an 'any' type.
-src/nodes/display/BlendModes.js(43,55): error TS7031: Binding element 'blend' implicitly has an 'any' type.
-src/nodes/display/BlendModes.js(69,50): error TS7031: Binding element 'base' implicitly has an 'any' type.
-src/nodes/display/BlendModes.js(69,56): error TS7031: Binding element 'blend' implicitly has an 'any' type.
-src/nodes/display/BlendModes.js(95,51): error TS7031: Binding element 'base' implicitly has an 'any' type.
-src/nodes/display/BlendModes.js(95,57): error TS7031: Binding element 'blend' implicitly has an 'any' type.
-src/nodes/display/BlendModes.js(118,49): error TS7031: Binding element 'base' implicitly has an 'any' type.
-src/nodes/display/BlendModes.js(118,55): error TS7031: Binding element 'blend' implicitly has an 'any' type.
-src/nodes/display/BumpMapNode.js(11,27): error TS7031: Binding element 'textureNode' implicitly has an 'any' type.
-src/nodes/display/BumpMapNode.js(11,40): error TS7031: Binding element 'bumpScale' implicitly has an 'any' type.
-src/nodes/display/ColorAdjustment.js(16,48): error TS7031: Binding element 'color' implicitly has an 'any' type.
-src/nodes/display/ColorAdjustment.js(31,49): error TS7031: Binding element 'color' implicitly has an 'any' type.
-src/nodes/display/ColorAdjustment.js(48,47): error TS7031: Binding element 'color' implicitly has an 'any' type.
-src/nodes/display/ColorAdjustment.js(68,42): error TS7031: Binding element 'color' implicitly has an 'any' type.
-src/nodes/display/ColorAdjustment.js(115,2): error TS7031: Binding element 'color' implicitly has an 'any' type.
-src/nodes/display/ColorSpaceFunctions.js(12,55): error TS7031: Binding element 'color' implicitly has an 'any' type.
-src/nodes/display/ColorSpaceFunctions.js(38,55): error TS7031: Binding element 'color' implicitly has an 'any' type.
 src/nodes/display/FrontFacingNode.js(63,11): error TS2315: Type 'FrontFacingNode' is not generic.
 src/nodes/display/FrontFacingNode.js(72,11): error TS2315: Type 'Node' is not generic.
 src/nodes/display/PassNode.js(223,24): error TS2554: Expected 2-10 arguments, but got 0.
@@ -3724,8 +3432,6 @@ src/nodes/display/PassNode.js(486,31): error TS2339: Property 'updateTexture' do
 src/nodes/display/PassNode.js(487,39): error TS2339: Property 'updateTexture' does not exist on type 'TextureNode'.
 src/nodes/display/PassNode.js(506,16): error TS2339: Property 'updateTexture' does not exist on type 'TextureNode'.
 src/nodes/display/PassNode.js(530,16): error TS2339: Property 'updateTexture' does not exist on type 'TextureNode'.
-src/nodes/display/PassNode.js(588,11): error TS7031: Binding element 'renderer' implicitly has an 'any' type.
-src/nodes/display/RenderOutputNode.js(81,11): error TS7031: Binding element 'context' implicitly has an 'any' type.
 src/nodes/display/ScreenNode.js(87,3): error TS2322: Type 'string' is not assignable to type '{ NONE: string; FRAME: string; RENDER: string; OBJECT: string; }'.
 src/nodes/display/ScreenNode.js(176,16): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/display/ScreenNode.js(195,11): error TS2315: Type 'ScreenNode' is not generic.
@@ -3737,24 +3443,9 @@ src/nodes/display/ScreenNode.js(237,11): error TS2315: Type 'ScreenNode' is not 
 src/nodes/display/ScreenNode.js(245,11): error TS2315: Type 'ScreenNode' is not generic.
 src/nodes/display/ScreenNode.js(265,11): error TS2315: Type 'Node' is not generic.
 src/nodes/display/ScreenNode.js(278,11): error TS2315: Type 'Node' is not generic.
-src/nodes/display/ToneMappingFunctions.js(15,56): error TS7031: Binding element 'color' implicitly has an 'any' type.
-src/nodes/display/ToneMappingFunctions.js(15,63): error TS7031: Binding element 'exposure' implicitly has an 'any' type.
-src/nodes/display/ToneMappingFunctions.js(39,58): error TS7031: Binding element 'color' implicitly has an 'any' type.
-src/nodes/display/ToneMappingFunctions.js(39,65): error TS7031: Binding element 'exposure' implicitly has an 'any' type.
-src/nodes/display/ToneMappingFunctions.js(65,56): error TS7031: Binding element 'color' implicitly has an 'any' type.
-src/nodes/display/ToneMappingFunctions.js(65,63): error TS7031: Binding element 'exposure' implicitly has an 'any' type.
-src/nodes/display/ToneMappingFunctions.js(87,44): error TS7031: Binding element 'color' implicitly has an 'any' type.
-src/nodes/display/ToneMappingFunctions.js(107,60): error TS7031: Binding element 'color' implicitly has an 'any' type.
-src/nodes/display/ToneMappingFunctions.js(107,67): error TS7031: Binding element 'exposure' implicitly has an 'any' type.
-src/nodes/display/ToneMappingFunctions.js(147,56): error TS7031: Binding element 'x_immutable' implicitly has an 'any' type.
-src/nodes/display/ToneMappingFunctions.js(166,53): error TS7031: Binding element 'color' implicitly has an 'any' type.
-src/nodes/display/ToneMappingFunctions.js(166,60): error TS7031: Binding element 'exposure' implicitly has an 'any' type.
-src/nodes/display/ToneMappingFunctions.js(208,57): error TS7031: Binding element 'color' implicitly has an 'any' type.
-src/nodes/display/ToneMappingFunctions.js(208,64): error TS7031: Binding element 'exposure' implicitly has an 'any' type.
 src/nodes/display/ToneMappingNode.js(108,14): error TS2315: Type 'ToneMappingNode' is not generic.
 src/nodes/display/ToonOutlinePassNode.js(119,12): error TS2339: Property 'isMeshToonOutlineMaterial' does not exist on type 'NodeMaterial'.
 src/nodes/display/ViewportDepthNode.js(74,16): error TS2554: Expected 2 arguments, but got 1.
-src/nodes/display/ViewportDepthNode.js(78,11): error TS7031: Binding element 'camera' implicitly has an 'any' type.
 src/nodes/display/ViewportDepthNode.js(148,12): error TS2315: Type 'Node' is not generic.
 src/nodes/display/ViewportDepthNode.js(149,12): error TS2315: Type 'Node' is not generic.
 src/nodes/display/ViewportDepthNode.js(150,12): error TS2315: Type 'Node' is not generic.
@@ -3785,120 +3476,12 @@ src/nodes/display/ViewportDepthNode.js(294,7): error TS2339: Property 'assign' d
 src/nodes/display/ViewportDepthTextureNode.js(34,24): error TS2554: Expected 2-10 arguments, but got 0.
 src/nodes/display/ViewportSharedTextureNode.js(34,25): error TS2554: Expected 2 arguments, but got 0.
 src/nodes/display/ViewportTextureNode.js(40,25): error TS2554: Expected 2 arguments, but got 0.
-src/nodes/fog/Fog.js(40,39): error TS7031: Binding element 'near' implicitly has an 'any' type.
-src/nodes/fog/Fog.js(40,45): error TS7031: Binding element 'far' implicitly has an 'any' type.
-src/nodes/fog/Fog.js(57,41): error TS7031: Binding element 'density' implicitly has an 'any' type.
-src/nodes/fog/Fog.js(74,28): error TS7031: Binding element 'color' implicitly has an 'any' type.
-src/nodes/fog/Fog.js(74,35): error TS7031: Binding element 'factor' implicitly has an 'any' type.
-src/nodes/functions/BSDF/BRDF_Sheen.js(7,41): error TS7031: Binding element 'roughness' implicitly has an 'any' type.
-src/nodes/functions/BSDF/BRDF_Sheen.js(7,52): error TS7031: Binding element 'dotNH' implicitly has an 'any' type.
-src/nodes/functions/BSDF/BRDF_Sheen.js(28,41): error TS7031: Binding element 'dotNV' implicitly has an 'any' type.
-src/nodes/functions/BSDF/BRDF_Sheen.js(28,48): error TS7031: Binding element 'dotNL' implicitly has an 'any' type.
-src/nodes/functions/BSDF/BRDF_Sheen.js(42,42): error TS7031: Binding element 'lightDirection' implicitly has an 'any' type.
-src/nodes/functions/BSDF/D_GGX.js(6,37): error TS7031: Binding element 'alpha' implicitly has an 'any' type.
-src/nodes/functions/BSDF/D_GGX.js(6,44): error TS7031: Binding element 'dotNH' implicitly has an 'any' type.
-src/nodes/functions/BSDF/D_GGX_Anisotropic.js(7,49): error TS7031: Binding element 'alphaT' implicitly has an 'any' type.
-src/nodes/functions/BSDF/D_GGX_Anisotropic.js(7,57): error TS7031: Binding element 'alphaB' implicitly has an 'any' type.
-src/nodes/functions/BSDF/D_GGX_Anisotropic.js(7,65): error TS7031: Binding element 'dotNH' implicitly has an 'any' type.
-src/nodes/functions/BSDF/D_GGX_Anisotropic.js(7,72): error TS7031: Binding element 'dotTH' implicitly has an 'any' type.
-src/nodes/functions/BSDF/D_GGX_Anisotropic.js(7,79): error TS7031: Binding element 'dotBH' implicitly has an 'any' type.
-src/nodes/functions/BSDF/DFGApprox.js(7,41): error TS7031: Binding element 'roughness' implicitly has an 'any' type.
-src/nodes/functions/BSDF/DFGApprox.js(7,52): error TS7031: Binding element 'dotNV' implicitly has an 'any' type.
-src/nodes/functions/BSDF/F_Schlick.js(3,41): error TS7031: Binding element 'f0' implicitly has an 'any' type.
-src/nodes/functions/BSDF/F_Schlick.js(3,45): error TS7031: Binding element 'f90' implicitly has an 'any' type.
-src/nodes/functions/BSDF/F_Schlick.js(3,50): error TS7031: Binding element 'dotVH' implicitly has an 'any' type.
-src/nodes/functions/BSDF/LTC.js(10,38): error TS7031: Binding element 'N' implicitly has an 'any' type.
-src/nodes/functions/BSDF/LTC.js(10,41): error TS7031: Binding element 'V' implicitly has an 'any' type.
-src/nodes/functions/BSDF/LTC.js(10,44): error TS7031: Binding element 'roughness' implicitly has an 'any' type.
-src/nodes/functions/BSDF/LTC.js(35,59): error TS7031: Binding element 'f' implicitly has an 'any' type.
-src/nodes/functions/BSDF/LTC.js(52,56): error TS7031: Binding element 'v1' implicitly has an 'any' type.
-src/nodes/functions/BSDF/LTC.js(52,60): error TS7031: Binding element 'v2' implicitly has an 'any' type.
-src/nodes/functions/BSDF/LTC.js(75,44): error TS7031: Binding element 'N' implicitly has an 'any' type.
-src/nodes/functions/BSDF/LTC.js(75,47): error TS7031: Binding element 'V' implicitly has an 'any' type.
-src/nodes/functions/BSDF/LTC.js(75,50): error TS7031: Binding element 'P' implicitly has an 'any' type.
-src/nodes/functions/BSDF/LTC.js(75,53): error TS7031: Binding element 'mInv' implicitly has an 'any' type.
-src/nodes/functions/BSDF/LTC.js(75,59): error TS7031: Binding element 'p0' implicitly has an 'any' type.
-src/nodes/functions/BSDF/LTC.js(75,63): error TS7031: Binding element 'p1' implicitly has an 'any' type.
-src/nodes/functions/BSDF/LTC.js(75,67): error TS7031: Binding element 'p2' implicitly has an 'any' type.
-src/nodes/functions/BSDF/LTC.js(75,71): error TS7031: Binding element 'p3' implicitly has an 'any' type.
-src/nodes/functions/BSDF/LTC.js(130,51): error TS7031: Binding element 'P' implicitly has an 'any' type.
-src/nodes/functions/BSDF/LTC.js(130,54): error TS7031: Binding element 'p0' implicitly has an 'any' type.
-src/nodes/functions/BSDF/LTC.js(130,58): error TS7031: Binding element 'p1' implicitly has an 'any' type.
-src/nodes/functions/BSDF/LTC.js(130,62): error TS7031: Binding element 'p2' implicitly has an 'any' type.
-src/nodes/functions/BSDF/LTC.js(130,66): error TS7031: Binding element 'p3' implicitly has an 'any' type.
-src/nodes/functions/BSDF/Schlick_to_F0.js(3,45): error TS7031: Binding element 'f' implicitly has an 'any' type.
-src/nodes/functions/BSDF/Schlick_to_F0.js(3,48): error TS7031: Binding element 'f90' implicitly has an 'any' type.
-src/nodes/functions/BSDF/Schlick_to_F0.js(3,53): error TS7031: Binding element 'dotVH' implicitly has an 'any' type.
-src/nodes/functions/BSDF/V_GGX_SmithCorrelated.js(7,53): error TS7031: Binding element 'alpha' implicitly has an 'any' type.
-src/nodes/functions/BSDF/V_GGX_SmithCorrelated.js(7,60): error TS7031: Binding element 'dotNL' implicitly has an 'any' type.
-src/nodes/functions/BSDF/V_GGX_SmithCorrelated.js(7,67): error TS7031: Binding element 'dotNV' implicitly has an 'any' type.
-src/nodes/functions/BSDF/V_GGX_SmithCorrelated_Anisotropic.js(6,65): error TS7031: Binding element 'alphaT' implicitly has an 'any' type.
-src/nodes/functions/BSDF/V_GGX_SmithCorrelated_Anisotropic.js(6,73): error TS7031: Binding element 'alphaB' implicitly has an 'any' type.
-src/nodes/functions/BSDF/V_GGX_SmithCorrelated_Anisotropic.js(6,81): error TS7031: Binding element 'dotTV' implicitly has an 'any' type.
-src/nodes/functions/BSDF/V_GGX_SmithCorrelated_Anisotropic.js(6,88): error TS7031: Binding element 'dotBV' implicitly has an 'any' type.
-src/nodes/functions/BSDF/V_GGX_SmithCorrelated_Anisotropic.js(6,95): error TS7031: Binding element 'dotTL' implicitly has an 'any' type.
-src/nodes/functions/BSDF/V_GGX_SmithCorrelated_Anisotropic.js(6,102): error TS7031: Binding element 'dotBL' implicitly has an 'any' type.
-src/nodes/functions/BSDF/V_GGX_SmithCorrelated_Anisotropic.js(6,109): error TS7031: Binding element 'dotNV' implicitly has an 'any' type.
-src/nodes/functions/BSDF/V_GGX_SmithCorrelated_Anisotropic.js(6,116): error TS7031: Binding element 'dotNL' implicitly has an 'any' type.
-src/nodes/functions/material/getAlphaHashThreshold.js(7,38): error TS7031: Binding element 'value' implicitly has an 'any' type.
-src/nodes/functions/material/getAlphaHashThreshold.js(13,38): error TS7031: Binding element 'value' implicitly has an 'any' type.
-src/nodes/functions/material/getAlphaHashThreshold.js(19,53): error TS7031: Binding element 'position' implicitly has an 'any' type.
-src/nodes/functions/material/getParallaxCorrectNormal.js(21,56): error TS7031: Binding element 'normal' implicitly has an 'any' type.
-src/nodes/functions/material/getParallaxCorrectNormal.js(21,64): error TS7031: Binding element 'cubeSize' implicitly has an 'any' type.
-src/nodes/functions/material/getParallaxCorrectNormal.js(21,74): error TS7031: Binding element 'cubePos' implicitly has an 'any' type.
-src/nodes/functions/material/getShIrradianceAt.js(3,49): error TS7031: Binding element 'normal' implicitly has an 'any' type.
-src/nodes/functions/material/getShIrradianceAt.js(3,57): error TS7031: Binding element 'shCoefficients' implicitly has an 'any' type.
-src/nodes/functions/PhongLightingModel.js(12,44): error TS7031: Binding element 'dotNH' implicitly has an 'any' type.
-src/nodes/functions/PhongLightingModel.js(18,47): error TS7031: Binding element 'lightDirection' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(29,56): error TS7031: Binding element 'n' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(29,59): error TS7031: Binding element 'v' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(29,62): error TS7031: Binding element 'thickness' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(29,73): error TS7031: Binding element 'ior' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(29,78): error TS7031: Binding element 'modelMatrix' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(56,51): error TS7031: Binding element 'roughness' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(56,62): error TS7031: Binding element 'ior' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(74,53): error TS7031: Binding element 'fragCoord' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(74,64): error TS7031: Binding element 'roughness' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(74,75): error TS7031: Binding element 'ior' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(74,84): error TS7031: Binding element 'material' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(87,49): error TS7031: Binding element 'transmissionDistance' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(87,71): error TS7031: Binding element 'attenuationColor' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(87,89): error TS7031: Binding element 'attenuationDistance' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(112,54): error TS7031: Binding element 'n' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(112,57): error TS7031: Binding element 'v' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(112,60): error TS7031: Binding element 'roughness' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(112,71): error TS7031: Binding element 'diffuseColor' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(112,85): error TS7031: Binding element 'specularColor' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(112,100): error TS7031: Binding element 'specularF90' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(112,113): error TS7031: Binding element 'position' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(112,123): error TS7031: Binding element 'modelMatrix' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(112,136): error TS7031: Binding element 'viewMatrix' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(112,148): error TS7031: Binding element 'projMatrix' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(112,160): error TS7031: Binding element 'ior' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(112,165): error TS7031: Binding element 'thickness' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(112,176): error TS7031: Binding element 'attenuationColor' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(112,194): error TS7031: Binding element 'attenuationDistance' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(112,215): error TS7031: Binding element 'dispersion' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(124,35): error TS7031: Binding element 'i' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(235,47): error TS7031: Binding element 'outsideIOR' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(235,59): error TS7031: Binding element 'eta2' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(235,65): error TS7031: Binding element 'cosTheta1' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(235,76): error TS7031: Binding element 'thinFilmThickness' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(235,95): error TS7031: Binding element 'baseF0' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(287,62): error TS7031: Binding element 'm' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(317,44): error TS7031: Binding element 'normal' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(317,52): error TS7031: Binding element 'viewDir' implicitly has an 'any' type.
-src/nodes/functions/PhysicalLightingModel.js(317,61): error TS7031: Binding element 'roughness' implicitly has an 'any' type.
-src/nodes/functions/ToonLightingModel.js(9,53): error TS7031: Binding element 'normal' implicitly has an 'any' type.
-src/nodes/functions/ToonLightingModel.js(9,61): error TS7031: Binding element 'lightDirection' implicitly has an 'any' type.
-src/nodes/functions/ToonLightingModel.js(9,77): error TS7031: Binding element 'builder' implicitly has an 'any' type.
 src/nodes/functions/ToonLightingModel.js(17,69): error TS2339: Property 'context' does not exist on type 'MaterialReferenceNode'.
 src/nodes/functions/VolumetricLightingModel.js(43,13): error TS2339: Property 'assign' does not exist on type 'PropertyNode'.
 src/nodes/functions/VolumetricLightingModel.js(44,11): error TS2339: Property 'assign' does not exist on type 'PropertyNode'.
 src/nodes/functions/VolumetricLightingModel.js(48,13): error TS2339: Property 'assign' does not exist on type 'PropertyNode'.
 src/nodes/functions/VolumetricLightingModel.js(49,11): error TS2339: Property 'assign' does not exist on type 'PropertyNode'.
 src/nodes/functions/VolumetricLightingModel.js(55,29): error TS2339: Property 'sub' does not exist on type 'PropertyNode'.
-src/nodes/functions/VolumetricLightingModel.js(57,54): error TS7031: Binding element 'material' implicitly has an 'any' type.
 src/nodes/functions/VolumetricLightingModel.js(75,33): error TS2339: Property 'add' does not exist on type 'PropertyNode'.
 src/nodes/functions/VolumetricLightingModel.js(80,20): error TS2339: Property 'assign' does not exist on type 'PropertyNode'.
 src/nodes/functions/VolumetricLightingModel.js(90,22): error TS2339: Property 'assign' does not exist on type 'PropertyNode'.
@@ -3907,12 +3490,6 @@ src/nodes/functions/VolumetricLightingModel.js(112,38): error TS2339: Property '
 src/nodes/functions/VolumetricLightingModel.js(121,20): error TS2339: Property 'addAssign' does not exist on type 'PropertyNode'.
 src/nodes/functions/VolumetricLightingModel.js(133,23): error TS2339: Property 'addAssign' does not exist on type 'PropertyNode'.
 src/nodes/functions/VolumetricLightingModel.js(139,22): error TS2339: Property 'addAssign' does not exist on type 'PropertyNode'.
-src/nodes/functions/VolumetricLightingModel.js(145,12): error TS7031: Binding element 'lightNode' implicitly has an 'any' type.
-src/nodes/functions/VolumetricLightingModel.js(145,23): error TS7031: Binding element 'lightColor' implicitly has an 'any' type.
-src/nodes/functions/VolumetricLightingModel.js(160,20): error TS7031: Binding element 'lightColor' implicitly has an 'any' type.
-src/nodes/functions/VolumetricLightingModel.js(160,32): error TS7031: Binding element 'lightPosition' implicitly has an 'any' type.
-src/nodes/functions/VolumetricLightingModel.js(160,47): error TS7031: Binding element 'halfWidth' implicitly has an 'any' type.
-src/nodes/functions/VolumetricLightingModel.js(160,58): error TS7031: Binding element 'halfHeight' implicitly has an 'any' type.
 src/nodes/geometry/RangeNode.js(37,13): error TS2315: Type 'Node' is not generic.
 src/nodes/geometry/RangeNode.js(38,13): error TS2315: Type 'Node' is not generic.
 src/nodes/geometry/RangeNode.js(47,13): error TS2315: Type 'Node' is not generic.
@@ -3933,7 +3510,6 @@ src/nodes/gpgpu/ComputeBuiltinNode.js(209,11): error TS2315: Type 'ComputeBuilti
 src/nodes/gpgpu/ComputeBuiltinNode.js(216,11): error TS2315: Type 'ComputeBuiltinNode' is not generic.
 src/nodes/gpgpu/ComputeBuiltinNode.js(224,11): error TS2315: Type 'ComputeBuiltinNode' is not generic.
 src/nodes/gpgpu/WorkgroupInfoNode.js(188,74): error TS2339: Property 'id' does not exist on type 'WorkgroupInfoNode'.
-src/nodes/lighting/AmbientLightNode.js(27,11): error TS7031: Binding element 'context' implicitly has an 'any' type.
 src/nodes/lighting/AnalyticLightNode.js(144,10): error TS2554: Expected 2 arguments, but got 1.
 src/nodes/lighting/AnalyticLightNode.js(175,40): error TS2554: Expected 0 arguments, but got 1.
 src/nodes/lighting/AnalyticLightNode.js(220,45): error TS2554: Expected 0 arguments, but got 1.
@@ -3951,56 +3527,11 @@ src/nodes/lighting/LightsNode.js(61,13): error TS2315: Type 'Node' is not generi
 src/nodes/lighting/LightsNode.js(68,13): error TS2315: Type 'Node' is not generic.
 src/nodes/lighting/LightsNode.js(144,29): error TS2531: Object is possibly 'null'.
 src/nodes/lighting/LightsNode.js(301,14): error TS2315: Type 'Node' is not generic.
-src/nodes/lighting/LightUtils.js(13,61): error TS7031: Binding element 'lightDistance' implicitly has an 'any' type.
-src/nodes/lighting/LightUtils.js(13,76): error TS7031: Binding element 'cutoffDistance' implicitly has an 'any' type.
-src/nodes/lighting/LightUtils.js(13,92): error TS7031: Binding element 'decayExponent' implicitly has an 'any' type.
-src/nodes/lighting/PointLightNode.js(7,37): error TS7031: Binding element 'color' implicitly has an 'any' type.
-src/nodes/lighting/PointLightNode.js(7,44): error TS7031: Binding element 'lightVector' implicitly has an 'any' type.
-src/nodes/lighting/PointLightNode.js(7,57): error TS7031: Binding element 'cutoffDistance' implicitly has an 'any' type.
-src/nodes/lighting/PointLightNode.js(7,73): error TS7031: Binding element 'decayExponent' implicitly has an 'any' type.
 src/nodes/lighting/PointLightNode.js(71,17): error TS2554: Expected 0 arguments, but got 1.
-src/nodes/lighting/PointShadowNode.js(33,47): error TS7031: Binding element 'pos' implicitly has an 'any' type.
-src/nodes/lighting/PointShadowNode.js(33,52): error TS7031: Binding element 'texelSizeY' implicitly has an 'any' type.
-src/nodes/lighting/PointShadowNode.js(99,61): error TS7031: Binding element 'depthTexture' implicitly has an 'any' type.
-src/nodes/lighting/PointShadowNode.js(99,75): error TS7031: Binding element 'bd3D' implicitly has an 'any' type.
-src/nodes/lighting/PointShadowNode.js(99,81): error TS7031: Binding element 'dp' implicitly has an 'any' type.
-src/nodes/lighting/PointShadowNode.js(99,85): error TS7031: Binding element 'texelSize' implicitly has an 'any' type.
-src/nodes/lighting/PointShadowNode.js(105,56): error TS7031: Binding element 'depthTexture' implicitly has an 'any' type.
-src/nodes/lighting/PointShadowNode.js(105,70): error TS7031: Binding element 'bd3D' implicitly has an 'any' type.
-src/nodes/lighting/PointShadowNode.js(105,76): error TS7031: Binding element 'dp' implicitly has an 'any' type.
-src/nodes/lighting/PointShadowNode.js(105,80): error TS7031: Binding element 'texelSize' implicitly has an 'any' type.
-src/nodes/lighting/PointShadowNode.js(105,91): error TS7031: Binding element 'shadow' implicitly has an 'any' type.
-src/nodes/lighting/PointShadowNode.js(123,49): error TS7031: Binding element 'filterFn' implicitly has an 'any' type.
-src/nodes/lighting/PointShadowNode.js(123,59): error TS7031: Binding element 'depthTexture' implicitly has an 'any' type.
-src/nodes/lighting/PointShadowNode.js(123,73): error TS7031: Binding element 'shadowCoord' implicitly has an 'any' type.
-src/nodes/lighting/PointShadowNode.js(123,86): error TS7031: Binding element 'shadow' implicitly has an 'any' type.
 src/nodes/lighting/PointShadowNode.js(140,79): error TS2339: Property 'sub' does not exist on type 'Node'.
 src/nodes/lighting/PointShadowNode.js(145,46): error TS2339: Property 'mul' does not exist on type 'UniformNode'.
 src/nodes/lighting/RectAreaLightNode.js(70,17): error TS2554: Expected 0 arguments, but got 1.
 src/nodes/lighting/ShadowBaseNode.js(88,11): error TS2315: Type 'Node' is not generic.
-src/nodes/lighting/ShadowNode.js(23,46): error TS7031: Binding element 'position' implicitly has an 'any' type.
-src/nodes/lighting/ShadowNode.js(23,56): error TS7031: Binding element 'cameraNear' implicitly has an 'any' type.
-src/nodes/lighting/ShadowNode.js(23,68): error TS7031: Binding element 'cameraFar' implicitly has an 'any' type.
-src/nodes/lighting/ShadowNode.js(79,56): error TS7031: Binding element 'depthTexture' implicitly has an 'any' type.
-src/nodes/lighting/ShadowNode.js(79,70): error TS7031: Binding element 'shadowCoord' implicitly has an 'any' type.
-src/nodes/lighting/ShadowNode.js(95,54): error TS7031: Binding element 'depthTexture' implicitly has an 'any' type.
-src/nodes/lighting/ShadowNode.js(95,68): error TS7031: Binding element 'shadowCoord' implicitly has an 'any' type.
-src/nodes/lighting/ShadowNode.js(95,81): error TS7031: Binding element 'shadow' implicitly has an 'any' type.
-src/nodes/lighting/ShadowNode.js(144,58): error TS7031: Binding element 'depthTexture' implicitly has an 'any' type.
-src/nodes/lighting/ShadowNode.js(144,72): error TS7031: Binding element 'shadowCoord' implicitly has an 'any' type.
-src/nodes/lighting/ShadowNode.js(144,85): error TS7031: Binding element 'shadow' implicitly has an 'any' type.
-src/nodes/lighting/ShadowNode.js(209,54): error TS7031: Binding element 'depthTexture' implicitly has an 'any' type.
-src/nodes/lighting/ShadowNode.js(209,68): error TS7031: Binding element 'shadowCoord' implicitly has an 'any' type.
-src/nodes/lighting/ShadowNode.js(242,47): error TS7031: Binding element 'samples' implicitly has an 'any' type.
-src/nodes/lighting/ShadowNode.js(242,56): error TS7031: Binding element 'radius' implicitly has an 'any' type.
-src/nodes/lighting/ShadowNode.js(242,64): error TS7031: Binding element 'size' implicitly has an 'any' type.
-src/nodes/lighting/ShadowNode.js(242,70): error TS7031: Binding element 'shadowPass' implicitly has an 'any' type.
-src/nodes/lighting/ShadowNode.js(250,83): error TS7031: Binding element 'i' implicitly has an 'any' type.
-src/nodes/lighting/ShadowNode.js(279,49): error TS7031: Binding element 'samples' implicitly has an 'any' type.
-src/nodes/lighting/ShadowNode.js(279,58): error TS7031: Binding element 'radius' implicitly has an 'any' type.
-src/nodes/lighting/ShadowNode.js(279,66): error TS7031: Binding element 'size' implicitly has an 'any' type.
-src/nodes/lighting/ShadowNode.js(279,72): error TS7031: Binding element 'shadowPass' implicitly has an 'any' type.
-src/nodes/lighting/ShadowNode.js(287,83): error TS7031: Binding element 'i' implicitly has an 'any' type.
 src/nodes/lighting/ShadowNode.js(570,67): error TS2353: Object literal may only specify known properties, and 'shadowTexture' does not exist in type '{ filterFn: Function; depthTexture: DepthTexture; shadowCoord: Node<any>; shadow: LightShadow; }'.
 src/nodes/lighting/ShadowNode.js(573,86): error TS2339: Property 'mul' does not exist on type 'ReferenceNode'.
 src/nodes/lighting/ShadowNode.js(670,90): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
@@ -4009,107 +3540,14 @@ src/nodes/lighting/ShadowNode.js(753,4): error TS2531: Object is possibly 'null'
 src/nodes/lighting/ShadowNode.js(775,9): error TS7052: Element implicitly has an 'any' type because type 'WeakMap<WeakKey, any>' has no index signature. Did you mean to call 'get'?
 src/nodes/lighting/ShadowNode.js(781,4): error TS7052: Element implicitly has an 'any' type because type 'WeakMap<WeakKey, any>' has no index signature. Did you mean to call 'set'?
 src/nodes/lighting/SpotLightNode.js(68,17): error TS2554: Expected 0 arguments, but got 1.
-src/nodes/materialx/lib/mx_hsv.js(8,50): error TS7031: Binding element 'hsv' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_hsv.js(67,50): error TS7031: Binding element 'c_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(12,48): error TS7031: Binding element 'b_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(12,61): error TS7031: Binding element 't_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(12,74): error TS7031: Binding element 'f_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(30,51): error TS7031: Binding element 'val_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(30,66): error TS7031: Binding element 'b_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(46,47): error TS7031: Binding element 'x_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(60,51): error TS7031: Binding element 'x_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(60,64): error TS7031: Binding element 'i' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(69,50): error TS7031: Binding element 'v0_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(69,64): error TS7031: Binding element 'v1_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(69,78): error TS7031: Binding element 'v2_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(69,92): error TS7031: Binding element 'v3_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(69,106): error TS7031: Binding element 's_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(69,119): error TS7031: Binding element 't_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(94,50): error TS7031: Binding element 'v0_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(94,64): error TS7031: Binding element 'v1_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(94,78): error TS7031: Binding element 'v2_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(94,92): error TS7031: Binding element 'v3_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(94,106): error TS7031: Binding element 's_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(94,119): error TS7031: Binding element 't_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(121,51): error TS7031: Binding element 'v0_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(121,65): error TS7031: Binding element 'v1_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(121,79): error TS7031: Binding element 'v2_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(121,93): error TS7031: Binding element 'v3_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(121,107): error TS7031: Binding element 'v4_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(121,121): error TS7031: Binding element 'v5_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(121,135): error TS7031: Binding element 'v6_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(121,149): error TS7031: Binding element 'v7_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(121,163): error TS7031: Binding element 's_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(121,176): error TS7031: Binding element 't_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(121,189): error TS7031: Binding element 'r_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(158,51): error TS7031: Binding element 'v0_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(158,65): error TS7031: Binding element 'v1_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(158,79): error TS7031: Binding element 'v2_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(158,93): error TS7031: Binding element 'v3_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(158,107): error TS7031: Binding element 'v4_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(158,121): error TS7031: Binding element 'v5_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(158,135): error TS7031: Binding element 'v6_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(158,149): error TS7031: Binding element 'v7_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(158,163): error TS7031: Binding element 's_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(158,176): error TS7031: Binding element 't_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(158,189): error TS7031: Binding element 'r_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(197,58): error TS7031: Binding element 'hash_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(197,74): error TS7031: Binding element 'x_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(197,87): error TS7031: Binding element 'y_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(218,58): error TS7031: Binding element 'hash_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(218,74): error TS7031: Binding element 'x_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(218,87): error TS7031: Binding element 'y_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(218,100): error TS7031: Binding element 'z_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(243,57): error TS7031: Binding element 'hash_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(243,73): error TS7031: Binding element 'x_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(243,86): error TS7031: Binding element 'y_immutable' implicitly has an 'any' type.
 src/nodes/materialx/lib/mx_noise.js(249,15): error TS2349: This expression is not callable.
 src/nodes/materialx/lib/mx_noise.js(249,50): error TS2349: This expression is not callable.
 src/nodes/materialx/lib/mx_noise.js(249,85): error TS2349: This expression is not callable.
-src/nodes/materialx/lib/mx_noise.js(261,57): error TS7031: Binding element 'hash_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(261,73): error TS7031: Binding element 'x_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(261,86): error TS7031: Binding element 'y_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(261,99): error TS7031: Binding element 'z_immutable' implicitly has an 'any' type.
 src/nodes/materialx/lib/mx_noise.js(268,15): error TS2349: This expression is not callable.
 src/nodes/materialx/lib/mx_noise.js(268,53): error TS2349: This expression is not callable.
 src/nodes/materialx/lib/mx_noise.js(268,91): error TS2349: This expression is not callable.
-src/nodes/materialx/lib/mx_noise.js(283,60): error TS7031: Binding element 'v_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(297,60): error TS7031: Binding element 'v_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(311,60): error TS7031: Binding element 'v_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(327,60): error TS7031: Binding element 'v_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(343,48): error TS7031: Binding element 'x_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(343,61): error TS7031: Binding element 'k_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(359,47): error TS7031: Binding element 'a' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(359,50): error TS7031: Binding element 'b' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(359,53): error TS7031: Binding element 'c' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(382,49): error TS7031: Binding element 'a_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(382,62): error TS7031: Binding element 'b_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(382,75): error TS7031: Binding element 'c_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(414,52): error TS7031: Binding element 'bits_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(428,46): error TS7031: Binding element 't_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(442,52): error TS7031: Binding element 'x_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(458,52): error TS7031: Binding element 'x_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(458,65): error TS7031: Binding element 'y_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(479,52): error TS7031: Binding element 'x_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(479,65): error TS7031: Binding element 'y_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(479,78): error TS7031: Binding element 'z_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(503,52): error TS7031: Binding element 'x_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(503,65): error TS7031: Binding element 'y_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(503,78): error TS7031: Binding element 'z_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(503,91): error TS7031: Binding element 'xx_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(531,52): error TS7031: Binding element 'x_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(531,65): error TS7031: Binding element 'y_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(531,78): error TS7031: Binding element 'z_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(531,91): error TS7031: Binding element 'xx_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(531,105): error TS7031: Binding element 'yy_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(564,53): error TS7031: Binding element 'x_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(564,66): error TS7031: Binding element 'y_immutable' implicitly has an 'any' type.
 src/nodes/materialx/lib/mx_noise.js(568,18): error TS2349: This expression is not callable.
-src/nodes/materialx/lib/mx_noise.js(585,53): error TS7031: Binding element 'x_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(585,66): error TS7031: Binding element 'y_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(585,79): error TS7031: Binding element 'z_immutable' implicitly has an 'any' type.
 src/nodes/materialx/lib/mx_noise.js(590,18): error TS2349: This expression is not callable.
-src/nodes/materialx/lib/mx_noise.js(610,62): error TS7031: Binding element 'p_immutable' implicitly has an 'any' type.
 src/nodes/materialx/lib/mx_noise.js(618,24): error TS2349: This expression is not callable.
 src/nodes/materialx/lib/mx_noise.js(618,35): error TS2349: This expression is not callable.
 src/nodes/materialx/lib/mx_noise.js(618,54): error TS2349: This expression is not callable.
@@ -4120,7 +3558,6 @@ src/nodes/materialx/lib/mx_noise.js(618,181): error TS2349: This expression is n
 src/nodes/materialx/lib/mx_noise.js(618,239): error TS2349: This expression is not callable.
 src/nodes/materialx/lib/mx_noise.js(618,258): error TS2349: This expression is not callable.
 src/nodes/materialx/lib/mx_noise.js(620,9): error TS2349: This expression is not callable.
-src/nodes/materialx/lib/mx_noise.js(630,62): error TS7031: Binding element 'p_immutable' implicitly has an 'any' type.
 src/nodes/materialx/lib/mx_noise.js(640,24): error TS2349: This expression is not callable.
 src/nodes/materialx/lib/mx_noise.js(640,36): error TS2349: This expression is not callable.
 src/nodes/materialx/lib/mx_noise.js(640,55): error TS2349: This expression is not callable.
@@ -4139,7 +3576,6 @@ src/nodes/materialx/lib/mx_noise.js(640,586): error TS2349: This expression is n
 src/nodes/materialx/lib/mx_noise.js(640,678): error TS2349: This expression is not callable.
 src/nodes/materialx/lib/mx_noise.js(640,697): error TS2349: This expression is not callable.
 src/nodes/materialx/lib/mx_noise.js(642,9): error TS2349: This expression is not callable.
-src/nodes/materialx/lib/mx_noise.js(654,61): error TS7031: Binding element 'p_immutable' implicitly has an 'any' type.
 src/nodes/materialx/lib/mx_noise.js(662,23): error TS2349: This expression is not callable.
 src/nodes/materialx/lib/mx_noise.js(662,34): error TS2349: This expression is not callable.
 src/nodes/materialx/lib/mx_noise.js(662,52): error TS2349: This expression is not callable.
@@ -4150,7 +3586,6 @@ src/nodes/materialx/lib/mx_noise.js(662,179): error TS2349: This expression is n
 src/nodes/materialx/lib/mx_noise.js(662,238): error TS2349: This expression is not callable.
 src/nodes/materialx/lib/mx_noise.js(662,256): error TS2349: This expression is not callable.
 src/nodes/materialx/lib/mx_noise.js(664,9): error TS2349: This expression is not callable.
-src/nodes/materialx/lib/mx_noise.js(674,61): error TS7031: Binding element 'p_immutable' implicitly has an 'any' type.
 src/nodes/materialx/lib/mx_noise.js(684,23): error TS2349: This expression is not callable.
 src/nodes/materialx/lib/mx_noise.js(684,35): error TS2349: This expression is not callable.
 src/nodes/materialx/lib/mx_noise.js(684,53): error TS2349: This expression is not callable.
@@ -4169,106 +3604,32 @@ src/nodes/materialx/lib/mx_noise.js(684,584): error TS2349: This expression is n
 src/nodes/materialx/lib/mx_noise.js(684,677): error TS2349: This expression is not callable.
 src/nodes/materialx/lib/mx_noise.js(684,695): error TS2349: This expression is not callable.
 src/nodes/materialx/lib/mx_noise.js(686,9): error TS2349: This expression is not callable.
-src/nodes/materialx/lib/mx_noise.js(698,60): error TS7031: Binding element 'p_immutable' implicitly has an 'any' type.
 src/nodes/materialx/lib/mx_noise.js(703,24): error TS2349: This expression is not callable.
-src/nodes/materialx/lib/mx_noise.js(713,60): error TS7031: Binding element 'p_immutable' implicitly has an 'any' type.
 src/nodes/materialx/lib/mx_noise.js(719,24): error TS2349: This expression is not callable.
-src/nodes/materialx/lib/mx_noise.js(729,60): error TS7031: Binding element 'p_immutable' implicitly has an 'any' type.
 src/nodes/materialx/lib/mx_noise.js(736,24): error TS2349: This expression is not callable.
-src/nodes/materialx/lib/mx_noise.js(746,60): error TS7031: Binding element 'p_immutable' implicitly has an 'any' type.
 src/nodes/materialx/lib/mx_noise.js(754,24): error TS2349: This expression is not callable.
-src/nodes/materialx/lib/mx_noise.js(766,59): error TS7031: Binding element 'p_immutable' implicitly has an 'any' type.
 src/nodes/materialx/lib/mx_noise.js(771,30): error TS2349: This expression is not callable.
 src/nodes/materialx/lib/mx_noise.js(771,76): error TS2349: This expression is not callable.
 src/nodes/materialx/lib/mx_noise.js(771,122): error TS2349: This expression is not callable.
-src/nodes/materialx/lib/mx_noise.js(781,59): error TS7031: Binding element 'p_immutable' implicitly has an 'any' type.
 src/nodes/materialx/lib/mx_noise.js(787,30): error TS2349: This expression is not callable.
 src/nodes/materialx/lib/mx_noise.js(787,80): error TS2349: This expression is not callable.
 src/nodes/materialx/lib/mx_noise.js(787,130): error TS2349: This expression is not callable.
-src/nodes/materialx/lib/mx_noise.js(797,59): error TS7031: Binding element 'p_immutable' implicitly has an 'any' type.
 src/nodes/materialx/lib/mx_noise.js(804,30): error TS2349: This expression is not callable.
 src/nodes/materialx/lib/mx_noise.js(804,84): error TS2349: This expression is not callable.
 src/nodes/materialx/lib/mx_noise.js(804,138): error TS2349: This expression is not callable.
-src/nodes/materialx/lib/mx_noise.js(814,59): error TS7031: Binding element 'p_immutable' implicitly has an 'any' type.
 src/nodes/materialx/lib/mx_noise.js(822,30): error TS2349: This expression is not callable.
 src/nodes/materialx/lib/mx_noise.js(822,88): error TS2349: This expression is not callable.
 src/nodes/materialx/lib/mx_noise.js(822,146): error TS2349: This expression is not callable.
-src/nodes/materialx/lib/mx_noise.js(834,61): error TS7031: Binding element 'p_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(834,74): error TS7031: Binding element 'octaves_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(834,93): error TS7031: Binding element 'lacunarity_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(834,115): error TS7031: Binding element 'diminish_immutable' implicitly has an 'any' type.
 src/nodes/materialx/lib/mx_noise.js(845,36): error TS2349: This expression is not callable.
-src/nodes/materialx/lib/mx_noise.js(864,60): error TS7031: Binding element 'p_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(864,73): error TS7031: Binding element 'octaves_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(864,92): error TS7031: Binding element 'lacunarity_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(864,114): error TS7031: Binding element 'diminish_immutable' implicitly has an 'any' type.
 src/nodes/materialx/lib/mx_noise.js(875,36): error TS2349: This expression is not callable.
-src/nodes/materialx/lib/mx_noise.js(894,60): error TS7031: Binding element 'p_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(894,73): error TS7031: Binding element 'octaves_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(894,92): error TS7031: Binding element 'lacunarity_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(894,114): error TS7031: Binding element 'diminish_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(914,60): error TS7031: Binding element 'p_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(914,73): error TS7031: Binding element 'octaves_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(914,92): error TS7031: Binding element 'lacunarity_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(914,114): error TS7031: Binding element 'diminish_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(936,59): error TS7031: Binding element 'p_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(936,72): error TS7031: Binding element 'x_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(936,85): error TS7031: Binding element 'y_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(936,98): error TS7031: Binding element 'xoff_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(936,114): error TS7031: Binding element 'yoff_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(936,130): error TS7031: Binding element 'jitter_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(936,148): error TS7031: Binding element 'metric_immutable' implicitly has an 'any' type.
 src/nodes/materialx/lib/mx_noise.js(945,20): error TS2349: This expression is not callable.
-src/nodes/materialx/lib/mx_noise.js(981,59): error TS7031: Binding element 'p_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(981,72): error TS7031: Binding element 'x_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(981,85): error TS7031: Binding element 'y_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(981,98): error TS7031: Binding element 'z_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(981,111): error TS7031: Binding element 'xoff_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(981,127): error TS7031: Binding element 'yoff_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(981,143): error TS7031: Binding element 'zoff_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(981,159): error TS7031: Binding element 'jitter_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(981,177): error TS7031: Binding element 'metric_immutable' implicitly has an 'any' type.
 src/nodes/materialx/lib/mx_noise.js(992,20): error TS2349: This expression is not callable.
-src/nodes/materialx/lib/mx_noise.js(1031,62): error TS7031: Binding element 'p_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(1031,75): error TS7031: Binding element 'jitter_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(1031,93): error TS7031: Binding element 'metric_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(1040,71): error TS7031: Binding element 'x' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(1042,72): error TS7031: Binding element 'y' implicitly has an 'any' type.
 src/nodes/materialx/lib/mx_noise.js(1044,24): error TS2349: This expression is not callable.
-src/nodes/materialx/lib/mx_noise.js(1069,61): error TS7031: Binding element 'p_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(1069,74): error TS7031: Binding element 'jitter_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(1069,92): error TS7031: Binding element 'metric_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(1078,71): error TS7031: Binding element 'x' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(1080,72): error TS7031: Binding element 'y' implicitly has an 'any' type.
 src/nodes/materialx/lib/mx_noise.js(1082,24): error TS2349: This expression is not callable.
-src/nodes/materialx/lib/mx_noise.js(1117,61): error TS7031: Binding element 'p_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(1117,74): error TS7031: Binding element 'jitter_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(1117,92): error TS7031: Binding element 'metric_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(1126,71): error TS7031: Binding element 'x' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(1128,72): error TS7031: Binding element 'y' implicitly has an 'any' type.
 src/nodes/materialx/lib/mx_noise.js(1130,24): error TS2349: This expression is not callable.
-src/nodes/materialx/lib/mx_noise.js(1171,62): error TS7031: Binding element 'p_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(1171,75): error TS7031: Binding element 'jitter_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(1171,93): error TS7031: Binding element 'metric_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(1180,71): error TS7031: Binding element 'x' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(1182,72): error TS7031: Binding element 'y' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(1184,73): error TS7031: Binding element 'z' implicitly has an 'any' type.
 src/nodes/materialx/lib/mx_noise.js(1186,25): error TS2349: This expression is not callable.
-src/nodes/materialx/lib/mx_noise.js(1215,61): error TS7031: Binding element 'p_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(1215,74): error TS7031: Binding element 'jitter_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(1215,92): error TS7031: Binding element 'metric_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(1224,71): error TS7031: Binding element 'x' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(1226,72): error TS7031: Binding element 'y' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(1228,73): error TS7031: Binding element 'z' implicitly has an 'any' type.
 src/nodes/materialx/lib/mx_noise.js(1230,25): error TS2349: This expression is not callable.
-src/nodes/materialx/lib/mx_noise.js(1269,61): error TS7031: Binding element 'p_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(1269,74): error TS7031: Binding element 'jitter_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(1269,92): error TS7031: Binding element 'metric_immutable' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(1278,71): error TS7031: Binding element 'x' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(1280,72): error TS7031: Binding element 'y' implicitly has an 'any' type.
-src/nodes/materialx/lib/mx_noise.js(1282,73): error TS7031: Binding element 'z' implicitly has an 'any' type.
 src/nodes/materialx/lib/mx_noise.js(1284,25): error TS2349: This expression is not callable.
-src/nodes/materialx/lib/mx_transform_color.js(8,68): error TS7031: Binding element 'color_immutable' implicitly has an 'any' type.
 src/nodes/materialx/MaterialXNodes.js(44,80): error TS2349: This expression is not callable.
 src/nodes/materialx/MaterialXNodes.js(46,79): error TS2349: This expression is not callable.
 src/nodes/materialx/MaterialXNodes.js(51,27): error TS2349: This expression is not callable.
@@ -4280,13 +3641,6 @@ src/nodes/materialx/MaterialXNodes.js(61,59): error TS2349: This expression is n
 src/nodes/math/ConditionalNode.js(102,34): error TS2339: Property 'cache' does not exist on type 'Node'.
 src/nodes/math/ConditionalNode.js(103,30): error TS2339: Property 'cache' does not exist on type 'Node'.
 src/nodes/math/ConditionalNode.js(104,50): error TS2339: Property 'cache' does not exist on type 'Node'.
-src/nodes/math/Hash.js(11,43): error TS7031: Binding element 'seed' implicitly has an 'any' type.
-src/nodes/math/MathNode.js(970,43): error TS7031: Binding element 'uv' implicitly has an 'any' type.
-src/nodes/math/TriNoise3D.js(6,35): error TS7031: Binding element 'x' implicitly has an 'any' type.
-src/nodes/math/TriNoise3D.js(18,36): error TS7031: Binding element 'p' implicitly has an 'any' type.
-src/nodes/math/TriNoise3D.js(40,49): error TS7031: Binding element 'position' implicitly has an 'any' type.
-src/nodes/math/TriNoise3D.js(40,59): error TS7031: Binding element 'speed' implicitly has an 'any' type.
-src/nodes/math/TriNoise3D.js(40,66): error TS7031: Binding element 'time' implicitly has an 'any' type.
 src/nodes/parsers/GLSLNodeFunction.js(67,9): error TS2322: Type 'null' is not assignable to type 'number'.
 src/nodes/parsers/GLSLNodeFunction.js(71,59): error TS2345: Argument of type 'string' is not assignable to parameter of type '"in" | "out" | "inout" | undefined'.
 src/nodes/pmrem/PMREMNode.js(54,16): error TS2551: Property 'isCubeTexture' does not exist on type 'Texture'. Did you mean 'isTexture'?
@@ -4302,54 +3656,12 @@ src/nodes/pmrem/PMREMNode.js(87,22): error TS2551: Property 'texture' does not e
 src/nodes/pmrem/PMREMNode.js(255,43): error TS18047: 'texture.image' is possibly 'null'.
 src/nodes/pmrem/PMREMNode.js(273,17): error TS2339: Property 'isPMREMTexture' does not exist on type 'Texture'.
 src/nodes/pmrem/PMREMNode.js(279,60): error TS2345: Argument of type 'PMREMGenerator | null' is not assignable to parameter of type 'PMREMGenerator'.
-src/nodes/pmrem/PMREMUtils.js(27,39): error TS7031: Binding element 'direction' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(69,37): error TS7031: Binding element 'direction' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(69,48): error TS7031: Binding element 'face' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(110,46): error TS7031: Binding element 'roughness' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(147,51): error TS7031: Binding element 'uv_immutable' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(147,65): error TS7031: Binding element 'face' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(195,52): error TS7031: Binding element 'envMap' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(195,60): error TS7031: Binding element 'sampleDir_immutable' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(195,81): error TS7031: Binding element 'roughness_immutable' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(195,102): error TS7031: Binding element 'CUBEUV_TEXEL_WIDTH' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(195,122): error TS7031: Binding element 'CUBEUV_TEXEL_HEIGHT' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(195,143): error TS7031: Binding element 'CUBEUV_MAX_MIP' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(217,46): error TS7031: Binding element 'envMap' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(217,54): error TS7031: Binding element 'direction_immutable' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(217,75): error TS7031: Binding element 'mipInt_immutable' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(217,93): error TS7031: Binding element 'CUBEUV_TEXEL_WIDTH' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(217,113): error TS7031: Binding element 'CUBEUV_TEXEL_HEIGHT' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(217,134): error TS7031: Binding element 'CUBEUV_MAX_MIP' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(244,41): error TS7031: Binding element 'envMap' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(244,49): error TS7031: Binding element 'mipInt' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(244,57): error TS7031: Binding element 'outputDirection' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(244,74): error TS7031: Binding element 'theta' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(244,81): error TS7031: Binding element 'axis' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(244,87): error TS7031: Binding element 'CUBEUV_TEXEL_WIDTH' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(244,107): error TS7031: Binding element 'CUBEUV_TEXEL_HEIGHT' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(244,128): error TS7031: Binding element 'CUBEUV_MAX_MIP' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(257,43): error TS7031: Binding element 'n' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(257,46): error TS7031: Binding element 'latitudinal' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(257,59): error TS7031: Binding element 'poleAxis' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(257,69): error TS7031: Binding element 'outputDirection' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(257,86): error TS7031: Binding element 'weights' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(257,95): error TS7031: Binding element 'samples' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(257,104): error TS7031: Binding element 'dTheta' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(257,112): error TS7031: Binding element 'mipInt' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(257,120): error TS7031: Binding element 'envMap' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(257,128): error TS7031: Binding element 'CUBEUV_TEXEL_WIDTH' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(257,148): error TS7031: Binding element 'CUBEUV_TEXEL_HEIGHT' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(257,169): error TS7031: Binding element 'CUBEUV_MAX_MIP' implicitly has an 'any' type.
-src/nodes/pmrem/PMREMUtils.js(272,41): error TS7031: Binding element 'i' implicitly has an 'any' type.
-src/nodes/shapes/Shapes.js(13,54): error TS7031: Binding element 'renderer' implicitly has an 'any' type.
-src/nodes/shapes/Shapes.js(13,64): error TS7031: Binding element 'material' implicitly has an 'any' type.
 src/nodes/tsl/TSLCore.js(50,14): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
 src/nodes/tsl/TSLCore.js(62,33): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
 src/nodes/tsl/TSLCore.js(62,92): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
 src/nodes/tsl/TSLCore.js(72,33): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
 src/nodes/tsl/TSLCore.js(72,108): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
 src/nodes/tsl/TSLCore.js(112,55): error TS2345: Argument of type 'ConstNode' is not assignable to parameter of type 'Node'.
-src/nodes/tsl/TSLCore.js(153,7): error TS7023: 'ShaderNodeObject' implicitly has return type 'any' because it does not have a return type annotation and is referenced directly or indirectly in one of its return expressions.
 src/nodes/tsl/TSLCore.js(218,12): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
 src/nodes/tsl/TSLCore.js(228,12): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
 src/nodes/tsl/TSLCore.js(236,12): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
@@ -4359,7 +3671,6 @@ src/nodes/tsl/TSLCore.js(421,81): error TS2551: Property 'value' does not exist 
 src/nodes/tsl/TSLCore.js(424,33): error TS2769: No overload matches this call.
 src/nodes/tsl/TSLCore.js(424,82): error TS2551: Property 'value' does not exist on type '[any, any]'. Did you mean 'values'?
 src/nodes/tsl/TSLCore.js(466,11): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
-src/nodes/tsl/TSLCore.js(511,14): error TS7023: 'nodeObject' implicitly has return type 'any' because it does not have a return type annotation and is referenced directly or indirectly in one of its return expressions.
 src/nodes/tsl/TSLCore.js(514,28): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
 src/nodes/tsl/TSLCore.js(515,32): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
 src/nodes/tsl/TSLCore.js(521,15): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
@@ -4378,14 +3689,6 @@ src/nodes/utils/FunctionOverloadingNode.js(152,53): error TS7019: Rest parameter
 src/nodes/utils/LoopNode.js(258,83): error TS2345: Argument of type '"int"' is not assignable to parameter of type 'null | undefined'.
 src/nodes/utils/MemberNode.js(39,3): error TS2322: Type 'string' is not assignable to type 'Node'.
 src/nodes/utils/MemberNode.js(54,35): error TS2554: Expected 0 arguments, but got 2.
-src/nodes/utils/PostProcessingUtils.js(17,54): error TS7031: Binding element 'screenPosition' implicitly has an 'any' type.
-src/nodes/utils/PostProcessingUtils.js(17,70): error TS7031: Binding element 'depth' implicitly has an 'any' type.
-src/nodes/utils/PostProcessingUtils.js(17,77): error TS7031: Binding element 'projectionMatrixInverse' implicitly has an 'any' type.
-src/nodes/utils/PostProcessingUtils.js(48,56): error TS7031: Binding element 'viewPosition' implicitly has an 'any' type.
-src/nodes/utils/PostProcessingUtils.js(48,70): error TS7031: Binding element 'projectionMatrix' implicitly has an 'any' type.
-src/nodes/utils/PostProcessingUtils.js(67,57): error TS7031: Binding element 'uv' implicitly has an 'any' type.
-src/nodes/utils/PostProcessingUtils.js(67,61): error TS7031: Binding element 'depthTexture' implicitly has an 'any' type.
-src/nodes/utils/PostProcessingUtils.js(67,75): error TS7031: Binding element 'projectionMatrixInverse' implicitly has an 'any' type.
 src/nodes/utils/PostProcessingUtils.js(72,44): error TS2339: Property 'toVar' does not exist on type 'TextureNode'.
 src/nodes/utils/PostProcessingUtils.js(74,65): error TS2339: Property 'toVar' does not exist on type 'TextureNode'.
 src/nodes/utils/PostProcessingUtils.js(75,65): error TS2339: Property 'toVar' does not exist on type 'TextureNode'.
@@ -4404,7 +3707,6 @@ src/nodes/utils/RemapNode.js(84,49): error TS2339: Property 'sub' does not exist
 src/nodes/utils/RemapNode.js(88,29): error TS2339: Property 'sub' does not exist on type 'Node'.
 src/nodes/utils/RTTNode.js(40,42): error TS2345: Argument of type 'number | null' is not assignable to parameter of type 'number | undefined'.
 src/nodes/utils/RTTNode.js(179,17): error TS2345: Argument of type 'number | null' is not assignable to parameter of type 'number'.
-src/nodes/utils/RTTNode.js(183,18): error TS7031: Binding element 'renderer' implicitly has an 'any' type.
 src/nodes/utils/RTTNode.js(242,28): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
 src/nodes/utils/RTTNode.js(255,41): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
 src/nodes/utils/SpriteSheetUVNode.js(27,13): error TS2315: Type 'Node' is not generic.
@@ -4435,10 +3737,6 @@ src/nodes/utils/TriplanarTexturesNode.js(143,13): error TS2315: Type 'Node' is n
 src/nodes/utils/TriplanarTexturesNode.js(144,13): error TS2315: Type 'Node' is not generic.
 src/nodes/utils/TriplanarTexturesNode.js(145,13): error TS2315: Type 'Node' is not generic.
 src/nodes/utils/TriplanarTexturesNode.js(148,35): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
-src/nodes/utils/UVUtils.js(14,47): error TS7031: Binding element 'uv' implicitly has an 'any' type.
-src/nodes/utils/UVUtils.js(14,51): error TS7031: Binding element 'rotation' implicitly has an 'any' type.
-src/nodes/utils/UVUtils.js(30,49): error TS7031: Binding element 'uv' implicitly has an 'any' type.
-src/nodes/utils/UVUtils.js(30,53): error TS7031: Binding element 'strength' implicitly has an 'any' type.
 src/objects/BatchedMesh.js(515,4): error TS2531: Object is possibly 'null'.
 src/objects/BatchedMesh.js(545,4): error TS2531: Object is possibly 'null'.
 src/objects/BatchedMesh.js(729,4): error TS18047: 'srcIndex' is possibly 'null'.
@@ -4548,7 +3846,6 @@ src/renderers/common/Color4.js(46,3): error TS2741: Property 'a' is missing in t
 src/renderers/common/Color4.js(60,3): error TS2741: Property 'a' is missing in type 'Color' but required in type 'Color4'.
 src/renderers/common/CubeRenderTarget.js(77,14): error TS2345: Argument of type 'Mesh' is not assignable to parameter of type 'Object3D'.
 src/renderers/common/DataMap.js(18,13): error TS2314: Generic type 'WeakMap<K, V>' requires 2 type argument(s).
-src/renderers/common/extras/PMREMGenerator.js(111,3): error TS7022: '_pingPongRenderTarget' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
 src/renderers/common/extras/PMREMGenerator.js(228,13): error TS2552: Cannot find name 'Texture'. Did you mean 'texture'?
 src/renderers/common/extras/PMREMGenerator.js(258,13): error TS2552: Cannot find name 'Texture'. Did you mean 'texture'?
 src/renderers/common/extras/PMREMGenerator.js(276,13): error TS2552: Cannot find name 'Texture'. Did you mean 'texture'?
@@ -4817,21 +4114,6 @@ src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1293,48): error TS2345: Ar
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1302,56): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "fragment" | "vertex" | "any"'.
 src/renderers/webgl-fallback/utils/WebGLAttributeUtils.js(175,4): error TS2322: Type 'DualAttributeData' is not assignable to type '{ bufferGPU: any; bufferType: GLenum; type: any; byteLength: number; bytesPerElement: number; version: any; pbo: any; isInteger: boolean; id: number; }'.
 src/renderers/webgl-fallback/utils/WebGLCapabilities.js(58,3): error TS2322: Type 'number | null' is not assignable to type 'number'.
-src/renderers/webgl-fallback/utils/WebGLState.js(51,3): error TS7022: 'currentFlipSided' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-src/renderers/webgl-fallback/utils/WebGLState.js(52,3): error TS7022: 'currentCullFace' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-src/renderers/webgl-fallback/utils/WebGLState.js(55,3): error TS7022: 'currentBlending' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-src/renderers/webgl-fallback/utils/WebGLState.js(56,3): error TS7022: 'currentBlendSrc' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-src/renderers/webgl-fallback/utils/WebGLState.js(61,3): error TS7022: 'currentPolygonOffsetFactor' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-src/renderers/webgl-fallback/utils/WebGLState.js(63,3): error TS7022: 'currentColorMask' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-src/renderers/webgl-fallback/utils/WebGLState.js(64,3): error TS7022: 'currentDepthFunc' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-src/renderers/webgl-fallback/utils/WebGLState.js(65,3): error TS7022: 'currentDepthMask' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-src/renderers/webgl-fallback/utils/WebGLState.js(66,3): error TS7022: 'currentStencilFunc' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-src/renderers/webgl-fallback/utils/WebGLState.js(69,3): error TS7022: 'currentStencilFail' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-src/renderers/webgl-fallback/utils/WebGLState.js(72,3): error TS7022: 'currentStencilMask' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-src/renderers/webgl-fallback/utils/WebGLState.js(73,3): error TS7022: 'currentLineWidth' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-src/renderers/webgl-fallback/utils/WebGLState.js(83,3): error TS7022: 'currentTextureSlot' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-src/renderers/webgl-fallback/utils/WebGLState.js(261,11): error TS7022: 'currentLineWidth' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
-src/renderers/webgl-fallback/utils/WebGLState.js(320,6): error TS7022: 'currentBlendEquation' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
 src/renderers/webgl-fallback/utils/WebGLState.js(564,19): error TS2532: Object is possibly 'undefined'.
 src/renderers/webgl-fallback/utils/WebGLState.js(566,8): error TS2532: Object is possibly 'undefined'.
 src/renderers/webgl-fallback/utils/WebGLState.js(571,4): error TS2532: Object is possibly 'undefined'.
@@ -4839,7 +4121,6 @@ src/renderers/webgl-fallback/utils/WebGLState.js(588,20): error TS2532: Object i
 src/renderers/webgl-fallback/utils/WebGLState.js(590,8): error TS2532: Object is possibly 'undefined'.
 src/renderers/webgl-fallback/utils/WebGLState.js(595,4): error TS2532: Object is possibly 'undefined'.
 src/renderers/webgl-fallback/utils/WebGLState.js(737,11): error TS2554: Expected 8 arguments, but got 1.
-src/renderers/webgl-fallback/utils/WebGLState.js(1019,15): error TS7022: 'currentTextureSlot' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
 src/renderers/webgl-fallback/utils/WebGLTextureUtils.js(394,11): error TS2339: Property 'levels' does not exist on type 'Object | undefined'.
 src/renderers/webgl-fallback/utils/WebGLTextureUtils.js(394,19): error TS2339: Property 'width' does not exist on type 'Object | undefined'.
 src/renderers/webgl-fallback/utils/WebGLTextureUtils.js(394,26): error TS2339: Property 'height' does not exist on type 'Object | undefined'.
