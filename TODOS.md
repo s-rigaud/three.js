@@ -4,9 +4,6 @@
 
 # Dev
 Move this.trackTimestamp to parent Backend class
-TileLightNode.updateLightsTexture no camera
-BufferGeometry :1355
-
 
 # Investigate
 MarchingCube ref to this.enableColors inside this.init

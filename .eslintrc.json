@@ -70,8 +70,17 @@
     "no-duplicate-imports": [
       "error"
     ],
+<<<<<<< Updated upstream
     "no-var": [
       "error"
+=======
+    "no-restricted-syntax": [
+      "error",
+      {
+        "selector": "MemberExpression[object.name='arguments']",
+        "message": "Avoid using the 'arguments' object. Use rest parameters instead."
+      }
+>>>>>>> Stashed changes
     ],
     "prefer-spread": "error",
     "valid-jsdoc": [

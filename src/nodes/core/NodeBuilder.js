@@ -1738,8 +1738,7 @@ class NodeBuilder {
 				this.vars[ idNS ] ++;
 
 			}
-
-			//
+c
 
 			const count = this.getArrayCount( node );
 
