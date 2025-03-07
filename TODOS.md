@@ -27,9 +27,14 @@ Renderer.setAnimationLoop can be null
 XRManager use XRReferenceSpaceType for setting this._referenceSpace
 GLSLBuilder.transforms type
 WebGPUTextureUtils.js :880
+VertexNode prev and next are vertex type
+_removeAllVerticesFromFace return type
+MarchingCubes maxPolyCount is number
+
 
 # Dev
 OculusHandModel no path argument
+
 
 # Investigate
 All loaders method load onLoad params return type

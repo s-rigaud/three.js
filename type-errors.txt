@@ -1,10 +1,3 @@
-examples/jsm/animation/AnimationClipCreator.js(33,29): error TS2345: Argument of type 'null' is not assignable to parameter of type 'string | undefined'.
-examples/jsm/animation/AnimationClipCreator.js(53,29): error TS2345: Argument of type 'null' is not assignable to parameter of type 'string | undefined'.
-examples/jsm/animation/AnimationClipCreator.js(74,15): error TS2345: Argument of type 'number' is not assignable to parameter of type 'Vector3Like'.
-examples/jsm/animation/AnimationClipCreator.js(83,29): error TS2345: Argument of type 'null' is not assignable to parameter of type 'string | undefined'.
-examples/jsm/animation/AnimationClipCreator.js(113,29): error TS2345: Argument of type 'null' is not assignable to parameter of type 'string | undefined'.
-examples/jsm/animation/AnimationClipCreator.js(131,29): error TS2345: Argument of type 'null' is not assignable to parameter of type 'string | undefined'.
-examples/jsm/animation/AnimationClipCreator.js(161,29): error TS2345: Argument of type 'null' is not assignable to parameter of type 'string | undefined'.
 examples/jsm/animation/CCDIKSolver.js(430,34): error TS2339: Property 'target' does not exist on type 'CCDIKSolver'.
 examples/jsm/animation/CCDIKSolver.js(431,36): error TS2339: Property 'effector' does not exist on type 'CCDIKSolver'.
 examples/jsm/animation/CCDIKSolver.js(439,30): error TS2551: Property 'links' does not exist on type 'CCDIKSolver'. Did you mean 'iks'?
@@ -245,8 +238,7 @@ examples/jsm/csm/CSM.js(247,30): error TS2339: Property 'vertices' does not exis
 examples/jsm/csm/CSM.js(248,29): error TS2339: Property 'vertices' does not exist on type 'CSMFrustum'.
 examples/jsm/csm/CSM.js(267,33): error TS2339: Property 'vertices' does not exist on type 'CSMFrustum'.
 examples/jsm/csm/CSM.js(378,18): error TS2339: Property 'toSpace' does not exist on type 'CSMFrustum'.
-examples/jsm/csm/CSM.js(453,26): error TS2345: Argument of type 'null' is not assignable to parameter of type 'Object'.
-examples/jsm/csm/CSM.js(581,22): error TS2395: Individual declarations in merged declaration 'CSM' must be all exported or all local.
+examples/jsm/csm/CSM.js(582,22): error TS2395: Individual declarations in merged declaration 'CSM' must be all exported or all local.
 examples/jsm/csm/CSMFrustum.js(123,17): error TS2554: Expected 1 arguments, but got 0.
 examples/jsm/csm/CSMFrustum.js(207,10): error TS2484: Export declaration conflicts with exported declaration of 'CSMFrustum'.
 examples/jsm/csm/CSMShadowNode.js(12,10): error TS18042: 'CSMFrustum' is a type and cannot be imported in JavaScript files. Use 'import("./CSMFrustum.js").CSMFrustum' in a JSDoc type annotation.
@@ -287,18 +279,13 @@ examples/jsm/curves/NURBSCurve.js(129,8): error TS2339: Property 'knots' does no
 examples/jsm/curves/NURBSCurve.js(130,8): error TS2339: Property 'controlPoints' does not exist on type 'CurveJSON'.
 examples/jsm/curves/NURBSCurve.js(131,8): error TS2339: Property 'startKnot' does not exist on type 'CurveJSON'.
 examples/jsm/curves/NURBSCurve.js(132,8): error TS2339: Property 'endKnot' does not exist on type 'CurveJSON'.
-examples/jsm/curves/NURBSSurface.js(90,86): error TS2345: Argument of type 'any[][]' is not assignable to parameter of type 'Vector4[]'.
-examples/jsm/curves/NURBSUtils.js(386,2): error TS2322: Type 'Vector3[]' is not assignable to type 'Vector4[]'.
 examples/jsm/curves/NURBSUtils.js(486,4): error TS2322: Type 'Vector4' is not assignable to type 'never'.
 examples/jsm/curves/NURBSVolume.js(45,5): error TS2322: Type 'never[]' is not assignable to type 'never'.
 examples/jsm/curves/NURBSVolume.js(50,6): error TS2322: Type 'Vector4' is not assignable to type 'never'.
-examples/jsm/curves/NURBSVolume.js(74,112): error TS2345: Argument of type 'never[][]' is not assignable to parameter of type 'Vector4[]'.
-examples/jsm/effects/AsciiEffect.js(143,18): error TS2322: Type 'string' is not assignable to type 'string[]'.
 examples/jsm/effects/AsciiEffect.js(300,10): error TS2484: Export declaration conflicts with exported declaration of 'AsciiEffect'.
 examples/jsm/effects/OutlineEffect.js(145,5): error TS2353: Object literal may only specify known properties, and 'type' does not exist in type 'ShaderMaterialParameters'.
 examples/jsm/effects/OutlineEffect.js(399,30): error TS2339: Property 'autoClear' does not exist on type 'OutlineEffect'.
 examples/jsm/effects/OutlineEffect.js(487,10): error TS2484: Export declaration conflicts with exported declaration of 'OutlineEffect'.
-examples/jsm/effects/PeppersGhostEffect.js(70,14): error TS2552: Cannot find name 'Object3D'. Did you mean 'Object'?
 examples/jsm/exporters/DRACOExporter.js(219,3): error TS2740: Type 'Int8Array<ArrayBuffer>' is missing the following properties from type 'ArrayBuffer': maxByteLength, resizable, resize, detached, and 2 more.
 examples/jsm/exporters/DRACOExporter.js(309,10): error TS2484: Export declaration conflicts with exported declaration of 'DRACOExporter'.
 examples/jsm/exporters/EXRExporter.js(43,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
@@ -341,7 +328,6 @@ examples/jsm/exporters/GLTFExporter.js(1220,13): error TS2339: Property 'bufferV
 examples/jsm/exporters/GLTFExporter.js(1239,15): error TS2339: Property 'bufferViews' does not exist on type '{ asset: { version: string; generator: string; }; }'.
 examples/jsm/exporters/GLTFExporter.js(1239,34): error TS2339: Property 'bufferViews' does not exist on type '{ asset: { version: string; generator: string; }; }'.
 examples/jsm/exporters/GLTFExporter.js(1256,19): error TS2339: Property 'bufferViews' does not exist on type '{ asset: { version: string; generator: string; }; }'.
-examples/jsm/exporters/GLTFExporter.js(1341,86): error TS2345: Argument of type 'number | undefined' is not assignable to parameter of type 'number | null'.
 examples/jsm/exporters/GLTFExporter.js(1355,52): error TS2339: Property 'normalized' does not exist on type '{ bufferView: any; byteOffset: any; componentType: number; count: number; max: any; min: any; type: any; }'.
 examples/jsm/exporters/GLTFExporter.js(1356,15): error TS2339: Property 'accessors' does not exist on type '{ asset: { version: string; generator: string; }; }'.
 examples/jsm/exporters/GLTFExporter.js(1356,32): error TS2339: Property 'accessors' does not exist on type '{ asset: { version: string; generator: string; }; }'.
@@ -394,8 +380,6 @@ examples/jsm/exporters/GLTFExporter.js(2191,15): error TS2339: Property 'cameras
 examples/jsm/exporters/GLTFExporter.js(2210,15): error TS2339: Property 'animations' does not exist on type '{ asset: { version: string; generator: string; }; }'.
 examples/jsm/exporters/GLTFExporter.js(2210,33): error TS2339: Property 'animations' does not exist on type '{ asset: { version: string; generator: string; }; }'.
 examples/jsm/exporters/GLTFExporter.js(2212,23): error TS2341: Property 'Utils' is private and only accessible within class 'GLTFExporter'.
-examples/jsm/exporters/GLTFExporter.js(2282,17): error TS2554: Expected 2-4 arguments, but got 1.
-examples/jsm/exporters/GLTFExporter.js(2283,18): error TS2554: Expected 2-4 arguments, but got 1.
 examples/jsm/exporters/GLTFExporter.js(2297,8): error TS2339: Property 'animations' does not exist on type '{ asset: { version: string; generator: string; }; }'.
 examples/jsm/exporters/GLTFExporter.js(2298,38): error TS2339: Property 'animations' does not exist on type '{ asset: { version: string; generator: string; }; }'.
 examples/jsm/exporters/GLTFExporter.js(2303,15): error TS2339: Property 'animations' does not exist on type '{ asset: { version: string; generator: string; }; }'.
@@ -403,7 +387,6 @@ examples/jsm/exporters/GLTFExporter.js(2316,21): error TS2339: Property 'nodes' 
 examples/jsm/exporters/GLTFExporter.js(2338,13): error TS2339: Property 'skins' does not exist on type '{ asset: { version: string; generator: string; }; }'.
 examples/jsm/exporters/GLTFExporter.js(2338,40): error TS2339: Property 'skins' does not exist on type '{ asset: { version: string; generator: string; }; }'.
 examples/jsm/exporters/GLTFExporter.js(2340,8): error TS2339: Property 'skins' does not exist on type '{ asset: { version: string; generator: string; }; }'.
-examples/jsm/exporters/GLTFExporter.js(2341,30): error TS2554: Expected 2-4 arguments, but got 1.
 examples/jsm/exporters/GLTFExporter.js(2346,38): error TS2339: Property 'skins' does not exist on type '{ asset: { version: string; generator: string; }; }'.
 examples/jsm/exporters/GLTFExporter.js(2363,15): error TS2339: Property 'nodes' does not exist on type '{ asset: { version: string; generator: string; }; }'.
 examples/jsm/exporters/GLTFExporter.js(2363,28): error TS2339: Property 'nodes' does not exist on type '{ asset: { version: string; generator: string; }; }'.
@@ -418,7 +401,6 @@ examples/jsm/exporters/GLTFExporter.js(3356,14): error TS2341: Property 'Utils' 
 examples/jsm/exporters/GLTFExporter.js(3535,25): error TS18048: 'keyframeIndex' is possibly 'undefined'.
 examples/jsm/exporters/GLTFExporter.js(3601,10): error TS2484: Export declaration conflicts with exported declaration of 'GLTFExporter'.
 examples/jsm/exporters/KTX2Exporter.js(243,28): error TS2345: Argument of type '{ channelType: number; bitOffset: number; bitLength: number; samplePosition: number[]; sampleLower: any; sampleUpper: any; }' is not assignable to parameter of type 'never'.
-examples/jsm/exporters/PLYExporter.js(148,4): error TS2322: Type 'null' is not assignable to type 'string | ArrayBuffer'.
 examples/jsm/exporters/PLYExporter.js(164,8): error TS2367: This comparison appears to be unintentional because the types 'false' and 'true' have no overlap.
 examples/jsm/exporters/PLYExporter.js(174,8): error TS2367: This comparison appears to be unintentional because the types 'false' and 'true' have no overlap.
 examples/jsm/exporters/PLYExporter.js(183,8): error TS2367: This comparison appears to be unintentional because the types 'false' and 'true' have no overlap.
@@ -509,10 +491,6 @@ examples/jsm/lines/LineMaterial.js(451,19): error TS2345: Argument of type 'Obje
 examples/jsm/lines/LineMaterial.js(506,6): error TS2611: 'linewidth' is defined as a property in class 'ShaderMaterial', but is overridden here in 'LineMaterial' as an accessor.
 examples/jsm/lines/LineMaterial.js(629,6): error TS2611: 'opacity' is defined as a property in class 'ShaderMaterial', but is overridden here in 'LineMaterial' as an accessor.
 examples/jsm/lines/LineMaterial.js(667,6): error TS2611: 'alphaToCoverage' is defined as a property in class 'ShaderMaterial', but is overridden here in 'LineMaterial' as an accessor.
-examples/jsm/lines/LineMaterial.js(669,3): error TS2322: Type 'boolean' is not assignable to type 'Vector2'.
-examples/jsm/lines/LineMaterial.js(677,8): error TS2367: This comparison appears to be unintentional because the types 'boolean' and 'Vector2' have no overlap.
-examples/jsm/lines/LineMaterial.js(677,10): error TS2367: This comparison appears to be unintentional because the types 'Vector2' and 'boolean' have no overlap.
-examples/jsm/lines/LineMaterial.js(683,8): error TS2367: This comparison appears to be unintentional because the types 'Vector2' and 'boolean' have no overlap.
 examples/jsm/lines/LineSegments2.js(260,10): error TS2345: Argument of type 'LineSegmentsGeometry' is not assignable to parameter of type 'BufferGeometry<NormalBufferAttributes>'.
 examples/jsm/lines/LineSegments2.js(319,36): error TS2339: Property 'worldUnits' does not exist on type 'Material | Material[]'.
 examples/jsm/lines/LineSegments2.js(336,25): error TS2339: Property 'linewidth' does not exist on type 'Material | Material[]'.
@@ -569,11 +547,10 @@ examples/jsm/loaders/3MFLoader.js(880,22): error TS2693: 'Blob' only refers to a
 examples/jsm/loaders/AMFLoader.js(88,19): error TS2554: Expected 2 arguments, but got 1.
 examples/jsm/loaders/AMFLoader.js(112,26): error TS18047: 'zip' is possibly 'null'.
 examples/jsm/loaders/AMFLoader.js(112,31): error TS2538: Type 'null' cannot be used as an index type.
-examples/jsm/loaders/AMFLoader.js(245,12): error TS2551: Property 'materialId' does not exist on type '{ name: string; triangles: never[]; materialid: null; }'. Did you mean 'materialid'?
 examples/jsm/loaders/AMFLoader.js(269,29): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
 examples/jsm/loaders/AMFLoader.js(363,44): error TS2769: No overload matches this call.
 examples/jsm/loaders/AMFLoader.js(364,46): error TS2769: No overload matches this call.
-examples/jsm/loaders/AMFLoader.js(368,27): error TS2345: Argument of type '{ name: string; triangles: never[]; materialid: null; }' is not assignable to parameter of type 'never'.
+examples/jsm/loaders/AMFLoader.js(368,27): error TS2345: Argument of type '{ name: string; triangles: never[]; materialId: null; }' is not assignable to parameter of type 'never'.
 examples/jsm/loaders/AMFLoader.js(376,32): error TS2345: Argument of type '{ vertices: never[]; normals: never[]; volumes: never[]; color: { r: number; g: number; b: number; a: number; } | null; }' is not assignable to parameter of type 'never'.
 examples/jsm/loaders/BVHLoader.js(270,9): error TS2339: Property 'offset' does not exist on type '{ name: string; type: string; frames: never[]; }'.
 examples/jsm/loaders/BVHLoader.js(285,10): error TS2339: Property 'channels' does not exist on type '{ name: string; type: string; frames: never[]; }'.
@@ -599,22 +576,22 @@ examples/jsm/loaders/ColladaLoader.js(1130,12): error TS2339: Property 'techniqu
 examples/jsm/loaders/ColladaLoader.js(1134,12): error TS2339: Property 'extra' does not exist on type '{ surfaces: {}; samplers: {}; }'.
 examples/jsm/loaders/ColladaLoader.js(1518,12): error TS2339: Property 'url' does not exist on type '{ name: any; }'.
 examples/jsm/loaders/ColladaLoader.js(1661,78): error TS2345: Argument of type '"srgb"' is not assignable to parameter of type 'null | undefined'.
-examples/jsm/loaders/ColladaLoader.js(1664,40): error TS2339: Property 'specular' does not exist on type 'MeshBasicMaterial | MeshLambertMaterial | MeshPhongMaterial'.
-examples/jsm/loaders/ColladaLoader.js(1664,60): error TS2339: Property 'specular' does not exist on type 'MeshBasicMaterial | MeshLambertMaterial | MeshPhongMaterial'.
-examples/jsm/loaders/ColladaLoader.js(1668,41): error TS2339: Property 'normalMap' does not exist on type 'MeshBasicMaterial | MeshLambertMaterial | MeshPhongMaterial'.
+examples/jsm/loaders/ColladaLoader.js(1664,40): error TS2339: Property 'specular' does not exist on type 'MeshBasicMaterial | MeshPhongMaterial | MeshLambertMaterial'.
+examples/jsm/loaders/ColladaLoader.js(1664,60): error TS2339: Property 'specular' does not exist on type 'MeshBasicMaterial | MeshPhongMaterial | MeshLambertMaterial'.
+examples/jsm/loaders/ColladaLoader.js(1668,41): error TS2339: Property 'normalMap' does not exist on type 'MeshBasicMaterial | MeshPhongMaterial | MeshLambertMaterial'.
 examples/jsm/loaders/ColladaLoader.js(1671,83): error TS2345: Argument of type '"srgb"' is not assignable to parameter of type 'null | undefined'.
-examples/jsm/loaders/ColladaLoader.js(1674,40): error TS2339: Property 'shininess' does not exist on type 'MeshBasicMaterial | MeshLambertMaterial | MeshPhongMaterial'.
-examples/jsm/loaders/ColladaLoader.js(1674,61): error TS2339: Property 'shininess' does not exist on type 'MeshBasicMaterial | MeshLambertMaterial | MeshPhongMaterial'.
-examples/jsm/loaders/ColladaLoader.js(1677,40): error TS2339: Property 'emissive' does not exist on type 'MeshBasicMaterial | MeshLambertMaterial | MeshPhongMaterial'.
-examples/jsm/loaders/ColladaLoader.js(1677,60): error TS2339: Property 'emissive' does not exist on type 'MeshBasicMaterial | MeshLambertMaterial | MeshPhongMaterial'.
-examples/jsm/loaders/ColladaLoader.js(1678,41): error TS2339: Property 'emissiveMap' does not exist on type 'MeshBasicMaterial | MeshLambertMaterial | MeshPhongMaterial'.
+examples/jsm/loaders/ColladaLoader.js(1674,40): error TS2339: Property 'shininess' does not exist on type 'MeshBasicMaterial | MeshPhongMaterial | MeshLambertMaterial'.
+examples/jsm/loaders/ColladaLoader.js(1674,61): error TS2339: Property 'shininess' does not exist on type 'MeshBasicMaterial | MeshPhongMaterial | MeshLambertMaterial'.
+examples/jsm/loaders/ColladaLoader.js(1677,40): error TS2339: Property 'emissive' does not exist on type 'MeshBasicMaterial | MeshPhongMaterial | MeshLambertMaterial'.
+examples/jsm/loaders/ColladaLoader.js(1677,60): error TS2339: Property 'emissive' does not exist on type 'MeshBasicMaterial | MeshPhongMaterial | MeshLambertMaterial'.
+examples/jsm/loaders/ColladaLoader.js(1678,41): error TS2339: Property 'emissiveMap' does not exist on type 'MeshBasicMaterial | MeshPhongMaterial | MeshLambertMaterial'.
 examples/jsm/loaders/ColladaLoader.js(1678,86): error TS2345: Argument of type '"srgb"' is not assignable to parameter of type 'null | undefined'.
-examples/jsm/loaders/ColladaLoader.js(1686,18): error TS2339: Property 'specular' does not exist on type 'MeshBasicMaterial | MeshLambertMaterial | MeshPhongMaterial'.
-examples/jsm/loaders/ColladaLoader.js(1686,75): error TS2339: Property 'specular' does not exist on type 'MeshBasicMaterial | MeshLambertMaterial | MeshPhongMaterial'.
-examples/jsm/loaders/ColladaLoader.js(1687,18): error TS2339: Property 'emissive' does not exist on type 'MeshBasicMaterial | MeshLambertMaterial | MeshPhongMaterial'.
-examples/jsm/loaders/ColladaLoader.js(1687,75): error TS2339: Property 'emissive' does not exist on type 'MeshBasicMaterial | MeshLambertMaterial | MeshPhongMaterial'.
-examples/jsm/loaders/ColladaLoader.js(1773,17): error TS2339: Property 'normalMap' does not exist on type 'MeshBasicMaterial | MeshLambertMaterial | MeshPhongMaterial'.
-examples/jsm/loaders/ColladaLoader.js(1774,17): error TS2339: Property 'normalScale' does not exist on type 'MeshBasicMaterial | MeshLambertMaterial | MeshPhongMaterial'.
+examples/jsm/loaders/ColladaLoader.js(1686,18): error TS2339: Property 'specular' does not exist on type 'MeshBasicMaterial | MeshPhongMaterial | MeshLambertMaterial'.
+examples/jsm/loaders/ColladaLoader.js(1686,75): error TS2339: Property 'specular' does not exist on type 'MeshBasicMaterial | MeshPhongMaterial | MeshLambertMaterial'.
+examples/jsm/loaders/ColladaLoader.js(1687,18): error TS2339: Property 'emissive' does not exist on type 'MeshBasicMaterial | MeshPhongMaterial | MeshLambertMaterial'.
+examples/jsm/loaders/ColladaLoader.js(1687,75): error TS2339: Property 'emissive' does not exist on type 'MeshBasicMaterial | MeshPhongMaterial | MeshLambertMaterial'.
+examples/jsm/loaders/ColladaLoader.js(1773,17): error TS2339: Property 'normalMap' does not exist on type 'MeshBasicMaterial | MeshPhongMaterial | MeshLambertMaterial'.
+examples/jsm/loaders/ColladaLoader.js(1774,17): error TS2339: Property 'normalScale' does not exist on type 'MeshBasicMaterial | MeshPhongMaterial | MeshLambertMaterial'.
 examples/jsm/loaders/ColladaLoader.js(1810,12): error TS2339: Property 'optics' does not exist on type '{ name: any; }'.
 examples/jsm/loaders/ColladaLoader.js(2068,33): error TS18048: 'light' is possibly 'undefined'.
 examples/jsm/loaders/ColladaLoader.js(2069,36): error TS18048: 'light' is possibly 'undefined'.
@@ -735,7 +712,7 @@ examples/jsm/loaders/EXRLoader.js(2522,14): error TS2339: Property 'decode' does
 examples/jsm/loaders/EXRLoader.js(2528,21): error TS2339: Property 'byteArray' does not exist on type '{ size: number; viewer: any; array: any; offset: any; width: number; height: number; inputChannels: any; channelByteOffsets: {}; scanOrder: null; totalBytes: null; columns: null; lines: null; type: null; uncompress: null; getter: null; format: null; colorSpace: "srgb-linear"; }'.
 examples/jsm/loaders/FBXLoader.js(146,66): error TS2554: Expected 0 arguments, but got 1.
 examples/jsm/loaders/FBXLoader.js(336,43): error TS2693: 'Blob' only refers to a type, but is being used as a value here.
-examples/jsm/loaders/FBXLoader.js(521,23): error TS2345: Argument of type '{ bumpScale: any; color: Color; displacementScale: any; emissive: Color; emissiveIntensity: number; opacity: number | null; transparent: boolean; reflectivity: any; shininess: any; specular: Color; }' is not assignable to parameter of type 'MeshLambertMaterialParameters & MeshPhongMaterialParameters'.
+examples/jsm/loaders/FBXLoader.js(521,23): error TS2345: Argument of type '{ bumpScale: any; color: Color; displacementScale: any; emissive: Color; emissiveIntensity: number; opacity: number | null; transparent: boolean; reflectivity: any; shininess: any; specular: Color; }' is not assignable to parameter of type 'MeshPhongMaterialParameters & MeshLambertMaterialParameters'.
 examples/jsm/loaders/FBXLoader.js(627,17): error TS2339: Property 'bumpMap' does not exist on type '{ bumpScale: any; color: Color; displacementScale: any; emissive: Color; emissiveIntensity: number; opacity: number | null; transparent: boolean; reflectivity: any; shininess: any; specular: Color; }'.
 examples/jsm/loaders/FBXLoader.js(631,17): error TS2339: Property 'aoMap' does not exist on type '{ bumpScale: any; color: Color; displacementScale: any; emissive: Color; emissiveIntensity: number; opacity: number | null; transparent: boolean; reflectivity: any; shininess: any; specular: Color; }'.
 examples/jsm/loaders/FBXLoader.js(636,17): error TS2339: Property 'map' does not exist on type '{ bumpScale: any; color: Color; displacementScale: any; emissive: Color; emissiveIntensity: number; opacity: number | null; transparent: boolean; reflectivity: any; shininess: any; specular: Color; }'.
@@ -806,27 +783,21 @@ examples/jsm/loaders/FontLoader.js(94,15): error TS18048: 'ret' is possibly 'und
 examples/jsm/loaders/FontLoader.js(95,16): error TS18048: 'ret' is possibly 'undefined'.
 examples/jsm/loaders/GCodeLoader.js(168,5): error TS2739: Type '{ x: any; y: any; z: any; e: any; f: any; }' is missing the following properties from type '{ x: number; y: number; z: number; e: number; f: number; extruding: boolean; relative: boolean; }': extruding, relative
 examples/jsm/loaders/GLTFLoader.js(2299,12): error TS2503: Cannot find namespace 'GLTF'.
+examples/jsm/loaders/GLTFLoader.js(2307,26): error TS2339: Property 'userData' does not exist on type 'Object | Object3D<Object3DEventMap> | Material | BufferGeometry<NormalBufferAttributes>'.
 examples/jsm/loaders/GLTFLoader.js(2323,18): error TS2503: Cannot find namespace 'GLTF'.
 examples/jsm/loaders/GLTFLoader.js(2410,12): error TS2503: Cannot find namespace 'GLTF'.
 examples/jsm/loaders/GLTFLoader.js(2420,4): error TS18048: 'mesh.morphTargetInfluences' is possibly 'undefined'.
 examples/jsm/loaders/GLTFLoader.js(2431,8): error TS18048: 'mesh.morphTargetInfluences' is possibly 'undefined'.
-examples/jsm/loaders/GLTFLoader.js(2673,28): error TS2345: Argument of type '{ scene: Object; scenes: Object[]; animations: Object[]; cameras: Object[]; asset: any; parser: this; userData: {}; }' is not assignable to parameter of type 'Material | Object3D<Object3DEventMap> | BufferGeometry<NormalBufferAttributes>'.
 examples/jsm/loaders/GLTFLoader.js(3015,72): error TS2345: Argument of type '(value: ArrayBuffer | PromiseLike<ArrayBuffer>) => void' is not assignable to parameter of type '(data: string | ArrayBuffer) => void'.
 examples/jsm/loaders/GLTFLoader.js(3277,32): error TS2339: Property 'webkitURL' does not exist on type 'typeof self'.
 examples/jsm/loaders/GLTFLoader.js(3289,22): error TS2693: 'Blob' only refers to a type, but is being used as a value here.
-examples/jsm/loaders/GLTFLoader.js(3562,26): error TS2554: Expected 4 arguments, but got 3.
-examples/jsm/loaders/GLTFLoader.js(3563,26): error TS2554: Expected 4 arguments, but got 3.
-examples/jsm/loaders/GLTFLoader.js(3610,25): error TS2554: Expected 4 arguments, but got 3.
-examples/jsm/loaders/GLTFLoader.js(3626,25): error TS2554: Expected 4 arguments, but got 3.
 examples/jsm/loaders/GLTFLoader.js(3696,19): error TS2503: Cannot find namespace 'GLTF'.
-examples/jsm/loaders/GLTFLoader.js(3789,3): error TS2322: Type 'Promise<Mesh<BufferGeometry<NormalBufferAttributes>, Material | Material[], Object3DEventMap> | ... 4 more ... | Points<...>>' is not assignable to type 'Promise<Mesh<BufferGeometry<NormalBufferAttributes>, Material | Material[], Object3DEventMap> | Group<...> | SkinnedMesh<...>>'.
 examples/jsm/loaders/GLTFLoader.js(3817,16): error TS2339: Property 'isSkinnedMesh' does not exist on type 'Mesh<any, any, Object3DEventMap>'.
 examples/jsm/loaders/GLTFLoader.js(3820,12): error TS2339: Property 'normalizeSkinWeights' does not exist on type 'Mesh<any, any, Object3DEventMap>'.
 examples/jsm/loaders/GLTFLoader.js(3858,26): error TS2345: Argument of type 'Mesh<any, any, Object3DEventMap> | Line<any, any, Object3DEventMap> | Points<any, any, Object3DEventMap>' is not assignable to parameter of type 'Mesh<BufferGeometry<NormalBufferAttributes>, Material | Material[], Object3DEventMap>'.
-examples/jsm/loaders/GLTFLoader.js(3923,4): error TS2322: Type 'undefined' is not assignable to type 'Promise<THREE.Camera>'.
+examples/jsm/loaders/GLTFLoader.js(3923,4): error TS2322: Type 'undefined' is not assignable to type 'Promise<any>'.
 examples/jsm/loaders/GLTFLoader.js(3937,25): error TS18048: 'camera' is possibly 'undefined'.
-examples/jsm/loaders/GLTFLoader.js(3939,27): error TS2345: Argument of type 'PerspectiveCamera | OrthographicCamera | undefined' is not assignable to parameter of type 'Material | Object3D<Object3DEventMap> | BufferGeometry<NormalBufferAttributes>'.
-examples/jsm/loaders/GLTFLoader.js(4466,25): error TS2339: Property 'position' does not exist on type '{ scale: string; translation: string; rotation: string; weights: string; }'.
+examples/jsm/loaders/GLTFLoader.js(3939,27): error TS2345: Argument of type 'OrthographicCamera | PerspectiveCamera | undefined' is not assignable to parameter of type 'Object | Object3D<Object3DEventMap> | Material | BufferGeometry<NormalBufferAttributes>'.
 examples/jsm/loaders/GLTFLoader.js(4566,12): error TS2503: Cannot find namespace 'GLTF'.
 examples/jsm/loaders/GLTFLoader.js(4681,12): error TS2503: Cannot find namespace 'GLTF'.
 examples/jsm/loaders/HDRCubeTextureLoader.js(32,9): error TS2678: Type '1015' is not comparable to type '1016'.
@@ -893,8 +864,6 @@ examples/jsm/loaders/LDrawLoader.js(1605,5): error TS18047: 'normals' is possibl
 examples/jsm/loaders/LDrawLoader.js(1701,3): error TS18047: 'object3d' is possibly 'null'.
 examples/jsm/loaders/LDrawLoader.js(1701,12): error TS2339: Property 'isConditionalLine' does not exist on type 'Mesh<BufferGeometry<NormalBufferAttributes>, any, Object3DEventMap> | LineSegments<BufferGeometry<NormalBufferAttributes>, any, Object3DEventMap>'.
 examples/jsm/loaders/LDrawLoader.js(1811,22): error TS2339: Property 'split' does not exist on type 'string | ArrayBuffer'.
-examples/jsm/loaders/LDrawLoader.js(1842,24): error TS2554: Expected 0-1 arguments, but got 2.
-examples/jsm/loaders/LDrawLoader.js(1860,23): error TS2554: Expected 0-1 arguments, but got 2.
 examples/jsm/loaders/LDrawLoader.js(2154,100): error TS2339: Property 'getLineNumberString' does not exist on type 'typeof LineParser'.
 examples/jsm/loaders/LDrawLoader.js(2239,3): error TS18047: 'material' is possibly 'null'.
 examples/jsm/loaders/LDrawLoader.js(2240,3): error TS18047: 'material' is possibly 'null'.
@@ -1149,7 +1118,6 @@ examples/jsm/loaders/MaterialXLoader.js(833,20): error TS7019: Rest parameter 'n
 examples/jsm/loaders/MD2Loader.js(272,26): error TS2345: Argument of type 'number' is not assignable to parameter of type 'never'.
 examples/jsm/loaders/MD2Loader.js(273,25): error TS2345: Argument of type 'number' is not assignable to parameter of type 'never'.
 examples/jsm/loaders/MD2Loader.js(391,12): error TS2339: Property 'animations' does not exist on type 'BufferGeometry<NormalBufferAttributes>'.
-examples/jsm/loaders/MD2Loader.js(391,39): error TS2554: Expected 3 arguments, but got 2.
 examples/jsm/loaders/MTLLoader.js(55,5): error TS2722: Cannot invoke an object which is possibly 'undefined'.
 examples/jsm/loaders/MTLLoader.js(55,26): error TS2345: Argument of type 'string | ArrayBuffer' is not assignable to parameter of type 'string'.
 examples/jsm/loaders/MTLLoader.js(73,6): error TS2345: Argument of type 'Function | undefined' is not assignable to parameter of type '((event: ProgressEvent) => void) | undefined'.
@@ -1440,28 +1408,235 @@ examples/jsm/materials/MeshPostProcessingMaterial.js(40,21): error TS18048: 'par
 examples/jsm/materials/MeshPostProcessingMaterial.js(41,26): error TS18048: 'parameters' is possibly 'undefined'.
 examples/jsm/materials/MeshPostProcessingMaterial.js(42,10): error TS18048: 'parameters' is possibly 'undefined'.
 examples/jsm/materials/MeshPostProcessingMaterial.js(43,10): error TS18048: 'parameters' is possibly 'undefined'.
-examples/jsm/math/MeshSurfaceSampler.js(126,27): error TS2531: Object is possibly 'null'.
-examples/jsm/math/MeshSurfaceSampler.js(126,46): error TS2531: Object is possibly 'null'.
-examples/jsm/math/MeshSurfaceSampler.js(135,13): error TS18047: 'dist' is possibly 'null'.
-examples/jsm/math/MeshSurfaceSampler.js(143,22): error TS18047: 'dist' is possibly 'null'.
-examples/jsm/math/MeshSurfaceSampler.js(143,46): error TS18047: 'dist' is possibly 'null'.
-examples/jsm/math/MeshSurfaceSampler.js(149,20): error TS18047: 'dist' is possibly 'null'.
-examples/jsm/math/OBB.js(161,3): error TS2322: Type 'Vector3' is not assignable to type 'null'.
-examples/jsm/math/OBB.js(162,3): error TS2322: Type 'number' is not assignable to type 'never'.
-examples/jsm/math/OBB.js(163,3): error TS2322: Type 'number' is not assignable to type 'never'.
-examples/jsm/math/OBB.js(164,3): error TS2322: Type 'number' is not assignable to type 'never'.
-examples/jsm/math/OBB.js(167,3): error TS2322: Type 'Vector3' is not assignable to type 'null'.
-examples/jsm/math/OBB.js(168,3): error TS2322: Type 'number' is not assignable to type 'never'.
-examples/jsm/math/OBB.js(169,3): error TS2322: Type 'number' is not assignable to type 'never'.
-examples/jsm/math/OBB.js(170,3): error TS2322: Type 'number' is not assignable to type 'never'.
-examples/jsm/math/OBB.js(179,5): error TS2322: Type 'number' is not assignable to type 'never'.
-examples/jsm/math/OBB.js(187,18): error TS2345: Argument of type 'null' is not assignable to parameter of type 'Vector3Like'.
-examples/jsm/math/OBB.js(203,5): error TS2322: Type 'number' is not assignable to type 'never'.
-examples/jsm/math/Octree.js(262,43): error TS2345: Argument of type 'Vector3' is not assignable to parameter of type 'null | undefined'.
-examples/jsm/math/Octree.js(389,32): error TS2339: Property 'normal' does not exist on type 'true | { normal: any; point: Vector3; depth: number; }'.
-examples/jsm/math/Octree.js(389,62): error TS2339: Property 'depth' does not exist on type 'true | { normal: any; point: Vector3; depth: number; }'.
-examples/jsm/math/Octree.js(423,32): error TS2339: Property 'normal' does not exist on type 'true | { normal: Vector3; point: Vector3; depth: number; }'.
-examples/jsm/math/Octree.js(423,62): error TS2339: Property 'depth' does not exist on type 'true | { normal: Vector3; point: Vector3; depth: number; }'.
+examples/jsm/math/ConvexHull.js(269,10): error TS2341: Property 'face' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(271,13): error TS2341: Property 'outside' is private and only accessible within class 'Face'.
+examples/jsm/math/ConvexHull.js(273,18): error TS2341: Property 'append' is private and only accessible within class 'VertexList'.
+examples/jsm/math/ConvexHull.js(277,18): error TS2341: Property 'insertBefore' is private and only accessible within class 'VertexList'.
+examples/jsm/math/ConvexHull.js(277,37): error TS2341: Property 'outside' is private and only accessible within class 'Face'.
+examples/jsm/math/ConvexHull.js(281,8): error TS2341: Property 'outside' is private and only accessible within class 'Face'.
+examples/jsm/math/ConvexHull.js(299,24): error TS2341: Property 'outside' is private and only accessible within class 'Face'.
+examples/jsm/math/ConvexHull.js(303,16): error TS2341: Property 'next' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(303,40): error TS2341: Property 'next' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(303,45): error TS2339: Property 'face' does not exist on type 'Vector3'.
+examples/jsm/math/ConvexHull.js(307,5): error TS2739: Type 'Vector3' is missing the following properties from type 'VertexNode': point, prev, next, face
+examples/jsm/math/ConvexHull.js(307,10): error TS2341: Property 'outside' is private and only accessible within class 'Face'.
+examples/jsm/math/ConvexHull.js(307,27): error TS2341: Property 'next' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(313,10): error TS2341: Property 'outside' is private and only accessible within class 'Face'.
+examples/jsm/math/ConvexHull.js(319,17): error TS2341: Property 'remove' is private and only accessible within class 'VertexList'.
+examples/jsm/math/ConvexHull.js(331,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
+examples/jsm/math/ConvexHull.js(335,13): error TS2341: Property 'outside' is private and only accessible within class 'Face'.
+examples/jsm/math/ConvexHull.js(339,23): error TS2341: Property 'outside' is private and only accessible within class 'Face'.
+examples/jsm/math/ConvexHull.js(340,19): error TS2341: Property 'outside' is private and only accessible within class 'Face'.
+examples/jsm/math/ConvexHull.js(342,16): error TS2341: Property 'next' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(342,37): error TS2341: Property 'next' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(342,42): error TS2339: Property 'face' does not exist on type 'Vector3'.
+examples/jsm/math/ConvexHull.js(344,5): error TS2739: Type 'Vector3' is missing the following properties from type 'VertexNode': point, prev, next, face
+examples/jsm/math/ConvexHull.js(344,15): error TS2341: Property 'next' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(348,18): error TS2341: Property 'removeSubList' is private and only accessible within class 'VertexList'.
+examples/jsm/math/ConvexHull.js(352,10): error TS2341: Property 'prev' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(352,21): error TS2341: Property 'next' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(353,9): error TS2341: Property 'outside' is private and only accessible within class 'Face'.
+examples/jsm/math/ConvexHull.js(355,4): error TS2740: Type 'VertexNode' is missing the following properties from type 'ConvexHull': tolerance, faces, newFaces, assigned, and 23 more.
+examples/jsm/math/ConvexHull.js(383,21): error TS2341: Property 'appendChain' is private and only accessible within class 'VertexList'.
+examples/jsm/math/ConvexHull.js(383,34): error TS2345: Argument of type 'ConvexHull' is not assignable to parameter of type 'VertexNode'.
+examples/jsm/math/ConvexHull.js(397,32): error TS2339: Property 'next' does not exist on type 'ConvexHull'.
+examples/jsm/math/ConvexHull.js(399,37): error TS2341: Property 'distanceToPoint' is private and only accessible within class 'Face'.
+examples/jsm/math/ConvexHull.js(399,61): error TS2339: Property 'point' does not exist on type 'ConvexHull'.
+examples/jsm/math/ConvexHull.js(405,30): error TS2345: Argument of type 'ConvexHull' is not assignable to parameter of type 'VertexNode'.
+examples/jsm/math/ConvexHull.js(409,23): error TS2341: Property 'append' is private and only accessible within class 'VertexList'.
+examples/jsm/math/ConvexHull.js(409,31): error TS2345: Argument of type 'ConvexHull' is not assignable to parameter of type 'VertexNode'.
+examples/jsm/math/ConvexHull.js(436,24): error TS2341: Property 'isEmpty' is private and only accessible within class 'VertexList'.
+examples/jsm/math/ConvexHull.js(438,33): error TS2341: Property 'first' is private and only accessible within class 'VertexList'.
+examples/jsm/math/ConvexHull.js(444,31): error TS2341: Property 'next' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(456,29): error TS2341: Property 'distanceToPoint' is private and only accessible within class 'Face'.
+examples/jsm/math/ConvexHull.js(456,53): error TS2341: Property 'point' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(479,5): error TS2322: Type 'Vector3 | null' is not assignable to type 'VertexNode'.
+examples/jsm/math/ConvexHull.js(659,10): error TS2341: Property 'create' is private and only accessible within class 'Face'.
+examples/jsm/math/ConvexHull.js(660,10): error TS2341: Property 'create' is private and only accessible within class 'Face'.
+examples/jsm/math/ConvexHull.js(661,10): error TS2341: Property 'create' is private and only accessible within class 'Face'.
+examples/jsm/math/ConvexHull.js(662,10): error TS2341: Property 'create' is private and only accessible within class 'Face'.
+examples/jsm/math/ConvexHull.js(673,20): error TS2341: Property 'getEdge' is private and only accessible within class 'Face'.
+examples/jsm/math/ConvexHull.js(673,33): error TS2341: Property 'setTwin' is private and only accessible within class 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(673,53): error TS2341: Property 'getEdge' is private and only accessible within class 'Face'.
+examples/jsm/math/ConvexHull.js(677,20): error TS2341: Property 'getEdge' is private and only accessible within class 'Face'.
+examples/jsm/math/ConvexHull.js(677,33): error TS2341: Property 'setTwin' is private and only accessible within class 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(677,57): error TS2341: Property 'getEdge' is private and only accessible within class 'Face'.
+examples/jsm/math/ConvexHull.js(686,10): error TS2341: Property 'create' is private and only accessible within class 'Face'.
+examples/jsm/math/ConvexHull.js(687,10): error TS2341: Property 'create' is private and only accessible within class 'Face'.
+examples/jsm/math/ConvexHull.js(688,10): error TS2341: Property 'create' is private and only accessible within class 'Face'.
+examples/jsm/math/ConvexHull.js(689,10): error TS2341: Property 'create' is private and only accessible within class 'Face'.
+examples/jsm/math/ConvexHull.js(700,20): error TS2341: Property 'getEdge' is private and only accessible within class 'Face'.
+examples/jsm/math/ConvexHull.js(700,33): error TS2341: Property 'setTwin' is private and only accessible within class 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(700,53): error TS2341: Property 'getEdge' is private and only accessible within class 'Face'.
+examples/jsm/math/ConvexHull.js(704,20): error TS2341: Property 'getEdge' is private and only accessible within class 'Face'.
+examples/jsm/math/ConvexHull.js(704,33): error TS2341: Property 'setTwin' is private and only accessible within class 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(704,57): error TS2341: Property 'getEdge' is private and only accessible within class 'Face'.
+examples/jsm/math/ConvexHull.js(792,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
+examples/jsm/math/ConvexHull.js(798,22): error TS2341: Property 'isEmpty' is private and only accessible within class 'VertexList'.
+examples/jsm/math/ConvexHull.js(804,34): error TS2341: Property 'first' is private and only accessible within class 'VertexList'.
+examples/jsm/math/ConvexHull.js(804,42): error TS2341: Property 'face' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(805,17): error TS18047: 'eyeFace' is possibly 'null'.
+examples/jsm/math/ConvexHull.js(805,25): error TS2341: Property 'outside' is private and only accessible within class 'Face'.
+examples/jsm/math/ConvexHull.js(811,22): error TS18047: 'eyeFace' is possibly 'null'.
+examples/jsm/math/ConvexHull.js(811,30): error TS2341: Property 'distanceToPoint' is private and only accessible within class 'Face'.
+examples/jsm/math/ConvexHull.js(811,47): error TS18047: 'vertex' is possibly 'null'.
+examples/jsm/math/ConvexHull.js(811,54): error TS2341: Property 'point' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(820,5): error TS2322: Type 'Vector3 | null' is not assignable to type 'VertexNode | null'.
+examples/jsm/math/ConvexHull.js(820,14): error TS18047: 'vertex' is possibly 'null'.
+examples/jsm/math/ConvexHull.js(820,21): error TS2341: Property 'next' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(822,40): error TS2341: Property 'face' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(824,4): error TS2322: Type 'VertexNode | null | undefined' is not assignable to type 'VertexNode | null'.
+examples/jsm/math/ConvexHull.js(854,28): error TS2341: Property 'getEdge' is private and only accessible within class 'Face'.
+examples/jsm/math/ConvexHull.js(861,21): error TS2341: Property 'next' is private and only accessible within class 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(867,21): error TS18047: 'edge' is possibly 'null'.
+examples/jsm/math/ConvexHull.js(867,26): error TS2341: Property 'twin' is private and only accessible within class 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(868,25): error TS18047: 'twinEdge' is possibly 'null'.
+examples/jsm/math/ConvexHull.js(868,34): error TS2341: Property 'face' is private and only accessible within class 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(872,23): error TS2341: Property 'distanceToPoint' is private and only accessible within class 'Face'.
+examples/jsm/math/ConvexHull.js(876,38): error TS2345: Argument of type 'HalfEdge | null' is not assignable to parameter of type 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(882,20): error TS2345: Argument of type 'HalfEdge | null' is not assignable to parameter of type 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(888,11): error TS18047: 'edge' is possibly 'null'.
+examples/jsm/math/ConvexHull.js(888,16): error TS2341: Property 'next' is private and only accessible within class 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(910,21): error TS2341: Property 'create' is private and only accessible within class 'Face'.
+examples/jsm/math/ConvexHull.js(910,52): error TS2341: Property 'tail' is private and only accessible within class 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(910,72): error TS2341: Property 'head' is private and only accessible within class 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(916,8): error TS2341: Property 'getEdge' is private and only accessible within class 'Face'.
+examples/jsm/math/ConvexHull.js(916,23): error TS2341: Property 'setTwin' is private and only accessible within class 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(916,32): error TS2345: Argument of type 'HalfEdge | null' is not assignable to parameter of type 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(916,44): error TS2341: Property 'twin' is private and only accessible within class 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(918,15): error TS2341: Property 'getEdge' is private and only accessible within class 'Face'.
+examples/jsm/math/ConvexHull.js(955,5): error TS18047: 'sideEdge.next' is possibly 'null'.
+examples/jsm/math/ConvexHull.js(955,14): error TS2341: Property 'next' is private and only accessible within class 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(955,19): error TS2341: Property 'setTwin' is private and only accessible within class 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(955,28): error TS2345: Argument of type 'HalfEdge | null' is not assignable to parameter of type 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(959,33): error TS2341: Property 'face' is private and only accessible within class 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(966,3): error TS18047: 'firstSideEdge' is possibly 'null'.
+examples/jsm/math/ConvexHull.js(966,3): error TS18047: 'firstSideEdge.next' is possibly 'null'.
+examples/jsm/math/ConvexHull.js(966,17): error TS2341: Property 'next' is private and only accessible within class 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(966,22): error TS2341: Property 'setTwin' is private and only accessible within class 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(966,31): error TS2345: Argument of type 'HalfEdge | null' is not assignable to parameter of type 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(990,19): error TS2341: Property 'clear' is private and only accessible within class 'VertexList'.
+examples/jsm/math/ConvexHull.js(994,42): error TS2345: Argument of type 'Face | null' is not assignable to parameter of type 'Face'.
+examples/jsm/math/ConvexHull.js(994,52): error TS2341: Property 'face' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(996,35): error TS2341: Property 'point' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(996,42): error TS2345: Argument of type 'null' is not assignable to parameter of type 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(996,58): error TS2341: Property 'face' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1016,17): error TS2341: Property 'clear' is private and only accessible within class 'VertexList'.
+examples/jsm/math/ConvexHull.js(1017,19): error TS2341: Property 'clear' is private and only accessible within class 'VertexList'.
+examples/jsm/math/ConvexHull.js(1040,27): error TS2345: Argument of type 'VertexNode | null' is not assignable to parameter of type 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1142,6): error TS2341: Property 'next' is private and only accessible within class 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(1142,16): error TS2341: Property 'prev' is private and only accessible within class 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(1143,6): error TS2341: Property 'next' is private and only accessible within class 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(1143,16): error TS2341: Property 'prev' is private and only accessible within class 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(1144,6): error TS2341: Property 'next' is private and only accessible within class 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(1144,16): error TS2341: Property 'prev' is private and only accessible within class 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(1167,11): error TS18047: 'edge' is possibly 'null'.
+examples/jsm/math/ConvexHull.js(1167,16): error TS2341: Property 'next' is private and only accessible within class 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(1174,11): error TS18047: 'edge' is possibly 'null'.
+examples/jsm/math/ConvexHull.js(1174,16): error TS2341: Property 'prev' is private and only accessible within class 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(1179,3): error TS2322: Type 'HalfEdge | null' is not assignable to type 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(1191,13): error TS2531: Object is possibly 'null'.
+examples/jsm/math/ConvexHull.js(1191,23): error TS2341: Property 'tail' is private and only accessible within class 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(1192,13): error TS2531: Object is possibly 'null'.
+examples/jsm/math/ConvexHull.js(1192,23): error TS2341: Property 'head' is private and only accessible within class 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(1193,13): error TS2531: Object is possibly 'null'.
+examples/jsm/math/ConvexHull.js(1193,13): error TS2531: Object is possibly 'null'.
+examples/jsm/math/ConvexHull.js(1193,23): error TS2341: Property 'next' is private and only accessible within class 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(1193,28): error TS2341: Property 'head' is private and only accessible within class 'HalfEdge'.
+examples/jsm/math/ConvexHull.js(1195,20): error TS2341: Property 'point' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1195,29): error TS2341: Property 'point' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1195,38): error TS2341: Property 'point' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1303,3): error TS2322: Type 'VertexNode | null' is not assignable to type 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1320,16): error TS2341: Property 'point' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1320,39): error TS2341: Property 'point' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1341,16): error TS2341: Property 'point' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1341,46): error TS2341: Property 'point' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1461,3): error TS2322: Type 'VertexNode | null' is not assignable to type 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1473,3): error TS2322: Type 'VertexNode | null' is not assignable to type 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1501,10): error TS2341: Property 'prev' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1501,24): error TS2341: Property 'prev' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1502,3): error TS2740: Type 'VertexNode' is missing the following properties from type 'Vector3': x, y, z, isVector3, and 74 more.
+examples/jsm/math/ConvexHull.js(1502,10): error TS2341: Property 'next' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1504,15): error TS2341: Property 'prev' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1510,11): error TS2341: Property 'prev' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1510,16): error TS2339: Property 'next' does not exist on type 'Vector3'.
+examples/jsm/math/ConvexHull.js(1514,3): error TS2740: Type 'VertexNode' is missing the following properties from type 'Vector3': x, y, z, isVector3, and 74 more.
+examples/jsm/math/ConvexHull.js(1514,10): error TS2341: Property 'prev' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1530,3): error TS2740: Type 'VertexNode' is missing the following properties from type 'Vector3': x, y, z, isVector3, and 74 more.
+examples/jsm/math/ConvexHull.js(1530,10): error TS2341: Property 'prev' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1531,10): error TS2341: Property 'next' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1531,24): error TS2341: Property 'next' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1533,15): error TS2341: Property 'next' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1539,11): error TS2341: Property 'next' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1539,16): error TS2339: Property 'prev' does not exist on type 'Vector3'.
+examples/jsm/math/ConvexHull.js(1543,3): error TS2740: Type 'VertexNode' is missing the following properties from type 'Vector3': x, y, z, isVector3, and 74 more.
+examples/jsm/math/ConvexHull.js(1543,10): error TS2341: Property 'next' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1564,4): error TS2531: Object is possibly 'null'.
+examples/jsm/math/ConvexHull.js(1564,4): error TS2740: Type 'VertexNode' is missing the following properties from type 'Vector3': x, y, z, isVector3, and 74 more.
+examples/jsm/math/ConvexHull.js(1564,14): error TS2341: Property 'next' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1568,3): error TS2322: Type 'VertexNode | null' is not assignable to type 'Vector3 | null'.
+examples/jsm/math/ConvexHull.js(1568,10): error TS2341: Property 'prev' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1569,10): error TS2341: Property 'next' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1592,4): error TS2531: Object is possibly 'null'.
+examples/jsm/math/ConvexHull.js(1592,4): error TS2740: Type 'VertexNode' is missing the following properties from type 'Vector3': x, y, z, isVector3, and 74 more.
+examples/jsm/math/ConvexHull.js(1592,14): error TS2341: Property 'next' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1596,3): error TS2322: Type 'VertexNode | null' is not assignable to type 'Vector3 | null'.
+examples/jsm/math/ConvexHull.js(1596,10): error TS2341: Property 'prev' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1600,18): error TS2341: Property 'next' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1602,4): error TS2739: Type 'Vector3' is missing the following properties from type 'VertexNode': point, prev, next, face
+examples/jsm/math/ConvexHull.js(1602,20): error TS2341: Property 'next' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1621,15): error TS2341: Property 'prev' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1623,4): error TS2322: Type 'Vector3 | null' is not assignable to type 'VertexNode | null'.
+examples/jsm/math/ConvexHull.js(1623,23): error TS2341: Property 'next' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1627,11): error TS2341: Property 'prev' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1627,16): error TS2339: Property 'next' does not exist on type 'Vector3'.
+examples/jsm/math/ConvexHull.js(1627,30): error TS2341: Property 'next' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1631,15): error TS2341: Property 'next' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1633,4): error TS2322: Type 'Vector3 | null' is not assignable to type 'VertexNode | null'.
+examples/jsm/math/ConvexHull.js(1633,23): error TS2341: Property 'prev' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1637,11): error TS2341: Property 'next' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1637,16): error TS2339: Property 'prev' does not exist on type 'Vector3'.
+examples/jsm/math/ConvexHull.js(1637,30): error TS2341: Property 'prev' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1655,10): error TS2341: Property 'prev' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1657,4): error TS2322: Type 'Vector3 | null' is not assignable to type 'VertexNode | null'.
+examples/jsm/math/ConvexHull.js(1657,18): error TS2341: Property 'next' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1661,6): error TS2341: Property 'prev' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1661,11): error TS2339: Property 'next' does not exist on type 'Vector3'.
+examples/jsm/math/ConvexHull.js(1661,20): error TS2341: Property 'next' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1665,10): error TS2341: Property 'next' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1667,4): error TS2322: Type 'Vector3 | null' is not assignable to type 'VertexNode | null'.
+examples/jsm/math/ConvexHull.js(1667,18): error TS2341: Property 'prev' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1671,6): error TS2341: Property 'next' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/ConvexHull.js(1671,11): error TS2339: Property 'prev' does not exist on type 'Vector3'.
+examples/jsm/math/ConvexHull.js(1671,20): error TS2341: Property 'prev' is private and only accessible within class 'VertexNode'.
+examples/jsm/math/Lut.js(46,13): error TS2314: Generic type 'Array<T>' requires 1 type argument(s).
+examples/jsm/math/Lut.js(74,21): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
+examples/jsm/math/Lut.js(220,13): error TS2314: Generic type 'Array<T>' requires 1 type argument(s).
+examples/jsm/math/MeshSurfaceSampler.js(162,3): error TS2322: Type 'Function' is not assignable to type '() => number'.
+examples/jsm/math/MeshSurfaceSampler.js(189,27): error TS2531: Object is possibly 'null'.
+examples/jsm/math/MeshSurfaceSampler.js(189,46): error TS2531: Object is possibly 'null'.
+examples/jsm/math/MeshSurfaceSampler.js(198,13): error TS18047: 'dist' is possibly 'null'.
+examples/jsm/math/MeshSurfaceSampler.js(206,22): error TS18047: 'dist' is possibly 'null'.
+examples/jsm/math/MeshSurfaceSampler.js(206,46): error TS18047: 'dist' is possibly 'null'.
+examples/jsm/math/MeshSurfaceSampler.js(212,20): error TS18047: 'dist' is possibly 'null'.
+examples/jsm/math/OBB.js(87,3): error TS2322: Type 'Vector3 | undefined' is not assignable to type 'Vector3'.
+examples/jsm/math/OBB.js(88,3): error TS2322: Type 'Vector3 | undefined' is not assignable to type 'Vector3'.
+examples/jsm/math/OBB.js(89,3): error TS2322: Type 'Matrix3 | undefined' is not assignable to type 'Matrix3'.
+examples/jsm/math/OBB.js(233,3): error TS2322: Type 'Vector3' is not assignable to type 'null'.
+examples/jsm/math/OBB.js(234,3): error TS2322: Type 'number' is not assignable to type 'never'.
+examples/jsm/math/OBB.js(235,3): error TS2322: Type 'number' is not assignable to type 'never'.
+examples/jsm/math/OBB.js(236,3): error TS2322: Type 'number' is not assignable to type 'never'.
+examples/jsm/math/OBB.js(239,3): error TS2322: Type 'Vector3' is not assignable to type 'null'.
+examples/jsm/math/OBB.js(240,3): error TS2322: Type 'number' is not assignable to type 'never'.
+examples/jsm/math/OBB.js(241,3): error TS2322: Type 'number' is not assignable to type 'never'.
+examples/jsm/math/OBB.js(242,3): error TS2322: Type 'number' is not assignable to type 'never'.
+examples/jsm/math/OBB.js(251,5): error TS2322: Type 'number' is not assignable to type 'never'.
+examples/jsm/math/OBB.js(259,18): error TS2345: Argument of type 'null' is not assignable to parameter of type 'Vector3Like'.
+examples/jsm/math/OBB.js(275,5): error TS2322: Type 'number' is not assignable to type 'never'.
+examples/jsm/math/Octree.js(114,3): error TS2322: Type 'Box3 | undefined' is not assignable to type 'Box3'.
+examples/jsm/math/Octree.js(187,21): error TS2322: Type 'undefined' is not assignable to type 'Octree'.
+examples/jsm/math/Octree.js(339,43): error TS2345: Argument of type 'Vector3' is not assignable to parameter of type 'null | undefined'.
+examples/jsm/math/Octree.js(661,3): error TS2322: Type 'null' is not assignable to type 'Box3'.
 examples/jsm/misc/ConvexObjectBreaker.js(350,6): error TS2322: Type 'Vector3 | null' is not assignable to type 'Vector3'.
 examples/jsm/misc/GPUComputationRenderer.js(170,30): error TS2339: Property 'variables' does not exist on type 'init'.
 examples/jsm/misc/GPUComputationRenderer.js(172,27): error TS2339: Property 'variables' does not exist on type 'init'.
@@ -1620,176 +1795,186 @@ examples/jsm/modifiers/TessellateModifier.js(310,66): error TS2345: Argument of 
 examples/jsm/modifiers/TessellateModifier.js(316,65): error TS2345: Argument of type 'TypedArray | null' is not assignable to parameter of type 'number | ArrayBuffer | Iterable<number> | ArrayLike<number>'.
 examples/jsm/modifiers/TessellateModifier.js(322,62): error TS2345: Argument of type 'TypedArray | null' is not assignable to parameter of type 'number | ArrayBuffer | Iterable<number> | ArrayLike<number>'.
 examples/jsm/modifiers/TessellateModifier.js(328,63): error TS2345: Argument of type 'TypedArray | null' is not assignable to parameter of type 'number | ArrayBuffer | Iterable<number> | ArrayLike<number>'.
-examples/jsm/objects/LensflareMesh.js(199,45): error TS2339: Property 'matrixWorld' does not exist on type 'LensflareMesh'.
-examples/jsm/objects/MarchingCubes.js(81,14): error TS2339: Property 'enableUvs' does not exist on type 'init'.
-examples/jsm/objects/MarchingCubes.js(90,14): error TS2339: Property 'enableColors' does not exist on type 'init'.
-examples/jsm/objects/MarchingCubes.js(116,16): error TS2339: Property 'normal_cache' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(118,41): error TS2339: Property 'delta' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(126,38): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(126,74): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(127,38): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(127,74): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(128,38): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(128,74): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(135,16): error TS2339: Property 'normal_cache' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(138,41): error TS2339: Property 'delta' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(141,25): error TS2339: Property 'yd' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(147,38): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(147,74): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(148,38): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(148,74): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(149,38): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(149,74): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(156,16): error TS2339: Property 'normal_cache' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(160,41): error TS2339: Property 'delta' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(162,25): error TS2339: Property 'zd' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(168,38): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(168,74): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(169,38): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(169,74): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(170,38): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(170,74): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(178,15): error TS2339: Property 'normal_cache' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(180,11): error TS2339: Property 'normal_cache' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(180,42): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(180,65): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(181,11): error TS2339: Property 'normal_cache' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(182,12): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(182,29): error TS2339: Property 'yd' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(182,42): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(182,59): error TS2339: Property 'yd' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(183,11): error TS2339: Property 'normal_cache' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(184,12): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(184,29): error TS2339: Property 'zd' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(184,42): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(184,59): error TS2339: Property 'zd' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(197,20): error TS2339: Property 'yd' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(198,20): error TS2339: Property 'zd' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(199,22): error TS2339: Property 'yd' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(200,22): error TS2339: Property 'zd' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(201,21): error TS2339: Property 'yd' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(201,32): error TS2339: Property 'zd' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(202,23): error TS2339: Property 'yd' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(202,34): error TS2339: Property 'zd' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(205,25): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(206,20): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(207,20): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(208,20): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(209,20): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(210,20): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(211,20): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(212,20): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(228,20): error TS2339: Property 'delta' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(403,20): error TS2339: Property 'count' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(407,10): error TS2339: Property 'positionArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(408,10): error TS2339: Property 'positionArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(409,10): error TS2339: Property 'positionArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(411,10): error TS2339: Property 'positionArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(412,10): error TS2339: Property 'positionArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(413,10): error TS2339: Property 'positionArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(415,10): error TS2339: Property 'positionArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(416,10): error TS2339: Property 'positionArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(417,10): error TS2339: Property 'positionArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(421,24): error TS2339: Property 'flatShading' does not exist on type 'Material | Material[]'.
-examples/jsm/objects/MarchingCubes.js(427,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(428,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(429,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(431,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(432,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(433,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(435,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(436,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(437,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(441,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(442,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(443,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(445,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(446,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(447,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(449,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(450,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(451,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(459,21): error TS2339: Property 'count' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(461,11): error TS2339: Property 'uvArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(462,11): error TS2339: Property 'uvArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(464,11): error TS2339: Property 'uvArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(465,11): error TS2339: Property 'uvArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(467,11): error TS2339: Property 'uvArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(468,11): error TS2339: Property 'uvArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(476,11): error TS2339: Property 'colorArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(477,11): error TS2339: Property 'colorArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(478,11): error TS2339: Property 'colorArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(480,11): error TS2339: Property 'colorArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(481,11): error TS2339: Property 'colorArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(482,11): error TS2339: Property 'colorArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(484,11): error TS2339: Property 'colorArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(485,11): error TS2339: Property 'colorArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(486,11): error TS2339: Property 'colorArray' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(490,10): error TS2339: Property 'count' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(538,24): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(539,23): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(540,23): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(541,23): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(546,22): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(546,46): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(550,22): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(550,46): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(554,22): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(554,46): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(563,21): error TS2339: Property 'size2' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(564,19): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(569,33): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(570,20): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(575,21): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(579,13): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(587,13): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(588,13): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(589,13): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(604,22): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(605,15): error TS2339: Property 'yd' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(606,15): error TS2339: Property 'zd' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(607,18): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(649,22): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(650,15): error TS2339: Property 'yd' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(651,15): error TS2339: Property 'zd' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(652,18): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(694,22): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(695,15): error TS2339: Property 'yd' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(696,15): error TS2339: Property 'zd' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(697,18): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(740,23): error TS2339: Property 'size2' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(740,40): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(741,9): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(747,23): error TS2339: Property 'size2' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(747,40): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(748,16): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(754,23): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(756,22): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(757,23): error TS2339: Property 'size2' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(809,30): error TS2339: Property 'size3' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(811,10): error TS2339: Property 'normal_cache' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(812,10): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(813,10): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(813,34): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(813,62): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
-examples/jsm/objects/MarchingCubes.js(827,23): error TS2339: Property 'size' does not exist on type 'update'.
-examples/jsm/objects/MarchingCubes.js(831,27): error TS2339: Property 'size2' does not exist on type 'update'.
-examples/jsm/objects/MarchingCubes.js(832,27): error TS2339: Property 'halfsize' does not exist on type 'update'.
-examples/jsm/objects/MarchingCubes.js(832,45): error TS2339: Property 'halfsize' does not exist on type 'update'.
-examples/jsm/objects/MarchingCubes.js(836,39): error TS2339: Property 'size' does not exist on type 'update'.
-examples/jsm/objects/MarchingCubes.js(837,28): error TS2339: Property 'halfsize' does not exist on type 'update'.
-examples/jsm/objects/MarchingCubes.js(837,46): error TS2339: Property 'halfsize' does not exist on type 'update'.
-examples/jsm/objects/MarchingCubes.js(841,29): error TS2339: Property 'halfsize' does not exist on type 'update'.
-examples/jsm/objects/MarchingCubes.js(841,47): error TS2339: Property 'halfsize' does not exist on type 'update'.
-examples/jsm/objects/MarchingCubes.js(844,40): error TS2339: Property 'isolation' does not exist on type 'update'.
-examples/jsm/objects/MarchingCubes.js(854,9): error TS2339: Property 'geometry' does not exist on type 'update'.
-examples/jsm/objects/MarchingCubes.js(861,14): error TS2339: Property 'enableUvs' does not exist on type 'update'.
-examples/jsm/objects/MarchingCubes.js(862,14): error TS2339: Property 'enableColors' does not exist on type 'update'.
-examples/jsm/objects/ReflectorForSSRPass.js(99,19): error TS2554: Expected 2-10 arguments, but got 0.
-examples/jsm/objects/Water2.js(106,5): error TS2353: Object literal may only specify known properties, and 'type' does not exist in type 'IUniform<any>'.
-examples/jsm/objects/Water2.js(113,5): error TS2353: Object literal may only specify known properties, and 'type' does not exist in type 'IUniform<any>'.
-examples/jsm/objects/Water2.js(162,34): error TS2339: Property 'uniforms' does not exist on type 'Material | Material[]'.
-examples/jsm/objects/WaterMesh.js(92,9): error TS2339: Property 'add' does not exist on type 'WaterMesh'.
+examples/jsm/objects/LensflareMesh.js(246,45): error TS2339: Property 'matrixWorld' does not exist on type 'LensflareMesh'.
+examples/jsm/objects/MarchingCubes.js(27,78): error TS2322: Type '10000' is not assignable to type 'boolean | undefined'.
+examples/jsm/objects/MarchingCubes.js(99,27): error TS2362: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+examples/jsm/objects/MarchingCubes.js(111,14): error TS2339: Property 'enableUvs' does not exist on type 'init'.
+examples/jsm/objects/MarchingCubes.js(120,14): error TS2339: Property 'enableColors' does not exist on type 'init'.
+examples/jsm/objects/MarchingCubes.js(146,16): error TS2339: Property 'normal_cache' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(148,41): error TS2339: Property 'delta' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(156,38): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(156,74): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(157,38): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(157,74): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(158,38): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(158,74): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(165,16): error TS2339: Property 'normal_cache' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(168,41): error TS2339: Property 'delta' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(171,25): error TS2339: Property 'yd' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(177,38): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(177,74): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(178,38): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(178,74): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(179,38): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(179,74): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(186,16): error TS2339: Property 'normal_cache' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(190,41): error TS2339: Property 'delta' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(192,25): error TS2339: Property 'zd' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(198,38): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(198,74): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(199,38): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(199,74): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(200,38): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(200,74): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(208,15): error TS2339: Property 'normal_cache' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(210,11): error TS2339: Property 'normal_cache' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(210,42): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(210,65): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(211,11): error TS2339: Property 'normal_cache' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(212,12): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(212,29): error TS2339: Property 'yd' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(212,42): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(212,59): error TS2339: Property 'yd' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(213,11): error TS2339: Property 'normal_cache' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(214,12): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(214,29): error TS2339: Property 'zd' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(214,42): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(214,59): error TS2339: Property 'zd' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(227,20): error TS2339: Property 'yd' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(228,20): error TS2339: Property 'zd' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(229,22): error TS2339: Property 'yd' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(230,22): error TS2339: Property 'zd' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(231,21): error TS2339: Property 'yd' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(231,32): error TS2339: Property 'zd' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(232,23): error TS2339: Property 'yd' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(232,34): error TS2339: Property 'zd' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(235,25): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(236,20): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(237,20): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(238,20): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(239,20): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(240,20): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(241,20): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(242,20): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(258,20): error TS2339: Property 'delta' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(433,20): error TS2339: Property 'count' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(437,10): error TS2339: Property 'positionArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(438,10): error TS2339: Property 'positionArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(439,10): error TS2339: Property 'positionArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(441,10): error TS2339: Property 'positionArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(442,10): error TS2339: Property 'positionArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(443,10): error TS2339: Property 'positionArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(445,10): error TS2339: Property 'positionArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(446,10): error TS2339: Property 'positionArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(447,10): error TS2339: Property 'positionArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(451,24): error TS2339: Property 'flatShading' does not exist on type 'Material | Material[]'.
+examples/jsm/objects/MarchingCubes.js(457,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(458,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(459,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(461,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(462,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(463,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(465,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(466,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(467,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(471,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(472,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(473,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(475,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(476,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(477,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(479,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(480,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(481,11): error TS2339: Property 'normalArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(489,21): error TS2339: Property 'count' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(491,11): error TS2339: Property 'uvArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(492,11): error TS2339: Property 'uvArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(494,11): error TS2339: Property 'uvArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(495,11): error TS2339: Property 'uvArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(497,11): error TS2339: Property 'uvArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(498,11): error TS2339: Property 'uvArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(506,11): error TS2339: Property 'colorArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(507,11): error TS2339: Property 'colorArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(508,11): error TS2339: Property 'colorArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(510,11): error TS2339: Property 'colorArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(511,11): error TS2339: Property 'colorArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(512,11): error TS2339: Property 'colorArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(514,11): error TS2339: Property 'colorArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(515,11): error TS2339: Property 'colorArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(516,11): error TS2339: Property 'colorArray' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(520,10): error TS2339: Property 'count' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(576,24): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(577,23): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(578,23): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(579,23): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(584,22): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(584,46): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(588,22): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(588,46): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(592,22): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(592,46): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(601,21): error TS2339: Property 'size2' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(602,19): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(607,33): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(608,20): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(613,21): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(617,13): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(625,13): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(626,13): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(627,13): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(648,22): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(649,15): error TS2339: Property 'yd' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(650,15): error TS2339: Property 'zd' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(651,18): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(699,22): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(700,15): error TS2339: Property 'yd' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(701,15): error TS2339: Property 'zd' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(702,18): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(750,22): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(751,15): error TS2339: Property 'yd' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(752,15): error TS2339: Property 'zd' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(753,18): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(804,23): error TS2339: Property 'size2' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(804,40): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(805,9): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(819,23): error TS2339: Property 'size2' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(819,40): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(820,16): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(831,23): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(833,22): error TS2339: Property 'size' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(834,23): error TS2339: Property 'size2' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(889,30): error TS2339: Property 'size3' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(891,10): error TS2339: Property 'normal_cache' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(892,10): error TS2339: Property 'field' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(893,10): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(893,34): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(893,62): error TS2339: Property 'palette' does not exist on type 'MarchingCubes'.
+examples/jsm/objects/MarchingCubes.js(910,23): error TS2339: Property 'size' does not exist on type 'update'.
+examples/jsm/objects/MarchingCubes.js(914,27): error TS2339: Property 'size2' does not exist on type 'update'.
+examples/jsm/objects/MarchingCubes.js(915,27): error TS2339: Property 'halfsize' does not exist on type 'update'.
+examples/jsm/objects/MarchingCubes.js(915,45): error TS2339: Property 'halfsize' does not exist on type 'update'.
+examples/jsm/objects/MarchingCubes.js(919,39): error TS2339: Property 'size' does not exist on type 'update'.
+examples/jsm/objects/MarchingCubes.js(920,28): error TS2339: Property 'halfsize' does not exist on type 'update'.
+examples/jsm/objects/MarchingCubes.js(920,46): error TS2339: Property 'halfsize' does not exist on type 'update'.
+examples/jsm/objects/MarchingCubes.js(924,29): error TS2339: Property 'halfsize' does not exist on type 'update'.
+examples/jsm/objects/MarchingCubes.js(924,47): error TS2339: Property 'halfsize' does not exist on type 'update'.
+examples/jsm/objects/MarchingCubes.js(927,40): error TS2339: Property 'isolation' does not exist on type 'update'.
+examples/jsm/objects/MarchingCubes.js(937,9): error TS2339: Property 'geometry' does not exist on type 'update'.
+examples/jsm/objects/MarchingCubes.js(944,14): error TS2339: Property 'enableUvs' does not exist on type 'update'.
+examples/jsm/objects/MarchingCubes.js(945,14): error TS2339: Property 'enableColors' does not exist on type 'update'.
+examples/jsm/objects/MarchingCubes.js(949,9): error TS2365: Operator '>' cannot be applied to types 'number' and 'boolean'.
+examples/jsm/objects/Reflector.js(337,10): error TS2484: Export declaration conflicts with exported declaration of 'Reflector'.
+examples/jsm/objects/ReflectorForSSRPass.js(110,19): error TS2554: Expected 2-10 arguments, but got 0.
+examples/jsm/objects/ReflectorForSSRPass.js(391,10): error TS2484: Export declaration conflicts with exported declaration of 'ReflectorForSSRPass'.
+examples/jsm/objects/Refractor.js(388,10): error TS2484: Export declaration conflicts with exported declaration of 'Refractor'.
+examples/jsm/objects/Water.js(372,10): error TS2484: Export declaration conflicts with exported declaration of 'Water'.
+examples/jsm/objects/Water2.js(14,10): error TS18042: 'Reflector' is a type and cannot be imported in JavaScript files. Use 'import("../objects/Reflector.js").Reflector' in a JSDoc type annotation.
+examples/jsm/objects/Water2.js(15,10): error TS18042: 'Refractor' is a type and cannot be imported in JavaScript files. Use 'import("../objects/Refractor.js").Refractor' in a JSDoc type annotation.
+examples/jsm/objects/Water2.js(127,5): error TS2353: Object literal may only specify known properties, and 'type' does not exist in type 'IUniform<any>'.
+examples/jsm/objects/Water2.js(134,5): error TS2353: Object literal may only specify known properties, and 'type' does not exist in type 'IUniform<any>'.
+examples/jsm/objects/Water2.js(183,34): error TS2339: Property 'uniforms' does not exist on type 'Material | Material[]'.
+examples/jsm/objects/WaterMesh.js(165,9): error TS2339: Property 'add' does not exist on type 'WaterMesh'.
+examples/jsm/objects/WaterMesh.js(195,10): error TS2484: Export declaration conflicts with exported declaration of 'WaterMesh'.
 examples/jsm/offscreen/scene.js(8,9): error TS2339: Property 'position' does not exist on type 'PerspectiveCamera'.
 examples/jsm/offscreen/scene.js(20,9): error TS2339: Property 'setOptions' does not exist on type 'Loader'.
 examples/jsm/offscreen/scene.js(21,15): error TS2554: Expected 0 arguments, but got 2.
@@ -2002,7 +2187,6 @@ examples/jsm/utils/GeometryCompressionUtils.js(530,27): error TS18048: 'segments
 examples/jsm/utils/GeometryCompressionUtils.js(531,27): error TS18048: 'segments' is possibly 'undefined'.
 examples/jsm/utils/GeometryCompressionUtils.js(536,3): error TS2454: Variable 'quantized' is used before being assigned.
 examples/jsm/utils/GeometryCompressionUtils.js(537,3): error TS2454: Variable 'quantized' is used before being assigned.
-examples/jsm/utils/GeometryUtils.js(50,2): error TS2322: Type 'Vector3[]' is not assignable to type 'number[][]'.
 examples/jsm/utils/GeometryUtils.js(117,2): error TS2322: Type 'Vector3[]' is not assignable to type 'number[][]'.
 examples/jsm/utils/GeometryUtils.js(214,2): error TS2322: Type 'number[]' is not assignable to type '[number, number, number][]'.
 examples/jsm/utils/LDrawUtils.js(188,14): error TS2339: Property 'isConditionalLine' does not exist on type 'LineSegments<BufferGeometry<NormalBufferAttributes>, any, Object3DEventMap>'.
@@ -2060,8 +2244,8 @@ examples/jsm/webxr/XRHandModelFactory.js(69,15): error TS2339: Property 'xrInput
 examples/jsm/webxr/XRPlanes.js(90,27): error TS2322: Type '"planeschanged"' is not assignable to type 'keyof Object3DEventMap'.
 src/animation/AnimationClip.js(529,27): error TS2339: Property 'toJSON' does not exist on type 'Function'.
 src/animation/AnimationClip.js(591,57): error TS2345: Argument of type 'string' is not assignable to parameter of type '{ [x: string]: any; }'.
-src/animation/AnimationClip.js(599,17): error TS2339: Property 'parse' does not exist on type 'typeof StringKeyframeTrack | typeof QuaternionKeyframeTrack'.
-src/animation/AnimationClip.js(601,20): error TS2339: Property 'parse' does not exist on type 'typeof StringKeyframeTrack | typeof QuaternionKeyframeTrack'.
+src/animation/AnimationClip.js(599,17): error TS2339: Property 'parse' does not exist on type 'typeof BooleanKeyframeTrack | typeof QuaternionKeyframeTrack'.
+src/animation/AnimationClip.js(601,20): error TS2339: Property 'parse' does not exist on type 'typeof BooleanKeyframeTrack | typeof QuaternionKeyframeTrack'.
 src/animation/AnimationMixer.js(63,24): error TS18048: 'bindingsByRoot' is possibly 'undefined'.
 src/animation/AnimationMixer.js(68,4): error TS18048: 'bindingsByRoot' is possibly 'undefined'.
 src/animation/AnimationMixer.js(134,23): error TS2532: Object is possibly 'undefined'.
@@ -2220,8 +2404,8 @@ src/core/BufferAttribute.js(670,32): error TS2339: Property 'name' does not exis
 src/core/BufferAttribute.js(671,46): error TS2339: Property 'usage' does not exist on type '{ itemSize: number; type: any; array: any[]; normalized: number; }'.
 src/core/BufferGeometry.js(162,3): error TS2322: Type 'null' is not assignable to type 'Box3'.
 src/core/BufferGeometry.js(170,3): error TS2322: Type 'null' is not assignable to type 'Sphere'.
-src/core/BufferGeometry.js(580,44): error TS2339: Property 'z' does not exist on type 'Vector3 | Vector2'.
-src/core/BufferGeometry.js(593,58): error TS2339: Property 'z' does not exist on type 'Vector3 | Vector2'.
+src/core/BufferGeometry.js(580,44): error TS2339: Property 'z' does not exist on type 'Vector2 | Vector3'.
+src/core/BufferGeometry.js(593,58): error TS2339: Property 'z' does not exist on type 'Vector2 | Vector3'.
 src/core/BufferGeometry.js(1212,8): error TS2339: Property 'uuid' does not exist on type '{ metadata: { version: number; type: string; generator: string; }; }'.
 src/core/BufferGeometry.js(1213,8): error TS2339: Property 'type' does not exist on type '{ metadata: { version: number; type: string; generator: string; }; }'.
 src/core/BufferGeometry.js(1214,32): error TS2339: Property 'name' does not exist on type '{ metadata: { version: number; type: string; generator: string; }; }'.
@@ -2376,48 +2560,48 @@ src/core/RenderTarget.js(251,5): error TS2531: Object is possibly 'null'.
 src/core/RenderTarget.js(252,5): error TS2531: Object is possibly 'null'.
 src/core/RenderTarget.js(253,5): error TS2531: Object is possibly 'null'.
 src/extras/core/Curve.js(65,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
-src/extras/core/Curve.js(85,3): error TS2322: Type 'Vector3 | Vector2 | null' is not assignable to type 'Vector3 | Vector2'.
+src/extras/core/Curve.js(85,3): error TS2322: Type 'Vector2 | Vector3 | null' is not assignable to type 'Vector2 | Vector3'.
 src/extras/core/Curve.js(85,25): error TS2554: Expected 0 arguments, but got 2.
 src/extras/core/Curve.js(102,32): error TS2554: Expected 0 arguments, but got 1.
-src/extras/core/Curve.js(106,3): error TS2322: Type '(Vector3 | Vector2 | null)[]' is not assignable to type '(Vector3 | Vector2)[]'.
+src/extras/core/Curve.js(106,3): error TS2322: Type '(Vector2 | Vector3 | null)[]' is not assignable to type '(Vector2 | Vector3)[]'.
 src/extras/core/Curve.js(165,38): error TS2554: Expected 0 arguments, but got 1.
 src/extras/core/Curve.js(172,29): error TS2554: Expected 0 arguments, but got 1.
 src/extras/core/Curve.js(173,11): error TS18047: 'current' is possibly 'null'.
-src/extras/core/Curve.js(173,31): error TS2345: Argument of type 'Vector3 | Vector2 | null' is not assignable to parameter of type 'Vector2 & Vector3'.
+src/extras/core/Curve.js(173,31): error TS2345: Argument of type 'Vector2 | Vector3 | null' is not assignable to parameter of type 'Vector2 & Vector3'.
 src/extras/core/Curve.js(303,30): error TS2554: Expected 0 arguments, but got 1.
 src/extras/core/Curve.js(304,30): error TS2554: Expected 0 arguments, but got 1.
 src/extras/core/Curve.js(306,41): error TS18047: 'pt1' is possibly 'null'.
-src/extras/core/Curve.js(306,45): error TS2339: Property 'isVector2' does not exist on type 'Vector3 | Vector2'.
-src/extras/core/Curve.js(308,17): error TS2345: Argument of type 'Vector3 | Vector2 | null' is not assignable to parameter of type 'Vector2 & Vector3'.
-src/extras/core/Curve.js(308,28): error TS2345: Argument of type 'Vector3 | Vector2 | null' is not assignable to parameter of type 'Vector2 & Vector3'.
-src/extras/core/Curve.js(368,38): error TS2339: Property 'z' does not exist on type 'Vector3 | Vector2'.
-src/extras/core/Curve.js(390,21): error TS2345: Argument of type 'Vector3 | Vector2' is not assignable to parameter of type 'Vector3'.
-src/extras/core/Curve.js(392,30): error TS2345: Argument of type 'Vector3 | Vector2' is not assignable to parameter of type 'Vector3'.
-src/extras/core/Curve.js(393,32): error TS2345: Argument of type 'Vector3 | Vector2' is not assignable to parameter of type 'Vector3'.
-src/extras/core/Curve.js(404,22): error TS2345: Argument of type 'Vector3 | Vector2' is not assignable to parameter of type 'Vector3'.
-src/extras/core/Curve.js(410,60): error TS2345: Argument of type 'Vector3 | Vector2' is not assignable to parameter of type 'Vector2 & Vector3'.
-src/extras/core/Curve.js(416,33): error TS2345: Argument of type 'Vector3 | Vector2' is not assignable to parameter of type 'Vector3'.
+src/extras/core/Curve.js(306,45): error TS2339: Property 'isVector2' does not exist on type 'Vector2 | Vector3'.
+src/extras/core/Curve.js(308,17): error TS2345: Argument of type 'Vector2 | Vector3 | null' is not assignable to parameter of type 'Vector2 & Vector3'.
+src/extras/core/Curve.js(308,28): error TS2345: Argument of type 'Vector2 | Vector3 | null' is not assignable to parameter of type 'Vector2 & Vector3'.
+src/extras/core/Curve.js(368,38): error TS2339: Property 'z' does not exist on type 'Vector2 | Vector3'.
+src/extras/core/Curve.js(390,21): error TS2345: Argument of type 'Vector2 | Vector3' is not assignable to parameter of type 'Vector3'.
+src/extras/core/Curve.js(392,30): error TS2345: Argument of type 'Vector2 | Vector3' is not assignable to parameter of type 'Vector3'.
+src/extras/core/Curve.js(393,32): error TS2345: Argument of type 'Vector2 | Vector3' is not assignable to parameter of type 'Vector3'.
+src/extras/core/Curve.js(404,22): error TS2345: Argument of type 'Vector2 | Vector3' is not assignable to parameter of type 'Vector3'.
+src/extras/core/Curve.js(410,60): error TS2345: Argument of type 'Vector2 | Vector3' is not assignable to parameter of type 'Vector2 & Vector3'.
+src/extras/core/Curve.js(416,33): error TS2345: Argument of type 'Vector2 | Vector3' is not assignable to parameter of type 'Vector3'.
 src/extras/core/Curve.js(427,28): error TS2345: Argument of type 'Vector3' is not assignable to parameter of type 'Vector2 & Vector3'.
-src/extras/core/Curve.js(436,54): error TS2345: Argument of type 'Vector3 | Vector2' is not assignable to parameter of type 'Vector3'.
-src/extras/core/Curve.js(437,34): error TS2345: Argument of type 'Vector3 | Vector2' is not assignable to parameter of type 'Vector3'.
-src/extras/core/Curve.js(444,4): error TS2322: Type '(Vector3 | Vector2)[]' is not assignable to type 'Vector3[]'.
+src/extras/core/Curve.js(436,54): error TS2345: Argument of type 'Vector2 | Vector3' is not assignable to parameter of type 'Vector3'.
+src/extras/core/Curve.js(437,34): error TS2345: Argument of type 'Vector2 | Vector3' is not assignable to parameter of type 'Vector3'.
+src/extras/core/Curve.js(444,4): error TS2322: Type '(Vector2 | Vector3)[]' is not assignable to type 'Vector3[]'.
 src/extras/core/Curve.js(492,8): error TS2339: Property 'arcLengthDivisions' does not exist on type '{ metadata: { version: number; type: string; generator: string; }; }'.
 src/extras/core/Curve.js(493,8): error TS2339: Property 'type' does not exist on type '{ metadata: { version: number; type: string; generator: string; }; }'.
 src/extras/core/CurvePath.js(59,49): error TS2554: Expected 0 arguments, but got 1.
 src/extras/core/CurvePath.js(60,68): error TS2554: Expected 0 arguments, but got 1.
 src/extras/core/CurvePath.js(62,10): error TS18047: 'startPoint' is possibly 'null'.
-src/extras/core/CurvePath.js(62,29): error TS2345: Argument of type 'Vector3 | Vector2 | null' is not assignable to parameter of type 'Vector2 & Vector3'.
+src/extras/core/CurvePath.js(62,29): error TS2345: Argument of type 'Vector2 | Vector3 | null' is not assignable to parameter of type 'Vector2 & Vector3'.
 src/extras/core/CurvePath.js(64,23): error TS18047: 'startPoint' is possibly 'null'.
-src/extras/core/CurvePath.js(64,34): error TS2339: Property 'isVector2' does not exist on type 'Vector3 | Vector2'.
+src/extras/core/CurvePath.js(64,34): error TS2339: Property 'isVector2' does not exist on type 'Vector2 | Vector3'.
 src/extras/core/CurvePath.js(65,22): error TS2345: Argument of type 'LineCurve | LineCurve3' is not assignable to parameter of type 'Curve'.
-src/extras/core/CurvePath.js(65,46): error TS2345: Argument of type 'Vector3 | Vector2 | null' is not assignable to parameter of type '(Vector2 & Vector3) | undefined'.
+src/extras/core/CurvePath.js(65,46): error TS2345: Argument of type 'Vector2 | Vector3 | null' is not assignable to parameter of type '(Vector2 & Vector3) | undefined'.
 src/extras/core/CurvePath.js(207,29): error TS2339: Property 'isEllipseCurve' does not exist on type 'Curve'.
 src/extras/core/CurvePath.js(208,15): error TS2339: Property 'isLineCurve' does not exist on type 'Curve'.
 src/extras/core/CurvePath.js(208,36): error TS2339: Property 'isLineCurve3' does not exist on type 'Curve'.
 src/extras/core/CurvePath.js(209,14): error TS2339: Property 'isSplineCurve' does not exist on type 'Curve'.
 src/extras/core/CurvePath.js(209,48): error TS2339: Property 'points' does not exist on type 'Curve'.
-src/extras/core/CurvePath.js(218,31): error TS2345: Argument of type 'Vector3 | Vector2' is not assignable to parameter of type 'Vector2 & Vector3'.
-src/extras/core/CurvePath.js(227,85): error TS2345: Argument of type 'Vector3 | Vector2' is not assignable to parameter of type 'Vector2 & Vector3'.
+src/extras/core/CurvePath.js(218,31): error TS2345: Argument of type 'Vector2 | Vector3' is not assignable to parameter of type 'Vector2 & Vector3'.
+src/extras/core/CurvePath.js(227,85): error TS2345: Argument of type 'Vector2 | Vector3' is not assignable to parameter of type 'Vector2 & Vector3'.
 src/extras/core/Path.js(106,21): error TS2345: Argument of type 'LineCurve' is not assignable to parameter of type 'Curve'.
 src/extras/core/Path.js(132,21): error TS2345: Argument of type 'QuadraticBezierCurve' is not assignable to parameter of type 'Curve'.
 src/extras/core/Path.js(161,21): error TS2345: Argument of type 'CubicBezierCurve' is not assignable to parameter of type 'Curve'.
@@ -2428,7 +2612,7 @@ src/extras/core/ShapePath.js(89,3): error TS2531: Object is possibly 'null'.
 src/extras/core/ShapePath.js(109,3): error TS2531: Object is possibly 'null'.
 src/extras/core/ShapePath.js(124,3): error TS2531: Object is possibly 'null'.
 src/extras/core/ShapePath.js(262,5): error TS2532: Object is possibly 'undefined'.
-src/extras/core/ShapePath.js(271,36): error TS2345: Argument of type '{ h: Path; p: Vector3 | Vector2; }' is not assignable to parameter of type 'never'.
+src/extras/core/ShapePath.js(271,36): error TS2345: Argument of type '{ h: Path; p: Vector2 | Vector3; }' is not assignable to parameter of type 'never'.
 src/extras/core/ShapePath.js(305,40): error TS2532: Object is possibly 'undefined'.
 src/extras/core/ShapePath.js(312,41): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
 src/extras/core/ShapePath.js(326,38): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
@@ -2445,7 +2629,7 @@ src/geometries/BoxGeometry.js(120,6): error TS7052: Element implicitly has an 'a
 src/geometries/BoxGeometry.js(128,6): error TS7052: Element implicitly has an 'any' type because type 'Vector3' has no index signature. Did you mean to call 'vector.set'?
 src/geometries/BoxGeometry.js(129,6): error TS7052: Element implicitly has an 'any' type because type 'Vector3' has no index signature. Did you mean to call 'vector.set'?
 src/geometries/BoxGeometry.js(130,6): error TS7052: Element implicitly has an 'any' type because type 'Vector3' has no index signature. Did you mean to call 'vector.set'?
-src/geometries/CapsuleGeometry.js(32,10): error TS2345: Argument of type '(Vector3 | Vector2)[]' is not assignable to parameter of type 'Vector2[]'.
+src/geometries/CapsuleGeometry.js(32,10): error TS2345: Argument of type '(Vector2 | Vector3)[]' is not assignable to parameter of type 'Vector2[]'.
 src/geometries/ExtrudeGeometry.js(413,6): error TS18048: 'normal' is possibly 'undefined'.
 src/geometries/ExtrudeGeometry.js(414,6): error TS18048: 'binormal' is possibly 'undefined'.
 src/geometries/ExtrudeGeometry.js(416,6): error TS18048: 'position2' is possibly 'undefined'.
@@ -2698,8 +2882,8 @@ src/loaders/nodes/NodeObjectLoader.js(128,35): error TS2345: Argument of type 'O
 src/loaders/ObjectLoader.js(99,13): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
 src/loaders/ObjectLoader.js(126,69): error TS18046: 'error' is of type 'unknown'.
 src/loaders/ObjectLoader.js(193,15): error TS2502: 'onLoad' is referenced directly or indirectly in its own type annotation.
-src/loaders/ObjectLoader.js(235,3): error TS2322: Type 'Object3D | Mesh | OrthographicCamera | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points' is not assignable to type 'Object3D'.
-src/loaders/ObjectLoader.js(262,3): error TS2322: Type 'Object3D | Mesh | OrthographicCamera | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points' is not assignable to type 'Object3D'.
+src/loaders/ObjectLoader.js(235,3): error TS2322: Type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera' is not assignable to type 'Object3D'.
+src/loaders/ObjectLoader.js(262,3): error TS2322: Type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera' is not assignable to type 'Object3D'.
 src/loaders/ObjectLoader.js(307,58): error TS2345: Argument of type '{}' is not assignable to parameter of type 'Bone[]'.
 src/loaders/ObjectLoader.js(727,55): error TS2339: Property 'compareFunction' does not exist on type 'Texture'.
 src/loaders/ObjectLoader.js(973,12): error TS2339: Property '_drawRanges' does not exist on type 'BatchedMesh'.
@@ -2707,22 +2891,22 @@ src/loaders/ObjectLoader.js(974,12): error TS2339: Property '_reservedRanges' do
 src/loaders/ObjectLoader.js(976,12): error TS2339: Property '_visibility' does not exist on type 'BatchedMesh'.
 src/loaders/ObjectLoader.js(977,12): error TS2339: Property '_active' does not exist on type 'BatchedMesh'.
 src/loaders/ObjectLoader.js(978,12): error TS2339: Property '_bounds' does not exist on type 'BatchedMesh'.
-src/loaders/ObjectLoader.js(1074,67): error TS2339: Property 'position' does not exist on type 'Object3D | Mesh | OrthographicCamera | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points'.
-src/loaders/ObjectLoader.js(1074,84): error TS2339: Property 'quaternion' does not exist on type 'Object3D | Mesh | OrthographicCamera | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points'.
-src/loaders/ObjectLoader.js(1074,103): error TS2339: Property 'scale' does not exist on type 'Object3D | Mesh | OrthographicCamera | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points'.
-src/loaders/ObjectLoader.js(1078,46): error TS2339: Property 'position' does not exist on type 'Object3D | Mesh | OrthographicCamera | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points'.
-src/loaders/ObjectLoader.js(1079,46): error TS2339: Property 'rotation' does not exist on type 'Object3D | Mesh | OrthographicCamera | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points'.
-src/loaders/ObjectLoader.js(1080,48): error TS2339: Property 'quaternion' does not exist on type 'Object3D | Mesh | OrthographicCamera | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points'.
-src/loaders/ObjectLoader.js(1081,43): error TS2339: Property 'scale' does not exist on type 'Object3D | Mesh | OrthographicCamera | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points'.
-src/loaders/ObjectLoader.js(1092,54): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | OrthographicCamera | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points'.
-src/loaders/ObjectLoader.js(1093,49): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | OrthographicCamera | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points'.
-src/loaders/ObjectLoader.js(1094,55): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | OrthographicCamera | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points'.
-src/loaders/ObjectLoader.js(1095,51): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | OrthographicCamera | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points'.
-src/loaders/ObjectLoader.js(1096,52): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | OrthographicCamera | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points'.
-src/loaders/ObjectLoader.js(1097,51): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | OrthographicCamera | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points'.
-src/loaders/ObjectLoader.js(1113,17): error TS2345: Argument of type 'Object3D | Mesh | OrthographicCamera | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points' is not assignable to parameter of type 'Object3D'.
-src/loaders/ObjectLoader.js(1135,48): error TS2339: Property 'autoUpdate' does not exist on type 'Object3D | Mesh | OrthographicCamera | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points'.
-src/loaders/ObjectLoader.js(1146,13): error TS2339: Property 'addLevel' does not exist on type 'Object3D | Mesh | OrthographicCamera | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points'.
+src/loaders/ObjectLoader.js(1074,67): error TS2339: Property 'position' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1074,84): error TS2339: Property 'quaternion' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1074,103): error TS2339: Property 'scale' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1078,46): error TS2339: Property 'position' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1079,46): error TS2339: Property 'rotation' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1080,48): error TS2339: Property 'quaternion' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1081,43): error TS2339: Property 'scale' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1092,54): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1093,49): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1094,55): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1095,51): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1096,52): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1097,51): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1113,17): error TS2345: Argument of type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera' is not assignable to parameter of type 'Object3D'.
+src/loaders/ObjectLoader.js(1135,48): error TS2339: Property 'autoUpdate' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1146,13): error TS2339: Property 'addLevel' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
 src/loaders/TextureLoader.js(41,13): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
 src/materials/Material.js(617,8): error TS2339: Property 'uuid' does not exist on type '{ metadata: { version: number; type: string; generator: string; }; }'.
 src/materials/Material.js(618,8): error TS2339: Property 'type' does not exist on type '{ metadata: { version: number; type: string; generator: string; }; }'.
@@ -3055,25 +3239,25 @@ src/materials/nodes/NodeMaterial.js(409,57): error TS2554: Expected 0 arguments,
 src/materials/nodes/NodeMaterial.js(410,69): error TS2554: Expected 0 arguments, but got 1.
 src/materials/nodes/NodeMaterial.js(411,83): error TS2554: Expected 0 arguments, but got 1.
 src/materials/nodes/NodeMaterial.js(461,24): error TS2554: Expected 0 arguments, but got 1.
-src/materials/nodes/NodeMaterial.js(631,10): error TS2339: Property 'assign' does not exist on type 'ViewportDepthNode'.
-src/materials/nodes/NodeMaterial.js(698,32): error TS2339: Property 'append' does not exist on type 'SkinningNode'.
-src/materials/nodes/NodeMaterial.js(702,13): error TS2339: Property 'displacementMap' does not exist on type 'NodeMaterial'.
-src/materials/nodes/NodeMaterial.js(708,76): error TS2339: Property 'x' does not exist on type 'MaterialReferenceNode'.
-src/materials/nodes/NodeMaterial.js(758,30): error TS2339: Property 'mul' does not exist on type 'PropertyNode'.
-src/materials/nodes/NodeMaterial.js(766,27): error TS2339: Property 'mul' does not exist on type 'PropertyNode'.
-src/materials/nodes/NodeMaterial.js(855,20): error TS2339: Property 'envMap' does not exist on type 'NodeMaterial'.
-src/materials/nodes/NodeMaterial.js(857,16): error TS2339: Property 'envMap' does not exist on type 'NodeMaterial'.
-src/materials/nodes/NodeMaterial.js(897,42): error TS2554: Expected 0 arguments, but got 1.
-src/materials/nodes/NodeMaterial.js(956,44): error TS2339: Property 'emissiveNode' does not exist on type 'NodeMaterial'.
-src/materials/nodes/NodeMaterial.js(964,52): error TS2554: Expected 0 arguments, but got 1.
-src/materials/nodes/NodeMaterial.js(968,51): error TS2554: Expected 0 arguments, but got 1.
-src/materials/nodes/NodeMaterial.js(1128,39): error TS18047: 'meta' is possibly 'null'.
-src/materials/nodes/NodeMaterial.js(1128,44): error TS2339: Property 'textures' does not exist on type 'string | Object'.
-src/materials/nodes/NodeMaterial.js(1129,37): error TS18047: 'meta' is possibly 'null'.
-src/materials/nodes/NodeMaterial.js(1129,42): error TS2339: Property 'images' does not exist on type 'string | Object'.
-src/materials/nodes/NodeMaterial.js(1130,36): error TS18047: 'meta' is possibly 'null'.
-src/materials/nodes/NodeMaterial.js(1130,41): error TS2339: Property 'nodes' does not exist on type 'string | Object'.
-src/materials/nodes/NodeMaterial.js(1174,3): error TS2740: Type 'Material' is missing the following properties from type 'NodeMaterial': isNodeMaterial, fog, lights, hardwareClipping, and 41 more.
+src/materials/nodes/NodeMaterial.js(635,10): error TS2339: Property 'assign' does not exist on type 'ViewportDepthNode'.
+src/materials/nodes/NodeMaterial.js(702,32): error TS2339: Property 'append' does not exist on type 'SkinningNode'.
+src/materials/nodes/NodeMaterial.js(706,13): error TS2339: Property 'displacementMap' does not exist on type 'NodeMaterial'.
+src/materials/nodes/NodeMaterial.js(712,76): error TS2339: Property 'x' does not exist on type 'MaterialReferenceNode'.
+src/materials/nodes/NodeMaterial.js(762,30): error TS2339: Property 'mul' does not exist on type 'PropertyNode'.
+src/materials/nodes/NodeMaterial.js(770,27): error TS2339: Property 'mul' does not exist on type 'PropertyNode'.
+src/materials/nodes/NodeMaterial.js(859,20): error TS2339: Property 'envMap' does not exist on type 'NodeMaterial'.
+src/materials/nodes/NodeMaterial.js(861,16): error TS2339: Property 'envMap' does not exist on type 'NodeMaterial'.
+src/materials/nodes/NodeMaterial.js(901,42): error TS2554: Expected 0 arguments, but got 1.
+src/materials/nodes/NodeMaterial.js(960,44): error TS2339: Property 'emissiveNode' does not exist on type 'NodeMaterial'.
+src/materials/nodes/NodeMaterial.js(968,52): error TS2554: Expected 0 arguments, but got 1.
+src/materials/nodes/NodeMaterial.js(972,51): error TS2554: Expected 0 arguments, but got 1.
+src/materials/nodes/NodeMaterial.js(1132,39): error TS18047: 'meta' is possibly 'null'.
+src/materials/nodes/NodeMaterial.js(1132,44): error TS2339: Property 'textures' does not exist on type 'string | Object'.
+src/materials/nodes/NodeMaterial.js(1133,37): error TS18047: 'meta' is possibly 'null'.
+src/materials/nodes/NodeMaterial.js(1133,42): error TS2339: Property 'images' does not exist on type 'string | Object'.
+src/materials/nodes/NodeMaterial.js(1134,36): error TS18047: 'meta' is possibly 'null'.
+src/materials/nodes/NodeMaterial.js(1134,41): error TS2339: Property 'nodes' does not exist on type 'string | Object'.
+src/materials/nodes/NodeMaterial.js(1178,3): error TS2740: Type 'Material' is missing the following properties from type 'NodeMaterial': isNodeMaterial, fog, lights, hardwareClipping, and 41 more.
 src/materials/nodes/PointsNodeMaterial.js(134,6): error TS2611: 'alphaToCoverage' is defined as a property in class 'SpriteNodeMaterial', but is overridden here in 'PointsNodeMaterial' as an accessor.
 src/materials/nodes/SpriteNodeMaterial.js(149,50): error TS2339: Property 'sub' does not exist on type 'ReferenceBaseNode'.
 src/math/Color.js(156,24): error TS2339: Property 'isColor' does not exist on type 'string | number | Color'.
@@ -3351,21 +3535,21 @@ src/nodes/core/NodeBuilder.js(1080,13): error TS18049: 'count' is possibly 'null
 src/nodes/core/NodeBuilder.js(1102,25): error TS18048: 'membersLayout' is possibly 'undefined'.
 src/nodes/core/NodeBuilder.js(1354,33): error TS2322: Type 'null' is not assignable to type 'string'.
 src/nodes/core/NodeBuilder.js(1412,3): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
-src/nodes/core/NodeBuilder.js(1549,25): error TS2322: Type '"compute" | "fragment" | "vertex" | "any" | null' is not assignable to type '"compute" | "fragment" | "vertex" | "any" | undefined'.
+src/nodes/core/NodeBuilder.js(1549,25): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | undefined'.
 src/nodes/core/NodeBuilder.js(1563,8): error TS18047: 'nodeData' is possibly 'null'.
 src/nodes/core/NodeBuilder.js(1563,48): error TS18047: 'nodeData' is possibly 'null'.
 src/nodes/core/NodeBuilder.js(1565,10): error TS18047: 'nodeData' is possibly 'null'.
-src/nodes/core/NodeBuilder.js(1622,59): error TS2322: Type '"compute" | "fragment" | "vertex" | "any" | null' is not assignable to type '"compute" | "fragment" | "vertex" | "any" | undefined'.
-src/nodes/core/NodeBuilder.js(1671,34): error TS2322: Type '"compute" | "fragment" | "vertex" | "any" | null' is not assignable to type '"compute" | "fragment" | "vertex" | "any" | undefined'.
-src/nodes/core/NodeBuilder.js(1721,70): error TS2322: Type '"compute" | "fragment" | "vertex" | "any" | null' is not assignable to type '"compute" | "fragment" | "vertex" | "any" | undefined'.
+src/nodes/core/NodeBuilder.js(1622,59): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | undefined'.
+src/nodes/core/NodeBuilder.js(1671,34): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | undefined'.
+src/nodes/core/NodeBuilder.js(1721,70): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | undefined'.
 src/nodes/core/NodeBuilder.js(1732,38): error TS2322: Type 'number' is not assignable to type 'NodeVar[]'.
 src/nodes/core/NodeBuilder.js(1738,5): error TS2356: An arithmetic operand must be of type 'any', 'number', 'bigint' or an enum type.
-src/nodes/core/NodeBuilder.js(1850,31): error TS2322: Type '"compute" | "fragment" | "vertex" | "any" | null' is not assignable to type '"compute" | "fragment" | "vertex" | "any" | undefined'.
+src/nodes/core/NodeBuilder.js(1850,31): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | undefined'.
 src/nodes/core/NodeBuilder.js(2066,18): error TS2551: Property 'buildFunctionCode' does not exist on type 'NodeBuilder'. Did you mean 'buildFunctionNode'?
 src/nodes/core/NodeBuilder.js(2144,24): error TS2345: Argument of type 'string' is not assignable to parameter of type '"setup" | "analyze" | "generate" | null'.
 src/nodes/core/NodeBuilder.js(2146,9): error TS2339: Property 'result' does not exist on type '{ code: string; }'.
 src/nodes/core/NodeBuilder.js(2150,8): error TS2339: Property 'vars' does not exist on type '{ code: string; }'.
-src/nodes/core/NodeBuilder.js(2150,29): error TS2345: Argument of type '"compute" | "fragment" | "vertex" | "any" | null' is not assignable to parameter of type '"compute" | "fragment" | "vertex" | "any"'.
+src/nodes/core/NodeBuilder.js(2150,29): error TS2345: Argument of type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any"'.
 src/nodes/core/NodeBuilder.js(2194,8): error TS2339: Property 'result' does not exist on type '{ code: string; }'.
 src/nodes/core/NodeBuilder.js(2252,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
 src/nodes/core/NodeBuilder.js(2265,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
@@ -3373,7 +3557,7 @@ src/nodes/core/NodeBuilder.js(2318,14): error TS2355: A function whose declared 
 src/nodes/core/NodeBuilder.js(2359,10): error TS2531: Object is possibly 'null'.
 src/nodes/core/NodeBuilder.js(2359,30): error TS2531: Object is possibly 'null'.
 src/nodes/core/NodeBuilder.js(2453,24): error TS2345: Argument of type 'string' is not assignable to parameter of type '"setup" | "analyze" | "generate" | null'.
-src/nodes/core/NodeBuilder.js(2463,26): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "fragment" | "vertex" | "any" | null'.
+src/nodes/core/NodeBuilder.js(2463,26): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any" | null'.
 src/nodes/core/NodeCache.js(53,4): error TS2322: Type 'Object | null' is not assignable to type 'Object | undefined'.
 src/nodes/core/NodeCache.js(57,3): error TS2322: Type 'Object | undefined' is not assignable to type 'Object | null'.
 src/nodes/core/NodeFrame.js(118,28): error TS2314: Generic type 'WeakMap<K, V>' requires 2 type argument(s).
@@ -3846,10 +4030,6 @@ src/renderers/common/Color4.js(46,3): error TS2741: Property 'a' is missing in t
 src/renderers/common/Color4.js(60,3): error TS2741: Property 'a' is missing in type 'Color' but required in type 'Color4'.
 src/renderers/common/CubeRenderTarget.js(77,14): error TS2345: Argument of type 'Mesh' is not assignable to parameter of type 'Object3D'.
 src/renderers/common/DataMap.js(18,13): error TS2314: Generic type 'WeakMap<K, V>' requires 2 type argument(s).
-src/renderers/common/extras/PMREMGenerator.js(228,13): error TS2552: Cannot find name 'Texture'. Did you mean 'texture'?
-src/renderers/common/extras/PMREMGenerator.js(258,13): error TS2552: Cannot find name 'Texture'. Did you mean 'texture'?
-src/renderers/common/extras/PMREMGenerator.js(276,13): error TS2552: Cannot find name 'Texture'. Did you mean 'texture'?
-src/renderers/common/extras/PMREMGenerator.js(306,13): error TS2552: Cannot find name 'Texture'. Did you mean 'texture'?
 src/renderers/common/extras/PMREMGenerator.js(323,15): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
 src/renderers/common/extras/PMREMGenerator.js(340,15): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
 src/renderers/common/extras/PMREMGenerator.js(550,16): error TS2339: Property 'position' does not exist on type 'PerspectiveCamera'.
@@ -3879,12 +4059,10 @@ src/renderers/common/Pipelines.js(346,20): error TS2314: Generic type 'Promise<T
 src/renderers/common/PostProcessing.js(158,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
 src/renderers/common/QuadMesh.js(85,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
 src/renderers/common/RenderContext.js(255,25): error TS18047: 'textures' is possibly 'null'.
-src/renderers/common/Renderer.js(102,13): error TS2552: Cannot find name 'Backend'. Did you mean 'backend'?
 src/renderers/common/Renderer.js(630,20): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
 src/renderers/common/Renderer.js(701,24): error TS2531: Object is possibly 'null'.
 src/renderers/common/Renderer.js(702,27): error TS2531: Object is possibly 'null'.
 src/renderers/common/Renderer.js(706,26): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(822,13): error TS2552: Cannot find name 'Object3D'. Did you mean 'Object'?
 src/renderers/common/Renderer.js(825,22): error TS2314: Generic type 'Array<T>' requires 1 type argument(s).
 src/renderers/common/Renderer.js(835,21): error TS2531: Object is possibly 'null'.
 src/renderers/common/Renderer.js(849,25): error TS2531: Object is possibly 'null'.
@@ -3894,7 +4072,6 @@ src/renderers/common/Renderer.js(889,4): error TS18047: 'targetScene' is possibl
 src/renderers/common/Renderer.js(907,4): error TS2531: Object is possibly 'null'.
 src/renderers/common/Renderer.js(909,29): error TS2531: Object is possibly 'null'.
 src/renderers/common/Renderer.js(923,3): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(955,13): error TS2552: Cannot find name 'Object3D'. Did you mean 'Object'?
 src/renderers/common/Renderer.js(957,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
 src/renderers/common/Renderer.js(972,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
 src/renderers/common/Renderer.js(1054,24): error TS2531: Object is possibly 'null'.
@@ -3903,7 +4080,6 @@ src/renderers/common/Renderer.js(1100,6): error TS2531: Object is possibly 'null
 src/renderers/common/Renderer.js(1102,6): error TS2531: Object is possibly 'null'.
 src/renderers/common/Renderer.js(1103,6): error TS2531: Object is possibly 'null'.
 src/renderers/common/Renderer.js(1105,6): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(1124,13): error TS2552: Cannot find name 'Object3D'. Did you mean 'Object'?
 src/renderers/common/Renderer.js(1126,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
 src/renderers/common/Renderer.js(1126,15): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
 src/renderers/common/Renderer.js(1179,22): error TS2339: Property 'isPostProcessingRenderTarget' does not exist on type 'RenderTarget'.
@@ -4094,24 +4270,24 @@ src/renderers/shaders/ShaderLib.js(303,11): error TS2339: Property 'physical' do
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(84,3): error TS2322: Type 'never[]' is not assignable to type '{ [x: string]: Map<string, Object>; }'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(241,15): error TS2551: Property 'isPBOTexture' does not exist on type 'DataTexture'. Did you mean 'isTexture'?
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(249,59): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(262,25): error TS2322: Type '"compute" | "fragment" | "vertex" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(262,25): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(270,39): error TS2554: Expected 1 arguments, but got 2.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(293,78): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(467,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(469,93): error TS2322: Type '"compute" | "fragment" | "vertex" | "any" | null' is not assignable to type 'string | undefined'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(911,35): error TS2322: Type '"compute" | "fragment" | "vertex" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(469,93): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(911,35): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1057,19): error TS2349: This expression is not callable.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1073,20): error TS2365: Operator '<' cannot be applied to types 'number' and 'Map<string, Object>'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1077,58): error TS2339: Property 'attributeNode' does not exist on type 'Map<string, Object>'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1079,29): error TS2339: Property 'varyingName' does not exist on type 'Map<string, Object>'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1258,37): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "fragment" | "vertex" | "any"'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1258,37): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any"'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1259,47): error TS2554: Expected 0 arguments, but got 1.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1266,49): error TS2345: Argument of type '{} | undefined' is not assignable to parameter of type 'Object'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1267,53): error TS2345: Argument of type '{} | undefined' is not assignable to parameter of type 'Object'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1271,50): error TS2345: Argument of type '{} | undefined' is not assignable to parameter of type 'Object'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1292,61): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "fragment" | "vertex" | "any" | undefined'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1293,48): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "fragment" | "vertex" | "any" | undefined'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1302,56): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "fragment" | "vertex" | "any"'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1292,61): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any" | undefined'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1293,48): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any" | undefined'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1302,56): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any"'.
 src/renderers/webgl-fallback/utils/WebGLAttributeUtils.js(175,4): error TS2322: Type 'DualAttributeData' is not assignable to type '{ bufferGPU: any; bufferType: GLenum; type: any; byteLength: number; bytesPerElement: number; version: any; pbo: any; isInteger: boolean; id: number; }'.
 src/renderers/webgl-fallback/utils/WebGLCapabilities.js(58,3): error TS2322: Type 'number | null' is not assignable to type 'number'.
 src/renderers/webgl-fallback/utils/WebGLState.js(564,19): error TS2532: Object is possibly 'undefined'.
@@ -4320,32 +4496,32 @@ src/renderers/webgpu/nodes/WGSLNodeBuilder.js(143,14): error TS2339: Property 'p
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(144,14): error TS2339: Property 'pow_vec2' does not exist on type '{ dFdx: string; dFdy: string; mod_float: string; mod_vec2: string; mod_vec3: string; mod_vec4: string; equals_bool: string; equals_bvec2: string; equals_bvec3: string; equals_bvec4: string; inversesqrt: string; bitcast: string; }'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(145,14): error TS2339: Property 'pow_vec3' does not exist on type '{ dFdx: string; dFdy: string; mod_float: string; mod_vec2: string; mod_vec3: string; mod_vec4: string; equals_bool: string; equals_bvec2: string; equals_bvec3: string; equals_bvec4: string; inversesqrt: string; bitcast: string; }'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(146,14): error TS2339: Property 'pow_vec4' does not exist on type '{ dFdx: string; dFdy: string; mod_float: string; mod_vec2: string; mod_vec3: string; mod_vec4: string; equals_bool: string; equals_bvec2: string; equals_bvec3: string; equals_bvec4: string; inversesqrt: string; bitcast: string; }'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(237,77): error TS2322: Type '"compute" | "fragment" | "vertex" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(237,77): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(270,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(272,52): error TS2322: Type '"compute" | "fragment" | "vertex" | "any" | null' is not assignable to type 'string | undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(298,96): error TS2322: Type '"compute" | "fragment" | "vertex" | "any" | null' is not assignable to type 'string | undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(416,54): error TS2345: Argument of type '"compute" | "fragment" | "vertex" | "any" | null' is not assignable to parameter of type '"compute" | "fragment" | "vertex" | "any" | undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(605,70): error TS2322: Type '"compute" | "fragment" | "vertex" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(272,52): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(298,96): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(416,54): error TS2345: Argument of type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any" | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(605,70): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(615,95): error TS2554: Expected 4-5 arguments, but got 6.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(636,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(638,87): error TS2322: Type '"compute" | "fragment" | "vertex" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(638,87): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(663,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(665,93): error TS2322: Type '"compute" | "fragment" | "vertex" | "any" | null' is not assignable to type 'string | undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(690,89): error TS2322: Type '"compute" | "fragment" | "vertex" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(665,93): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(690,89): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(717,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(719,87): error TS2322: Type '"compute" | "fragment" | "vertex" | "any" | null' is not assignable to type 'string | undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(740,25): error TS2322: Type '"compute" | "fragment" | "vertex" | "any" | null' is not assignable to type 'string | undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(858,61): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "fragment" | "vertex" | "any" | undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(859,48): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "fragment" | "vertex" | "any" | undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(868,56): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "fragment" | "vertex" | "any"'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(719,87): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(740,25): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(858,61): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any" | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(859,48): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any" | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(868,56): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any"'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(890,5): error TS18047: 'texture' is possibly 'null'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(891,5): error TS18047: 'texture' is possibly 'null'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(893,120): error TS18047: 'texture' is possibly 'null'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(965,36): error TS2322: Type '"compute" | "fragment" | "vertex" | "any" | null' is not assignable to type 'string | undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(990,20): error TS2322: Type '"compute" | "fragment" | "vertex" | "any" | null' is not assignable to type 'string | undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1192,25): error TS2322: Type '"compute" | "fragment" | "vertex" | "any" | null' is not assignable to type 'string | undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1750,4): error TS2322: Type 'string' is not assignable to type '"compute" | "fragment" | "vertex" | "any" | null'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1758,37): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "fragment" | "vertex" | "any"'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(965,36): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(990,20): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1192,25): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1750,4): error TS2322: Type 'string' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | null'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1758,37): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any"'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1835,49): error TS2345: Argument of type '{} | undefined' is not assignable to parameter of type 'Object'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1836,53): error TS2345: Argument of type '{} | undefined' is not assignable to parameter of type 'Object'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1840,51): error TS2345: Argument of type '{} | undefined' is not assignable to parameter of type 'Object'.
@@ -4405,7 +4581,6 @@ src/renderers/webgpu/utils/WebGPUTextureUtils.js(477,23): error TS2339: Property
 src/renderers/webgpu/utils/WebGPUTextureUtils.js(485,30): error TS18048: 'options' is possibly 'undefined'.
 src/renderers/webgpu/utils/WebGPUTextureUtils.js(658,13): error TS2314: Generic type 'Array<T>' requires 1 type argument(s).
 src/renderers/webgpu/utils/WebGPUTextureUtils.js(873,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
-src/renderers/webgpu/utils/WebGPUTextureUtils.js(880,77): error TS2551: Property 'BC4RSNorm' does not exist on type '{ R8Unorm: string; R8Snorm: string; R8Uint: string; R8Sint: string; R16Uint: string; R16Sint: string; R16Float: string; RG8Unorm: string; RG8Snorm: string; RG8Uint: string; RG8Sint: string; R32Uint: string; ... 81 more ...; ASTC12x12UnormSRGB: string; }'. Did you mean 'BC4RSnorm'?
 src/renderers/webgpu/utils/WebGPUTextureUtils.js(961,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
 src/renderers/webgpu/utils/WebGPUTextureUtils.js(997,32): error TS2551: Property 'RG11B10UFloat' does not exist on type '{ R8Unorm: string; R8Snorm: string; R8Uint: string; R8Sint: string; R16Uint: string; R16Sint: string; R16Float: string; RG8Unorm: string; RG8Snorm: string; RG8Uint: string; RG8Sint: string; R32Uint: string; ... 81 more ...; ASTC12x12UnormSRGB: string; }'. Did you mean 'RG11B10uFloat'?
 src/renderers/webgpu/utils/WebGPUTextureUtils.js(1024,14): error TS2503: Cannot find namespace 'TypedArray'.
