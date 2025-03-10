@@ -29,8 +29,8 @@
         },
         "lib": [
             "esnext",
-            // "dom", // Do not include dom
-            // "dom.iterable", // Do not include dom
+            "dom", // Do not include dom
+            "dom.iterable", // Do not include dom
             "scripthost"
         ]
     },

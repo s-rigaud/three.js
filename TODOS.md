@@ -7,7 +7,7 @@ Add Color has color type for Color4.set
 Renderer.compute result is not null but undefined
 Renderer.compile return a function not a promise
 ViewHelper.handleClick has event of type MouseEvent
-Loader.requestHeader is Object<string, string> (set everywhere)
+FileLoader :122 .requestHeader is Object<string, string> (set everywhere)
 ImageBitmaploader.requestHeader is Object<string, string> (set everywhere)
 NodeLoader.parseNodes json is Object<string, any>
 ReflectorNode.getDepthNode and getDepthNode return ReflectorNode
@@ -25,4 +25,3 @@ RTTNode problem for width undefined, passing null, ... ??
 See if https://jsdoc.app/tags-this can be used
 Remove ...arguments calls
 Delete as much eslint-disable-next-line as possible
-Add more link to MDN doc inside the code (use dom in tsconfig)
