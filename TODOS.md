@@ -12,9 +12,7 @@ ImageBitmaploader.requestHeader is Object<string, string> (set everywhere)
 NodeLoader.parseNodes json is Object<string, any>
 
 # Dev
-Move this.trackTimestamp to parent Backend class
-Add buildFunctionCode to NodeBuilder class (func overiten by subclasses)
-AnalyticalLightNode call to .setupShadowNode does not take any parameter
+
 
 # Investigate
 Use MaterialLoader.js and Material.js to fix tab of material attributes
