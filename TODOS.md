@@ -10,6 +10,9 @@ ViewHelper.handleClick has event of type MouseEvent
 Loader.requestHeader is Object<string, string> (set everywhere)
 ImageBitmaploader.requestHeader is Object<string, string> (set everywhere)
 NodeLoader.parseNodes json is Object<string, any>
+ReflectorNode.getDepthNode and getDepthNode return ReflectorNode
+ReflectorNode constructor default values for params does not exist
+ReflectorBaseNode.textureNode is ReflectorNode (has getDepthNode only exists in ReflectorNode)
 
 # Dev
 
@@ -21,8 +24,6 @@ correct all generic errors ": Generic type "
 RTTNode problem for width undefined, passing null, ... ??
 See if https://jsdoc.app/tags-this can be used
 Remove ...arguments calls
-Test reflectorNode .getDepthNode (type problem)
-Investigate more on TS2322
 Reread line like "Did you mean" (one mistake found like that)
 AnimationClip.toJSON broken ?
 Delete as much eslint-disable-next-line as possible
