@@ -2092,7 +2092,7 @@ examples/jsm/tsl/display/TRAAPassNode.js(259,40): error TS2339: Property 'render
 examples/jsm/tsl/display/TRAAPassNode.js(265,78): error TS2339: Property 'renderTarget' does not exist on type 'TRAAPassNode'.
 examples/jsm/tsl/display/TRAAPassNode.js(308,36): error TS2339: Property 'renderTarget' does not exist on type 'TRAAPassNode'.
 examples/jsm/tsl/display/TRAAPassNode.js(309,37): error TS2339: Property 'renderTarget' does not exist on type 'TRAAPassNode'.
-examples/jsm/tsl/lighting/TiledLightsNode.js(120,29): error TS2554: Expected 0 arguments, but got 1.
+examples/jsm/tsl/lighting/TiledLightsNode.js(146,29): error TS2554: Expected 0 arguments, but got 1.
 examples/jsm/utils/BufferGeometryUtils.js(218,13): error TS18047: 'geometry.index' is possibly 'null'.
 examples/jsm/utils/BufferGeometryUtils.js(250,25): error TS18047: 'index' is possibly 'null'.
 examples/jsm/utils/BufferGeometryUtils.js(252,23): error TS18047: 'index' is possibly 'null'.
@@ -2414,8 +2414,8 @@ src/core/BufferAttribute.js(670,32): error TS2339: Property 'name' does not exis
 src/core/BufferAttribute.js(671,46): error TS2339: Property 'usage' does not exist on type '{ itemSize: number; type: any; array: any[]; normalized: boolean; }'.
 src/core/BufferGeometry.js(162,3): error TS2322: Type 'null' is not assignable to type 'Box3'.
 src/core/BufferGeometry.js(170,3): error TS2322: Type 'null' is not assignable to type 'Sphere'.
-src/core/BufferGeometry.js(580,44): error TS2339: Property 'z' does not exist on type 'Vector2 | Vector3'.
-src/core/BufferGeometry.js(593,58): error TS2339: Property 'z' does not exist on type 'Vector2 | Vector3'.
+src/core/BufferGeometry.js(580,44): error TS2339: Property 'z' does not exist on type 'Vector3 | Vector2'.
+src/core/BufferGeometry.js(593,58): error TS2339: Property 'z' does not exist on type 'Vector3 | Vector2'.
 src/core/BufferGeometry.js(1212,8): error TS2339: Property 'uuid' does not exist on type '{ metadata: { version: number; type: string; generator: string; }; }'.
 src/core/BufferGeometry.js(1213,8): error TS2339: Property 'type' does not exist on type '{ metadata: { version: number; type: string; generator: string; }; }'.
 src/core/BufferGeometry.js(1214,32): error TS2339: Property 'name' does not exist on type '{ metadata: { version: number; type: string; generator: string; }; }'.
@@ -2474,97 +2474,97 @@ src/core/Object3D.js(688,13): error TS2339: Property 'isCamera' does not exist o
 src/core/Object3D.js(688,30): error TS2339: Property 'isLight' does not exist on type 'Object3D'.
 src/core/Object3D.js(698,8): error TS2339: Property 'quaternion' does not exist on type 'Object3D'.
 src/core/Object3D.js(704,9): error TS2339: Property 'quaternion' does not exist on type 'Object3D'.
-src/core/Object3D.js(835,23): error TS2556: A spread argument must either have a tuple type or be passed to a rest parameter.
-src/core/Object3D.js(1109,29): error TS2339: Property 'position' does not exist on type 'Object3D'.
-src/core/Object3D.js(1109,44): error TS2339: Property 'quaternion' does not exist on type 'Object3D'.
-src/core/Object3D.js(1109,61): error TS2339: Property 'scale' does not exist on type 'Object3D'.
-src/core/Object3D.js(1279,13): error TS2339: Property 'isInstancedMesh' does not exist on type 'Object3D'.
-src/core/Object3D.js(1282,24): error TS2339: Property 'count' does not exist on type 'Object3D'.
-src/core/Object3D.js(1283,33): error TS2339: Property 'instanceMatrix' does not exist on type 'Object3D'.
-src/core/Object3D.js(1284,14): error TS2339: Property 'instanceColor' does not exist on type 'Object3D'.
-src/core/Object3D.js(1284,67): error TS2339: Property 'instanceColor' does not exist on type 'Object3D'.
-src/core/Object3D.js(1288,13): error TS2339: Property 'isBatchedMesh' does not exist on type 'Object3D'.
-src/core/Object3D.js(1291,41): error TS2339: Property 'perObjectFrustumCulled' does not exist on type 'Object3D'.
-src/core/Object3D.js(1292,30): error TS2339: Property 'sortObjects' does not exist on type 'Object3D'.
-src/core/Object3D.js(1294,29): error TS2339: Property '_drawRanges' does not exist on type 'Object3D'.
-src/core/Object3D.js(1295,33): error TS2339: Property '_reservedRanges' does not exist on type 'Object3D'.
-src/core/Object3D.js(1297,29): error TS2339: Property '_visibility' does not exist on type 'Object3D'.
-src/core/Object3D.js(1298,25): error TS2339: Property '_active' does not exist on type 'Object3D'.
-src/core/Object3D.js(1299,25): error TS2339: Property '_bounds' does not exist on type 'Object3D'.
-src/core/Object3D.js(1309,35): error TS2339: Property '_maxInstanceCount' does not exist on type 'Object3D'.
-src/core/Object3D.js(1310,33): error TS2339: Property '_maxVertexCount' does not exist on type 'Object3D'.
-src/core/Object3D.js(1311,32): error TS2339: Property '_maxIndexCount' does not exist on type 'Object3D'.
-src/core/Object3D.js(1313,38): error TS2339: Property '_geometryInitialized' does not exist on type 'Object3D'.
-src/core/Object3D.js(1314,32): error TS2339: Property '_geometryCount' does not exist on type 'Object3D'.
-src/core/Object3D.js(1316,34): error TS2339: Property '_matricesTexture' does not exist on type 'Object3D'.
-src/core/Object3D.js(1318,14): error TS2339: Property '_colorsTexture' does not exist on type 'Object3D'.
-src/core/Object3D.js(1318,68): error TS2339: Property '_colorsTexture' does not exist on type 'Object3D'.
-src/core/Object3D.js(1320,14): error TS2339: Property 'boundingSphere' does not exist on type 'Object3D'.
-src/core/Object3D.js(1329,14): error TS2339: Property 'boundingBox' does not exist on type 'Object3D'.
-src/core/Object3D.js(1354,13): error TS2339: Property 'isScene' does not exist on type 'Object3D'.
-src/core/Object3D.js(1356,14): error TS2339: Property 'background' does not exist on type 'Object3D'.
-src/core/Object3D.js(1358,15): error TS2339: Property 'background' does not exist on type 'Object3D'.
-src/core/Object3D.js(1360,31): error TS2339: Property 'background' does not exist on type 'Object3D'.
-src/core/Object3D.js(1362,22): error TS2339: Property 'background' does not exist on type 'Object3D'.
-src/core/Object3D.js(1364,31): error TS2339: Property 'background' does not exist on type 'Object3D'.
-src/core/Object3D.js(1370,14): error TS2339: Property 'environment' does not exist on type 'Object3D'.
-src/core/Object3D.js(1370,34): error TS2339: Property 'environment' does not exist on type 'Object3D'.
-src/core/Object3D.js(1370,64): error TS2339: Property 'environment' does not exist on type 'Object3D'.
-src/core/Object3D.js(1372,31): error TS2339: Property 'environment' does not exist on type 'Object3D'.
-src/core/Object3D.js(1376,20): error TS2339: Property 'isMesh' does not exist on type 'Object3D'.
-src/core/Object3D.js(1376,35): error TS2339: Property 'isLine' does not exist on type 'Object3D'.
-src/core/Object3D.js(1376,50): error TS2339: Property 'isPoints' does not exist on type 'Object3D'.
-src/core/Object3D.js(1378,33): error TS18047: 'meta' is possibly 'null'.
-src/core/Object3D.js(1378,38): error TS2339: Property 'geometries' does not exist on type 'string | Object'.
-src/core/Object3D.js(1378,55): error TS2339: Property 'geometry' does not exist on type 'Object3D'.
-src/core/Object3D.js(1380,28): error TS2339: Property 'geometry' does not exist on type 'Object3D'.
-src/core/Object3D.js(1392,18): error TS18047: 'meta' is possibly 'null'.
-src/core/Object3D.js(1392,23): error TS2339: Property 'shapes' does not exist on type 'string | Object'.
-src/core/Object3D.js(1398,17): error TS18047: 'meta' is possibly 'null'.
-src/core/Object3D.js(1398,22): error TS2339: Property 'shapes' does not exist on type 'string | Object'.
-src/core/Object3D.js(1406,13): error TS2339: Property 'isSkinnedMesh' does not exist on type 'Object3D'.
-src/core/Object3D.js(1408,27): error TS2339: Property 'bindMode' does not exist on type 'Object3D'.
-src/core/Object3D.js(1409,29): error TS2339: Property 'bindMatrix' does not exist on type 'Object3D'.
-src/core/Object3D.js(1411,14): error TS2339: Property 'skeleton' does not exist on type 'Object3D'.
-src/core/Object3D.js(1413,16): error TS18047: 'meta' is possibly 'null'.
-src/core/Object3D.js(1413,21): error TS2339: Property 'skeletons' does not exist on type 'string | Object'.
-src/core/Object3D.js(1413,37): error TS2339: Property 'skeleton' does not exist on type 'Object3D'.
-src/core/Object3D.js(1415,28): error TS2339: Property 'skeleton' does not exist on type 'Object3D'.
-src/core/Object3D.js(1421,13): error TS2339: Property 'material' does not exist on type 'Object3D'.
-src/core/Object3D.js(1423,29): error TS2339: Property 'material' does not exist on type 'Object3D'.
-src/core/Object3D.js(1427,31): error TS2339: Property 'material' does not exist on type 'Object3D'.
-src/core/Object3D.js(1429,29): error TS18047: 'meta' is possibly 'null'.
-src/core/Object3D.js(1429,34): error TS2339: Property 'materials' does not exist on type 'string | Object'.
-src/core/Object3D.js(1429,50): error TS2339: Property 'material' does not exist on type 'Object3D'.
-src/core/Object3D.js(1437,34): error TS18047: 'meta' is possibly 'null'.
-src/core/Object3D.js(1437,39): error TS2339: Property 'materials' does not exist on type 'string | Object'.
-src/core/Object3D.js(1437,55): error TS2339: Property 'material' does not exist on type 'Object3D'.
-src/core/Object3D.js(1467,40): error TS18047: 'meta' is possibly 'null'.
-src/core/Object3D.js(1467,45): error TS2339: Property 'animations' does not exist on type 'string | Object'.
-src/core/Object3D.js(1475,41): error TS18047: 'meta' is possibly 'null'.
-src/core/Object3D.js(1475,46): error TS2339: Property 'geometries' does not exist on type 'string | Object'.
-src/core/Object3D.js(1476,40): error TS18047: 'meta' is possibly 'null'.
-src/core/Object3D.js(1476,45): error TS2339: Property 'materials' does not exist on type 'string | Object'.
-src/core/Object3D.js(1477,39): error TS18047: 'meta' is possibly 'null'.
-src/core/Object3D.js(1477,44): error TS2339: Property 'textures' does not exist on type 'string | Object'.
-src/core/Object3D.js(1478,37): error TS18047: 'meta' is possibly 'null'.
-src/core/Object3D.js(1478,42): error TS2339: Property 'images' does not exist on type 'string | Object'.
-src/core/Object3D.js(1479,37): error TS18047: 'meta' is possibly 'null'.
-src/core/Object3D.js(1479,42): error TS2339: Property 'shapes' does not exist on type 'string | Object'.
-src/core/Object3D.js(1480,40): error TS18047: 'meta' is possibly 'null'.
-src/core/Object3D.js(1480,45): error TS2339: Property 'skeletons' does not exist on type 'string | Object'.
+src/core/Object3D.js(841,23): error TS2556: A spread argument must either have a tuple type or be passed to a rest parameter.
+src/core/Object3D.js(1115,29): error TS2339: Property 'position' does not exist on type 'Object3D'.
+src/core/Object3D.js(1115,44): error TS2339: Property 'quaternion' does not exist on type 'Object3D'.
+src/core/Object3D.js(1115,61): error TS2339: Property 'scale' does not exist on type 'Object3D'.
+src/core/Object3D.js(1285,13): error TS2339: Property 'isInstancedMesh' does not exist on type 'Object3D'.
+src/core/Object3D.js(1288,24): error TS2339: Property 'count' does not exist on type 'Object3D'.
+src/core/Object3D.js(1289,33): error TS2339: Property 'instanceMatrix' does not exist on type 'Object3D'.
+src/core/Object3D.js(1290,14): error TS2339: Property 'instanceColor' does not exist on type 'Object3D'.
+src/core/Object3D.js(1290,67): error TS2339: Property 'instanceColor' does not exist on type 'Object3D'.
+src/core/Object3D.js(1294,13): error TS2339: Property 'isBatchedMesh' does not exist on type 'Object3D'.
+src/core/Object3D.js(1297,41): error TS2339: Property 'perObjectFrustumCulled' does not exist on type 'Object3D'.
+src/core/Object3D.js(1298,30): error TS2339: Property 'sortObjects' does not exist on type 'Object3D'.
+src/core/Object3D.js(1300,29): error TS2339: Property '_drawRanges' does not exist on type 'Object3D'.
+src/core/Object3D.js(1301,33): error TS2339: Property '_reservedRanges' does not exist on type 'Object3D'.
+src/core/Object3D.js(1303,29): error TS2339: Property '_visibility' does not exist on type 'Object3D'.
+src/core/Object3D.js(1304,25): error TS2339: Property '_active' does not exist on type 'Object3D'.
+src/core/Object3D.js(1305,25): error TS2339: Property '_bounds' does not exist on type 'Object3D'.
+src/core/Object3D.js(1315,35): error TS2339: Property '_maxInstanceCount' does not exist on type 'Object3D'.
+src/core/Object3D.js(1316,33): error TS2339: Property '_maxVertexCount' does not exist on type 'Object3D'.
+src/core/Object3D.js(1317,32): error TS2339: Property '_maxIndexCount' does not exist on type 'Object3D'.
+src/core/Object3D.js(1319,38): error TS2339: Property '_geometryInitialized' does not exist on type 'Object3D'.
+src/core/Object3D.js(1320,32): error TS2339: Property '_geometryCount' does not exist on type 'Object3D'.
+src/core/Object3D.js(1322,34): error TS2339: Property '_matricesTexture' does not exist on type 'Object3D'.
+src/core/Object3D.js(1324,14): error TS2339: Property '_colorsTexture' does not exist on type 'Object3D'.
+src/core/Object3D.js(1324,68): error TS2339: Property '_colorsTexture' does not exist on type 'Object3D'.
+src/core/Object3D.js(1326,14): error TS2339: Property 'boundingSphere' does not exist on type 'Object3D'.
+src/core/Object3D.js(1335,14): error TS2339: Property 'boundingBox' does not exist on type 'Object3D'.
+src/core/Object3D.js(1360,13): error TS2339: Property 'isScene' does not exist on type 'Object3D'.
+src/core/Object3D.js(1362,14): error TS2339: Property 'background' does not exist on type 'Object3D'.
+src/core/Object3D.js(1364,15): error TS2339: Property 'background' does not exist on type 'Object3D'.
+src/core/Object3D.js(1366,31): error TS2339: Property 'background' does not exist on type 'Object3D'.
+src/core/Object3D.js(1368,22): error TS2339: Property 'background' does not exist on type 'Object3D'.
+src/core/Object3D.js(1370,31): error TS2339: Property 'background' does not exist on type 'Object3D'.
+src/core/Object3D.js(1376,14): error TS2339: Property 'environment' does not exist on type 'Object3D'.
+src/core/Object3D.js(1376,34): error TS2339: Property 'environment' does not exist on type 'Object3D'.
+src/core/Object3D.js(1376,64): error TS2339: Property 'environment' does not exist on type 'Object3D'.
+src/core/Object3D.js(1378,31): error TS2339: Property 'environment' does not exist on type 'Object3D'.
+src/core/Object3D.js(1382,20): error TS2339: Property 'isMesh' does not exist on type 'Object3D'.
+src/core/Object3D.js(1382,35): error TS2339: Property 'isLine' does not exist on type 'Object3D'.
+src/core/Object3D.js(1382,50): error TS2339: Property 'isPoints' does not exist on type 'Object3D'.
+src/core/Object3D.js(1384,33): error TS18047: 'meta' is possibly 'null'.
+src/core/Object3D.js(1384,38): error TS2339: Property 'geometries' does not exist on type 'string | Object'.
+src/core/Object3D.js(1384,55): error TS2339: Property 'geometry' does not exist on type 'Object3D'.
+src/core/Object3D.js(1386,28): error TS2339: Property 'geometry' does not exist on type 'Object3D'.
+src/core/Object3D.js(1398,18): error TS18047: 'meta' is possibly 'null'.
+src/core/Object3D.js(1398,23): error TS2339: Property 'shapes' does not exist on type 'string | Object'.
+src/core/Object3D.js(1404,17): error TS18047: 'meta' is possibly 'null'.
+src/core/Object3D.js(1404,22): error TS2339: Property 'shapes' does not exist on type 'string | Object'.
+src/core/Object3D.js(1412,13): error TS2339: Property 'isSkinnedMesh' does not exist on type 'Object3D'.
+src/core/Object3D.js(1414,27): error TS2339: Property 'bindMode' does not exist on type 'Object3D'.
+src/core/Object3D.js(1415,29): error TS2339: Property 'bindMatrix' does not exist on type 'Object3D'.
+src/core/Object3D.js(1417,14): error TS2339: Property 'skeleton' does not exist on type 'Object3D'.
+src/core/Object3D.js(1419,16): error TS18047: 'meta' is possibly 'null'.
+src/core/Object3D.js(1419,21): error TS2339: Property 'skeletons' does not exist on type 'string | Object'.
+src/core/Object3D.js(1419,37): error TS2339: Property 'skeleton' does not exist on type 'Object3D'.
+src/core/Object3D.js(1421,28): error TS2339: Property 'skeleton' does not exist on type 'Object3D'.
+src/core/Object3D.js(1427,13): error TS2339: Property 'material' does not exist on type 'Object3D'.
+src/core/Object3D.js(1429,29): error TS2339: Property 'material' does not exist on type 'Object3D'.
+src/core/Object3D.js(1433,31): error TS2339: Property 'material' does not exist on type 'Object3D'.
+src/core/Object3D.js(1435,29): error TS18047: 'meta' is possibly 'null'.
+src/core/Object3D.js(1435,34): error TS2339: Property 'materials' does not exist on type 'string | Object'.
+src/core/Object3D.js(1435,50): error TS2339: Property 'material' does not exist on type 'Object3D'.
+src/core/Object3D.js(1443,34): error TS18047: 'meta' is possibly 'null'.
+src/core/Object3D.js(1443,39): error TS2339: Property 'materials' does not exist on type 'string | Object'.
+src/core/Object3D.js(1443,55): error TS2339: Property 'material' does not exist on type 'Object3D'.
+src/core/Object3D.js(1473,40): error TS18047: 'meta' is possibly 'null'.
+src/core/Object3D.js(1473,45): error TS2339: Property 'animations' does not exist on type 'string | Object'.
 src/core/Object3D.js(1481,41): error TS18047: 'meta' is possibly 'null'.
-src/core/Object3D.js(1481,46): error TS2339: Property 'animations' does not exist on type 'string | Object'.
-src/core/Object3D.js(1482,36): error TS18047: 'meta' is possibly 'null'.
-src/core/Object3D.js(1482,41): error TS2339: Property 'nodes' does not exist on type 'string | Object'.
-src/core/Object3D.js(1544,8): error TS2339: Property 'position' does not exist on type 'Object3D'.
-src/core/Object3D.js(1544,30): error TS2339: Property 'position' does not exist on type 'Object3D'.
-src/core/Object3D.js(1545,8): error TS2339: Property 'rotation' does not exist on type 'Object3D'.
-src/core/Object3D.js(1545,32): error TS2339: Property 'rotation' does not exist on type 'Object3D'.
-src/core/Object3D.js(1546,8): error TS2339: Property 'quaternion' does not exist on type 'Object3D'.
-src/core/Object3D.js(1546,32): error TS2339: Property 'quaternion' does not exist on type 'Object3D'.
-src/core/Object3D.js(1547,8): error TS2339: Property 'scale' does not exist on type 'Object3D'.
-src/core/Object3D.js(1547,27): error TS2339: Property 'scale' does not exist on type 'Object3D'.
+src/core/Object3D.js(1481,46): error TS2339: Property 'geometries' does not exist on type 'string | Object'.
+src/core/Object3D.js(1482,40): error TS18047: 'meta' is possibly 'null'.
+src/core/Object3D.js(1482,45): error TS2339: Property 'materials' does not exist on type 'string | Object'.
+src/core/Object3D.js(1483,39): error TS18047: 'meta' is possibly 'null'.
+src/core/Object3D.js(1483,44): error TS2339: Property 'textures' does not exist on type 'string | Object'.
+src/core/Object3D.js(1484,37): error TS18047: 'meta' is possibly 'null'.
+src/core/Object3D.js(1484,42): error TS2339: Property 'images' does not exist on type 'string | Object'.
+src/core/Object3D.js(1485,37): error TS18047: 'meta' is possibly 'null'.
+src/core/Object3D.js(1485,42): error TS2339: Property 'shapes' does not exist on type 'string | Object'.
+src/core/Object3D.js(1486,40): error TS18047: 'meta' is possibly 'null'.
+src/core/Object3D.js(1486,45): error TS2339: Property 'skeletons' does not exist on type 'string | Object'.
+src/core/Object3D.js(1487,41): error TS18047: 'meta' is possibly 'null'.
+src/core/Object3D.js(1487,46): error TS2339: Property 'animations' does not exist on type 'string | Object'.
+src/core/Object3D.js(1488,36): error TS18047: 'meta' is possibly 'null'.
+src/core/Object3D.js(1488,41): error TS2339: Property 'nodes' does not exist on type 'string | Object'.
+src/core/Object3D.js(1550,8): error TS2339: Property 'position' does not exist on type 'Object3D'.
+src/core/Object3D.js(1550,30): error TS2339: Property 'position' does not exist on type 'Object3D'.
+src/core/Object3D.js(1551,8): error TS2339: Property 'rotation' does not exist on type 'Object3D'.
+src/core/Object3D.js(1551,32): error TS2339: Property 'rotation' does not exist on type 'Object3D'.
+src/core/Object3D.js(1552,8): error TS2339: Property 'quaternion' does not exist on type 'Object3D'.
+src/core/Object3D.js(1552,32): error TS2339: Property 'quaternion' does not exist on type 'Object3D'.
+src/core/Object3D.js(1553,8): error TS2339: Property 'scale' does not exist on type 'Object3D'.
+src/core/Object3D.js(1553,27): error TS2339: Property 'scale' does not exist on type 'Object3D'.
 src/core/RenderTarget.js(251,5): error TS2531: Object is possibly 'null'.
 src/core/RenderTarget.js(252,5): error TS2531: Object is possibly 'null'.
 src/core/RenderTarget.js(253,5): error TS2531: Object is possibly 'null'.
@@ -2884,8 +2884,8 @@ src/loaders/nodes/NodeObjectLoader.js(128,35): error TS2345: Argument of type 'O
 src/loaders/ObjectLoader.js(99,13): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
 src/loaders/ObjectLoader.js(126,69): error TS18046: 'error' is of type 'unknown'.
 src/loaders/ObjectLoader.js(193,15): error TS2502: 'onLoad' is referenced directly or indirectly in its own type annotation.
-src/loaders/ObjectLoader.js(235,3): error TS2322: Type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera' is not assignable to type 'Object3D'.
-src/loaders/ObjectLoader.js(262,3): error TS2322: Type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera' is not assignable to type 'Object3D'.
+src/loaders/ObjectLoader.js(235,3): error TS2322: Type 'Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | PerspectiveCamera | OrthographicCamera' is not assignable to type 'Object3D'.
+src/loaders/ObjectLoader.js(262,3): error TS2322: Type 'Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | PerspectiveCamera | OrthographicCamera' is not assignable to type 'Object3D'.
 src/loaders/ObjectLoader.js(307,58): error TS2345: Argument of type '{}' is not assignable to parameter of type '{ [x: string]: Bone; }'.
 src/loaders/ObjectLoader.js(727,55): error TS2339: Property 'compareFunction' does not exist on type 'Texture'.
 src/loaders/ObjectLoader.js(973,12): error TS2339: Property '_drawRanges' does not exist on type 'BatchedMesh'.
@@ -2893,22 +2893,22 @@ src/loaders/ObjectLoader.js(974,12): error TS2339: Property '_reservedRanges' do
 src/loaders/ObjectLoader.js(976,12): error TS2339: Property '_visibility' does not exist on type 'BatchedMesh'.
 src/loaders/ObjectLoader.js(977,12): error TS2339: Property '_active' does not exist on type 'BatchedMesh'.
 src/loaders/ObjectLoader.js(978,12): error TS2339: Property '_bounds' does not exist on type 'BatchedMesh'.
-src/loaders/ObjectLoader.js(1074,67): error TS2339: Property 'position' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
-src/loaders/ObjectLoader.js(1074,84): error TS2339: Property 'quaternion' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
-src/loaders/ObjectLoader.js(1074,103): error TS2339: Property 'scale' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
-src/loaders/ObjectLoader.js(1078,46): error TS2339: Property 'position' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
-src/loaders/ObjectLoader.js(1079,46): error TS2339: Property 'rotation' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
-src/loaders/ObjectLoader.js(1080,48): error TS2339: Property 'quaternion' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
-src/loaders/ObjectLoader.js(1081,43): error TS2339: Property 'scale' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
-src/loaders/ObjectLoader.js(1092,54): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
-src/loaders/ObjectLoader.js(1093,49): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
-src/loaders/ObjectLoader.js(1094,55): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
-src/loaders/ObjectLoader.js(1095,51): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
-src/loaders/ObjectLoader.js(1096,52): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
-src/loaders/ObjectLoader.js(1097,51): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
-src/loaders/ObjectLoader.js(1113,17): error TS2345: Argument of type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera' is not assignable to parameter of type 'Object3D'.
-src/loaders/ObjectLoader.js(1135,48): error TS2339: Property 'autoUpdate' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
-src/loaders/ObjectLoader.js(1146,13): error TS2339: Property 'addLevel' does not exist on type 'Object3D | Mesh | PerspectiveCamera | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1074,67): error TS2339: Property 'position' does not exist on type 'Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | PerspectiveCamera | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1074,84): error TS2339: Property 'quaternion' does not exist on type 'Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | PerspectiveCamera | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1074,103): error TS2339: Property 'scale' does not exist on type 'Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | PerspectiveCamera | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1078,46): error TS2339: Property 'position' does not exist on type 'Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | PerspectiveCamera | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1079,46): error TS2339: Property 'rotation' does not exist on type 'Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | PerspectiveCamera | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1080,48): error TS2339: Property 'quaternion' does not exist on type 'Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | PerspectiveCamera | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1081,43): error TS2339: Property 'scale' does not exist on type 'Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | PerspectiveCamera | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1092,54): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | PerspectiveCamera | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1093,49): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | PerspectiveCamera | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1094,55): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | PerspectiveCamera | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1095,51): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | PerspectiveCamera | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1096,52): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | PerspectiveCamera | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1097,51): error TS2339: Property 'shadow' does not exist on type 'Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | PerspectiveCamera | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1113,17): error TS2345: Argument of type 'Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | PerspectiveCamera | OrthographicCamera' is not assignable to parameter of type 'Object3D'.
+src/loaders/ObjectLoader.js(1135,48): error TS2339: Property 'autoUpdate' does not exist on type 'Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | PerspectiveCamera | OrthographicCamera'.
+src/loaders/ObjectLoader.js(1146,13): error TS2339: Property 'addLevel' does not exist on type 'Object3D | Mesh | Sprite | LOD | SkinnedMesh | InstancedMesh | BatchedMesh | Line | Points | PerspectiveCamera | OrthographicCamera'.
 src/loaders/TextureLoader.js(41,13): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
 src/materials/Material.js(617,8): error TS2339: Property 'uuid' does not exist on type '{ metadata: { version: number; type: string; generator: string; }; }'.
 src/materials/Material.js(618,8): error TS2339: Property 'type' does not exist on type '{ metadata: { version: number; type: string; generator: string; }; }'.
@@ -3462,11 +3462,11 @@ src/nodes/accessors/UniformArrayNode.js(318,3): error TS2322: Type 'Node | null'
 src/nodes/accessors/UserDataNode.js(59,3): error TS2322: Type 'Object | null' is not assignable to type 'Object'.
 src/nodes/accessors/VertexColorNode.js(25,10): error TS2345: Argument of type 'null' is not assignable to parameter of type 'string'.
 src/nodes/accessors/VertexColorNode.js(62,48): error TS2554: Expected 0 arguments, but got 1.
-src/nodes/code/CodeNode.js(26,41): error TS2322: Type '""' is not assignable to type '"js" | "wgsl" | "glsl" | undefined'.
+src/nodes/code/CodeNode.js(26,41): error TS2322: Type '""' is not assignable to type '"glsl" | "wgsl" | "js" | undefined'.
 src/nodes/code/CodeNode.js(104,38): error TS2554: Expected 0 arguments, but got 1.
 src/nodes/code/FunctionCallNode.js(139,29): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
-src/nodes/code/FunctionNode.js(45,41): error TS2322: Type '""' is not assignable to type '"js" | "wgsl" | "glsl" | undefined'.
-src/nodes/code/FunctionNode.js(150,69): error TS2345: Argument of type 'string' is not assignable to parameter of type '"js" | "wgsl" | "glsl" | undefined'.
+src/nodes/code/FunctionNode.js(45,41): error TS2322: Type '""' is not assignable to type '"glsl" | "wgsl" | "js" | undefined'.
+src/nodes/code/FunctionNode.js(150,69): error TS2345: Argument of type 'string' is not assignable to parameter of type '"glsl" | "wgsl" | "js" | undefined'.
 src/nodes/code/FunctionNode.js(152,15): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
 src/nodes/code/ScriptableNode.js(13,29): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
 src/nodes/code/ScriptableNode.js(19,18): error TS2349: This expression is not callable.
@@ -3524,30 +3524,29 @@ src/nodes/core/NodeBuilder.js(1082,13): error TS18049: 'count' is possibly 'null
 src/nodes/core/NodeBuilder.js(1104,25): error TS18048: 'membersLayout' is possibly 'undefined'.
 src/nodes/core/NodeBuilder.js(1356,33): error TS2322: Type 'null' is not assignable to type 'string'.
 src/nodes/core/NodeBuilder.js(1414,3): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
-src/nodes/core/NodeBuilder.js(1551,25): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | undefined'.
+src/nodes/core/NodeBuilder.js(1551,25): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type '"vertex" | "fragment" | "compute" | "any" | undefined'.
 src/nodes/core/NodeBuilder.js(1565,8): error TS18047: 'nodeData' is possibly 'null'.
 src/nodes/core/NodeBuilder.js(1565,48): error TS18047: 'nodeData' is possibly 'null'.
 src/nodes/core/NodeBuilder.js(1567,10): error TS18047: 'nodeData' is possibly 'null'.
-src/nodes/core/NodeBuilder.js(1624,59): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | undefined'.
-src/nodes/core/NodeBuilder.js(1673,34): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | undefined'.
-src/nodes/core/NodeBuilder.js(1723,70): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | undefined'.
+src/nodes/core/NodeBuilder.js(1624,59): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type '"vertex" | "fragment" | "compute" | "any" | undefined'.
+src/nodes/core/NodeBuilder.js(1673,34): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type '"vertex" | "fragment" | "compute" | "any" | undefined'.
+src/nodes/core/NodeBuilder.js(1723,70): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type '"vertex" | "fragment" | "compute" | "any" | undefined'.
 src/nodes/core/NodeBuilder.js(1740,5): error TS2356: An arithmetic operand must be of type 'any', 'number', 'bigint' or an enum type.
 src/nodes/core/NodeBuilder.js(1751,10): error TS2339: Property 'push' does not exist on type 'number | NodeVar[]'.
-src/nodes/core/NodeBuilder.js(1851,31): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | undefined'.
+src/nodes/core/NodeBuilder.js(1851,31): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type '"vertex" | "fragment" | "compute" | "any" | undefined'.
 src/nodes/core/NodeBuilder.js(2067,18): error TS2551: Property 'buildFunctionCode' does not exist on type 'NodeBuilder'. Did you mean 'buildFunctionNode'?
 src/nodes/core/NodeBuilder.js(2145,24): error TS2345: Argument of type 'string' is not assignable to parameter of type '"setup" | "analyze" | "generate" | null'.
 src/nodes/core/NodeBuilder.js(2147,9): error TS2339: Property 'result' does not exist on type '{ code: string; }'.
 src/nodes/core/NodeBuilder.js(2151,8): error TS2339: Property 'vars' does not exist on type '{ code: string; }'.
-src/nodes/core/NodeBuilder.js(2151,29): error TS2345: Argument of type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any"'.
+src/nodes/core/NodeBuilder.js(2151,29): error TS2345: Argument of type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to parameter of type '"vertex" | "fragment" | "compute" | "any"'.
 src/nodes/core/NodeBuilder.js(2195,8): error TS2339: Property 'result' does not exist on type '{ code: string; }'.
 src/nodes/core/NodeBuilder.js(2253,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
 src/nodes/core/NodeBuilder.js(2266,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
-src/nodes/core/NodeBuilder.js(2302,28): error TS2488: Type 'number | NodeVar[]' must have a '[Symbol.iterator]()' method that returns an iterator.
 src/nodes/core/NodeBuilder.js(2319,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
 src/nodes/core/NodeBuilder.js(2360,10): error TS2531: Object is possibly 'null'.
 src/nodes/core/NodeBuilder.js(2360,30): error TS2531: Object is possibly 'null'.
 src/nodes/core/NodeBuilder.js(2454,24): error TS2345: Argument of type 'string' is not assignable to parameter of type '"setup" | "analyze" | "generate" | null'.
-src/nodes/core/NodeBuilder.js(2464,26): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any" | null'.
+src/nodes/core/NodeBuilder.js(2464,26): error TS2345: Argument of type 'string' is not assignable to parameter of type '"vertex" | "fragment" | "compute" | "any" | null'.
 src/nodes/core/NodeCache.js(53,4): error TS2322: Type 'Object | null' is not assignable to type 'Object | undefined'.
 src/nodes/core/NodeCache.js(57,3): error TS2322: Type 'Object | undefined' is not assignable to type 'Object | null'.
 src/nodes/core/NodeFrame.js(118,28): error TS2314: Generic type 'WeakMap<K, V>' requires 2 type argument(s).
@@ -3839,15 +3838,15 @@ src/nodes/tsl/TSLCore.js(421,31): error TS2769: No overload matches this call.
 src/nodes/tsl/TSLCore.js(421,81): error TS2551: Property 'value' does not exist on type '[any, any]'. Did you mean 'values'?
 src/nodes/tsl/TSLCore.js(424,33): error TS2769: No overload matches this call.
 src/nodes/tsl/TSLCore.js(424,82): error TS2551: Property 'value' does not exist on type '[any, any]'. Did you mean 'values'?
-src/nodes/tsl/TSLCore.js(466,11): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
-src/nodes/tsl/TSLCore.js(514,28): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
-src/nodes/tsl/TSLCore.js(515,32): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
-src/nodes/tsl/TSLCore.js(521,15): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
-src/nodes/tsl/TSLCore.js(604,21): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
-src/nodes/tsl/TSLCore.js(620,48): error TS2345: Argument of type 'Map<any, any>' is not assignable to parameter of type 'null | undefined'.
-src/nodes/tsl/TSLCore.js(621,44): error TS2345: Argument of type 'Map<any, any>' is not assignable to parameter of type 'null | undefined'.
-src/nodes/tsl/TSLCore.js(622,46): error TS2345: Argument of type 'Map<any, any>' is not assignable to parameter of type 'null | undefined'.
-src/nodes/tsl/TSLCore.js(623,46): error TS2345: Argument of type 'Map<any, any>' is not assignable to parameter of type 'null | undefined'.
+src/nodes/tsl/TSLCore.js(469,11): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
+src/nodes/tsl/TSLCore.js(517,28): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
+src/nodes/tsl/TSLCore.js(518,32): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
+src/nodes/tsl/TSLCore.js(524,15): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
+src/nodes/tsl/TSLCore.js(607,21): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
+src/nodes/tsl/TSLCore.js(623,48): error TS2345: Argument of type 'Map<any, any>' is not assignable to parameter of type 'null | undefined'.
+src/nodes/tsl/TSLCore.js(624,44): error TS2345: Argument of type 'Map<any, any>' is not assignable to parameter of type 'null | undefined'.
+src/nodes/tsl/TSLCore.js(625,46): error TS2345: Argument of type 'Map<any, any>' is not assignable to parameter of type 'null | undefined'.
+src/nodes/tsl/TSLCore.js(626,46): error TS2345: Argument of type 'Map<any, any>' is not assignable to parameter of type 'null | undefined'.
 src/nodes/utils/ConvertNode.js(67,3): error TS2322: Type 'string | null' is not assignable to type 'string'.
 src/nodes/utils/CubeMapNode.js(119,8): error TS2739: Type 'Texture' is missing the following properties from type 'CubeTexture': isCubeTexture, images
 src/nodes/utils/FunctionOverloadingNode.js(70,34): error TS2339: Property 'shaderNode' does not exist on type 'Function'.
@@ -3989,21 +3988,21 @@ src/objects/Sprite.js(132,43): error TS2339: Property 'modelViewMatrix' does not
 src/objects/Sprite.js(186,67): error TS2345: Argument of type 'Vector2' is not assignable to parameter of type 'Vector3'.
 src/renderers/common/Backend.js(41,13): error TS2314: Generic type 'WeakMap<K, V>' requires 2 type argument(s).
 src/renderers/common/Backend.js(80,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/common/Backend.js(95,6): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
-src/renderers/common/Backend.js(95,6): error TS2378: A 'get' accessor must return a value.
-src/renderers/common/Backend.js(220,19): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/common/Backend.js(240,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
-src/renderers/common/Backend.js(249,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
-src/renderers/common/Backend.js(412,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
-src/renderers/common/Backend.js(442,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
-src/renderers/common/Backend.js(456,15): error TS2339: Property 'trackTimestamp' does not exist on type 'Backend'.
-src/renderers/common/Backend.js(459,4): error TS2322: Type 'undefined' is not assignable to type 'number'.
-src/renderers/common/Backend.js(467,4): error TS2322: Type 'undefined' is not assignable to type 'number'.
-src/renderers/common/Backend.js(485,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/common/Backend.js(495,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
-src/renderers/common/Backend.js(505,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
-src/renderers/common/Backend.js(514,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
-src/renderers/common/Backend.js(522,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+src/renderers/common/Backend.js(96,6): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+src/renderers/common/Backend.js(96,6): error TS2378: A 'get' accessor must return a value.
+src/renderers/common/Backend.js(221,19): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/common/Backend.js(241,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+src/renderers/common/Backend.js(250,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+src/renderers/common/Backend.js(413,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+src/renderers/common/Backend.js(443,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+src/renderers/common/Backend.js(457,15): error TS2339: Property 'trackTimestamp' does not exist on type 'Backend'.
+src/renderers/common/Backend.js(460,4): error TS2322: Type 'undefined' is not assignable to type 'number'.
+src/renderers/common/Backend.js(468,4): error TS2322: Type 'undefined' is not assignable to type 'number'.
+src/renderers/common/Backend.js(486,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/common/Backend.js(496,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+src/renderers/common/Backend.js(506,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+src/renderers/common/Backend.js(515,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+src/renderers/common/Backend.js(523,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
 src/renderers/common/Background.js(92,38): error TS2339: Property 'mul' does not exist on type 'SceneNode'.
 src/renderers/common/ChainMap.js(19,13): error TS2314: Generic type 'WeakMap<K, V>' requires 2 type argument(s).
 src/renderers/common/Color4.js(46,3): error TS2741: Property 'a' is missing in type 'Color' but required in type 'Color4'.
@@ -4053,7 +4052,7 @@ src/renderers/common/Renderer.js(909,29): error TS2531: Object is possibly 'null
 src/renderers/common/Renderer.js(923,3): error TS2531: Object is possibly 'null'.
 src/renderers/common/Renderer.js(957,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
 src/renderers/common/Renderer.js(972,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/common/Renderer.js(1053,24): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(1054,24): error TS2531: Object is possibly 'null'.
 src/renderers/common/Renderer.js(1103,10): error TS2531: Object is possibly 'null'.
 src/renderers/common/Renderer.js(1105,6): error TS2531: Object is possibly 'null'.
 src/renderers/common/Renderer.js(1107,6): error TS2531: Object is possibly 'null'.
@@ -4108,9 +4107,9 @@ src/renderers/common/Renderer.js(2093,3): error TS2531: Object is possibly 'null
 src/renderers/common/Renderer.js(2094,3): error TS2531: Object is possibly 'null'.
 src/renderers/common/Renderer.js(2095,3): error TS2531: Object is possibly 'null'.
 src/renderers/common/Renderer.js(2145,3): error TS2696: The 'Object' type is assignable to very few other types. Did you mean to use the 'any' type instead?
+src/renderers/common/Renderer.js(2208,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
 src/renderers/common/Renderer.js(2208,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
-src/renderers/common/Renderer.js(2208,15): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/common/Renderer.js(2212,38): error TS2322: Type 'undefined' is not assignable to type 'Promise<any> | null'.
+src/renderers/common/Renderer.js(2212,38): error TS2322: Type 'undefined' is not assignable to type 'Promise<any>'.
 src/renderers/common/Renderer.js(2224,21): error TS2531: Object is possibly 'null'.
 src/renderers/common/Renderer.js(2257,9): error TS18047: 'pipelines' is possibly 'null'.
 src/renderers/common/Renderer.js(2263,6): error TS18047: 'pipelines' is possibly 'null'.
@@ -4132,29 +4131,29 @@ src/renderers/common/Renderer.js(2464,3): error TS2531: Object is possibly 'null
 src/renderers/common/Renderer.js(2482,3): error TS2531: Object is possibly 'null'.
 src/renderers/common/Renderer.js(2483,3): error TS2531: Object is possibly 'null'.
 src/renderers/common/Renderer.js(2615,17): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2722,4): error TS2721: Cannot invoke an object which is possibly 'null'.
-src/renderers/common/Renderer.js(2798,4): error TS2721: Cannot invoke an object which is possibly 'null'.
-src/renderers/common/Renderer.js(2801,4): error TS2721: Cannot invoke an object which is possibly 'null'.
-src/renderers/common/Renderer.js(2807,4): error TS2721: Cannot invoke an object which is possibly 'null'.
-src/renderers/common/Renderer.js(2853,24): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2853,133): error TS2345: Argument of type 'string | null | undefined' is not assignable to parameter of type 'string | undefined'.
-src/renderers/common/Renderer.js(2859,24): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2863,4): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2865,4): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2867,4): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2723,4): error TS2721: Cannot invoke an object which is possibly 'null'.
+src/renderers/common/Renderer.js(2799,4): error TS2721: Cannot invoke an object which is possibly 'null'.
+src/renderers/common/Renderer.js(2802,4): error TS2721: Cannot invoke an object which is possibly 'null'.
+src/renderers/common/Renderer.js(2808,4): error TS2721: Cannot invoke an object which is possibly 'null'.
+src/renderers/common/Renderer.js(2854,24): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2854,133): error TS2345: Argument of type 'string | null | undefined' is not assignable to parameter of type 'string | undefined'.
+src/renderers/common/Renderer.js(2860,24): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2864,4): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2866,4): error TS2531: Object is possibly 'null'.
 src/renderers/common/Renderer.js(2868,4): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2872,3): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2888,23): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2908,24): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2908,133): error TS2345: Argument of type 'string | null | undefined' is not assignable to parameter of type 'string | undefined'.
-src/renderers/common/Renderer.js(2914,3): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2916,3): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2918,3): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2869,4): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2873,3): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2889,23): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2909,24): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2909,133): error TS2345: Argument of type 'string | null | undefined' is not assignable to parameter of type 'string | undefined'.
+src/renderers/common/Renderer.js(2915,3): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2917,3): error TS2531: Object is possibly 'null'.
 src/renderers/common/Renderer.js(2919,3): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2921,3): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2923,3): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2934,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/common/Renderer.js(2938,10): error TS2322: Type '(scene: Object3D, camera: Camera, targetScene?: Scene | null) => Promise<any[] | undefined>' is not assignable to type 'Promise<any>'.
+src/renderers/common/Renderer.js(2920,3): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2922,3): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2924,3): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2935,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/common/Renderer.js(2939,10): error TS2322: Type '(scene: Object3D, camera: Camera, targetScene?: Scene | null) => Promise<any[] | undefined>' is not assignable to type 'Promise<any>'.
 src/renderers/common/RenderObject.js(490,3): error TS2322: Type 'any[] | null' is not assignable to type 'any[]'.
 src/renderers/common/RenderObject.js(528,21): error TS18047: 'drawRange' is possibly 'null'.
 src/renderers/common/RenderObject.js(529,22): error TS18047: 'drawRange' is possibly 'null'.
@@ -4246,20 +4245,20 @@ src/renderers/common/XRManager.js(1177,8): error TS2339: Property 'dispatchEvent
 src/renderers/shaders/ShaderLib.js(303,11): error TS2339: Property 'physical' does not exist on type '{ basic: { uniforms: {}; vertexShader: string; fragmentShader: string; }; lambert: { uniforms: {}; vertexShader: string; fragmentShader: string; }; phong: { uniforms: {}; vertexShader: string; fragmentShader: string; }; ... 13 more ...; shadow: { ...; }; }'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(241,15): error TS2551: Property 'isPBOTexture' does not exist on type 'DataTexture'. Did you mean 'isTexture'?
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(249,59): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(262,25): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(262,25): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(270,39): error TS2554: Expected 1 arguments, but got 2.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(293,78): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(467,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(469,93): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(911,35): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1258,37): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any"'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(469,93): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(911,35): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1258,37): error TS2345: Argument of type 'string' is not assignable to parameter of type '"vertex" | "fragment" | "compute" | "any"'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1259,47): error TS2554: Expected 0 arguments, but got 1.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1266,49): error TS2345: Argument of type '{} | undefined' is not assignable to parameter of type 'Object'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1267,53): error TS2345: Argument of type '{} | undefined' is not assignable to parameter of type 'Object'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1271,50): error TS2345: Argument of type '{} | undefined' is not assignable to parameter of type 'Object'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1292,61): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any" | undefined'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1293,48): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any" | undefined'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1302,56): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any"'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1292,61): error TS2345: Argument of type 'string' is not assignable to parameter of type '"vertex" | "fragment" | "compute" | "any" | undefined'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1293,48): error TS2345: Argument of type 'string' is not assignable to parameter of type '"vertex" | "fragment" | "compute" | "any" | undefined'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1302,56): error TS2345: Argument of type 'string' is not assignable to parameter of type '"vertex" | "fragment" | "compute" | "any"'.
 src/renderers/webgl-fallback/utils/WebGLAttributeUtils.js(175,4): error TS2322: Type 'DualAttributeData' is not assignable to type '{ bufferGPU: any; bufferType: GLenum; type: any; byteLength: number; bytesPerElement: number; version: any; pbo: any; isInteger: boolean; id: number; }'.
 src/renderers/webgl-fallback/utils/WebGLCapabilities.js(58,3): error TS2322: Type 'number | null' is not assignable to type 'number'.
 src/renderers/webgl-fallback/utils/WebGLState.js(564,19): error TS2532: Object is possibly 'undefined'.
@@ -4468,34 +4467,35 @@ src/renderers/webgpu/nodes/WGSLNodeBuilder.js(143,14): error TS2339: Property 'p
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(144,14): error TS2339: Property 'pow_vec2' does not exist on type '{ dFdx: string; dFdy: string; mod_float: string; mod_vec2: string; mod_vec3: string; mod_vec4: string; equals_bool: string; equals_bvec2: string; equals_bvec3: string; equals_bvec4: string; inversesqrt: string; bitcast: string; }'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(145,14): error TS2339: Property 'pow_vec3' does not exist on type '{ dFdx: string; dFdy: string; mod_float: string; mod_vec2: string; mod_vec3: string; mod_vec4: string; equals_bool: string; equals_bvec2: string; equals_bvec3: string; equals_bvec4: string; inversesqrt: string; bitcast: string; }'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(146,14): error TS2339: Property 'pow_vec4' does not exist on type '{ dFdx: string; dFdy: string; mod_float: string; mod_vec2: string; mod_vec3: string; mod_vec4: string; equals_bool: string; equals_bvec2: string; equals_bvec3: string; equals_bvec4: string; inversesqrt: string; bitcast: string; }'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(237,77): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(237,77): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(270,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(272,52): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(298,96): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(416,54): error TS2345: Argument of type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any" | undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(605,70): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(272,52): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(298,96): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(416,54): error TS2345: Argument of type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to parameter of type '"vertex" | "fragment" | "compute" | "any" | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(605,70): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(615,95): error TS2554: Expected 4-5 arguments, but got 6.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(636,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(638,87): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(638,87): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(663,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(665,93): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(690,89): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(665,93): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(690,89): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(717,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(719,87): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(740,25): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(858,61): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any" | undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(859,48): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any" | undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(868,56): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any"'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(719,87): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(740,25): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(858,61): error TS2345: Argument of type 'string' is not assignable to parameter of type '"vertex" | "fragment" | "compute" | "any" | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(859,48): error TS2345: Argument of type 'string' is not assignable to parameter of type '"vertex" | "fragment" | "compute" | "any" | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(868,56): error TS2345: Argument of type 'string' is not assignable to parameter of type '"vertex" | "fragment" | "compute" | "any"'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(890,5): error TS18047: 'texture' is possibly 'null'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(891,5): error TS18047: 'texture' is possibly 'null'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(893,120): error TS18047: 'texture' is possibly 'null'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(965,36): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(990,20): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1192,25): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(965,36): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(990,20): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1192,25): error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1522,28): error TS2488: Type 'number | NodeVar[]' must have a '[Symbol.iterator]()' method that returns an iterator.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1572,50): error TS2339: Property 'includes' does not exist on type 'number | NodeVar[]'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1574,11): error TS2339: Property 'push' does not exist on type 'number | NodeVar[]'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1750,4): error TS2322: Type 'string' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | null'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1758,37): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any"'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1750,4): error TS2322: Type 'string' is not assignable to type '"vertex" | "fragment" | "compute" | "any" | null'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1758,37): error TS2345: Argument of type 'string' is not assignable to parameter of type '"vertex" | "fragment" | "compute" | "any"'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1835,49): error TS2345: Argument of type '{} | undefined' is not assignable to parameter of type 'Object'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1836,53): error TS2345: Argument of type '{} | undefined' is not assignable to parameter of type 'Object'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1840,51): error TS2345: Argument of type '{} | undefined' is not assignable to parameter of type 'Object'.

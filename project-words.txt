@@ -1926,6 +1926,7 @@ resy
 retarget
 retargeted
 retargeting
+Retargets
 REVERSEDEPTHBUF
 revolut
 RFOP
@@ -2060,6 +2061,7 @@ skybox
 Skyboxes
 SKYDOME
 skydome
+skydomes
 slateblue
 slategray
 slategrey
@@ -2373,6 +2375,7 @@ unprojected
 unprojection
 Unprojects
 Unrecognised
+Unregisters
 unsets
 Unskew
 unskew
