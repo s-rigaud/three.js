@@ -27,6 +27,4 @@ Reread line like "Did you mean" (one mistake found like that)
 AnimationClip.toJSON broken ?
 Delete as much eslint-disable-next-line as possible
 MD2Mixer call to mixer.clipAction using string
-ProgressiveLightMapGPU.js :130
-VolumeSLice.colorMap does not exist
 Add more link to MDN doc inside the code (use dom in tsconfig)
