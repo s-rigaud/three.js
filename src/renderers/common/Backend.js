@@ -92,6 +92,7 @@ class Backend {
 	 * @type {number}
 	 * @readonly
 	 */
+	// eslint-disable-next-line
 	get coordinateSystem() {}
 
 	// render context

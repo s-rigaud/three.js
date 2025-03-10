@@ -453,7 +453,10 @@ const safeGetNodeType = ( node ) => {
 
 		return node.getNodeType();
 
-	} catch ( _ ) {
+	} catch (
+		// eslint-disable-next-line
+		_
+ 	) {
 
 		return undefined;
 

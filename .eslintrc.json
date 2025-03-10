@@ -70,17 +70,15 @@
     "no-duplicate-imports": [
       "error"
     ],
-<<<<<<< Updated upstream
     "no-var": [
       "error"
-=======
+    ],
     "no-restricted-syntax": [
       "error",
       {
         "selector": "MemberExpression[object.name='arguments']",
         "message": "Avoid using the 'arguments' object. Use rest parameters instead."
       }
->>>>>>> Stashed changes
     ],
     "prefer-spread": "error",
     "valid-jsdoc": [
@@ -108,6 +106,13 @@
     "@typescript-eslint/no-dynamic-delete": "off",
     "@typescript-eslint/no-empty-function": "off",
     "@typescript-eslint/no-unused-expressions": "off",
-    "@typescript-eslint/no-this-alias": "off"
+    "@typescript-eslint/no-this-alias": "off",
+    "@typescript-eslint/no-extraneous-class": "off",
+    "@typescript-eslint/no-useless-constructor": "off",
+    "no-cond-assign": "off",
+    "no-inner-declarations": "off",
+    "no-constant-condition": "off",
+    "no-case-declarations": "off",
+    "no-async-promise-executor": "off"
   }
 }

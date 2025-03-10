@@ -27,7 +27,10 @@ function WebGLTextures( _gl, extensions, state, properties, capabilities, utils,
 			// eslint-disable-next-line compat/compat
 			&& ( new OffscreenCanvas( 1, 1 ).getContext( '2d' ) ) !== null;
 
-	} catch ( err ) {
+	} catch (
+		// eslint-disable-next-line
+		err
+	) {
 
 		// Ignore any errors
 

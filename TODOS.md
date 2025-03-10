@@ -1,5 +1,5 @@
 # Types
-Sceneoptimizer.disposeMeshes mesh is not array bu t a set
+Sceneoptimizer.disposeMeshes mesh is not array but a set
 fix type of Shadowmapviewer.position
 oculushandpointer.attached is not nullable
 XRHandMeshModel.path is nullable in constructor
@@ -15,7 +15,6 @@ Add buildFunctionCode to NodeBuilder class (func overiten by subclasses)
 AnalyticalLightNode call to .setupShadowNode does not take any parameter
 
 # Investigate
-MarchingCube ref to this.enableColors inside this.init
 Use MaterialLoader.js and Material.js to fix tab of material attributes
 All loaders method load onLoad params return type
 correct all generic errors ": Generic type "

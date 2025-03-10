@@ -719,10 +719,13 @@ class Object3D extends EventDispatcher {
 	 */
 	add( object ) {
 
+		// eslint-disable-next-line
 		if ( arguments.length > 1 ) {
 
+			// eslint-disable-next-line
 			for ( let i = 0; i < arguments.length; i ++ ) {
 
+				// eslint-disable-next-line
 				this.add( arguments[ i ] );
 
 			}
@@ -771,10 +774,13 @@ class Object3D extends EventDispatcher {
 	 */
 	remove( object ) {
 
+		// eslint-disable-next-line
 		if ( arguments.length > 1 ) {
 
+			// eslint-disable-next-line
 			for ( let i = 0; i < arguments.length; i ++ ) {
 
+				// eslint-disable-next-line
 				this.remove( arguments[ i ] );
 
 			}
