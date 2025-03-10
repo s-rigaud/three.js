@@ -1,5 +1,4 @@
 # Types
-Sceneoptimizer.disposeMeshes mesh is not array but a set
 fix type of Shadowmapviewer.position
 oculushandpointer.attached is not nullable
 XRHandMeshModel.path is nullable in constructor
@@ -14,13 +13,8 @@ NodeLoader.parseNodes json is Object<string, any>
 
 # Dev
 Move this.trackTimestamp to parent Backend class
-Sceneoptimizer ref to this.logDebugInfo
 Add buildFunctionCode to NodeBuilder class (func overiten by subclasses)
 AnalyticalLightNode call to .setupShadowNode does not take any parameter
-AsciiEffect.cellspacing should be string
-EXRLoader :2230
-USDZLoader :176 type of type not needed
-WebGLRenderer :3394 drawingBufferColorspace => drawingBufferColorSpace
 
 # Investigate
 Use MaterialLoader.js and Material.js to fix tab of material attributes
