@@ -1673,8 +1673,6 @@ examples/jsm/misc/ProgressiveLightMap.js(221,31): error TS2339: Property 'unifor
 examples/jsm/misc/ProgressiveLightMap.js(283,29): error TS2322: Type 'null' is not assignable to type 'WebGLRenderTarget<Texture> | undefined'.
 examples/jsm/misc/ProgressiveLightMap.js(286,16): error TS2339: Property 'uniforms' does not exist on type 'MeshBasicMaterial'.
 examples/jsm/misc/ProgressiveLightMap.js(318,17): error TS2339: Property 'uniforms' does not exist on type 'MeshBasicMaterial'.
-examples/jsm/misc/ProgressiveLightMapGPU.js(130,45): error TS2339: Property 'x' does not exist on type '{ w: number; h: number; index: number; }'.
-examples/jsm/misc/ProgressiveLightMapGPU.js(131,59): error TS2339: Property 'y' does not exist on type '{ w: number; h: number; index: number; }'.
 examples/jsm/misc/Volume.js(72,34): error TS2769: No overload matches this call.
 examples/jsm/misc/Volume.js(78,33): error TS2769: No overload matches this call.
 examples/jsm/misc/Volume.js(87,34): error TS2769: No overload matches this call.
@@ -1705,13 +1703,9 @@ examples/jsm/misc/Volume.js(432,22): error TS18048: 'kDirection' is possibly 'un
 examples/jsm/misc/VolumeSlice.js(52,4): error TS2322: Type 'number' is not assignable to type '(v: any) => void'.
 examples/jsm/misc/VolumeSlice.js(52,4): error TS2322: Type '(value: number) => number' is not assignable to type 'number'.
 examples/jsm/misc/VolumeSlice.js(52,4): error TS2322: Type '{}' is not assignable to type 'number'.
-examples/jsm/misc/VolumeSlice.js(187,30): error TS2721: Cannot invoke an object which is possibly 'null'.
-examples/jsm/misc/VolumeSlice.js(188,28): error TS2339: Property 'colorMap' does not exist on type 'VolumeSlice'.
-examples/jsm/misc/VolumeSlice.js(188,61): error TS2339: Property 'colorMap' does not exist on type 'VolumeSlice'.
-examples/jsm/misc/VolumeSlice.js(189,25): error TS2339: Property 'colorMap' does not exist on type 'VolumeSlice'.
-examples/jsm/misc/VolumeSlice.js(206,30): error TS2721: Cannot invoke an object which is possibly 'null'.
-examples/jsm/misc/VolumeSlice.js(230,22): error TS2339: Property 'map' does not exist on type 'Material | Material[]'.
-examples/jsm/misc/VolumeSlice.js(240,76): error TS2339: Property 'index' does not exist on type 'VolumeSlice'.
+examples/jsm/misc/VolumeSlice.js(209,30): error TS2721: Cannot invoke an object which is possibly 'null'.
+examples/jsm/misc/VolumeSlice.js(233,22): error TS2339: Property 'map' does not exist on type 'Material | Material[]'.
+examples/jsm/misc/VolumeSlice.js(243,76): error TS2339: Property 'index' does not exist on type 'VolumeSlice'.
 examples/jsm/modifiers/CurveModifier.js(38,14): error TS2551: Property 'wrapY' does not exist on type 'DataTexture'. Did you mean 'wrapS'?
 examples/jsm/modifiers/CurveModifier.js(339,17): error TS2339: Property 'setMatrixAt' does not exist on type 'Mesh<BufferGeometry<NormalBufferAttributes>, Material | Material[], Object3DEventMap>'.
 examples/jsm/modifiers/CurveModifier.js(340,17): error TS2339: Property 'instanceMatrix' does not exist on type 'Mesh<BufferGeometry<NormalBufferAttributes>, Material | Material[], Object3DEventMap>'.
@@ -2158,8 +2152,6 @@ examples/jsm/utils/LDrawUtils.js(176,32): error TS2345: Argument of type 'Buffer
 examples/jsm/utils/LDrawUtils.js(185,40): error TS2345: Argument of type 'BufferGeometry<NormalBufferAttributes> | null' is not assignable to parameter of type 'BufferGeometry<NormalBufferAttributes> | undefined'.
 examples/jsm/utils/LDrawUtils.js(194,40): error TS2345: Argument of type 'BufferGeometry<NormalBufferAttributes> | null' is not assignable to parameter of type 'BufferGeometry<NormalBufferAttributes> | undefined'.
 examples/jsm/utils/LDrawUtils.js(195,14): error TS2339: Property 'isConditionalLine' does not exist on type 'LineSegments<BufferGeometry<NormalBufferAttributes>, any, Object3DEventMap>'.
-examples/jsm/utils/SceneOptimizer.js(405,23): error TS2345: Argument of type 'Set<any>' is not assignable to parameter of type 'Mesh[]'.
-examples/jsm/utils/SceneOptimizer.js(422,9): error TS2551: Property 'logDebugInfo' does not exist on type 'SceneOptimizer'. Did you mean '_logDebugInfo'?
 examples/jsm/utils/SceneOptimizer.js(456,10): error TS2484: Export declaration conflicts with exported declaration of 'SceneOptimizer'.
 examples/jsm/utils/SceneUtils.js(64,3): error TS2741: Property 'isGroup' is missing in type 'Mesh<BufferGeometry<NormalBufferAttributes>, Material | Material[], Object3DEventMap>' but required in type 'Group<Object3DEventMap>'.
 examples/jsm/utils/SceneUtils.js(89,38): error TS2538: Type 'undefined' cannot be used as an index type.
@@ -3529,20 +3521,21 @@ src/nodes/core/NodeBuilder.js(1723,70): error TS2322: Type '"compute" | "vertex"
 src/nodes/core/NodeBuilder.js(1740,5): error TS2356: An arithmetic operand must be of type 'any', 'number', 'bigint' or an enum type.
 src/nodes/core/NodeBuilder.js(1751,10): error TS2339: Property 'push' does not exist on type 'number | NodeVar[]'.
 src/nodes/core/NodeBuilder.js(1851,31): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | undefined'.
-src/nodes/core/NodeBuilder.js(2067,18): error TS2551: Property 'buildFunctionCode' does not exist on type 'NodeBuilder'. Did you mean 'buildFunctionNode'?
+src/nodes/core/NodeBuilder.js(2067,37): error TS2554: Expected 0 arguments, but got 1.
 src/nodes/core/NodeBuilder.js(2145,24): error TS2345: Argument of type 'string' is not assignable to parameter of type '"setup" | "analyze" | "generate" | null'.
 src/nodes/core/NodeBuilder.js(2147,9): error TS2339: Property 'result' does not exist on type '{ code: string; }'.
 src/nodes/core/NodeBuilder.js(2151,8): error TS2339: Property 'vars' does not exist on type '{ code: string; }'.
 src/nodes/core/NodeBuilder.js(2151,29): error TS2345: Argument of type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any"'.
-src/nodes/core/NodeBuilder.js(2195,8): error TS2339: Property 'result' does not exist on type '{ code: string; }'.
-src/nodes/core/NodeBuilder.js(2253,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+src/nodes/core/NodeBuilder.js(2183,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+src/nodes/core/NodeBuilder.js(2208,8): error TS2339: Property 'result' does not exist on type '{ code: string; }'.
 src/nodes/core/NodeBuilder.js(2266,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
-src/nodes/core/NodeBuilder.js(2302,28): error TS2488: Type 'number | NodeVar[]' must have a '[Symbol.iterator]()' method that returns an iterator.
-src/nodes/core/NodeBuilder.js(2319,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
-src/nodes/core/NodeBuilder.js(2360,10): error TS2531: Object is possibly 'null'.
-src/nodes/core/NodeBuilder.js(2360,30): error TS2531: Object is possibly 'null'.
-src/nodes/core/NodeBuilder.js(2454,24): error TS2345: Argument of type 'string' is not assignable to parameter of type '"setup" | "analyze" | "generate" | null'.
-src/nodes/core/NodeBuilder.js(2464,26): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any" | null'.
+src/nodes/core/NodeBuilder.js(2279,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+src/nodes/core/NodeBuilder.js(2315,28): error TS2488: Type 'number | NodeVar[]' must have a '[Symbol.iterator]()' method that returns an iterator.
+src/nodes/core/NodeBuilder.js(2332,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+src/nodes/core/NodeBuilder.js(2373,10): error TS2531: Object is possibly 'null'.
+src/nodes/core/NodeBuilder.js(2373,30): error TS2531: Object is possibly 'null'.
+src/nodes/core/NodeBuilder.js(2467,24): error TS2345: Argument of type 'string' is not assignable to parameter of type '"setup" | "analyze" | "generate" | null'.
+src/nodes/core/NodeBuilder.js(2477,26): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any" | null'.
 src/nodes/core/NodeCache.js(53,4): error TS2322: Type 'Object | null' is not assignable to type 'Object | undefined'.
 src/nodes/core/NodeCache.js(57,3): error TS2322: Type 'Object | undefined' is not assignable to type 'Object | null'.
 src/nodes/core/NodeFrame.js(118,28): error TS2314: Generic type 'WeakMap<K, V>' requires 2 type argument(s).
@@ -3681,7 +3674,6 @@ src/nodes/gpgpu/ComputeBuiltinNode.js(224,11): error TS2315: Type 'ComputeBuilti
 src/nodes/gpgpu/WorkgroupInfoNode.js(188,74): error TS2339: Property 'id' does not exist on type 'WorkgroupInfoNode'.
 src/nodes/lighting/AnalyticLightNode.js(131,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
 src/nodes/lighting/AnalyticLightNode.js(140,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
-src/nodes/lighting/AnalyticLightNode.js(183,40): error TS2554: Expected 0 arguments, but got 1.
 src/nodes/lighting/AnalyticLightNode.js(228,45): error TS2554: Expected 0 arguments, but got 1.
 src/nodes/lighting/AnalyticLightNode.js(229,61): error TS2554: Expected 0 arguments, but got 1.
 src/nodes/lighting/HemisphereLightNode.js(64,17): error TS2554: Expected 0 arguments, but got 1.
@@ -3983,22 +3975,21 @@ src/objects/Sprite.js(130,8): error TS2339: Property 'modelViewMatrix' does not 
 src/objects/Sprite.js(132,43): error TS2339: Property 'modelViewMatrix' does not exist on type 'Sprite'.
 src/objects/Sprite.js(186,67): error TS2345: Argument of type 'Vector2' is not assignable to parameter of type 'Vector3'.
 src/renderers/common/Backend.js(41,13): error TS2314: Generic type 'WeakMap<K, V>' requires 2 type argument(s).
-src/renderers/common/Backend.js(80,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/common/Backend.js(96,6): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
-src/renderers/common/Backend.js(96,6): error TS2378: A 'get' accessor must return a value.
-src/renderers/common/Backend.js(221,19): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/common/Backend.js(241,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
-src/renderers/common/Backend.js(250,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
-src/renderers/common/Backend.js(413,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
-src/renderers/common/Backend.js(443,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
-src/renderers/common/Backend.js(457,15): error TS2339: Property 'trackTimestamp' does not exist on type 'Backend'.
-src/renderers/common/Backend.js(460,4): error TS2322: Type 'undefined' is not assignable to type 'number'.
+src/renderers/common/Backend.js(88,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/common/Backend.js(104,6): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+src/renderers/common/Backend.js(104,6): error TS2378: A 'get' accessor must return a value.
+src/renderers/common/Backend.js(229,19): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/common/Backend.js(249,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+src/renderers/common/Backend.js(258,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+src/renderers/common/Backend.js(421,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+src/renderers/common/Backend.js(451,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
 src/renderers/common/Backend.js(468,4): error TS2322: Type 'undefined' is not assignable to type 'number'.
-src/renderers/common/Backend.js(486,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/common/Backend.js(496,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
-src/renderers/common/Backend.js(506,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
-src/renderers/common/Backend.js(515,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+src/renderers/common/Backend.js(476,4): error TS2322: Type 'undefined' is not assignable to type 'number'.
+src/renderers/common/Backend.js(494,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/common/Backend.js(504,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+src/renderers/common/Backend.js(514,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
 src/renderers/common/Backend.js(523,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+src/renderers/common/Backend.js(531,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
 src/renderers/common/Background.js(92,38): error TS2339: Property 'mul' does not exist on type 'SceneNode'.
 src/renderers/common/ChainMap.js(19,13): error TS2314: Generic type 'WeakMap<K, V>' requires 2 type argument(s).
 src/renderers/common/Color4.js(46,3): error TS2741: Property 'a' is missing in type 'Color' but required in type 'Color4'.
@@ -4292,82 +4283,82 @@ src/renderers/webgl-fallback/utils/WebGLTimestampQueryPool.js(351,24): error TS2
 src/renderers/webgl-fallback/utils/WebGLTimestampQueryPool.js(358,3): error TS2532: Object is possibly 'undefined'.
 src/renderers/webgl-fallback/utils/WebGLUtils.js(265,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
 src/renderers/webgl-fallback/utils/WebGLUtils.js(299,5): error TS2810: Expected 1 argument, but got 0. 'new Promise()' needs a JSDoc hint to produce a 'resolve' that can be called without arguments.
-src/renderers/webgl-fallback/WebGLBackend.js(191,13): error TS2314: Generic type 'WeakSet<T>' requires 1 type argument(s).
-src/renderers/webgl-fallback/WebGLBackend.js(303,16): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(312,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/webgl-fallback/WebGLBackend.js(316,9): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(316,20): error TS2341: Property '_clientWaitAsync' is private and only accessible within class 'WebGLUtils'.
-src/renderers/webgl-fallback/WebGLBackend.js(324,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/webgl-fallback/WebGLBackend.js(373,9): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(183,13): error TS2314: Generic type 'WeakSet<T>' requires 1 type argument(s).
+src/renderers/webgl-fallback/WebGLBackend.js(295,16): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(304,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/webgl-fallback/WebGLBackend.js(308,9): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(308,20): error TS2341: Property '_clientWaitAsync' is private and only accessible within class 'WebGLUtils'.
+src/renderers/webgl-fallback/WebGLBackend.js(316,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/webgl-fallback/WebGLBackend.js(365,9): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(454,4): error TS18047: 'state' is possibly 'null'.
 src/renderers/webgl-fallback/WebGLBackend.js(462,4): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(470,4): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(516,3): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(568,5): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(569,5): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(618,5): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(719,3): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(732,3): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(806,17): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(865,3): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(902,4): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(906,3): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(936,5): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(996,3): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(998,3): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1032,3): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1066,26): error TS18047: 'renderer' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1067,37): error TS18047: 'renderer' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1068,29): error TS18047: 'renderer' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1069,33): error TS18047: 'renderer' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1074,5): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1075,5): error TS18047: 'renderer' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1079,5): error TS18047: 'renderer' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1090,3): error TS18047: 'renderer' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1098,4): error TS18047: 'renderer' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1099,4): error TS18047: 'renderer' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1103,4): error TS18047: 'renderer' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(508,3): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(560,5): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(561,5): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(610,5): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(711,3): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(724,3): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(798,17): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(857,3): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(894,4): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(898,3): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(928,5): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(988,3): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(990,3): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1024,3): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1058,26): error TS18047: 'renderer' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1059,37): error TS18047: 'renderer' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1060,29): error TS18047: 'renderer' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1061,33): error TS18047: 'renderer' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1066,5): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1067,5): error TS18047: 'renderer' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1071,5): error TS18047: 'renderer' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1082,3): error TS18047: 'renderer' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1090,4): error TS18047: 'renderer' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1091,4): error TS18047: 'renderer' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1095,4): error TS18047: 'renderer' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1107,6): error TS18047: 'renderer' is possibly 'null'.
 src/renderers/webgl-fallback/WebGLBackend.js(1115,6): error TS18047: 'renderer' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1123,6): error TS18047: 'renderer' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1129,5): error TS18047: 'renderer' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1133,5): error TS18047: 'renderer' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1183,6): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1190,6): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1240,3): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1252,3): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1264,3): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1275,3): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1286,3): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1304,10): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1379,19): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/webgl-fallback/WebGLBackend.js(1415,7): error TS2810: Expected 1 argument, but got 0. 'new Promise()' needs a JSDoc hint to produce a 'resolve' that can be called without arguments.
-src/renderers/webgl-fallback/WebGLBackend.js(1565,3): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1639,3): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1121,5): error TS18047: 'renderer' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1125,5): error TS18047: 'renderer' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1175,6): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1182,6): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1232,3): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1244,3): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1256,3): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1267,3): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1278,3): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1296,10): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1371,19): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/webgl-fallback/WebGLBackend.js(1407,7): error TS2810: Expected 1 argument, but got 0. 'new Promise()' needs a JSDoc hint to produce a 'resolve' that can be called without arguments.
+src/renderers/webgl-fallback/WebGLBackend.js(1557,3): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1631,3): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1647,35): error TS2531: Object is possibly 'null'.
 src/renderers/webgl-fallback/WebGLBackend.js(1655,35): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1663,35): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1716,35): error TS2554: Expected 1 arguments, but got 2.
-src/renderers/webgl-fallback/WebGLBackend.js(1777,16): error TS2339: Property 'isUniformsGroup' does not exist on type 'Buffer'.
-src/renderers/webgl-fallback/WebGLBackend.js(1777,43): error TS2339: Property 'isUniformBuffer' does not exist on type 'Buffer'.
-src/renderers/webgl-fallback/WebGLBackend.js(1801,3): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1816,3): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1831,3): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1842,3): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1853,3): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1871,9): error TS18047: 'extensions' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1886,10): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1902,3): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1915,3): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1945,31): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1974,5): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2023,6): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2030,6): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2062,6): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2116,6): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2152,7): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2175,3): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2379,6): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2383,6): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2403,38): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2412,21): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1708,35): error TS2554: Expected 1 arguments, but got 2.
+src/renderers/webgl-fallback/WebGLBackend.js(1769,16): error TS2339: Property 'isUniformsGroup' does not exist on type 'Buffer'.
+src/renderers/webgl-fallback/WebGLBackend.js(1769,43): error TS2339: Property 'isUniformBuffer' does not exist on type 'Buffer'.
+src/renderers/webgl-fallback/WebGLBackend.js(1793,3): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1808,3): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1823,3): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1834,3): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1845,3): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1863,9): error TS18047: 'extensions' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1878,10): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1894,3): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1907,3): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1937,31): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1966,5): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2015,6): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2022,6): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2054,6): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2108,6): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2144,7): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2167,3): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2371,6): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2375,6): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2395,38): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2404,21): error TS2531: Object is possibly 'null'.
 src/renderers/webgl/WebGLBindingStates.js(174,21): error TS2551: Property 'attributesNum' does not exist on type '{ geometry: null; program: null; wireframe: boolean; newAttributes: number[]; enabledAttributes: number[]; attributeDivisors: number[]; object: any; attributes: {}; index: null; }'. Did you mean 'attributes'?
 src/renderers/webgl/WebGLBindingStates.js(210,11): error TS2339: Property 'data' does not exist on type '{ attribute: any; }'.
 src/renderers/webgl/WebGLBindingStates.js(223,16): error TS2551: Property 'attributesNum' does not exist on type '{ geometry: null; program: null; wireframe: boolean; newAttributes: number[]; enabledAttributes: number[]; attributeDivisors: number[]; object: any; attributes: {}; index: null; }'. Did you mean 'attributes'?
@@ -4566,20 +4557,20 @@ src/renderers/webgpu/utils/WebGPUTimestampQueryPool.js(216,15): error TS2314: Ge
 src/renderers/webgpu/utils/WebGPUTimestampQueryPool.js(281,3): error TS2322: Type 'null' is not assignable to type 'boolean'.
 src/renderers/webgpu/utils/WebGPUUtils.js(51,3): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
 src/renderers/webgpu/utils/WebGPUUtils.js(150,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
-src/renderers/webgpu/WebGPUBackend.js(162,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/webgpu/WebGPUBackend.js(427,21): error TS2339: Property 'depthOrArrayLayers' does not exist on type '{ label: string; baseMipLevel: any; mipLevelCount: number; baseArrayLayer: any; arrayLayerCount: number; dimension: string; }'.
-src/renderers/webgpu/WebGPUBackend.js(432,21): error TS2339: Property 'depthOrArrayLayers' does not exist on type '{ label: string; baseMipLevel: any; mipLevelCount: number; baseArrayLayer: any; arrayLayerCount: number; dimension: string; }'.
-src/renderers/webgpu/WebGPUBackend.js(496,38): error TS2345: Argument of type '{ view: any; depthSlice: any; resolveTarget: any; loadOp: any; storeOp: any; clearValue: { r: number; g: number; b: number; a: number; }; }' is not assignable to parameter of type 'never'.
-src/renderers/webgpu/WebGPUBackend.js(509,15): error TS2339: Property 'depthStencilAttachment' does not exist on type '{ colorAttachments: never[]; }'.
-src/renderers/webgpu/WebGPUBackend.js(798,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/webgpu/WebGPUBackend.js(940,17): error TS2339: Property 'depthLoadOp' does not exist on type '{ loadOp: string; clearValue: { r: any; g: any; b: any; a: any; } | undefined; }'.
-src/renderers/webgpu/WebGPUBackend.js(941,17): error TS2551: Property 'depthClearValue' does not exist on type '{ loadOp: string; clearValue: { r: any; g: any; b: any; a: any; } | undefined; }'. Did you mean 'clearValue'?
-src/renderers/webgpu/WebGPUBackend.js(942,17): error TS2339: Property 'depthStoreOp' does not exist on type '{ loadOp: string; clearValue: { r: any; g: any; b: any; a: any; } | undefined; }'.
-src/renderers/webgpu/WebGPUBackend.js(948,17): error TS2339: Property 'stencilLoadOp' does not exist on type '{ loadOp: string; clearValue: { r: any; g: any; b: any; a: any; } | undefined; }'.
-src/renderers/webgpu/WebGPUBackend.js(949,17): error TS2339: Property 'stencilClearValue' does not exist on type '{ loadOp: string; clearValue: { r: any; g: any; b: any; a: any; } | undefined; }'.
-src/renderers/webgpu/WebGPUBackend.js(950,17): error TS2339: Property 'stencilStoreOp' does not exist on type '{ loadOp: string; clearValue: { r: any; g: any; b: any; a: any; } | undefined; }'.
-src/renderers/webgpu/WebGPUBackend.js(1112,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/webgpu/WebGPUBackend.js(1669,19): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/webgpu/WebGPUBackend.js(154,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/webgpu/WebGPUBackend.js(419,21): error TS2339: Property 'depthOrArrayLayers' does not exist on type '{ label: string; baseMipLevel: any; mipLevelCount: number; baseArrayLayer: any; arrayLayerCount: number; dimension: string; }'.
+src/renderers/webgpu/WebGPUBackend.js(424,21): error TS2339: Property 'depthOrArrayLayers' does not exist on type '{ label: string; baseMipLevel: any; mipLevelCount: number; baseArrayLayer: any; arrayLayerCount: number; dimension: string; }'.
+src/renderers/webgpu/WebGPUBackend.js(488,38): error TS2345: Argument of type '{ view: any; depthSlice: any; resolveTarget: any; loadOp: any; storeOp: any; clearValue: { r: number; g: number; b: number; a: number; }; }' is not assignable to parameter of type 'never'.
+src/renderers/webgpu/WebGPUBackend.js(501,15): error TS2339: Property 'depthStencilAttachment' does not exist on type '{ colorAttachments: never[]; }'.
+src/renderers/webgpu/WebGPUBackend.js(790,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/webgpu/WebGPUBackend.js(932,17): error TS2339: Property 'depthLoadOp' does not exist on type '{ loadOp: string; clearValue: { r: any; g: any; b: any; a: any; } | undefined; }'.
+src/renderers/webgpu/WebGPUBackend.js(933,17): error TS2551: Property 'depthClearValue' does not exist on type '{ loadOp: string; clearValue: { r: any; g: any; b: any; a: any; } | undefined; }'. Did you mean 'clearValue'?
+src/renderers/webgpu/WebGPUBackend.js(934,17): error TS2339: Property 'depthStoreOp' does not exist on type '{ loadOp: string; clearValue: { r: any; g: any; b: any; a: any; } | undefined; }'.
+src/renderers/webgpu/WebGPUBackend.js(940,17): error TS2339: Property 'stencilLoadOp' does not exist on type '{ loadOp: string; clearValue: { r: any; g: any; b: any; a: any; } | undefined; }'.
+src/renderers/webgpu/WebGPUBackend.js(941,17): error TS2339: Property 'stencilClearValue' does not exist on type '{ loadOp: string; clearValue: { r: any; g: any; b: any; a: any; } | undefined; }'.
+src/renderers/webgpu/WebGPUBackend.js(942,17): error TS2339: Property 'stencilStoreOp' does not exist on type '{ loadOp: string; clearValue: { r: any; g: any; b: any; a: any; } | undefined; }'.
+src/renderers/webgpu/WebGPUBackend.js(1104,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/webgpu/WebGPUBackend.js(1661,19): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
 src/renderers/webxr/WebXRController.js(64,15): error TS2339: Property 'joints' does not exist on type 'Group'.
 src/renderers/webxr/WebXRController.js(65,15): error TS2339: Property 'inputState' does not exist on type 'Group'.
 src/renderers/webxr/WebXRController.js(85,20): error TS2339: Property 'hasLinearVelocity' does not exist on type 'Group'.
