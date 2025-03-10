@@ -8502,7 +8502,7 @@ class CacheNode extends Node {
  * @tsl
  * @function
  * @param {Node} node - The node that should be cached.
- * @param {boolean} parent - Whether this node refers to a shared parent cache or not.
+ * @param {boolean} [parent] - Whether this node refers to a shared parent cache or not.
  * @returns {CacheNode}
  */
 const cache = ( node, parent ) => nodeObject( new CacheNode( nodeObject( node ), parent ) );
@@ -10454,7 +10454,7 @@ class UniformArrayNode extends BufferNode {
  * @tsl
  * @function
  * @param {Array<any>} values - Array-like data.
- * @param {?string} nodeType - The data type of the array elements.
+ * @param {?string} [nodeType] - The data type of the array elements.
  * @returns {UniformArrayNode}
  */
 const uniformArray = ( values, nodeType ) => nodeObject( new UniformArrayNode( values, nodeType ) );
@@ -11913,7 +11913,7 @@ class ReferenceNode extends Node {
  * @function
  * @param {string} name - The name of the property the node refers to.
  * @param {string} type - The uniform type that should be used to represent the property value.
- * @param {?Object} object - The object the property belongs to.
+ * @param {?Object} [object] - The object the property belongs to.
  * @returns {ReferenceNode}
  */
 const reference = ( name, type, object ) => nodeObject( new ReferenceNode( name, type, object ) );
@@ -23972,7 +23972,7 @@ class Animation {
 	/**
 	 * Defines the user-level animation loop.
 	 *
-	 * @param {Function} callback - The animation loop.
+	 * @param {?Function} callback - The animation loop.
 	 */
 	setAnimationLoop( callback ) {
 
@@ -25259,7 +25259,7 @@ class Attributes extends DataMap {
 
 		const attributeData = super.delete( attribute );
 
-		if ( attributeData !== undefined ) {
+		if ( attributeData !== null ) {
 
 			this.backend.destroyAttribute( attribute );
 
@@ -37776,7 +37776,7 @@ class ShadowNode extends ShadowBaseNode {
  * @tsl
  * @function
  * @param {Light} light - The shadow casting light.
- * @param {LightShadow} shadow - The light shadow.
+ * @param {?LightShadow} [shadow] - The light shadow.
  * @return {ShadowNode} The created shadow node.
  */
 const shadow = ( light, shadow ) => nodeObject( new ShadowNode( light, shadow ) );
@@ -38192,9 +38192,17 @@ class AnalyticLightNode extends LightingNode {
 	 *
 	 * @abstract
 	 * @param {NodeBuilder} builder - The builder object used for setting up the light.
+	 * @return {Object|undefined} The direct light data (color and direction).
 	 */
 	setupDirect( /*builder*/ ) { }
 
+	/**
+	 * Sets up the direct rect area lighting for the analytic light node.
+	 *
+	 * @abstract
+	 * @param {NodeBuilder} builder - The builder object used for setting up the light.
+	 * @return {Object|undefined} The direct rect area light data.
+	 */
 	setupDirectRectArea( /*builder*/ ) { }
 
 	/**
@@ -42433,8 +42441,10 @@ class NodeBuilder {
 		/**
 		 * This dictionary holds the node variables of this builder.
 		 * The variables are maintained in an array for each shader stage.
+		 * This dictionary is also used to count the number of variables
+		 * according to their type (const, vars).
 		 *
-		 * @type {Object<string,Array<NodeVar>>}
+		 * @type {Object<string,Array<NodeVar>|number>}
 		 */
 		this.vars = {};
 
@@ -47576,7 +47586,7 @@ class XRManager extends EventDispatcher {
 		 * The current XR reference space type.
 		 *
 		 * @private
-		 * @type {string}
+		 * @type {XRReferenceSpaceType}
 		 * @default 'local-floor'
 		 */
 		this._referenceSpaceType = 'local-floor';
@@ -47786,7 +47796,7 @@ class XRManager extends EventDispatcher {
 	/**
 	 * Returns the reference space type.
 	 *
-	 * @return {string} The reference space type.
+	 * @return {XRReferenceSpaceType} The reference space type.
 	 */
 	getReferenceSpaceType() {
 
@@ -47799,7 +47809,7 @@ class XRManager extends EventDispatcher {
 	 *
 	 * This method can not be used during a XR session.
 	 *
-	 * @param {string} type - The reference space type.
+	 * @param {XRReferenceSpaceType} type - The reference space type.
 	 */
 	setReferenceSpaceType( type ) {
 
@@ -49542,9 +49552,8 @@ class Renderer {
 	 * @private
 	 * @param {Object} bundle - Render bundle data.
 	 * @param {Scene} sceneRef - The scene the render bundle belongs to.
-	 * @param {LightsNode} lightsNode - The current lights node.
 	 */
-	_renderBundle( bundle, sceneRef, lightsNode ) {
+	_renderBundle( bundle, sceneRef ) {
 
 		const { bundleGroup, camera, renderList } = bundle;
 
@@ -49576,9 +49585,15 @@ class Renderer {
 
 			this._currentRenderBundle = renderBundle;
 
-			const opaqueObjects = renderList.opaque;
+			const {
+				lightsNode,
+				transparentDoublePass: transparentDoublePassObjects,
+				transparent: transparentObjects,
+				opaque: opaqueObjects
+			} = renderList;
 
 			if ( this.opaque === true && opaqueObjects.length > 0 ) this._renderObjects( opaqueObjects, camera, sceneRef, lightsNode );
+			if ( this.transparent === true && transparentObjects.length > 0 ) this._renderTransparents( transparentObjects, transparentDoublePassObjects, camera, sceneRef, lightsNode );
 
 			this._currentRenderBundle = null;
 
@@ -49904,7 +49919,7 @@ class Renderer {
 			opaque: opaqueObjects
 		} = renderList;
 
-		if ( bundles.length > 0 ) this._renderBundles( bundles, sceneRef, lightsNode );
+		if ( bundles.length > 0 ) this._renderBundles( bundles, sceneRef );
 		if ( this.opaque === true && opaqueObjects.length > 0 ) this._renderObjects( opaqueObjects, camera, sceneRef, lightsNode );
 		if ( this.transparent === true && transparentObjects.length > 0 ) this._renderTransparents( transparentObjects, transparentDoublePassObjects, camera, sceneRef, lightsNode );
 
@@ -50011,7 +50026,7 @@ class Renderer {
 	 * for best compatibility.
 	 *
 	 * @async
-	 * @param {Function} callback - The application's animation loop.
+	 * @param {?Function} callback - The application's animation loop.
 	 * @return {Promise} A Promise that resolves when the set has been executed.
 	 */
 	async setAnimationLoop( callback ) {
@@ -51138,13 +51153,12 @@ class Renderer {
 	 * @private
 	 * @param {Array<Object>} bundles - Array with render bundle data.
 	 * @param {Scene} sceneRef - The scene the render bundles belong to.
-	 * @param {LightsNode} lightsNode - The current lights node.
 	 */
-	_renderBundles( bundles, sceneRef, lightsNode ) {
+	_renderBundles( bundles, sceneRef ) {
 
 		for ( const bundle of bundles ) {
 
-			this._renderBundle( bundle, sceneRef, lightsNode );
+			this._renderBundle( bundle, sceneRef );
 
 		}
 
@@ -52547,7 +52561,7 @@ class GLSLNodeBuilder extends NodeBuilder {
 		 * An array that holds objects defining the varying and attribute data in
 		 * context of Transform Feedback.
 		 *
-		 * @type {Object<string,Map<string,Object>>}
+		 * @type {Array<Object<string,AttributeNode|string>>}
 		 */
 		this.transforms = [];
 
@@ -62295,7 +62309,7 @@ class WebGPUTextureUtils {
 		if ( format === GPUTextureFormat.BC1RGBAUnorm || format === GPUTextureFormat.BC1RGBAUnormSRGB ) return { byteLength: 8, width: 4, height: 4 }; // DXT1
 		if ( format === GPUTextureFormat.BC2RGBAUnorm || format === GPUTextureFormat.BC2RGBAUnormSRGB ) return { byteLength: 16, width: 4, height: 4 }; // DXT3
 		if ( format === GPUTextureFormat.BC3RGBAUnorm || format === GPUTextureFormat.BC3RGBAUnormSRGB ) return { byteLength: 16, width: 4, height: 4 }; // DXT5
-		if ( format === GPUTextureFormat.BC4RUnorm || format === GPUTextureFormat.BC4RSNorm ) return { byteLength: 8, width: 4, height: 4 }; // RGTC1
+		if ( format === GPUTextureFormat.BC4RUnorm || format === GPUTextureFormat.BC4RSnorm ) return { byteLength: 8, width: 4, height: 4 }; // RGTC1
 		if ( format === GPUTextureFormat.BC5RGUnorm || format === GPUTextureFormat.BC5RGSnorm ) return { byteLength: 16, width: 4, height: 4 }; // RGTC2
 		if ( format === GPUTextureFormat.BC6HRGBUFloat || format === GPUTextureFormat.BC6HRGBFloat ) return { byteLength: 16, width: 4, height: 4 }; // BPTC (float)
 		if ( format === GPUTextureFormat.BC7RGBAUnorm || format === GPUTextureFormat.BC7RGBAUnormSRGB ) return { byteLength: 16, width: 4, height: 4 }; // BPTC (unorm)
@@ -69440,7 +69454,7 @@ class IESSpotLight extends SpotLight {
 		super( color, intensity, distance, angle, penumbra, decay );
 
 		/**
-		 * TOOD
+		 * TODO
 		 *
 		 * @type {?Texture}
 		 * @default null

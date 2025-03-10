@@ -16,7 +16,11 @@ const MOUSE = { LEFT: 0, MIDDLE: 1, RIGHT: 2, ROTATE: 0, DOLLY: 1, PAN: 2 };
 /**
  * Represents touch interaction types in context of controls.
  *
+<<<<<<< HEAD
  * @type {ConstantsMouse}
+=======
+ * @type {ConstantsTouch}
+>>>>>>> dev
  * @constant
  */
 const TOUCH = { ROTATE: 0, PAN: 1, DOLLY_PAN: 2, DOLLY_ROTATE: 3 };
@@ -631,7 +635,11 @@ const LinearMipmapLinearFilter = 1008;
 const LinearMipMapLinearFilter = 1008; // legacy
 
 /**
+<<<<<<< HEAD
  * An unsinged byte data type for textures.
+=======
+ * An unsigned byte data type for textures.
+>>>>>>> dev
  *
  * @type {number}
  * @constant
@@ -655,7 +663,11 @@ const ByteType = 1010;
 const ShortType = 1011;
 
 /**
+<<<<<<< HEAD
  * An unsinged short data type for textures.
+=======
+ * An unsigned short data type for textures.
+>>>>>>> dev
  *
  * @type {number}
  * @constant
@@ -671,7 +683,11 @@ const UnsignedShortType = 1012;
 const IntType = 1013;
 
 /**
+<<<<<<< HEAD
  * An unsinged int data type for textures.
+=======
+ * An unsigned int data type for textures.
+>>>>>>> dev
  *
  * @type {number}
  * @constant
@@ -695,7 +711,11 @@ const FloatType = 1015;
 const HalfFloatType = 1016;
 
 /**
+<<<<<<< HEAD
  * An unsinged short 4_4_4_4 (packed) data type for textures.
+=======
+ * An unsigned short 4_4_4_4 (packed) data type for textures.
+>>>>>>> dev
  *
  * @type {number}
  * @constant
@@ -703,7 +723,11 @@ const HalfFloatType = 1016;
 const UnsignedShort4444Type = 1017;
 
 /**
+<<<<<<< HEAD
  * An unsinged short 5_5_5_1 (packed) data type for textures.
+=======
+ * An unsigned short 5_5_5_1 (packed) data type for textures.
+>>>>>>> dev
  *
  * @type {number}
  * @constant
@@ -711,7 +735,11 @@ const UnsignedShort4444Type = 1017;
 const UnsignedShort5551Type = 1018;
 
 /**
+<<<<<<< HEAD
  * An unsinged int 24_8 data type for textures.
+=======
+ * An unsigned int 24_8 data type for textures.
+>>>>>>> dev
  *
  * @type {number}
  * @constant
@@ -719,7 +747,11 @@ const UnsignedShort5551Type = 1018;
 const UnsignedInt248Type = 1020;
 
 /**
+<<<<<<< HEAD
  * An unsinged int 5_9_9_9 (packed) data type for textures.
+=======
+ * An unsigned int 5_9_9_9 (packed) data type for textures.
+>>>>>>> dev
  *
  * @type {number}
  * @constant
@@ -15559,7 +15591,7 @@ class Color {
 	 * Converts the colors RGB values into the HSL format and stores them into the
 	 * given target object.
 	 *
-	 * @param {{h:0,s:0,l:0}} target - The target object that is used to store the method's result.
+	 * @param {{h:number,s:number,l:number}} target - The target object that is used to store the method's result.
 	 * @param {string} [colorSpace=ColorManagement.workingColorSpace] - The color space.
 	 * @return {{h:number,s:number,l:number}} The HSL representation of this color.
 	 */
@@ -17497,7 +17529,11 @@ class BufferAttribute {
 		 * `0.0f - +1.0f` in the GLSL attribute. If `normalized` is `false`, the values will be converted
 		 * to floats unmodified, i.e. `65535` becomes `65535.0f`.
 		 *
+<<<<<<< HEAD
 		 * @type {number}
+=======
+		 * @type {boolean}
+>>>>>>> dev
 		 */
 		this.normalized = normalized;
 
@@ -17621,7 +17657,11 @@ class BufferAttribute {
 	 * and destination position in the attribute buffers are represented by the
 	 * given indices.
 	 *
+<<<<<<< HEAD
 	 * @param {number} index1 - The destintation index into this buffer attribute.
+=======
+	 * @param {number} index1 - The destination index into this buffer attribute.
+>>>>>>> dev
 	 * @param {BufferAttribute} attribute - The buffer attribute to copy from.
 	 * @param {number} index2 - The source index into the given buffer attribute.
 	 * @return {BufferAttribute} A reference to this instance.
@@ -17795,7 +17835,11 @@ class BufferAttribute {
 	}
 
 	/**
+<<<<<<< HEAD
 	 * Sets the given value tothe given component of the vector at the given index.
+=======
+	 * Sets the given value to the given component of the vector at the given index.
+>>>>>>> dev
 	 *
 	 * @param {number} index - The index into the buffer attribute.
 	 * @param {number} component - The component index.
@@ -18567,7 +18611,11 @@ class BufferGeometry extends EventDispatcher {
 		 * Split the geometry into groups, each of which will be rendered in a
 		 * separate draw call. This allows an array of materials to be used with the geometry.
 		 *
+<<<<<<< HEAD
 		 * Use `addGroup()` and `clearGroups()` to edtir groups, rather than modifying this array directly.
+=======
+		 * Use `addGroup()` and `clearGroups()` to edit groups, rather than modifying this array directly.
+>>>>>>> dev
 		 *
 		 * Every vertex and index must belong to exactly one group — groups must not share vertices or
 		 * indices, and must not leave vertices or indices unused.
@@ -18766,7 +18814,11 @@ class BufferGeometry extends EventDispatcher {
 	}
 
 	/**
+<<<<<<< HEAD
 	 * Applies the given 4x4 tranformation matrix to the geometry.
+=======
+	 * Applies the given 4x4 transformation matrix to the geometry.
+>>>>>>> dev
 	 *
 	 * @param {Matrix4} matrix - The matrix to apply.
 	 * @return {BufferGeometry} A reference to this instance.
@@ -18980,7 +19032,11 @@ class BufferGeometry extends EventDispatcher {
 
 	/**
 	 * Defines a geometry by creating a `position` attribute based on the given array of points. The array
+<<<<<<< HEAD
 	 * can hold 2D or 3D vectoes. When using two-dimensional data, the `z` coordinate for all vertices is
+=======
+	 * can hold 2D or 3D vectors. When using two-dimensional data, the `z` coordinate for all vertices is
+>>>>>>> dev
 	 * set to `0`.
 	 *
 	 * If the method is used with an existing `position` attribute, the vertex data are overwritten with the
@@ -19775,7 +19831,7 @@ class BufferGeometry extends EventDispatcher {
 
 		if ( index !== null ) {
 
-			this.setIndex( index.clone( data ) );
+			this.setIndex( index.clone() );
 
 		}
 
@@ -20795,7 +20851,11 @@ class ShaderMaterial extends Material {
 		/**
 		 * Controls line thickness or lines.
 		 *
+<<<<<<< HEAD
 		 * WebGL and WebGPU ignore this setting and always render line primitves with a
+=======
+		 * WebGL and WebGPU ignore this setting and always render line primitives with a
+>>>>>>> dev
 		 * width of one pixel.
 		 *
 		 * @type {number}
@@ -22150,9 +22210,15 @@ class WebXRController {
 	}
 
 	/**
+<<<<<<< HEAD
 	 * Returns a group representing the traget ray space of the XR controller.
 	 *
 	 * @return {Group} A group representing the traget ray space of the XR controller.
+=======
+	 * Returns a group representing the target ray space of the XR controller.
+	 *
+	 * @return {Group} A group representing the target ray space of the XR controller.
+>>>>>>> dev
 	 */
 	getTargetRaySpace() {
 
@@ -23001,7 +23067,11 @@ class InterleavedBuffer {
 	 * and destination position in the attribute buffers are represented by the
 	 * given indices.
 	 *
+<<<<<<< HEAD
 	 * @param {number} index1 - The destintation index into this interleaved buffer.
+=======
+	 * @param {number} index1 - The destination index into this interleaved buffer.
+>>>>>>> dev
 	 * @param {InterleavedBuffer} interleavedBuffer - The interleaved buffer to copy from.
 	 * @param {number} index2 - The source index into the given interleaved buffer.
 	 * @return {InterleavedBuffer} A reference to this instance.
@@ -23317,7 +23387,11 @@ class InterleavedBufferAttribute {
 	}
 
 	/**
+<<<<<<< HEAD
 	 * Sets the given value tothe given component of the vector at the given index.
+=======
+	 * Sets the given value to the given component of the vector at the given index.
+>>>>>>> dev
 	 *
 	 * @param {number} index - The index into the buffer attribute.
 	 * @param {number} component - The component index.
@@ -24270,7 +24344,7 @@ class LOD extends Object3D {
 	 * Updates the LOD by computing which LOD level should be visible according
 	 * to the current distance of the given camera.
 	 *
-	 * @param {Camera} camera - The camera the scene is renderd with.
+	 * @param {Camera} camera - The camera the scene is rendered with.
 	 */
 	update( camera ) {
 
@@ -25115,7 +25189,7 @@ class Skeleton {
 	 * Setups the skeleton by the given JSON and bones.
 	 *
 	 * @param {Object} json - The skeleton as serialized JSON.
-	 * @param {Array<Bone>} bones - An array of bones.
+	 * @param {Object<string, Bone>} bones - An array of bones.
 	 * @return {Skeleton} A reference of this instance.
 	 */
 	fromJSON( json, bones ) {
@@ -25314,7 +25388,7 @@ class InstancedMesh extends Mesh {
 		 * {@link Texture#needsUpdate} flag to true if you modify instanced data
 		 * via {@link InstancedMesh#setMorphAt}.
 		 *
-		 * @type {?InstancedBufferAttribute}
+		 * @type {?DataTexture}
 		 * @default null
 		 */
 		this.morphTexture = null;
@@ -26954,7 +27028,7 @@ class BatchedMesh extends Mesh {
 	 * is not enough space reserved for geometry. Calling this will change all instances that are
 	 * rendering that geometry.
 	 *
-	 * @param {number} geometryId - The ID of the geomtry that should be replaced with the given geometry.
+	 * @param {number} geometryId - The ID of the geometry that should be replaced with the given geometry.
 	 * @param {BufferGeometry} geometry - The new geometry.
 	 * @return {number} The geometry ID.
 	 */
@@ -27067,7 +27141,7 @@ class BatchedMesh extends Mesh {
 	 * Deletes the geometry defined by the given ID from this batch. Any instances referencing
 	 * this geometry will also be removed as a side effect.
 	 *
-	 * @param {number} geometryId - The ID of the geomtry to remove from the batch.
+	 * @param {number} geometryId - The ID of the geometry to remove from the batch.
 	 * @return {BatchedMesh} A reference to this batched mesh.
 	 */
 	deleteGeometry( geometryId ) {
@@ -27944,7 +28018,11 @@ class LineBasicMaterial extends Material {
 		 * Controls line thickness or lines.
 		 *
 		 * Can only be used with {@link SVGRenderer}. WebGL and WebGPU
+<<<<<<< HEAD
 		 * ignore this setting and always render line primitves with a
+=======
+		 * ignore this setting and always render line primitives with a
+>>>>>>> dev
 		 * width of one pixel.
 		 *
 		 * @type {number}
@@ -29240,7 +29318,11 @@ class CompressedCubeTexture extends CompressedTexture {
  * Creates a texture from a canvas element.
  *
  * This is almost the same as the base texture class, except that it sets {@link Texture#needsUpdate}
+<<<<<<< HEAD
  * to `true` immediately since a canvas can direclty be used for rendering.
+=======
+ * to `true` immediately since a canvas can directly be used for rendering.
+>>>>>>> dev
  *
  * @augments Texture
  */
@@ -29440,7 +29522,7 @@ class Curve {
 	 * @abstract
 	 * @param {number} t - A interpolation factor representing a position on the curve. Must be in the range `[0,1]`.
 	 * @param {(Vector2|Vector3)} [optionalTarget] - The optional target vector the result is written to.
-	 * @return {?(Vector2|Vector3)} The position on the curve. It can be a 2D or 3D vector depending on the curve definition.
+	 * @return {(Vector2|Vector3)} The position on the curve. It can be a 2D or 3D vector depending on the curve definition.
 	 */
 	getPoint( /* t, optionalTarget */ ) {
 
@@ -32144,7 +32226,7 @@ class LatheGeometry extends BufferGeometry {
 	/**
 	 * Constructs a new lathe geometry.
 	 *
-	 * @param {Array<Vector2>} [points] - An array of points in 2D space. The x-coordinate of each point
+	 * @param {Array<Vector2|Vector3>} [points] - An array of points in 2D space. The x-coordinate of each point
 	 * must be greater than zero.
 	 * @param {number} [segments=12] - The number of circumference segments to generate.
 	 * @param {number} [phiStart=0] - The starting angle in radians.
@@ -40100,7 +40182,11 @@ function sortedArray( values, stride, order ) {
  * @param {Array<number>} jsonKeys - A list of JSON keyframes.
  * @param {Array<number>} times - This array will be filled with keyframe times by this function.
  * @param {Array<number>} values - This array will be filled with keyframe values by this function.
+<<<<<<< HEAD
  * @param {Object<string, any>} valuePropertyName - A dictionary assigning values to property names.
+=======
+ * @param {string} valuePropertyName - The name of the property to use.
+>>>>>>> dev
  */
 function flattenJSON( jsonKeys, times, values, valuePropertyName ) {
 
@@ -40458,7 +40544,11 @@ class AnimationUtils {
 	 * @param {Array<number>} jsonKeys - A list of JSON keyframes.
 	 * @param {Array<number>} times - This array will be filled with keyframe times by this method.
 	 * @param {Array<number>} values - This array will be filled with keyframe values by this method.
+<<<<<<< HEAD
 	 * @param {Object<string, any>} valuePropertyName - A dictionary assigning values to property names.
+=======
+	 * @param {string} valuePropertyName - The name of the property to use.
+>>>>>>> dev
 	 */
 	static flattenJSON( jsonKeys, times, values, valuePropertyName ) {
 
@@ -43795,7 +43885,11 @@ class ImageLoader extends Loader {
  * a right-handed coordinate system, environment maps used in three.js will
  * have pos-x and neg-x swapped.
  *
+<<<<<<< HEAD
  * The loaded cube textureis in sRGB color space. Meaning {@link Texture#colorSpace}
+=======
+ * The loaded cube texture is in sRGB color space. Meaning {@link Texture#colorSpace}
+>>>>>>> dev
  * is set to `SRGBColorSpace` by default.
  *
  * ```js
@@ -44249,7 +44343,7 @@ const _lookTarget$1 = /*@__PURE__*/ new Vector3();
 
 /**
  * Abstract base class for light shadow classes. These classes
- * represent the shadow configuration for different ligth types.
+ * represent the shadow configuration for different light types.
  *
  * @abstract
  */
@@ -46288,7 +46382,11 @@ class MaterialLoader extends Loader {
 	}
 
 	/**
+<<<<<<< HEAD
 	 * Textures are not embebbed in the material JSON so they have
+=======
+	 * Textures are not embedded in the material JSON so they have
+>>>>>>> dev
 	 * to be injected before the loading process starts.
 	 *
 	 * @param {Object} value - A dictionary holding textures for material properties.
@@ -51521,7 +51619,11 @@ class AnimationAction {
 		this.paused = false;
 
 		/**
+<<<<<<< HEAD
 		 * If set to `false`, the action is disabeled so it has no impact.
+=======
+		 * If set to `false`, the action is disabled so it has no impact.
+>>>>>>> dev
 		 *
 		 * When the action is re-enabled, the animation continues from its current
 		 * time (setting `enabled` to `false` doesn't reset the action).
@@ -52862,7 +52964,11 @@ class AnimationMixer extends EventDispatcher {
 	 * will be created by this method. Calling this method several times with the
 	 * same clip and root parameters always returns the same action.
 	 *
+<<<<<<< HEAD
 	 * @param {AnimationClip|string} clip - An animaion clip or alternatively the name of the animation clip.
+=======
+	 * @param {AnimationClip|string} clip - An animation clip or alternatively the name of the animation clip.
+>>>>>>> dev
 	 * @param {Object3D} [optionalRoot] - An alternative root object.
 	 * @param {(NormalAnimationBlendMode|AdditiveAnimationBlendMode)} [blendMode] - The blend mode.
 	 * @return {?AnimationAction} The animation action.
@@ -52931,7 +53037,11 @@ class AnimationMixer extends EventDispatcher {
 	/**
 	 * Returns an existing animation action for the passed clip.
 	 *
+<<<<<<< HEAD
 	 * @param {AnimationClip|string} clip - An animaion clip or alternatively the name of the animation clip.
+=======
+	 * @param {AnimationClip|string} clip - An animation clip or alternatively the name of the animation clip.
+>>>>>>> dev
 	 * @param {Object3D} [optionalRoot] - An alternative root object.
 	 * @return {?AnimationAction} The animation action. Returns `null` if no action was found.
 	 */
@@ -53152,7 +53262,11 @@ class AnimationMixer extends EventDispatcher {
 	 * given clip and an optional root object. Before using this method make
 	 * sure to call {@link AnimationAction#stop} to deactivate the action.
 	 *
+<<<<<<< HEAD
 	 * @param {AnimationClip|string} clip - An animaion clip or alternatively the name of the animation clip.
+=======
+	 * @param {AnimationClip|string} clip - An animation clip or alternatively the name of the animation clip.
+>>>>>>> dev
 	 * @param {Object3D} [optionalRoot] - An alternative root object.
 	 */
 	uncacheAction( clip, optionalRoot ) {
@@ -53857,7 +53971,11 @@ class Raycaster {
 	 * @property {number} distance - The distance from the ray's origin to the intersection point.
 	 * @property {number} distanceToRay -  Some 3D objects e.g. {@link Points} provide the distance of the
 	 * intersection to the nearest point on the ray. For other objects it will be `undefined`.
+<<<<<<< HEAD
 	 * @property {Vector3} point - The intersesction point, in world coordinates.
+=======
+	 * @property {Vector3} point - The intersection point, in world coordinates.
+>>>>>>> dev
 	 * @property {Object} face - The face that has been intersected.
 	 * @property {number} faceIndex - The face index.
 	 * @property {Object3D} object - The 3D object that has been intersected.
