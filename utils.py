@@ -1,4 +1,4 @@
-def sort_valid_words():
+def sort_project_valid_words():
     # Sort valid word list
     with open("project-words.txt", encoding="utf-8") as f:
         words = f.read().splitlines()
@@ -95,5 +95,5 @@ def clean_ts_errors():
     )
 
 
-sort_valid_words()
+sort_project_valid_words()
 clean_ts_errors()
