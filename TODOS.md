@@ -1,9 +1,18 @@
 # Types
-
-
+Sceneoptimizer.disposeMeshes mesh is not array bu t a set
+fix type of Shadowmapviewer.position
+oculushandpointer.attached is not nullable
+XRHandMeshModel.path is nullable in constructor
+Better type for NodeBuilder.vars
+Add Color has color type for Color4.set
+Renderer.compute result is not null but undefined
+Renderer.compile return a function not a promise
 
 # Dev
 Move this.trackTimestamp to parent Backend class
+Sceneoptimizer ref to this.logDebugInfo
+Add buildFunctionCode to NodeBuilder class (func overiten by subclasses)
+AnalyticalLightNode call to .setupShadowNode does not take any parameter
 
 # Investigate
 MarchingCube ref to this.enableColors inside this.init

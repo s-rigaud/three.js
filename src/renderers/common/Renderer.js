@@ -2205,7 +2205,7 @@ class Renderer {
 	 * if the renderer has been initialized.
 	 *
 	 * @param {Node|Array<Node>} computeNodes - The compute node(s).
-	 * @return {?Promise} A Promise that resolve when the compute has finished. Only returned when the renderer has not been initialized.
+	 * @return {Promise} A Promise that resolve when the compute has finished. Only returned when the renderer has not been initialized.
 	 */
 	compute( computeNodes ) {
 
