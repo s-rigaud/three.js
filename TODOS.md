@@ -17,6 +17,7 @@ correct all generic errors ": Generic type "
 All loaders method load onLoad params return type
 UltraHDRLoader.js :350 type of function is wrong
 MD2Loader.load can have undefined functions
+MD2Charac complex controls is nullable and currentSkin can be undefined
 
 
 # Dev
