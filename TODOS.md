@@ -15,6 +15,9 @@ ReflectorNode constructor default values for params does not exist
 ReflectorBaseNode.textureNode is ReflectorNode (has getDepthNode only exists in ReflectorNode)
 correct all generic errors ": Generic type "
 All loaders method load onLoad params return type
+UltraHDRLoader.js :350 type of function is wrong
+MD2Loader.load can have undefined functions
+
 
 # Dev
 Use MaterialLoader.js and Material.js to fix tab of material attributes
@@ -36,6 +39,13 @@ webgpu_compute_sort_bitonic :478 comparison ??
 webgpu_multisampled_renderbuffers Array.fill not empty, use Array.from instead
 webgpu_tsl_compute_attractors_particles accessing TransformControls.visible
 webgpu_tsl_halftone :180 setSclar takes only one param
+ColladaLoader : 2104 distance not ok on DirectionalLight
+LDrawLoader :2264 don't use class but object
+LWOLoadr :354 additonal argument
+LWOLoadr :538 additonal argument
+LWOLoadr :825 additonal argument
+MD2Loader.js :144 should be BufferGeo as input
+RGBMLoader.setMaxRange is 7 or 16
 
 # Investigate
 RTTNode problem for width undefined, passing null, ... ??
