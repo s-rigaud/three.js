@@ -1,23 +1,11 @@
 # Types
-fix type of Shadowmapviewer.position
-oculushandpointer.attached is not nullable
-XRHandMeshModel.path is nullable in constructor
 Better type for NodeBuilder.vars
-Add Color has color type for Color4.set
-Renderer.compute result is not null but undefined
-Renderer.compile return a function not a promise
-ViewHelper.handleClick has event of type MouseEvent
-FileLoader :122 .requestHeader is Object<string, string> (set everywhere)
-ImageBitmaploader.requestHeader is Object<string, string> (set everywhere)
 NodeLoader.parseNodes json is Object<string, any>
 ReflectorNode.getDepthNode and getDepthNode return ReflectorNode
 ReflectorNode constructor default values for params does not exist
 ReflectorBaseNode.textureNode is ReflectorNode (has getDepthNode only exists in ReflectorNode)
 correct all generic errors ": Generic type "
 All loaders method load onLoad params return type
-UltraHDRLoader.js :350 type of function is wrong
-MD2Loader.load can have undefined functions
-MD2Charac complex controls is nullable and currentSkin can be undefined
 
 
 # Dev
