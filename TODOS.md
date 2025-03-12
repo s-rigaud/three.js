@@ -9,6 +9,9 @@ All loaders method load onLoad params return type
 For all pass, update uniforms type to Object<string, any>
 TAARenderPass render render param (hould add commented input or just remove ?)
 RTTNode problem for width being null instead of undefined (fix also for rttNode TSL function)
+Material.blendEquationAlpha is nullable or default broken
+Material.blendEquation is bad typed
+
 
 # Dev
 Use MaterialLoader.js and Material.js to fix tab of material attributes

@@ -37,7 +37,7 @@
     "include": [
         "src/**/*.js",
         "examples/**/*"
-    ],
+, "src/materials/nodes/manager/NodeMaterialObserver.ts"    ],
     "exclude": [
         "node_modules/**/*",
         "build",
