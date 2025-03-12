@@ -13,7 +13,6 @@ accu
 accus
 ACUBIC
 ADAT
-respecified
 Aders
 adipiscing
 ADTR
@@ -1922,6 +1921,7 @@ requis
 Resetted
 Resizer
 resizer
+respecified
 resx
 resy
 retarget

@@ -2152,7 +2152,7 @@ examples/jsm/modifiers/EdgeSplitModifier.js(199,19): error TS18047: 'geometry.in
 examples/jsm/modifiers/EdgeSplitModifier.js(210,32): error TS18048: 'pointToIndexMap' is possibly 'undefined'.
 examples/jsm/modifiers/SimplifyModifier.js(79,45): error TS2345: Argument of type 'BufferAttribute | InterleavedBufferAttribute' is not assignable to parameter of type 'BufferAttribute'.
 examples/jsm/modifiers/SimplifyModifier.js(91,44): error TS2345: Argument of type 'BufferAttribute | InterleavedBufferAttribute' is not assignable to parameter of type 'BufferAttribute'.
-examples/jsm/modifiers/SimplifyModifier.js(174,3): error TS2740: Type 'never[]' is missing the following properties from type 'BufferAttribute': name, array, itemSize, usage, and 35 more.
+examples/jsm/modifiers/SimplifyModifier.js(174,3): error TS2740: Type 'never[]' is missing the following properties from type 'BufferAttribute': id, name, array, itemSize, and 36 more.
 examples/jsm/modifiers/SimplifyModifier.js(217,4): error TS18047: 'index' is possibly 'null'.
 examples/jsm/modifiers/SimplifyModifier.js(217,10): error TS2339: Property 'push' does not exist on type 'BufferAttribute'.
 examples/jsm/modifiers/TessellateModifier.js(123,15): error TS2339: Property 'push' does not exist on type 'TypedArray'.
