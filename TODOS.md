@@ -14,7 +14,6 @@ Material.blendEquation is bad typed
 
 
 # Dev
-Use MaterialLoader.js and Material.js to fix tab of material attributes
 webgl_geometry_extrude_shapes .link remove
 webgl_geometry_nurbs event param missing for onPointerUp
 webgl_geometry_shapes event param missing for onPointerUp
@@ -46,4 +45,3 @@ WebGPUTimestampquery dispose can return undefined
 
 # Investigate
 Remove ...arguments calls (only if PR for Object3D pass)
-Delete as much eslint-disable-next-line as possible
