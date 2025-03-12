@@ -6,7 +6,8 @@ ReflectorNode constructor default values for params does not exist
 ReflectorBaseNode.textureNode is ReflectorNode (has getDepthNode only exists in ReflectorNode)
 correct all generic errors ": Generic type "
 All loaders method load onLoad params return type
-
+For all pass, update uniforms type to Object<string, any>
+TAARenderPass render render param (hould add commented input or just remove ?)
 
 # Dev
 Use MaterialLoader.js and Material.js to fix tab of material attributes

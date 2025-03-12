@@ -38,7 +38,7 @@ class AfterimagePass extends Pass {
 		 * pass.uniforms.damp.value = 0.9;
 		 * ```
 		 *
-		 * @type {Object}
+		 * @type {Object<string, any>}
 		 */
 		this.uniforms = UniformsUtils.clone( AfterimageShader.uniforms );
 
