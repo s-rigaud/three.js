@@ -8,6 +8,7 @@ correct all generic errors ": Generic type "
 All loaders method load onLoad params return type
 For all pass, update uniforms type to Object<string, any>
 TAARenderPass render render param (hould add commented input or just remove ?)
+RTTNode problem for width being null instead of undefined (fix also for rttNode TSL function)
 
 # Dev
 Use MaterialLoader.js and Material.js to fix tab of material attributes
@@ -38,7 +39,5 @@ MD2Loader.js :144 should be BufferGeo as input
 RGBMLoader.setMaxRange is 7 or 16
 
 # Investigate
-RTTNode problem for width undefined, passing null, ... ??
-See if https://jsdoc.app/tags-this can be used
-Remove ...arguments calls
+Remove ...arguments calls (only if PR for Object3D pass)
 Delete as much eslint-disable-next-line as possible
