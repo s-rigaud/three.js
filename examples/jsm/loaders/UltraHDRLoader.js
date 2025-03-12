@@ -39,7 +39,7 @@ const SRGB_TO_LINEAR = Array( 1024 )
 /**
  * A loader for the Ultra HDR Image Format.
  *
- * Exisitng HDR or EXR textures can be converted to Ultra HDR with this [tool]{@link https://gainmap-creator.monogrid.com/}.
+ * Existing HDR or EXR textures can be converted to Ultra HDR with this [tool]{@link https://gainmap-creator.monogrid.com/}.
  *
  * Current feature set:
  * - JPEG headers (required)
@@ -303,7 +303,7 @@ class UltraHDRLoader extends Loader {
 	 * to the `onLoad()` callback.
 	 *
 	 * @param {string} url - The path/URL of the files to be loaded. This can also be a data URI.
-	 * @param {function(DataTexture)} onLoad - Executed when the loading process has been finished.
+	 * @param {function(DataTexture, Object)} onLoad - Executed when the loading process has been finished.
 	 * @param {onProgressCallback} onProgress - Executed while the loading is in progress.
 	 * @param {onErrorCallback} onError - Executed when errors occur.
 	 * @return {DataTexture} The Ultra HDR texture.
