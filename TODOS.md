@@ -37,6 +37,9 @@ LWOLoadr :538 additonal argument
 LWOLoadr :825 additonal argument
 MD2Loader.js :144 should be BufferGeo as input
 RGBMLoader.setMaxRange is 7 or 16
+VolumeSlice add default value in constructor for ctx and ctxBuffer (doesn't seem to change)
+Volume.hear not defined (set in NRRDLoader)
+WebGPUTimestampquery dispose can return undefined
 
 # Investigate
 Remove ...arguments calls (only if PR for Object3D pass)
