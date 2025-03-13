@@ -4,14 +4,14 @@ NodeLoader.parseNodes json is Object<string, any>
 ReflectorNode.getDepthNode and getDepthNode return ReflectorNode
 ReflectorNode constructor default values for params does not exist
 ReflectorBaseNode.textureNode is ReflectorNode (has getDepthNode only exists in ReflectorNode)
-correct all generic errors ": Generic type "
+correct all generic errors ": Generic type " only for lists
 All loaders method load onLoad params return type
 For all pass, update uniforms type to Object<string, any>
 TAARenderPass render render param (hould add commented input or just remove ?)
 RTTNode problem for width being null instead of undefined (fix also for rttNode TSL function)
 Material.blendEquationAlpha is nullable or default broken
 Material.blendEquation is bad typed
-
+Fix Float32| type (Float32Array)
 
 # Dev
 webgl_geometry_extrude_shapes .link remove
@@ -42,6 +42,9 @@ RGBMLoader.setMaxRange is 7 or 16
 VolumeSlice add default value in constructor for ctx and ctxBuffer (doesn't seem to change)
 Volume.hear not defined (set in NRRDLoader)
 WebGPUTimestampquery dispose can return undefined
+FBXLoader :174
+
 
 # Investigate
 Remove ...arguments calls (only if PR for Object3D pass)
+Find a way to generate editor\js\libs\tern-threejs\threejs.js
