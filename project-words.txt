@@ -23,7 +23,6 @@ agender
 aggiornare
 agilizes
 Agüera's
-Ag├╝era's
 ahedov
 ahole
 airpods
@@ -92,6 +91,7 @@ artboard
 asana
 asciify
 aspectcorrect
+aspectratio
 asterix
 ASWF
 Asyc
@@ -1008,6 +1008,7 @@ Gtao
 gtao
 gumroad
 gurantee
+Gustavson
 Gustavson's
 GVAL
 gzipping
@@ -1758,6 +1759,8 @@ PIXB
 Pixcoord
 pixcoord
 PIXELFORMAT
+pixelheight
+pixelwidth
 Placemark
 planeschanged
 planesdetected
@@ -1876,7 +1879,16 @@ RBLR
 rbmax
 rbmin
 rbminmax
+rccamera
+rcdelta
+rcgeometry
+rclight
+rcmaterial
+rcmesh
 RCOL
+rcposition
+rcscene
+rcvelocity
 rdparty
 readback
 readyplayer
@@ -1908,6 +1920,7 @@ renderable
 Renderbuffers
 renderbuffers
 renderbundle
+rendercall
 renderorder
 renderstyle
 rendertarget
@@ -1932,6 +1945,7 @@ REVERSEDEPTHBUF
 revolut
 RFOP
 rgba
+RGBD
 RGBE
 rgbe
 rgbeloader
@@ -2297,6 +2311,7 @@ translatex
 TRANSMISSIONMAP
 transmissionmap
 Transparents
+transpiles
 Trasformazioni
 trasvesti
 Travelled
@@ -2553,6 +2568,8 @@ xoff
 XPFALL
 Xposition
 XR's
+xrlayer
+xrlayers
 Xrotation
 xsize
 Xwriter

@@ -1,13 +1,5 @@
 import { Material } from "src/Three.Core";
 
-import { MeshPhysicalMaterial } from "src/Three.Core";
-import { MeshStandardMaterial } from "src/Three.Core";
-import { MeshBasicMaterial } from "src/Three.Core";
-import { MeshLambertMaterial } from "src/Three.Core";
-import { MeshPhongMaterial } from "src/Three.Core";
-
-type MatKeys = keyof Material
-
 const refreshUniforms = [
 	'alphaMap',
 	'alphaTest',
@@ -59,7 +51,7 @@ const refreshUniforms = [
 	'thickness',
 	'transmission',
 	'transmissionMap'
-] as const satisfies readonly MatKeys[];
+];
 
 /**
  * This class is used by {@link WebGPURenderer} as management component.

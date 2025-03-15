@@ -12,6 +12,7 @@ RTTNode problem for width being null instead of undefined (fix also for rttNode 
 Material.blendEquationAlpha is nullable or default broken
 Material.blendEquation is bad typed
 Fix Float32| type (Float32Array)
+XRManager.getEnvironmentBlendMode retunr undefined not null
 
 # Dev
 webgl_geometry_extrude_shapes .link remove
