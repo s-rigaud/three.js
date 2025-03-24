@@ -1,18 +1,10 @@
 # Types
-Better type for NodeBuilder.vars
-NodeLoader.parseNodes json is Object<string, any>
 ReflectorNode.getDepthNode and getDepthNode return ReflectorNode
 ReflectorNode constructor default values for params does not exist
 ReflectorBaseNode.textureNode is ReflectorNode (has getDepthNode only exists in ReflectorNode)
 correct all generic errors ": Generic type " only for lists
 All loaders method load onLoad params return type
-For all pass, update uniforms type to Object<string, any>
-TAARenderPass render render param (hould add commented input or just remove ?)
 RTTNode problem for width being null instead of undefined (fix also for rttNode TSL function)
-Material.blendEquationAlpha is nullable or default broken
-Material.blendEquation is bad typed
-Fix Float32| type (Float32Array)
-XRManager.getEnvironmentBlendMode retunr undefined not null
 
 # Dev
 webgl_geometry_extrude_shapes .link remove
