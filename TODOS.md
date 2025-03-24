@@ -5,14 +5,10 @@ ReflectorBaseNode.textureNode is ReflectorNode (has getDepthNode only exists in 
 correct all generic errors ": Generic type " only for lists
 All loaders method load onLoad params return type
 RTTNode problem for width being null instead of undefined (fix also for rttNode TSL function)
+RGBMLoader.setMaxRange range param is  7 or 16
 
 # Dev
 webgl_geometry_extrude_shapes .link remove
-webgl_geometry_nurbs event param missing for onPointerUp
-webgl_geometry_shapes event param missing for onPointerUp
-webgl_geometry_text event param missing for onPointerUp
-webgl_loader_ttf event param missing for onPointerUp
-webgl_panorama_equirectangular event param missing for onPointerUp
 webgl_loader_ldraw :172 no tone mapping on Material
 webgl_loader_ldraw bad usage of Math.round (multiple)
 webgl_loader_texture_pvrtc no encoding param for texture
@@ -31,13 +27,10 @@ LWOLoadr :354 additonal argument
 LWOLoadr :538 additonal argument
 LWOLoadr :825 additonal argument
 MD2Loader.js :144 should be BufferGeo as input
-RGBMLoader.setMaxRange is 7 or 16
 VolumeSlice add default value in constructor for ctx and ctxBuffer (doesn't seem to change)
-Volume.hear not defined (set in NRRDLoader)
+Volume.header not defined (set in NRRDLoader)
 WebGPUTimestampquery dispose can return undefined
 FBXLoader :174
-Add abstract deserialize for Node class
-
 
 # Investigate
 Remove ...arguments calls (only if PR for Object3D pass)
