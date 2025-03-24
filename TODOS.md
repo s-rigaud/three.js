@@ -44,6 +44,7 @@ VolumeSlice add default value in constructor for ctx and ctxBuffer (doesn't seem
 Volume.hear not defined (set in NRRDLoader)
 WebGPUTimestampquery dispose can return undefined
 FBXLoader :174
+Add abstract deserialize for Node class
 
 
 # Investigate
