@@ -97,14 +97,6 @@ class GLSLNodeBuilder extends NodeBuilder {
 		 */
 		this.builtins = { vertex: [], fragment: [], compute: [] };
 
-		/**
-		 * Whether comparison in shader code are generated with methods or not.
-		 *
-		 * @type {boolean}
-		 * @default true
-		 */
-		this.useComparisonMethod = true;
-
 	}
 
 	/**
@@ -775,7 +767,7 @@ ${ flowData.code }
 
 					const flat = type.includes( 'int' ) || type.includes( 'uv' ) || type.includes( 'iv' ) ? 'flat ' : '';
 
-					snippet += `${flat} out ${type} ${varying.name};\n`;
+					snippet += `${flat}out ${type} ${varying.name};\n`;
 
 				} else {
 
@@ -1073,10 +1065,9 @@ ${ flowData.code }
 		for ( let i = 0; i < transforms.length; i ++ ) {
 
 			const transform = transforms[ i ];
-
 			const attributeName = this.getPropertyName( transform.attributeNode );
 
-			snippet += `${ transform.varyingName } = ${ attributeName };\n\t`;
+			if ( attributeName ) snippet += `${ transform.varyingName } = ${ attributeName };\n\t`;
 
 		}
 

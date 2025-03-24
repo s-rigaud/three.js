@@ -24,7 +24,8 @@ import {
 	CompressedTexture,
 	Vector3,
 	Quaternion,
-	REVISION
+	REVISION,
+	ImageUtils
 } from 'three';
 
 /**
@@ -380,8 +381,8 @@ const GLB_CHUNK_TYPE_BIN = 0x004E4942;
  * Compare two arrays
  *
  * @private
- * @param  {Array} array1 Array 1 to compare
- * @param  {Array} array2 Array 2 to compare
+ * @param {Array} array1 Array 1 to compare
+ * @param {Array} array2 Array 2 to compare
  * @return {boolean}        Returns true if both arrays are equal
  */
 function equalArray( array1, array2 ) {
@@ -398,7 +399,7 @@ function equalArray( array1, array2 ) {
  * Converts a string to an ArrayBuffer.
  *
  * @private
- * @param  {string} text
+ * @param {string} text
  * @return {ArrayBuffer}
  */
 function stringToArrayBuffer( text ) {
@@ -424,9 +425,9 @@ function isIdentityMatrix( matrix ) {
  * Get the min and max vectors from the given attribute
  *
  * @private
- * @param  {BufferAttribute} attribute Attribute to find the min/max in range from start to start + count
- * @param  {number} start Start index
- * @param  {number} count Range to cover
+ * @param {BufferAttribute} attribute Attribute to find the min/max in range from start to start + count
+ * @param {number} start Start index
+ * @param {number} count Range to cover
  * @return {Object} Object containing the `min` and `max` values (As an array of attribute.itemSize components)
  */
 function getMinMax( attribute, start, count ) {
@@ -797,7 +798,7 @@ class GLTFWriter {
 	/**
 	 * Returns ids for buffer attributes.
 	 *
-	 * @param  {Object} attribute
+	 * @param {Object} attribute
 	 * @param {boolean} [isRelativeCopy=false]
 	 * @return {number} An integer
 	 */
@@ -1052,7 +1053,7 @@ class GLTFWriter {
 
 	/**
 	 * Process a buffer to append to the default one.
-	 * @param  {ArrayBuffer} buffer
+	 * @param {ArrayBuffer} buffer
 	 * @return {0}
 	 */
 	processBuffer( buffer ) {
@@ -1361,10 +1362,10 @@ class GLTFWriter {
 
 	/**
 	 * Process image
-	 * @param  {Image} image to process
-	 * @param  {number} format Identifier of the format (RGBAFormat)
-	 * @param  {boolean} flipY before writing out the image
-	 * @param  {string} mimeType export format
+	 * @param {Image} image to process
+	 * @param {number} format Identifier of the format (RGBAFormat)
+	 * @param {boolean} flipY before writing out the image
+	 * @param {string} mimeType export format
 	 * @return {number}     Index of the processed texture in the "images" array
 	 */
 	processImage( image, format, flipY, mimeType = 'image/png' ) {
@@ -1465,25 +1466,7 @@ class GLTFWriter {
 
 			} else {
 
-				if ( canvas.toDataURL !== undefined ) {
-
-					imageDef.uri = canvas.toDataURL( mimeType );
-
-				} else {
-
-					pending.push(
-
-						getToBlobPromise( canvas, mimeType )
-							.then( blob => new FileReader().readAsDataURL( blob ) )
-							.then( dataURL => {
-
-								imageDef.uri = dataURL;
-
-							} )
-
-					);
-
-				}
+				imageDef.uri = ImageUtils.getDataURL( canvas, mimeType );
 
 			}
 
@@ -1501,7 +1484,7 @@ class GLTFWriter {
 
 	/**
 	 * Process sampler
-	 * @param  {Texture} map Texture to process
+	 * @param {Texture} map Texture to process
 	 * @return {number}      Index of the processed texture in the "samplers" array
 	 */
 	processSampler( map ) {
@@ -1523,7 +1506,7 @@ class GLTFWriter {
 
 	/**
 	 * Process texture
-	 * @param  {Texture} map Map to process
+	 * @param {Texture} map Map to process
 	 * @return {Promise<number>} Index of the processed texture in the "textures" array
 	 */
 	async processTextureAsync( map ) {
@@ -1569,7 +1552,7 @@ class GLTFWriter {
 
 	/**
 	 * Process material
-	 * @param  {THREE.Material} material Material to process
+	 * @param {THREE.Material} material Material to process
 	 * @return {Promise<number|null>} Index of the processed material in the "materials" array
 	 */
 	async processMaterialAsync( material ) {
@@ -1745,7 +1728,7 @@ class GLTFWriter {
 
 	/**
 	 * Process mesh
-	 * @param  {THREE.Mesh} mesh Mesh to process
+	 * @param {THREE.Mesh} mesh Mesh to process
 	 * @return {Promise<number|null>} Index of the processed mesh in the "meshes" array
 	 */
 	async processMeshAsync( mesh ) {
@@ -2150,7 +2133,7 @@ class GLTFWriter {
 
 	/**
 	 * Process camera
-	 * @param  {THREE.Camera} camera Camera to process
+	 * @param {THREE.Camera} camera Camera to process
 	 * @return {number} Index of the processed mesh in the "camera" array
 	 */
 	processCamera( camera ) {
@@ -2351,7 +2334,7 @@ class GLTFWriter {
 
 	/**
 	 * Process Object3D node
-	 * @param  {THREE.Object3D} object Object3D to processNodeAsync
+	 * @param {THREE.Object3D} object Object3D to processNodeAsync
 	 * @return {Promise<number>} Index of the node in the nodes list
 	 */
 	async processNodeAsync( object ) {
@@ -2459,7 +2442,7 @@ class GLTFWriter {
 
 	/**
 	 * Process Scene
-	 * @param  {Scene} scene Scene to process
+	 * @param {Scene} scene Scene to process
 	 */
 	async processSceneAsync( scene ) {
 
@@ -2503,7 +2486,7 @@ class GLTFWriter {
 
 	/**
 	 * Creates a Scene to hold a list of objects and parse it
-	 * @param  {Array<THREE.Object3D>} objects List of objects to process
+	 * @param {Array<THREE.Object3D>} objects List of objects to process
 	 */
 	async processObjectsAsync( objects ) {
 

@@ -1,5 +1,5 @@
 import TempNode from '../core/TempNode.js';
-import { sub, mul, div } from './OperatorNode.js';
+import { sub, mul, div, equal } from './OperatorNode.js';
 import { addMethodChaining, nodeObject, nodeProxy, float, vec2, vec3, vec4, Fn } from '../tsl/TSLCore.js';
 import { WebGLCoordinateSystem, WebGPUCoordinateSystem } from '../../constants.js';
 
@@ -32,6 +32,24 @@ class MathNode extends TempNode {
 	constructor( method, aNode, bNode = null, cNode = null ) {
 
 		super();
+
+		// Allow the max() and min() functions to take an arbitrary number of arguments.
+
+		if ( ( method === MathNode.MAX || method === MathNode.MIN ) && arguments.length > 3 ) {
+
+			let finalOp = new MathNode( method, aNode, bNode );
+
+			for ( let i = 2; i < arguments.length - 1; i ++ ) {
+
+				finalOp = new MathNode( method, finalOp, arguments[ i ] );
+
+			}
+
+			aNode = finalOp;
+			bNode = arguments[ arguments.length - 1 ];
+			cNode = null;
+
+		}
 
 		/**
 		 * The method name.
@@ -126,7 +144,7 @@ class MathNode extends TempNode {
 
 			return 'vec3';
 
-		} else if ( method === MathNode.ALL ) {
+		} else if ( method === MathNode.ALL || method === MathNode.ANY ) {
 
 			return 'bool';
 
@@ -714,28 +732,32 @@ export const bitcast = /*@__PURE__*/ nodeProxy( MathNode, MathNode.BITCAST );
  * @function
  * @param {Node | number} x - The first parameter.
  * @param {Node | number} y - The second parameter.
+ * @deprecated since r175. Use {@link equal} instead.
  * @returns {Node<bool>}
  */
-export const equals = /*@__PURE__*/ nodeProxy( MathNode, MathNode.EQUALS );
+export const equals = ( x, y ) => { // @deprecated, r172
+
+	console.warn( 'THREE.TSL: "equals" is deprecated. Use "equal" inside a vector instead, like: "bvec*( equal( ... ) )"' );
+	return equal( x, y );
+
+};
 
 /**
- * Returns the lesser of two values.
+ * Returns the least of the given values.
  *
  * @tsl
  * @function
- * @param {Node | number} x - The y parameter.
- * @param {Node | number} y - The x parameter.
+ * @param {...(Node | number)} values - The values to compare.
  * @returns {Node}
  */
 export const min = /*@__PURE__*/ nodeProxy( MathNode, MathNode.MIN );
 
 /**
- * Returns the greater of two values.
+ * Returns the greatest of the given values.
  *
  * @tsl
  * @function
- * @param {Node | number} x - The y parameter.
- * @param {Node | number} y - The x parameter.
+ * @param {...(Node | number)} values - The values to compare.
  * @returns {Node}
  */
 export const max = /*@__PURE__*/ nodeProxy( MathNode, MathNode.MAX );
@@ -930,7 +952,7 @@ export const saturate = ( value ) => clamp( value );
  * @function
  * @param {Node<vec2|vec3|vec4>} I - The incident vector.
  * @param {Node<vec2|vec3|vec4>} N - The normal vector.
- * @param {Node<float>} eta - The the ratio of indices of refraction.
+ * @param {Node<float>} eta - The ratio of indices of refraction.
  * @returns {Node<vec2|vec3|vec4>}
  */
 export const refract = /*@__PURE__*/ nodeProxy( MathNode, MathNode.REFRACT );

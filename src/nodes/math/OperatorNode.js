@@ -1,3 +1,4 @@
+import { WebGLCoordinateSystem } from '../../constants.js';
 import TempNode from '../core/TempNode.js';
 import { addMethodChaining, nodeProxy } from '../tsl/TSLCore.js';
 
@@ -104,7 +105,7 @@ class OperatorNode extends TempNode {
 
 			return builder.getIntegerType( typeA );
 
-		} else if ( op === '!' || op === '==' || op === '&&' || op === '||' || op === '^^' ) {
+		} else if ( op === '!' || op === '==' || op === '!=' || op === '&&' || op === '||' || op === '^^' ) {
 
 			return 'bool';
 
@@ -117,6 +118,7 @@ class OperatorNode extends TempNode {
 		} else {
 
 			// Handle matrix operations
+
 			if ( builder.isMatrix( typeA ) ) {
 
 				if ( typeB === 'float' ) {
@@ -148,6 +150,7 @@ class OperatorNode extends TempNode {
 			}
 
 			// Handle non-matrix cases
+
 			if ( builder.getTypeLength( typeB ) > builder.getTypeLength( typeA ) ) {
 
 				// anytype x anytype: use the greater length vector
@@ -179,7 +182,7 @@ class OperatorNode extends TempNode {
 			typeA = aNode.getNodeType( builder );
 			typeB = typeof bNode !== 'undefined' ? bNode.getNodeType( builder ) : null;
 
-			if ( op === '<' || op === '>' || op === '<=' || op === '>=' || op === '==' ) {
+			if ( op === '<' || op === '>' || op === '<=' || op === '>=' || op === '==' || op === '!=' ) {
 
 				if ( builder.isVector( typeA ) ) {
 
@@ -201,6 +204,7 @@ class OperatorNode extends TempNode {
 				if ( typeB === 'float' ) {
 
 					// Keep matrix type for typeA, but ensure typeB stays float
+
 					typeB = 'float';
 
 				} else if ( builder.isVector( typeB ) ) {
@@ -209,7 +213,9 @@ class OperatorNode extends TempNode {
 					typeB = builder.getVectorFromMatrix( typeA );
 
 				} else if ( builder.isMatrix( typeB ) ) {
+
 					// matrix x matrix - keep both types
+
 				} else {
 
 					typeA = typeB = type;
@@ -221,11 +227,13 @@ class OperatorNode extends TempNode {
 				if ( typeA === 'float' ) {
 
 					// Keep matrix type for typeB, but ensure typeA stays float
+
 					typeA = 'float';
 
 				} else if ( builder.isVector( typeA ) ) {
 
 					// vector x matrix
+
 					typeA = builder.getVectorFromMatrix( typeB );
 
 				} else {
@@ -256,13 +264,47 @@ class OperatorNode extends TempNode {
 
 		if ( output !== 'void' ) {
 
-			if ( op === '<' && outputLength > 1 ) {
+			const isGLSL = builder.renderer.coordinateSystem === WebGLCoordinateSystem;
 
-				if ( builder.useComparisonMethod ) {
+			if ( op === '==' ) {
+
+				if ( isGLSL ) {
+
+					if ( outputLength > 1 ) {
+
+						return builder.format( `${ builder.getMethod( 'equal', output ) }( ${ a }, ${ b } )`, type, output );
+
+					} else {
+
+						return builder.format( `( ${ a } ${ op } ${ b } )`, type, output );
+
+					}
+
+				} else {
+
+					// WGSL
+
+					if ( outputLength > 1 || ! builder.isVector( typeA ) ) {
+
+						return builder.format( `( ${ a } == ${ b } )`, type, output );
+
+					} else {
+
+						return builder.format( `all( ${ a } == ${ b } )`, type, output );
+
+					}
+
+				}
+
+			} else if ( op === '<' && outputLength > 1 ) {
+
+				if ( isGLSL ) {
 
 					return builder.format( `${ builder.getMethod( 'lessThan', output ) }( ${ a }, ${ b } )`, type, output );
 
 				} else {
+
+					// WGSL
 
 					return builder.format( `( ${ a } < ${ b } )`, type, output );
 
@@ -270,11 +312,13 @@ class OperatorNode extends TempNode {
 
 			} else if ( op === '<=' && outputLength > 1 ) {
 
-				if ( builder.useComparisonMethod ) {
+				if ( isGLSL ) {
 
 					return builder.format( `${ builder.getMethod( 'lessThanEqual', output ) }( ${ a }, ${ b } )`, type, output );
 
 				} else {
+
+					// WGSL
 
 					return builder.format( `( ${ a } <= ${ b } )`, type, output );
 
@@ -282,11 +326,13 @@ class OperatorNode extends TempNode {
 
 			} else if ( op === '>' && outputLength > 1 ) {
 
-				if ( builder.useComparisonMethod ) {
+				if ( isGLSL ) {
 
 					return builder.format( `${ builder.getMethod( 'greaterThan', output ) }( ${ a }, ${ b } )`, type, output );
 
 				} else {
+
+					// WGSL
 
 					return builder.format( `( ${ a } > ${ b } )`, type, output );
 
@@ -294,11 +340,13 @@ class OperatorNode extends TempNode {
 
 			} else if ( op === '>=' && outputLength > 1 ) {
 
-				if ( builder.useComparisonMethod ) {
+				if ( isGLSL ) {
 
 					return builder.format( `${ builder.getMethod( 'greaterThanEqual', output ) }( ${ a }, ${ b } )`, type, output );
 
 				} else {
+
+					// WGSL
 
 					return builder.format( `( ${ a } >= ${ b } )`, type, output );
 
@@ -315,6 +363,7 @@ class OperatorNode extends TempNode {
 			} else {
 
 				// Handle matrix operations
+
 				if ( builder.isMatrix( typeA ) && typeB === 'float' ) {
 
 					return builder.format( `( ${ b } ${ op } ${ a } )`, type, output );
@@ -637,7 +686,7 @@ addMethodChaining( 'shiftRight', shiftRight );
  * @function
  * @deprecated since r168. Use {@link modInt} instead.
  *
- * @param  {...any} params
+ * @param {...any} params
  * @returns {Function}
  */
 export const remainder = ( ...params ) => { // @deprecated, r168
