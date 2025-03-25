@@ -5,7 +5,6 @@ ReflectorBaseNode.textureNode is ReflectorNode (has getDepthNode only exists in 
 correct all generic errors ": Generic type " only for lists
 All loaders method load onLoad params return type
 RTTNode problem for width being null instead of undefined (fix also for rttNode TSL function)
-RGBMLoader.setMaxRange range param is  7 or 16
 
 # Dev
 webgl_geometry_extrude_shapes .link remove
@@ -33,5 +32,4 @@ WebGPUTimestampquery dispose can return undefined
 FBXLoader :174
 
 # Investigate
-Remove ...arguments calls (only if PR for Object3D pass)
 Find a way to generate editor\js\libs\tern-threejs\threejs.js
