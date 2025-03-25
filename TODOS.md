@@ -7,15 +7,10 @@ All loaders method load onLoad params return type
 RTTNode problem for width being null instead of undefined (fix also for rttNode TSL function)
 
 # Dev
-webgl_geometry_extrude_shapes .link remove
-webgl_loader_ldraw :172 no tone mapping on Material
-webgl_loader_ldraw bad usage of Math.round (multiple)
-webgl_loader_texture_pvrtc no encoding param for texture
 webgl_materials_cubemap_render_to_mipmaps :92  is array instanciated but {} no valid value
 webgl_mesh_batch ref to this.maxInstanceCount
 webgl_multiple_views :236 there is no mouseY param
 webgl_postprocessing_3dlut :116 needs {} for lut pass
-webgl_renderer_pathtracer Math.round only take one param
 webgpu_compute_sort_bitonic :478 comparison ??
 webgpu_multisampled_renderbuffers Array.fill not empty, use Array.from instead
 webgpu_tsl_compute_attractors_particles accessing TransformControls.visible
