@@ -7,16 +7,6 @@ All loaders method load onLoad params return type
 RTTNode problem for width being null instead of undefined (fix also for rttNode TSL function)
 
 # Dev
-webgl_materials_cubemap_render_to_mipmaps :92  is array instanciated but {} no valid value
-webgl_mesh_batch ref to this.maxInstanceCount
-webgl_multiple_views :236 there is no mouseY param
-webgl_postprocessing_3dlut :116 needs {} for lut pass
-webgpu_compute_sort_bitonic :478 comparison ??
-webgpu_multisampled_renderbuffers Array.fill not empty, use Array.from instead
-webgpu_tsl_compute_attractors_particles accessing TransformControls.visible
-webgpu_tsl_halftone :180 setSclar takes only one param
-ColladaLoader : 2104 distance not ok on DirectionalLight
-LDrawLoader :2264 don't use class but object
 LWOLoadr :354 additonal argument
 LWOLoadr :538 additonal argument
 LWOLoadr :825 additonal argument
