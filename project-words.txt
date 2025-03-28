@@ -70,7 +70,6 @@ aomap
 AOPASSMAP
 AOVN
 AOVS
-APLHA
 appgallery
 applmak
 appstore
@@ -466,7 +465,6 @@ deepscan
 deepskyblue
 deezer
 defaultnormal
-defautl
 deinterleave
 deinterleaves
 deliveroo
@@ -497,7 +495,6 @@ Desenhando
 Dessiner
 detuning
 deviantart
-devision
 DFDX
 DFDY
 dgroup
@@ -1006,7 +1003,6 @@ GTAO
 Gtao
 gtao
 gumroad
-gurantee
 Gustavson
 Gustavson's
 GVAL
@@ -1133,7 +1129,6 @@ Intercep
 interdum
 interfacename
 intergender
-Interger
 Interna
 interp
 INTERPCT
@@ -2317,7 +2312,6 @@ Travelled
 traycaster
 treemap
 treeview
-treshold
 tresjs
 trilerp
 trimesh
