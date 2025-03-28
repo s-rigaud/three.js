@@ -458,7 +458,6 @@ DDSCAPS
 DDSD
 Debevec
 DECBITS
-Decceleration
 DECMASK
 DECSIZE
 Deepkolos
