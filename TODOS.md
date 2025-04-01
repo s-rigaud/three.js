@@ -1,5 +1,6 @@
 # Types
 TimestampQueryPool.allocateQueriesForContext return ?number
+FBXLoader.parse is Arraybuffer no Array
 
 # Dev
 
