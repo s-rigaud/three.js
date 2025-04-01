@@ -317,6 +317,7 @@ coeff
 Coffeemat
 coffeemat
 coisas
+colb
 COLLADA
 Collada
 collada
@@ -372,6 +373,7 @@ crattack
 crdeath
 Creare
 creare
+createducks
 Criando
 criar
 Cright
@@ -456,6 +458,7 @@ DDPF
 DDSCAPS
 DDSD
 Debevec
+Decale
 DECBITS
 DECMASK
 DECSIZE
@@ -510,6 +513,7 @@ diracs
 directx
 dirlight
 Disegnare
+disolve
 Disp
 disp
 DISPLACEMENTMAP
@@ -953,6 +957,7 @@ Ghibli
 ghostwhite
 glauncher
 glayer
+glbloader
 glbufferattribute
 glcmds
 glfx
@@ -1411,6 +1416,7 @@ Meshopt
 meshopt
 meshphong
 meshphysical
+meshs
 meshtoon
 Metaballs
 metaballs
@@ -1624,6 +1630,8 @@ occluders
 Octree
 octree
 OETF
+offa
+offb
 offscreencanvas
 Offseting
 offseting
@@ -2017,6 +2025,7 @@ sessiongranted
 sessionstart
 setwrap
 SFLOAT
+shaderball
 shaderobject
 Shadertoy
 shadertoy
@@ -2290,6 +2299,7 @@ Toon
 toon
 toons
 topbuzz
+torad
 torchain
 torusknot
 touchpads
