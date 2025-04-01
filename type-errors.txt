@@ -492,8 +492,6 @@ examples/jsm/lights/RectAreaLightUniformsLib.js(29,15): error TS2339: Property '
 examples/jsm/lights/RectAreaLightUniformsLib.js(30,15): error TS2339: Property 'LTC_FLOAT_2' does not exist on type '{ common: { diffuse: IUniform<Color>; opacity: IUniform<number>; map: IUniform<unknown>; mapTransform: IUniform<Matrix3>; alphaMap: IUniform<...>; alphaMapTransform: IUniform<...>; alphaTest: IUniform<...>; }; ... 14 more ...; sprite: { ...; }; }'.
 examples/jsm/lights/RectAreaLightUniformsLib.js(32,15): error TS2339: Property 'LTC_HALF_1' does not exist on type '{ common: { diffuse: IUniform<Color>; opacity: IUniform<number>; map: IUniform<unknown>; mapTransform: IUniform<Matrix3>; alphaMap: IUniform<...>; alphaMapTransform: IUniform<...>; alphaTest: IUniform<...>; }; ... 14 more ...; sprite: { ...; }; }'.
 examples/jsm/lights/RectAreaLightUniformsLib.js(33,15): error TS2339: Property 'LTC_HALF_2' does not exist on type '{ common: { diffuse: IUniform<Color>; opacity: IUniform<number>; map: IUniform<unknown>; mapTransform: IUniform<Matrix3>; alphaMap: IUniform<...>; alphaMapTransform: IUniform<...>; alphaTest: IUniform<...>; }; ... 14 more ...; sprite: { ...; }; }'.
-examples/jsm/lines/LineGeometry.js(46,21): error TS2314: Generic type 'Array<T>' requires 1 type argument(s).
-examples/jsm/lines/LineGeometry.js(77,21): error TS2314: Generic type 'Array<T>' requires 1 type argument(s).
 examples/jsm/lines/LineMaterial.js(9,13): error TS2339: Property 'line' does not exist on type '{ common: { diffuse: IUniform<Color>; opacity: IUniform<number>; map: IUniform<unknown>; mapTransform: IUniform<Matrix3>; alphaMap: IUniform<...>; alphaMapTransform: IUniform<...>; alphaTest: IUniform<...>; }; ... 14 more ...; sprite: { ...; }; }'.
 examples/jsm/lines/LineMaterial.js(26,15): error TS2339: Property 'line' does not exist on type '{ common: { diffuse: IUniform<Color>; opacity: IUniform<number>; map: IUniform<unknown>; mapTransform: IUniform<Matrix3>; alphaMap: IUniform<...>; alphaMapTransform: IUniform<...>; alphaTest: IUniform<...>; }; ... 14 more ...; sprite: { ...; }; }'.
 examples/jsm/lines/LineMaterial.js(432,4): error TS2353: Object literal may only specify known properties, and 'type' does not exist in type 'ShaderMaterialParameters'.
@@ -510,10 +508,9 @@ examples/jsm/lines/LineSegments2.js(375,14): error TS2345: Argument of type 'Box
 examples/jsm/lines/LineSegments2.js(386,72): error TS2339: Property 'resolution' does not exist on type 'Material | Material[]'.
 examples/jsm/lines/LineSegments2.js(412,34): error TS2339: Property 'uniforms' does not exist on type 'Material | Material[]'.
 examples/jsm/lines/LineSegments2.js(417,18): error TS2339: Property 'uniforms' does not exist on type 'Material | Material[]'.
-examples/jsm/lines/LineSegmentsGeometry.js(93,21): error TS2314: Generic type 'Array<T>' requires 1 type argument(s).
 examples/jsm/lines/LineSegmentsGeometry.js(110,58): error TS2345: Argument of type 'Float32Array<ArrayBufferLike> | undefined' is not assignable to parameter of type 'TypedArray'.
-examples/jsm/lines/LineSegmentsGeometry.js(130,21): error TS2314: Generic type 'Array<T>' requires 1 type argument(s).
 examples/jsm/lines/LineSegmentsGeometry.js(147,63): error TS2345: Argument of type 'Float32Array<ArrayBufferLike> | undefined' is not assignable to parameter of type 'TypedArray'.
+examples/jsm/lines/LineSegmentsGeometry.js(164,22): error TS2345: Argument of type 'TypedArray' is not assignable to parameter of type 'number[] | Float32Array<ArrayBufferLike>'.
 examples/jsm/lines/LineSegmentsGeometry.js(232,45): error TS2345: Argument of type 'BufferAttribute | InterleavedBufferAttribute' is not assignable to parameter of type 'BufferAttribute'.
 examples/jsm/lines/LineSegmentsGeometry.js(234,33): error TS2345: Argument of type 'BufferAttribute | InterleavedBufferAttribute' is not assignable to parameter of type 'BufferAttribute'.
 examples/jsm/lines/LineSegmentsGeometry.js(263,4): error TS2531: Object is possibly 'null'.
@@ -937,7 +934,6 @@ examples/jsm/loaders/LDrawLoader.js(1861,14): error TS2314: Generic type 'Promis
 examples/jsm/loaders/LDrawLoader.js(1872,22): error TS2339: Property 'split' does not exist on type 'string | ArrayBuffer'.
 examples/jsm/loaders/LDrawLoader.js(1896,13): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
 examples/jsm/loaders/LDrawLoader.js(1931,13): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
-examples/jsm/loaders/LDrawLoader.js(2264,100): error TS2339: Property 'getLineNumberString' does not exist on type 'typeof LineParser'.
 examples/jsm/loaders/LDrawLoader.js(2349,3): error TS18047: 'material' is possibly 'null'.
 examples/jsm/loaders/LDrawLoader.js(2350,3): error TS18047: 'material' is possibly 'null'.
 examples/jsm/loaders/LDrawLoader.js(2351,3): error TS18047: 'material' is possibly 'null'.
@@ -1179,7 +1175,6 @@ examples/jsm/loaders/LWOLoader.js(278,11): error TS2339: Property 'map' does not
 examples/jsm/loaders/LWOLoader.js(301,10): error TS2532: Object is possibly 'undefined'.
 examples/jsm/loaders/LWOLoader.js(332,79): error TS2554: Expected 0-2 arguments, but got 3.
 examples/jsm/loaders/LWOLoader.js(354,45): error TS2339: Property 'attributes' does not exist on type '{ maps: {}; }'.
-examples/jsm/loaders/LWOLoader.js(354,73): error TS2554: Expected 0-3 arguments, but got 4.
 examples/jsm/loaders/LWOLoader.js(356,56): error TS2339: Property 'attributes' does not exist on type '{ maps: {}; }'.
 examples/jsm/loaders/LWOLoader.js(360,27): error TS2769: No overload matches this call.
 examples/jsm/loaders/LWOLoader.js(363,58): error TS2339: Property 'attributes' does not exist on type '{ maps: {}; }'.
@@ -1188,10 +1183,7 @@ examples/jsm/loaders/LWOLoader.js(427,25): error TS2339: Property 'attributes' d
 examples/jsm/loaders/LWOLoader.js(428,25): error TS2339: Property 'envMap' does not exist on type '{ maps: {}; }'.
 examples/jsm/loaders/LWOLoader.js(429,25): error TS2339: Property 'name' does not exist on type '{ maps: {}; }'.
 examples/jsm/loaders/LWOLoader.js(437,38): error TS2339: Property 'name' does not exist on type '{ maps: {}; }'.
-examples/jsm/loaders/LWOLoader.js(538,66): error TS2554: Expected 0-1 arguments, but got 2.
 examples/jsm/loaders/LWOLoader.js(618,53): error TS2554: Expected 0-2 arguments, but got 3.
-examples/jsm/loaders/LWOLoader.js(825,35): error TS2554: Expected 0-2 arguments, but got 3.
-examples/jsm/loaders/LWOLoader.js(826,44): error TS2554: Expected 0-2 arguments, but got 3.
 examples/jsm/loaders/MaterialXLoader.js(178,13): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
 examples/jsm/loaders/MaterialXLoader.js(199,24): error TS2339: Property 'manager' does not exist on type 'MaterialXLoader'.
 examples/jsm/loaders/MaterialXLoader.js(200,19): error TS2339: Property 'path' does not exist on type 'MaterialXLoader'.
@@ -1311,7 +1303,6 @@ examples/jsm/loaders/RGBELoader.js(206,24): error TS2339: Property 'match' does 
 examples/jsm/loaders/RGBELoader.js(380,13): error TS2339: Property 'pos' does not exist on type 'Uint8Array<ArrayBuffer>'.
 examples/jsm/loaders/RGBELoader.js(385,73): error TS2339: Property 'pos' does not exist on type 'Uint8Array<ArrayBuffer>'.
 examples/jsm/loaders/RGBELoader.js(431,4): error TS2353: Object literal may only specify known properties, and 'width' does not exist in type 'DataTextureLoader'.
-examples/jsm/loaders/RGBMLoader.js(72,3): error TS2322: Type 'number' is not assignable to type '7 | 16'.
 examples/jsm/loaders/RGBMLoader.js(82,13): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
 examples/jsm/loaders/RGBMLoader.js(166,20): error TS2339: Property 'width' does not exist on type '{ tabs: {}; frames: never[]; }'.
 examples/jsm/loaders/RGBMLoader.js(166,32): error TS2339: Property 'height' does not exist on type '{ tabs: {}; frames: never[]; }'.
@@ -2807,6 +2798,7 @@ src/extras/lib/earcut.js(581,5): error TS2322: Type '{ i: any; x: any; y: any; p
 src/extras/lib/earcut.js(582,5): error TS2322: Type '{ i: any; x: any; y: any; prev: null; next: null; z: number; prevZ: null; nextZ: null; steiner: boolean; }' is not assignable to type 'null'.
 src/extras/lib/earcut.js(595,9): error TS2322: Type '{ i: any; x: any; y: any; prev: null; next: null; z: number; prevZ: null; nextZ: null; steiner: boolean; }' is not assignable to type 'null'.
 src/extras/lib/earcut.js(596,9): error TS2322: Type '{ i: any; x: any; y: any; prev: null; next: null; z: number; prevZ: null; nextZ: null; steiner: boolean; }' is not assignable to type 'null'.
+src/extras/PMREMGenerator.js(19,10): error TS18042: 'ShaderMaterial' is a type and cannot be imported in JavaScript files. Use 'import("../materials/ShaderMaterial.js").ShaderMaterial' in a JSDoc type annotation.
 src/extras/PMREMGenerator.js(124,4): error TS2339: Property 'position' does not exist on type '{ size?: number | undefined; renderTarget?: Vector3 | undefined; }'.
 src/extras/PMREMGenerator.js(386,16): error TS2339: Property 'position' does not exist on type 'PerspectiveCamera'.
 src/extras/PMREMGenerator.js(392,16): error TS2339: Property 'position' does not exist on type 'PerspectiveCamera'.
@@ -2819,23 +2811,23 @@ src/geometries/BoxGeometry.js(120,6): error TS7052: Element implicitly has an 'a
 src/geometries/BoxGeometry.js(128,6): error TS7052: Element implicitly has an 'any' type because type 'Vector3' has no index signature. Did you mean to call 'vector.set'?
 src/geometries/BoxGeometry.js(129,6): error TS7052: Element implicitly has an 'any' type because type 'Vector3' has no index signature. Did you mean to call 'vector.set'?
 src/geometries/BoxGeometry.js(130,6): error TS7052: Element implicitly has an 'any' type because type 'Vector3' has no index signature. Did you mean to call 'vector.set'?
-src/geometries/ExtrudeGeometry.js(413,6): error TS18048: 'normal' is possibly 'undefined'.
-src/geometries/ExtrudeGeometry.js(414,6): error TS18048: 'binormal' is possibly 'undefined'.
-src/geometries/ExtrudeGeometry.js(416,6): error TS18048: 'position2' is possibly 'undefined'.
-src/geometries/ExtrudeGeometry.js(416,45): error TS2345: Argument of type 'Vector3 | undefined' is not assignable to parameter of type 'Vector3'.
-src/geometries/ExtrudeGeometry.js(416,59): error TS2345: Argument of type 'Vector3 | undefined' is not assignable to parameter of type 'Vector3'.
-src/geometries/ExtrudeGeometry.js(418,9): error TS18048: 'position2' is possibly 'undefined'.
-src/geometries/ExtrudeGeometry.js(418,22): error TS18048: 'position2' is possibly 'undefined'.
-src/geometries/ExtrudeGeometry.js(418,35): error TS18048: 'position2' is possibly 'undefined'.
-src/geometries/ExtrudeGeometry.js(441,7): error TS18048: 'normal' is possibly 'undefined'.
-src/geometries/ExtrudeGeometry.js(442,7): error TS18048: 'binormal' is possibly 'undefined'.
-src/geometries/ExtrudeGeometry.js(444,7): error TS18048: 'position2' is possibly 'undefined'.
-src/geometries/ExtrudeGeometry.js(444,46): error TS2345: Argument of type 'Vector3 | undefined' is not assignable to parameter of type 'Vector3'.
-src/geometries/ExtrudeGeometry.js(444,60): error TS2345: Argument of type 'Vector3 | undefined' is not assignable to parameter of type 'Vector3'.
-src/geometries/ExtrudeGeometry.js(446,10): error TS18048: 'position2' is possibly 'undefined'.
-src/geometries/ExtrudeGeometry.js(446,23): error TS18048: 'position2' is possibly 'undefined'.
-src/geometries/ExtrudeGeometry.js(446,36): error TS18048: 'position2' is possibly 'undefined'.
-src/geometries/ExtrudeGeometry.js(849,10): error TS2484: Export declaration conflicts with exported declaration of 'ExtrudeGeometry'.
+src/geometries/ExtrudeGeometry.js(472,6): error TS18048: 'normal' is possibly 'undefined'.
+src/geometries/ExtrudeGeometry.js(473,6): error TS18048: 'binormal' is possibly 'undefined'.
+src/geometries/ExtrudeGeometry.js(475,6): error TS18048: 'position2' is possibly 'undefined'.
+src/geometries/ExtrudeGeometry.js(475,45): error TS2345: Argument of type 'Vector3 | undefined' is not assignable to parameter of type 'Vector3'.
+src/geometries/ExtrudeGeometry.js(475,59): error TS2345: Argument of type 'Vector3 | undefined' is not assignable to parameter of type 'Vector3'.
+src/geometries/ExtrudeGeometry.js(477,9): error TS18048: 'position2' is possibly 'undefined'.
+src/geometries/ExtrudeGeometry.js(477,22): error TS18048: 'position2' is possibly 'undefined'.
+src/geometries/ExtrudeGeometry.js(477,35): error TS18048: 'position2' is possibly 'undefined'.
+src/geometries/ExtrudeGeometry.js(500,7): error TS18048: 'normal' is possibly 'undefined'.
+src/geometries/ExtrudeGeometry.js(501,7): error TS18048: 'binormal' is possibly 'undefined'.
+src/geometries/ExtrudeGeometry.js(503,7): error TS18048: 'position2' is possibly 'undefined'.
+src/geometries/ExtrudeGeometry.js(503,46): error TS2345: Argument of type 'Vector3 | undefined' is not assignable to parameter of type 'Vector3'.
+src/geometries/ExtrudeGeometry.js(503,60): error TS2345: Argument of type 'Vector3 | undefined' is not assignable to parameter of type 'Vector3'.
+src/geometries/ExtrudeGeometry.js(505,10): error TS18048: 'position2' is possibly 'undefined'.
+src/geometries/ExtrudeGeometry.js(505,23): error TS18048: 'position2' is possibly 'undefined'.
+src/geometries/ExtrudeGeometry.js(505,36): error TS18048: 'position2' is possibly 'undefined'.
+src/geometries/ExtrudeGeometry.js(908,10): error TS2484: Export declaration conflicts with exported declaration of 'ExtrudeGeometry'.
 src/geometries/PolyhedronGeometry.js(125,7): error TS2322: Type 'any' is not assignable to type 'never'.
 src/geometries/PolyhedronGeometry.js(129,7): error TS2322: Type 'any' is not assignable to type 'never'.
 src/helpers/ArrowHelper.js(61,8): error TS2339: Property 'position' does not exist on type 'ArrowHelper'.
@@ -2959,6 +2951,7 @@ src/loaders/ImageBitmapLoader.js(88,13): error TS7014: Function type, which lack
 src/loaders/ImageLoader.js(38,13): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
 src/loaders/Loader.js(82,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
 src/loaders/Loader.js(90,16): error TS2554: Expected 0 arguments, but got 4.
+src/loaders/MaterialLoader.js(13,2): error TS18042: 'ShaderMaterial' is a type and cannot be imported in JavaScript files. Use 'import("../materials/Materials.js").ShaderMaterial' in a JSDoc type annotation.
 src/loaders/MaterialLoader.js(66,13): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
 src/loaders/MaterialLoader.js(130,45): error TS2339: Property 'color' does not exist on type 'Material'.
 src/loaders/MaterialLoader.js(130,76): error TS2339: Property 'color' does not exist on type 'Material'.
@@ -3058,9 +3051,7 @@ src/loaders/MaterialLoader.js(366,52): error TS2339: Property 'anisotropyMap' do
 src/loaders/MaterialLoader.js(368,52): error TS2339: Property 'sheenColorMap' does not exist on type 'Material'.
 src/loaders/MaterialLoader.js(369,56): error TS2339: Property 'sheenRoughnessMap' does not exist on type 'Material'.
 src/loaders/nodes/NodeLoader.js(32,27): error TS2503: Cannot find namespace 'Node'.
-src/loaders/nodes/NodeLoader.js(90,28): error TS2488: Type 'Object' must have a '[Symbol.iterator]()' method that returns an iterator.
-src/loaders/nodes/NodeLoader.js(101,28): error TS2488: Type 'Object' must have a '[Symbol.iterator]()' method that returns an iterator.
-src/loaders/nodes/NodeLoader.js(158,27): error TS2503: Cannot find namespace 'Node'.
+src/loaders/nodes/NodeLoader.js(162,27): error TS2503: Cannot find namespace 'Node'.
 src/loaders/nodes/NodeMaterialLoader.js(22,27): error TS2503: Cannot find namespace 'Node'.
 src/loaders/nodes/NodeMaterialLoader.js(29,27): error TS2503: Cannot find namespace 'NodeMaterial'.
 src/loaders/nodes/NodeMaterialLoader.js(63,27): error TS2503: Cannot find namespace 'Node'.
@@ -3069,6 +3060,7 @@ src/loaders/nodes/NodeObjectLoader.js(26,27): error TS2503: Cannot find namespac
 src/loaders/nodes/NodeObjectLoader.js(33,27): error TS2503: Cannot find namespace 'NodeMaterial'.
 src/loaders/nodes/NodeObjectLoader.js(50,27): error TS2503: Cannot find namespace 'Node'.
 src/loaders/nodes/NodeObjectLoader.js(63,27): error TS2503: Cannot find namespace 'NodeMaterial'.
+src/loaders/nodes/NodeObjectLoader.js(107,30): error TS2345: Argument of type 'Object' is not assignable to parameter of type 'Object[]'.
 src/loaders/nodes/NodeObjectLoader.js(128,35): error TS2345: Argument of type 'Object | null' is not assignable to parameter of type 'Object'.
 src/loaders/ObjectLoader.js(99,13): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
 src/loaders/ObjectLoader.js(126,69): error TS18046: 'error' is of type 'unknown'.
@@ -3390,6 +3382,8 @@ src/materials/Material.js(859,37): error TS18047: 'meta' is possibly 'null'.
 src/materials/Material.js(859,42): error TS2339: Property 'images' does not exist on type 'string | Object'.
 src/materials/Material.js(861,36): error TS2339: Property 'textures' does not exist on type '{ metadata: { version: number; type: string; generator: string; }; }'.
 src/materials/Material.js(862,34): error TS2339: Property 'images' does not exist on type '{ metadata: { version: number; type: string; generator: string; }; }'.
+src/materials/Materials.js(4,10): error TS18042: 'ShaderMaterial' is a type and cannot be imported in JavaScript files. Use 'import("./ShaderMaterial.js").ShaderMaterial' in a JSDoc type annotation.
+src/materials/Materials.js(24,2): error TS18043: Types cannot appear in export declarations in JavaScript files.
 src/materials/MeshPhysicalMaterial.js(181,13): error TS2314: Generic type 'Array<T>' requires 1 type argument(s).
 src/materials/nodes/Line2NodeMaterial.js(188,48): error TS2339: Property 'assign' does not exist on type 'PropertyNode'.
 src/materials/nodes/Line2NodeMaterial.js(194,45): error TS2339: Property 'assign' does not exist on type 'PropertyNode'.
@@ -3451,6 +3445,8 @@ src/materials/nodes/NodeMaterial.js(1134,41): error TS2339: Property 'nodes' doe
 src/materials/nodes/NodeMaterial.js(1178,3): error TS2740: Type 'Material' is missing the following properties from type 'NodeMaterial': isNodeMaterial, fog, lights, hardwareClipping, and 41 more.
 src/materials/nodes/PointsNodeMaterial.js(134,6): error TS2611: 'alphaToCoverage' is defined as a property in class 'SpriteNodeMaterial', but is overridden here in 'PointsNodeMaterial' as an accessor.
 src/materials/nodes/SpriteNodeMaterial.js(149,50): error TS2339: Property 'sub' does not exist on type 'ReferenceBaseNode'.
+src/materials/RawShaderMaterial.js(1,10): error TS18042: 'ShaderMaterial' is a type and cannot be imported in JavaScript files. Use 'import("./ShaderMaterial.js").ShaderMaterial' in a JSDoc type annotation.
+src/materials/ShaderMaterial.js(394,10): error TS2484: Export declaration conflicts with exported declaration of 'ShaderMaterial'.
 src/math/Color.js(156,24): error TS2339: Property 'isColor' does not exist on type 'string | number | Color'.
 src/math/Color.js(158,16): error TS2345: Argument of type 'string | number | Color' is not assignable to parameter of type 'Color'.
 src/math/Color.js(172,17): error TS2345: Argument of type 'string | number | Color | undefined' is not assignable to parameter of type 'number'.
@@ -3586,11 +3582,17 @@ src/nodes/accessors/ModelNode.js(74,11): error TS2315: Type 'ModelNode' is not g
 src/nodes/accessors/ModelNode.js(82,11): error TS2315: Type 'ModelNode' is not generic.
 src/nodes/accessors/ModelNode.js(90,11): error TS2315: Type 'ModelNode' is not generic.
 src/nodes/accessors/ModelNode.js(98,11): error TS2315: Type 'ModelNode' is not generic.
+src/nodes/accessors/ModelViewProjectionNode.js(13,4): error TS2345: Argument of type '"vec4"' is not assignable to parameter of type 'null | undefined'.
 src/nodes/accessors/MorphNode.js(27,78): error TS2339: Property 'xyz' does not exist on type 'TextureNode'.
 src/nodes/accessors/MorphNode.js(235,111): error TS2339: Property 'r' does not exist on type 'TextureNode'.
 src/nodes/accessors/MorphNode.js(239,82): error TS2339: Property 'toVar' does not exist on type 'ReferenceElementNode'.
+src/nodes/accessors/Normal.js(34,4): error TS2345: Argument of type '"vec3"' is not assignable to parameter of type 'null | undefined'.
+src/nodes/accessors/Normal.js(66,4): error TS2345: Argument of type '"vec3"' is not assignable to parameter of type 'null | undefined'.
+src/nodes/accessors/Normal.js(92,4): error TS2345: Argument of type '"vec3"' is not assignable to parameter of type 'null | undefined'.
+src/nodes/accessors/Normal.js(118,4): error TS2345: Argument of type '"vec3"' is not assignable to parameter of type 'null | undefined'.
 src/nodes/accessors/Object3DNode.js(77,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
 src/nodes/accessors/Object3DNode.js(180,3): error TS2322: Type 'string | null' is not assignable to type 'string'.
+src/nodes/accessors/Position.js(56,4): error TS2345: Argument of type '"vec3"' is not assignable to parameter of type 'null | undefined'.
 src/nodes/accessors/ReferenceBaseNode.js(32,10): error TS2345: Argument of type 'ReferenceBaseNode' is not assignable to parameter of type 'Node'.
 src/nodes/accessors/ReferenceBaseNode.js(62,10): error TS2531: Object is possibly 'null'.
 src/nodes/accessors/ReferenceBaseNode.js(69,21): error TS2531: Object is possibly 'null'.
@@ -3659,7 +3661,7 @@ src/nodes/accessors/VertexColorNode.js(25,10): error TS2345: Argument of type 'n
 src/nodes/accessors/VertexColorNode.js(62,48): error TS2554: Expected 0 arguments, but got 1.
 src/nodes/code/CodeNode.js(26,41): error TS2322: Type '""' is not assignable to type '"js" | "wgsl" | "glsl" | undefined'.
 src/nodes/code/CodeNode.js(104,38): error TS2554: Expected 0 arguments, but got 1.
-src/nodes/code/FunctionCallNode.js(139,29): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
+src/nodes/code/FunctionCallNode.js(159,29): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
 src/nodes/code/FunctionNode.js(45,41): error TS2322: Type '""' is not assignable to type '"js" | "wgsl" | "glsl" | undefined'.
 src/nodes/code/FunctionNode.js(150,69): error TS2345: Argument of type 'string' is not assignable to parameter of type '"js" | "wgsl" | "glsl" | undefined'.
 src/nodes/code/FunctionNode.js(152,15): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
@@ -3705,45 +3707,47 @@ src/nodes/core/Node.js(885,39): error TS18047: 'meta' is possibly 'null'.
 src/nodes/core/Node.js(886,37): error TS18047: 'meta' is possibly 'null'.
 src/nodes/core/Node.js(887,36): error TS18047: 'meta' is possibly 'null'.
 src/nodes/core/NodeBuilder.js(37,32): error TS2769: No overload matches this call.
-src/nodes/core/NodeBuilder.js(484,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
-src/nodes/core/NodeBuilder.js(857,18): error TS2339: Property 'material' does not exist on type '{ constructor: Function; toString(): string; toLocaleString(): string; valueOf(): Object; hasOwnProperty(v: PropertyKey): boolean; isPrototypeOf(v: Object): boolean; propertyIsEnumerable(v: PropertyKey): boolean; }'.
-src/nodes/core/NodeBuilder.js(918,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
-src/nodes/core/NodeBuilder.js(930,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
-src/nodes/core/NodeBuilder.js(943,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
-src/nodes/core/NodeBuilder.js(955,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
-src/nodes/core/NodeBuilder.js(967,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
-src/nodes/core/NodeBuilder.js(1010,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
-src/nodes/core/NodeBuilder.js(1027,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
-src/nodes/core/NodeBuilder.js(1060,24): error TS18049: 'count' is possibly 'null' or 'undefined'.
-src/nodes/core/NodeBuilder.js(1074,13): error TS18049: 'count' is possibly 'null' or 'undefined'.
-src/nodes/core/NodeBuilder.js(1096,25): error TS18048: 'membersLayout' is possibly 'undefined'.
-src/nodes/core/NodeBuilder.js(1348,33): error TS2322: Type 'null' is not assignable to type 'string'.
-src/nodes/core/NodeBuilder.js(1406,3): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
-src/nodes/core/NodeBuilder.js(1543,25): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | undefined'.
-src/nodes/core/NodeBuilder.js(1557,8): error TS18047: 'nodeData' is possibly 'null'.
-src/nodes/core/NodeBuilder.js(1557,48): error TS18047: 'nodeData' is possibly 'null'.
-src/nodes/core/NodeBuilder.js(1559,10): error TS18047: 'nodeData' is possibly 'null'.
-src/nodes/core/NodeBuilder.js(1616,59): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | undefined'.
-src/nodes/core/NodeBuilder.js(1665,34): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | undefined'.
-src/nodes/core/NodeBuilder.js(1715,70): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | undefined'.
-src/nodes/core/NodeBuilder.js(1732,5): error TS2356: An arithmetic operand must be of type 'any', 'number', 'bigint' or an enum type.
-src/nodes/core/NodeBuilder.js(1743,10): error TS2339: Property 'push' does not exist on type 'number | NodeVar[]'.
-src/nodes/core/NodeBuilder.js(1843,31): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | undefined'.
-src/nodes/core/NodeBuilder.js(2059,37): error TS2554: Expected 0 arguments, but got 1.
-src/nodes/core/NodeBuilder.js(2137,24): error TS2345: Argument of type 'string' is not assignable to parameter of type '"setup" | "analyze" | "generate" | null'.
-src/nodes/core/NodeBuilder.js(2139,9): error TS2339: Property 'result' does not exist on type '{ code: string; }'.
-src/nodes/core/NodeBuilder.js(2143,8): error TS2339: Property 'vars' does not exist on type '{ code: string; }'.
-src/nodes/core/NodeBuilder.js(2143,29): error TS2345: Argument of type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any"'.
-src/nodes/core/NodeBuilder.js(2175,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
-src/nodes/core/NodeBuilder.js(2200,8): error TS2339: Property 'result' does not exist on type '{ code: string; }'.
-src/nodes/core/NodeBuilder.js(2258,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
-src/nodes/core/NodeBuilder.js(2271,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
-src/nodes/core/NodeBuilder.js(2307,28): error TS2488: Type 'number | NodeVar[]' must have a '[Symbol.iterator]()' method that returns an iterator.
-src/nodes/core/NodeBuilder.js(2324,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
-src/nodes/core/NodeBuilder.js(2365,10): error TS2531: Object is possibly 'null'.
-src/nodes/core/NodeBuilder.js(2365,30): error TS2531: Object is possibly 'null'.
-src/nodes/core/NodeBuilder.js(2459,24): error TS2345: Argument of type 'string' is not assignable to parameter of type '"setup" | "analyze" | "generate" | null'.
-src/nodes/core/NodeBuilder.js(2469,26): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any" | null'.
+src/nodes/core/NodeBuilder.js(491,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+src/nodes/core/NodeBuilder.js(864,18): error TS2339: Property 'material' does not exist on type '{ constructor: Function; toString(): string; toLocaleString(): string; valueOf(): Object; hasOwnProperty(v: PropertyKey): boolean; isPrototypeOf(v: Object): boolean; propertyIsEnumerable(v: PropertyKey): boolean; }'.
+src/nodes/core/NodeBuilder.js(925,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+src/nodes/core/NodeBuilder.js(937,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+src/nodes/core/NodeBuilder.js(950,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+src/nodes/core/NodeBuilder.js(962,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+src/nodes/core/NodeBuilder.js(974,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+src/nodes/core/NodeBuilder.js(1017,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+src/nodes/core/NodeBuilder.js(1034,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+src/nodes/core/NodeBuilder.js(1067,24): error TS18049: 'count' is possibly 'null' or 'undefined'.
+src/nodes/core/NodeBuilder.js(1081,13): error TS18049: 'count' is possibly 'null' or 'undefined'.
+src/nodes/core/NodeBuilder.js(1103,25): error TS18048: 'membersLayout' is possibly 'undefined'.
+src/nodes/core/NodeBuilder.js(1357,33): error TS2322: Type 'null' is not assignable to type 'string'.
+src/nodes/core/NodeBuilder.js(1415,3): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+src/nodes/core/NodeBuilder.js(1564,25): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | undefined'.
+src/nodes/core/NodeBuilder.js(1578,8): error TS18047: 'nodeData' is possibly 'null'.
+src/nodes/core/NodeBuilder.js(1578,48): error TS18047: 'nodeData' is possibly 'null'.
+src/nodes/core/NodeBuilder.js(1580,10): error TS18047: 'nodeData' is possibly 'null'.
+src/nodes/core/NodeBuilder.js(1637,59): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | undefined'.
+src/nodes/core/NodeBuilder.js(1686,34): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | undefined'.
+src/nodes/core/NodeBuilder.js(1738,70): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | undefined'.
+src/nodes/core/NodeBuilder.js(1755,5): error TS2356: An arithmetic operand must be of type 'any', 'number', 'bigint' or an enum type.
+src/nodes/core/NodeBuilder.js(1766,10): error TS2339: Property 'push' does not exist on type 'number | NodeVar[]'.
+src/nodes/core/NodeBuilder.js(1870,43): error TS2538: Type 'null' cannot be used as an index type.
+src/nodes/core/NodeBuilder.js(1870,81): error TS2538: Type 'null' cannot be used as an index type.
+src/nodes/core/NodeBuilder.js(1905,31): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | undefined'.
+src/nodes/core/NodeBuilder.js(2121,37): error TS2554: Expected 0 arguments, but got 1.
+src/nodes/core/NodeBuilder.js(2201,24): error TS2345: Argument of type 'string' is not assignable to parameter of type '"setup" | "analyze" | "generate" | null'.
+src/nodes/core/NodeBuilder.js(2203,9): error TS2339: Property 'result' does not exist on type '{ code: string; }'.
+src/nodes/core/NodeBuilder.js(2207,8): error TS2339: Property 'vars' does not exist on type '{ code: string; }'.
+src/nodes/core/NodeBuilder.js(2207,29): error TS2345: Argument of type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any"'.
+src/nodes/core/NodeBuilder.js(2240,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+src/nodes/core/NodeBuilder.js(2265,8): error TS2339: Property 'result' does not exist on type '{ code: string; }'.
+src/nodes/core/NodeBuilder.js(2323,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+src/nodes/core/NodeBuilder.js(2336,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+src/nodes/core/NodeBuilder.js(2372,28): error TS2488: Type 'number | NodeVar[]' must have a '[Symbol.iterator]()' method that returns an iterator.
+src/nodes/core/NodeBuilder.js(2389,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+src/nodes/core/NodeBuilder.js(2430,10): error TS2531: Object is possibly 'null'.
+src/nodes/core/NodeBuilder.js(2430,30): error TS2531: Object is possibly 'null'.
+src/nodes/core/NodeBuilder.js(2524,24): error TS2345: Argument of type 'string' is not assignable to parameter of type '"setup" | "analyze" | "generate" | null'.
+src/nodes/core/NodeBuilder.js(2534,26): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any" | null'.
 src/nodes/core/NodeCache.js(53,4): error TS2322: Type 'Object | null' is not assignable to type 'Object | undefined'.
 src/nodes/core/NodeCache.js(57,3): error TS2322: Type 'Object | undefined' is not assignable to type 'Object | null'.
 src/nodes/core/NodeFrame.js(118,28): error TS2314: Generic type 'WeakMap<K, V>' requires 2 type argument(s).
@@ -3790,8 +3794,7 @@ src/nodes/core/StructTypeNode.js(60,42): error TS2345: Argument of type 'Object'
 src/nodes/core/TempNode.js(57,67): error TS2554: Expected 1 arguments, but got 2.
 src/nodes/core/UniformNode.js(104,24): error TS2554: Expected 0 arguments, but got 1.
 src/nodes/core/UniformNode.js(130,34): error TS2554: Expected 0 arguments, but got 1.
-src/nodes/core/VarNode.js(79,38): error TS2554: Expected 0 arguments, but got 1.
-src/nodes/core/VarNode.js(85,35): error TS2554: Expected 0 arguments, but got 2.
+src/nodes/core/VarNode.js(79,35): error TS2554: Expected 0 arguments, but got 2.
 src/nodes/core/VaryingNode.js(74,38): error TS2554: Expected 0 arguments, but got 1.
 src/nodes/core/VaryingNode.js(193,33): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
 src/nodes/core/VaryingNode.js(200,37): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
@@ -3811,8 +3814,11 @@ src/nodes/display/ScreenNode.js(221,11): error TS2315: Type 'ScreenNode' is not 
 src/nodes/display/ScreenNode.js(229,11): error TS2315: Type 'ScreenNode' is not generic.
 src/nodes/display/ScreenNode.js(237,11): error TS2315: Type 'ScreenNode' is not generic.
 src/nodes/display/ScreenNode.js(245,11): error TS2315: Type 'ScreenNode' is not generic.
+src/nodes/display/ScreenNode.js(260,4): error TS2345: Argument of type '"vec2"' is not assignable to parameter of type 'null | undefined'.
 src/nodes/display/ScreenNode.js(265,11): error TS2315: Type 'Node' is not generic.
+src/nodes/display/ScreenNode.js(273,4): error TS2345: Argument of type '"vec2"' is not assignable to parameter of type 'null | undefined'.
 src/nodes/display/ScreenNode.js(278,11): error TS2315: Type 'Node' is not generic.
+src/nodes/display/ScreenNode.js(286,4): error TS2345: Argument of type '"vec2"' is not assignable to parameter of type 'null | undefined'.
 src/nodes/display/ToneMappingNode.js(108,14): error TS2315: Type 'ToneMappingNode' is not generic.
 src/nodes/display/ToonOutlinePassNode.js(119,12): error TS2339: Property 'isMeshToonOutlineMaterial' does not exist on type 'NodeMaterial'.
 src/nodes/display/ViewportDepthNode.js(74,16): error TS2554: Expected 2 arguments, but got 1.
@@ -3841,7 +3847,7 @@ src/nodes/display/ViewportDepthNode.js(244,12): error TS2315: Type 'Node' is not
 src/nodes/display/ViewportDepthNode.js(245,12): error TS2315: Type 'Node' is not generic.
 src/nodes/display/ViewportDepthNode.js(246,14): error TS2315: Type 'Node' is not generic.
 src/nodes/display/ViewportDepthNode.js(263,12): error TS2315: Type 'Node' is not generic.
-src/nodes/display/ViewportDepthNode.js(281,12): error TS2315: Type 'Node' is not generic.
+src/nodes/display/ViewportDepthNode.js(281,13): error TS2315: Type 'Node' is not generic.
 src/nodes/display/ViewportDepthNode.js(294,7): error TS2339: Property 'assign' does not exist on type 'ViewportDepthNode'.
 src/nodes/display/ViewportDepthTextureNode.js(34,24): error TS2554: Expected 2-10 arguments, but got 0.
 src/nodes/display/ViewportSharedTextureNode.js(34,25): error TS2554: Expected 2 arguments, but got 0.
@@ -3879,10 +3885,8 @@ src/nodes/gpgpu/ComputeBuiltinNode.js(201,11): error TS2315: Type 'ComputeBuilti
 src/nodes/gpgpu/ComputeBuiltinNode.js(209,11): error TS2315: Type 'ComputeBuiltinNode' is not generic.
 src/nodes/gpgpu/ComputeBuiltinNode.js(216,11): error TS2315: Type 'ComputeBuiltinNode' is not generic.
 src/nodes/gpgpu/ComputeBuiltinNode.js(224,11): error TS2315: Type 'ComputeBuiltinNode' is not generic.
-src/nodes/gpgpu/ComputeNode.js(171,34): error TS18047: 'result' is possibly 'null'.
-src/nodes/gpgpu/ComputeNode.js(171,41): error TS2339: Property 'outputNode' does not exist on type 'Node'.
-src/nodes/gpgpu/ComputeNode.js(173,3): error TS18047: 'result' is possibly 'null'.
-src/nodes/gpgpu/ComputeNode.js(173,10): error TS2339: Property 'outputNode' does not exist on type 'Node'.
+src/nodes/gpgpu/ComputeNode.js(173,42): error TS2339: Property 'outputNode' does not exist on type 'Node'.
+src/nodes/gpgpu/ComputeNode.js(175,11): error TS2339: Property 'outputNode' does not exist on type 'Node'.
 src/nodes/gpgpu/WorkgroupInfoNode.js(188,74): error TS2339: Property 'id' does not exist on type 'WorkgroupInfoNode'.
 src/nodes/lighting/AnalyticLightNode.js(131,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
 src/nodes/lighting/AnalyticLightNode.js(140,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
@@ -4030,23 +4034,29 @@ src/nodes/tsl/TSLCore.js(62,92): error TS7019: Rest parameter 'params' implicitl
 src/nodes/tsl/TSLCore.js(72,33): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
 src/nodes/tsl/TSLCore.js(72,108): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
 src/nodes/tsl/TSLCore.js(112,55): error TS2345: Argument of type 'ConstNode' is not assignable to parameter of type 'Node'.
-src/nodes/tsl/TSLCore.js(218,12): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
-src/nodes/tsl/TSLCore.js(228,12): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
-src/nodes/tsl/TSLCore.js(236,12): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
-src/nodes/tsl/TSLCore.js(246,51): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
-src/nodes/tsl/TSLCore.js(421,31): error TS2769: No overload matches this call.
-src/nodes/tsl/TSLCore.js(421,81): error TS2551: Property 'value' does not exist on type '[any, any]'. Did you mean 'values'?
-src/nodes/tsl/TSLCore.js(424,33): error TS2769: No overload matches this call.
-src/nodes/tsl/TSLCore.js(424,82): error TS2551: Property 'value' does not exist on type '[any, any]'. Did you mean 'values'?
-src/nodes/tsl/TSLCore.js(469,11): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
-src/nodes/tsl/TSLCore.js(517,28): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
-src/nodes/tsl/TSLCore.js(518,32): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
-src/nodes/tsl/TSLCore.js(524,15): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
-src/nodes/tsl/TSLCore.js(607,21): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
-src/nodes/tsl/TSLCore.js(623,48): error TS2345: Argument of type 'Map<any, any>' is not assignable to parameter of type 'null | undefined'.
-src/nodes/tsl/TSLCore.js(624,44): error TS2345: Argument of type 'Map<any, any>' is not assignable to parameter of type 'null | undefined'.
-src/nodes/tsl/TSLCore.js(625,46): error TS2345: Argument of type 'Map<any, any>' is not assignable to parameter of type 'null | undefined'.
-src/nodes/tsl/TSLCore.js(626,46): error TS2345: Argument of type 'Map<any, any>' is not assignable to parameter of type 'null | undefined'.
+src/nodes/tsl/TSLCore.js(245,10): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
+src/nodes/tsl/TSLCore.js(255,10): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
+src/nodes/tsl/TSLCore.js(263,10): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
+src/nodes/tsl/TSLCore.js(271,5): error TS2339: Property 'setParameterLength' does not exist on type '(...params: any[]) => any'.
+src/nodes/tsl/TSLCore.js(271,28): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
+src/nodes/tsl/TSLCore.js(280,5): error TS2339: Property 'setName' does not exist on type '(...params: any[]) => any'.
+src/nodes/tsl/TSLCore.js(292,51): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
+src/nodes/tsl/TSLCore.js(467,31): error TS2769: No overload matches this call.
+src/nodes/tsl/TSLCore.js(467,81): error TS2551: Property 'value' does not exist on type '[any, any]'. Did you mean 'values'?
+src/nodes/tsl/TSLCore.js(470,33): error TS2769: No overload matches this call.
+src/nodes/tsl/TSLCore.js(470,82): error TS2551: Property 'value' does not exist on type '[any, any]'. Did you mean 'values'?
+src/nodes/tsl/TSLCore.js(515,11): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
+src/nodes/tsl/TSLCore.js(563,28): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
+src/nodes/tsl/TSLCore.js(564,32): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
+src/nodes/tsl/TSLCore.js(598,15): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
+src/nodes/tsl/TSLCore.js(646,24): error TS2407: The right-hand side of a 'for...in' statement must be of type 'any', an object type or a type parameter, but here has type 'never'.
+src/nodes/tsl/TSLCore.js(650,29): error TS2345: Argument of type '{ name: string; type: never; }' is not assignable to parameter of type 'never'.
+src/nodes/tsl/TSLCore.js(657,4): error TS2322: Type '{ name: string; type: any; inputs: never[]; }' is not assignable to type 'null'.
+src/nodes/tsl/TSLCore.js(710,21): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
+src/nodes/tsl/TSLCore.js(726,48): error TS2345: Argument of type 'Map<any, any>' is not assignable to parameter of type 'null | undefined'.
+src/nodes/tsl/TSLCore.js(727,44): error TS2345: Argument of type 'Map<any, any>' is not assignable to parameter of type 'null | undefined'.
+src/nodes/tsl/TSLCore.js(728,46): error TS2345: Argument of type 'Map<any, any>' is not assignable to parameter of type 'null | undefined'.
+src/nodes/tsl/TSLCore.js(729,46): error TS2345: Argument of type 'Map<any, any>' is not assignable to parameter of type 'null | undefined'.
 src/nodes/utils/ConvertNode.js(67,3): error TS2322: Type 'string | null' is not assignable to type 'string'.
 src/nodes/utils/CubeMapNode.js(119,8): error TS2739: Type 'Texture' is missing the following properties from type 'CubeTexture': isCubeTexture, images
 src/nodes/utils/FunctionOverloadingNode.js(70,34): error TS2339: Property 'shaderNode' does not exist on type 'Function'.
@@ -4054,7 +4064,7 @@ src/nodes/utils/FunctionOverloadingNode.js(87,37): error TS2339: Property 'shade
 src/nodes/utils/FunctionOverloadingNode.js(130,46): error TS2721: Cannot invoke an object which is possibly 'null'.
 src/nodes/utils/FunctionOverloadingNode.js(152,51): error TS2322: Type '(...params: any[]) => any' is not assignable to type 'FunctionOverloadingNode'.
 src/nodes/utils/FunctionOverloadingNode.js(152,53): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
-src/nodes/utils/LoopNode.js(258,83): error TS2345: Argument of type '"int"' is not assignable to parameter of type 'null | undefined'.
+src/nodes/utils/LoopNode.js(288,83): error TS2345: Argument of type '"int"' is not assignable to parameter of type 'null | undefined'.
 src/nodes/utils/MemberNode.js(39,3): error TS2322: Type 'string' is not assignable to type 'Node'.
 src/nodes/utils/MemberNode.js(54,35): error TS2554: Expected 0 arguments, but got 2.
 src/nodes/utils/PostProcessingUtils.js(72,44): error TS2339: Property 'toVar' does not exist on type 'TextureNode'.
@@ -4084,8 +4094,8 @@ src/nodes/utils/SpriteSheetUVNode.js(38,13): error TS2315: Type 'Node' is not ge
 src/nodes/utils/SpriteSheetUVNode.js(45,13): error TS2315: Type 'Node' is not generic.
 src/nodes/utils/SpriteSheetUVNode.js(52,13): error TS2315: Type 'Node' is not generic.
 src/nodes/utils/SpriteSheetUVNode.js(85,12): error TS2315: Type 'Node' is not generic.
-src/nodes/utils/SpriteSheetUVNode.js(86,12): error TS2315: Type 'Node' is not generic.
-src/nodes/utils/SpriteSheetUVNode.js(87,12): error TS2315: Type 'Node' is not generic.
+src/nodes/utils/SpriteSheetUVNode.js(86,13): error TS2315: Type 'Node' is not generic.
+src/nodes/utils/SpriteSheetUVNode.js(87,13): error TS2315: Type 'Node' is not generic.
 src/nodes/utils/StorageArrayElementNode.js(80,19): error TS2339: Property 'isPBO' does not exist on type 'Node'.
 src/nodes/utils/StorageArrayElementNode.js(102,19): error TS2339: Property 'isPBO' does not exist on type 'Node'.
 src/nodes/utils/StorageArrayElementNode.js(102,77): error TS2339: Property 'value' does not exist on type 'Node'.
@@ -4380,7 +4390,6 @@ src/renderers/common/UniformsGroup.js(203,14): error TS2366: Function lacks endi
 src/renderers/common/XRManager.js(82,17): error TS2339: Property 'viewport' does not exist on type 'PerspectiveCamera'.
 src/renderers/common/XRManager.js(91,17): error TS2339: Property 'viewport' does not exist on type 'PerspectiveCamera'.
 src/renderers/common/XRManager.js(515,3): error TS2322: Type 'XRReferenceSpace | null' is not assignable to type 'XRReferenceSpace'.
-src/renderers/common/XRManager.js(544,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
 src/renderers/common/XRManager.js(579,17): error TS2339: Property 'stencil' does not exist on type 'any[]'.
 src/renderers/common/XRManager.js(586,17): error TS2339: Property 'stencil' does not exist on type 'any[]'.
 src/renderers/common/XRManager.js(588,31): error TS2339: Property 'stencil' does not exist on type 'any[]'.
@@ -4589,6 +4598,7 @@ src/renderers/webgl-fallback/WebGLBackend.js(2371,6): error TS18047: 'state' is 
 src/renderers/webgl-fallback/WebGLBackend.js(2375,6): error TS18047: 'state' is possibly 'null'.
 src/renderers/webgl-fallback/WebGLBackend.js(2395,38): error TS2531: Object is possibly 'null'.
 src/renderers/webgl-fallback/WebGLBackend.js(2404,21): error TS2531: Object is possibly 'null'.
+src/renderers/webgl/WebGLBackground.js(4,10): error TS18042: 'ShaderMaterial' is a type and cannot be imported in JavaScript files. Use 'import("../../materials/ShaderMaterial.js").ShaderMaterial' in a JSDoc type annotation.
 src/renderers/webgl/WebGLBindingStates.js(174,21): error TS2551: Property 'attributesNum' does not exist on type '{ geometry: null; program: null; wireframe: boolean; newAttributes: number[]; enabledAttributes: number[]; attributeDivisors: number[]; object: any; attributes: {}; index: null; }'. Did you mean 'attributes'?
 src/renderers/webgl/WebGLBindingStates.js(210,11): error TS2339: Property 'data' does not exist on type '{ attribute: any; }'.
 src/renderers/webgl/WebGLBindingStates.js(223,16): error TS2551: Property 'attributesNum' does not exist on type '{ geometry: null; program: null; wireframe: boolean; newAttributes: number[]; enabledAttributes: number[]; attributeDivisors: number[]; object: any; attributes: {}; index: null; }'. Did you mean 'attributes'?
@@ -4619,6 +4629,7 @@ src/renderers/webgl/WebGLLights.js(413,38): error TS2339: Property 'LTC_HALF_2' 
 src/renderers/webgl/WebGLPrograms.js(367,14): error TS2339: Property 'vertexUv1s' does not exist on type '{ shaderID: any; shaderType: any; shaderName: any; vertexShader: any; fragmentShader: any; defines: any; customVertexShaderID: any; customFragmentShaderID: any; isRawShaderMaterial: boolean; ... 118 more ...; customProgramCacheKey: any; }'.
 src/renderers/webgl/WebGLPrograms.js(368,14): error TS2339: Property 'vertexUv2s' does not exist on type '{ shaderID: any; shaderType: any; shaderName: any; vertexShader: any; fragmentShader: any; defines: any; customVertexShaderID: any; customFragmentShaderID: any; isRawShaderMaterial: boolean; ... 118 more ...; customProgramCacheKey: any; }'.
 src/renderers/webgl/WebGLPrograms.js(369,14): error TS2339: Property 'vertexUv3s' does not exist on type '{ shaderID: any; shaderType: any; shaderName: any; vertexShader: any; fragmentShader: any; defines: any; customVertexShaderID: any; customFragmentShaderID: any; isRawShaderMaterial: boolean; ... 118 more ...; customProgramCacheKey: any; }'.
+src/renderers/webgl/WebGLShadowMap.js(5,10): error TS18042: 'ShaderMaterial' is a type and cannot be imported in JavaScript files. Use 'import("../../materials/ShaderMaterial.js").ShaderMaterial' in a JSDoc type annotation.
 src/renderers/webgl/WebGLShadowMap.js(49,27): error TS2339: Property 'defines' does not exist on type 'Material'.
 src/renderers/webgl/WebGLShadowMap.js(210,29): error TS2339: Property 'defines' does not exist on type 'Material'.
 src/renderers/webgl/WebGLShadowMap.js(234,28): error TS2339: Property 'uniforms' does not exist on type 'Material'.
@@ -4631,6 +4642,7 @@ src/renderers/webgl/WebGLUniforms.js(1056,21): error TS18047: 'match' is possibl
 src/renderers/webgl/WebGLUniforms.js(1057,16): error TS18047: 'match' is possibly 'null'.
 src/renderers/webgl/WebGLUniforms.js(1059,20): error TS2322: Type 'number' is not assignable to type 'string'.
 src/renderers/webgl/WebGLUniforms.js(1059,25): error TS2362: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+src/renderers/WebGLCubeRenderTarget.js(4,10): error TS18042: 'ShaderMaterial' is a type and cannot be imported in JavaScript files. Use 'import("../materials/ShaderMaterial.js").ShaderMaterial' in a JSDoc type annotation.
 src/renderers/WebGLRenderer.js(388,45): error TS18046: 'error' is of type 'unknown'.
 src/renderers/WebGLRenderer.js(448,10): error TS2339: Property 'capabilities' does not exist on type 'WebGLRenderer'.
 src/renderers/WebGLRenderer.js(460,10): error TS2339: Property 'extensions' does not exist on type 'WebGLRenderer'.
@@ -4862,6 +4874,7 @@ src/renderers/webxr/WebXRController.js(415,9): error TS2339: Property 'joints' d
 src/renderers/webxr/WebXRController.js(415,28): error TS2339: Property 'jointName' does not exist on type 'XRHandJoint'.
 src/renderers/webxr/WebXRController.js(421,15): error TS2339: Property 'joints' does not exist on type 'Group'.
 src/renderers/webxr/WebXRController.js(421,34): error TS2339: Property 'jointName' does not exist on type 'XRHandJoint'.
+src/renderers/webxr/WebXRDepthSensing.js(2,10): error TS18042: 'ShaderMaterial' is a type and cannot be imported in JavaScript files. Use 'import("../../materials/ShaderMaterial.js").ShaderMaterial' in a JSDoc type annotation.
 src/renderers/webxr/WebXRDepthSensing.js(90,21): error TS2339: Property 'depthNear' does not exist on type 'XRWebGLDepthInformation'.
 src/renderers/webxr/WebXRDepthSensing.js(90,74): error TS2339: Property 'depthFar' does not exist on type 'XRWebGLDepthInformation'.
 src/renderers/webxr/WebXRDepthSensing.js(92,32): error TS2339: Property 'depthNear' does not exist on type 'XRWebGLDepthInformation'.
@@ -4874,7 +4887,6 @@ src/renderers/webxr/WebXRManager.js(474,30): error TS2367: This comparison appea
 src/renderers/webxr/WebXRManager.js(475,32): error TS2367: This comparison appears to be unintentional because the types 'number' and 'boolean' have no overlap.
 src/renderers/webxr/WebXRManager.js(480,21): error TS2551: Property 'isXRRenderTarget' does not exist on type 'WebGLRenderTarget'. Did you mean 'isRenderTarget'?
 src/renderers/webxr/WebXRManager.js(485,59): error TS2345: Argument of type 'string' is not assignable to parameter of type 'XRReferenceSpaceType'.
-src/renderers/webxr/WebXRManager.js(501,15): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
 src/renderers/webxr/WebXRManager.js(634,42): error TS2339: Property 'position' does not exist on type 'ArrayCamera'.
 src/renderers/webxr/WebXRManager.js(634,59): error TS2339: Property 'quaternion' does not exist on type 'ArrayCamera'.
 src/renderers/webxr/WebXRManager.js(634,78): error TS2339: Property 'scale' does not exist on type 'ArrayCamera'.
