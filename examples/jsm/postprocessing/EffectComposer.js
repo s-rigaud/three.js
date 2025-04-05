@@ -36,6 +36,8 @@ import { ClearMaskPass, MaskPass } from './MaskPass.js';
  *
  * }
  * ```
+ *
+ * @three_import import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
  */
 class EffectComposer {
 
@@ -119,7 +121,7 @@ class EffectComposer {
 		this.copyPass.material.blending = NoBlending;
 
 		/**
-		 * The intenral clock for managing time data.
+		 * The internal clock for managing time data.
 		 *
 		 * @private
 		 * @type {Clock}
