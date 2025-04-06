@@ -29,10 +29,11 @@
         },
         "lib": [
             "esnext",
-            // "dom", // Do not include dom cause of Node namespace collapse
-            // "dom.iterable", // Do not include dom cause of Node namespace collapse
+            "dom", // Do not include dom cause of Node namespace collapse
+            "dom.iterable", // Do not include dom cause of Node namespace collapse
             "scripthost"
-        ]
+        ],
+        "types": ["@webgpu/types"]
     },
     "include": [
         "src/**/*.js",
