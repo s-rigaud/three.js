@@ -33,11 +33,11 @@
             "dom.iterable", // Do not include dom cause of Node namespace collapse
             "scripthost"
         ],
-        // "types": ["@webgpu/types"]
+        "types": ["@webgpu/types"]
     },
     "include": [
         "src/**/*.js",
-        "examples/**/*",
+        "examples/**/*", "src/renderers/webgpu/utils/WebGPUConstants.ts",
     ],
     "exclude": [
         "node_modules/**/*",

@@ -1,5 +1,3 @@
-import { Material } from "src/Three.Core";
-
 const refreshUniforms = [
 	'alphaMap',
 	'alphaTest',

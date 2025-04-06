@@ -10,10 +10,15 @@ WebGRebderer.copyFramebufferToTexture position is set to  null
 WebGLRenderer.copyTextureToTexture type is wrong
 WebXrController._getHandJoint inputjoint is XRJointSpace
 WebXrManager.setReferenceSpaceType value is XRReferenceSpaceType
+WebGPUTexturePassUtils.js(174,6) format link to https://gpuweb.github.io/gpuweb/#enumdef-gputextureformat
+WebGPUTexturePassUtils.js(213,6) format link to https://gpuweb.github.io/gpuweb/#enumdef-gputextureformat
 
 # Dev
 WebGlRendere.setClearAlpha and setClearColor should not used arguments keyword
 WebGPUTextureUtils._getDefaultVideoFrame could be simplified ?
+Rename GPUFeatureName Supported feature
+Add features to GPUFeatureName
+Cleaner reset to null in HtmlMesh.dispose (clearTimeout and then set to null)
 
 # Investigate
 Find a way to generate editor\js\libs\tern-threejs\threejs.js

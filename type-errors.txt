@@ -9,8 +9,7 @@ examples/jsm/animation/CCDIKSolver.js(591,10): error TS2484: Export declaration 
 examples/jsm/capabilities/WebGL.js(42,4): error TS18047: 'ctx' is possibly 'null'.
 examples/jsm/capabilities/WebGL.js(42,4): error TS2322: Type 'string' is not assignable to type 'PredefinedColorSpace'.
 examples/jsm/capabilities/WebGL.js(43,11): error TS18047: 'ctx' is possibly 'null'.
-examples/jsm/capabilities/WebGPU.js(1,67): error TS2339: Property 'gpu' does not exist on type 'Navigator'.
-examples/jsm/capabilities/WebGPU.js(5,32): error TS2339: Property 'gpu' does not exist on type 'Navigator'.
+examples/jsm/capabilities/WebGPU.js(5,2): error TS2322: Type 'GPUAdapter | null' is not assignable to type 'boolean'.
 examples/jsm/controls/ArcballControls.js(109,14): error TS2314: Generic type 'Controls<TEventMap>' requires 1 type argument(s).
 examples/jsm/controls/ArcballControls.js(453,18): error TS2554: Expected 0 arguments, but got 1.
 examples/jsm/controls/ArcballControls.js(455,3): error TS2531: Object is possibly 'null'.
@@ -647,8 +646,8 @@ examples/jsm/interactive/HTMLMesh.js(68,30): error TS2345: Argument of type '"mo
 examples/jsm/interactive/HTMLMesh.js(69,30): error TS2345: Argument of type '"mousemove"' is not assignable to parameter of type 'keyof Object3DEventMap'.
 examples/jsm/interactive/HTMLMesh.js(70,30): error TS2345: Argument of type '"mouseup"' is not assignable to parameter of type 'keyof Object3DEventMap'.
 examples/jsm/interactive/HTMLMesh.js(71,30): error TS2345: Argument of type '"click"' is not assignable to parameter of type 'keyof Object3DEventMap'.
-examples/jsm/interactive/HTMLMesh.js(127,3): error TS2322: Type 'null' is not assignable to type 'Timeout'.
-examples/jsm/interactive/HTMLMesh.js(139,3): error TS2322: Type 'void' is not assignable to type 'Timeout'.
+examples/jsm/interactive/HTMLMesh.js(127,3): error TS2322: Type 'null' is not assignable to type 'number'.
+examples/jsm/interactive/HTMLMesh.js(139,3): error TS2322: Type 'void' is not assignable to type 'number'.
 examples/jsm/interactive/HTMLMesh.js(576,6): error TS2322: Type 'number' is not assignable to type 'string'.
 examples/jsm/interactive/InteractiveGroup.js(101,21): error TS18048: 'uv' is possibly 'undefined'.
 examples/jsm/interactive/InteractiveGroup.js(101,31): error TS18048: 'uv' is possibly 'undefined'.
@@ -5308,6 +5307,7 @@ src/renderers/common/Backend.js(41,13): error TS2314: Generic type 'WeakMap<K, V
 src/renderers/common/Backend.js(88,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
 src/renderers/common/Backend.js(104,6): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
 src/renderers/common/Backend.js(104,6): error TS2378: A 'get' accessor must return a value.
+src/renderers/common/Backend.js(218,13): error TS2591: Cannot find name 'Buffer'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
 src/renderers/common/Backend.js(229,19): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
 src/renderers/common/Backend.js(249,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
 src/renderers/common/Backend.js(258,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
@@ -5869,13 +5869,11 @@ src/renderers/webgl-fallback/WebGLBackend.js(1799,20): error TS18047: 'gl' is po
 src/renderers/webgl-fallback/WebGLBackend.js(1800,5): error TS18047: 'gl' is possibly 'null'.
 src/renderers/webgl-fallback/WebGLBackend.js(1800,20): error TS18047: 'gl' is possibly 'null'.
 src/renderers/webgl-fallback/WebGLBackend.js(1800,45): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1832,16): error TS2339: Property 'isUniformsGroup' does not exist on type 'Buffer'.
-src/renderers/webgl-fallback/WebGLBackend.js(1832,43): error TS2339: Property 'isUniformBuffer' does not exist on type 'Buffer'.
+src/renderers/webgl-fallback/WebGLBackend.js(1826,14): error TS2591: Cannot find name 'Buffer'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
 src/renderers/webgl-fallback/WebGLBackend.js(1838,4): error TS18047: 'gl' is possibly 'null'.
 src/renderers/webgl-fallback/WebGLBackend.js(1838,19): error TS18047: 'gl' is possibly 'null'.
 src/renderers/webgl-fallback/WebGLBackend.js(1839,4): error TS18047: 'gl' is possibly 'null'.
 src/renderers/webgl-fallback/WebGLBackend.js(1839,19): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1839,38): error TS2769: No overload matches this call.
 src/renderers/webgl-fallback/WebGLBackend.js(1839,44): error TS18047: 'gl' is possibly 'null'.
 src/renderers/webgl-fallback/WebGLBackend.js(1856,3): error TS2531: Object is possibly 'null'.
 src/renderers/webgl-fallback/WebGLBackend.js(1856,51): error TS18047: 'gl' is possibly 'null'.
@@ -6081,7 +6079,6 @@ src/renderers/WebGLRenderer.js(2932,22): error TS2551: Property 'isWebGLCubeRend
 src/renderers/WebGLRenderer.js(3036,118): error TS2322: Type 'null' is not assignable to type 'number'.
 src/renderers/WebGLRenderer.js(3401,6): error TS2339: Property 'unpackColorSpace' does not exist on type 'WebGL2RenderingContext'.
 src/renderers/WebGLRenderer.js(3494,10): error TS2484: Export declaration conflicts with exported declaration of 'WebGLRenderer'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js(22,63): error TS2339: Property 'GPUShaderStage' does not exist on type 'Window & typeof globalThis'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(138,15): error TS2339: Property 'pow_float' does not exist on type '{ tsl_xor: CodeNode; mod_float: CodeNode; mod_vec2: CodeNode; mod_vec3: CodeNode; mod_vec4: CodeNode; equals_bool: CodeNode; ... 6 more ...; biquadraticTexture: CodeNode; }'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(139,15): error TS2339: Property 'pow_vec2' does not exist on type '{ tsl_xor: CodeNode; mod_float: CodeNode; mod_vec2: CodeNode; mod_vec3: CodeNode; mod_vec4: CodeNode; equals_bool: CodeNode; ... 6 more ...; biquadraticTexture: CodeNode; }'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(139,181): error TS2339: Property 'pow_float' does not exist on type '{ tsl_xor: CodeNode; mod_float: CodeNode; mod_vec2: CodeNode; mod_vec3: CodeNode; mod_vec4: CodeNode; equals_bool: CodeNode; ... 6 more ...; biquadraticTexture: CodeNode; }'.
@@ -6135,6 +6132,7 @@ src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1867,53): error TS2345: Argument o
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(1871,51): error TS2345: Argument of type '{} | undefined' is not assignable to parameter of type 'Object'.
 src/renderers/webgpu/utils/WebGPUAttributeUtils.js(5,50): error TS2769: No overload matches this call.
 src/renderers/webgpu/utils/WebGPUAttributeUtils.js(19,61): error TS2769: No overload matches this call.
+src/renderers/webgpu/utils/WebGPUAttributeUtils.js(82,11): error TS2362: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
 src/renderers/webgpu/utils/WebGPUAttributeUtils.js(379,19): error TS18048: 'prefixOptions' is possibly 'undefined'.
 src/renderers/webgpu/utils/WebGPUBindingUtils.js(94,16): error TS2339: Property 'buffer' does not exist on type '{ binding: number; visibility: any; }'.
 src/renderers/webgpu/utils/WebGPUBindingUtils.js(114,16): error TS2339: Property 'sampler' does not exist on type '{ binding: number; visibility: any; }'.
@@ -6144,6 +6142,7 @@ src/renderers/webgpu/utils/WebGPUBindingUtils.js(133,21): error TS2339: Property
 src/renderers/webgpu/utils/WebGPUBindingUtils.js(137,21): error TS2339: Property 'access' does not exist on type '{ format: any; }'.
 src/renderers/webgpu/utils/WebGPUBindingUtils.js(141,16): error TS2339: Property 'storageTexture' does not exist on type '{ binding: number; visibility: any; }'.
 src/renderers/webgpu/utils/WebGPUBindingUtils.js(215,16): error TS2339: Property 'texture' does not exist on type '{ binding: number; visibility: any; }'.
+src/renderers/webgpu/utils/WebGPUBindingUtils.js(295,14): error TS2591: Cannot find name 'Buffer'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
 src/renderers/webgpu/utils/WebGPUPipelineUtils.js(58,19): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
 src/renderers/webgpu/utils/WebGPUPipelineUtils.js(199,23): error TS2339: Property 'depthStencil' does not exist on type '{ label: string; vertex: any; fragment: any; primitive: Object; multisample: { count: number; alphaToCoverageEnabled: any; }; layout: any; }'.
 src/renderers/webgpu/utils/WebGPUPipelineUtils.js(215,6): error TS2810: Expected 1 argument, but got 0. 'new Promise()' needs a JSDoc hint to produce a 'resolve' that can be called without arguments.
@@ -6154,6 +6153,19 @@ src/renderers/webgpu/utils/WebGPUPipelineUtils.js(585,3): error TS2322: Type 'st
 src/renderers/webgpu/utils/WebGPUPipelineUtils.js(627,3): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
 src/renderers/webgpu/utils/WebGPUPipelineUtils.js(690,3): error TS2322: Type 'number' is not assignable to type 'string'.
 src/renderers/webgpu/utils/WebGPUPipelineUtils.js(754,3): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+src/renderers/webgpu/utils/WebGPUTexturePassUtils.js(95,48): error TS2322: Type 'string' is not assignable to type 'GPUFilterMode | undefined'.
+src/renderers/webgpu/utils/WebGPUTexturePassUtils.js(102,47): error TS2322: Type 'string' is not assignable to type 'GPUFilterMode | undefined'.
+src/renderers/webgpu/utils/WebGPUTexturePassUtils.js(174,6): error TS2322: Type '{ format: string; }[]' is not assignable to type 'Iterable<GPUColorTargetState | null | undefined>'.
+src/renderers/webgpu/utils/WebGPUTexturePassUtils.js(177,6): error TS2322: Type 'string' is not assignable to type 'GPUPrimitiveTopology | undefined'.
+src/renderers/webgpu/utils/WebGPUTexturePassUtils.js(178,6): error TS2322: Type 'string' is not assignable to type 'GPUIndexFormat | undefined'.
+src/renderers/webgpu/utils/WebGPUTexturePassUtils.js(213,6): error TS2322: Type '{ format: string; }[]' is not assignable to type 'Iterable<GPUColorTargetState | null | undefined>'.
+src/renderers/webgpu/utils/WebGPUTexturePassUtils.js(216,6): error TS2322: Type 'string' is not assignable to type 'GPUPrimitiveTopology | undefined'.
+src/renderers/webgpu/utils/WebGPUTexturePassUtils.js(217,6): error TS2322: Type 'string' is not assignable to type 'GPUIndexFormat | undefined'.
+src/renderers/webgpu/utils/WebGPUTexturePassUtils.js(254,4): error TS2322: Type 'string' is not assignable to type 'GPUTextureViewDimension | undefined'.
+src/renderers/webgpu/utils/WebGPUTexturePassUtils.js(261,4): error TS2322: Type 'string' is not assignable to type 'GPUTextureViewDimension | undefined'.
+src/renderers/webgpu/utils/WebGPUTexturePassUtils.js(283,5): error TS2322: Type '{ view: any; loadOp: string; storeOp: string; clearValue: number[]; }[]' is not assignable to type 'Iterable<GPURenderPassColorAttachment | null | undefined>'.
+src/renderers/webgpu/utils/WebGPUTexturePassUtils.js(357,4): error TS2322: Type 'string' is not assignable to type 'GPUTextureViewDimension | undefined'.
+src/renderers/webgpu/utils/WebGPUTexturePassUtils.js(379,5): error TS2322: Type 'string' is not assignable to type 'GPUTextureViewDimension | undefined'.
 src/renderers/webgpu/utils/WebGPUTextureUtils.js(101,23): error TS2554: Expected 2-10 arguments, but got 0.
 src/renderers/webgpu/utils/WebGPUTextureUtils.js(121,52): error TS2551: Property 'wrapR' does not exist on type 'Texture'. Did you mean 'wrapS'?
 src/renderers/webgpu/utils/WebGPUTextureUtils.js(136,16): error TS2339: Property 'isDepthTexture' does not exist on type 'Texture'.
@@ -6171,6 +6183,7 @@ src/renderers/webgpu/utils/WebGPUTextureUtils.js(273,17): error TS2551: Property
 src/renderers/webgpu/utils/WebGPUTextureUtils.js(275,26): error TS2339: Property 'textureBindingViewDimension' does not exist on type '{ label: string; size: { width: any; height: any; depthOrArrayLayers: any; }; mipLevelCount: any; sampleCount: any; dimension: string; format: any; usage: number; }'.
 src/renderers/webgpu/utils/WebGPUTextureUtils.js(341,16): error TS2551: Property 'isCubeTexture' does not exist on type 'Texture'. Did you mean 'isTexture'?
 src/renderers/webgpu/utils/WebGPUTextureUtils.js(351,18): error TS18047: 'texture.image' is possibly 'null'.
+src/renderers/webgpu/utils/WebGPUTextureUtils.js(388,3): error TS2322: Type 'GPUTexture | null' is not assignable to type 'GPUTexture'.
 src/renderers/webgpu/utils/WebGPUTextureUtils.js(424,9): error TS18047: 'depthTexture.image' is possibly 'null'.
 src/renderers/webgpu/utils/WebGPUTextureUtils.js(424,47): error TS18047: 'depthTexture.image' is possibly 'null'.
 src/renderers/webgpu/utils/WebGPUTextureUtils.js(435,3): error TS2322: Type 'number | undefined' is not assignable to type 'number'.
@@ -6203,22 +6216,38 @@ src/renderers/webgpu/utils/WebGPUTimestampQueryPool.js(88,4): error TS2322: Type
 src/renderers/webgpu/utils/WebGPUTimestampQueryPool.js(92,3): error TS2322: Type 'Promise<number>' is not assignable to type 'boolean'.
 src/renderers/webgpu/utils/WebGPUTimestampQueryPool.js(97,4): error TS2322: Type 'boolean' is not assignable to type 'number'.
 src/renderers/webgpu/utils/WebGPUTimestampQueryPool.js(101,4): error TS2322: Type 'null' is not assignable to type 'boolean'.
+src/renderers/webgpu/utils/WebGPUTimestampQueryPool.js(170,10): error TS2367: This comparison appears to be unintentional because the types '"unmapped"' and '"mapped"' have no overlap.
 src/renderers/webgpu/utils/WebGPUTimestampQueryPool.js(216,15): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/webgpu/utils/WebGPUTimestampQueryPool.js(262,4): error TS2322: Type 'null' is not assignable to type 'GPUQuerySet'.
+src/renderers/webgpu/utils/WebGPUTimestampQueryPool.js(269,4): error TS2322: Type 'null' is not assignable to type 'GPUBuffer'.
+src/renderers/webgpu/utils/WebGPUTimestampQueryPool.js(276,4): error TS2322: Type 'null' is not assignable to type 'GPUBuffer'.
 src/renderers/webgpu/utils/WebGPUTimestampQueryPool.js(281,3): error TS2322: Type 'null' is not assignable to type 'boolean'.
 src/renderers/webgpu/utils/WebGPUUtils.js(51,3): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
 src/renderers/webgpu/utils/WebGPUUtils.js(150,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
-src/renderers/webgpu/utils/WebGPUUtils.js(222,21): error TS2339: Property 'gpu' does not exist on type 'Navigator'.
 src/renderers/webgpu/WebGPUBackend.js(162,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/webgpu/WebGPUBackend.js(183,75): error TS2339: Property 'gpu' does not exist on type 'Navigator'.
+src/renderers/webgpu/WebGPUBackend.js(212,42): error TS2345: Argument of type '{ requiredFeatures: string[]; requiredLimits: any; }' is not assignable to parameter of type 'GPUDeviceDescriptor'.
+src/renderers/webgpu/WebGPUBackend.js(242,3): error TS2531: Object is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(243,4): error TS2322: Type 'GPUDevice | null' is not assignable to type 'GPUDevice'.
+src/renderers/webgpu/WebGPUBackend.js(244,4): error TS2322: Type 'string' is not assignable to type 'GPUTextureFormat'.
+src/renderers/webgpu/WebGPUBackend.js(286,3): error TS2322: Type 'GPUCanvasContext | null' is not assignable to type 'GPUCanvasContext'.
+src/renderers/webgpu/WebGPUBackend.js(326,28): error TS2531: Object is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(342,36): error TS2531: Object is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(346,27): error TS2531: Object is possibly 'null'.
 src/renderers/webgpu/WebGPUBackend.js(444,21): error TS2339: Property 'depthOrArrayLayers' does not exist on type '{ label: string; baseMipLevel: any; mipLevelCount: number; baseArrayLayer: any; arrayLayerCount: number; dimension: string; }'.
 src/renderers/webgpu/WebGPUBackend.js(471,22): error TS2339: Property 'depthOrArrayLayers' does not exist on type '{ label: string; baseMipLevel: any; mipLevelCount: number; baseArrayLayer: any; arrayLayerCount: number; dimension: string; }'.
 src/renderers/webgpu/WebGPUBackend.js(550,38): error TS2345: Argument of type '{ view: any; depthSlice: any; resolveTarget: any; loadOp: any; storeOp: any; clearValue: { r: number; g: number; b: number; a: number; }; }' is not assignable to parameter of type 'never'.
 src/renderers/webgpu/WebGPUBackend.js(563,15): error TS2339: Property 'depthStencilAttachment' does not exist on type '{ colorAttachments: never[]; }'.
+src/renderers/webgpu/WebGPUBackend.js(601,24): error TS18047: 'device' is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(709,19): error TS18047: 'device' is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(757,49): error TS2345: Argument of type 'Object' is not assignable to parameter of type 'GPURenderPassDescriptor'.
 src/renderers/webgpu/WebGPUBackend.js(831,21): error TS2339: Property 'depthStencilAttachment' does not exist on type '{ colorAttachments: any[]; constructor: Function; toString(): string; toLocaleString(): string; valueOf(): Object; hasOwnProperty(v: PropertyKey): boolean; isPrototypeOf(v: Object): boolean; propertyIsEnumerable(v: PropertyKey): boolean; }'.
 src/renderers/webgpu/WebGPUBackend.js(840,22): error TS2339: Property 'depthStencilAttachment' does not exist on type '{ colorAttachments: any[]; constructor: Function; toString(): string; toLocaleString(): string; valueOf(): Object; hasOwnProperty(v: PropertyKey): boolean; isPrototypeOf(v: Object): boolean; propertyIsEnumerable(v: PropertyKey): boolean; }'.
 src/renderers/webgpu/WebGPUBackend.js(841,22): error TS2339: Property 'depthStencilAttachment' does not exist on type '{ colorAttachments: any[]; constructor: Function; toString(): string; toLocaleString(): string; valueOf(): Object; hasOwnProperty(v: PropertyKey): boolean; isPrototypeOf(v: Object): boolean; propertyIsEnumerable(v: PropertyKey): boolean; }'.
 src/renderers/webgpu/WebGPUBackend.js(842,22): error TS2339: Property 'depthStencilAttachment' does not exist on type '{ colorAttachments: any[]; constructor: Function; toString(): string; toLocaleString(): string; valueOf(): Object; hasOwnProperty(v: PropertyKey): boolean; isPrototypeOf(v: Object): boolean; propertyIsEnumerable(v: PropertyKey): boolean; }'.
 src/renderers/webgpu/WebGPUBackend.js(848,21): error TS2339: Property 'depthStencilAttachment' does not exist on type '{ colorAttachments: any[]; constructor: Function; toString(): string; toLocaleString(): string; valueOf(): Object; hasOwnProperty(v: PropertyKey): boolean; isPrototypeOf(v: Object): boolean; propertyIsEnumerable(v: PropertyKey): boolean; }'.
+src/renderers/webgpu/WebGPUBackend.js(996,26): error TS2531: Object is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(1009,23): error TS2531: Object is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(1028,3): error TS2531: Object is possibly 'null'.
 src/renderers/webgpu/WebGPUBackend.js(1075,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
 src/renderers/webgpu/WebGPUBackend.js(1217,17): error TS2339: Property 'depthLoadOp' does not exist on type '{ loadOp: string; clearValue: { r: any; g: any; b: any; a: any; } | undefined; }'.
 src/renderers/webgpu/WebGPUBackend.js(1218,17): error TS2551: Property 'depthClearValue' does not exist on type '{ loadOp: string; clearValue: { r: any; g: any; b: any; a: any; } | undefined; }'. Did you mean 'clearValue'?
@@ -6226,14 +6255,33 @@ src/renderers/webgpu/WebGPUBackend.js(1219,17): error TS2339: Property 'depthSto
 src/renderers/webgpu/WebGPUBackend.js(1225,17): error TS2339: Property 'stencilLoadOp' does not exist on type '{ loadOp: string; clearValue: { r: any; g: any; b: any; a: any; } | undefined; }'.
 src/renderers/webgpu/WebGPUBackend.js(1226,17): error TS2339: Property 'stencilClearValue' does not exist on type '{ loadOp: string; clearValue: { r: any; g: any; b: any; a: any; } | undefined; }'.
 src/renderers/webgpu/WebGPUBackend.js(1227,17): error TS2339: Property 'stencilStoreOp' does not exist on type '{ loadOp: string; clearValue: { r: any; g: any; b: any; a: any; } | undefined; }'.
+src/renderers/webgpu/WebGPUBackend.js(1276,19): error TS18047: 'device' is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(1284,3): error TS18047: 'device' is possibly 'null'.
 src/renderers/webgpu/WebGPUBackend.js(1302,42): error TS2339: Property 'id' does not exist on type 'Node | Node[]'.
+src/renderers/webgpu/WebGPUBackend.js(1307,28): error TS2531: Object is possibly 'null'.
 src/renderers/webgpu/WebGPUBackend.js(1307,102): error TS2339: Property 'id' does not exist on type 'Node | Node[]'.
+src/renderers/webgpu/WebGPUBackend.js(1341,44): error TS2531: Object is possibly 'null'.
 src/renderers/webgpu/WebGPUBackend.js(1349,20): error TS2339: Property 'dispatchCount' does not exist on type 'Node'.
 src/renderers/webgpu/WebGPUBackend.js(1351,43): error TS2339: Property 'dispatchCount' does not exist on type 'Node'.
 src/renderers/webgpu/WebGPUBackend.js(1352,44): error TS2339: Property 'dispatchCount' does not exist on type 'Node'.
 src/renderers/webgpu/WebGPUBackend.js(1356,33): error TS2339: Property 'dispatchCount' does not exist on type 'Node'.
+src/renderers/webgpu/WebGPUBackend.js(1380,3): error TS2531: Object is possibly 'null'.
 src/renderers/webgpu/WebGPUBackend.js(1389,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/webgpu/WebGPUBackend.js(1393,9): error TS2531: Object is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(1903,68): error TS2345: Argument of type 'GPUDevice | null' is not assignable to parameter of type 'GPUDevice'.
+src/renderers/webgpu/WebGPUBackend.js(1947,12): error TS2531: Object is possibly 'null'.
 src/renderers/webgpu/WebGPUBackend.js(1970,19): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/webgpu/WebGPUBackend.js(2076,14): error TS2591: Cannot find name 'Buffer'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+src/renderers/webgpu/WebGPUBackend.js(2093,51): error TS2345: Argument of type 'number' is not assignable to parameter of type 'GPUBufferUsage'.
+src/renderers/webgpu/WebGPUBackend.js(2104,51): error TS2345: Argument of type 'number' is not assignable to parameter of type 'GPUBufferUsage'.
+src/renderers/webgpu/WebGPUBackend.js(2115,51): error TS2345: Argument of type 'number' is not assignable to parameter of type 'GPUBufferUsage'.
+src/renderers/webgpu/WebGPUBackend.js(2126,51): error TS2345: Argument of type 'number' is not assignable to parameter of type 'GPUBufferUsage'.
+src/renderers/webgpu/WebGPUBackend.js(2185,10): error TS2531: Object is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(2247,19): error TS2531: Object is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(2270,3): error TS2531: Object is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(2313,17): error TS2531: Object is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(2339,14): error TS2531: Object is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(2391,4): error TS2531: Object is possibly 'null'.
 src/renderers/webxr/WebXRController.js(64,15): error TS2339: Property 'joints' does not exist on type 'Group'.
 src/renderers/webxr/WebXRController.js(65,15): error TS2339: Property 'inputState' does not exist on type 'Group'.
 src/renderers/webxr/WebXRController.js(85,20): error TS2339: Property 'hasLinearVelocity' does not exist on type 'Group'.
