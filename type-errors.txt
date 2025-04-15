@@ -286,7 +286,7 @@ examples/jsm/controls/TransformControls.js(713,68): error TS2339: Property 'rota
 examples/jsm/controls/TransformControls.js(771,3): error TS2322: Type 'undefined' is not assignable to type 'Object3D<Object3DEventMap>'.
 examples/jsm/controls/TransformControls.js(796,9): error TS2339: Property 'pointStart' does not exist on type 'TransformControls'.
 examples/jsm/controls/TransformControls.js(796,31): error TS2339: Property 'pointEnd' does not exist on type 'TransformControls'.
-examples/jsm/controls/TransformControls.js(821,3): error TS2322: Type '"translate" | "scale" | "rotate" | undefined' is not assignable to type '"translate" | "scale" | "rotate"'.
+examples/jsm/controls/TransformControls.js(821,3): error TS2322: Type '"scale" | "translate" | "rotate" | undefined' is not assignable to type '"scale" | "translate" | "rotate"'.
 examples/jsm/controls/TransformControls.js(1452,3): error TS2532: Object is possibly 'undefined'.
 examples/jsm/controls/TransformControls.js(1453,3): error TS2532: Object is possibly 'undefined'.
 examples/jsm/controls/TransformControls.js(1454,3): error TS2532: Object is possibly 'undefined'.
@@ -432,7 +432,6 @@ examples/jsm/effects/AsciiEffect.js(310,10): error TS2484: Export declaration co
 examples/jsm/effects/OutlineEffect.js(147,5): error TS2353: Object literal may only specify known properties, and 'type' does not exist in type 'ShaderMaterialParameters'.
 examples/jsm/effects/OutlineEffect.js(401,30): error TS2339: Property 'autoClear' does not exist on type 'OutlineEffect'.
 examples/jsm/effects/OutlineEffect.js(489,10): error TS2484: Export declaration conflicts with exported declaration of 'OutlineEffect'.
-examples/jsm/exporters/DRACOExporter.js(221,3): error TS2740: Type 'Int8Array<ArrayBuffer>' is missing the following properties from type 'ArrayBuffer': maxByteLength, resizable, resize, detached, and 2 more.
 examples/jsm/exporters/DRACOExporter.js(311,10): error TS2484: Export declaration conflicts with exported declaration of 'DRACOExporter'.
 examples/jsm/exporters/EXRExporter.js(45,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
 examples/jsm/exporters/EXRExporter.js(322,17): error TS2722: Cannot invoke an object which is possibly 'undefined'.
@@ -794,22 +793,22 @@ examples/jsm/loaders/ColladaLoader.js(1166,12): error TS2339: Property 'techniqu
 examples/jsm/loaders/ColladaLoader.js(1170,12): error TS2339: Property 'extra' does not exist on type '{ surfaces: {}; samplers: {}; }'.
 examples/jsm/loaders/ColladaLoader.js(1554,12): error TS2339: Property 'url' does not exist on type '{ name: any; }'.
 examples/jsm/loaders/ColladaLoader.js(1697,78): error TS2345: Argument of type '"srgb"' is not assignable to parameter of type 'null | undefined'.
-examples/jsm/loaders/ColladaLoader.js(1700,40): error TS2339: Property 'specular' does not exist on type 'MeshBasicMaterial | MeshLambertMaterial | MeshPhongMaterial'.
-examples/jsm/loaders/ColladaLoader.js(1700,60): error TS2339: Property 'specular' does not exist on type 'MeshBasicMaterial | MeshLambertMaterial | MeshPhongMaterial'.
-examples/jsm/loaders/ColladaLoader.js(1704,41): error TS2339: Property 'normalMap' does not exist on type 'MeshBasicMaterial | MeshLambertMaterial | MeshPhongMaterial'.
+examples/jsm/loaders/ColladaLoader.js(1700,40): error TS2339: Property 'specular' does not exist on type 'MeshBasicMaterial | MeshPhongMaterial | MeshLambertMaterial'.
+examples/jsm/loaders/ColladaLoader.js(1700,60): error TS2339: Property 'specular' does not exist on type 'MeshBasicMaterial | MeshPhongMaterial | MeshLambertMaterial'.
+examples/jsm/loaders/ColladaLoader.js(1704,41): error TS2339: Property 'normalMap' does not exist on type 'MeshBasicMaterial | MeshPhongMaterial | MeshLambertMaterial'.
 examples/jsm/loaders/ColladaLoader.js(1707,83): error TS2345: Argument of type '"srgb"' is not assignable to parameter of type 'null | undefined'.
-examples/jsm/loaders/ColladaLoader.js(1710,40): error TS2339: Property 'shininess' does not exist on type 'MeshBasicMaterial | MeshLambertMaterial | MeshPhongMaterial'.
-examples/jsm/loaders/ColladaLoader.js(1710,61): error TS2339: Property 'shininess' does not exist on type 'MeshBasicMaterial | MeshLambertMaterial | MeshPhongMaterial'.
-examples/jsm/loaders/ColladaLoader.js(1713,40): error TS2339: Property 'emissive' does not exist on type 'MeshBasicMaterial | MeshLambertMaterial | MeshPhongMaterial'.
-examples/jsm/loaders/ColladaLoader.js(1713,60): error TS2339: Property 'emissive' does not exist on type 'MeshBasicMaterial | MeshLambertMaterial | MeshPhongMaterial'.
-examples/jsm/loaders/ColladaLoader.js(1714,41): error TS2339: Property 'emissiveMap' does not exist on type 'MeshBasicMaterial | MeshLambertMaterial | MeshPhongMaterial'.
+examples/jsm/loaders/ColladaLoader.js(1710,40): error TS2339: Property 'shininess' does not exist on type 'MeshBasicMaterial | MeshPhongMaterial | MeshLambertMaterial'.
+examples/jsm/loaders/ColladaLoader.js(1710,61): error TS2339: Property 'shininess' does not exist on type 'MeshBasicMaterial | MeshPhongMaterial | MeshLambertMaterial'.
+examples/jsm/loaders/ColladaLoader.js(1713,40): error TS2339: Property 'emissive' does not exist on type 'MeshBasicMaterial | MeshPhongMaterial | MeshLambertMaterial'.
+examples/jsm/loaders/ColladaLoader.js(1713,60): error TS2339: Property 'emissive' does not exist on type 'MeshBasicMaterial | MeshPhongMaterial | MeshLambertMaterial'.
+examples/jsm/loaders/ColladaLoader.js(1714,41): error TS2339: Property 'emissiveMap' does not exist on type 'MeshBasicMaterial | MeshPhongMaterial | MeshLambertMaterial'.
 examples/jsm/loaders/ColladaLoader.js(1714,86): error TS2345: Argument of type '"srgb"' is not assignable to parameter of type 'null | undefined'.
-examples/jsm/loaders/ColladaLoader.js(1722,18): error TS2339: Property 'specular' does not exist on type 'MeshBasicMaterial | MeshLambertMaterial | MeshPhongMaterial'.
-examples/jsm/loaders/ColladaLoader.js(1722,75): error TS2339: Property 'specular' does not exist on type 'MeshBasicMaterial | MeshLambertMaterial | MeshPhongMaterial'.
-examples/jsm/loaders/ColladaLoader.js(1723,18): error TS2339: Property 'emissive' does not exist on type 'MeshBasicMaterial | MeshLambertMaterial | MeshPhongMaterial'.
-examples/jsm/loaders/ColladaLoader.js(1723,75): error TS2339: Property 'emissive' does not exist on type 'MeshBasicMaterial | MeshLambertMaterial | MeshPhongMaterial'.
-examples/jsm/loaders/ColladaLoader.js(1809,17): error TS2339: Property 'normalMap' does not exist on type 'MeshBasicMaterial | MeshLambertMaterial | MeshPhongMaterial'.
-examples/jsm/loaders/ColladaLoader.js(1810,17): error TS2339: Property 'normalScale' does not exist on type 'MeshBasicMaterial | MeshLambertMaterial | MeshPhongMaterial'.
+examples/jsm/loaders/ColladaLoader.js(1722,18): error TS2339: Property 'specular' does not exist on type 'MeshBasicMaterial | MeshPhongMaterial | MeshLambertMaterial'.
+examples/jsm/loaders/ColladaLoader.js(1722,75): error TS2339: Property 'specular' does not exist on type 'MeshBasicMaterial | MeshPhongMaterial | MeshLambertMaterial'.
+examples/jsm/loaders/ColladaLoader.js(1723,18): error TS2339: Property 'emissive' does not exist on type 'MeshBasicMaterial | MeshPhongMaterial | MeshLambertMaterial'.
+examples/jsm/loaders/ColladaLoader.js(1723,75): error TS2339: Property 'emissive' does not exist on type 'MeshBasicMaterial | MeshPhongMaterial | MeshLambertMaterial'.
+examples/jsm/loaders/ColladaLoader.js(1809,17): error TS2339: Property 'normalMap' does not exist on type 'MeshBasicMaterial | MeshPhongMaterial | MeshLambertMaterial'.
+examples/jsm/loaders/ColladaLoader.js(1810,17): error TS2339: Property 'normalScale' does not exist on type 'MeshBasicMaterial | MeshPhongMaterial | MeshLambertMaterial'.
 examples/jsm/loaders/ColladaLoader.js(1846,12): error TS2339: Property 'optics' does not exist on type '{ name: any; }'.
 examples/jsm/loaders/ColladaLoader.js(2104,33): error TS18048: 'light' is possibly 'undefined'.
 examples/jsm/loaders/ColladaLoader.js(2105,36): error TS18048: 'light' is possibly 'undefined'.
@@ -944,10 +943,9 @@ examples/jsm/loaders/EXRLoader.js(2549,14): error TS2339: Property 'decode' does
 examples/jsm/loaders/EXRLoader.js(2552,4): error TS2353: Object literal may only specify known properties, and 'header' does not exist in type 'DataTextureLoader'.
 examples/jsm/loaders/EXRLoader.js(2555,21): error TS2339: Property 'byteArray' does not exist on type '{ size: number; viewer: any; array: any; offset: any; width: number; height: number; inputChannels: any; channelByteOffsets: {}; scanOrder: null; totalBytes: null; columns: null; lines: null; type: null; uncompress: null; getter: null; format: null; colorSpace: "srgb-linear"; }'.
 examples/jsm/loaders/FBXLoader.js(96,13): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
-examples/jsm/loaders/FBXLoader.js(116,26): error TS2345: Argument of type 'string | ArrayBuffer' is not assignable to parameter of type 'any[]'.
-examples/jsm/loaders/FBXLoader.js(141,13): error TS2314: Generic type 'Array<T>' requires 1 type argument(s).
+examples/jsm/loaders/FBXLoader.js(116,26): error TS2345: Argument of type 'string | ArrayBuffer' is not assignable to parameter of type 'ArrayBuffer'.
 examples/jsm/loaders/FBXLoader.js(175,66): error TS2554: Expected 0 arguments, but got 1.
-examples/jsm/loaders/FBXLoader.js(550,23): error TS2345: Argument of type '{ bumpScale: any; color: Color; displacementScale: any; emissive: Color; emissiveIntensity: number; opacity: number | null; transparent: boolean; reflectivity: any; shininess: any; specular: Color; }' is not assignable to parameter of type 'MeshLambertMaterialParameters & MeshPhongMaterialParameters'.
+examples/jsm/loaders/FBXLoader.js(550,23): error TS2345: Argument of type '{ bumpScale: any; color: Color; displacementScale: any; emissive: Color; emissiveIntensity: number; opacity: number | null; transparent: boolean; reflectivity: any; shininess: any; specular: Color; }' is not assignable to parameter of type 'MeshPhongMaterialParameters & MeshLambertMaterialParameters'.
 examples/jsm/loaders/FBXLoader.js(656,17): error TS2339: Property 'bumpMap' does not exist on type '{ bumpScale: any; color: Color; displacementScale: any; emissive: Color; emissiveIntensity: number; opacity: number | null; transparent: boolean; reflectivity: any; shininess: any; specular: Color; }'.
 examples/jsm/loaders/FBXLoader.js(660,17): error TS2339: Property 'aoMap' does not exist on type '{ bumpScale: any; color: Color; displacementScale: any; emissive: Color; emissiveIntensity: number; opacity: number | null; transparent: boolean; reflectivity: any; shininess: any; specular: Color; }'.
 examples/jsm/loaders/FBXLoader.js(665,17): error TS2339: Property 'map' does not exist on type '{ bumpScale: any; color: Color; displacementScale: any; emissive: Color; emissiveIntensity: number; opacity: number | null; transparent: boolean; reflectivity: any; shininess: any; specular: Color; }'.
@@ -1022,30 +1020,30 @@ examples/jsm/loaders/GCodeLoader.js(67,26): error TS2345: Argument of type 'stri
 examples/jsm/loaders/GCodeLoader.js(197,5): error TS2739: Type '{ x: any; y: any; z: any; e: any; f: any; }' is missing the following properties from type '{ x: number; y: number; z: number; e: number; f: number; extruding: boolean; relative: boolean; }': extruding, relative
 examples/jsm/loaders/GLTFLoader.js(246,13): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
 examples/jsm/loaders/GLTFLoader.js(412,13): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
-examples/jsm/loaders/GLTFLoader.js(2458,12): error TS2503: Cannot find namespace 'GLTF'.
-examples/jsm/loaders/GLTFLoader.js(2466,26): error TS2339: Property 'userData' does not exist on type 'Object | Object3D<Object3DEventMap> | Material | BufferGeometry<NormalBufferAttributes>'.
-examples/jsm/loaders/GLTFLoader.js(2483,18): error TS2503: Cannot find namespace 'GLTF'.
-examples/jsm/loaders/GLTFLoader.js(2518,14): error TS2341: Property 'getDependency' is private and only accessible within class 'GLTFParser'.
-examples/jsm/loaders/GLTFLoader.js(2528,14): error TS2341: Property 'getDependency' is private and only accessible within class 'GLTFParser'.
-examples/jsm/loaders/GLTFLoader.js(2538,14): error TS2341: Property 'getDependency' is private and only accessible within class 'GLTFParser'.
-examples/jsm/loaders/GLTFLoader.js(2572,12): error TS2503: Cannot find namespace 'GLTF'.
-examples/jsm/loaders/GLTFLoader.js(2582,4): error TS18048: 'mesh.morphTargetInfluences' is possibly 'undefined'.
-examples/jsm/loaders/GLTFLoader.js(2593,8): error TS18048: 'mesh.morphTargetInfluences' is possibly 'undefined'.
-examples/jsm/loaders/GLTFLoader.js(2750,4): error TS2322: Type 'string | -1' is not assignable to type 'number'.
-examples/jsm/loaders/GLTFLoader.js(2750,33): error TS2531: Object is possibly 'null'.
-examples/jsm/loaders/GLTFLoader.js(3187,72): error TS2345: Argument of type '(value: ArrayBuffer | PromiseLike<ArrayBuffer>) => void' is not assignable to parameter of type '(data: string | ArrayBuffer) => void'.
-examples/jsm/loaders/GLTFLoader.js(3881,19): error TS2503: Cannot find namespace 'GLTF'.
-examples/jsm/loaders/GLTFLoader.js(4004,16): error TS2339: Property 'isSkinnedMesh' does not exist on type 'Mesh<any, any, Object3DEventMap>'.
-examples/jsm/loaders/GLTFLoader.js(4007,12): error TS2339: Property 'normalizeSkinWeights' does not exist on type 'Mesh<any, any, Object3DEventMap>'.
-examples/jsm/loaders/GLTFLoader.js(4045,26): error TS2345: Argument of type 'Mesh<any, any, Object3DEventMap> | Line<any, any, Object3DEventMap> | Points<any, any, Object3DEventMap>' is not assignable to parameter of type 'Mesh<BufferGeometry<NormalBufferAttributes>, Material | Material[], Object3DEventMap>'.
-examples/jsm/loaders/GLTFLoader.js(4112,4): error TS2322: Type 'undefined' is not assignable to type 'Promise<any>'.
-examples/jsm/loaders/GLTFLoader.js(4126,25): error TS18048: 'camera' is possibly 'undefined'.
-examples/jsm/loaders/GLTFLoader.js(4128,27): error TS2345: Argument of type 'OrthographicCamera | PerspectiveCamera | undefined' is not assignable to parameter of type 'Object | Object3D<Object3DEventMap> | Material | BufferGeometry<NormalBufferAttributes>'.
-examples/jsm/loaders/GLTFLoader.js(4765,12): error TS2503: Cannot find namespace 'GLTF'.
-examples/jsm/loaders/GLTFLoader.js(4882,12): error TS2503: Cannot find namespace 'GLTF'.
-examples/jsm/loaders/GLTFLoader.js(4894,17): error TS2341: Property 'getDependency' is private and only accessible within class 'GLTFParser'.
-examples/jsm/loaders/GLTFLoader.js(4916,27): error TS2341: Property 'getDependency' is private and only accessible within class 'GLTFParser'.
-examples/jsm/loaders/GLTFLoader.js(4959,10): error TS2484: Export declaration conflicts with exported declaration of 'GLTFLoader'.
+examples/jsm/loaders/GLTFLoader.js(2380,12): error TS2503: Cannot find namespace 'GLTF'.
+examples/jsm/loaders/GLTFLoader.js(2388,26): error TS2339: Property 'userData' does not exist on type 'Object | Object3D<Object3DEventMap> | Material | BufferGeometry<NormalBufferAttributes>'.
+examples/jsm/loaders/GLTFLoader.js(2405,18): error TS2503: Cannot find namespace 'GLTF'.
+examples/jsm/loaders/GLTFLoader.js(2440,14): error TS2341: Property 'getDependency' is private and only accessible within class 'GLTFParser'.
+examples/jsm/loaders/GLTFLoader.js(2450,14): error TS2341: Property 'getDependency' is private and only accessible within class 'GLTFParser'.
+examples/jsm/loaders/GLTFLoader.js(2460,14): error TS2341: Property 'getDependency' is private and only accessible within class 'GLTFParser'.
+examples/jsm/loaders/GLTFLoader.js(2494,12): error TS2503: Cannot find namespace 'GLTF'.
+examples/jsm/loaders/GLTFLoader.js(2504,4): error TS18048: 'mesh.morphTargetInfluences' is possibly 'undefined'.
+examples/jsm/loaders/GLTFLoader.js(2515,8): error TS18048: 'mesh.morphTargetInfluences' is possibly 'undefined'.
+examples/jsm/loaders/GLTFLoader.js(2672,4): error TS2322: Type 'string | -1' is not assignable to type 'number'.
+examples/jsm/loaders/GLTFLoader.js(2672,33): error TS2531: Object is possibly 'null'.
+examples/jsm/loaders/GLTFLoader.js(3109,72): error TS2345: Argument of type '(value: ArrayBuffer | PromiseLike<ArrayBuffer>) => void' is not assignable to parameter of type '(data: string | ArrayBuffer) => void'.
+examples/jsm/loaders/GLTFLoader.js(3803,19): error TS2503: Cannot find namespace 'GLTF'.
+examples/jsm/loaders/GLTFLoader.js(3926,16): error TS2339: Property 'isSkinnedMesh' does not exist on type 'Mesh<any, any, Object3DEventMap>'.
+examples/jsm/loaders/GLTFLoader.js(3929,12): error TS2339: Property 'normalizeSkinWeights' does not exist on type 'Mesh<any, any, Object3DEventMap>'.
+examples/jsm/loaders/GLTFLoader.js(3967,26): error TS2345: Argument of type 'Mesh<any, any, Object3DEventMap> | Line<any, any, Object3DEventMap> | Points<any, any, Object3DEventMap>' is not assignable to parameter of type 'Mesh<BufferGeometry<NormalBufferAttributes>, Material | Material[], Object3DEventMap>'.
+examples/jsm/loaders/GLTFLoader.js(4034,4): error TS2322: Type 'undefined' is not assignable to type 'Promise<any>'.
+examples/jsm/loaders/GLTFLoader.js(4048,25): error TS18048: 'camera' is possibly 'undefined'.
+examples/jsm/loaders/GLTFLoader.js(4050,27): error TS2345: Argument of type 'OrthographicCamera | PerspectiveCamera | undefined' is not assignable to parameter of type 'Object | Object3D<Object3DEventMap> | Material | BufferGeometry<NormalBufferAttributes>'.
+examples/jsm/loaders/GLTFLoader.js(4687,12): error TS2503: Cannot find namespace 'GLTF'.
+examples/jsm/loaders/GLTFLoader.js(4804,12): error TS2503: Cannot find namespace 'GLTF'.
+examples/jsm/loaders/GLTFLoader.js(4816,17): error TS2341: Property 'getDependency' is private and only accessible within class 'GLTFParser'.
+examples/jsm/loaders/GLTFLoader.js(4838,27): error TS2341: Property 'getDependency' is private and only accessible within class 'GLTFParser'.
+examples/jsm/loaders/GLTFLoader.js(4881,10): error TS2484: Export declaration conflicts with exported declaration of 'GLTFLoader'.
 examples/jsm/loaders/HDRCubeTextureLoader.js(62,13): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
 examples/jsm/loaders/HDRCubeTextureLoader.js(107,45): error TS2345: Argument of type 'string | ArrayBuffer' is not assignable to parameter of type 'ArrayBuffer'.
 examples/jsm/loaders/HDRCubeTextureLoader.js(111,19): error TS2339: Property 'data' does not exist on type 'DataTextureLoader'.
@@ -2451,7 +2449,7 @@ examples/jsm/textures/FlakesTexture.js(44,4): error TS18047: 'context' is possib
 examples/jsm/transpiler/GLSLDecoder.js(164,8): error TS7019: Rest parameter 'params' implicitly has an 'any[]' type.
 examples/jsm/transpiler/GLSLDecoder.js(257,10): error TS2531: Object is possibly 'null'.
 examples/jsm/transpiler/ShaderToyDecoder.js(24,9): error TS2339: Property 'layout' does not exist on type 'FunctionDeclaration'.
-examples/jsm/transpiler/TSLEncoder.js(632,72): error TS2345: Argument of type 'Accessor' is not assignable to parameter of type 'null | undefined'.
+examples/jsm/transpiler/TSLEncoder.js(654,72): error TS2345: Argument of type 'Accessor' is not assignable to parameter of type 'null | undefined'.
 examples/jsm/tsl/display/AfterImageNode.js(236,12): error TS2315: Type 'Node' is not generic.
 examples/jsm/tsl/display/AnaglyphPassNode.js(90,16): error TS2339: Property 'setup' does not exist on type 'StereoCompositePassNode'.
 examples/jsm/tsl/display/AnamorphicNode.js(26,13): error TS2315: Type 'Node' is not generic.
@@ -3233,9 +3231,9 @@ src/core/Object3D.js(1533,8): error TS2339: Property 'quaternion' does not exist
 src/core/Object3D.js(1533,32): error TS2339: Property 'quaternion' does not exist on type 'Object3D'.
 src/core/Object3D.js(1534,8): error TS2339: Property 'scale' does not exist on type 'Object3D'.
 src/core/Object3D.js(1534,27): error TS2339: Property 'scale' does not exist on type 'Object3D'.
-src/core/RenderTarget.js(251,5): error TS2531: Object is possibly 'null'.
-src/core/RenderTarget.js(252,5): error TS2531: Object is possibly 'null'.
-src/core/RenderTarget.js(253,5): error TS2531: Object is possibly 'null'.
+src/core/RenderTarget.js(262,5): error TS2531: Object is possibly 'null'.
+src/core/RenderTarget.js(263,5): error TS2531: Object is possibly 'null'.
+src/core/RenderTarget.js(264,5): error TS2531: Object is possibly 'null'.
 src/extras/core/Curve.js(65,14): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
 src/extras/core/Curve.js(85,25): error TS2554: Expected 0 arguments, but got 2.
 src/extras/core/Curve.js(102,32): error TS2554: Expected 0 arguments, but got 1.
@@ -3288,16 +3286,16 @@ src/extras/core/ShapePath.js(305,40): error TS2532: Object is possibly 'undefine
 src/extras/core/ShapePath.js(312,41): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
 src/extras/core/ShapePath.js(326,38): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
 src/extras/core/ShapePath.js(346,15): error TS2532: Object is possibly 'undefined'.
-src/extras/ImageUtils.js(22,30): error TS2339: Property 'src' does not exist on type 'HTMLImageElement | HTMLCanvasElement'.
-src/extras/ImageUtils.js(24,17): error TS2339: Property 'src' does not exist on type 'HTMLImageElement | HTMLCanvasElement'.
-src/extras/ImageUtils.js(30,17): error TS2339: Property 'src' does not exist on type 'HTMLImageElement | HTMLCanvasElement'.
+src/extras/ImageUtils.js(22,30): error TS2339: Property 'src' does not exist on type 'HTMLCanvasElement | HTMLImageElement'.
+src/extras/ImageUtils.js(24,17): error TS2339: Property 'src' does not exist on type 'HTMLCanvasElement | HTMLImageElement'.
+src/extras/ImageUtils.js(30,17): error TS2339: Property 'src' does not exist on type 'HTMLCanvasElement | HTMLImageElement'.
 src/extras/ImageUtils.js(81,11): error TS2339: Property 'width' does not exist on type 'HTMLElement'.
 src/extras/ImageUtils.js(82,11): error TS2339: Property 'height' does not exist on type 'HTMLElement'.
 src/extras/ImageUtils.js(84,27): error TS2339: Property 'getContext' does not exist on type 'HTMLElement'.
-src/extras/ImageUtils.js(100,21): error TS2339: Property 'data' does not exist on type 'Object | HTMLImageElement | HTMLCanvasElement | ImageBitmap'.
-src/extras/ImageUtils.js(102,23): error TS2339: Property 'data' does not exist on type 'Object | HTMLImageElement | HTMLCanvasElement | ImageBitmap'.
-src/extras/ImageUtils.js(122,18): error TS2339: Property 'width' does not exist on type 'Object | HTMLImageElement | HTMLCanvasElement | ImageBitmap'.
-src/extras/ImageUtils.js(123,19): error TS2339: Property 'height' does not exist on type 'Object | HTMLImageElement | HTMLCanvasElement | ImageBitmap'.
+src/extras/ImageUtils.js(100,21): error TS2339: Property 'data' does not exist on type 'Object | HTMLCanvasElement | HTMLImageElement | ImageBitmap'.
+src/extras/ImageUtils.js(102,23): error TS2339: Property 'data' does not exist on type 'Object | HTMLCanvasElement | HTMLImageElement | ImageBitmap'.
+src/extras/ImageUtils.js(122,18): error TS2339: Property 'width' does not exist on type 'Object | HTMLCanvasElement | HTMLImageElement | ImageBitmap'.
+src/extras/ImageUtils.js(123,19): error TS2339: Property 'height' does not exist on type 'Object | HTMLCanvasElement | HTMLImageElement | ImageBitmap'.
 src/extras/lib/earcut.js(270,22): error TS18049: 'list' is possibly 'null' or 'undefined'.
 src/extras/lib/earcut.js(270,33): error TS18047: 'list' is possibly 'null'.
 src/extras/lib/earcut.js(581,5): error TS2322: Type '{ i: any; x: any; y: any; prev: null; next: null; z: number; prevZ: null; nextZ: null; steiner: boolean; }' is not assignable to type 'null'.
@@ -3582,8 +3580,7 @@ src/loaders/nodes/NodeObjectLoader.js(26,27): error TS2749: 'Node.constructor' r
 src/loaders/nodes/NodeObjectLoader.js(33,27): error TS2503: Cannot find namespace 'NodeMaterial'.
 src/loaders/nodes/NodeObjectLoader.js(50,27): error TS2749: 'Node.constructor' refers to a value, but is being used as a type here. Did you mean 'typeof Node.constructor'?
 src/loaders/nodes/NodeObjectLoader.js(63,27): error TS2503: Cannot find namespace 'NodeMaterial'.
-src/loaders/nodes/NodeObjectLoader.js(107,30): error TS2345: Argument of type 'Object' is not assignable to parameter of type 'Object[]'.
-src/loaders/nodes/NodeObjectLoader.js(128,35): error TS2345: Argument of type 'Object | null' is not assignable to parameter of type 'Object'.
+src/loaders/nodes/NodeObjectLoader.js(128,35): error TS2345: Argument of type 'Object[] | null' is not assignable to parameter of type 'Object[]'.
 src/loaders/ObjectLoader.js(99,13): error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
 src/loaders/ObjectLoader.js(126,69): error TS18046: 'error' is of type 'unknown'.
 src/loaders/ObjectLoader.js(193,15): error TS2502: 'onLoad' is referenced directly or indirectly in its own type annotation.
@@ -4073,8 +4070,6 @@ src/math/Matrix3.js(98,33): error TS2322: Type 'number | undefined' is not assig
 src/math/Matrix3.js(99,3): error TS2322: Type 'number | undefined' is not assignable to type 'number'.
 src/math/Matrix3.js(99,18): error TS2322: Type 'number | undefined' is not assignable to type 'number'.
 src/math/Matrix3.js(99,33): error TS2322: Type 'number | undefined' is not assignable to type 'number'.
-src/math/Matrix3.js(164,13): error TS2552: Cannot find name 'Matrix4'. Did you mean 'Matrix3'?
-src/math/Matrix3.js(343,13): error TS2552: Cannot find name 'Matrix4'. Did you mean 'Matrix3'?
 src/math/Matrix4.js(75,21): error TS2339: Property 'isMatrix4' does not exist on type 'Matrix4'.
 src/math/Matrix4.js(125,3): error TS2322: Type 'number | undefined' is not assignable to type 'number'.
 src/math/Matrix4.js(125,18): error TS2322: Type 'number | undefined' is not assignable to type 'number'.
@@ -4124,10 +4119,10 @@ src/nodes/accessors/BufferAttributeNode.js(173,3): error TS2322: Type 'string | 
 src/nodes/accessors/BufferNode.js(71,3): error TS2322: Type 'string | null' is not assignable to type 'string'.
 src/nodes/accessors/BufferNode.js(71,28): error TS2554: Expected 0 arguments, but got 1.
 src/nodes/accessors/BufferNode.js(96,12): error TS2314: Generic type 'Array<T>' requires 1 type argument(s).
-src/nodes/accessors/Camera.js(13,136): error TS2339: Property 'toVarying' does not exist on type 'UniformNode'.
-src/nodes/accessors/Camera.js(53,53): error TS2339: Property 'element' does not exist on type 'UniformNode'.
-src/nodes/accessors/Camera.js(87,67): error TS2339: Property 'element' does not exist on type 'UniformNode'.
-src/nodes/accessors/Camera.js(121,41): error TS2339: Property 'element' does not exist on type 'UniformNode'.
+src/nodes/accessors/Camera.js(14,136): error TS2339: Property 'toVarying' does not exist on type 'UniformNode'.
+src/nodes/accessors/Camera.js(54,53): error TS2339: Property 'element' does not exist on type 'UniformNode'.
+src/nodes/accessors/Camera.js(88,67): error TS2339: Property 'element' does not exist on type 'UniformNode'.
+src/nodes/accessors/Camera.js(122,41): error TS2339: Property 'element' does not exist on type 'UniformNode'.
 src/nodes/accessors/ClippingNode.js(32,15): error TS2322: Type 'string' is not assignable to type '"alphaToCoverage" | "default" | "hardware" | undefined'.
 src/nodes/accessors/ClippingNode.js(103,54): error TS2339: Property 'xyz' does not exist on type 'UniformArrayElementNode'.
 src/nodes/accessors/ClippingNode.js(103,80): error TS2339: Property 'w' does not exist on type 'UniformArrayElementNode'.
@@ -5039,10 +5034,10 @@ src/nodes/parsers/GLSLNodeFunction.js(67,9): error TS2322: Type 'null' is not as
 src/nodes/parsers/GLSLNodeFunction.js(71,59): error TS2345: Argument of type 'string' is not assignable to parameter of type '"in" | "out" | "inout" | undefined'.
 src/nodes/pmrem/PMREMNode.js(54,16): error TS2551: Property 'isCubeTexture' does not exist on type 'Texture'. Did you mean 'isTexture'?
 src/nodes/pmrem/PMREMNode.js(56,25): error TS2345: Argument of type 'Object | null' is not assignable to parameter of type '(Object | (new (width?: number | undefined, height?: number | undefined) => HTMLImageElement))[] | null | undefined'.
-src/nodes/pmrem/PMREMNode.js(58,5): error TS2740: Type 'RenderTarget' is missing the following properties from type 'Texture': isTexture, uuid, name, source, and 34 more.
+src/nodes/pmrem/PMREMNode.js(58,5): error TS2740: Type 'RenderTarget' is missing the following properties from type 'Texture': isTexture, uuid, name, source, and 35 more.
 src/nodes/pmrem/PMREMNode.js(58,52): error TS2345: Argument of type 'Texture | undefined' is not assignable to parameter of type 'RenderTarget | null | undefined'.
 src/nodes/pmrem/PMREMNode.js(69,36): error TS2345: Argument of type 'Object | null' is not assignable to parameter of type 'Object | (new (width?: number | undefined, height?: number | undefined) => HTMLImageElement)'.
-src/nodes/pmrem/PMREMNode.js(71,5): error TS2740: Type 'RenderTarget' is missing the following properties from type 'Texture': isTexture, uuid, name, source, and 34 more.
+src/nodes/pmrem/PMREMNode.js(71,5): error TS2740: Type 'RenderTarget' is missing the following properties from type 'Texture': isTexture, uuid, name, source, and 35 more.
 src/nodes/pmrem/PMREMNode.js(71,60): error TS2345: Argument of type 'Texture | undefined' is not assignable to parameter of type 'RenderTarget | null | undefined'.
 src/nodes/pmrem/PMREMNode.js(81,3): error TS18048: 'cacheTexture' is possibly 'undefined'.
 src/nodes/pmrem/PMREMNode.js(83,23): error TS2345: Argument of type 'Texture | undefined' is not assignable to parameter of type 'Texture'.
@@ -5349,9 +5344,9 @@ src/renderers/common/nodes/NodeLibrary.js(137,13): error TS2503: Cannot find nam
 src/renderers/common/nodes/NodeLibrary.js(138,13): error TS2503: Cannot find namespace 'Light'.
 src/renderers/common/nodes/NodeLibrary.js(151,13): error TS2314: Generic type 'Map<K, V>' requires 2 type argument(s).
 src/renderers/common/nodes/NodeLibrary.js(174,13): error TS2314: Generic type 'WeakMap<K, V>' requires 2 type argument(s).
-src/renderers/common/nodes/Nodes.js(80,27): error TS2314: Generic type 'WeakMap<K, V>' requires 2 type argument(s).
-src/renderers/common/nodes/Nodes.js(403,65): error TS2339: Property 'getCacheKey' does not exist on type 'Node'.
-src/renderers/common/nodes/Nodes.js(404,49): error TS2339: Property 'getCacheKey' does not exist on type 'Node'.
+src/renderers/common/nodes/Nodes.js(81,27): error TS2314: Generic type 'WeakMap<K, V>' requires 2 type argument(s).
+src/renderers/common/nodes/Nodes.js(410,65): error TS2339: Property 'getCacheKey' does not exist on type 'Node'.
+src/renderers/common/nodes/Nodes.js(411,49): error TS2339: Property 'getCacheKey' does not exist on type 'Node'.
 src/renderers/common/Pipelines.js(61,27): error TS2314: Generic type 'Map<K, V>' requires 2 type argument(s).
 src/renderers/common/Pipelines.js(107,98): error TS2339: Property 'name' does not exist on type 'Node'.
 src/renderers/common/Pipelines.js(135,31): error TS2339: Property 'version' does not exist on type 'Node'.
@@ -5365,250 +5360,258 @@ src/renderers/common/PostProcessing.js(69,13): error TS2315: Type 'Node' is not 
 src/renderers/common/PostProcessing.js(158,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
 src/renderers/common/QuadMesh.js(85,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
 src/renderers/common/RenderContext.js(255,25): error TS18047: 'textures' is possibly 'null'.
-src/renderers/common/Renderer.js(633,20): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/common/Renderer.js(704,24): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(705,27): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(709,26): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(828,22): error TS2314: Generic type 'Array<T>' requires 1 type argument(s).
-src/renderers/common/Renderer.js(838,21): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(852,25): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(852,51): error TS2345: Argument of type 'Scene | null' is not assignable to parameter of type 'Scene'.
-src/renderers/common/Renderer.js(884,22): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(892,4): error TS18047: 'targetScene' is possibly 'null'.
-src/renderers/common/Renderer.js(910,4): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(912,29): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(926,3): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(960,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/common/Renderer.js(975,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/common/Renderer.js(1057,24): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(1106,10): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(1108,6): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(635,20): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/common/Renderer.js(706,24): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(707,27): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(711,26): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(830,22): error TS2314: Generic type 'Array<T>' requires 1 type argument(s).
+src/renderers/common/Renderer.js(840,21): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(854,25): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(854,51): error TS2345: Argument of type 'Scene | null' is not assignable to parameter of type 'Scene'.
+src/renderers/common/Renderer.js(886,22): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(894,4): error TS18047: 'targetScene' is possibly 'null'.
+src/renderers/common/Renderer.js(912,4): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(914,29): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(928,3): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(962,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/common/Renderer.js(977,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/common/Renderer.js(1059,24): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(1108,10): error TS2531: Object is possibly 'null'.
 src/renderers/common/Renderer.js(1110,6): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(1111,6): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(1112,6): error TS2531: Object is possibly 'null'.
 src/renderers/common/Renderer.js(1113,6): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(1134,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
-src/renderers/common/Renderer.js(1134,15): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/common/Renderer.js(1187,22): error TS2339: Property 'isPostProcessingRenderTarget' does not exist on type 'RenderTarget'.
-src/renderers/common/Renderer.js(1223,21): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(1256,25): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(1323,31): error TS2339: Property 'minDepth' does not exist on type 'Vector4'.
-src/renderers/common/Renderer.js(1323,71): error TS2339: Property 'minDepth' does not exist on type 'Vector4'.
-src/renderers/common/Renderer.js(1324,31): error TS2339: Property 'maxDepth' does not exist on type 'Vector4'.
-src/renderers/common/Renderer.js(1324,71): error TS2339: Property 'maxDepth' does not exist on type 'Vector4'.
-src/renderers/common/Renderer.js(1329,31): error TS2339: Property 'minDepth' does not exist on type 'Vector4'.
-src/renderers/common/Renderer.js(1330,31): error TS2339: Property 'maxDepth' does not exist on type 'Vector4'.
-src/renderers/common/Renderer.js(1352,12): error TS2339: Property 'setFromProjectionMatrix' does not exist on type 'Frustum | FrustumArray'.
-src/renderers/common/Renderer.js(1356,22): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(1365,21): error TS2345: Argument of type 'Function | null' is not assignable to parameter of type '((arg0: any, arg1: any) => number) | null'.
-src/renderers/common/Renderer.js(1373,4): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(1375,29): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(1404,3): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(1408,17): error TS2339: Property 'camera' does not exist on type 'RenderContext'.
-src/renderers/common/Renderer.js(1442,24): error TS2345: Argument of type 'RenderTarget | null' is not assignable to parameter of type 'RenderTarget'.
-src/renderers/common/Renderer.js(1466,8): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(1468,33): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(1529,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/common/Renderer.js(1535,3): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(1666,20): error TS2339: Property 'style' does not exist on type 'HTMLCanvasElement | OffscreenCanvas'.
-src/renderers/common/Renderer.js(1667,20): error TS2339: Property 'style' does not exist on type 'HTMLCanvasElement | OffscreenCanvas'.
-src/renderers/common/Renderer.js(1733,10): error TS2339: Property 'isVector4' does not exist on type 'number | Vector4'.
-src/renderers/common/Renderer.js(1739,17): error TS2345: Argument of type 'number | Vector4' is not assignable to parameter of type 'number'.
-src/renderers/common/Renderer.js(1795,10): error TS2339: Property 'isVector4' does not exist on type 'number | Vector4'.
-src/renderers/common/Renderer.js(1801,18): error TS2345: Argument of type 'number | Vector4' is not assignable to parameter of type 'number'.
-src/renderers/common/Renderer.js(1805,12): error TS2339: Property 'minDepth' does not exist on type 'Vector4'.
-src/renderers/common/Renderer.js(1806,12): error TS2339: Property 'maxDepth' does not exist on type 'Vector4'.
-src/renderers/common/Renderer.js(1830,20): error TS2554: Expected 3-4 arguments, but got 1.
-src/renderers/common/Renderer.js(1923,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/common/Renderer.js(1923,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
-src/renderers/common/Renderer.js(1942,4): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(1944,29): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(1946,20): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(1974,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/common/Renderer.js(1986,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/common/Renderer.js(1998,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/common/Renderer.js(2014,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/common/Renderer.js(2028,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/common/Renderer.js(2040,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/common/Renderer.js(2052,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/common/Renderer.js(2104,3): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2105,3): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2106,3): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2107,3): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2108,3): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(1115,6): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(1136,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
+src/renderers/common/Renderer.js(1136,15): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/common/Renderer.js(1189,22): error TS2339: Property 'isPostProcessingRenderTarget' does not exist on type 'RenderTarget'.
+src/renderers/common/Renderer.js(1228,21): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(1261,25): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(1328,31): error TS2339: Property 'minDepth' does not exist on type 'Vector4'.
+src/renderers/common/Renderer.js(1328,71): error TS2339: Property 'minDepth' does not exist on type 'Vector4'.
+src/renderers/common/Renderer.js(1329,31): error TS2339: Property 'maxDepth' does not exist on type 'Vector4'.
+src/renderers/common/Renderer.js(1329,71): error TS2339: Property 'maxDepth' does not exist on type 'Vector4'.
+src/renderers/common/Renderer.js(1334,31): error TS2339: Property 'minDepth' does not exist on type 'Vector4'.
+src/renderers/common/Renderer.js(1335,31): error TS2339: Property 'maxDepth' does not exist on type 'Vector4'.
+src/renderers/common/Renderer.js(1357,12): error TS2339: Property 'setFromProjectionMatrix' does not exist on type 'Frustum | FrustumArray'.
+src/renderers/common/Renderer.js(1361,22): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(1370,21): error TS2345: Argument of type 'Function | null' is not assignable to parameter of type '((arg0: any, arg1: any) => number) | null'.
+src/renderers/common/Renderer.js(1378,4): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(1380,29): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(1409,3): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(1413,17): error TS2339: Property 'camera' does not exist on type 'RenderContext'.
+src/renderers/common/Renderer.js(1447,24): error TS2345: Argument of type 'RenderTarget | null' is not assignable to parameter of type 'RenderTarget'.
+src/renderers/common/Renderer.js(1471,8): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(1473,33): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(1534,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/common/Renderer.js(1540,3): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(1671,20): error TS2339: Property 'style' does not exist on type 'HTMLCanvasElement | OffscreenCanvas'.
+src/renderers/common/Renderer.js(1672,20): error TS2339: Property 'style' does not exist on type 'HTMLCanvasElement | OffscreenCanvas'.
+src/renderers/common/Renderer.js(1738,10): error TS2339: Property 'isVector4' does not exist on type 'number | Vector4'.
+src/renderers/common/Renderer.js(1744,17): error TS2345: Argument of type 'number | Vector4' is not assignable to parameter of type 'number'.
+src/renderers/common/Renderer.js(1800,10): error TS2339: Property 'isVector4' does not exist on type 'number | Vector4'.
+src/renderers/common/Renderer.js(1806,18): error TS2345: Argument of type 'number | Vector4' is not assignable to parameter of type 'number'.
+src/renderers/common/Renderer.js(1810,12): error TS2339: Property 'minDepth' does not exist on type 'Vector4'.
+src/renderers/common/Renderer.js(1811,12): error TS2339: Property 'maxDepth' does not exist on type 'Vector4'.
+src/renderers/common/Renderer.js(1835,20): error TS2554: Expected 3-4 arguments, but got 1.
+src/renderers/common/Renderer.js(1928,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/common/Renderer.js(1928,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
+src/renderers/common/Renderer.js(1947,4): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(1949,29): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(1951,20): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(1979,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/common/Renderer.js(1991,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/common/Renderer.js(2003,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/common/Renderer.js(2019,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/common/Renderer.js(2033,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/common/Renderer.js(2045,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/common/Renderer.js(2057,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
 src/renderers/common/Renderer.js(2109,3): error TS2531: Object is possibly 'null'.
 src/renderers/common/Renderer.js(2110,3): error TS2531: Object is possibly 'null'.
 src/renderers/common/Renderer.js(2111,3): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2161,3): error TS2696: The 'Object' type is assignable to very few other types. Did you mean to use the 'any' type instead?
-src/renderers/common/Renderer.js(2224,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/common/Renderer.js(2240,21): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2261,59): error TS2339: Property 'isComputeNode' does not exist on type 'Node'.
-src/renderers/common/Renderer.js(2273,9): error TS18047: 'pipelines' is possibly 'null'.
-src/renderers/common/Renderer.js(2279,6): error TS18047: 'pipelines' is possibly 'null'.
-src/renderers/common/Renderer.js(2280,6): error TS18047: 'bindings' is possibly 'null'.
-src/renderers/common/Renderer.js(2281,6): error TS18047: 'nodes' is possibly 'null'.
-src/renderers/common/Renderer.js(2289,34): error TS2339: Property 'onInitFunction' does not exist on type 'Node'.
-src/renderers/common/Renderer.js(2299,4): error TS18047: 'nodes' is possibly 'null'.
-src/renderers/common/Renderer.js(2300,4): error TS18047: 'bindings' is possibly 'null'.
-src/renderers/common/Renderer.js(2302,28): error TS18047: 'bindings' is possibly 'null'.
-src/renderers/common/Renderer.js(2303,28): error TS18047: 'pipelines' is possibly 'null'.
-src/renderers/common/Renderer.js(2322,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/common/Renderer.js(2393,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/common/Renderer.js(2399,3): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2419,3): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2433,19): error TS2339: Property 'isVector2' does not exist on type 'Vector2 | Vector4'.
-src/renderers/common/Renderer.js(2437,26): error TS2339: Property 'isVector4' does not exist on type 'Vector2 | Vector4'.
-src/renderers/common/Renderer.js(2470,5): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2472,21): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2480,3): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2498,3): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2499,3): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2635,17): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2743,4): error TS2721: Cannot invoke an object which is possibly 'null'.
-src/renderers/common/Renderer.js(2819,4): error TS2721: Cannot invoke an object which is possibly 'null'.
-src/renderers/common/Renderer.js(2822,4): error TS2721: Cannot invoke an object which is possibly 'null'.
-src/renderers/common/Renderer.js(2828,4): error TS2721: Cannot invoke an object which is possibly 'null'.
-src/renderers/common/Renderer.js(2874,24): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2874,133): error TS2345: Argument of type 'string | null | undefined' is not assignable to parameter of type 'string | undefined'.
-src/renderers/common/Renderer.js(2880,24): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2884,4): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2886,4): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2888,4): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2112,3): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2113,3): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2114,3): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2115,3): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2116,3): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2166,3): error TS2696: The 'Object' type is assignable to very few other types. Did you mean to use the 'any' type instead?
+src/renderers/common/Renderer.js(2229,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/common/Renderer.js(2245,21): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2266,59): error TS2339: Property 'isComputeNode' does not exist on type 'Node'.
+src/renderers/common/Renderer.js(2278,9): error TS18047: 'pipelines' is possibly 'null'.
+src/renderers/common/Renderer.js(2284,6): error TS18047: 'pipelines' is possibly 'null'.
+src/renderers/common/Renderer.js(2285,6): error TS18047: 'bindings' is possibly 'null'.
+src/renderers/common/Renderer.js(2286,6): error TS18047: 'nodes' is possibly 'null'.
+src/renderers/common/Renderer.js(2294,34): error TS2339: Property 'onInitFunction' does not exist on type 'Node'.
+src/renderers/common/Renderer.js(2304,4): error TS18047: 'nodes' is possibly 'null'.
+src/renderers/common/Renderer.js(2305,4): error TS18047: 'bindings' is possibly 'null'.
+src/renderers/common/Renderer.js(2307,28): error TS18047: 'bindings' is possibly 'null'.
+src/renderers/common/Renderer.js(2308,28): error TS18047: 'pipelines' is possibly 'null'.
+src/renderers/common/Renderer.js(2327,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/common/Renderer.js(2398,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/common/Renderer.js(2404,3): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2424,3): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2438,19): error TS2339: Property 'isVector2' does not exist on type 'Vector2 | Vector4'.
+src/renderers/common/Renderer.js(2442,26): error TS2339: Property 'isVector4' does not exist on type 'Vector2 | Vector4'.
+src/renderers/common/Renderer.js(2475,5): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2477,21): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2485,3): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2503,3): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2504,3): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2640,17): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2748,4): error TS2721: Cannot invoke an object which is possibly 'null'.
+src/renderers/common/Renderer.js(2824,4): error TS2721: Cannot invoke an object which is possibly 'null'.
+src/renderers/common/Renderer.js(2827,4): error TS2721: Cannot invoke an object which is possibly 'null'.
+src/renderers/common/Renderer.js(2833,4): error TS2721: Cannot invoke an object which is possibly 'null'.
+src/renderers/common/Renderer.js(2879,24): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2879,133): error TS2345: Argument of type 'string | null | undefined' is not assignable to parameter of type 'string | undefined'.
+src/renderers/common/Renderer.js(2885,24): error TS2531: Object is possibly 'null'.
 src/renderers/common/Renderer.js(2889,4): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2893,3): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2909,23): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2929,24): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2929,133): error TS2345: Argument of type 'string | null | undefined' is not assignable to parameter of type 'string | undefined'.
-src/renderers/common/Renderer.js(2935,3): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2937,3): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2939,3): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2891,4): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2893,4): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2894,4): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2898,3): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2914,23): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2934,24): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2934,133): error TS2345: Argument of type 'string | null | undefined' is not assignable to parameter of type 'string | undefined'.
 src/renderers/common/Renderer.js(2940,3): error TS2531: Object is possibly 'null'.
 src/renderers/common/Renderer.js(2942,3): error TS2531: Object is possibly 'null'.
 src/renderers/common/Renderer.js(2944,3): error TS2531: Object is possibly 'null'.
-src/renderers/common/Renderer.js(2955,50): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/common/Renderer.js(2945,3): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2947,3): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2949,3): error TS2531: Object is possibly 'null'.
+src/renderers/common/Renderer.js(2960,50): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
 src/renderers/common/RenderObject.js(490,3): error TS2322: Type 'any[] | null' is not assignable to type 'any[]'.
-src/renderers/common/RenderObject.js(528,21): error TS18047: 'drawRange' is possibly 'null'.
-src/renderers/common/RenderObject.js(529,22): error TS18047: 'drawRange' is possibly 'null'.
-src/renderers/common/RenderObject.js(529,40): error TS18047: 'drawRange' is possibly 'null'.
+src/renderers/common/RenderObject.js(539,21): error TS18047: 'drawRange' is possibly 'null'.
+src/renderers/common/RenderObject.js(540,22): error TS18047: 'drawRange' is possibly 'null'.
+src/renderers/common/RenderObject.js(540,40): error TS18047: 'drawRange' is possibly 'null'.
 src/renderers/common/StorageBufferAttribute.js(25,13): error TS2503: Cannot find namespace 'TypedArray'.
 src/renderers/common/StorageInstancedBufferAttribute.js(25,13): error TS2503: Cannot find namespace 'TypedArray'.
-src/renderers/common/Textures.js(69,25): error TS2339: Property 'width' does not exist on type 'Vector3'.
-src/renderers/common/Textures.js(70,26): error TS2339: Property 'height' does not exist on type 'Vector3'.
-src/renderers/common/Textures.js(79,19): error TS2554: Expected 2-10 arguments, but got 0.
-src/renderers/common/Textures.js(89,40): error TS2339: Property 'width' does not exist on type 'Vector3'.
-src/renderers/common/Textures.js(89,54): error TS2339: Property 'height' does not exist on type 'Vector3'.
-src/renderers/common/Textures.js(104,33): error TS2339: Property 'width' does not exist on type 'Vector3'.
-src/renderers/common/Textures.js(105,34): error TS2339: Property 'height' does not exist on type 'Vector3'.
-src/renderers/common/Textures.js(232,11): error TS2339: Property 'width' does not exist on type 'Vector3'.
-src/renderers/common/Textures.js(232,18): error TS2339: Property 'height' does not exist on type 'Vector3'.
-src/renderers/common/Textures.js(232,26): error TS2339: Property 'depth' does not exist on type 'Vector3'.
-src/renderers/common/Textures.js(368,11): error TS2339: Property 'width' does not exist on type 'Vector3'.
-src/renderers/common/Textures.js(369,11): error TS2339: Property 'height' does not exist on type 'Vector3'.
-src/renderers/common/Textures.js(370,11): error TS2339: Property 'depth' does not exist on type 'Vector3'.
-src/renderers/common/Textures.js(374,11): error TS2339: Property 'width' does not exist on type 'Vector3'.
-src/renderers/common/Textures.js(374,26): error TS2339: Property 'height' does not exist on type 'Vector3'.
-src/renderers/common/Textures.js(374,42): error TS2339: Property 'depth' does not exist on type 'Vector3'.
-src/renderers/common/TimestampQueryPool.js(85,15): error TS1064: The return type of an async function or method must be the global Promise<T> type. Did you mean to write 'Promise<number>'?
-src/renderers/common/TimestampQueryPool.js(85,15): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+src/renderers/common/Textures.js(70,25): error TS2339: Property 'width' does not exist on type 'Vector3'.
+src/renderers/common/Textures.js(71,26): error TS2339: Property 'height' does not exist on type 'Vector3'.
+src/renderers/common/Textures.js(80,49): error TS2339: Property 'depth' does not exist on type 'Vector3'.
+src/renderers/common/Textures.js(86,20): error TS2554: Expected 2-10 arguments, but got 0.
+src/renderers/common/Textures.js(94,36): error TS2339: Property 'depth' does not exist on type 'Vector3'.
+src/renderers/common/Textures.js(100,40): error TS2339: Property 'width' does not exist on type 'Vector3'.
+src/renderers/common/Textures.js(100,54): error TS2339: Property 'height' does not exist on type 'Vector3'.
+src/renderers/common/Textures.js(115,33): error TS2339: Property 'width' does not exist on type 'Vector3'.
+src/renderers/common/Textures.js(116,34): error TS2339: Property 'height' does not exist on type 'Vector3'.
+src/renderers/common/Textures.js(150,70): error TS2339: Property 'depth' does not exist on type 'Vector3'.
+src/renderers/common/Textures.js(244,11): error TS2339: Property 'width' does not exist on type 'Vector3'.
+src/renderers/common/Textures.js(244,18): error TS2339: Property 'height' does not exist on type 'Vector3'.
+src/renderers/common/Textures.js(244,26): error TS2339: Property 'depth' does not exist on type 'Vector3'.
+src/renderers/common/Textures.js(380,11): error TS2339: Property 'width' does not exist on type 'Vector3'.
+src/renderers/common/Textures.js(381,11): error TS2339: Property 'height' does not exist on type 'Vector3'.
+src/renderers/common/Textures.js(382,11): error TS2339: Property 'depth' does not exist on type 'Vector3'.
+src/renderers/common/Textures.js(386,11): error TS2339: Property 'width' does not exist on type 'Vector3'.
+src/renderers/common/Textures.js(386,26): error TS2339: Property 'height' does not exist on type 'Vector3'.
+src/renderers/common/Textures.js(386,42): error TS2339: Property 'depth' does not exist on type 'Vector3'.
+src/renderers/common/TimestampQueryPool.js(77,15): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+src/renderers/common/TimestampQueryPool.js(86,15): error TS1064: The return type of an async function or method must be the global Promise<T> type. Did you mean to write 'Promise<number>'?
+src/renderers/common/TimestampQueryPool.js(86,15): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
 src/renderers/common/UniformsGroup.js(109,21): error TS2341: Property '_buffer' is private and only accessible within class 'Buffer'.
 src/renderers/common/UniformsGroup.js(117,9): error TS2341: Property '_buffer' is private and only accessible within class 'Buffer'.
 src/renderers/common/UniformsGroup.js(203,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
-src/renderers/common/XRManager.js(82,17): error TS2339: Property 'viewport' does not exist on type 'PerspectiveCamera'.
-src/renderers/common/XRManager.js(91,17): error TS2339: Property 'viewport' does not exist on type 'PerspectiveCamera'.
-src/renderers/common/XRManager.js(515,3): error TS2322: Type 'XRReferenceSpace | null' is not assignable to type 'XRReferenceSpace'.
-src/renderers/common/XRManager.js(579,17): error TS2339: Property 'stencil' does not exist on type 'any[]'.
-src/renderers/common/XRManager.js(586,17): error TS2339: Property 'stencil' does not exist on type 'any[]'.
-src/renderers/common/XRManager.js(588,31): error TS2339: Property 'stencil' does not exist on type 'any[]'.
-src/renderers/common/XRManager.js(598,9): error TS2339: Property 'position' does not exist on type 'Mesh'.
-src/renderers/common/XRManager.js(599,9): error TS2339: Property 'quaternion' does not exist on type 'Mesh'.
-src/renderers/common/XRManager.js(624,10): error TS2339: Property 'xrlayer' does not exist on type '{ type: string; width: any; height: any; translation: any; quaternion: any; pixelwidth: any; pixelheight: any; plane: Mesh; material: MeshBasicMaterial; rendercall: any; renderTarget: XRRenderTarget; }'.
-src/renderers/common/XRManager.js(627,4): error TS18048: 'xrlayers' is possibly 'undefined'.
-src/renderers/common/XRManager.js(627,28): error TS2339: Property 'xrlayer' does not exist on type '{ type: string; width: any; height: any; translation: any; quaternion: any; pixelwidth: any; pixelheight: any; plane: Mesh; material: MeshBasicMaterial; rendercall: any; renderTarget: XRRenderTarget; }'.
-src/renderers/common/XRManager.js(652,17): error TS2339: Property 'stencil' does not exist on type 'any[]'.
-src/renderers/common/XRManager.js(659,17): error TS2339: Property 'stencil' does not exist on type 'any[]'.
-src/renderers/common/XRManager.js(661,31): error TS2339: Property 'stencil' does not exist on type 'any[]'.
-src/renderers/common/XRManager.js(671,9): error TS2339: Property 'position' does not exist on type 'Mesh'.
-src/renderers/common/XRManager.js(672,9): error TS2339: Property 'quaternion' does not exist on type 'Mesh'.
-src/renderers/common/XRManager.js(698,10): error TS2339: Property 'xrlayer' does not exist on type '{ type: string; radius: any; centralAngle: any; aspectratio: any; translation: any; quaternion: any; pixelwidth: any; pixelheight: any; plane: Mesh; material: MeshBasicMaterial; rendercall: any; renderTarget: XRRenderTarget; }'.
-src/renderers/common/XRManager.js(701,4): error TS18048: 'xrlayers' is possibly 'undefined'.
-src/renderers/common/XRManager.js(701,28): error TS2339: Property 'xrlayer' does not exist on type '{ type: string; radius: any; centralAngle: any; aspectratio: any; translation: any; quaternion: any; pixelwidth: any; pixelheight: any; plane: Mesh; material: MeshBasicMaterial; rendercall: any; renderTarget: XRRenderTarget; }'.
-src/renderers/common/XRManager.js(732,24): error TS2531: Object is possibly 'null'.
-src/renderers/common/XRManager.js(732,68): error TS2345: Argument of type 'XRFrame | null' is not assignable to parameter of type 'XRFrame'.
-src/renderers/common/XRManager.js(769,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/common/XRManager.js(778,22): error TS18047: 'gl' is possibly 'null'.
-src/renderers/common/XRManager.js(786,40): error TS2769: No overload matches this call.
-src/renderers/common/XRManager.js(787,45): error TS2769: No overload matches this call.
-src/renderers/common/XRManager.js(788,43): error TS2769: No overload matches this call.
-src/renderers/common/XRManager.js(789,41): error TS2769: No overload matches this call.
-src/renderers/common/XRManager.js(790,46): error TS2769: No overload matches this call.
-src/renderers/common/XRManager.js(791,44): error TS2769: No overload matches this call.
-src/renderers/common/XRManager.js(792,37): error TS2769: No overload matches this call.
-src/renderers/common/XRManager.js(793,52): error TS2769: No overload matches this call.
-src/renderers/common/XRManager.js(816,41): error TS18047: 'gl' is possibly 'null'.
-src/renderers/common/XRManager.js(816,63): error TS18047: 'gl' is possibly 'null'.
-src/renderers/common/XRManager.js(823,19): error TS18047: 'gl' is possibly 'null'.
-src/renderers/common/XRManager.js(828,52): error TS2345: Argument of type 'WebGL2RenderingContext | null' is not assignable to parameter of type 'WebGLRenderingContext'.
-src/renderers/common/XRManager.js(829,58): error TS2345: Argument of type '{ colorFormat: 32856; depthFormat: 35056 | 33190 | null; scaleFactor: number; }' is not assignable to parameter of type 'XRProjectionLayerInit'.
-src/renderers/common/XRManager.js(845,92): error TS2345: Argument of type 'number | null' is not assignable to parameter of type 'number | undefined'.
-src/renderers/common/XRManager.js(847,16): error TS18047: 'attributes' is possibly 'null'.
-src/renderers/common/XRManager.js(848,29): error TS2367: This comparison appears to be unintentional because the types 'number' and 'boolean' have no overlap.
-src/renderers/common/XRManager.js(849,31): error TS2367: This comparison appears to be unintentional because the types 'number' and 'boolean' have no overlap.
-src/renderers/common/XRManager.js(856,28): error TS18048: 'session.enabledFeatures' is possibly 'undefined'.
-src/renderers/common/XRManager.js(892,52): error TS2345: Argument of type 'WebGL2RenderingContext | null' is not assignable to parameter of type 'WebGL2RenderingContext | WebGLRenderingContext'.
-src/renderers/common/XRManager.js(917,23): error TS2345: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
-src/renderers/common/XRManager.js(1067,40): error TS2339: Property 'position' does not exist on type 'ArrayCamera'.
-src/renderers/common/XRManager.js(1067,57): error TS2339: Property 'quaternion' does not exist on type 'ArrayCamera'.
-src/renderers/common/XRManager.js(1067,76): error TS2339: Property 'scale' does not exist on type 'ArrayCamera'.
-src/renderers/common/XRManager.js(1070,37): error TS2339: Property 'position' does not exist on type 'ArrayCamera'.
-src/renderers/common/XRManager.js(1070,54): error TS2339: Property 'quaternion' does not exist on type 'ArrayCamera'.
-src/renderers/common/XRManager.js(1070,73): error TS2339: Property 'scale' does not exist on type 'ArrayCamera'.
-src/renderers/common/XRManager.js(1187,24): error TS2339: Property '_renderer' does not exist on type 'onSessionEnd'.
-src/renderers/common/XRManager.js(1189,2): error TS18048: 'session' is possibly 'undefined'.
-src/renderers/common/XRManager.js(1189,46): error TS2339: Property '_onSessionEvent' does not exist on type 'onSessionEnd'.
-src/renderers/common/XRManager.js(1190,2): error TS18048: 'session' is possibly 'undefined'.
-src/renderers/common/XRManager.js(1190,51): error TS2339: Property '_onSessionEvent' does not exist on type 'onSessionEnd'.
-src/renderers/common/XRManager.js(1191,2): error TS18048: 'session' is possibly 'undefined'.
-src/renderers/common/XRManager.js(1191,49): error TS2339: Property '_onSessionEvent' does not exist on type 'onSessionEnd'.
-src/renderers/common/XRManager.js(1192,2): error TS18048: 'session' is possibly 'undefined'.
-src/renderers/common/XRManager.js(1192,47): error TS2339: Property '_onSessionEvent' does not exist on type 'onSessionEnd'.
-src/renderers/common/XRManager.js(1193,2): error TS18048: 'session' is possibly 'undefined'.
-src/renderers/common/XRManager.js(1193,52): error TS2339: Property '_onSessionEvent' does not exist on type 'onSessionEnd'.
-src/renderers/common/XRManager.js(1194,2): error TS18048: 'session' is possibly 'undefined'.
-src/renderers/common/XRManager.js(1194,50): error TS2339: Property '_onSessionEvent' does not exist on type 'onSessionEnd'.
-src/renderers/common/XRManager.js(1195,2): error TS18048: 'session' is possibly 'undefined'.
-src/renderers/common/XRManager.js(1195,43): error TS2339: Property '_onSessionEnd' does not exist on type 'onSessionEnd'.
-src/renderers/common/XRManager.js(1196,2): error TS18048: 'session' is possibly 'undefined'.
-src/renderers/common/XRManager.js(1196,58): error TS2339: Property '_onInputSourcesChange' does not exist on type 'onSessionEnd'.
-src/renderers/common/XRManager.js(1198,28): error TS2339: Property '_controllers' does not exist on type 'onSessionEnd'.
-src/renderers/common/XRManager.js(1200,28): error TS2339: Property '_controllerInputSources' does not exist on type 'onSessionEnd'.
-src/renderers/common/XRManager.js(1204,8): error TS2339: Property '_controllerInputSources' does not exist on type 'onSessionEnd'.
-src/renderers/common/XRManager.js(1206,8): error TS2339: Property '_controllers' does not exist on type 'onSessionEnd'.
-src/renderers/common/XRManager.js(1223,12): error TS2339: Property '_supportsLayers' does not exist on type 'onSessionEnd'.
-src/renderers/common/XRManager.js(1225,29): error TS2339: Property '_layers' does not exist on type 'onSessionEnd'.
-src/renderers/common/XRManager.js(1267,45): error TS2339: Property '_currentAnimationLoop' does not exist on type 'onSessionEnd'.
-src/renderers/common/XRManager.js(1268,39): error TS2339: Property '_currentAnimationContext' does not exist on type 'onSessionEnd'.
-src/renderers/common/XRManager.js(1271,31): error TS2339: Property '_currentPixelRatio' does not exist on type 'onSessionEnd'.
-src/renderers/common/XRManager.js(1272,25): error TS2339: Property '_currentSize' does not exist on type 'onSessionEnd'.
-src/renderers/common/XRManager.js(1272,50): error TS2339: Property '_currentSize' does not exist on type 'onSessionEnd'.
-src/renderers/common/XRManager.js(1274,7): error TS2339: Property 'dispatchEvent' does not exist on type 'onSessionEnd'.
-src/renderers/common/XRManager.js(1385,24): error TS2339: Property '_cameraXR' does not exist on type 'onAnimationFrame'.
-src/renderers/common/XRManager.js(1386,24): error TS2339: Property '_renderer' does not exist on type 'onAnimationFrame'.
-src/renderers/common/XRManager.js(1389,27): error TS2339: Property '_glBaseLayer' does not exist on type 'onAnimationFrame'.
-src/renderers/common/XRManager.js(1391,30): error TS2339: Property 'getReferenceSpace' does not exist on type 'onAnimationFrame'.
-src/renderers/common/XRManager.js(1400,13): error TS2339: Property '_glBaseLayer' does not exist on type 'onAnimationFrame'.
-src/renderers/common/XRManager.js(1423,14): error TS2339: Property '_useLayers' does not exist on type 'onAnimationFrame'.
-src/renderers/common/XRManager.js(1425,29): error TS2339: Property '_glBinding' does not exist on type 'onAnimationFrame'.
-src/renderers/common/XRManager.js(1425,62): error TS2339: Property '_glProjLayer' does not exist on type 'onAnimationFrame'.
-src/renderers/common/XRManager.js(1432,12): error TS2339: Property '_xrRenderTarget' does not exist on type 'onAnimationFrame'.
-src/renderers/common/XRManager.js(1434,12): error TS2339: Property '_glProjLayer' does not exist on type 'onAnimationFrame'.
-src/renderers/common/XRManager.js(1445,22): error TS2339: Property '_cameras' does not exist on type 'onAnimationFrame'.
-src/renderers/common/XRManager.js(1452,10): error TS2339: Property '_cameras' does not exist on type 'onAnimationFrame'.
-src/renderers/common/XRManager.js(1477,40): error TS2339: Property '_xrRenderTarget' does not exist on type 'onAnimationFrame'.
-src/renderers/common/XRManager.js(1483,28): error TS2339: Property '_controllers' does not exist on type 'onAnimationFrame'.
-src/renderers/common/XRManager.js(1485,28): error TS2339: Property '_controllerInputSources' does not exist on type 'onAnimationFrame'.
-src/renderers/common/XRManager.js(1486,27): error TS2339: Property '_controllers' does not exist on type 'onAnimationFrame'.
-src/renderers/common/XRManager.js(1496,12): error TS2339: Property '_currentAnimationLoop' does not exist on type 'onAnimationFrame'.
-src/renderers/common/XRManager.js(1496,41): error TS2339: Property '_currentAnimationLoop' does not exist on type 'onAnimationFrame'.
-src/renderers/common/XRManager.js(1500,8): error TS2339: Property 'dispatchEvent' does not exist on type 'onAnimationFrame'.
+src/renderers/common/XRManager.js(84,17): error TS2339: Property 'viewport' does not exist on type 'PerspectiveCamera'.
+src/renderers/common/XRManager.js(93,17): error TS2339: Property 'viewport' does not exist on type 'PerspectiveCamera'.
+src/renderers/common/XRManager.js(537,3): error TS2322: Type 'XRReferenceSpace | null' is not assignable to type 'XRReferenceSpace'.
+src/renderers/common/XRManager.js(612,17): error TS2339: Property 'stencil' does not exist on type 'any[]'.
+src/renderers/common/XRManager.js(619,17): error TS2339: Property 'stencil' does not exist on type 'any[]'.
+src/renderers/common/XRManager.js(621,31): error TS2339: Property 'stencil' does not exist on type 'any[]'.
+src/renderers/common/XRManager.js(631,9): error TS2339: Property 'position' does not exist on type 'Mesh'.
+src/renderers/common/XRManager.js(632,9): error TS2339: Property 'quaternion' does not exist on type 'Mesh'.
+src/renderers/common/XRManager.js(657,10): error TS2339: Property 'xrlayer' does not exist on type '{ type: string; width: any; height: any; translation: any; quaternion: any; pixelwidth: any; pixelheight: any; plane: Mesh; material: MeshBasicMaterial; rendercall: any; renderTarget: XRRenderTarget; }'.
+src/renderers/common/XRManager.js(660,4): error TS18048: 'xrlayers' is possibly 'undefined'.
+src/renderers/common/XRManager.js(660,28): error TS2339: Property 'xrlayer' does not exist on type '{ type: string; width: any; height: any; translation: any; quaternion: any; pixelwidth: any; pixelheight: any; plane: Mesh; material: MeshBasicMaterial; rendercall: any; renderTarget: XRRenderTarget; }'.
+src/renderers/common/XRManager.js(685,17): error TS2339: Property 'stencil' does not exist on type 'any[]'.
+src/renderers/common/XRManager.js(692,17): error TS2339: Property 'stencil' does not exist on type 'any[]'.
+src/renderers/common/XRManager.js(694,31): error TS2339: Property 'stencil' does not exist on type 'any[]'.
+src/renderers/common/XRManager.js(704,9): error TS2339: Property 'position' does not exist on type 'Mesh'.
+src/renderers/common/XRManager.js(705,9): error TS2339: Property 'quaternion' does not exist on type 'Mesh'.
+src/renderers/common/XRManager.js(731,10): error TS2339: Property 'xrlayer' does not exist on type '{ type: string; radius: any; centralAngle: any; aspectratio: any; translation: any; quaternion: any; pixelwidth: any; pixelheight: any; plane: Mesh; material: MeshBasicMaterial; rendercall: any; renderTarget: XRRenderTarget; }'.
+src/renderers/common/XRManager.js(734,4): error TS18048: 'xrlayers' is possibly 'undefined'.
+src/renderers/common/XRManager.js(734,28): error TS2339: Property 'xrlayer' does not exist on type '{ type: string; radius: any; centralAngle: any; aspectratio: any; translation: any; quaternion: any; pixelwidth: any; pixelheight: any; plane: Mesh; material: MeshBasicMaterial; rendercall: any; renderTarget: XRRenderTarget; }'.
+src/renderers/common/XRManager.js(765,24): error TS2531: Object is possibly 'null'.
+src/renderers/common/XRManager.js(765,68): error TS2345: Argument of type 'XRFrame | null' is not assignable to parameter of type 'XRFrame'.
+src/renderers/common/XRManager.js(802,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/common/XRManager.js(811,22): error TS18047: 'gl' is possibly 'null'.
+src/renderers/common/XRManager.js(819,40): error TS2769: No overload matches this call.
+src/renderers/common/XRManager.js(820,45): error TS2769: No overload matches this call.
+src/renderers/common/XRManager.js(821,43): error TS2769: No overload matches this call.
+src/renderers/common/XRManager.js(822,41): error TS2769: No overload matches this call.
+src/renderers/common/XRManager.js(823,46): error TS2769: No overload matches this call.
+src/renderers/common/XRManager.js(824,44): error TS2769: No overload matches this call.
+src/renderers/common/XRManager.js(825,37): error TS2769: No overload matches this call.
+src/renderers/common/XRManager.js(826,52): error TS2769: No overload matches this call.
+src/renderers/common/XRManager.js(849,41): error TS18047: 'gl' is possibly 'null'.
+src/renderers/common/XRManager.js(849,63): error TS18047: 'gl' is possibly 'null'.
+src/renderers/common/XRManager.js(856,19): error TS18047: 'gl' is possibly 'null'.
+src/renderers/common/XRManager.js(863,26): error TS2339: Property 'textureType' does not exist on type '{ colorFormat: 32856; depthFormat: 35056 | 33190 | null; scaleFactor: number; }'.
+src/renderers/common/XRManager.js(868,52): error TS2345: Argument of type 'WebGL2RenderingContext | null' is not assignable to parameter of type 'WebGLRenderingContext'.
+src/renderers/common/XRManager.js(869,58): error TS2345: Argument of type '{ colorFormat: 32856; depthFormat: 35056 | 33190 | null; scaleFactor: number; }' is not assignable to parameter of type 'XRProjectionLayerInit'.
+src/renderers/common/XRManager.js(882,6): error TS2322: Type 'number | null' is not assignable to type 'number'.
+src/renderers/common/XRManager.js(883,6): error TS2322: Type 'number | null' is not assignable to type 'number'.
+src/renderers/common/XRManager.js(887,92): error TS2345: Argument of type 'number | null' is not assignable to parameter of type 'number | undefined'.
+src/renderers/common/XRManager.js(901,16): error TS18047: 'attributes' is possibly 'null'.
+src/renderers/common/XRManager.js(902,29): error TS2367: This comparison appears to be unintentional because the types 'number' and 'boolean' have no overlap.
+src/renderers/common/XRManager.js(903,31): error TS2367: This comparison appears to be unintentional because the types 'number' and 'boolean' have no overlap.
+src/renderers/common/XRManager.js(911,28): error TS18048: 'session.enabledFeatures' is possibly 'undefined'.
+src/renderers/common/XRManager.js(949,52): error TS2345: Argument of type 'WebGL2RenderingContext | null' is not assignable to parameter of type 'WebGL2RenderingContext | WebGLRenderingContext'.
+src/renderers/common/XRManager.js(976,23): error TS2345: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+src/renderers/common/XRManager.js(1127,40): error TS2339: Property 'position' does not exist on type 'ArrayCamera'.
+src/renderers/common/XRManager.js(1127,57): error TS2339: Property 'quaternion' does not exist on type 'ArrayCamera'.
+src/renderers/common/XRManager.js(1127,76): error TS2339: Property 'scale' does not exist on type 'ArrayCamera'.
+src/renderers/common/XRManager.js(1130,37): error TS2339: Property 'position' does not exist on type 'ArrayCamera'.
+src/renderers/common/XRManager.js(1130,54): error TS2339: Property 'quaternion' does not exist on type 'ArrayCamera'.
+src/renderers/common/XRManager.js(1130,73): error TS2339: Property 'scale' does not exist on type 'ArrayCamera'.
+src/renderers/common/XRManager.js(1247,24): error TS2339: Property '_renderer' does not exist on type 'onSessionEnd'.
+src/renderers/common/XRManager.js(1249,2): error TS18048: 'session' is possibly 'undefined'.
+src/renderers/common/XRManager.js(1249,46): error TS2339: Property '_onSessionEvent' does not exist on type 'onSessionEnd'.
+src/renderers/common/XRManager.js(1250,2): error TS18048: 'session' is possibly 'undefined'.
+src/renderers/common/XRManager.js(1250,51): error TS2339: Property '_onSessionEvent' does not exist on type 'onSessionEnd'.
+src/renderers/common/XRManager.js(1251,2): error TS18048: 'session' is possibly 'undefined'.
+src/renderers/common/XRManager.js(1251,49): error TS2339: Property '_onSessionEvent' does not exist on type 'onSessionEnd'.
+src/renderers/common/XRManager.js(1252,2): error TS18048: 'session' is possibly 'undefined'.
+src/renderers/common/XRManager.js(1252,47): error TS2339: Property '_onSessionEvent' does not exist on type 'onSessionEnd'.
+src/renderers/common/XRManager.js(1253,2): error TS18048: 'session' is possibly 'undefined'.
+src/renderers/common/XRManager.js(1253,52): error TS2339: Property '_onSessionEvent' does not exist on type 'onSessionEnd'.
+src/renderers/common/XRManager.js(1254,2): error TS18048: 'session' is possibly 'undefined'.
+src/renderers/common/XRManager.js(1254,50): error TS2339: Property '_onSessionEvent' does not exist on type 'onSessionEnd'.
+src/renderers/common/XRManager.js(1255,2): error TS18048: 'session' is possibly 'undefined'.
+src/renderers/common/XRManager.js(1255,43): error TS2339: Property '_onSessionEnd' does not exist on type 'onSessionEnd'.
+src/renderers/common/XRManager.js(1256,2): error TS18048: 'session' is possibly 'undefined'.
+src/renderers/common/XRManager.js(1256,58): error TS2339: Property '_onInputSourcesChange' does not exist on type 'onSessionEnd'.
+src/renderers/common/XRManager.js(1258,28): error TS2339: Property '_controllers' does not exist on type 'onSessionEnd'.
+src/renderers/common/XRManager.js(1260,28): error TS2339: Property '_controllerInputSources' does not exist on type 'onSessionEnd'.
+src/renderers/common/XRManager.js(1264,8): error TS2339: Property '_controllerInputSources' does not exist on type 'onSessionEnd'.
+src/renderers/common/XRManager.js(1266,8): error TS2339: Property '_controllers' does not exist on type 'onSessionEnd'.
+src/renderers/common/XRManager.js(1283,12): error TS2339: Property '_supportsLayers' does not exist on type 'onSessionEnd'.
+src/renderers/common/XRManager.js(1285,29): error TS2339: Property '_layers' does not exist on type 'onSessionEnd'.
+src/renderers/common/XRManager.js(1328,45): error TS2339: Property '_currentAnimationLoop' does not exist on type 'onSessionEnd'.
+src/renderers/common/XRManager.js(1329,39): error TS2339: Property '_currentAnimationContext' does not exist on type 'onSessionEnd'.
+src/renderers/common/XRManager.js(1332,31): error TS2339: Property '_currentPixelRatio' does not exist on type 'onSessionEnd'.
+src/renderers/common/XRManager.js(1333,25): error TS2339: Property '_currentSize' does not exist on type 'onSessionEnd'.
+src/renderers/common/XRManager.js(1333,50): error TS2339: Property '_currentSize' does not exist on type 'onSessionEnd'.
+src/renderers/common/XRManager.js(1335,7): error TS2339: Property 'dispatchEvent' does not exist on type 'onSessionEnd'.
+src/renderers/common/XRManager.js(1446,24): error TS2339: Property '_cameraXR' does not exist on type 'onAnimationFrame'.
+src/renderers/common/XRManager.js(1447,24): error TS2339: Property '_renderer' does not exist on type 'onAnimationFrame'.
+src/renderers/common/XRManager.js(1450,27): error TS2339: Property '_glBaseLayer' does not exist on type 'onAnimationFrame'.
+src/renderers/common/XRManager.js(1452,30): error TS2339: Property 'getReferenceSpace' does not exist on type 'onAnimationFrame'.
+src/renderers/common/XRManager.js(1461,13): error TS2339: Property '_glBaseLayer' does not exist on type 'onAnimationFrame'.
+src/renderers/common/XRManager.js(1484,14): error TS2339: Property '_useLayers' does not exist on type 'onAnimationFrame'.
+src/renderers/common/XRManager.js(1486,29): error TS2339: Property '_glBinding' does not exist on type 'onAnimationFrame'.
+src/renderers/common/XRManager.js(1486,62): error TS2339: Property '_glProjLayer' does not exist on type 'onAnimationFrame'.
+src/renderers/common/XRManager.js(1493,12): error TS2339: Property '_xrRenderTarget' does not exist on type 'onAnimationFrame'.
+src/renderers/common/XRManager.js(1495,14): error TS2339: Property '_glProjLayer' does not exist on type 'onAnimationFrame'.
+src/renderers/common/XRManager.js(1495,55): error TS2339: Property '_useMultiview' does not exist on type 'onAnimationFrame'.
+src/renderers/common/XRManager.js(1506,22): error TS2339: Property '_cameras' does not exist on type 'onAnimationFrame'.
+src/renderers/common/XRManager.js(1513,10): error TS2339: Property '_cameras' does not exist on type 'onAnimationFrame'.
+src/renderers/common/XRManager.js(1538,40): error TS2339: Property '_xrRenderTarget' does not exist on type 'onAnimationFrame'.
+src/renderers/common/XRManager.js(1544,28): error TS2339: Property '_controllers' does not exist on type 'onAnimationFrame'.
+src/renderers/common/XRManager.js(1546,28): error TS2339: Property '_controllerInputSources' does not exist on type 'onAnimationFrame'.
+src/renderers/common/XRManager.js(1547,27): error TS2339: Property '_controllers' does not exist on type 'onAnimationFrame'.
+src/renderers/common/XRManager.js(1557,12): error TS2339: Property '_currentAnimationLoop' does not exist on type 'onAnimationFrame'.
+src/renderers/common/XRManager.js(1557,41): error TS2339: Property '_currentAnimationLoop' does not exist on type 'onAnimationFrame'.
+src/renderers/common/XRManager.js(1561,8): error TS2339: Property 'dispatchEvent' does not exist on type 'onAnimationFrame'.
 src/renderers/shaders/ShaderLib.js(303,11): error TS2339: Property 'physical' does not exist on type '{ basic: { uniforms: {}; vertexShader: string; fragmentShader: string; }; lambert: { uniforms: {}; vertexShader: string; fragmentShader: string; }; phong: { uniforms: {}; vertexShader: string; fragmentShader: string; }; ... 13 more ...; shadow: { ...; }; }'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(246,15): error TS2551: Property 'isPBOTexture' does not exist on type 'DataTexture'. Did you mean 'isTexture'?
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(254,59): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
@@ -5625,16 +5628,16 @@ src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(476,93): error TS2322: Typ
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(800,46): error TS2538: Type 'null' cannot be used as an index type.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(831,46): error TS2538: Type 'null' cannot be used as an index type.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(956,35): error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1258,27): error TS2339: Property 'name' does not exist on type 'Node'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1281,19): error TS2339: Property 'outputNode' does not exist on type 'Node'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1302,37): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any"'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1303,47): error TS2554: Expected 0 arguments, but got 1.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1310,49): error TS2345: Argument of type '{} | undefined' is not assignable to parameter of type 'Object'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1311,53): error TS2345: Argument of type '{} | undefined' is not assignable to parameter of type 'Object'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1315,50): error TS2345: Argument of type '{} | undefined' is not assignable to parameter of type 'Object'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1336,61): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any" | undefined'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1337,48): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any" | undefined'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1346,56): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any"'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1273,27): error TS2339: Property 'name' does not exist on type 'Node'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1296,19): error TS2339: Property 'outputNode' does not exist on type 'Node'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1317,37): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any"'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1318,47): error TS2554: Expected 0 arguments, but got 1.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1325,49): error TS2345: Argument of type '{} | undefined' is not assignable to parameter of type 'Object'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1326,53): error TS2345: Argument of type '{} | undefined' is not assignable to parameter of type 'Object'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1330,50): error TS2345: Argument of type '{} | undefined' is not assignable to parameter of type 'Object'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1351,61): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any" | undefined'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1352,48): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any" | undefined'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js(1361,56): error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any"'.
 src/renderers/webgl-fallback/utils/WebGLAttributeUtils.js(175,4): error TS2322: Type 'DualAttributeData' is not assignable to type '{ bufferGPU: any; bufferType: number; type: any; byteLength: number; bytesPerElement: number; version: any; pbo: any; isInteger: boolean; id: number; }'.
 src/renderers/webgl-fallback/utils/WebGLCapabilities.js(58,3): error TS2322: Type 'number | null' is not assignable to type 'number'.
 src/renderers/webgl-fallback/utils/WebGLExtensions.js(34,3): error TS2322: Type 'string[] | null' is not assignable to type 'string[]'.
@@ -5693,304 +5696,310 @@ src/renderers/webgl-fallback/utils/WebGLUtils.js(279,36): error TS2345: Argument
 src/renderers/webgl-fallback/utils/WebGLUtils.js(299,5): error TS2810: Expected 1 argument, but got 0. 'new Promise()' needs a JSDoc hint to produce a 'resolve' that can be called without arguments.
 src/renderers/webgl-fallback/WebGLBackend.js(183,13): error TS2314: Generic type 'WeakSet<T>' requires 1 type argument(s).
 src/renderers/webgl-fallback/WebGLBackend.js(204,3): error TS2322: Type 'null' is not assignable to type 'WebGLFramebuffer'.
-src/renderers/webgl-fallback/WebGLBackend.js(295,16): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(304,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/webgl-fallback/WebGLBackend.js(308,9): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(308,20): error TS2341: Property '_clientWaitAsync' is private and only accessible within class 'WebGLUtils'.
-src/renderers/webgl-fallback/WebGLBackend.js(316,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/webgl-fallback/WebGLBackend.js(320,22): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(322,8): error TS18047: 'attributes' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(324,10): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(353,81): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(357,58): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(357,80): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(363,11): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(389,67): error TS2345: Argument of type 'WebGL2RenderingContext | null' is not assignable to parameter of type 'WebGL2RenderingContext | WebGLRenderingContext'.
-src/renderers/webgl-fallback/WebGLBackend.js(431,3): error TS2322: Type 'WebGL2RenderingContext | null' is not assignable to type 'WebGL2RenderingContext'.
-src/renderers/webgl-fallback/WebGLBackend.js(454,4): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(454,26): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(454,49): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(462,4): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(508,3): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(516,5): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(516,18): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(554,18): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(560,5): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(560,28): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(296,16): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(305,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/webgl-fallback/WebGLBackend.js(309,9): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(309,20): error TS2341: Property '_clientWaitAsync' is private and only accessible within class 'WebGLUtils'.
+src/renderers/webgl-fallback/WebGLBackend.js(317,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/webgl-fallback/WebGLBackend.js(321,22): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(323,8): error TS18047: 'attributes' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(325,10): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(354,81): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(358,58): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(358,80): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(364,11): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(390,67): error TS2345: Argument of type 'WebGL2RenderingContext | null' is not assignable to parameter of type 'WebGL2RenderingContext | WebGLRenderingContext'.
+src/renderers/webgl-fallback/WebGLBackend.js(432,3): error TS2322: Type 'WebGL2RenderingContext | null' is not assignable to type 'WebGL2RenderingContext'.
+src/renderers/webgl-fallback/WebGLBackend.js(455,4): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(455,26): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(455,49): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(463,4): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(509,3): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(517,5): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(517,18): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(555,18): error TS18047: 'gl' is possibly 'null'.
 src/renderers/webgl-fallback/WebGLBackend.js(561,5): error TS18047: 'state' is possibly 'null'.
 src/renderers/webgl-fallback/WebGLBackend.js(561,28): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(573,7): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(573,107): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(577,8): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(577,37): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(583,7): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(583,131): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(587,8): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(587,34): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(610,5): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(610,27): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(610,50): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(654,11): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(654,40): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(656,12): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(656,41): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(659,7): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(711,3): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(724,3): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(777,25): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(562,5): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(562,28): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(574,7): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(574,107): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(578,8): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(578,37): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(584,7): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(584,131): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(588,8): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(588,34): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(611,5): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(611,27): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(611,50): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(655,11): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(655,40): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(657,12): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(657,41): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(660,7): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(712,3): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(725,3): error TS18047: 'state' is possibly 'null'.
 src/renderers/webgl-fallback/WebGLBackend.js(778,25): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(779,27): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(798,17): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(802,5): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(779,25): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(780,27): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(799,17): error TS2531: Object is possibly 'null'.
 src/renderers/webgl-fallback/WebGLBackend.js(803,5): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(815,8): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(815,26): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(819,8): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(819,26): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(829,6): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(829,24): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(833,6): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(833,24): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(837,6): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(837,24): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(857,3): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(857,26): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(857,42): error TS2345: Argument of type 'null' is not assignable to parameter of type 'WebGLFramebuffer'.
-src/renderers/webgl-fallback/WebGLBackend.js(877,4): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(877,15): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(894,4): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(898,3): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(904,3): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(904,29): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(804,5): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(816,8): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(816,26): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(820,8): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(820,26): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(830,6): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(830,24): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(834,6): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(834,24): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(838,6): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(838,24): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(858,3): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(858,26): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(858,42): error TS2345: Argument of type 'null' is not assignable to parameter of type 'WebGLFramebuffer'.
+src/renderers/webgl-fallback/WebGLBackend.js(878,4): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(878,15): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(895,4): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(899,3): error TS18047: 'state' is possibly 'null'.
 src/renderers/webgl-fallback/WebGLBackend.js(905,3): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(905,30): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(909,4): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(909,28): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(909,57): error TS2339: Property 'count' does not exist on type 'Node'.
-src/renderers/webgl-fallback/WebGLBackend.js(913,4): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(913,19): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(913,45): error TS2339: Property 'count' does not exist on type 'Node'.
-src/renderers/webgl-fallback/WebGLBackend.js(917,3): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(905,29): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(906,3): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(906,30): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(910,4): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(910,28): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(910,57): error TS2339: Property 'count' does not exist on type 'Node'.
+src/renderers/webgl-fallback/WebGLBackend.js(914,4): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(914,19): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(914,45): error TS2339: Property 'count' does not exist on type 'Node'.
 src/renderers/webgl-fallback/WebGLBackend.js(918,3): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(918,29): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(928,5): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(951,3): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(951,15): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1002,3): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1004,3): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1038,3): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1048,5): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1048,18): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1056,19): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1058,5): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1058,20): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1072,26): error TS18047: 'renderer' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1072,42): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1073,37): error TS18047: 'renderer' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1073,53): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1074,29): error TS18047: 'renderer' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1074,45): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1075,33): error TS18047: 'renderer' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1075,49): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1080,5): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1081,5): error TS18047: 'renderer' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1081,21): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1085,5): error TS18047: 'renderer' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1085,21): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1096,3): error TS18047: 'renderer' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1104,4): error TS18047: 'renderer' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(919,3): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(919,29): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(929,5): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(952,3): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(952,15): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1003,3): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1005,3): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1039,3): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1049,5): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1049,18): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1057,19): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1059,5): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1059,20): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1073,26): error TS18047: 'renderer' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1073,42): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1074,37): error TS18047: 'renderer' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1074,53): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1075,29): error TS18047: 'renderer' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1075,45): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1076,33): error TS18047: 'renderer' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1076,49): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1081,5): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1082,5): error TS18047: 'renderer' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1082,21): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1086,5): error TS18047: 'renderer' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1086,21): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1097,3): error TS18047: 'renderer' is possibly 'null'.
 src/renderers/webgl-fallback/WebGLBackend.js(1105,4): error TS18047: 'renderer' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1109,4): error TS18047: 'renderer' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1121,6): error TS18047: 'renderer' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1129,6): error TS18047: 'renderer' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1135,5): error TS18047: 'renderer' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1139,5): error TS18047: 'renderer' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1158,24): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1162,6): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1162,21): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1106,4): error TS18047: 'renderer' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1110,4): error TS18047: 'renderer' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1122,6): error TS18047: 'renderer' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1130,6): error TS18047: 'renderer' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1136,5): error TS18047: 'renderer' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1140,5): error TS18047: 'renderer' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1159,24): error TS18047: 'gl' is possibly 'null'.
 src/renderers/webgl-fallback/WebGLBackend.js(1163,6): error TS18047: 'gl' is possibly 'null'.
 src/renderers/webgl-fallback/WebGLBackend.js(1163,21): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1163,46): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1233,7): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1242,6): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1242,28): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1295,3): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1307,3): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1319,3): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1330,3): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1341,3): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1359,10): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1408,41): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1408,58): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1408,81): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1408,98): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1410,3): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1410,20): error TS2345: Argument of type 'WebGLShader | null' is not assignable to parameter of type 'WebGLShader'.
+src/renderers/webgl-fallback/WebGLBackend.js(1164,6): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1164,21): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1164,46): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1234,7): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1243,6): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1243,28): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1296,3): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1308,3): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1320,3): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1331,3): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1342,3): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1360,10): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1409,41): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1409,58): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1409,81): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1409,98): error TS18047: 'gl' is possibly 'null'.
 src/renderers/webgl-fallback/WebGLBackend.js(1411,3): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1411,21): error TS2345: Argument of type 'WebGLShader | null' is not assignable to parameter of type 'WebGLShader'.
-src/renderers/webgl-fallback/WebGLBackend.js(1434,19): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/webgl-fallback/WebGLBackend.js(1445,22): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1450,3): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1411,20): error TS2345: Argument of type 'WebGLShader | null' is not assignable to parameter of type 'WebGLShader'.
+src/renderers/webgl-fallback/WebGLBackend.js(1412,3): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1412,21): error TS2345: Argument of type 'WebGLShader | null' is not assignable to parameter of type 'WebGLShader'.
+src/renderers/webgl-fallback/WebGLBackend.js(1435,19): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/webgl-fallback/WebGLBackend.js(1446,22): error TS18047: 'gl' is possibly 'null'.
 src/renderers/webgl-fallback/WebGLBackend.js(1451,3): error TS18047: 'gl' is possibly 'null'.
 src/renderers/webgl-fallback/WebGLBackend.js(1452,3): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1467,11): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1470,7): error TS2810: Expected 1 argument, but got 0. 'new Promise()' needs a JSDoc hint to produce a 'resolve' that can be called without arguments.
-src/renderers/webgl-fallback/WebGLBackend.js(1533,18): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1541,79): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
-src/renderers/webgl-fallback/WebGLBackend.js(1565,23): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1565,23): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1567,9): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1567,45): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1578,50): error TS2345: Argument of type 'WebGL2RenderingContext | null' is not assignable to parameter of type 'WebGL2RenderingContext'.
-src/renderers/webgl-fallback/WebGLBackend.js(1579,52): error TS2345: Argument of type 'WebGL2RenderingContext | null' is not assignable to parameter of type 'WebGL2RenderingContext'.
-src/renderers/webgl-fallback/WebGLBackend.js(1582,45): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1583,28): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1583,64): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1614,8): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1614,44): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1620,3): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1657,22): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1676,3): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1453,3): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1468,11): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1471,7): error TS2810: Expected 1 argument, but got 0. 'new Promise()' needs a JSDoc hint to produce a 'resolve' that can be called without arguments.
+src/renderers/webgl-fallback/WebGLBackend.js(1534,18): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1542,79): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+src/renderers/webgl-fallback/WebGLBackend.js(1566,23): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1566,23): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1568,9): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1568,45): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1579,50): error TS2345: Argument of type 'WebGL2RenderingContext | null' is not assignable to parameter of type 'WebGL2RenderingContext'.
+src/renderers/webgl-fallback/WebGLBackend.js(1580,52): error TS2345: Argument of type 'WebGL2RenderingContext | null' is not assignable to parameter of type 'WebGL2RenderingContext'.
+src/renderers/webgl-fallback/WebGLBackend.js(1583,45): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1584,28): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1584,64): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1615,8): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1615,44): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1621,3): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1658,22): error TS18047: 'gl' is possibly 'null'.
 src/renderers/webgl-fallback/WebGLBackend.js(1677,3): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1679,3): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1682,4): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1685,3): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1687,8): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1687,44): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1694,3): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1710,35): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1710,83): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1718,35): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1718,83): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1771,35): error TS2554: Expected 1 arguments, but got 2.
-src/renderers/webgl-fallback/WebGLBackend.js(1797,23): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1799,5): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1799,20): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1678,3): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1680,3): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1683,4): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1686,3): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1688,8): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1688,44): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1695,3): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1711,35): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1711,83): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1719,35): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1719,83): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1772,35): error TS2554: Expected 1 arguments, but got 2.
+src/renderers/webgl-fallback/WebGLBackend.js(1798,23): error TS18047: 'gl' is possibly 'null'.
 src/renderers/webgl-fallback/WebGLBackend.js(1800,5): error TS18047: 'gl' is possibly 'null'.
 src/renderers/webgl-fallback/WebGLBackend.js(1800,20): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1800,45): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1826,14): error TS2591: Cannot find name 'Buffer'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
-src/renderers/webgl-fallback/WebGLBackend.js(1838,4): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1838,19): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1801,5): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1801,20): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1801,45): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1827,14): error TS2591: Cannot find name 'Buffer'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
 src/renderers/webgl-fallback/WebGLBackend.js(1839,4): error TS18047: 'gl' is possibly 'null'.
 src/renderers/webgl-fallback/WebGLBackend.js(1839,19): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1839,44): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1856,3): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1856,51): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1871,3): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1871,51): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1886,3): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1886,51): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1897,3): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1908,3): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1926,9): error TS18047: 'extensions' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1941,10): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1957,3): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(1970,3): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2000,31): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2027,10): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2029,5): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2029,28): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2041,6): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2041,31): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2041,47): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2041,69): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2054,26): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2060,8): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2060,36): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2066,64): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2066,92): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2070,9): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2070,34): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2070,62): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2078,6): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2084,27): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2085,6): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2093,42): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2093,72): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2099,63): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2099,91): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2107,9): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2107,37): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2112,9): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2112,34): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2112,62): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2128,6): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2128,29): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2133,41): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2133,71): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2134,6): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2135,7): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2148,6): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2148,29): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2156,62): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2156,78): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2156,100): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2160,7): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2160,32): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2160,48): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2160,70): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2166,41): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2166,71): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2171,7): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2171,28): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1840,4): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1840,19): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1840,44): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1857,3): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1857,51): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1872,3): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1872,51): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1887,3): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1887,51): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1898,3): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1909,3): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1927,9): error TS18047: 'extensions' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1942,10): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1958,3): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(1971,3): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2001,31): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2002,25): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2028,10): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2030,5): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2030,28): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2042,6): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2042,31): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2042,47): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2042,69): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2055,26): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2061,8): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2061,36): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2067,65): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2071,64): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2071,92): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2075,9): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2075,34): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2075,62): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2083,6): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2089,27): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2090,6): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2098,42): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2098,72): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2104,64): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2108,63): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2108,91): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2116,9): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2116,37): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2120,9): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2120,34): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2120,62): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2136,6): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2136,29): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2141,41): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2141,71): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2142,6): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2143,7): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2156,6): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2156,29): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2164,63): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2164,79): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2168,62): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2168,78): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2168,100): error TS18047: 'gl' is possibly 'null'.
 src/renderers/webgl-fallback/WebGLBackend.js(2172,7): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2172,35): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2172,63): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2180,63): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2180,91): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2184,8): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2184,33): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2184,61): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2200,15): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2202,6): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2202,29): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2210,32): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2212,7): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2212,28): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2214,31): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2218,43): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2218,73): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2226,7): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2226,42): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2227,7): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2227,35): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2227,51): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2227,77): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2237,27): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2238,7): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2172,32): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2172,48): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2172,70): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2178,41): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2178,71): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2183,7): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2183,28): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2184,7): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2184,35): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2184,63): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2192,64): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2196,63): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2196,91): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2200,8): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2200,33): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2200,61): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2216,15): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2218,6): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2218,29): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2226,32): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2228,7): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2228,28): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2230,31): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2234,43): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2234,73): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2242,7): error TS18047: 'gl' is possibly 'null'.
 src/renderers/webgl-fallback/WebGLBackend.js(2242,42): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2242,72): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2261,3): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2261,26): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2299,18): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2304,3): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2313,4): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2313,19): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2314,4): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2334,5): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2338,5): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2344,5): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2348,5): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2354,3): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2354,18): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2389,26): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2391,3): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2391,29): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2397,4): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2397,23): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2401,3): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2401,29): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2429,23): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2430,6): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2434,23): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2435,6): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2465,6): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2465,28): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2469,6): error TS18047: 'state' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2469,76): error TS18047: 'gl' is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2489,38): error TS2531: Object is possibly 'null'.
-src/renderers/webgl-fallback/WebGLBackend.js(2498,21): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2243,7): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2243,35): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2243,51): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2243,77): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2253,27): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2254,7): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2258,42): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2258,72): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2277,3): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2277,26): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2315,18): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2320,3): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2329,4): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2329,19): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2330,4): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2350,5): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2354,5): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2360,5): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2364,5): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2370,3): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2370,18): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2405,26): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2407,3): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2407,29): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2413,4): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2413,23): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2417,3): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2417,29): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2445,23): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2446,6): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2450,23): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2451,6): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2481,6): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2481,28): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2485,6): error TS18047: 'state' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2485,76): error TS18047: 'gl' is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2511,38): error TS2531: Object is possibly 'null'.
+src/renderers/webgl-fallback/WebGLBackend.js(2520,21): error TS2531: Object is possibly 'null'.
 src/renderers/webgl/WebGLBackground.js(4,10): error TS18042: 'ShaderMaterial' is a type and cannot be imported in JavaScript files. Use 'import("../../materials/ShaderMaterial.js").ShaderMaterial' in a JSDoc type annotation.
 src/renderers/webgl/WebGLBindingStates.js(174,21): error TS2551: Property 'attributesNum' does not exist on type '{ geometry: null; program: null; wireframe: boolean; newAttributes: number[]; enabledAttributes: number[]; attributeDivisors: number[]; object: any; attributes: {}; index: null; }'. Did you mean 'attributes'?
 src/renderers/webgl/WebGLBindingStates.js(210,11): error TS2339: Property 'data' does not exist on type '{ attribute: any; }'.
@@ -6060,11 +6069,7 @@ src/renderers/WebGLRenderer.js(764,19): error TS2345: Argument of type 'number |
 src/renderers/WebGLRenderer.js(838,23): error TS8029: JSDoc '@param' tag has name 'alpha', but there is no parameter with that name. It would match 'arguments' if it had an array type.
 src/renderers/WebGLRenderer.js(860,22): error TS8029: JSDoc '@param' tag has name 'alpha', but there is no parameter with that name. It would match 'arguments' if it had an array type.
 src/renderers/WebGLRenderer.js(946,10): error TS2339: Property 'state' does not exist on type 'WebGLRenderer'.
-src/renderers/WebGLRenderer.js(1300,16): error TS2314: Generic type 'Set<T>' requires 1 type argument(s).
 src/renderers/WebGLRenderer.js(1407,15): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/WebGLRenderer.js(1420,6): error TS18047: 'materials' is possibly 'null'.
-src/renderers/WebGLRenderer.js(1428,8): error TS18047: 'materials' is possibly 'null'.
-src/renderers/WebGLRenderer.js(1436,11): error TS18047: 'materials' is possibly 'null'.
 src/renderers/WebGLRenderer.js(1601,9): error TS2339: Property 'info' does not exist on type 'WebGLRenderer'.
 src/renderers/WebGLRenderer.js(1613,14): error TS2339: Property 'info' does not exist on type 'WebGLRenderer'.
 src/renderers/WebGLRenderer.js(1613,45): error TS2339: Property 'info' does not exist on type 'WebGLRenderer'.
@@ -6076,7 +6081,6 @@ src/renderers/WebGLRenderer.js(2813,47): error TS18047: 'renderTarget' is possib
 src/renderers/WebGLRenderer.js(2818,47): error TS18047: 'renderTarget' is possibly 'null'.
 src/renderers/WebGLRenderer.js(2857,22): error TS2551: Property 'isWebGLCubeRenderTarget' does not exist on type 'WebGLRenderTarget'. Did you mean 'isWebGLRenderTarget'?
 src/renderers/WebGLRenderer.js(2932,22): error TS2551: Property 'isWebGLCubeRenderTarget' does not exist on type 'WebGLRenderTarget'. Did you mean 'isWebGLRenderTarget'?
-src/renderers/WebGLRenderer.js(3036,118): error TS2322: Type 'null' is not assignable to type 'number'.
 src/renderers/WebGLRenderer.js(3401,6): error TS2339: Property 'unpackColorSpace' does not exist on type 'WebGL2RenderingContext'.
 src/renderers/WebGLRenderer.js(3494,10): error TS2484: Export declaration conflicts with exported declaration of 'WebGLRenderer'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(138,15): error TS2339: Property 'pow_float' does not exist on type '{ tsl_xor: CodeNode; mod_float: CodeNode; mod_vec2: CodeNode; mod_vec3: CodeNode; mod_vec4: CodeNode; equals_bool: CodeNode; ... 6 more ...; biquadraticTexture: CodeNode; }'.
@@ -6224,64 +6228,64 @@ src/renderers/webgpu/utils/WebGPUTimestampQueryPool.js(276,4): error TS2322: Typ
 src/renderers/webgpu/utils/WebGPUTimestampQueryPool.js(281,3): error TS2322: Type 'null' is not assignable to type 'boolean'.
 src/renderers/webgpu/utils/WebGPUUtils.js(51,3): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
 src/renderers/webgpu/utils/WebGPUUtils.js(150,14): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
-src/renderers/webgpu/WebGPUBackend.js(162,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/webgpu/WebGPUBackend.js(212,42): error TS2345: Argument of type '{ requiredFeatures: string[]; requiredLimits: any; }' is not assignable to parameter of type 'GPUDeviceDescriptor'.
-src/renderers/webgpu/WebGPUBackend.js(242,3): error TS2531: Object is possibly 'null'.
-src/renderers/webgpu/WebGPUBackend.js(243,4): error TS2322: Type 'GPUDevice | null' is not assignable to type 'GPUDevice'.
-src/renderers/webgpu/WebGPUBackend.js(244,4): error TS2322: Type 'string' is not assignable to type 'GPUTextureFormat'.
-src/renderers/webgpu/WebGPUBackend.js(286,3): error TS2322: Type 'GPUCanvasContext | null' is not assignable to type 'GPUCanvasContext'.
-src/renderers/webgpu/WebGPUBackend.js(326,28): error TS2531: Object is possibly 'null'.
-src/renderers/webgpu/WebGPUBackend.js(342,36): error TS2531: Object is possibly 'null'.
-src/renderers/webgpu/WebGPUBackend.js(346,27): error TS2531: Object is possibly 'null'.
-src/renderers/webgpu/WebGPUBackend.js(444,21): error TS2339: Property 'depthOrArrayLayers' does not exist on type '{ label: string; baseMipLevel: any; mipLevelCount: number; baseArrayLayer: any; arrayLayerCount: number; dimension: string; }'.
-src/renderers/webgpu/WebGPUBackend.js(471,22): error TS2339: Property 'depthOrArrayLayers' does not exist on type '{ label: string; baseMipLevel: any; mipLevelCount: number; baseArrayLayer: any; arrayLayerCount: number; dimension: string; }'.
-src/renderers/webgpu/WebGPUBackend.js(550,38): error TS2345: Argument of type '{ view: any; depthSlice: any; resolveTarget: any; loadOp: any; storeOp: any; clearValue: { r: number; g: number; b: number; a: number; }; }' is not assignable to parameter of type 'never'.
-src/renderers/webgpu/WebGPUBackend.js(563,15): error TS2339: Property 'depthStencilAttachment' does not exist on type '{ colorAttachments: never[]; }'.
-src/renderers/webgpu/WebGPUBackend.js(601,24): error TS18047: 'device' is possibly 'null'.
-src/renderers/webgpu/WebGPUBackend.js(709,19): error TS18047: 'device' is possibly 'null'.
-src/renderers/webgpu/WebGPUBackend.js(757,49): error TS2345: Argument of type 'Object' is not assignable to parameter of type 'GPURenderPassDescriptor'.
-src/renderers/webgpu/WebGPUBackend.js(831,21): error TS2339: Property 'depthStencilAttachment' does not exist on type '{ colorAttachments: any[]; constructor: Function; toString(): string; toLocaleString(): string; valueOf(): Object; hasOwnProperty(v: PropertyKey): boolean; isPrototypeOf(v: Object): boolean; propertyIsEnumerable(v: PropertyKey): boolean; }'.
-src/renderers/webgpu/WebGPUBackend.js(840,22): error TS2339: Property 'depthStencilAttachment' does not exist on type '{ colorAttachments: any[]; constructor: Function; toString(): string; toLocaleString(): string; valueOf(): Object; hasOwnProperty(v: PropertyKey): boolean; isPrototypeOf(v: Object): boolean; propertyIsEnumerable(v: PropertyKey): boolean; }'.
+src/renderers/webgpu/WebGPUBackend.js(163,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/webgpu/WebGPUBackend.js(213,42): error TS2345: Argument of type '{ requiredFeatures: string[]; requiredLimits: any; }' is not assignable to parameter of type 'GPUDeviceDescriptor'.
+src/renderers/webgpu/WebGPUBackend.js(243,3): error TS2531: Object is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(244,4): error TS2322: Type 'GPUDevice | null' is not assignable to type 'GPUDevice'.
+src/renderers/webgpu/WebGPUBackend.js(245,4): error TS2322: Type 'string' is not assignable to type 'GPUTextureFormat'.
+src/renderers/webgpu/WebGPUBackend.js(287,3): error TS2322: Type 'GPUCanvasContext | null' is not assignable to type 'GPUCanvasContext'.
+src/renderers/webgpu/WebGPUBackend.js(327,28): error TS2531: Object is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(343,36): error TS2531: Object is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(347,27): error TS2531: Object is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(445,21): error TS2339: Property 'depthOrArrayLayers' does not exist on type '{ label: string; baseMipLevel: any; mipLevelCount: number; baseArrayLayer: any; arrayLayerCount: number; dimension: string; }'.
+src/renderers/webgpu/WebGPUBackend.js(472,22): error TS2339: Property 'depthOrArrayLayers' does not exist on type '{ label: string; baseMipLevel: any; mipLevelCount: number; baseArrayLayer: any; arrayLayerCount: number; dimension: string; }'.
+src/renderers/webgpu/WebGPUBackend.js(551,38): error TS2345: Argument of type '{ view: any; depthSlice: any; resolveTarget: any; loadOp: any; storeOp: any; clearValue: { r: number; g: number; b: number; a: number; }; }' is not assignable to parameter of type 'never'.
+src/renderers/webgpu/WebGPUBackend.js(564,15): error TS2339: Property 'depthStencilAttachment' does not exist on type '{ colorAttachments: never[]; }'.
+src/renderers/webgpu/WebGPUBackend.js(602,24): error TS18047: 'device' is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(710,19): error TS18047: 'device' is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(758,49): error TS2345: Argument of type 'Object' is not assignable to parameter of type 'GPURenderPassDescriptor'.
+src/renderers/webgpu/WebGPUBackend.js(832,21): error TS2339: Property 'depthStencilAttachment' does not exist on type '{ colorAttachments: any[]; constructor: Function; toString(): string; toLocaleString(): string; valueOf(): Object; hasOwnProperty(v: PropertyKey): boolean; isPrototypeOf(v: Object): boolean; propertyIsEnumerable(v: PropertyKey): boolean; }'.
 src/renderers/webgpu/WebGPUBackend.js(841,22): error TS2339: Property 'depthStencilAttachment' does not exist on type '{ colorAttachments: any[]; constructor: Function; toString(): string; toLocaleString(): string; valueOf(): Object; hasOwnProperty(v: PropertyKey): boolean; isPrototypeOf(v: Object): boolean; propertyIsEnumerable(v: PropertyKey): boolean; }'.
 src/renderers/webgpu/WebGPUBackend.js(842,22): error TS2339: Property 'depthStencilAttachment' does not exist on type '{ colorAttachments: any[]; constructor: Function; toString(): string; toLocaleString(): string; valueOf(): Object; hasOwnProperty(v: PropertyKey): boolean; isPrototypeOf(v: Object): boolean; propertyIsEnumerable(v: PropertyKey): boolean; }'.
-src/renderers/webgpu/WebGPUBackend.js(848,21): error TS2339: Property 'depthStencilAttachment' does not exist on type '{ colorAttachments: any[]; constructor: Function; toString(): string; toLocaleString(): string; valueOf(): Object; hasOwnProperty(v: PropertyKey): boolean; isPrototypeOf(v: Object): boolean; propertyIsEnumerable(v: PropertyKey): boolean; }'.
-src/renderers/webgpu/WebGPUBackend.js(996,26): error TS2531: Object is possibly 'null'.
-src/renderers/webgpu/WebGPUBackend.js(1009,23): error TS2531: Object is possibly 'null'.
-src/renderers/webgpu/WebGPUBackend.js(1028,3): error TS2531: Object is possibly 'null'.
-src/renderers/webgpu/WebGPUBackend.js(1075,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/webgpu/WebGPUBackend.js(1217,17): error TS2339: Property 'depthLoadOp' does not exist on type '{ loadOp: string; clearValue: { r: any; g: any; b: any; a: any; } | undefined; }'.
-src/renderers/webgpu/WebGPUBackend.js(1218,17): error TS2551: Property 'depthClearValue' does not exist on type '{ loadOp: string; clearValue: { r: any; g: any; b: any; a: any; } | undefined; }'. Did you mean 'clearValue'?
-src/renderers/webgpu/WebGPUBackend.js(1219,17): error TS2339: Property 'depthStoreOp' does not exist on type '{ loadOp: string; clearValue: { r: any; g: any; b: any; a: any; } | undefined; }'.
-src/renderers/webgpu/WebGPUBackend.js(1225,17): error TS2339: Property 'stencilLoadOp' does not exist on type '{ loadOp: string; clearValue: { r: any; g: any; b: any; a: any; } | undefined; }'.
-src/renderers/webgpu/WebGPUBackend.js(1226,17): error TS2339: Property 'stencilClearValue' does not exist on type '{ loadOp: string; clearValue: { r: any; g: any; b: any; a: any; } | undefined; }'.
-src/renderers/webgpu/WebGPUBackend.js(1227,17): error TS2339: Property 'stencilStoreOp' does not exist on type '{ loadOp: string; clearValue: { r: any; g: any; b: any; a: any; } | undefined; }'.
-src/renderers/webgpu/WebGPUBackend.js(1276,19): error TS18047: 'device' is possibly 'null'.
-src/renderers/webgpu/WebGPUBackend.js(1284,3): error TS18047: 'device' is possibly 'null'.
-src/renderers/webgpu/WebGPUBackend.js(1302,42): error TS2339: Property 'id' does not exist on type 'Node | Node[]'.
-src/renderers/webgpu/WebGPUBackend.js(1307,28): error TS2531: Object is possibly 'null'.
-src/renderers/webgpu/WebGPUBackend.js(1307,102): error TS2339: Property 'id' does not exist on type 'Node | Node[]'.
-src/renderers/webgpu/WebGPUBackend.js(1341,44): error TS2531: Object is possibly 'null'.
-src/renderers/webgpu/WebGPUBackend.js(1349,20): error TS2339: Property 'dispatchCount' does not exist on type 'Node'.
-src/renderers/webgpu/WebGPUBackend.js(1351,43): error TS2339: Property 'dispatchCount' does not exist on type 'Node'.
-src/renderers/webgpu/WebGPUBackend.js(1352,44): error TS2339: Property 'dispatchCount' does not exist on type 'Node'.
-src/renderers/webgpu/WebGPUBackend.js(1356,33): error TS2339: Property 'dispatchCount' does not exist on type 'Node'.
-src/renderers/webgpu/WebGPUBackend.js(1380,3): error TS2531: Object is possibly 'null'.
-src/renderers/webgpu/WebGPUBackend.js(1389,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/webgpu/WebGPUBackend.js(1393,9): error TS2531: Object is possibly 'null'.
-src/renderers/webgpu/WebGPUBackend.js(1903,68): error TS2345: Argument of type 'GPUDevice | null' is not assignable to parameter of type 'GPUDevice'.
-src/renderers/webgpu/WebGPUBackend.js(1947,12): error TS2531: Object is possibly 'null'.
-src/renderers/webgpu/WebGPUBackend.js(1970,19): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/webgpu/WebGPUBackend.js(2076,14): error TS2591: Cannot find name 'Buffer'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
-src/renderers/webgpu/WebGPUBackend.js(2093,51): error TS2345: Argument of type 'number' is not assignable to parameter of type 'GPUBufferUsage'.
-src/renderers/webgpu/WebGPUBackend.js(2104,51): error TS2345: Argument of type 'number' is not assignable to parameter of type 'GPUBufferUsage'.
-src/renderers/webgpu/WebGPUBackend.js(2115,51): error TS2345: Argument of type 'number' is not assignable to parameter of type 'GPUBufferUsage'.
-src/renderers/webgpu/WebGPUBackend.js(2126,51): error TS2345: Argument of type 'number' is not assignable to parameter of type 'GPUBufferUsage'.
-src/renderers/webgpu/WebGPUBackend.js(2185,10): error TS2531: Object is possibly 'null'.
-src/renderers/webgpu/WebGPUBackend.js(2247,19): error TS2531: Object is possibly 'null'.
-src/renderers/webgpu/WebGPUBackend.js(2270,3): error TS2531: Object is possibly 'null'.
-src/renderers/webgpu/WebGPUBackend.js(2313,17): error TS2531: Object is possibly 'null'.
-src/renderers/webgpu/WebGPUBackend.js(2339,14): error TS2531: Object is possibly 'null'.
-src/renderers/webgpu/WebGPUBackend.js(2391,4): error TS2531: Object is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(843,22): error TS2339: Property 'depthStencilAttachment' does not exist on type '{ colorAttachments: any[]; constructor: Function; toString(): string; toLocaleString(): string; valueOf(): Object; hasOwnProperty(v: PropertyKey): boolean; isPrototypeOf(v: Object): boolean; propertyIsEnumerable(v: PropertyKey): boolean; }'.
+src/renderers/webgpu/WebGPUBackend.js(849,21): error TS2339: Property 'depthStencilAttachment' does not exist on type '{ colorAttachments: any[]; constructor: Function; toString(): string; toLocaleString(): string; valueOf(): Object; hasOwnProperty(v: PropertyKey): boolean; isPrototypeOf(v: Object): boolean; propertyIsEnumerable(v: PropertyKey): boolean; }'.
+src/renderers/webgpu/WebGPUBackend.js(997,26): error TS2531: Object is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(1010,23): error TS2531: Object is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(1029,3): error TS2531: Object is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(1076,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/webgpu/WebGPUBackend.js(1218,17): error TS2339: Property 'depthLoadOp' does not exist on type '{ loadOp: string; clearValue: { r: any; g: any; b: any; a: any; } | undefined; }'.
+src/renderers/webgpu/WebGPUBackend.js(1219,17): error TS2551: Property 'depthClearValue' does not exist on type '{ loadOp: string; clearValue: { r: any; g: any; b: any; a: any; } | undefined; }'. Did you mean 'clearValue'?
+src/renderers/webgpu/WebGPUBackend.js(1220,17): error TS2339: Property 'depthStoreOp' does not exist on type '{ loadOp: string; clearValue: { r: any; g: any; b: any; a: any; } | undefined; }'.
+src/renderers/webgpu/WebGPUBackend.js(1226,17): error TS2339: Property 'stencilLoadOp' does not exist on type '{ loadOp: string; clearValue: { r: any; g: any; b: any; a: any; } | undefined; }'.
+src/renderers/webgpu/WebGPUBackend.js(1227,17): error TS2339: Property 'stencilClearValue' does not exist on type '{ loadOp: string; clearValue: { r: any; g: any; b: any; a: any; } | undefined; }'.
+src/renderers/webgpu/WebGPUBackend.js(1228,17): error TS2339: Property 'stencilStoreOp' does not exist on type '{ loadOp: string; clearValue: { r: any; g: any; b: any; a: any; } | undefined; }'.
+src/renderers/webgpu/WebGPUBackend.js(1277,19): error TS18047: 'device' is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(1285,3): error TS18047: 'device' is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(1303,42): error TS2339: Property 'id' does not exist on type 'Node | Node[]'.
+src/renderers/webgpu/WebGPUBackend.js(1308,28): error TS2531: Object is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(1308,102): error TS2339: Property 'id' does not exist on type 'Node | Node[]'.
+src/renderers/webgpu/WebGPUBackend.js(1342,44): error TS2531: Object is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(1350,20): error TS2339: Property 'dispatchCount' does not exist on type 'Node'.
+src/renderers/webgpu/WebGPUBackend.js(1352,43): error TS2339: Property 'dispatchCount' does not exist on type 'Node'.
+src/renderers/webgpu/WebGPUBackend.js(1353,44): error TS2339: Property 'dispatchCount' does not exist on type 'Node'.
+src/renderers/webgpu/WebGPUBackend.js(1357,33): error TS2339: Property 'dispatchCount' does not exist on type 'Node'.
+src/renderers/webgpu/WebGPUBackend.js(1381,3): error TS2531: Object is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(1390,14): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/webgpu/WebGPUBackend.js(1394,9): error TS2531: Object is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(1904,68): error TS2345: Argument of type 'GPUDevice | null' is not assignable to parameter of type 'GPUDevice'.
+src/renderers/webgpu/WebGPUBackend.js(1948,12): error TS2531: Object is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(1971,19): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/webgpu/WebGPUBackend.js(2077,14): error TS2591: Cannot find name 'Buffer'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+src/renderers/webgpu/WebGPUBackend.js(2094,51): error TS2345: Argument of type 'number' is not assignable to parameter of type 'GPUBufferUsage'.
+src/renderers/webgpu/WebGPUBackend.js(2105,51): error TS2345: Argument of type 'number' is not assignable to parameter of type 'GPUBufferUsage'.
+src/renderers/webgpu/WebGPUBackend.js(2116,51): error TS2345: Argument of type 'number' is not assignable to parameter of type 'GPUBufferUsage'.
+src/renderers/webgpu/WebGPUBackend.js(2127,51): error TS2345: Argument of type 'number' is not assignable to parameter of type 'GPUBufferUsage'.
+src/renderers/webgpu/WebGPUBackend.js(2186,10): error TS2531: Object is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(2248,19): error TS2531: Object is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(2271,3): error TS2531: Object is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(2314,17): error TS2531: Object is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(2340,14): error TS2531: Object is possibly 'null'.
+src/renderers/webgpu/WebGPUBackend.js(2392,4): error TS2531: Object is possibly 'null'.
 src/renderers/webxr/WebXRController.js(64,15): error TS2339: Property 'joints' does not exist on type 'Group'.
 src/renderers/webxr/WebXRController.js(65,15): error TS2339: Property 'inputState' does not exist on type 'Group'.
 src/renderers/webxr/WebXRController.js(85,20): error TS2339: Property 'hasLinearVelocity' does not exist on type 'Group'.
@@ -6292,10 +6296,8 @@ src/renderers/webxr/WebXRController.js(108,15): error TS2339: Property 'hasLinea
 src/renderers/webxr/WebXRController.js(109,15): error TS2339: Property 'linearVelocity' does not exist on type 'Group'.
 src/renderers/webxr/WebXRController.js(110,15): error TS2339: Property 'hasAngularVelocity' does not exist on type 'Group'.
 src/renderers/webxr/WebXRController.js(111,15): error TS2339: Property 'angularVelocity' does not exist on type 'Group'.
-src/renderers/webxr/WebXRController.js(167,32): error TS2345: Argument of type 'XRJointSpace' is not assignable to parameter of type 'XRHandJoint'.
 src/renderers/webxr/WebXRController.js(242,24): error TS2722: Cannot invoke an object which is possibly 'undefined'.
 src/renderers/webxr/WebXRController.js(242,24): error TS18048: 'frame.getJointPose' is possibly 'undefined'.
-src/renderers/webxr/WebXRController.js(245,46): error TS2345: Argument of type 'XRJointSpace' is not assignable to parameter of type 'XRHandJoint'.
 src/renderers/webxr/WebXRController.js(249,31): error TS18048: 'jointPose' is possibly 'undefined'.
 src/renderers/webxr/WebXRController.js(249,31): error TS2345: Argument of type 'Float32Array<ArrayBufferLike>' is not assignable to parameter of type 'number[]'.
 src/renderers/webxr/WebXRController.js(250,37): error TS2339: Property 'position' does not exist on type 'Group'.
@@ -6340,11 +6342,8 @@ src/renderers/webxr/WebXRController.js(361,17): error TS2339: Property 'angularV
 src/renderers/webxr/WebXRController.js(361,39): error TS18048: 'inputPose' is possibly 'undefined'.
 src/renderers/webxr/WebXRController.js(365,17): error TS2339: Property 'hasAngularVelocity' does not exist on type 'Group'.
 src/renderers/webxr/WebXRController.js(410,13): error TS2339: Property 'joints' does not exist on type 'Group'.
-src/renderers/webxr/WebXRController.js(410,32): error TS2339: Property 'jointName' does not exist on type 'XRHandJoint'.
 src/renderers/webxr/WebXRController.js(415,9): error TS2339: Property 'joints' does not exist on type 'Group'.
-src/renderers/webxr/WebXRController.js(415,28): error TS2339: Property 'jointName' does not exist on type 'XRHandJoint'.
 src/renderers/webxr/WebXRController.js(421,15): error TS2339: Property 'joints' does not exist on type 'Group'.
-src/renderers/webxr/WebXRController.js(421,34): error TS2339: Property 'jointName' does not exist on type 'XRHandJoint'.
 src/renderers/webxr/WebXRDepthSensing.js(2,10): error TS18042: 'ShaderMaterial' is a type and cannot be imported in JavaScript files. Use 'import("../../materials/ShaderMaterial.js").ShaderMaterial' in a JSDoc type annotation.
 src/renderers/webxr/WebXRDepthSensing.js(90,21): error TS2339: Property 'depthNear' does not exist on type 'XRWebGLDepthInformation'.
 src/renderers/webxr/WebXRDepthSensing.js(90,74): error TS2339: Property 'depthFar' does not exist on type 'XRWebGLDepthInformation'.
@@ -6352,39 +6351,39 @@ src/renderers/webxr/WebXRDepthSensing.js(92,32): error TS2339: Property 'depthNe
 src/renderers/webxr/WebXRDepthSensing.js(93,31): error TS2339: Property 'depthFar' does not exist on type 'XRWebGLDepthInformation'.
 src/renderers/webxr/WebXRManager.js(69,11): error TS2339: Property 'viewport' does not exist on type 'PerspectiveCamera'.
 src/renderers/webxr/WebXRManager.js(72,11): error TS2339: Property 'viewport' does not exist on type 'PerspectiveCamera'.
-src/renderers/webxr/WebXRManager.js(372,15): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
-src/renderers/webxr/WebXRManager.js(391,10): error TS18047: 'attributes' is possibly 'null'.
-src/renderers/webxr/WebXRManager.js(407,18): error TS18047: 'attributes' is possibly 'null'.
-src/renderers/webxr/WebXRManager.js(409,14): error TS18047: 'attributes' is possibly 'null'.
-src/renderers/webxr/WebXRManager.js(410,16): error TS18047: 'attributes' is possibly 'null'.
-src/renderers/webxr/WebXRManager.js(428,23): error TS18047: 'attributes' is possibly 'null'.
-src/renderers/webxr/WebXRManager.js(441,11): error TS18047: 'attributes' is possibly 'null'.
-src/renderers/webxr/WebXRManager.js(443,23): error TS18047: 'attributes' is possibly 'null'.
-src/renderers/webxr/WebXRManager.js(444,21): error TS18047: 'attributes' is possibly 'null'.
-src/renderers/webxr/WebXRManager.js(445,19): error TS18047: 'attributes' is possibly 'null'.
-src/renderers/webxr/WebXRManager.js(457,53): error TS2345: Argument of type '{ colorFormat: 32856; depthFormat: 35056 | 33190 | null; scaleFactor: number; }' is not assignable to parameter of type 'XRProjectionLayerInit'.
-src/renderers/webxr/WebXRManager.js(470,93): error TS2345: Argument of type 'number | null' is not assignable to parameter of type 'number | undefined'.
-src/renderers/webxr/WebXRManager.js(471,23): error TS18047: 'attributes' is possibly 'null'.
-src/renderers/webxr/WebXRManager.js(473,17): error TS18047: 'attributes' is possibly 'null'.
-src/renderers/webxr/WebXRManager.js(474,30): error TS2367: This comparison appears to be unintentional because the types 'number' and 'boolean' have no overlap.
-src/renderers/webxr/WebXRManager.js(475,32): error TS2367: This comparison appears to be unintentional because the types 'number' and 'boolean' have no overlap.
-src/renderers/webxr/WebXRManager.js(480,21): error TS2551: Property 'isXRRenderTarget' does not exist on type 'WebGLRenderTarget'. Did you mean 'isRenderTarget'?
-src/renderers/webxr/WebXRManager.js(485,59): error TS2345: Argument of type 'string' is not assignable to parameter of type 'XRReferenceSpaceType'.
-src/renderers/webxr/WebXRManager.js(634,42): error TS2339: Property 'position' does not exist on type 'ArrayCamera'.
-src/renderers/webxr/WebXRManager.js(634,59): error TS2339: Property 'quaternion' does not exist on type 'ArrayCamera'.
-src/renderers/webxr/WebXRManager.js(634,78): error TS2339: Property 'scale' does not exist on type 'ArrayCamera'.
-src/renderers/webxr/WebXRManager.js(637,39): error TS2339: Property 'position' does not exist on type 'ArrayCamera'.
-src/renderers/webxr/WebXRManager.js(637,56): error TS2339: Property 'quaternion' does not exist on type 'ArrayCamera'.
-src/renderers/webxr/WebXRManager.js(637,75): error TS2339: Property 'scale' does not exist on type 'ArrayCamera'.
-src/renderers/webxr/WebXRManager.js(813,5): error TS2322: Type 'undefined' is not assignable to type 'number'.
-src/renderers/webxr/WebXRManager.js(936,14): error TS2339: Property 'viewport' does not exist on type 'PerspectiveCamera'.
-src/renderers/webxr/WebXRManager.js(942,38): error TS2339: Property 'position' does not exist on type 'PerspectiveCamera'.
-src/renderers/webxr/WebXRManager.js(942,55): error TS2339: Property 'quaternion' does not exist on type 'PerspectiveCamera'.
-src/renderers/webxr/WebXRManager.js(942,74): error TS2339: Property 'scale' does not exist on type 'PerspectiveCamera'.
-src/renderers/webxr/WebXRManager.js(945,13): error TS2339: Property 'viewport' does not exist on type 'PerspectiveCamera'.
-src/renderers/webxr/WebXRManager.js(950,43): error TS2339: Property 'position' does not exist on type 'ArrayCamera'.
-src/renderers/webxr/WebXRManager.js(950,62): error TS2339: Property 'quaternion' does not exist on type 'ArrayCamera'.
-src/renderers/webxr/WebXRManager.js(950,83): error TS2339: Property 'scale' does not exist on type 'ArrayCamera'.
+src/renderers/webxr/WebXRManager.js(373,15): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+src/renderers/webxr/WebXRManager.js(392,10): error TS18047: 'attributes' is possibly 'null'.
+src/renderers/webxr/WebXRManager.js(408,18): error TS18047: 'attributes' is possibly 'null'.
+src/renderers/webxr/WebXRManager.js(410,14): error TS18047: 'attributes' is possibly 'null'.
+src/renderers/webxr/WebXRManager.js(411,16): error TS18047: 'attributes' is possibly 'null'.
+src/renderers/webxr/WebXRManager.js(429,23): error TS18047: 'attributes' is possibly 'null'.
+src/renderers/webxr/WebXRManager.js(442,11): error TS18047: 'attributes' is possibly 'null'.
+src/renderers/webxr/WebXRManager.js(444,23): error TS18047: 'attributes' is possibly 'null'.
+src/renderers/webxr/WebXRManager.js(445,21): error TS18047: 'attributes' is possibly 'null'.
+src/renderers/webxr/WebXRManager.js(446,19): error TS18047: 'attributes' is possibly 'null'.
+src/renderers/webxr/WebXRManager.js(458,53): error TS2345: Argument of type '{ colorFormat: 32856; depthFormat: 35056 | 33190 | null; scaleFactor: number; }' is not assignable to parameter of type 'XRProjectionLayerInit'.
+src/renderers/webxr/WebXRManager.js(471,93): error TS2345: Argument of type 'number | null' is not assignable to parameter of type 'number | undefined'.
+src/renderers/webxr/WebXRManager.js(472,23): error TS18047: 'attributes' is possibly 'null'.
+src/renderers/webxr/WebXRManager.js(474,17): error TS18047: 'attributes' is possibly 'null'.
+src/renderers/webxr/WebXRManager.js(475,30): error TS2367: This comparison appears to be unintentional because the types 'number' and 'boolean' have no overlap.
+src/renderers/webxr/WebXRManager.js(476,32): error TS2367: This comparison appears to be unintentional because the types 'number' and 'boolean' have no overlap.
+src/renderers/webxr/WebXRManager.js(481,21): error TS2551: Property 'isXRRenderTarget' does not exist on type 'WebGLRenderTarget'. Did you mean 'isRenderTarget'?
+src/renderers/webxr/WebXRManager.js(486,59): error TS2345: Argument of type 'string' is not assignable to parameter of type 'XRReferenceSpaceType'.
+src/renderers/webxr/WebXRManager.js(635,42): error TS2339: Property 'position' does not exist on type 'ArrayCamera'.
+src/renderers/webxr/WebXRManager.js(635,59): error TS2339: Property 'quaternion' does not exist on type 'ArrayCamera'.
+src/renderers/webxr/WebXRManager.js(635,78): error TS2339: Property 'scale' does not exist on type 'ArrayCamera'.
+src/renderers/webxr/WebXRManager.js(638,39): error TS2339: Property 'position' does not exist on type 'ArrayCamera'.
+src/renderers/webxr/WebXRManager.js(638,56): error TS2339: Property 'quaternion' does not exist on type 'ArrayCamera'.
+src/renderers/webxr/WebXRManager.js(638,75): error TS2339: Property 'scale' does not exist on type 'ArrayCamera'.
+src/renderers/webxr/WebXRManager.js(814,5): error TS2322: Type 'undefined' is not assignable to type 'number'.
+src/renderers/webxr/WebXRManager.js(937,14): error TS2339: Property 'viewport' does not exist on type 'PerspectiveCamera'.
+src/renderers/webxr/WebXRManager.js(943,38): error TS2339: Property 'position' does not exist on type 'PerspectiveCamera'.
+src/renderers/webxr/WebXRManager.js(943,55): error TS2339: Property 'quaternion' does not exist on type 'PerspectiveCamera'.
+src/renderers/webxr/WebXRManager.js(943,74): error TS2339: Property 'scale' does not exist on type 'PerspectiveCamera'.
+src/renderers/webxr/WebXRManager.js(946,13): error TS2339: Property 'viewport' does not exist on type 'PerspectiveCamera'.
+src/renderers/webxr/WebXRManager.js(951,43): error TS2339: Property 'position' does not exist on type 'ArrayCamera'.
+src/renderers/webxr/WebXRManager.js(951,62): error TS2339: Property 'quaternion' does not exist on type 'ArrayCamera'.
+src/renderers/webxr/WebXRManager.js(951,83): error TS2339: Property 'scale' does not exist on type 'ArrayCamera'.
 src/textures/CompressedArrayTexture.js(43,3): error TS2531: Object is possibly 'null'.
 src/textures/CompressedCubeTexture.js(22,10): error TS2345: Argument of type 'undefined' is not assignable to parameter of type 'Object[]'.
 src/textures/CompressedCubeTexture.js(22,33): error TS2339: Property 'width' does not exist on type 'CompressedTexture'.
@@ -6394,12 +6393,13 @@ src/textures/Source.js(102,26): error TS18047: 'meta' is possibly 'null'.
 src/textures/Source.js(104,11): error TS18047: 'meta' is possibly 'null'.
 src/textures/Source.js(147,4): error TS2322: Type 'string | { data: any[]; width: any; height: any; type: any; } | { data?: undefined; width?: undefined; height?: undefined; type?: undefined; } | (string | { data: any[]; width: any; height: any; type: any; } | { ...; })[]' is not assignable to type 'string'.
 src/textures/Source.js(153,4): error TS18047: 'meta' is possibly 'null'.
-src/textures/Source.js(171,33): error TS2345: Argument of type 'HTMLImageElement | HTMLCanvasElement | ImageBitmap' is not assignable to parameter of type 'HTMLImageElement | HTMLCanvasElement'.
-src/textures/Texture.js(363,6): error TS1052: A 'set' accessor parameter cannot have an initializer.
-src/textures/Texture.js(454,26): error TS18047: 'meta' is possibly 'null'.
-src/textures/Texture.js(456,11): error TS18047: 'meta' is possibly 'null'.
-src/textures/Texture.js(500,57): error TS2339: Property 'userData' does not exist on type '{ metadata: { version: number; type: string; generator: string; }; uuid: string; name: string; image: any; mapping: any; channel: number; repeat: number[]; offset: number[]; center: number[]; rotation: number; ... 11 more ...; unpackAlignment: number; }'.
-src/textures/Texture.js(504,4): error TS18047: 'meta' is possibly 'null'.
+src/textures/Source.js(171,33): error TS2345: Argument of type 'HTMLCanvasElement | HTMLImageElement | ImageBitmap' is not assignable to parameter of type 'HTMLCanvasElement | HTMLImageElement'.
+src/textures/Texture.js(372,6): error TS1052: A 'set' accessor parameter cannot have an initializer.
+src/textures/Texture.js(464,26): error TS18047: 'meta' is possibly 'null'.
+src/textures/Texture.js(466,11): error TS18047: 'meta' is possibly 'null'.
+src/textures/Texture.js(510,57): error TS2339: Property 'userData' does not exist on type '{ metadata: { version: number; type: string; generator: string; }; uuid: string; name: string; image: any; mapping: any; channel: number; repeat: number[]; offset: number[]; center: number[]; rotation: number; ... 11 more ...; unpackAlignment: number; }'.
+src/textures/Texture.js(514,4): error TS18047: 'meta' is possibly 'null'.
+src/textures/VideoFrameTexture.js(32,10): error TS2345: Argument of type '{}' is not assignable to parameter of type 'HTMLVideoElement'.
 src/textures/VideoTexture.js(88,64): error TS18047: 'video' is possibly 'null'.
 src/textures/VideoTexture.js(90,43): error TS18047: 'video' is possibly 'null'.
 src/textures/VideoTexture.js(90,63): error TS18047: 'video' is possibly 'null'.

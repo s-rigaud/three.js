@@ -7,11 +7,8 @@ abelnation
 abernier
 absarc
 absellipse
-noperspective
-XVCJ
 absval
 Accu
-dtiles
 accu
 accus
 ACUBIC
@@ -560,6 +557,7 @@ dryclean
 Dsqrt
 dstep
 dsval
+dtiles
 dtval
 dtype
 Dudv
@@ -1576,6 +1574,7 @@ nomip
 nonblinn
 nonname
 nonvr
+noperspective
 nord
 NORMALMAP
 normalmap
@@ -2579,6 +2578,7 @@ xrlayer
 xrlayers
 Xrotation
 xsize
+XVCJ
 Xwriter
 xxyy
 XXYYZZRGBRGB
