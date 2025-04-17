@@ -827,7 +827,7 @@ class IFFParser {
 
 			let numverts = this.reader.getUint16();
 
-			//var flags = numverts & 64512; // 6 high order bits are flags - ignoring for now
+			//const flags = numverts & 64512; // 6 high order bits are flags - ignoring for now
 			numverts = numverts & 1023; // remaining ten low order bits are vertex num
 			polygonDimensions.push( numverts );
 
@@ -1116,6 +1116,14 @@ class Debugger {
 		this.active = false;
 		this.depth = 0;
 		this.formList = [];
+		this.offset = 0;
+
+		this.node = 0; // 0 = FORM, 1 = CHUNK, 2 = SUBNODE
+		this.nodeID = 'FORM';
+
+		this.dataOffset = 0;
+		this.length = 0;
+		this.skipped = false;
 
 	}
 
@@ -1190,17 +1198,11 @@ class Debugger {
 
 // ************** UTILITY FUNCTIONS **************
 
-function isEven( num ) {
-
-	return num % 2;
-
-}
-
 // calculate the length of the string in the buffer
 // this will be string.length + nullbyte + optional padbyte to make the length even
 function stringOffset( string ) {
 
-	return string.length + 1 + ( isEven( string.length + 1 ) ? 1 : 0 );
+	return string.length + 1 + ( ( string.length + 1 ) % 2 );
 
 }
 
