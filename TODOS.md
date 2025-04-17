@@ -1,6 +1,7 @@
 # Types
 Color4 set g and b can be nullable
 Renderer _renderObjectDirect & _createObjectPipeline pass id not null by default
+TGALoader parse buffer is string
 
 # Dev
 WebGlRendere.setClearAlpha and setClearColor should not used arguments keyword
