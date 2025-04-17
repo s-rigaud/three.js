@@ -25,7 +25,13 @@
         "paths": {
             "three/addons/*": [
                 "node_modules/@types/three/examples/jsm/*"
-            ]
+            ],
+            "three/tsl": [
+                "node_modules/@types/three/build/three.tsl.d.ts"
+            ],
+            "three/webgpu": [
+                "node_modules/@types/three/build/three.webgpu.d.ts"
+            ],
         },
         "lib": [
             "esnext",
@@ -33,11 +39,14 @@
             "dom.iterable", // Do not include dom cause of Node namespace collapse
             "scripthost"
         ],
-        "types": ["@webgpu/types"]
+        "types": [
+            "@webgpu/types"
+        ]
     },
     "include": [
         "src/**/*.js",
-        "examples/**/*", "src/renderers/webgpu/utils/WebGPUConstants.ts",
+        "examples/**/*",
+        "src/renderers/webgpu/utils/WebGPUConstants.ts",
     ],
     "exclude": [
         "node_modules/**/*",
