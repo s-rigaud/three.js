@@ -85,7 +85,7 @@ const shaderNodeHandler = {
 
 				prop = parseSwizzleAndSort( prop.slice( 3 ).toLowerCase() );
 
-				return ( value ) => nodeObject( new SetNode( node, prop, value ) );
+				return ( value ) => nodeObject( new SetNode( node, prop, nodeObject( value ) ) );
 
 			} else if ( /^flip[XYZWRGBASTPQ]{1,4}$/.test( prop ) === true ) {
 
@@ -303,6 +303,8 @@ class ShaderCallNodeInternal extends Node {
 
 		this.shaderNode = shaderNode;
 		this.inputNodes = inputNodes;
+
+		this.isShaderCallNodeInternal = true;
 
 	}
 
@@ -611,11 +613,19 @@ export const Fn = ( jsFunc, layout = null ) => {
 
 		}
 
-		return shaderNode.call( inputs );
+		const fnCall = shaderNode.call( inputs );
+
+		if ( nodeType === 'void' ) fnCall.toStack();
+
+		return fnCall;
 
 	};
 
 	fn.shaderNode = shaderNode;
+	fn.id = shaderNode.id;
+
+	fn.getNodeType = ( ...params ) => shaderNode.getNodeType( ...params );
+	fn.getCacheKey = ( ...params ) => shaderNode.getCacheKey( ...params );
 
 	fn.setLayout = ( layout ) => {
 
@@ -666,21 +676,6 @@ export const Fn = ( jsFunc, layout = null ) => {
 
 };
 
-/**
- * @tsl
- * @function
- * @deprecated since r168. Use {@link Fn} instead.
- *
- * @param {...any} params
- * @returns {Function}
- */
-export const tslFn = ( ...params ) => { // @deprecated, r168
-
-	console.warn( 'THREE.TSL: tslFn() has been renamed to Fn().' );
-	return Fn( ...params );
-
-};
-
 //
 
 addMethodChaining( 'toGlobal', ( node ) => {
@@ -707,9 +702,44 @@ export const setCurrentStack = ( stack ) => {
 
 export const getCurrentStack = () => currentStack;
 
+/**
+ * Represent a conditional node using if/else statements.
+ *
+ * ```js
+ * If( condition, function )
+ * 	.ElseIf( condition, function )
+ * 	.Else( function )
+ * ```
+ * @tsl
+ * @function
+ * @param {...any} params - The parameters for the conditional node.
+ * @returns {StackNode} The conditional node.
+ */
 export const If = ( ...params ) => currentStack.If( ...params );
 
-export function append( node ) {
+/**
+ * Represent a conditional node using switch/case statements.
+ *
+ * ```js
+ * Switch( value )
+ * 	.Case( 1, function )
+ * 	.Case( 2, 3, 4, function )
+ * 	.Default( function )
+ * ```
+ * @tsl
+ * @function
+ * @param {...any} params - The parameters for the conditional node.
+ * @returns {StackNode} The conditional node.
+ */
+export const Switch = ( ...params ) => currentStack.Switch( ...params );
+
+/**
+ * Add the given node to the current stack.
+ *
+ * @param {Node} node - The node to add.
+ * @returns {Node} The node that was added to the stack.
+ */
+export function Stack( node ) {
 
 	if ( currentStack ) currentStack.add( node );
 
@@ -717,7 +747,7 @@ export function append( node ) {
 
 }
 
-addMethodChaining( 'append', append );
+addMethodChaining( 'toStack', Stack );
 
 // types
 
@@ -779,3 +809,42 @@ export const split = ( node, channels ) => nodeObject( new SplitNode( nodeObject
 
 addMethodChaining( 'element', element );
 addMethodChaining( 'convert', convert );
+
+// deprecated
+
+/**
+ * @tsl
+ * @function
+ * @deprecated since r176. Use {@link Stack} instead.
+ *
+ * @param {Node} node - The node to add.
+ * @returns {Function}
+ */
+export const append = ( node ) => { // @deprecated, r176
+
+	console.warn( 'THREE.TSL: append() has been renamed to Stack().' );
+	return Stack( node );
+
+};
+
+addMethodChaining( 'append', ( node ) => { // @deprecated, r176
+
+	console.warn( 'THREE.TSL: .append() has been renamed to .toStack().' );
+	return Stack( node );
+
+} );
+
+/**
+ * @tsl
+ * @function
+ * @deprecated since r168. Use {@link Fn} instead.
+ *
+ * @param {...any} params
+ * @returns {Function}
+ */
+export const tslFn = ( ...params ) => { // @deprecated, r168
+
+	console.warn( 'THREE.TSL: tslFn() has been renamed to Fn().' );
+	return Fn( ...params );
+
+};
