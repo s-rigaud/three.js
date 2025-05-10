@@ -4,7 +4,6 @@ AAST
 aastep
 AATU
 abelnation
-Cubescape
 abernier
 absarc
 absellipse
@@ -408,6 +407,7 @@ CUBEMAP
 Cubemap
 cubemap
 cubemaps
+Cubescape
 CUBEUV
 cubeuvmaps
 CUBICSPLINE

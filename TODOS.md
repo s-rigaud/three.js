@@ -14,6 +14,7 @@ examples/webgl_renderer_pathtracer.js(343,76): error TS2554: Expected 1 argument
 examples/webgpu_compute_birds.js(314,13): error TS2339: Property 'equal' does not exist on type 'number'.
 NodeMaterial.alphaTestNode can be number
 examples/webgpu_xr_native_layers.js(443,38): error TS2554: Expected 0 arguments, but got 2. Interactive group constructor takes no parameter
+AnimationClipCreator construtor takes an array of booleans
 
 
 
