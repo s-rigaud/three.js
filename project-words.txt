@@ -166,6 +166,8 @@ bjfinal
 bjmix
 blanchedalmond
 blandit
+BLAS
+blas
 Bleepy
 blendings
 blendshape
@@ -1416,6 +1418,7 @@ meshnormal
 MESHOPT
 Meshopt
 meshopt
+meshoptimizer
 meshphong
 meshphysical
 meshs
@@ -1821,6 +1824,7 @@ Prefiltered
 premult
 Premultipled
 premultipled
+Premultiplies
 preservedrawingbuffer
 Presetpro
 presision
@@ -2283,6 +2287,8 @@ Timecode
 timecode
 timestep
 TIMG
+TLAS
+tlas
 TMAP
 Tmapping
 tmax
@@ -2392,6 +2398,9 @@ unorm
 Unparametrized
 Unported
 unpremult
+Unpremultiplied
+Unpremultiplies
+unpremultiply
 Unproject
 unproject
 unprojected
@@ -2448,6 +2457,8 @@ vdsp
 vdtp
 vectemp
 vercel
+Verlet
+verlet
 vertexcolors
 vertexpos
 vertexshader
