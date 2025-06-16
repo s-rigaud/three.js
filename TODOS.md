@@ -15,7 +15,8 @@ examples/webgpu_compute_birds.js(314,13): error TS2339: Property 'equal' does no
 NodeMaterial.alphaTestNode can be number
 examples/webgpu_xr_native_layers.js(443,38): error TS2554: Expected 0 arguments, but got 2. Interactive group constructor takes no parameter
 AnimationClipCreator construtor takes an array of booleans
-
+WebGPUPipelineUtils.js _getColorWriteMask return a number
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js(633,95): error TS2554: Expected 4-5 arguments, but got 6.
 
 
 # Dev
