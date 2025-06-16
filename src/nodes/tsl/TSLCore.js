@@ -175,7 +175,7 @@ const ShaderNodeObject = function ( obj, altType = null ) {
 
 	} else if ( type === 'shader' ) {
 
-		return Fn( obj );
+		return obj.isFn ? obj : Fn( obj );
 
 	}
 
@@ -325,9 +325,21 @@ class ShaderCallNodeInternal extends Node {
 		const { shaderNode, inputNodes } = this;
 
 		const properties = builder.getNodeProperties( shaderNode );
-		if ( properties.onceOutput ) return properties.onceOutput;
+
+		const subBuild = builder.getClosestSubBuild( shaderNode.subBuilds ) || '';
+		const subBuildProperty = subBuild || 'default';
+
+		if ( properties[ subBuildProperty ] ) {
+
+			return properties[ subBuildProperty ];
+
+		}
 
 		//
+
+		const previousSubBuildFn = builder.subBuildFn;
+
+		builder.subBuildFn = subBuild;
 
 		let result = null;
 
@@ -366,33 +378,15 @@ class ShaderCallNodeInternal extends Node {
 
 		}
 
+		builder.subBuildFn = previousSubBuildFn;
+
 		if ( shaderNode.once ) {
 
-			properties.onceOutput = result;
+			properties[ subBuildProperty ] = result;
 
 		}
 
 		return result;
-
-	}
-
-	getOutputNode( builder ) {
-
-		const properties = builder.getNodeProperties( this );
-
-		if ( properties.outputNode === null ) {
-
-			properties.outputNode = this.setupOutput( builder );
-
-		}
-
-		return properties.outputNode;
-
-	}
-
-	setup( builder ) {
-
-		return this.getOutputNode( builder );
 
 	}
 
@@ -406,11 +400,76 @@ class ShaderCallNodeInternal extends Node {
 
 	}
 
-	generate( builder, output ) {
+	getOutputNode( builder ) {
 
+		const properties = builder.getNodeProperties( this );
+		const subBuildOutput = builder.getSubBuildOutput( this );
+
+		properties[ subBuildOutput ] = properties[ subBuildOutput ] || this.setupOutput( builder );
+		properties[ subBuildOutput ].subBuild = builder.getClosestSubBuild( this );
+
+		return properties[ subBuildOutput ];
+
+	}
+
+	build( builder, output = null ) {
+
+		let result = null;
+
+		const buildStage = builder.getBuildStage();
+		const properties = builder.getNodeProperties( this );
+
+		const subBuildOutput = builder.getSubBuildOutput( this );
 		const outputNode = this.getOutputNode( builder );
 
-		return outputNode.build( builder, output );
+		if ( buildStage === 'setup' ) {
+
+			const subBuildInitialized = builder.getSubBuildProperty( 'initialized', this );
+
+			if ( properties[ subBuildInitialized ] !== true ) {
+
+				properties[ subBuildInitialized ] = true;
+
+				properties[ subBuildOutput ] = this.getOutputNode( builder );
+				properties[ subBuildOutput ].build( builder );
+
+				// If the shaderNode has subBuilds, add them to the chaining nodes
+				// so they can be built later in the build process.
+
+				if ( this.shaderNode.subBuilds ) {
+
+					for ( const node of builder.chaining ) {
+
+						const nodeData = builder.getDataFromNode( node, 'any' );
+						nodeData.subBuilds = nodeData.subBuilds || new Set();
+
+						for ( const subBuild of this.shaderNode.subBuilds ) {
+
+							nodeData.subBuilds.add( subBuild );
+
+						}
+
+						//builder.getDataFromNode( node ).subBuilds = nodeData.subBuilds;
+
+					}
+
+				}
+
+			}
+
+			result = properties[ subBuildOutput ];
+
+		} else if ( buildStage === 'analyze' ) {
+
+			outputNode.build( builder, output );
+
+		} else if ( buildStage === 'generate' ) {
+
+			result = outputNode.build( builder, output ) || '';
+
+		}
+
+		return result;
 
 	}
 
@@ -603,7 +662,9 @@ export const Fn = ( jsFunc, layout = null ) => {
 
 		nodeObjects( params );
 
-		if ( params[ 0 ] && params[ 0 ].isNode ) {
+		const isArrayAsParameter = params[ 0 ] && ( params[ 0 ].isNode || Object.getPrototypeOf( params[ 0 ] ) !== Object.prototype );
+
+		if ( isArrayAsParameter ) {
 
 			inputs = [ ...params ];
 
@@ -624,6 +685,8 @@ export const Fn = ( jsFunc, layout = null ) => {
 	fn.shaderNode = shaderNode;
 	fn.id = shaderNode.id;
 
+	fn.isFn = true;
+
 	fn.getNodeType = ( ...params ) => shaderNode.getNodeType( ...params );
 	fn.getCacheKey = ( ...params ) => shaderNode.getCacheKey( ...params );
 
@@ -635,9 +698,10 @@ export const Fn = ( jsFunc, layout = null ) => {
 
 	};
 
-	fn.once = () => {
+	fn.once = ( subBuilds = null ) => {
 
 		shaderNode.once = true;
+		shaderNode.subBuilds = subBuilds;
 
 		return fn;
 
@@ -675,16 +739,6 @@ export const Fn = ( jsFunc, layout = null ) => {
 	return fn;
 
 };
-
-//
-
-addMethodChaining( 'toGlobal', ( node ) => {
-
-	node.global = true;
-
-	return node;
-
-} );
 
 //
 
@@ -834,17 +888,3 @@ addMethodChaining( 'append', ( node ) => { // @deprecated, r176
 
 } );
 
-/**
- * @tsl
- * @function
- * @deprecated since r168. Use {@link Fn} instead.
- *
- * @param {...any} params
- * @returns {Function}
- */
-export const tslFn = ( ...params ) => { // @deprecated, r168
-
-	console.warn( 'THREE.TSL: tslFn() has been renamed to Fn().' );
-	return Fn( ...params );
-
-};

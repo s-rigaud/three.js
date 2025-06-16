@@ -3,7 +3,7 @@
  * Copyright 2010-2025 Three.js Authors
  * SPDX-License-Identifier: MIT
  */
-const REVISION = '177dev';
+const REVISION = '178dev';
 
 /**
  * Represents mouse buttons and interaction types in context of controls.
@@ -1617,8 +1617,8 @@ const InterpolationSamplingMode = {
 	NORMAL: 'normal',
 	CENTROID: 'centroid',
 	SAMPLE: 'sample',
-	FLAT_FIRST: 'flat first',
-	FLAT_EITHER: 'flat either'
+	FIRST: 'first',
+	EITHER: 'either'
 };
 
 /**
@@ -6387,13 +6387,13 @@ function createColorManagement() {
 
 		},
 
-		fromWorkingColorSpace: function ( color, targetColorSpace ) {
+		workingToColorSpace: function ( color, targetColorSpace ) {
 
 			return this.convert( color, this.workingColorSpace, targetColorSpace );
 
 		},
 
-		toWorkingColorSpace: function ( color, sourceColorSpace ) {
+		colorSpaceToWorking: function ( color, sourceColorSpace ) {
 
 			return this.convert( color, sourceColorSpace, this.workingColorSpace );
 
@@ -6445,7 +6445,25 @@ function createColorManagement() {
 
 			return this.spaces[ colorSpace ].workingColorSpaceConfig.unpackColorSpace;
 
-		}
+		},
+
+		// Deprecated
+
+		fromWorkingColorSpace: function ( color, targetColorSpace ) {
+
+			warnOnce( 'THREE.ColorManagement: .fromWorkingColorSpace() has been renamed to .workingToColorSpace().' ); // @deprecated, r177
+
+			return ColorManagement.workingToColorSpace( color, targetColorSpace );
+
+		},
+
+		toWorkingColorSpace: function ( color, sourceColorSpace ) {
+
+			warnOnce( 'THREE.ColorManagement: .toWorkingColorSpace() has been renamed to .colorSpaceToWorking().' ); // @deprecated, r177
+
+			return ColorManagement.colorSpaceToWorking( color, sourceColorSpace );
+
+		},
 
 	};
 
@@ -7138,6 +7156,14 @@ class Texture extends EventDispatcher {
 		this.userData = {};
 
 		/**
+		 * This can be used to only update a subregion or specific rows of the texture (for example, just the
+		 * first 3 rows). Use the `addUpdateRange()` function to add ranges to this array.
+		 *
+		 * @type {Array<Object>}
+		 */
+		this.updateRanges = [];
+
+		/**
 		 * This starts at `0` and counts how many times {@link Texture#needsUpdate} is set to `true`.
 		 *
 		 * @type {number}
@@ -7248,6 +7274,27 @@ class Texture extends EventDispatcher {
 	}
 
 	/**
+	 * Adds a range of data in the data texture to be updated on the GPU.
+	 *
+	 * @param {number} start - Position at which to start update.
+	 * @param {number} count - The number of components to update.
+	 */
+	addUpdateRange( start, count ) {
+
+		this.updateRanges.push( { start, count } );
+
+	}
+
+	/**
+	 * Clears the update ranges.
+	 */
+	clearUpdateRanges() {
+
+		this.updateRanges.length = 0;
+
+	}
+
+	/**
 	 * Returns a new texture with copied values from this instance.
 	 *
 	 * @return {Texture} A clone of this instance.
@@ -7313,6 +7360,54 @@ class Texture extends EventDispatcher {
 	}
 
 	/**
+	 * Sets this texture's properties based on `values`.
+	 * @param {Object} values - A container with texture parameters.
+	 */
+	setValues( values ) {
+
+		for ( const key in values ) {
+
+			const newValue = values[ key ];
+
+			if ( newValue === undefined ) {
+
+				console.warn( `THREE.Texture.setValues(): parameter '${ key }' has value of undefined.` );
+				continue;
+
+			}
+
+			const currentValue = this[ key ];
+
+			if ( currentValue === undefined ) {
+
+				console.warn( `THREE.Texture.setValues(): property '${ key }' does not exist.` );
+				continue;
+
+			}
+
+			if ( ( currentValue && newValue ) && ( currentValue.isVector2 && newValue.isVector2 ) ) {
+
+				currentValue.copy( newValue );
+
+			} else if ( ( currentValue && newValue ) && ( currentValue.isVector3 && newValue.isVector3 ) ) {
+
+				currentValue.copy( newValue );
+
+			} else if ( ( currentValue && newValue ) && ( currentValue.isMatrix3 && newValue.isMatrix3 ) ) {
+
+				currentValue.copy( newValue );
+
+			} else {
+
+				this[ key ] = newValue;
+
+			}
+
+		}
+
+	}
+
+	/**
 	 * Serializes the texture into JSON.
 	 *
 	 * @param {?(Object|string)} meta - An optional value holding meta information about the serialization.
@@ -7332,7 +7427,7 @@ class Texture extends EventDispatcher {
 		const output = {
 
 			metadata: {
-				version: 4.6,
+				version: 4.7,
 				type: 'Texture',
 				generator: 'Texture.toJSON'
 			},
@@ -8734,11 +8829,7 @@ class RenderTarget extends EventDispatcher {
 
 		const image = { width: width, height: height, depth: options.depth };
 
-		const texture = new Texture( image, options.mapping, options.wrapS, options.wrapT, options.magFilter, options.minFilter, options.format, options.type, options.anisotropy, options.colorSpace );
-
-		texture.flipY = false;
-		texture.generateMipmaps = options.generateMipmaps;
-		texture.internalFormat = options.internalFormat;
+		const texture = new Texture( image );
 
 		/**
 		 * An array of textures. Each color attachment is represented as a separate texture.
@@ -8756,6 +8847,8 @@ class RenderTarget extends EventDispatcher {
 			this.textures[ i ].renderTarget = this;
 
 		}
+
+		this._setTextureOptions( options );
 
 		/**
 		 * Whether to allocate a depth buffer or not.
@@ -8809,6 +8902,38 @@ class RenderTarget extends EventDispatcher {
 		 * @default false
 		 */
 		this.multiview = options.multiview;
+
+	}
+
+	_setTextureOptions( options = {} ) {
+
+		const values = {
+			minFilter: LinearFilter,
+			generateMipmaps: false,
+			flipY: false,
+			internalFormat: null
+		};
+
+		if ( options.mapping !== undefined ) values.mapping = options.mapping;
+		if ( options.wrapS !== undefined ) values.wrapS = options.wrapS;
+		if ( options.wrapT !== undefined ) values.wrapT = options.wrapT;
+		if ( options.wrapR !== undefined ) values.wrapR = options.wrapR;
+		if ( options.magFilter !== undefined ) values.magFilter = options.magFilter;
+		if ( options.minFilter !== undefined ) values.minFilter = options.minFilter;
+		if ( options.format !== undefined ) values.format = options.format;
+		if ( options.type !== undefined ) values.type = options.type;
+		if ( options.anisotropy !== undefined ) values.anisotropy = options.anisotropy;
+		if ( options.colorSpace !== undefined ) values.colorSpace = options.colorSpace;
+		if ( options.flipY !== undefined ) values.flipY = options.flipY;
+		if ( options.generateMipmaps !== undefined ) values.generateMipmaps = options.generateMipmaps;
+		if ( options.internalFormat !== undefined ) values.internalFormat = options.internalFormat;
+
+		for ( let i = 0; i < this.textures.length; i ++ ) {
+
+			const texture = this.textures[ i ];
+			texture.setValues( values );
+
+		}
 
 	}
 
@@ -8872,12 +8997,7 @@ class RenderTarget extends EventDispatcher {
 				this.textures[ i ].image.width = width;
 				this.textures[ i ].image.height = height;
 				this.textures[ i ].image.depth = depth;
-
-				if ( this.textures[ i ].image.depth > 1 ) {
-
-					this.textures[ i ].isArrayTexture = true;
-
-				}
+				this.textures[ i ].isArrayTexture = this.textures[ i ].image.depth > 1;
 
 			}
 
@@ -9160,6 +9280,7 @@ class WebGLArrayRenderTarget extends WebGLRenderTarget {
 		 * @type {DataArrayTexture}
 		 */
 		this.texture = new DataArrayTexture( null, width, height, depth );
+		this._setTextureOptions( options );
 
 		this.texture.isRenderTargetTexture = true;
 
@@ -9311,6 +9432,7 @@ class WebGL3DRenderTarget extends WebGLRenderTarget {
 		 * @type {Data3DTexture}
 		 */
 		this.texture = new Data3DTexture( null, width, height, depth );
+		this._setTextureOptions( options );
 
 		this.texture.isRenderTargetTexture = true;
 
@@ -10881,6 +11003,8 @@ class Ray {
 	 * @return {boolean} Whether this ray intersects with the given sphere or not.
 	 */
 	intersectsSphere( sphere ) {
+
+		if ( sphere.radius < 0 ) return false; // handle empty spheres, see #31187
 
 		return this.distanceSqToPoint( sphere.center ) <= ( sphere.radius * sphere.radius );
 
@@ -14250,7 +14374,7 @@ class Object3D extends EventDispatcher {
 			};
 
 			output.metadata = {
-				version: 4.6,
+				version: 4.7,
 				type: 'Object',
 				generator: 'Object3D.toJSON'
 			};
@@ -15360,7 +15484,7 @@ class Color {
 		this.g = ( hex >> 8 & 255 ) / 255;
 		this.b = ( hex & 255 ) / 255;
 
-		ColorManagement.toWorkingColorSpace( this, colorSpace );
+		ColorManagement.colorSpaceToWorking( this, colorSpace );
 
 		return this;
 
@@ -15381,7 +15505,7 @@ class Color {
 		this.g = g;
 		this.b = b;
 
-		ColorManagement.toWorkingColorSpace( this, colorSpace );
+		ColorManagement.colorSpaceToWorking( this, colorSpace );
 
 		return this;
 
@@ -15418,7 +15542,7 @@ class Color {
 
 		}
 
-		ColorManagement.toWorkingColorSpace( this, colorSpace );
+		ColorManagement.colorSpaceToWorking( this, colorSpace );
 
 		return this;
 
@@ -15689,7 +15813,7 @@ class Color {
 	 */
 	getHex( colorSpace = SRGBColorSpace ) {
 
-		ColorManagement.fromWorkingColorSpace( _color.copy( this ), colorSpace );
+		ColorManagement.workingToColorSpace( _color.copy( this ), colorSpace );
 
 		return Math.round( clamp( _color.r * 255, 0, 255 ) ) * 65536 + Math.round( clamp( _color.g * 255, 0, 255 ) ) * 256 + Math.round( clamp( _color.b * 255, 0, 255 ) );
 
@@ -15719,7 +15843,7 @@ class Color {
 
 		// h,s,l ranges are in 0.0 - 1.0
 
-		ColorManagement.fromWorkingColorSpace( _color.copy( this ), colorSpace );
+		ColorManagement.workingToColorSpace( _color.copy( this ), colorSpace );
 
 		const r = _color.r, g = _color.g, b = _color.b;
 
@@ -15769,7 +15893,7 @@ class Color {
 	 */
 	getRGB( target, colorSpace = ColorManagement.workingColorSpace ) {
 
-		ColorManagement.fromWorkingColorSpace( _color.copy( this ), colorSpace );
+		ColorManagement.workingToColorSpace( _color.copy( this ), colorSpace );
 
 		target.r = _color.r;
 		target.g = _color.g;
@@ -15787,7 +15911,7 @@ class Color {
 	 */
 	getStyle( colorSpace = SRGBColorSpace ) {
 
-		ColorManagement.fromWorkingColorSpace( _color.copy( this ), colorSpace );
+		ColorManagement.workingToColorSpace( _color.copy( this ), colorSpace );
 
 		const r = _color.r, g = _color.g, b = _color.b;
 
@@ -16727,7 +16851,7 @@ class Material extends EventDispatcher {
 
 		const data = {
 			metadata: {
-				version: 4.6,
+				version: 4.7,
 				type: 'Material',
 				generator: 'Material.toJSON'
 			}
@@ -19778,7 +19902,7 @@ class BufferGeometry extends EventDispatcher {
 
 		const data = {
 			metadata: {
-				version: 4.6,
+				version: 4.7,
 				type: 'BufferGeometry',
 				generator: 'BufferGeometry.toJSON'
 			}
@@ -20104,6 +20228,15 @@ class Mesh extends Object3D {
 		 * @default undefined
 		 */
 		this.morphTargetInfluences = undefined;
+
+		/**
+		 * The number of instances of this mesh.
+		 * Can only be used with {@link WebGPURenderer}.
+		 *
+		 * @type {number}
+		 * @default 1
+		 */
+		this.count = 1;
 
 		this.updateMorphTargets();
 
@@ -22053,7 +22186,8 @@ class WebGLCubeRenderTarget extends WebGLRenderTarget {
 		 *
 		 * @type {DataArrayTexture}
 		 */
-		this.texture = new CubeTexture( images, options.mapping, options.wrapS, options.wrapT, options.magFilter, options.minFilter, options.format, options.type, options.anisotropy, options.colorSpace );
+		this.texture = new CubeTexture( images );
+		this._setTextureOptions( options );
 
 		// By convention -- likely based on the RenderMan spec from the 1990's -- cube maps are specified by WebGL (and three.js)
 		// in a coordinate system in which positive-x is to the right when looking up the positive-z axis -- in other words,
@@ -22064,9 +22198,6 @@ class WebGLCubeRenderTarget extends WebGLRenderTarget {
 		// as a cube texture (this is detected when isRenderTargetTexture is set to true for cube textures).
 
 		this.texture.isRenderTargetTexture = true;
-
-		this.texture.generateMipmaps = options.generateMipmaps !== undefined ? options.generateMipmaps : false;
-		this.texture.minFilter = options.minFilter !== undefined ? options.minFilter : LinearFilter;
 
 	}
 
@@ -24054,6 +24185,15 @@ class Sprite extends Object3D {
 		 */
 		this.center = new Vector2( 0.5, 0.5 );
 
+		/**
+		 * The number of instances of this sprite.
+		 * Can only be used with {@link WebGPURenderer}.
+		 *
+		 * @type {number}
+		 * @default 1
+		 */
+		this.count = 1;
+
 	}
 
 	/**
@@ -25307,7 +25447,7 @@ class Skeleton {
 
 		const data = {
 			metadata: {
-				version: 4.6,
+				version: 4.7,
 				type: 'Skeleton',
 				generator: 'Skeleton.toJSON'
 			},
@@ -31614,7 +31754,7 @@ class Curve {
 
 		const data = {
 			metadata: {
-				version: 4.6,
+				version: 4.7,
 				type: 'Curve',
 				generator: 'Curve.toJSON'
 			}
@@ -48384,6 +48524,8 @@ const TEXTURE_FILTER = {
 	LinearMipmapLinearFilter: LinearMipmapLinearFilter
 };
 
+const _errorMap = new WeakMap();
+
 /**
  * A loader for loading images as an [ImageBitmap]{@link https://developer.mozilla.org/en-US/docs/Web/API/ImageBitmap}.
  * An `ImageBitmap` provides an asynchronous and resource efficient pathway to prepare
@@ -48394,7 +48536,7 @@ const TEXTURE_FILTER = {
  *
  * You need to set the equivalent options via {@link ImageBitmapLoader#setOptions} instead.
  *
- * Also note that unlike {@link FileLoader}, this loader does not avoid multiple concurrent requests to the same URL.
+ * Also note that unlike {@link FileLoader}, this loader avoids multiple concurrent requests to the same URL only if `Cache` is enabled.
  *
  * ```js
  * const loader = new THREE.ImageBitmapLoader();
@@ -48494,15 +48636,27 @@ class ImageBitmapLoader extends Loader {
 
 				cached.then( imageBitmap => {
 
-					if ( onLoad ) onLoad( imageBitmap );
+					// check if there is an error for the cached promise
 
-					scope.manager.itemEnd( url );
+					if ( _errorMap.has( cached ) === true ) {
 
-				} ).catch( e => {
+						if ( onError ) onError( _errorMap.get( cached ) );
 
-					if ( onError ) onError( e );
+						scope.manager.itemError( url );
+						scope.manager.itemEnd( url );
+
+					} else {
+
+						if ( onLoad ) onLoad( imageBitmap );
+
+						scope.manager.itemEnd( url );
+
+						return imageBitmap;
+
+					}
 
 				} );
+
 				return;
 
 			}
@@ -48545,6 +48699,8 @@ class ImageBitmapLoader extends Loader {
 		} ).catch( function ( e ) {
 
 			if ( onError ) onError( e );
+
+			_errorMap.set( promise, e );
 
 			Cache.remove( url );
 
@@ -53729,6 +53885,7 @@ class RenderTarget3D extends RenderTarget {
 		 * @type {Data3DTexture}
 		 */
 		this.texture = new Data3DTexture( null, width, height, depth );
+		this._setTextureOptions( options );
 
 		this.texture.isRenderTargetTexture = true;
 
@@ -55630,7 +55787,7 @@ class SkeletonHelper extends LineSegments {
 		this.root = object;
 
 		/**
-		 * he list of bones that the helper visualizes.
+		 * The list of bones that the helper visualizes.
 		 *
 		 * @type {Array<Bone>}
 		 */

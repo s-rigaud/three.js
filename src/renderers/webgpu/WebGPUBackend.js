@@ -2356,8 +2356,6 @@ class WebGPUBackend extends Backend {
 			]
 		);
 
-		if ( texture.generateMipmaps ) this.textureUtils.generateMipmaps( texture );
-
 		if ( renderContextData.currentPass ) {
 
 			const { descriptor } = renderContextData;
@@ -2391,6 +2389,12 @@ class WebGPUBackend extends Backend {
 		} else {
 
 			this.device.queue.submit( [ encoder.finish() ] );
+
+		}
+
+		if ( texture.generateMipmaps ) {
+
+			this.textureUtils.generateMipmaps( texture );
 
 		}
 

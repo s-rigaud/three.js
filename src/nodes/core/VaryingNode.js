@@ -71,20 +71,15 @@ class VaryingNode extends Node {
 		 */
 		this.interpolationSampling = null;
 
-	}
-
-	/**
-	 * The method is overwritten so it always returns `true`.
-	 *
-	 * @param {NodeBuilder} builder - The current node builder.
-	 * @return {boolean} Whether this node is global or not.
-	 */
-	isGlobal( /*builder*/ ) {
-
-		return true;
+		/**
+		 * This flag is used for global cache.
+		 *
+		 * @type {boolean}
+		 * @default true
+		 */
+		this.global = true;
 
 	}
-
 
 	/**
 	 * Defines the interpolation type of the varying.
@@ -97,6 +92,7 @@ class VaryingNode extends Node {
 
 		this.interpolationType = type;
 		this.interpolationSampling = sampling;
+
 		return this;
 
 	}
@@ -150,24 +146,25 @@ class VaryingNode extends Node {
 
 		this.setupVarying( builder );
 
+		builder.flowNodeFromShaderStage( NodeShaderStage.VERTEX, this.node );
+
 	}
 
 	analyze( builder ) {
 
 		this.setupVarying( builder );
 
-		return this.node.analyze( builder );
+		builder.flowNodeFromShaderStage( NodeShaderStage.VERTEX, this.node );
 
 	}
 
 	generate( builder ) {
 
+		const propertyKey = builder.getSubBuildProperty( 'property', builder.currentStack );
 		const properties = builder.getNodeProperties( this );
 		const varying = this.setupVarying( builder );
 
-		const needsReassign = builder.shaderStage === 'fragment' && properties.reassignPosition === true && builder.context.needsPositionReassign;
-
-		if ( properties.propertyName === undefined || needsReassign ) {
+		if ( properties[ propertyKey ] === undefined ) {
 
 			const type = this.getNodeType( builder );
 			const propertyName = builder.getPropertyName( varying, NodeShaderStage.VERTEX );
@@ -175,18 +172,7 @@ class VaryingNode extends Node {
 			// force node run in vertex stage
 			builder.flowNodeFromShaderStage( NodeShaderStage.VERTEX, this.node, type, propertyName );
 
-			properties.propertyName = propertyName;
-
-			if ( needsReassign ) {
-
-				// once reassign varying in fragment stage
-				properties.reassignPosition = false;
-
-			} else if ( properties.reassignPosition === undefined && builder.context.isPositionNodeInput ) {
-
-				properties.reassignPosition = true;
-
-			}
+			properties[ propertyKey ] = propertyName;
 
 		}
 
