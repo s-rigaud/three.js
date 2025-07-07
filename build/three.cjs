@@ -5,7 +5,7 @@
  */
 'use strict';
 
-const REVISION = '178dev';
+const REVISION = '179dev';
 
 /**
  * Represents mouse buttons and interaction types in context of controls.
@@ -3869,7 +3869,7 @@ class Quaternion {
 
 		let r = vFrom.dot( vTo ) + 1;
 
-		if ( r < Number.EPSILON ) {
+		if ( r < 1e-8 ) { // the epsilon value has been discussed in #31286
 
 			// vFrom and vTo point in opposite directions
 
@@ -18526,8 +18526,8 @@ class Uint32BufferAttribute extends BufferAttribute {
  * Convenient class that can be used when creating a `Float16` buffer attribute with
  * a plain `Array` instance.
  *
- * This class automatically converts to and from FP16 since `Float16Array` is not
- * natively supported in JavaScript.
+ * This class automatically converts to and from FP16 via `Uint16Array` since `Float16Array`
+ * browser support is still problematic.
  *
  * @augments BufferAttribute
  */
@@ -26293,6 +26293,7 @@ class Plane {
 }
 
 const _sphere$3 = /*@__PURE__*/ new Sphere();
+const _defaultSpriteCenter = /*@__PURE__*/ new Vector2( 0.5, 0.5 );
 const _vector$6 = /*@__PURE__*/ new Vector3();
 
 /**
@@ -26450,7 +26451,10 @@ class Frustum {
 	intersectsSprite( sprite ) {
 
 		_sphere$3.center.set( 0, 0, 0 );
-		_sphere$3.radius = 0.7071067811865476;
+
+		const offset = _defaultSpriteCenter.distanceTo( sprite.center );
+
+		_sphere$3.radius = 0.7071067811865476 + offset;
 		_sphere$3.applyMatrix4( sprite.matrixWorld );
 
 		return this.intersectsSphere( _sphere$3 );
@@ -33883,11 +33887,11 @@ class Path extends CurvePath {
 	 * Adds an arc as an instance of {@link EllipseCurve} to the path, positioned relative
 	 * to the current point.
 	 *
-	 * @param {number} aX - The x coordinate of the center of the arc offsetted from the previous curve.
-	 * @param {number} aY - The y coordinate of the center of the arc offsetted from the previous curve.
-	 * @param {number} aRadius - The radius of the arc.
-	 * @param {number} aStartAngle - The start angle in radians.
-	 * @param {number} aEndAngle - The end angle in radians.
+	 * @param {number} [aX=0] - The x coordinate of the center of the arc offsetted from the previous curve.
+	 * @param {number} [aY=0] - The y coordinate of the center of the arc offsetted from the previous curve.
+	 * @param {number} [aRadius=1] - The radius of the arc.
+	 * @param {number} [aStartAngle=0] - The start angle in radians.
+	 * @param {number} [aEndAngle=Math.PI*2] - The end angle in radians.
 	 * @param {boolean} [aClockwise=false] - Whether to sweep the arc clockwise or not.
 	 * @return {Path} A reference to this path.
 	 */
@@ -33906,11 +33910,11 @@ class Path extends CurvePath {
 	/**
 	 * Adds an absolutely positioned arc as an instance of {@link EllipseCurve} to the path.
 	 *
-	 * @param {number} aX - The x coordinate of the center of the arc.
-	 * @param {number} aY - The y coordinate of the center of the arc.
-	 * @param {number} aRadius - The radius of the arc.
-	 * @param {number} aStartAngle - The start angle in radians.
-	 * @param {number} aEndAngle - The end angle in radians.
+	 * @param {number} [aX=0] - The x coordinate of the center of the arc.
+	 * @param {number} [aY=0] - The y coordinate of the center of the arc.
+	 * @param {number} [aRadius=1] - The radius of the arc.
+	 * @param {number} [aStartAngle=0] - The start angle in radians.
+	 * @param {number} [aEndAngle=Math.PI*2] - The end angle in radians.
 	 * @param {boolean} [aClockwise=false] - Whether to sweep the arc clockwise or not.
 	 * @return {Path} A reference to this path.
 	 */
@@ -33926,12 +33930,12 @@ class Path extends CurvePath {
 	 * Adds an ellipse as an instance of {@link EllipseCurve} to the path, positioned relative
 	 * to the current point
 	 *
-	 * @param {number} aX - The x coordinate of the center of the ellipse offsetted from the previous curve.
-	 * @param {number} aY - The y coordinate of the center of the ellipse offsetted from the previous curve.
-	 * @param {number} xRadius - The radius of the ellipse in the x axis.
-	 * @param {number} yRadius - The radius of the ellipse in the y axis.
-	 * @param {number} aStartAngle - The start angle in radians.
-	 * @param {number} aEndAngle - The end angle in radians.
+	 * @param {number} [aX=0] - The x coordinate of the center of the ellipse offsetted from the previous curve.
+	 * @param {number} [aY=0] - The y coordinate of the center of the ellipse offsetted from the previous curve.
+	 * @param {number} [xRadius=1] - The radius of the ellipse in the x axis.
+	 * @param {number} [yRadius=1] - The radius of the ellipse in the y axis.
+	 * @param {number} [aStartAngle=0] - The start angle in radians.
+	 * @param {number} [aEndAngle=Math.PI*2] - The end angle in radians.
 	 * @param {boolean} [aClockwise=false] - Whether to sweep the ellipse clockwise or not.
 	 * @param {number} [aRotation=0] - The rotation angle of the ellipse in radians, counterclockwise from the positive X axis.
 	 * @return {Path} A reference to this path.
@@ -33950,12 +33954,12 @@ class Path extends CurvePath {
 	/**
 	 * Adds an absolutely positioned ellipse as an instance of {@link EllipseCurve} to the path.
 	 *
-	 * @param {number} aX - The x coordinate of the absolute center of the ellipse.
-	 * @param {number} aY - The y coordinate of the absolute center of the ellipse.
-	 * @param {number} xRadius - The radius of the ellipse in the x axis.
-	 * @param {number} yRadius - The radius of the ellipse in the y axis.
-	 * @param {number} aStartAngle - The start angle in radians.
-	 * @param {number} aEndAngle - The end angle in radians.
+	 * @param {number} [aX=0] - The x coordinate of the absolute center of the ellipse.
+	 * @param {number} [aY=0] - The y coordinate of the absolute center of the ellipse.
+	 * @param {number} [xRadius=1] - The radius of the ellipse in the x axis.
+	 * @param {number} [yRadius=1] - The radius of the ellipse in the y axis.
+	 * @param {number} [aStartAngle=0] - The start angle in radians.
+	 * @param {number} [aEndAngle=Math.PI*2] - The end angle in radians.
 	 * @param {boolean} [aClockwise=false] - Whether to sweep the ellipse clockwise or not.
 	 * @param {number} [aRotation=0] - The rotation angle of the ellipse in radians, counterclockwise from the positive X axis.
 	 * @return {Path} A reference to this path.
@@ -43292,6 +43296,13 @@ class LoadingManager {
 		this.onError = onError;
 
 		/**
+		 * Used for aborting ongoing requests in loaders using this manager.
+		 *
+		 * @type {AbortController}
+		 */
+		this.abortController = new AbortController();
+
+		/**
 		 * This should be called by any loader using the manager when the loader
 		 * starts loading an item.
 		 *
@@ -43491,6 +43502,22 @@ class LoadingManager {
 
 		};
 
+		/**
+		 * Can be used to abort ongoing loading requests in loaders using this manager.
+		 * The abort only works if the loaders implement {@link Loader#abort} and `AbortSignal.any()`
+		 * is supported in the browser.
+		 *
+		 * @return {LoadingManager} A reference to this loading manager.
+		 */
+		this.abort = function () {
+
+			this.abortController.abort();
+			this.abortController = new AbortController();
+
+			return this;
+
+		};
+
 	}
 
 }
@@ -43570,6 +43597,7 @@ class Loader {
 	 * This method needs to be implemented by all concrete loaders. It holds the
 	 * logic for loading assets from the backend.
 	 *
+	 * @abstract
 	 * @param {string} url - The path/URL of the file to be loaded.
 	 * @param {Function} onLoad - Executed when the loading process has been finished.
 	 * @param {onProgressCallback} [onProgress] - Executed while the loading is in progress.
@@ -43600,6 +43628,7 @@ class Loader {
 	 * This method needs to be implemented by all concrete loaders. It holds the
 	 * logic for parsing the asset into three.js entities.
 	 *
+	 * @abstract
 	 * @param {any} data - The data to parse.
 	 */
 	parse( /* data */ ) {}
@@ -43670,6 +43699,18 @@ class Loader {
 	setRequestHeader( requestHeader ) {
 
 		this.requestHeader = requestHeader;
+		return this;
+
+	}
+
+	/**
+	 * This method can be implemented in loaders for aborting ongoing requests.
+	 *
+	 * @abstract
+	 * @return {Loader} A reference to this instance.
+	 */
+	abort() {
+
 		return this;
 
 	}
@@ -43756,6 +43797,14 @@ class FileLoader extends Loader {
 		 */
 		this.responseType = '';
 
+		/**
+		 * Used for aborting requests.
+		 *
+		 * @private
+		 * @type {AbortController}
+		 */
+		this._abortController = new AbortController();
+
 	}
 
 	/**
@@ -43775,7 +43824,7 @@ class FileLoader extends Loader {
 
 		url = this.manager.resolveURL( url );
 
-		const cached = Cache.get( url );
+		const cached = Cache.get( `file:${url}` );
 
 		if ( cached !== undefined ) {
 
@@ -43822,7 +43871,7 @@ class FileLoader extends Loader {
 		const req = new Request( url, {
 			headers: new Headers( this.requestHeader ),
 			credentials: this.withCredentials ? 'include' : 'same-origin',
-			// An abort controller could be added within a future PR
+			signal: ( typeof AbortSignal.any === 'function' ) ? AbortSignal.any( [ this._abortController.signal, this.manager.abortController.signal ] ) : this._abortController.signal
 		} );
 
 		// record states ( avoid data race )
@@ -43964,7 +44013,7 @@ class FileLoader extends Loader {
 
 				// Add to cache only on HTTP success, so that we do not cache
 				// error response bodies as proper responses to requests.
-				Cache.add( url, data );
+				Cache.add( `file:${url}`, data );
 
 				const callbacks = loading[ url ];
 				delete loading[ url ];
@@ -44035,6 +44084,20 @@ class FileLoader extends Loader {
 	setMimeType( value ) {
 
 		this.mimeType = value;
+		return this;
+
+	}
+
+	/**
+	 * Aborts ongoing fetch requests.
+	 *
+	 * @return {FileLoader} A reference to this instance.
+	 */
+	abort() {
+
+		this._abortController.abort();
+		this._abortController = new AbortController();
+
 		return this;
 
 	}
@@ -44328,7 +44391,7 @@ class ImageLoader extends Loader {
 
 		const scope = this;
 
-		const cached = Cache.get( url );
+		const cached = Cache.get( `image:${url}` );
 
 		if ( cached !== undefined ) {
 
@@ -44394,7 +44457,11 @@ class ImageLoader extends Loader {
 
 			if ( onError ) onError( event );
 
+<<<<<<< HEAD
 			Cache.remove( url );
+=======
+			Cache.remove( `image:${url}` );
+>>>>>>> dev
 
 			//
 
@@ -44431,7 +44498,11 @@ class ImageLoader extends Loader {
 
 		}
 
+<<<<<<< HEAD
 		Cache.add( url, image );
+=======
+		Cache.add( `image:${url}`, image );
+>>>>>>> dev
 		scope.manager.itemStart( url );
 
 		image.src = url;
@@ -48638,6 +48709,14 @@ class ImageBitmapLoader extends Loader {
 		 */
 		this.options = { premultiplyAlpha: 'none' };
 
+		/**
+		 * Used for aborting requests.
+		 *
+		 * @private
+		 * @type {AbortController}
+		 */
+		this._abortController = new AbortController();
+
 	}
 
 	/**
@@ -48674,7 +48753,7 @@ class ImageBitmapLoader extends Loader {
 
 		const scope = this;
 
-		const cached = Cache.get( url );
+		const cached = Cache.get( `image-bitmap:${url}` );
 
 		if ( cached !== undefined ) {
 
@@ -48726,6 +48805,7 @@ class ImageBitmapLoader extends Loader {
 		const fetchOptions = {};
 		fetchOptions.credentials = ( this.crossOrigin === 'anonymous' ) ? 'same-origin' : 'include';
 		fetchOptions.headers = this.requestHeader;
+		fetchOptions.signal = ( typeof AbortSignal.any === 'function' ) ? AbortSignal.any( [ this._abortController.signal, this.manager.abortController.signal ] ) : this._abortController.signal;
 
 		const promise = fetch( url, fetchOptions ).then( function ( res ) {
 
@@ -48737,7 +48817,7 @@ class ImageBitmapLoader extends Loader {
 
 		} ).then( function ( imageBitmap ) {
 
-			Cache.add( url, imageBitmap );
+			Cache.add( `image-bitmap:${url}`, imageBitmap );
 
 			if ( onLoad ) onLoad( imageBitmap );
 
@@ -48751,15 +48831,29 @@ class ImageBitmapLoader extends Loader {
 
 			_errorMap.set( promise, e );
 
-			Cache.remove( url );
+			Cache.remove( `image-bitmap:${url}` );
 
 			scope.manager.itemError( url );
 			scope.manager.itemEnd( url );
 
 		} );
 
-		Cache.add( url, promise );
+		Cache.add( `image-bitmap:${url}`, promise );
 		scope.manager.itemStart( url );
+
+	}
+
+	/**
+	 * Aborts ongoing fetch requests.
+	 *
+	 * @return {ImageBitmapLoader} A reference to this instance.
+	 */
+	abort() {
+
+		this._abortController.abort();
+		this._abortController = new AbortController();
+
+		return this;
 
 	}
 
@@ -49150,7 +49244,7 @@ class Clock {
 	 */
 	start() {
 
-		this.startTime = now();
+		this.startTime = performance.now();
 
 		this.oldTime = this.startTime;
 		this.elapsedTime = 0;
@@ -49199,7 +49293,7 @@ class Clock {
 
 		if ( this.running ) {
 
-			const newTime = now();
+			const newTime = performance.now();
 
 			diff = ( newTime - this.oldTime ) / 1000;
 			this.oldTime = newTime;
@@ -49211,12 +49305,6 @@ class Clock {
 		return diff;
 
 	}
-
-}
-
-function now() {
-
-	return performance.now();
 
 }
 
@@ -58220,6 +58308,10 @@ function WebGLAttributes( gl ) {
 
 			type = gl.FLOAT;
 
+		} else if ( typeof Float16Array !== 'undefined' && array instanceof Float16Array ) {
+
+			type = gl.HALF_FLOAT;
+
 		} else if ( array instanceof Uint16Array ) {
 
 			if ( attribute.isFloat16BufferAttribute ) {
@@ -65410,6 +65502,8 @@ function WebGLPrograms( renderer, cubemaps, cubeuvmaps, extensions, capabilities
 			_programLayers.enable( 20 );
 		if ( parameters.batchingColor )
 			_programLayers.enable( 21 );
+		if ( parameters.gradientMap )
+			_programLayers.enable( 22 );
 
 		array.push( _programLayers.mask );
 		_programLayers.disableAll();
@@ -74755,6 +74849,9 @@ class WebGLRenderer {
 			//
 
 			const currentRenderTarget = _this.getRenderTarget();
+			const currentActiveCubeFace = _this.getActiveCubeFace();
+			const currentActiveMipmapLevel = _this.getActiveMipmapLevel();
+
 			_this.setRenderTarget( transmissionRenderTarget );
 
 			_this.getClearColor( _currentClearColor );
@@ -74824,7 +74921,7 @@ class WebGLRenderer {
 
 			}
 
-			_this.setRenderTarget( currentRenderTarget );
+			_this.setRenderTarget( currentRenderTarget, currentActiveCubeFace, currentActiveMipmapLevel );
 
 			_this.setClearColor( _currentClearColor, _currentClearAlpha );
 

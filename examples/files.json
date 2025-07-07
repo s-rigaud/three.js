@@ -210,9 +210,7 @@
 		"webgl_tonemapping",
 		"webgl_video_kinect",
 		"webgl_video_panorama_equirectangular",
-		"webgl_watch",
-		"webgl_water",
-		"webgl_water_flowmap"
+		"webgl_watch"
 	],
 	"webgl / postprocessing": [
 		"webgl_postprocessing",
@@ -317,6 +315,7 @@
 		"webgpu_compute_points",
 		"webgpu_compute_sort_bitonic",
 		"webgpu_compute_texture",
+		"webgpu_compute_texture_3d",
 		"webgpu_compute_texture_pingpong",
 		"webgpu_compute_water",
 		"webgpu_cubemap_adjustments",
@@ -418,6 +417,7 @@
 		"webgpu_procedural_texture",
 		"webgpu_reflection",
 		"webgpu_reflection_blurred",
+		"webgpu_reflection_roughness",
 		"webgpu_refraction",
 		"webgpu_rendertarget_2d-array_3d",
 		"webgpu_rtt",

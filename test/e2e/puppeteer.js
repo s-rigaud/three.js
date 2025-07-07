@@ -111,6 +111,11 @@ const exceptionList = [
 	'webgpu_multisampled_renderbuffers',
 	'webgl_test_wide_gamut',
 	'webgl_volume_instancing',
+	'webgl_buffergeometry',
+	'webgl_buffergeometry_attributes_integer',
+	'webgl_buffergeometry_attributes_none',
+	'webgl_buffergeometry_custom_attributes_particles',
+	'webgl_batch_lod_bvh',
 
 	// Intentional z-fighting in this demo makes it non-deterministic
 	'webgl_reverse_depth_buffer',
@@ -123,6 +128,7 @@ const exceptionList = [
 	// Awaiting for WebGL backend support
 	'webgpu_compute_audio',
 	'webgpu_compute_texture',
+	'webgpu_compute_texture_3d',
 	'webgpu_compute_texture_pingpong',
 	'webgpu_compute_water',
 	'webgpu_materials',
