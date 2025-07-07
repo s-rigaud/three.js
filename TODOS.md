@@ -17,7 +17,10 @@ examples/webgpu_xr_native_layers.js(443,38): error TS2554: Expected 0 arguments,
 AnimationClipCreator construtor takes an array of booleans
 WebGPUPipelineUtils.js _getColorWriteMask return a number
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js(633,95): error TS2554: Expected 4-5 arguments, but got 6.
-
+examples/jsm/capabilities/WebGPU.js(5,2)
+src/renderers/webgpu/utils/WebGPUPipelineUtils.js(719,70)
+src/renderers/webgl-fallback/WebGLBackend.js(458,57)
+src/renderers/webgl-fallback/WebGLBackend.js(186,13)
 
 # Dev
 WebGlRendere.setClearAlpha and setClearColor should not used arguments keyword
