@@ -169,6 +169,8 @@ blandit
 BLAS
 blas
 Bleepy
+Blendable
+blendable
 blendings
 blendshape
 Blendshapes
@@ -2220,6 +2222,7 @@ sval
 swapchain
 swiftshader
 symfony
+syntheticplants
 Syoyo
 Syst├¿me
 tabindex
