@@ -172,7 +172,7 @@ class Node extends EventDispatcher {
 	onUpdate( callback, updateType ) {
 
 		this.updateType = updateType;
-		this.update = callback.bind( this.getSelf() );
+		this.update = callback.bind( this );
 
 		return this;
 
@@ -225,23 +225,9 @@ class Node extends EventDispatcher {
 	 */
 	onReference( callback ) {
 
-		this.updateReference = callback.bind( this.getSelf() );
+		this.updateReference = callback.bind( this );
 
 		return this;
-
-	}
-
-	/**
-	 * The `this` reference might point to a Proxy so this method can be used
-	 * to get the reference to the actual node instance.
-	 *
-	 * @return {Node} A reference to the node.
-	 */
-	getSelf() {
-
-		// Returns non-node object.
-
-		return this.self || this;
 
 	}
 
@@ -481,9 +467,21 @@ class Node extends EventDispatcher {
 	}
 
 	/**
+	 * Returns the number of elements in the node array.
+	 *
+	 * @param {NodeBuilder} builder - The current node builder.
+	 * @return {?number} The number of elements in the node array.
+	 */
+	getArrayCount( /*builder*/ ) {
+
+		return null;
+
+	}
+
+	/**
 	 * Represents the setup stage which is the first step of the build process, see {@link Node#build} method.
-	 * This method is often overwritten in derived modules to prepare the node which is used as the output/result.
-	 * The output node must be returned in the `return` statement.
+	 * This method is often overwritten in derived modules to prepare the node which is used as a node's output/result.
+	 * If an output node is prepared, then it must be returned in the `return` statement of the derived module's setup function.
 	 *
 	 * @param {NodeBuilder} builder - The current node builder.
 	 * @return {?Node} The output node.
@@ -750,6 +748,16 @@ class Node extends EventDispatcher {
 			} else {
 
 				result = this.generate( builder, output ) || '';
+
+			}
+
+			if ( result === '' && output !== null && output !== 'void' && output !== 'OutputType' ) {
+
+				// if no snippet is generated, return a default value
+
+				console.error( `THREE.TSL: Invalid generated code, expected a "${ output }".` );
+
+				result = builder.generateConst( output );
 
 			}
 

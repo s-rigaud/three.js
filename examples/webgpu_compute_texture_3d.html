@@ -25,7 +25,7 @@
 
 		<script type="module">
 
-			import * as THREE from 'three';
+			import * as THREE from 'three/webgpu';
 			import { time, mx_noise_vec3, instanceIndex, textureStore, float, vec3, vec4, If, Break, Fn, smoothstep, texture3D, uniform } from 'three/tsl';
 
 			import { RaymarchingBox } from 'three/addons/tsl/utils/Raymarching.js';
@@ -33,10 +33,19 @@
 			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 			import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
+			import WebGPU from 'three/addons/capabilities/WebGPU.js';
 
 			let renderer, scene, camera;
 			let mesh;
 			let computeNode;
+
+			if ( WebGPU.isAvailable() === false ) {
+
+				document.body.appendChild( WebGPU.getErrorMessage() );
+
+				throw new Error( 'No WebGPU support' );
+
+			}
 
 			init();
 
@@ -110,7 +119,7 @@
 				storageTexture.generateMipmaps = false;
 				storageTexture.name = 'cloud';
 			
-				computeNode = computeCloud( { storageTexture } ).compute( size * size * size ).label( 'computeCloud' );
+				computeNode = computeCloud( { storageTexture } ).compute( size * size * size ).setName( 'computeCloud' );
 
 				// Shader
 
