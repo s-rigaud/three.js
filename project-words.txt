@@ -60,6 +60,7 @@ animazione
 anima├º├úo
 anims
 ANISOTROPYMAP
+Ansorge
 Antialiasing
 antialiasing
 antiquewhite
@@ -135,6 +136,7 @@ behance
 behaviour
 benchy
 BERNIER
+betann
 Bezier
 BFBF
 bfnrtv
@@ -158,6 +160,7 @@ Bitangent
 bitangent
 BITCAST
 bitcast
+bitfield
 bitfields
 Bitonic
 bitonic
@@ -285,6 +288,7 @@ circlable
 citymapper
 CKBG
 CKEY
+clampoutput
 CLEARCOAT
 Clearcoat
 clearcoat
@@ -334,6 +338,7 @@ Colormap
 colormap
 colormaps
 colorpos
+colorspace
 colortables
 colortone
 COLOUR
@@ -378,6 +383,7 @@ crdeath
 Creare
 creare
 createducks
+creatematrix
 Criando
 criar
 Cright
@@ -415,6 +421,7 @@ Cubescape
 CUBEUV
 cubeuvmaps
 CUBICSPLINE
+CUDA
 cupra
 curveadjust
 curvelookup
@@ -472,6 +479,7 @@ deeppink
 deepscan
 deepskyblue
 deezer
+defaultgeomprop
 defaultnormal
 deinterleave
 deinterleaves
@@ -1043,8 +1051,11 @@ Heightfield
 heightfield
 Heightmap
 heightmap
+heightnormal
 heightseg
 heightsegments
+heighttonormal
+heighttonormalmap
 Heikkinen
 Heitz
 Heitz's
@@ -1060,6 +1071,7 @@ hiero
 highp
 hitbox
 hittest
+HLSL
 hmmmface
 horz
 Hoskins
@@ -1091,9 +1103,13 @@ IESNA
 IFAL
 IFCSPACE
 ifds
+ifequal
+ifgreater
+ifgreatereq
 IFLT
 IFOT
 igdosh
+Igorek
 IHDR
 IIMG
 IINM
@@ -1316,6 +1332,7 @@ LMAGIC
 Localisation
 localised
 localpos
+lockstop
 Lods
 logarithmicdepthbuffer
 LOGDEPTHBUF
@@ -1434,6 +1451,7 @@ metalness
 metalnesses
 METALNESSMAP
 metalnessmap
+metalrough
 Mettre
 metus
 mgck
@@ -1573,11 +1591,13 @@ nobjects
 noborder
 NOCERTIFY
 NOCLIP
+nodedef
 nodegraph
 nodename
 noinvertdark
 nomip
 nonblinn
+nondegenerate
 nonname
 nonvr
 noperspective
@@ -1659,6 +1679,7 @@ oldv
 olivedrab
 OMAX
 OMDE
+oneau
 onedrive
 onlyfans
 oosmoxiecode
@@ -1669,6 +1690,7 @@ OPAQ
 openended
 opengameart
 opengl
+operationorder
 oppo
 Optimer
 optimer
@@ -1688,7 +1710,13 @@ outhigh
 Outliner
 outliner
 outlow
+outmax
+outmin
 OUTR
+outw
+outx
+outy
+outz
 overloadings
 Oyamada
 paanga
@@ -2152,6 +2180,7 @@ spruit
 sqdist
 squeezeend
 squeezestart
+srgb
 srgba
 SSAA
 ssaa
@@ -2217,6 +2246,7 @@ Supprimer
 suprised
 Surfacemap
 surfacematerial
+surfaceshader
 surfshark
 sval
 swapchain
@@ -2277,6 +2307,7 @@ Threejs
 threejs
 threepipe
 Threlte
+thresholded
 thresholding
 thumbstick
 tikto
@@ -2379,6 +2410,7 @@ ultrahdr
 ummm
 ummmm
 unbias
+unblurred
 unboxend
 unboxstart
 uncache
@@ -2388,10 +2420,12 @@ undos
 Unfilterable
 unfilterable
 unicodes
+unifiednoise
 unioned
 unioning
 unitless
 unittests
+unittype
 unitx
 unjittered
 unmapping
@@ -2417,6 +2451,7 @@ unskew
 unskewed
 unskewing
 unvalidated
+unvectorized
 unzlib
 UOFFSET
 Upitis
@@ -2448,8 +2483,12 @@ valorant
 valp
 VALU
 valueb
+valuebl
+valuebr
 valuel
 valuet
+valuetl
+valuetr
 varius
 Varys
 vcglib
@@ -2503,6 +2542,7 @@ VMOP
 VMPA
 vnum
 VOFFSET
+Vogel's
 volconfig
 vorbis
 voronoi
@@ -2634,6 +2674,7 @@ Zaal
 Zaghetto
 zalo
 ZAXIS
+zcbenz
 zdiv
 zener
 ZEROCODE

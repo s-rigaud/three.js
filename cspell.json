@@ -70,4 +70,4 @@
 // cspell "**" > "spelling-errors.txt"
 
 // Ensuring no issues are found
-// cspell --words-only --unique "**" >> errors.txt
+// cspell --words-only --unique "**" >> all_errors.txt

@@ -1,14 +1,15 @@
 def sort_project_valid_words():
-    # Sort valid word list
-    with open("project-words.txt", encoding="utf-8") as f:
-        words = f.read().splitlines()
+    for file in ("project-words.txt",):
+        # Sort valid word list
+        with open(file, encoding="utf-8") as f:
+            words = f.read().splitlines()
 
-    words.sort(key=lambda x: x.lower())
+        words.sort(key=lambda x: x.lower())
 
-    with open("project-words.txt", "w", encoding="utf-8") as f:
-        f.write("\n".join(words))
+        with open(file, "w", encoding="utf-8") as f:
+            f.write("\n".join(words))
 
-    print("Words sorted!")
+        print("Words sorted!")
 
 
 # remove TS7053
@@ -43,7 +44,7 @@ def clean_ts_errors():
         "TS7022",
         "TS7031",
         "TS7023",
-        "TS2307"
+        "TS2307",
     ]
     banned_text_errors = [
         "does not exist on type '{}'.",
@@ -60,8 +61,7 @@ def clean_ts_errors():
         "does not exist on type 'onTouchEnd'.",
         "does not exist on type 'onTouchMove'.",
         "does not exist on type 'onTouchCancel'.",
-        "does not exist on type 'onMouseMove'."
-        "does not exist on type 'onMouseUp'.",
+        "does not exist on type 'onMouseMove'.does not exist on type 'onMouseUp'.",
         "does not exist on type 'onMouseDown'.",
         "does not exist on type 'onMouseCancel'.",
         "does not exist on type 'onKeyDown'.",
