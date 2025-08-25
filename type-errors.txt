@@ -1108,7 +1108,6 @@ examples/jsm/loaders/HDRCubeTextureLoader.js:111 - error TS2339: Property 'data'
 examples/jsm/loaders/HDRCubeTextureLoader.js:113 - error TS2339: Property 'data' does not exist on type 'DataTextureLoader'.
 examples/jsm/loaders/HDRCubeTextureLoader.js:113 - error TS2339: Property 'width' does not exist on type 'DataTextureLoader'.
 examples/jsm/loaders/HDRCubeTextureLoader.js:113 - error TS2339: Property 'height' does not exist on type 'DataTextureLoader'.
-examples/jsm/loaders/HDRCubeTextureLoader.js:158 - error TS2322: Type 'this' is not assignable to type 'HDRLoader'.
 examples/jsm/loaders/HDRLoader.js:97 - error TS2345: Argument of type 'Uint16Array<any>' is not assignable to parameter of type 'number[]'.
 examples/jsm/loaders/HDRLoader.js:103 - error TS2345: Argument of type 'Uint16Array<any>' is not assignable to parameter of type 'number[]'.
 examples/jsm/loaders/HDRLoader.js:165 - error TS18048: 'line' is possibly 'undefined'.
@@ -1170,7 +1169,7 @@ examples/jsm/loaders/KTX2Loader.js:351 - error TS2345: Argument of type 'string 
 examples/jsm/loaders/KTX2Loader.js:361 - error TS7014: Function type, which lacks return-type annotation, implicitly has an 'any' return type.
 examples/jsm/loaders/KTX2Loader.js:363 - error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
 examples/jsm/loaders/KTX2Loader.js:363 - error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
-examples/jsm/loaders/KTX2Loader.js:384 - error TS2345: Argument of type 'CompressedTexture | CompressedArrayTexture | DataTexture | Data3DTexture' is not assignable to parameter of type 'CompressedTexture'.
+examples/jsm/loaders/KTX2Loader.js:384 - error TS2345: Argument of type 'DataTexture | CompressedTexture | CompressedArrayTexture | Data3DTexture' is not assignable to parameter of type 'CompressedTexture'.
 examples/jsm/loaders/KTX2Loader.js:443 - error TS2531: Object is possibly 'null'.
 examples/jsm/loaders/KTX2Loader.js:565 - error TS2769: No overload matches this call.
 examples/jsm/loaders/KTX2Loader.js:571 - error TS18046: 'error' is of type 'unknown'.
@@ -2516,9 +2515,8 @@ examples/jsm/tsl/display/AnamorphicNode.js:133 - error TS2363: The right-hand si
 examples/jsm/tsl/display/AnamorphicNode.js:134 - error TS2363: The right-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
 examples/jsm/tsl/display/AnamorphicNode.js:160 - error TS2322: Type 'NodeMaterial | undefined' is not assignable to type 'Material | Material[]'.
 examples/jsm/tsl/display/AnamorphicNode.js:200 - error TS2345: Argument of type '{ start: number; end: number; }' is not assignable to parameter of type 'LoopNodeParameter'.
-examples/jsm/tsl/display/AnamorphicNode.js:254 - error TS2322: Type 'Vector2' is not assignable to type 'ConvertType'.
 examples/jsm/tsl/display/AnamorphicNode.js:254 - error TS2345: Argument of type 'ConvertType' is not assignable to parameter of type 'number'.
-examples/jsm/tsl/display/AnamorphicNode.js:262 - error TS2339: Property 'x' does not exist on type 'ConvertType'.
+examples/jsm/tsl/display/AnamorphicNode.js:262 - error TS2322: Type 'number' is not assignable to type 'ConvertType'.
 examples/jsm/tsl/display/AnamorphicNode.js:274 - error TS2315: Type 'Node' is not generic.
 examples/jsm/tsl/display/AnamorphicNode.js:275 - error TS2315: Type 'Node' is not generic.
 examples/jsm/tsl/display/BleachBypass.js:8 - error TS2315: Type 'Node' is not generic.
@@ -2558,7 +2556,7 @@ examples/jsm/tsl/display/ChromaticAberrationNode.js:111 - error TS2488: Type 'No
 examples/jsm/tsl/display/ChromaticAberrationNode.js:166 - error TS2554: Expected 0 arguments, but got 5.
 examples/jsm/tsl/display/ChromaticAberrationNode.js:190 - error TS2315: Type 'Node' is not generic.
 examples/jsm/tsl/display/ChromaticAberrationNode.js:196 - error TS2322: Type 'null' is not assignable to type 'Node | Vector2 | undefined'.
-examples/jsm/tsl/display/ChromaticAberrationNode.js:201 - error TS2345: Argument of type 'string | ShaderNodeObject<Node> | Vector3 | ShaderNodeObject<ConstNode<number | boolean>> | ShaderNodeObject<ShaderNodeObject<Node>>' is not assignable to parameter of type 'Node'.
+examples/jsm/tsl/display/ChromaticAberrationNode.js:201 - error TS2345: Argument of type 'string | Vector3 | ShaderNodeObject<Node> | ShaderNodeObject<ConstNode<number | boolean>> | ShaderNodeObject<ShaderNodeObject<Node>>' is not assignable to parameter of type 'Node'.
 examples/jsm/tsl/display/ChromaticAberrationNode.js:201 - error TS2345: Argument of type 'number | Node' is not assignable to parameter of type 'NodeObjectOption'.
 examples/jsm/tsl/display/ChromaticAberrationNode.js:202 - error TS2345: Argument of type 'Node | Vector2' is not assignable to parameter of type 'NodeObjectOption'.
 examples/jsm/tsl/display/ChromaticAberrationNode.js:203 - error TS2345: Argument of type 'number | Node' is not assignable to parameter of type 'NodeObjectOption'.
@@ -2636,9 +2634,8 @@ examples/jsm/tsl/display/GaussianBlurNode.js:116 - error TS2551: Property 'resol
 examples/jsm/tsl/display/GaussianBlurNode.js:137 - error TS2363: The right-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
 examples/jsm/tsl/display/GaussianBlurNode.js:138 - error TS2363: The right-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
 examples/jsm/tsl/display/GaussianBlurNode.js:164 - error TS2322: Type 'NodeMaterial | undefined' is not assignable to type 'Material | Material[]'.
-examples/jsm/tsl/display/GaussianBlurNode.js:330 - error TS2322: Type 'Vector2' is not assignable to type 'ConvertType'.
 examples/jsm/tsl/display/GaussianBlurNode.js:330 - error TS2345: Argument of type 'ConvertType' is not assignable to parameter of type 'number'.
-examples/jsm/tsl/display/GaussianBlurNode.js:338 - error TS2339: Property 'x' does not exist on type 'ConvertType'.
+examples/jsm/tsl/display/GaussianBlurNode.js:338 - error TS2322: Type 'number' is not assignable to type 'ConvertType'.
 examples/jsm/tsl/display/GaussianBlurNode.js:351 - error TS2315: Type 'Node' is not generic.
 examples/jsm/tsl/display/GaussianBlurNode.js:352 - error TS2315: Type 'Node' is not generic.
 examples/jsm/tsl/display/GaussianBlurNode.js:367 - error TS2315: Type 'Node' is not generic.
@@ -6360,7 +6357,7 @@ src/renderers/common/XRManager.js:1664 - error TS2339: Property 'dispatchEvent' 
 src/renderers/shaders/ShaderLib.js:303 - error TS2339: Property 'physical' does not exist on type '{ basic: { uniforms: {}; vertexShader: string; fragmentShader: string; }; lambert: { uniforms: {}; vertexShader: string; fragmentShader: string; }; phong: { uniforms: {}; vertexShader: string; fragmentShader: string; }; ... 13 more ...; shadow: { ...; }; }'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js:258 - error TS2551: Property 'isPBOTexture' does not exist on type 'DataTexture'. Did you mean 'isTexture'?
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js:266 - error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js:279 - error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js:279 - error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js:281 - error TS2339: Property 'isNodeUniform' does not exist on type 'Node'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js:281 - error TS2339: Property 'node' does not exist on type 'Node'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js:281 - error TS2339: Property 'node' does not exist on type 'Node'.
@@ -6369,20 +6366,21 @@ src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js:287 - error TS2554: Expect
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js:310 - error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js:326 - error TS2345: Argument of type 'NodeVar' is not assignable to parameter of type 'Node'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js:534 - error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js:536 - error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js:536 - error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js:582 - error TS2488: Type 'number | NodeVar[]' must have a '[Symbol.iterator]()' method that returns an iterator.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js:872 - error TS2538: Type 'null' cannot be used as an index type.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js:903 - error TS2538: Type 'null' cannot be used as an index type.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js:1028 - error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js:1028 - error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js:1345 - error TS2339: Property 'name' does not exist on type 'Node'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js:1368 - error TS2339: Property 'outputNode' does not exist on type 'Node'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js:1389 - error TS2345: Argument of type 'string' is not assignable to parameter of type '"vertex" | "fragment" | "compute" | "any"'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js:1389 - error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any"'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js:1390 - error TS2554: Expected 0 arguments, but got 1.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js:1397 - error TS2345: Argument of type '{} | undefined' is not assignable to parameter of type 'Object'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js:1398 - error TS2345: Argument of type '{} | undefined' is not assignable to parameter of type 'Object'.
 src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js:1402 - error TS2345: Argument of type '{} | undefined' is not assignable to parameter of type 'Object'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js:1423 - error TS2345: Argument of type 'string' is not assignable to parameter of type '"vertex" | "fragment" | "compute" | "any" | undefined'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js:1424 - error TS2345: Argument of type 'string' is not assignable to parameter of type '"vertex" | "fragment" | "compute" | "any" | undefined'.
-src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js:1433 - error TS2345: Argument of type 'string' is not assignable to parameter of type '"vertex" | "fragment" | "compute" | "any"'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js:1423 - error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any" | undefined'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js:1424 - error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any" | undefined'.
+src/renderers/webgl-fallback/nodes/GLSLNodeBuilder.js:1433 - error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any"'.
 src/renderers/webgl-fallback/utils/WebGLAttributeUtils.js:179 - error TS2322: Type 'DualAttributeData' is not assignable to type '{ bufferGPU: any; bufferType: number; type: any; byteLength: number; bytesPerElement: number; version: any; pbo: any; isInteger: boolean; id: number; }'.
 src/renderers/webgl-fallback/utils/WebGLCapabilities.js:58 - error TS2322: Type 'number | null' is not assignable to type 'number'.
 src/renderers/webgl-fallback/utils/WebGLExtensions.js:34 - error TS2322: Type 'string[] | null' is not assignable to type 'string[]'.
@@ -6826,13 +6824,6 @@ src/renderers/webgl/WebGLUniforms.js:1059 - error TS2322: Type 'number' is not a
 src/renderers/webgl/WebGLUniforms.js:1059 - error TS2362: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
 src/renderers/WebGLCubeRenderTarget.js:4 - error TS18042: 'ShaderMaterial' is a type and cannot be imported in JavaScript files. Use 'import("../materials/ShaderMaterial.js").ShaderMaterial' in a JSDoc type annotation.
 src/renderers/WebGLCubeRenderTarget.js:44 - error TS2345: Argument of type '{ width: number; height: number; depth: number; }[]' is not assignable to parameter of type '(new (width?: number | undefined, height?: number | undefined) => HTMLImageElement)[]'.
-src/renderers/WebGLRenderer.js:134 - error TS2552: Cannot find name 'DOMElement'. Did you mean 'Element'?
-src/renderers/WebGLRenderer.js:226 - error TS2552: Cannot find name 'Plane'. Did you mean 'XRPlane'?
-src/renderers/WebGLRenderer.js:243 - error TS2552: Cannot find name 'LinearToneMapping'. Did you mean 'NoToneMapping'?
-src/renderers/WebGLRenderer.js:243 - error TS2552: Cannot find name 'CineonToneMapping'. Did you mean 'NoToneMapping'?
-src/renderers/WebGLRenderer.js:243 - error TS2552: Cannot find name 'CustomToneMapping'. Did you mean 'NoToneMapping'?
-src/renderers/WebGLRenderer.js:243 - error TS2552: Cannot find name 'AgXToneMapping'. Did you mean 'NoToneMapping'?
-src/renderers/WebGLRenderer.js:243 - error TS2552: Cannot find name 'NeutralToneMapping'. Did you mean 'NoToneMapping'?
 src/renderers/WebGLRenderer.js:387 - error TS18046: 'error' is of type 'unknown'.
 src/renderers/WebGLRenderer.js:447 - error TS2339: Property 'capabilities' does not exist on type 'WebGLRenderer'.
 src/renderers/WebGLRenderer.js:459 - error TS2339: Property 'extensions' does not exist on type 'WebGLRenderer'.
@@ -6869,20 +6860,19 @@ src/renderers/WebGLRenderer.js:2816 - error TS18047: 'renderTarget' is possibly 
 src/renderers/WebGLRenderer.js:2818 - error TS18047: 'renderTarget' is possibly 'null'.
 src/renderers/WebGLRenderer.js:2860 - error TS2551: Property 'isWebGLCubeRenderTarget' does not exist on type 'WebGLRenderTarget'. Did you mean 'isWebGLRenderTarget'?
 src/renderers/WebGLRenderer.js:2940 - error TS2551: Property 'isWebGLCubeRenderTarget' does not exist on type 'WebGLRenderTarget'. Did you mean 'isWebGLRenderTarget'?
-src/renderers/WebGLRenderer.js:3417 - error TS2552: Cannot find name 'DOMElement'. Did you mean 'Element'?
 src/renderers/WebGLRenderer.js:3498 - error TS2484: Export declaration conflicts with exported declaration of 'WebGLRenderer'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js:210 - error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js:210 - error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js:238 - error TS2554: Expected 6 arguments, but got 5.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js:380 - error TS2345: Argument of type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to parameter of type '"vertex" | "fragment" | "compute" | "any" | undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js:611 - error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js:380 - error TS2345: Argument of type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any" | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js:611 - error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js:617 - error TS2554: Expected 5-6 arguments, but got 7.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js:639 - error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js:641 - error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js:641 - error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js:673 - error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js:675 - error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js:675 - error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js:753 - error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js:755 - error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js:782 - error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js:755 - error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js:782 - error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js:784 - error TS2339: Property 'isNodeVarying' does not exist on type 'Node'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js:784 - error TS2339: Property 'needsInterpolation' does not exist on type 'Node'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js:788 - error TS2339: Property 'name' does not exist on type 'Node'.
@@ -6890,21 +6880,20 @@ src/renderers/webgpu/nodes/WGSLNodeBuilder.js:792 - error TS2339: Property 'isNo
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js:794 - error TS2339: Property 'name' does not exist on type 'Node'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js:795 - error TS2339: Property 'type' does not exist on type 'Node'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js:813 - error TS2339: Property 'groupNode' does not exist on type 'Node'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js:911 - error TS2345: Argument of type 'string' is not assignable to parameter of type '"vertex" | "fragment" | "compute" | "any" | undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js:912 - error TS2345: Argument of type 'string' is not assignable to parameter of type '"vertex" | "fragment" | "compute" | "any" | undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js:921 - error TS2345: Argument of type 'string' is not assignable to parameter of type '"vertex" | "fragment" | "compute" | "any"'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js:911 - error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any" | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js:912 - error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any" | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js:921 - error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any"'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js:951 - error TS18047: 'texture' is possibly 'null'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js:952 - error TS18047: 'texture' is possibly 'null'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js:952 - error TS2339: Property 'setVisibility' does not exist on type 'NodeSampledTexture'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js:954 - error TS18047: 'texture' is possibly 'null'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js:1026 - error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js:1051 - error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js:1253 - error TS2322: Type '"vertex" | "fragment" | "compute" | "any" | null' is not assignable to type 'string | undefined'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js:1583 - error TS2488: Type 'number | NodeVar[]' must have a '[Symbol.iterator]()' method that returns an iterator.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js:1026 - error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js:1051 - error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js:1253 - error TS2322: Type '"compute" | "vertex" | "fragment" | "any" | null' is not assignable to type 'string | undefined'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js:1640 - error TS2339: Property 'includes' does not exist on type 'number | NodeVar[]'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js:1642 - error TS2339: Property 'push' does not exist on type 'number | NodeVar[]'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js:1836 - error TS2322: Type 'string' is not assignable to type '"vertex" | "fragment" | "compute" | "any" | null'.
-src/renderers/webgpu/nodes/WGSLNodeBuilder.js:1844 - error TS2345: Argument of type 'string' is not assignable to parameter of type '"vertex" | "fragment" | "compute" | "any"'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js:1836 - error TS2322: Type 'string' is not assignable to type '"compute" | "vertex" | "fragment" | "any" | null'.
+src/renderers/webgpu/nodes/WGSLNodeBuilder.js:1844 - error TS2345: Argument of type 'string' is not assignable to parameter of type '"compute" | "vertex" | "fragment" | "any"'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js:1856 - error TS2339: Property 'outputNode' does not exist on type 'Node'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js:1862 - error TS2339: Property 'name' does not exist on type 'Node'.
 src/renderers/webgpu/nodes/WGSLNodeBuilder.js:1921 - error TS2345: Argument of type '{} | undefined' is not assignable to parameter of type 'Object'.
@@ -6982,11 +6971,11 @@ src/renderers/webgpu/utils/WebGPUTextureUtils.js:482 - error TS2339: Property 'i
 src/renderers/webgpu/utils/WebGPUTextureUtils.js:482 - error TS2339: Property 'isCompressedArrayTexture' does not exist on type 'Texture'.
 src/renderers/webgpu/utils/WebGPUTextureUtils.js:486 - error TS2551: Property 'isCubeTexture' does not exist on type 'Texture'. Did you mean 'isTexture'?
 src/renderers/webgpu/utils/WebGPUTextureUtils.js:488 - error TS2345: Argument of type 'Texture' is not assignable to parameter of type 'CubeTexture'.
-src/renderers/webgpu/utils/WebGPUTextureUtils.js:498 - error TS2345: Argument of type 'Object' is not assignable to parameter of type 'HTMLCanvasElement | HTMLImageElement | ImageBitmap'.
+src/renderers/webgpu/utils/WebGPUTextureUtils.js:498 - error TS2345: Argument of type 'Object' is not assignable to parameter of type 'ImageBitmap | HTMLImageElement | HTMLCanvasElement'.
 src/renderers/webgpu/utils/WebGPUTextureUtils.js:505 - error TS18048: 'options' is possibly 'undefined'.
 src/renderers/webgpu/utils/WebGPUTextureUtils.js:653 - error TS2339: Property 'isDataTexture' does not exist on type 'new (width?: number | undefined, height?: number | undefined) => HTMLImageElement'.
 src/renderers/webgpu/utils/WebGPUTextureUtils.js:655 - error TS2339: Property 'image' does not exist on type 'new (width?: number | undefined, height?: number | undefined) => HTMLImageElement'.
-src/renderers/webgpu/utils/WebGPUTextureUtils.js:659 - error TS2345: Argument of type 'new (width?: number | undefined, height?: number | undefined) => HTMLImageElement' is not assignable to parameter of type 'HTMLCanvasElement | HTMLImageElement | ImageBitmap'.
+src/renderers/webgpu/utils/WebGPUTextureUtils.js:659 - error TS2345: Argument of type 'new (width?: number | undefined, height?: number | undefined) => HTMLImageElement' is not assignable to parameter of type 'ImageBitmap | HTMLImageElement | HTMLCanvasElement'.
 src/renderers/webgpu/utils/WebGPUTextureUtils.js:880 - error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
 src/renderers/webgpu/utils/WebGPUTextureUtils.js:968 - error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
 src/renderers/webgpu/utils/WebGPUTextureUtils.js:1031 - error TS2503: Cannot find namespace 'TypedArray'.
@@ -6994,7 +6983,7 @@ src/renderers/webgpu/utils/WebGPUTextureUtils.js:1093 - error TS2551: Property '
 src/renderers/webgpu/utils/WebGPUTextureUtils.js:1093 - error TS2339: Property 'isData3DTexture' does not exist on type 'Texture'.
 src/renderers/webgpu/utils/WebGPUTextureUtils.js:1126 - error TS2339: Property 'isCompressedTexture' does not exist on type 'Texture'.
 src/renderers/webgpu/utils/WebGPUTextureUtils.js:1126 - error TS2339: Property 'isCompressedArrayTexture' does not exist on type 'Texture'.
-src/renderers/webgpu/utils/WebGPUTextureUtils.js:1486 - error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+src/renderers/webgpu/utils/WebGPUTextureUtils.js:1502 - error TS2322: Type 'string | undefined' is not assignable to type 'string'.
 src/renderers/webgpu/utils/WebGPUTimestampQueryPool.js:88 - error TS2322: Type 'boolean' is not assignable to type 'number'.
 src/renderers/webgpu/utils/WebGPUTimestampQueryPool.js:92 - error TS2322: Type 'Promise<number>' is not assignable to type 'boolean'.
 src/renderers/webgpu/utils/WebGPUTimestampQueryPool.js:97 - error TS2322: Type 'boolean' is not assignable to type 'number'.
@@ -7127,6 +7116,7 @@ src/renderers/webxr/WebXRDepthSensing.js:86 - error TS2339: Property 'depthNear'
 src/renderers/webxr/WebXRDepthSensing.js:86 - error TS2339: Property 'depthFar' does not exist on type 'XRWebGLDepthInformation'.
 src/renderers/webxr/WebXRDepthSensing.js:88 - error TS2339: Property 'depthNear' does not exist on type 'XRWebGLDepthInformation'.
 src/renderers/webxr/WebXRDepthSensing.js:89 - error TS2339: Property 'depthFar' does not exist on type 'XRWebGLDepthInformation'.
+src/renderers/webxr/WebXRManager.js:30 - error TS2552: Cannot find name 'WebGLRenderer'. Did you mean 'WebGLRenderbuffer'?
 src/renderers/webxr/WebXRManager.js:73 - error TS2339: Property 'viewport' does not exist on type 'PerspectiveCamera'.
 src/renderers/webxr/WebXRManager.js:76 - error TS2339: Property 'viewport' does not exist on type 'PerspectiveCamera'.
 src/renderers/webxr/WebXRManager.js:394 - error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
@@ -7154,6 +7144,8 @@ src/renderers/webxr/WebXRManager.js:659 - error TS2339: Property 'scale' does no
 src/renderers/webxr/WebXRManager.js:662 - error TS2339: Property 'position' does not exist on type 'ArrayCamera'.
 src/renderers/webxr/WebXRManager.js:662 - error TS2339: Property 'quaternion' does not exist on type 'ArrayCamera'.
 src/renderers/webxr/WebXRManager.js:662 - error TS2339: Property 'scale' does not exist on type 'ArrayCamera'.
+src/renderers/webxr/WebXRManager.js:716 - error TS2552: Cannot find name 'Camera'. Did you mean 'cameraL'?
+src/renderers/webxr/WebXRManager.js:902 - error TS2552: Cannot find name 'XRCamera'. Did you mean 'cameraL'?
 src/renderers/webxr/WebXRManager.js:977 - error TS2339: Property 'viewport' does not exist on type 'PerspectiveCamera'.
 src/renderers/webxr/WebXRManager.js:983 - error TS2339: Property 'position' does not exist on type 'PerspectiveCamera'.
 src/renderers/webxr/WebXRManager.js:983 - error TS2339: Property 'quaternion' does not exist on type 'PerspectiveCamera'.
