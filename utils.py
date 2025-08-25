@@ -71,7 +71,7 @@ def clean_ts_errors():
         "does not exist on type 'onContextMenu'.",
     ]
 
-    accepted_lines = []
+    accepted_lines: list[str] = []
     for line in lines:
         for ban_word in banned_ts_errors:
             if ban_word in line:
@@ -87,11 +87,19 @@ def clean_ts_errors():
                 else:
                     accepted_lines.append(line)
 
+    formatted_lines = []
+    for line in accepted_lines:
+        file_path, after = line.split("(", 1)
+        line_number, after = after.split(",", 1)
+        error = after.split(":", 1)[1].strip()
+
+        formatted_lines.append(f"{file_path}:{line_number} - {error}")
+
     with open("type-errors.txt", "w", encoding="utf-8") as f:
-        f.write("\n".join(accepted_lines))
+        f.write("\n".join(formatted_lines))
 
     print(
-        f"Errors cleaned! (error count: {original_error_count} => {len(accepted_lines)})"
+        f"Errors cleaned! (error count: {original_error_count} => {len(formatted_lines)})"
     )
 
 
