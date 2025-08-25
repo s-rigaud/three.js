@@ -1005,6 +1005,7 @@ GRADIENTMAP
 gradientmap
 Graphe
 grasslight
+gravital
 greenyellow
 greggman's
 Gregorius
