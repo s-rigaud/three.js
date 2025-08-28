@@ -20,3 +20,7 @@ Type 'null' is not assignable to type
 Generic type '
 regex " (\w+) - .*\n .*\[(\1)"
 regex " ([a-zA-Z]+?) (\1) "
+
+
+# JSdoc type regex
+\/\*\*\n( \*.*\n)*( \*(\*)?/\n)\n
