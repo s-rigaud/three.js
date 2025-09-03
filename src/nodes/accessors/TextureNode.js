@@ -423,11 +423,7 @@ class TextureNode extends UniformNode {
 
 		let snippet;
 
-		if ( levelSnippet ) {
-
-			snippet = builder.generateTextureLevel( texture, textureProperty, uvSnippet, levelSnippet, depthSnippet, offsetSnippet );
-
-		} else if ( biasSnippet ) {
+		if ( biasSnippet ) {
 
 			snippet = builder.generateTextureBias( texture, textureProperty, uvSnippet, biasSnippet, depthSnippet, offsetSnippet );
 
@@ -441,7 +437,11 @@ class TextureNode extends UniformNode {
 
 		} else if ( this.sampler === false ) {
 
-			snippet = builder.generateTextureLoad( texture, textureProperty, uvSnippet, depthSnippet, offsetSnippet );
+			snippet = builder.generateTextureLoad( texture, textureProperty, uvSnippet, levelSnippet, depthSnippet, offsetSnippet );
+
+		} else if ( levelSnippet ) {
+
+			snippet = builder.generateTextureLevel( texture, textureProperty, uvSnippet, levelSnippet, depthSnippet, offsetSnippet );
 
 		} else {
 
@@ -818,7 +818,7 @@ const textureBase = /*@__PURE__*/ nodeProxy( TextureNode ).setParameterLength( 1
  *
  * @tsl
  * @function
- * @param {?Texture|TextureNode} [value=EmptyTexture] - The texture.
+ * @param {?(Texture|TextureNode)} [value=EmptyTexture] - The texture.
  * @param {?Node<vec2|vec3>} [uvNode=null] - The uv node.
  * @param {?Node<int>} [levelNode=null] - The level node.
  * @param {?Node<float>} [biasNode=null] - The bias node.
@@ -862,7 +862,7 @@ export const uniformTexture = ( value = EmptyTexture ) => texture( value );
  *
  * @tsl
  * @function
- * @param {?Texture|TextureNode} [value=EmptyTexture] - The texture.
+ * @param {?(Texture|TextureNode)} [value=EmptyTexture] - The texture.
  * @param {?Node<vec2|vec3>} [uvNode=null] - The uv node.
  * @param {?Node<int>} [levelNode=null] - The level node.
  * @param {?Node<float>} [biasNode=null] - The bias node.

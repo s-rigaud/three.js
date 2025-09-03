@@ -123,7 +123,7 @@ class CubeTextureNode extends TextureNode {
 	 */
 	generateUV( builder, cubeUV ) {
 
-		return cubeUV.build( builder, 'vec3' );
+		return cubeUV.build( builder, this.sampler === true ? 'vec3' : 'ivec3' );
 
 	}
 
@@ -149,7 +149,7 @@ export const cubeTextureBase = /*@__PURE__*/ nodeProxy( CubeTextureNode ).setPar
  *
  * @tsl
  * @function
- * @param {?CubeTexture|CubeTextureNode} [value=EmptyTexture] - The cube texture.
+ * @param {?(CubeTexture|CubeTextureNode)} [value=EmptyTexture] - The cube texture.
  * @param {?Node<vec3>} [uvNode=null] - The uv node.
  * @param {?Node<int>} [levelNode=null] - The level node.
  * @param {?Node<float>} [biasNode=null] - The bias node.
