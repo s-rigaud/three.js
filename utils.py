@@ -1,5 +1,10 @@
+import os
+import re
+
+
 def sort_project_valid_words():
-    for file in ("project-words.txt",):
+    files = ("project-words.txt",)
+    for file in files:
         # Sort valid word list
         with open(file, encoding="utf-8") as f:
             words = f.read().splitlines()
@@ -10,6 +15,26 @@ def sort_project_valid_words():
             f.write("\n".join(words))
 
         print("Words sorted!")
+
+
+def create_example_js_files():
+    # Create examples js files
+    folder = "examples/jsm"
+    for root, _, files in os.walk(folder):
+        for file in files:
+            if file.endswith(".html"):
+                file_path = os.path.join(root, file)
+                with open(file_path, encoding="utf-8") as f:
+                    content = f.read()
+
+                script_contents = re.findall(r"<script\b[^>]*>(.*?)</script>", content, re.DOTALL)
+                content = "\n\n".join(script_contents)
+
+                js_file_path = os.path.join(root, file.replace(".html", ".js"))
+                with open(js_file_path, "w", encoding="utf-8") as f:
+                    f.write(content)
+
+    print("Example JS files created!")
 
 
 # remove TS7053
@@ -102,6 +127,6 @@ def clean_ts_errors():
         f"Errors cleaned! (error count: {original_error_count} => {len(formatted_lines)})"
     )
 
-
+create_example_js_files()
 sort_project_valid_words()
 clean_ts_errors()
