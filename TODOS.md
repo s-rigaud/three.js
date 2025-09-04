@@ -2,9 +2,6 @@
 examples/jsm/tsl/display/Lut3DNode.js:63
 examples/jsm/tsl/display/PixelationPassNode.js:305
 every setup() { method builder argument
-examples/jsm/tsl/display/AnamorphicNode.js:74 - error TS2322: Type 'number' is not assignable to type 'NumberFunction'.
-const meshs = {};
-@type {float} - Refrence TSL function when working with TS
 
 # Dev
 
