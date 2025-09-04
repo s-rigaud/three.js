@@ -19,16 +19,21 @@ def sort_project_valid_words():
 
 def create_example_js_files():
     # Create examples js files
-    folder = "examples/jsm"
+    folder = "examples"
     for root, _, files in os.walk(folder):
         for file in files:
             if file.endswith(".html"):
+                print(f"Processing {file}...")
                 file_path = os.path.join(root, file)
                 with open(file_path, encoding="utf-8") as f:
                     content = f.read()
 
-                script_contents = re.findall(r"<script\b[^>]*>(.*?)</script>", content, re.DOTALL)
-                content = "\n\n".join(script_contents)
+                script_contents = re.findall(
+                    r"<script\b[^>]*>(.*?)</script>", content, re.DOTALL
+                )
+                valid_scripts = [script for script in script_contents if script]
+                content = "\n\n".join(valid_scripts[1:])
+                content = content.replace("\n			", "\n").replace("\n			", "\n")
 
                 js_file_path = os.path.join(root, file.replace(".html", ".js"))
                 with open(js_file_path, "w", encoding="utf-8") as f:
@@ -127,6 +132,7 @@ def clean_ts_errors():
         f"Errors cleaned! (error count: {original_error_count} => {len(formatted_lines)})"
     )
 
+
 create_example_js_files()
-sort_project_valid_words()
-clean_ts_errors()
+# sort_project_valid_words()
+# clean_ts_errors()

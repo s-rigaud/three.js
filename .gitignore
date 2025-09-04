@@ -23,3 +23,5 @@ test/e2e/output-screenshots
 **/docs_new
 
 tsconfig.tsbuildinfo
+
+examples/*.js
