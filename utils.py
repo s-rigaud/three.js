@@ -29,17 +29,59 @@ def create_example_js_files():
                     content = f.read()
 
                 script_contents = re.findall(
-                    r"<script\b[^>]*>(.*?)</script>", content, re.DOTALL
+                    r'<script type="module">(.*?)</script>', content, re.DOTALL
                 )
-                valid_scripts = [script for script in script_contents if script]
-                content = "\n\n".join(valid_scripts[1:])
-                content = content.replace("\n			", "\n").replace("\n			", "\n")
+                content = "\n\n".join(script_contents)
+                content = content.replace("\n			", "\n")
 
                 js_file_path = os.path.join(root, file.replace(".html", ".js"))
                 with open(js_file_path, "w", encoding="utf-8") as f:
                     f.write(content)
 
     print("Example JS files created!")
+
+
+def delete_example_js_files():
+    # Delete examples js files
+    folder = "examples"
+    for file in os.listdir(folder):
+        if file.endswith(".js"):
+            print(f"Deleting {file}...")
+            os.remove(f"{folder}/{file}")
+
+    print("Example JS files deleted!")
+
+
+def extract_js_types():
+    # Extract Jsdoc types
+    jsdoc_re = re.compile(
+        r"(\/\*\*\n( \*.*\n)* \* @typedef.*\} (.*)\n( \*.*\n)*( \*(\*)?/\n)\n)",
+        re.MULTILINE,
+    )
+
+    all_types: dict[str, str] = {}
+
+    folders = ["examples\jsm", "src"]
+    for folder in folders:
+        for root, _, files in os.walk(folder):
+            for file in files:
+                if file.endswith(".js"):
+                    print(f"Processing {file}...")
+                    file_path = os.path.join(root, file)
+                    with open(file_path, encoding="utf-8") as f:
+                        content = f.read()
+
+                    types = jsdoc_re.findall(content)
+                    if types:
+                        name = types[0][2]
+                        full_match = types[0][0]
+                        # import ipdb; ipdb.set_trace()
+
+                        all_types[name] = full_match
+                        pass
+
+    print(f"Found {len(all_types)} types: {', '.join(all_types.keys())}")
+    return all_types
 
 
 # remove TS7053
@@ -115,6 +157,9 @@ def clean_ts_errors():
                     if ban_text in line:
                         break
                 else:
+                    # if line.startswith("examples/") and line.split(" ",1)[0].count(".") == 1:
+                    #     line = line.replace(".js", ".html")
+
                     accepted_lines.append(line)
 
     formatted_lines = []
@@ -134,5 +179,12 @@ def clean_ts_errors():
 
 
 create_example_js_files()
+
+# os.system('cspell "**" > "spelling-errors.txt"')
 # sort_project_valid_words()
-# clean_ts_errors()
+
+os.system("npm run ts")
+clean_ts_errors()
+
+# delete_example_js_files()
+# types = extract_js_types()
