@@ -1,7 +1,4 @@
 # Types
-examples/jsm/tsl/display/Lut3DNode.js:63
-examples/jsm/tsl/display/PixelationPassNode.js:305
-every setup() { method builder argument
 examples/physics_ammo_break.js:513 - error TS2554: Expected 5 arguments, but got 6.
 examples/physics_ammo_break.js:535 - error TS2554: Expected 5 arguments, but got 6.
 examples/webgl_gpgpu_birds_gltf.js:23 - replace by MathUtils.js lerp ?
@@ -16,7 +13,7 @@ examples/webgpu_compute_reduce.js:761 - error TS2554: Expected 1-2 arguments, bu
 examples/webgpu_compute_reduce.js:763 - error TS2554: Expected 1-2 arguments, but got 3.
 examples/webgpu_instance_uniform.js:127 - error TS2339: Property 'color' does not exist on type 'Mesh<any, any, Object3DEventMap>'.
 examples/webgpu_loader_texture_ktx2.js:88 - error TS2339: Property 'supported' does not exist on type '{ path: string; }'.
-examples/webgl_loader_nrrd.js:48 - error TS2345: Argument of type 'Matrix3' is not assignable to parameter of type 'Matrix4'. - NRRDLoader :443 can use Matrix4 for Volume
+
 
 # Dev
 
