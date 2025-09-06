@@ -21,10 +21,6 @@ examples/webgl_loader_nrrd.js:48 - error TS2345: Argument of type 'Matrix3' is n
 # Dev
 
 # Investigate
-examples/webgl_loader_nrrd.js:89 - error TS2339: Property 'min' does not exist on type 'Volume'.
-examples/webgl_loader_nrrd.js:89 - error TS2345: Argument of type '"windowLow"' is not assignable to parameter of type 'KeyToValueOfType<Volume, number>'.
-examples/webgl_loader_nrrd.js:94 - error TS2345: Argument of type '"windowHigh"' is not assignable to parameter of type 'KeyToValueOfType<Volume, number>'.
-
 Find a way to generate editor\js\libs\tern-threejs\threejs.js
 
 Automate this process:
