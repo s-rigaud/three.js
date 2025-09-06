@@ -16,16 +16,14 @@ examples/webgpu_compute_reduce.js:761 - error TS2554: Expected 1-2 arguments, bu
 examples/webgpu_compute_reduce.js:763 - error TS2554: Expected 1-2 arguments, but got 3.
 examples/webgpu_instance_uniform.js:127 - error TS2339: Property 'color' does not exist on type 'Mesh<any, any, Object3DEventMap>'.
 examples/webgpu_loader_texture_ktx2.js:88 - error TS2339: Property 'supported' does not exist on type '{ path: string; }'.
+examples/webgl_loader_nrrd.js:48 - error TS2345: Argument of type 'Matrix3' is not assignable to parameter of type 'Matrix4'. - NRRDLoader :443 can use Matrix4 for Volume
 
 # Dev
 
 # Investigate
-examples/webgl_loader_nrrd.js:52 - error TS2339: Property 'RASDimensions' does not exist on type 'Volume'.
-examples/webgl_loader_nrrd.js:48 - error TS2345: Argument of type 'Matrix3' is not assignable to parameter of type 'Matrix4'.
 examples/webgl_loader_nrrd.js:89 - error TS2339: Property 'min' does not exist on type 'Volume'.
 examples/webgl_loader_nrrd.js:89 - error TS2345: Argument of type '"windowLow"' is not assignable to parameter of type 'KeyToValueOfType<Volume, number>'.
 examples/webgl_loader_nrrd.js:94 - error TS2345: Argument of type '"windowHigh"' is not assignable to parameter of type 'KeyToValueOfType<Volume, number>'.
-examples/webgpu_instance_path.js:62 - error TS2345: Argument of type 'Vector3' is not assignable to parameter of type 'Vector2'.
 
 Find a way to generate editor\js\libs\tern-threejs\threejs.js
 

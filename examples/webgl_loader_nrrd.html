@@ -70,6 +70,8 @@
 					cube.visible = false;
 					const box = new THREE.BoxHelper( cube );
 					scene.add( box );
+					console.log(box, volume.matrix);
+
 					box.applyMatrix4( volume.matrix );
 					scene.add( cube );
 
@@ -111,8 +113,7 @@
 						volume.repaintAllSlices();
 
 					} );
-					gui.add( volume, 'windowLow', volume.min, volume.max, 1 ).name( 'Window Low' ).onChange( function () {
-
+					gui.add( volume, 'windowLow', 20, 25, 1 ).name( 'Window Low' ).onChange( function () {
 						volume.repaintAllSlices();
 
 					} );
@@ -122,7 +123,9 @@
 
 					} );
 
+
 				} );
+
 
 				const vtkmaterial = new THREE.MeshLambertMaterial( { wireframe: false, side: THREE.DoubleSide, color: 0xff0000 } );
 
