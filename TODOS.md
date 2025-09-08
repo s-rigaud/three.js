@@ -1,17 +1,8 @@
 # Types
-examples/physics_ammo_break.js:513 - error TS2554: Expected 5 arguments, but got 6.
-examples/physics_ammo_break.js:535 - error TS2554: Expected 5 arguments, but got 6.
-examples/webgl_gpgpu_birds_gltf.js:23 - replace by MathUtils.js lerp ?
-examples/webgl_gpgpu_water.js:194 - 195 - props on mesh not geometry
-examples/webgl_lines_fat_raycasting.js:63 - use 0 no threshold
-examples/webgpu_lines_fat_raycasting.js:63 - use 0 no threshold
-examples/webgl_loader_ldraw.js:340
-examples/webgpu_camera_logarithmicdepthbuffer.js:125 - error TS2322: Type 'Color' is not assignable to type 'number'. - Type consistency always color
 examples/webgpu_compute_birds.js:302 - error TS2339: Property 'equal' does not exist on type 'number'.
 examples/webgpu_compute_reduce.js:750 - error TS2554: Expected 1-2 arguments, but got 3.
 examples/webgpu_compute_reduce.js:761 - error TS2554: Expected 1-2 arguments, but got 3.
 examples/webgpu_compute_reduce.js:763 - error TS2554: Expected 1-2 arguments, but got 3.
-examples/webgpu_instance_uniform.js:127 - error TS2339: Property 'color' does not exist on type 'Mesh<any, any, Object3DEventMap>'.
 examples/webgpu_loader_texture_ktx2.js:88 - error TS2339: Property 'supported' does not exist on type '{ path: string; }'.
 
 
