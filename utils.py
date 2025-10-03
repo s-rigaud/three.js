@@ -61,7 +61,7 @@ def extract_js_types():
 
     all_types: dict[str, str] = {}
 
-    folders = ["examples\jsm", "src"]
+    folders = ["examples\\jsm", "src"]
     for folder in folders:
         for root, _, files in os.walk(folder):
             for file in files:
@@ -178,10 +178,10 @@ def clean_ts_errors():
     )
 
 
-create_example_js_files()
+# create_example_js_files()
 
 # os.system('cspell "**" > "spelling-errors.txt"')
-# sort_project_valid_words()
+sort_project_valid_words()
 
 os.system("npm run ts")
 clean_ts_errors()

@@ -3,30 +3,6 @@ aabb
 AAST
 aastep
 AATU
-fasthdr
-ssgi
-desync
-SSRT
-Sergej
-Majboroda
-photostudio
-noord
-Seeley
-Woord
-Phan's
-offx
-offy
-Bitcasts
-offz
-checkmark
-webgpurenderer
-Segoe
-Tahoma
-Verdana
-Fira
-clmp
-fscale
-maxamp
 abelnation
 abernier
 absarc
@@ -184,6 +160,7 @@ Bitangent
 bitangent
 BITCAST
 bitcast
+Bitcasts
 bitfield
 bitfields
 Bitonic
@@ -295,6 +272,7 @@ CGTS
 CGTY
 chaingun
 Chebeyshevs
+checkmark
 childadded
 childchild
 Childed
@@ -325,6 +303,7 @@ Cleftleft
 clim
 clipculldistance
 clist
+clmp
 Clonable
 clonemeshes
 CLRA
@@ -533,6 +512,7 @@ Desaturation
 descartar
 Desenhando
 Dessiner
+desync
 detuning
 deviantart
 DFDX
@@ -888,6 +868,7 @@ failonlyreporter
 Fallof
 farpos
 farr
+fasthdr
 faucibus
 Favg
 favourite
@@ -908,6 +889,7 @@ filex
 filey
 filez
 FILT
+Fira
 firstline
 fiverr
 FKEY
@@ -951,6 +933,7 @@ frms
 frontground
 frustumcull
 frutta
+fscale
 fshader
 fstop
 Fujita
@@ -1391,6 +1374,7 @@ lycopene
 machinegun
 Magica
 mailgun
+Majboroda
 Makefiles
 mantine
 manualdof
@@ -1422,6 +1406,7 @@ matz
 Matériaux
 Mauris
 mauris
+maxamp
 maxblur
 maxcomp
 Maximov
@@ -1625,6 +1610,7 @@ nonblinn
 nondegenerate
 nonname
 nonvr
+noord
 noperspective
 nord
 NORMALMAP
@@ -1693,6 +1679,9 @@ offsetted
 offsetx
 offsety
 offsetz
+offx
+offy
+offz
 Oganesson
 Oggetti
 Ogro
@@ -1797,6 +1786,7 @@ persp
 Persson
 Pettineo
 PFLT
+Phan's
 philength
 phistart
 PHONG
@@ -1804,6 +1794,7 @@ Phong
 phong
 PHONGSOFT
 Photoshop
+photostudio
 physgl
 physotherapist
 pickable
@@ -2075,10 +2066,13 @@ sdir
 sdistance
 seagreen
 SEDAC
+Seeley
+Segoe
 selectend
 SELFI
 SELFIMAP
 SELFIMASK
+Sergej
 Servez
 servez
 servicemark
@@ -2211,10 +2205,12 @@ SSAA
 ssaa
 SSAO
 ssao
+ssgi
 SSHA
 SSHN
 sshort
 sshotgun
+SSRT
 sstep
 stackoverflow
 stackshare
@@ -2283,6 +2279,7 @@ Syst├¿me
 tabindex
 Tabler
 tabler
+Tahoma
 Tait
 tallymark
 tallymarks
@@ -2524,6 +2521,7 @@ vdsp
 vdtp
 vectemp
 vercel
+Verdana
 Verlet
 verlet
 vertexcolors
@@ -2612,6 +2610,7 @@ webglcontextrestored
 webglmessage
 webgpu
 webgpumessage
+webgpurenderer
 webonly
 WEBXR
 webxr
@@ -2628,6 +2627,7 @@ widthsegments
 WIREABS
 wireframes
 WLUT
+Woord
 Workgroups
 workgroups
 WORLDPOS
