@@ -17,6 +17,7 @@ import VarNode from '../../../nodes/core/VarNode.js';
 import ExpressionNode from '../../../nodes/code/ExpressionNode.js';
 
 import { FloatType, RepeatWrapping, ClampToEdgeWrapping, MirroredRepeatWrapping, NearestFilter } from '../../../constants.js';
+import { warn, error } from '../../../utils.js';
 
 // GPUShaderStage is not defined in browsers not supporting WebGPU
 const GPUShaderStage = ( typeof self !== 'undefined' ) ? self.GPUShaderStage : { VERTEX: 1, FRAGMENT: 2, COMPUTE: 4 };
@@ -321,7 +322,7 @@ class WGSLNodeBuilder extends NodeBuilder {
 
 					code += `\t\tcoord.${ axis }`;
 
-					console.warn( `WebGPURenderer: Unsupported texture wrap type "${ wrap }" for vertex shader.` );
+					warn( `WebGPURenderer: Unsupported texture wrap type "${ wrap }" for vertex shader.` );
 
 				}
 
@@ -655,7 +656,7 @@ class WGSLNodeBuilder extends NodeBuilder {
 
 		} else {
 
-			console.error( `WebGPURenderer: THREE.TextureNode.gradient() does not support ${ shaderStage } shader.` );
+			error( `WebGPURenderer: THREE.TextureNode.gradient() does not support ${ shaderStage } shader.` );
 
 		}
 
@@ -700,7 +701,7 @@ class WGSLNodeBuilder extends NodeBuilder {
 
 		} else {
 
-			console.error( `WebGPURenderer: THREE.DepthTexture.compareFunction() does not support ${ shaderStage } shader.` );
+			error( `WebGPURenderer: THREE.DepthTexture.compareFunction() does not support ${ shaderStage } shader.` );
 
 		}
 
@@ -768,7 +769,7 @@ class WGSLNodeBuilder extends NodeBuilder {
 
 		} else {
 
-			console.error( `WebGPURenderer: THREE.TextureNode.biasNode does not support ${ shaderStage } shader.` );
+			error( `WebGPURenderer: THREE.TextureNode.biasNode does not support ${ shaderStage } shader.` );
 
 		}
 
@@ -868,7 +869,7 @@ class WGSLNodeBuilder extends NodeBuilder {
 
 			if ( node.isAtomic === true ) {
 
-				console.warn( 'WebGPURenderer: Atomic operations are only supported in compute shaders.' );
+				warn( 'WebGPURenderer: Atomic operations are only supported in compute shaders.' );
 
 				return NodeAccess.READ_WRITE;
 
@@ -1114,7 +1115,8 @@ ${ flowData.code }
 	}
 
 	/**
-	 * Returns the instance index builtin.
+	 * Contextually returns either the vertex stage instance index builtin
+	 * or the linearized index of an compute invocation within a grid of workgroups.
 	 *
 	 * @return {string} The instance index.
 	 */
@@ -1130,8 +1132,9 @@ ${ flowData.code }
 
 	}
 
+
 	/**
-	 * Returns the invocation local index builtin.
+	 * Returns a builtin representing the index of a compute invocation within the scope of a workgroup load.
 	 *
 	 * @return {string} The invocation local index.
 	 */
@@ -1142,7 +1145,7 @@ ${ flowData.code }
 	}
 
 	/**
-	 * Returns the subgroup size builtin.
+	 * Returns a builtin representing the size of a subgroup within the current shader.
 	 *
 	 * @return {string} The subgroup size.
 	 */
@@ -1155,7 +1158,7 @@ ${ flowData.code }
 	}
 
 	/**
-	 * Returns the invocation subgroup index builtin.
+	 * Returns a builtin representing the index of a compute invocation within the scope of a subgroup.
 	 *
 	 * @return {string} The invocation subgroup index.
 	 */
@@ -1168,7 +1171,7 @@ ${ flowData.code }
 	}
 
 	/**
-	 * Returns the subgroup index builtin.
+	 * Returns a builtin representing the index of a compute invocation's subgroup within its workgroup.
 	 *
 	 * @return {string} The subgroup index.
 	 */
@@ -2065,11 +2068,7 @@ ${ flowData.code }
 		const codeNode = wgslPolyfill[ name ];
 		codeNode.build( this );
 
-		if ( this.currentFunctionNode !== null ) {
-
-			this.currentFunctionNode.includes.push( codeNode );
-
-		}
+		this.addInclude( codeNode );
 
 		return codeNode;
 

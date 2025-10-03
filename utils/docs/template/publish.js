@@ -106,7 +106,20 @@ function updateItemName( item ) {
 
 function addParamAttributes( params ) {
 
-	return params.filter( ( { name } ) => name && ! name.includes( '.' ) ).map( updateItemName );
+	return params.filter( ( { name } ) => name && ! name.includes( '.' ) ).map( param => {
+
+		let itemName = updateItemName( param );
+
+		if ( param.type && param.type.names && param.type.names.length ) {
+
+			const escapedTypes = param.type.names.map( name => htmlsafe( name ) );
+			itemName += ' : <span class="param-type">' + escapedTypes.join( ' | ' ) + '</span>';
+
+		}
+
+		return itemName;
+
+	} );
 
 }
 
@@ -182,40 +195,15 @@ function addSignatureParams( f ) {
 
 	const params = f.params ? addParamAttributes( f.params ) : [];
 
-	f.signature = util.format( '%s(%s)', ( f.signature || '' ), params.join( ', ' ) );
+	f.signature = util.format( '%s( %s )', ( f.signature || '' ), params.join( ', ' ) );
 
 }
 
 function addSignatureReturns( f ) {
 
-	const attribs = [];
-	let attribsString = '';
 	let returnTypes = [];
 	let returnTypesString = '';
 	const source = f.yields || f.returns;
-
-	// jam all the return-type attributes into an array. this could create odd results (for example,
-	// if there are both nullable and non-nullable return types), but let's assume that most people
-	// who use multiple @return tags aren't using Closure Compiler type annotations, and vice-versa.
-	if ( source ) {
-
-		source.forEach( item => {
-
-			helper.getAttribs( item ).forEach( attrib => {
-
-				if ( ! attribs.includes( attrib ) ) {
-
-					attribs.push( attrib );
-
-				}
-
-			} );
-
-		} );
-
-		attribsString = buildAttribsString( attribs );
-
-	}
 
 	if ( source ) {
 
@@ -225,7 +213,7 @@ function addSignatureReturns( f ) {
 
 	if ( returnTypes.length ) {
 
-		returnTypesString = util.format( ' &rarr; %s{%s}', attribsString, returnTypes.join( '|' ) );
+		returnTypesString = util.format( ' : %s', returnTypes.join( ' | ' ) );
 
 	}
 
@@ -237,13 +225,13 @@ function addSignatureTypes( f ) {
 
 	const types = f.type ? buildItemTypeStrings( f ) : [];
 
-	f.signature = `${f.signature || ''}<span class="type-signature">${types.length ? ` :${types.join( '|' )}` : ''}</span>`;
+	f.signature = `${f.signature || ''}<span class="type-signature">${types.length ? ` : ${types.join( ' | ' )}` : ''}</span>`;
 
 }
 
 function addAttribs( f ) {
 
-	const attribs = helper.getAttribs( f );
+	const attribs = helper.getAttribs( f ).filter( attrib => attrib !== 'static' );
 	const attribsString = buildAttribsString( attribs );
 
 	f.attribs = util.format( '<span class="type-signature">%s</span>', attribsString );
@@ -287,7 +275,8 @@ function generate( title, docs, filename, resolveLinks ) {
 	const docData = {
 		env: env,
 		title: title,
-		docs: docs
+		docs: docs,
+		augments: docs && docs[0] ? docs[0].augments : null
 	};
 
 	const outpath = path.join( outdir, filename );
@@ -298,6 +287,9 @@ function generate( title, docs, filename, resolveLinks ) {
 		html = helper.resolveLinks( html ); // turn {@link foo} into <a href="foodoc.html">foo</a>
 
 	}
+
+	// Remove lines that only contain whitespace
+	html = html.replace( /^\s*\n/gm, '' );
 
 	fs.writeFileSync( outpath, html, 'utf8' );
 
@@ -363,7 +355,7 @@ function buildMainNav( items, itemsSeen, linktoFn ) {
 
 				}
 
-				itemNav += `<li data-name="${item.name}">${linktoFn( item.longname, displayName.replace( /\b(module|event):/g, '' ) )}</li>`;
+				itemNav += `<li>${linktoFn( item.longname, displayName.replace( /\b(module|event):/g, '' ) )}</li>`;
 
 				itemsSeen[ item.longname ] = true;
 
@@ -389,13 +381,13 @@ function buildMainNav( items, itemsSeen, linktoFn ) {
 
 		for ( const [ mainCategory, map ] of hierarchy ) {
 
-			nav += `<h2>${mainCategory}</h2>`;
+			nav += `<h2>${mainCategory}</h2>\n`;
 
 			const sortedMap = new Map( [ ...map.entries() ].sort() ); // sort sub categories
 
 			for ( const [ subCategory, links ] of sortedMap ) {
 
-				nav += `<h3>${subCategory}</h3>`;
+				nav += `<h3>${subCategory}</h3>\n`;
 
 				let navItems = '';
 
@@ -403,11 +395,11 @@ function buildMainNav( items, itemsSeen, linktoFn ) {
 
 				for ( const link of links ) {
 
-					navItems += link;
+					navItems += link + '\n';
 
 				}
 
-				nav += `<ul>${navItems}</ul>`;
+				nav += `<ul>\n${navItems}</ul>\n`;
 
 			}
 
@@ -438,7 +430,7 @@ function buildGlobalsNav( globals, seen ) {
 
 				if ( tslTag !== undefined ) {
 
-					tslNav += `<li data-name="${longname}">${linkto( longname, name )}</li>`;
+					tslNav += `<li>${linkto( longname, name )}</li>\n`;
 
 					seen[ longname ] = true;
 
@@ -448,7 +440,7 @@ function buildGlobalsNav( globals, seen ) {
 
 		} );
 
-		nav += `<h2>TSL</h2><ul>${tslNav}</ul>`;
+		nav += `<h2>TSL</h2>\n<ul>\n${tslNav}</ul>\n`;
 
 		// Globals
 
@@ -458,7 +450,7 @@ function buildGlobalsNav( globals, seen ) {
 
 			if ( kind !== 'typedef' && ! hasOwnProp.call( seen, longname ) ) {
 
-				globalNav += `<li data-name="${longname}">${linkto( longname, name )}</li>`;
+				globalNav += `<li>${linkto( longname, name )}</li>\n`;
 
 			}
 
@@ -469,11 +461,11 @@ function buildGlobalsNav( globals, seen ) {
 		if ( ! globalNav ) {
 
 			// turn the heading into a link so you can actually get to the global page
-			nav += `<h3>${linkto( 'global', 'Global' )}</h3>`;
+			nav += `<h3>${linkto( 'global', 'Global' )}</h3>\n`;
 
 		} else {
 
-			nav += `<h2>Global</h2><ul>${globalNav}</ul>`;
+			nav += `<h2>Global</h2>\n<ul>\n${globalNav}</ul>\n`;
 
 		}
 
@@ -743,8 +735,8 @@ exports.publish = ( taffyData, opts, tutorials ) => {
 	view.outputSourceFiles = outputSourceFiles;
 	view.ignoreInheritedSymbols = themeOpts.ignoreInheritedSymbols;
 
-	// once for all
-	view.nav = buildNav( members );
+	// Empty nav in templates - will be loaded from nav.html client-side
+	view.nav = '';
 
 	// generate the pretty-printed source files first so other pages can link to them
 	if ( outputSourceFiles ) {
@@ -794,6 +786,13 @@ exports.publish = ( taffyData, opts, tutorials ) => {
 		}
 
 	} );
+
+	// Write navigation to separate file
+	fs.writeFileSync(
+		path.join( outdir, 'nav.html' ),
+		buildNav( members ),
+		'utf8'
+	);
 
 	// search
 

@@ -1,3 +1,88 @@
+( function handleLegacyURLs() {
+
+	const hash = window.location.hash;
+
+	if ( hash.startsWith( '#api/' ) || hash.startsWith( '#examples/' ) ) {
+
+		const mappings = {
+
+			'3DMLoader': 'Rhino3dmLoader',
+
+			'BufferGeometryUtils': 'module-BufferGeometryUtils',
+			'CameraUtils': 'module-CameraUtils',
+			'SceneUtils': 'module-SceneUtils',
+			'SkeletonUtils': 'module-SkeletonUtils',
+			'UniformsUtils': 'module-UniformsUtils',
+
+			'DefaultLoadingManager': 'LoadingManager',
+			'Interpolations': 'module-Interpolations',
+
+			'Animation': 'global',
+			'BufferAttributeUsage': 'global',
+			'Core': 'global',
+			'CustomBlendingEquations': 'global',
+			'Materials': 'global',
+			'Textures': 'global'
+		};
+
+		const parts = hash.split( '/' );
+		let className = parts[ parts.length - 1 ];
+
+		if ( className ) {
+
+			if ( className in mappings ) className = mappings[ className ];
+
+			window.location.href = `${className}.html`;
+
+		}
+
+	}
+
+} )();
+
+( function loadNavigation() {
+
+	const content = document.getElementById( 'content' );
+	const navContainer = content.querySelector( 'nav' );
+
+	fetch( 'nav.html' )
+		.then( response => response.text() )
+		.then( html => {
+
+			navContainer.innerHTML = html;
+
+			const savedScrollTop = sessionStorage.getItem( 'navScrollTop' );
+
+			if ( savedScrollTop !== null ) {
+
+				content.scrollTop = parseInt( savedScrollTop, 10 );
+
+			}
+
+			// Save scroll position when clicking nav links
+			navContainer.addEventListener( 'click', function ( event ) {
+
+				const link = event.target.closest( 'a' );
+
+				if ( link ) {
+
+					sessionStorage.setItem( 'navScrollTop', content.scrollTop );
+
+				}
+
+			} );
+
+			updateNavigation();
+
+			sessionStorage.removeItem( 'navScrollTop' );
+
+		} )
+		.catch( err => console.error( 'Failed to load navigation:', err ) );
+
+} )();
+
+//
+
 const panel = document.getElementById( 'panel' );
 const panelScrim = document.getElementById( 'panelScrim' );
 const expandButton = document.getElementById( 'expandButton' );
@@ -100,7 +185,6 @@ clearSearchButton.onclick = function () {
 
 //
 
-window.addEventListener( 'DOMContentLoaded', updateNavigation );
 window.addEventListener( 'hashchange', updateNavigation );
 
 function updateNavigation() {
@@ -127,13 +211,18 @@ function updateNavigation() {
 
 	// select target and move into view
 
-	const liElement = document.querySelector( `li[data-name="${target}"]` );
+	const aElement = document.querySelector( `nav a[href="${filename}"], nav a[href="${filename}#${target}"]` );
 
-	if ( liElement !== null ) {
+	if ( aElement !== null ) {
 
-		const aElement = liElement.firstChild;
+		const savedScrollTop = sessionStorage.getItem( 'navScrollTop' );
 
-		aElement.scrollIntoView( { block: 'center' } );
+		if ( savedScrollTop === null ) {
+
+			aElement.scrollIntoView( { block: 'center' } );
+
+		}
+
 		aElement.classList.add( 'selected' );
 
 	}
@@ -153,3 +242,11 @@ console.log( [
 	'                                         / __/  /  \\__  \\',
 	'                                         \\/____/\\/_____/'
 ].join( '\n' ) );
+
+// console sandbox
+
+import( '/build/three.module.js' ).then( THREE => {
+
+	window.THREE = THREE;
+
+} );

@@ -31,6 +31,7 @@ import { Vector2 } from '../../math/Vector2.js';
 import { Vector3 } from '../../math/Vector3.js';
 import { Vector4 } from '../../math/Vector4.js';
 import { Float16BufferAttribute } from '../../core/BufferAttribute.js';
+import { warn, error } from '../../utils.js';
 
 const rendererCache = new WeakMap();
 
@@ -450,6 +451,14 @@ class NodeBuilder {
 		 */
 		this.subBuildFn = null;
 
+		/**
+		 * The current TSL function(Fn) call node.
+		 *
+		 * @type {?Node}
+		 * @default null
+		 */
+		this.fnCall = null;
+
 	}
 
 	/**
@@ -792,7 +801,7 @@ class NodeBuilder {
 		/*
 		if ( this.chaining.indexOf( node ) !== - 1 ) {
 
-			console.warn( 'Recursive node: ', node );
+			warn( 'Recursive node: ', node );
 
 		}
 		*/
@@ -899,6 +908,22 @@ class NodeBuilder {
 	}
 
 	/**
+	 * Adds context data to the builder's current context.
+	 *
+	 * @param {Object} context - The context to add.
+	 * @return {Object} The previous context.
+	 */
+	addContext( context ) {
+
+		const previousContext = this.getContext();
+
+		this.setContext( { ...this.context, ...context } );
+
+		return previousContext;
+
+	}
+
+	/**
 	 * Gets a context used in shader construction that can be shared across different materials.
 	 * This is necessary since the renderer cache can reuse shaders generated in one material and use them in another.
 	 *
@@ -973,19 +998,20 @@ class NodeBuilder {
 	 */
 	getVertexIndex() {
 
-		console.warn( 'Abstract function.' );
+		warn( 'Abstract function.' );
 
 	}
 
 	/**
-	 * Returns the instanceIndex input variable as a native shader string.
+	 * Contextually returns either the vertex stage instance index builtin
+	 * or the linearized index of an compute invocation within a grid of workgroups.
 	 *
 	 * @abstract
 	 * @return {string} The instanceIndex shader string.
 	 */
 	getInstanceIndex() {
 
-		console.warn( 'Abstract function.' );
+		warn( 'Abstract function.' );
 
 	}
 
@@ -998,7 +1024,7 @@ class NodeBuilder {
 	 */
 	getDrawIndex() {
 
-		console.warn( 'Abstract function.' );
+		warn( 'Abstract function.' );
 
 	}
 
@@ -1010,7 +1036,7 @@ class NodeBuilder {
 	 */
 	getFrontFacing() {
 
-		console.warn( 'Abstract function.' );
+		warn( 'Abstract function.' );
 
 	}
 
@@ -1022,7 +1048,7 @@ class NodeBuilder {
 	 */
 	getFragCoord() {
 
-		console.warn( 'Abstract function.' );
+		warn( 'Abstract function.' );
 
 	}
 
@@ -1065,7 +1091,7 @@ class NodeBuilder {
 	 */
 	generateTexture( /* texture, textureProperty, uvSnippet */ ) {
 
-		console.warn( 'Abstract function.' );
+		warn( 'Abstract function.' );
 
 	}
 
@@ -1082,7 +1108,7 @@ class NodeBuilder {
 	 */
 	generateTextureLod( /* texture, textureProperty, uvSnippet, depthSnippet, levelSnippet */ ) {
 
-		console.warn( 'Abstract function.' );
+		warn( 'Abstract function.' );
 
 	}
 
@@ -1970,7 +1996,7 @@ class NodeBuilder {
 
 			node.name = name;
 
-			console.warn( `THREE.TSL: Declaration name '${ property }' of '${ node.type }' already in use. Renamed to '${ name }'.` );
+			warn( `TSL: Declaration name '${ property }' of '${ node.type }' already in use. Renamed to '${ name }'.` );
 
 		}
 
@@ -2347,7 +2373,7 @@ class NodeBuilder {
 	 */
 	buildFunctionCode( /* shaderNode */ ) {
 
-		console.warn( 'Abstract function.' );
+		warn( 'Abstract function.' );
 
 	}
 
@@ -2456,7 +2482,7 @@ class NodeBuilder {
 	 */
 	getAttributes( /*shaderStage*/ ) {
 
-		console.warn( 'Abstract function.' );
+		warn( 'Abstract function.' );
 
 	}
 
@@ -2469,7 +2495,7 @@ class NodeBuilder {
 	 */
 	getVaryings( /*shaderStage*/ ) {
 
-		console.warn( 'Abstract function.' );
+		warn( 'Abstract function.' );
 
 	}
 
@@ -2522,7 +2548,7 @@ class NodeBuilder {
 	 */
 	getUniforms( /*shaderStage*/ ) {
 
-		console.warn( 'Abstract function.' );
+		warn( 'Abstract function.' );
 
 	}
 
@@ -2614,7 +2640,7 @@ class NodeBuilder {
 	 */
 	buildCode() {
 
-		console.warn( 'Abstract function.' );
+		warn( 'Abstract function.' );
 
 	}
 
@@ -2772,7 +2798,7 @@ class NodeBuilder {
 
 			if ( nodeMaterial === null ) {
 
-				console.error( `NodeMaterial: Material "${ material.type }" is not compatible.` );
+				error( `NodeMaterial: Material "${ material.type }" is not compatible.` );
 
 				nodeMaterial = new NodeMaterial();
 

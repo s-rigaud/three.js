@@ -3,6 +3,7 @@ import { getNodeChildren, getCacheKey, hash } from './NodeUtils.js';
 
 import { EventDispatcher } from '../../core/EventDispatcher.js';
 import { MathUtils } from '../../math/MathUtils.js';
+import { warn, error } from '../../utils.js';
 
 const _parentBuildStage = {
 	analyze: 'setup',
@@ -83,6 +84,14 @@ class Node extends EventDispatcher {
 		this.version = 0;
 
 		/**
+		 * The name of the node.
+		 *
+		 * @type {string}
+		 * @default ''
+		 */
+		this.name = '';
+
+		/**
 		 * Whether this node is global or not. This property is relevant for the internal
 		 * node caching system. All nodes which should be declared just once should
 		 * set this flag to `true` (a typical example is {@link AttributeNode}).
@@ -110,6 +119,8 @@ class Node extends EventDispatcher {
 		this.isNode = true;
 
 		// private
+
+		this._beforeNodes = null;
 
 		/**
 		 * The cache key of this node.
@@ -574,7 +585,7 @@ class Node extends EventDispatcher {
 	 */
 	updateBefore( /*frame*/ ) {
 
-		console.warn( 'Abstract function.' );
+		warn( 'Abstract function.' );
 
 	}
 
@@ -588,7 +599,7 @@ class Node extends EventDispatcher {
 	 */
 	updateAfter( /*frame*/ ) {
 
-		console.warn( 'Abstract function.' );
+		warn( 'Abstract function.' );
 
 	}
 
@@ -602,7 +613,17 @@ class Node extends EventDispatcher {
 	 */
 	update( /*frame*/ ) {
 
-		console.warn( 'Abstract function.' );
+		warn( 'Abstract function.' );
+
+	}
+
+	before( node ) {
+
+		if ( this._beforeNodes === null ) this._beforeNodes = [];
+
+		this._beforeNodes.push( node );
+
+		return this;
 
 	}
 
@@ -623,6 +644,24 @@ class Node extends EventDispatcher {
 		if ( this !== refNode ) {
 
 			return refNode.build( builder, output );
+
+		}
+
+		//
+
+		if ( this._beforeNodes !== null ) {
+
+			const currentBeforeNodes = this._beforeNodes;
+
+			this._beforeNodes = null;
+
+			for ( const beforeNode of currentBeforeNodes ) {
+
+				beforeNode.build( builder, output );
+
+			}
+
+			this._beforeNodes = currentBeforeNodes;
 
 		}
 
@@ -731,7 +770,7 @@ class Node extends EventDispatcher {
 
 					} else {
 
-						console.warn( 'THREE.Node: Recursion detected.', this );
+						warn( 'Node: Recursion detected.', this );
 
 						result = '/* Recursion detected. */';
 
@@ -755,7 +794,7 @@ class Node extends EventDispatcher {
 
 				// if no snippet is generated, return a default value
 
-				console.error( `THREE.TSL: Invalid generated code, expected a "${ output }".` );
+				error( `TSL: Invalid generated code, expected a "${ output }".` );
 
 				result = builder.generateConst( output );
 

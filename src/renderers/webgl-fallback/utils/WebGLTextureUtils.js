@@ -1,6 +1,7 @@
 import { LinearFilter, LinearMipmapLinearFilter, LinearMipmapNearestFilter, NearestFilter, NearestMipmapLinearFilter, NearestMipmapNearestFilter, FloatType, MirroredRepeatWrapping, ClampToEdgeWrapping, RepeatWrapping, NeverCompare, AlwaysCompare, LessCompare, LessEqualCompare, EqualCompare, GreaterEqualCompare, GreaterCompare, NotEqualCompare, NoColorSpace, LinearTransfer, SRGBTransfer } from '../../../constants.js';
 import { ColorManagement } from '../../../math/ColorManagement.js';
 import { getByteLength } from '../../../extras/TextureUtils.js';
+import { warn } from '../../../utils.js';
 
 let initialized = false, wrappingToGL, filterToGL, compareToGL;
 
@@ -169,7 +170,7 @@ class WebGLTextureUtils {
 
 			if ( gl[ internalFormatName ] !== undefined ) return gl[ internalFormatName ];
 
-			console.warn( 'THREE.WebGLRenderer: Attempt to use non-existing WebGL internal format \'' + internalFormatName + '\'' );
+			warn( 'WebGLBackend: Attempt to use non-existing WebGL internal format \'' + internalFormatName + '\'' );
 
 		}
 
@@ -408,8 +409,7 @@ class WebGLTextureUtils {
 
 		backend.set( texture, {
 			textureGPU,
-			glTextureType,
-			isDefault: true
+			glTextureType
 		} );
 
 	}
@@ -498,7 +498,7 @@ class WebGLTextureUtils {
 
 		// gl.readPixels( 0, 0, width, height, altFormat, altType, readout );
 		// gl.bindFramebuffer( gl.FRAMEBUFFER, null );
-		// console.log( readout );
+		// log( readout );
 
 	}
 
@@ -541,7 +541,7 @@ class WebGLTextureUtils {
 
 						} else {
 
-							console.warn( 'THREE.WebGLRenderer: Attempt to load unsupported compressed texture format in .uploadTexture()' );
+							warn( 'WebGLBackend: Attempt to load unsupported compressed texture format in .uploadTexture()' );
 
 						}
 
@@ -559,7 +559,7 @@ class WebGLTextureUtils {
 
 					} else {
 
-						console.warn( 'Unsupported compressed texture format' );
+						warn( 'WebGLBackend: Unsupported compressed texture format' );
 
 					}
 
@@ -740,14 +740,20 @@ class WebGLTextureUtils {
 	 * Destroys the GPU data for the given texture object.
 	 *
 	 * @param {Texture} texture - The texture.
+	 * @param {boolean} [isDefaultTexture=false] - Whether the texture uses a default GPU texture or not.
 	 */
-	destroyTexture( texture ) {
+	destroyTexture( texture, isDefaultTexture = false ) {
 
 		const { gl, backend } = this;
 		const { textureGPU, renderTarget } = backend.get( texture );
 
 		this.deallocateRenderBuffers( renderTarget );
-		gl.deleteTexture( textureGPU );
+
+		if ( isDefaultTexture === false ) {
+
+			gl.deleteTexture( textureGPU );
+
+		}
 
 		backend.delete( texture );
 
