@@ -1,5 +1,5 @@
 import { RenderTarget, Vector2, TempNode, QuadMesh, NodeMaterial, RendererUtils, MathUtils } from 'three/webgpu';
-import { clamp, normalize, reference, nodeObject, Fn, NodeUpdateType, uniform, vec4, passTexture, uv, logarithmicDepthToViewZ, viewZToPerspectiveDepth, getViewPosition, screenCoordinate, float, sub, fract, dot, vec2, rand, vec3, Loop, mul, PI, cos, sin, uint, cross, acos, sign, pow, luminance, If, max, abs, Break, sqrt, HALF_PI, div, ceil, shiftRight, convertToTexture, bool, getNormalFromDepth } from 'three/tsl';
+import { clamp, normalize, reference, nodeObject, Fn, NodeUpdateType, uniform, vec4, passTexture, uv, logarithmicDepthToViewZ, viewZToPerspectiveDepth, getViewPosition, screenCoordinate, float, sub, fract, dot, vec2, rand, vec3, Loop, mul, PI, cos, sin, uint, cross, acos, sign, pow, luminance, If, max, abs, Break, sqrt, HALF_PI, div, ceil, shiftRight, convertToTexture, bool, getNormalFromDepth, interleavedGradientNoise } from 'three/tsl';
 
 const _quadMesh = /*@__PURE__*/ new QuadMesh();
 const _size = /*@__PURE__*/ new Vector2();
@@ -20,7 +20,7 @@ let _rendererState;
  *
  * The quality and performance of the effect mainly depend on `sliceCount` and `stepCount`.
  * The total number of samples taken per pixel is `sliceCount` * `stepCount` * `2`. Here are some
- * recommened presets depending on whether temporal filtering is used or not.
+ * recommended presets depending on whether temporal filtering is used or not.
  *
  * With temporal filtering (recommended):
  *
@@ -28,7 +28,7 @@ let _rendererState;
  * - Medium: `sliceCount` of `2`, `stepCount` of `8`.
  * - High: `sliceCount` of `3`, `stepCount` of `16`.
  *
- * Use for a higher slice count if you notice temporal instabilties like flickering. Reduce the sample
+ * Use for a higher slice count if you notice temporal instabilities like flickering. Reduce the sample
  * count then to mitigate the performance lost.
  *
  * Without temporal filtering:
@@ -51,7 +51,7 @@ class SSGINode extends TempNode {
 	/**
 	 * Constructs a new SSGI node.
 	 *
-	 * @param {TextureNode} beautyNode - The texture node that represents the input of the effect.
+	 * @param {TextureNode} beautyNode - A texture node that represents the beauty or scene pass.
 	 * @param {TextureNode} depthNode - A texture node that represents the scene's depth.
 	 * @param {TextureNode} normalNode - A texture node that represents the scene's normals.
 	 * @param {PerspectiveCamera} camera - The camera the scene is rendered with.
@@ -61,9 +61,9 @@ class SSGINode extends TempNode {
 		super( 'vec4' );
 
 		/**
-		 * A node that represents the scene's depth.
+		 * A texture node that represents the beauty or scene pass.
 		 *
-		 * @type {Node<float>}
+		 * @type {TextureNode}
 		 */
 		this.beautyNode = beautyNode;
 
@@ -180,7 +180,7 @@ class SSGINode extends TempNode {
 
 		/**
 		 * Whether to use temporal filtering or not. Setting this property to
-		 * `true` requires the usage of `TRAANode`. This will help to reduce noice
+		 * `true` requires the usage of `TRAANode`. This will help to reduce noise
 		 * although it introduces typical TAA artifacts like ghosting and temporal
 		 * instabilities.
 		 *
@@ -413,20 +413,6 @@ class SSGINode extends TempNode {
 			]
 		} );
 
-		// Interleaved gradient function from Jimenez 2014 http://goo.gl/eomGso
-
-		const gradientNoise = Fn( ( [ position ] ) => {
-
-			return fract( float( 52.9829189 ).mul( fract( dot( position, vec2( 0.06711056, 0.00583715 ) ) ) ) );
-
-		} ).setLayout( {
-			name: 'gradientNoise',
-			type: 'float',
-			inputs: [
-				{ name: 'position', type: 'vec2' }
-			]
-		} );
-
 		const GTAOFastAcos = Fn( ( [ value ] ) => {
 
 			const outVal = abs( value ).mul( float( - 0.156583 ) ).add( HALF_PI );
@@ -476,7 +462,7 @@ class SSGINode extends TempNode {
 
 			} ).Else( () => {
 
-				stepRadius.assign( max( RADIUS.mul( this._halfProjScale ).div( viewPosition.z.negate() ), float( STEP_COUNT ) ) ); // Port note: viewZ is negative so a negate is requried
+				stepRadius.assign( max( RADIUS.mul( this._halfProjScale ).div( viewPosition.z.negate() ), float( STEP_COUNT ) ) ); // Port note: viewZ is negative so a negate is required
 
 			} );
 
@@ -576,7 +562,7 @@ class SSGINode extends TempNode {
 			//
 
 			const noiseOffset = spatialOffsets( screenCoordinate );
-			const noiseDirection = gradientNoise( screenCoordinate );
+			const noiseDirection = interleavedGradientNoise( screenCoordinate );
 			const noiseJitterIdx = this._temporalDirection.mul( 0.02 ); // Port: Add noiseJitterIdx here for slightly better noise convergence with TRAA (see #31890 for more details)
 			const initialRayStep = fract( noiseOffset.add( this._temporalOffset ) ).add( rand( uvNode.add( noiseJitterIdx ).mul( 2 ).sub( 1 ) ) );
 

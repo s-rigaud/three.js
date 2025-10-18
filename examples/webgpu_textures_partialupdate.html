@@ -53,7 +53,7 @@
 				clock = new THREE.Clock();
 
 				const loader = new THREE.TextureLoader();
-				diffuseMap = loader.load( 'textures/carbon/Carbon.png', animate );
+				diffuseMap = loader.load( 'textures/carbon/Carbon.png' );
 				diffuseMap.colorSpace = THREE.SRGBColorSpace;
 				diffuseMap.minFilter = THREE.LinearFilter;
 				diffuseMap.generateMipmaps = false;
@@ -77,7 +77,7 @@
 				renderer = new THREE.WebGPURenderer( { antialias: true, forceWebGL: false } );
 				renderer.setPixelRatio( window.devicePixelRatio );
 				renderer.setSize( window.innerWidth, window.innerHeight );
-
+				renderer.setAnimationLoop( animate );
 				document.body.appendChild( renderer.domElement );
 
 				//
@@ -95,14 +95,12 @@
 
 			}
 
-			async function animate() {
-
-				requestAnimationFrame( animate );
+			function animate() {
 
 				const elapsedTime = clock.getElapsedTime();
 
 
-				await renderer.renderAsync( scene, camera );
+				renderer.render( scene, camera );
 
 
 				if ( elapsedTime - last > 0.1 ) {

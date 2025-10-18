@@ -777,8 +777,7 @@ class WebGPUBackend extends Backend {
 
 			if ( renderContext.scissor ) {
 
-				const { x, y, width, height } = renderContext.scissorValue;
-				currentPass.setScissorRect( x, y, width, height );
+				this.updateScissor( renderContext );
 
 			}
 
@@ -1139,6 +1138,20 @@ class WebGPUBackend extends Backend {
 	}
 
 	/**
+	 * Updates the scissor with the values from the given render context.
+	 *
+	 * @param {RenderContext} renderContext - The render context.
+	 */
+	updateScissor( renderContext ) {
+
+		const { currentPass } = this.get( renderContext );
+		const { x, y, width, height } = renderContext.scissorValue;
+
+		currentPass.setScissorRect( x, y, width, height );
+
+	}
+
+	/**
 	 * Returns the clear color and alpha into a single
 	 * color object.
 	 *
@@ -1432,19 +1445,6 @@ class WebGPUBackend extends Backend {
 		groupData.passEncoderGPU.end();
 
 		this.device.queue.submit( [ groupData.cmdEncoderGPU.finish() ] );
-
-	}
-
-	/**
-	 * Can be used to synchronize CPU operations with GPU tasks. So when this method is called,
-	 * the CPU waits for the GPU to complete its operation (e.g. a compute task).
-	 *
-	 * @async
-	 * @return {Promise} A Promise that resolves when synchronization has been finished.
-	 */
-	async waitForGPU() {
-
-		await this.device.queue.onSubmittedWorkDone();
 
 	}
 
@@ -2414,6 +2414,15 @@ class WebGPUBackend extends Backend {
 			]
 		);
 
+		// mipmaps must be genereated with the same encoder otherwise the copied texture data
+		// might be out-of-sync, see #31768
+
+		if ( texture.generateMipmaps ) {
+
+			this.textureUtils.generateMipmaps( texture, encoder );
+
+		}
+
 		if ( renderContextData.currentPass ) {
 
 			const { descriptor } = renderContextData;
@@ -2438,21 +2447,13 @@ class WebGPUBackend extends Backend {
 
 			if ( renderContext.scissor ) {
 
-				const { x, y, width, height } = renderContext.scissorValue;
-
-				renderContextData.currentPass.setScissorRect( x, y, width, height );
+				this.updateScissor( renderContext );
 
 			}
 
 		} else {
 
 			this.device.queue.submit( [ encoder.finish() ] );
-
-		}
-
-		if ( texture.generateMipmaps ) {
-
-			this.textureUtils.generateMipmaps( texture );
 
 		}
 

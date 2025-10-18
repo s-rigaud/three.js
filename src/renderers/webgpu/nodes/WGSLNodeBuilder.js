@@ -952,6 +952,7 @@ class WGSLNodeBuilder extends NodeBuilder {
 				}
 
 				texture.store = node.isStorageTextureNode === true;
+				texture.mipLevel = texture.store ? node.mipLevel : 0;
 				texture.setVisibility( gpuShaderStageLib[ shaderStage ] );
 
 				if ( this.isUnfilterable( node.value ) === false && texture.store === false ) {

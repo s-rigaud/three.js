@@ -136,7 +136,7 @@ export class BitonicSort {
 		}
 
 		/**
-		 * A node representing a storage buffer used for transfering the result of the global sort back to the original data buffer.
+		 * A node representing a storage buffer used for transferring the result of the global sort back to the original data buffer.
 		 *
 		 * @type {StorageBufferNode}
 		*/
@@ -624,12 +624,12 @@ export class BitonicSort {
 	 *
 	 * @param {Renderer} renderer - The current scene's renderer.
 	 */
-	async computeStep( renderer ) {
+	computeStep( renderer ) {
 
 		// Swap local only runs once
 		if ( this.currentDispatch === 0 ) {
 
-			await renderer.computeAsync( this.swapLocalFn );
+			renderer.compute( this.swapLocalFn );
 
 			this.globalOpsRemaining = 1;
 			this.globalOpsInSpan = 1;
@@ -638,7 +638,7 @@ export class BitonicSort {
 
 			const swapType = this.globalOpsRemaining === this.globalOpsInSpan ? 'Flip' : 'Disperse';
 
-			await renderer.computeAsync( swapType === 'Flip' ? this.flipGlobalNodes[ this.readBufferName ] : this.disperseGlobalNodes[ this.readBufferName ] );
+			renderer.compute( swapType === 'Flip' ? this.flipGlobalNodes[ this.readBufferName ] : this.disperseGlobalNodes[ this.readBufferName ] );
 
 			if ( this.readBufferName === 'Data' ) {
 
@@ -655,7 +655,7 @@ export class BitonicSort {
 		} else {
 
 			// Then run local disperses when we've finished all global swaps
-			await renderer.computeAsync( this.disperseLocalNodes[ this.readBufferName ] );
+			renderer.compute( this.disperseLocalNodes[ this.readBufferName ] );
 
 			const nextSpanGlobalOps = this.globalOpsInSpan + 1;
 			this.globalOpsInSpan = nextSpanGlobalOps;
@@ -668,17 +668,17 @@ export class BitonicSort {
 
 		if ( this.currentDispatch === this.stepCount ) {
 
-			// If our last swap addressed only addressed the temp buffer, then re-allign it with the data buffer
+			// If our last swap addressed only addressed the temp buffer, then re-align it with the data buffer
 			// to fulfill the requirement of an in-place sort.
 			if ( this.readBufferName === 'Temp' ) {
 
-				await renderer.computeAsync( this.alignFn );
+				renderer.compute( this.alignFn );
 				this.readBufferName = 'Data';
 
 			}
 
 			// Just reset the algorithm information
-			await renderer.computeAsync( this.resetFn );
+			renderer.compute( this.resetFn );
 
 			this.currentDispatch = 0;
 			this.globalOpsRemaining = 0;
@@ -687,7 +687,7 @@ export class BitonicSort {
 		} else {
 
 			// Otherwise, determine what next swap span is
-			await renderer.computeAsync( this.setAlgoFn );
+			renderer.compute( this.setAlgoFn );
 
 		}
 
@@ -698,7 +698,7 @@ export class BitonicSort {
 	 *
 	 * @param {Renderer} renderer - The current scene's renderer.
 	 */
-	async compute( renderer ) {
+	compute( renderer ) {
 
 		this.globalOpsRemaining = 0;
 		this.globalOpsInSpan = 0;
@@ -706,7 +706,7 @@ export class BitonicSort {
 
 		for ( let i = 0; i < this.stepCount; i ++ ) {
 
-			await this.computeStep( renderer );
+			this.computeStep( renderer );
 
 		}
 
