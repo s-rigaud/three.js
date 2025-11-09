@@ -36,6 +36,9 @@
         "docs/manual/ru/*",
         "docs/manual/zh/*",
         "docs/prettify/*",
+        "docs/search.json",
+        "docs/scripts/*",
+        "docs/styles/*",
         "docs_new/*",  // generated from source code
         "examples/fonts/*",
         "editor/js/libs/*",

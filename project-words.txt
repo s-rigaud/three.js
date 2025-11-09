@@ -163,6 +163,7 @@ bitcast
 Bitcasts
 bitfield
 bitfields
+bitmask
 Bitonic
 bitonic
 Bitstream
@@ -272,6 +273,7 @@ CGTS
 CGTY
 chaingun
 Chebeyshevs
+Chebyshev's
 checkmark
 childadded
 childchild
@@ -373,6 +375,7 @@ Copernicium
 coprime
 cornflowerblue
 cornsilk
+Corput
 cose
 cosry
 cosrz
@@ -400,6 +403,7 @@ Crossfading
 crossfading
 crossfadings
 crossproduct
+crossvc
 crunchbase
 Crysis
 Crytek
@@ -497,6 +501,8 @@ denoise
 denoised
 denoising
 denorm
+denormal
+Denormal
 densening
 depthblur
 Depthbuffer
@@ -517,6 +523,7 @@ detuning
 deviantart
 DFDX
 DFDY
+DFGLUT
 dgroup
 Dheader
 dialpad
@@ -974,6 +981,8 @@ Gerzner
 Gestion
 Gestione
 Gfrerer
+GGXL
+GGXV
 Ghibli
 ghostwhite
 glauncher
@@ -1039,6 +1048,8 @@ haha
 Haines
 halfsize
 halfwidth
+Hammersley
+hammersley
 handinput
 Handley
 happyface
@@ -1081,6 +1092,7 @@ hitbox
 hittest
 HLSL
 hmmmface
+Hodgman
 horz
 Hoskins
 hotpink
@@ -1106,6 +1118,7 @@ idef
 idents
 idet
 iefix
+iemobile
 IEND
 IESNA
 IFAL
@@ -1230,6 +1243,7 @@ juejin
 juniorxsound
 Kaleido
 kandao
+Karis
 Kaufmann
 Kaydara
 kcmic
@@ -1541,6 +1555,7 @@ multipletextures
 Multisampled
 multisampled
 multisampling
+Multiscatter
 Multiscattering
 multiscattering
 multiview
@@ -1560,6 +1575,7 @@ NCRD
 nders
 ndofdist
 ndofstart
+Ndot
 NDTA
 nearpos
 NEGA
@@ -1573,6 +1589,8 @@ neighbour
 neighbourhood
 neighbouring
 neighbours
+Nemetona
+nemetona
 neque
 netbeans
 netease
@@ -1666,6 +1684,7 @@ objdist
 OBJECTSPACE
 objecttree
 objetos
+Obrush
 occluders
 Octree
 octree
@@ -1825,6 +1844,7 @@ PLTE
 PMREM
 pmrem
 PMREM's
+PMREMGGX
 PMREMs
 PNAM
 pnoise
@@ -1867,6 +1887,7 @@ preconfigured
 Preetham
 preetham
 Prefiltered
+prefiltering
 premult
 Premultipled
 premultipled
@@ -1990,6 +2011,7 @@ requis
 Resetted
 Resizer
 resizer
+resizers
 respecified
 resx
 resy
@@ -2517,6 +2539,7 @@ vcglib
 VCOL
 vcount
 vdir
+Vdot
 vdsp
 vdtp
 vectemp
@@ -2563,6 +2586,7 @@ VMLB
 VMMD
 VMOP
 VMPA
+VNDF
 vnum
 VOFFSET
 Vogel's
@@ -2721,3 +2745,5 @@ zscene
 zstddec
 zulip
 zwift
+טקסט
+╫ÿ╫º╫í╫ÿ

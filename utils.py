@@ -178,7 +178,7 @@ def clean_ts_errors():
     )
 
 
-# create_example_js_files()
+create_example_js_files()
 
 # os.system('cspell "**" > "spelling-errors.txt"')
 sort_project_valid_words()
@@ -186,5 +186,5 @@ sort_project_valid_words()
 os.system("npm run ts")
 clean_ts_errors()
 
-# delete_example_js_files()
+delete_example_js_files()
 # types = extract_js_types()
