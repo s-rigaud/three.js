@@ -4,9 +4,9 @@
 		<meta charset="utf-8">
 		<title>three.js docs</title>
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-		<link rel="shortcut icon" href="/files/favicon_white.ico" media="(prefers-color-scheme: dark)"/>
-		<link rel="shortcut icon" href="/files/favicon.ico" media="(prefers-color-scheme: light)" />
-		<link rel="stylesheet" type="text/css" href="/files/main.css">
+		<link rel="shortcut icon" href="../files/favicon_white.ico" media="(prefers-color-scheme: dark)"/>
+		<link rel="shortcut icon" href="../files/favicon.ico" media="(prefers-color-scheme: light)" />
+		<link rel="stylesheet" type="text/css" href="../files/main.css">
 		<!-- console sandbox -->
 		<script type="module">
 			import * as THREE from '../build/three.module.js';
@@ -35,7 +35,9 @@
 					<div id="clearSearchButton"></div>
 				</div>
 				<div id="searchResults" style="display: none;"></div>
-				<div id="content"><!--NAV_PLACEHOLDER--></div>
+				<div id="content">
+					<!--NAV_PLACEHOLDER-->
+				</div>
 			</div>
 
 		</div>
@@ -313,7 +315,9 @@
 				}
 
 				const regExp = new RegExp( escapeRegExp( v ), 'gi' );
-				const highlightRegExp = new RegExp( v.replace( /[.*+?^${}()|[\]\\]/g, '\\$&' ), 'gi' );
+				// Create highlight regex that matches any of the search words
+				const words = v.split( ' ' ).map( word => word.replace( /[.*+?^${}()|[\]\\]/g, '\\$&' ) ).join( '|' );
+				const highlightRegExp = new RegExp( words, 'gi' );
 
 				// Search through all categories
 				const results = [];
@@ -322,7 +326,9 @@
 					const items = searchData[ category ];
 					for ( const item of items ) {
 
-						if ( item.title.match( regExp ) ) {
+						// Match against combined category and title for multi-word searches
+						const searchText = category + ' ' + item.title;
+						if ( searchText.match( regExp ) ) {
 
 							results.push( { ...item, category } );
 
@@ -412,7 +418,8 @@
 
 						if ( ! byCategory[ category ] ) continue;
 
-						html += `<h2>${category}</h2>`;
+						const highlightedCategory = highlightMatch( category, highlightRegExp );
+						html += `<h2>${highlightedCategory}</h2>`;
 
 						for ( const className in byCategory[ category ] ) {
 
