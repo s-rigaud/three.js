@@ -21,9 +21,9 @@ def create_example_js_files():
     # Create examples js files
     folder = "examples"
     for root, _, files in os.walk(folder):
-        for file in files:
+        for index, file in enumerate(files):
             if file.endswith(".html"):
-                print(f"Processing {file}...")
+                print(f"Processing {file} ... ({index}/{len(files)})")
                 file_path = os.path.join(root, file)
                 with open(file_path, encoding="utf-8") as f:
                     content = f.read()
