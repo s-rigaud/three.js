@@ -10,6 +10,7 @@ absellipse
 absval
 Accu
 accu
+Accum
 accus
 ACUBIC
 ADAT
@@ -25,6 +26,7 @@ agilizes
 Agüera's
 ahedov
 ahole
+Ahtik
 airpods
 airtable
 Akihiro
@@ -65,10 +67,12 @@ Antialiasing
 antialiasing
 antiquewhite
 antonmoek
+Anycubic
 anytype
 AOMAP
 aomap
 AOPASSMAP
+AOUSD
 AOVN
 AOVS
 appgallery
@@ -85,6 +89,7 @@ arglet
 Arkanoid
 arkanoid
 arrayappend
+arraybuffer
 arraycamera
 arrowhelper
 artboard
@@ -92,6 +97,7 @@ asana
 asciify
 aspectcorrect
 aspectratio
+ASTC
 asterix
 ASWF
 Asyc
@@ -100,18 +106,23 @@ auctor
 augue
 autofit
 automagically
+autoplay
 AUVN
 AUVO
 AUVU
 axisgrid
 Axyz
 Azyx
+backface
+backfaces
 badoo
 ballmaterial
 ballpen
+ballpool
 ballshooter
 ballx
 ballz
+Bambu
 bandcamp
 bandlab
 barycentrically
@@ -137,6 +148,10 @@ behaviour
 benchy
 BERNIER
 betann
+bevelenabled
+bevelseg
+bevelsize
+bevelthickness
 Bezier
 BFBF
 bfnrtv
@@ -155,12 +170,14 @@ billboarded
 billboarding
 binormal
 binormals
+Biquad
 birection
 Bitangent
 bitangent
 BITCAST
 bitcast
 Bitcasts
+bitcounts
 bitfield
 bitfields
 bitmask
@@ -183,6 +200,7 @@ blendshapes
 blinenums
 Blinn
 blinn
+blit
 blitting
 blobby
 blockiness
@@ -220,6 +238,7 @@ breps
 Broadphase
 broadphase
 Brouillard
+bruneton
 bryc
 BSDF
 bsdfs
@@ -256,6 +275,7 @@ catmullrom's
 cbeust
 Cbottom
 cbpp
+cbrt
 CCDIK
 ccdikhelper
 ccdiksolver
@@ -432,6 +452,7 @@ CUDA
 cupra
 curveadjust
 curvelookup
+curveseg
 curvetype
 curvex
 curvez
@@ -476,6 +497,7 @@ DCUE
 DDPF
 DDSCAPS
 DDSD
+Deallocates
 Debevec
 Decale
 DECBITS
@@ -532,11 +554,14 @@ dimgray
 dimgrey
 Dimstyle
 dimstyles
+dinf
 dingtalk
 diracs
 directx
 dirlight
 Disegnare
+Disocclusion
+disocclusion
 disolve
 Disp
 disp
@@ -564,18 +589,23 @@ Donec
 DONT
 dotmesh
 dotproduct
+Dotscreen
 douban
 Downsample
 downsample
+downsampled
 downsampling
 dpdm
 dpdx
 dpdy
+dragend
+dragstart
 Drawbuffers
 drawcalls
 drawindirect
 drawingbuffer
 drawrange
+dref
 dribbble
 dryclean
 Dsqrt
@@ -822,6 +852,7 @@ Emap
 EMISSIVEMAP
 emissivemap
 Emiter
+Emscripten
 ENAB
 ENCBITS
 ENCSIZE
@@ -864,8 +895,11 @@ evernote
 Excls
 EXIF
 exponentiate
+extensionadded
+extensionremoved
 facecap
 facecolors
+faceforward
 FACEMAP
 Facetype
 facetype
@@ -889,6 +923,7 @@ fflate
 FFVII
 FFXX
 fgets
+FIELDSETS
 fileprefix
 Fileset
 fileset
@@ -906,6 +941,8 @@ flickr
 flightradar
 flipboard
 Floader
+floatpack
+floatunpack
 floorfrac
 floralwhite
 flowdata
@@ -943,11 +980,13 @@ frutta
 fscale
 fshader
 fstop
+ftyp
 Fujita
 fullfilled
 fullik
 funimation
 furnitures
+fwidth
 FXAA
 Fxaa
 fxaa
@@ -985,6 +1024,7 @@ GGXL
 GGXV
 Ghibli
 ghostwhite
+gkjohnson
 glauncher
 glayer
 glbloader
@@ -1009,6 +1049,7 @@ Godrays
 godrays
 golfball
 gonio
+gons
 gordogh
 Gosper
 gosper
@@ -1022,6 +1063,7 @@ gradientmap
 Graphe
 grasslight
 gravital
+grayscale
 greenyellow
 greggman's
 Gregorius
@@ -1030,6 +1072,7 @@ greyscale
 greysphere
 grindr
 Gritz
+Groud
 groundcolor
 groundprojected
 GRPT
@@ -1048,6 +1091,8 @@ haha
 Haines
 halfsize
 halfwidth
+halton
+Halton
 Hammersley
 hammersley
 handinput
@@ -1060,8 +1105,12 @@ hcenter
 hcode
 hdec
 hdecod
+hdlr
+HDRD
 hdrgm
 HDRI
+HDRN
+HDRN
 Hdxy
 headful
 headlessui
@@ -1079,12 +1128,14 @@ Heikkinen
 Heitz
 Heitz's
 Hejl
+Helland's
 Helvetiker
 helvetiker
 HEMI
 Hemi
 hemi
 Heper
+herzog
 HETATM
 hiero
 highp
@@ -1157,6 +1208,7 @@ IMST
 INAM
 indianred
 inds
+infront
 inhigh
 initialisation
 Initialise
@@ -1166,6 +1218,7 @@ inlow
 INME
 innter
 inorout
+inout
 inputjoint
 inputname
 inputsourceschange
@@ -1185,6 +1238,7 @@ interpolant
 interpolant's
 Interpolants
 interpolants
+interpupillary
 Intersectable
 intersectable
 intersectpoint
@@ -1213,6 +1267,7 @@ ISEQ
 isinf
 isnt
 isol
+isom
 isosurface
 isothreshold
 ISSUEDATE
@@ -1223,6 +1278,7 @@ IUTD
 IUTI
 IUTL
 IUVI
+ivec
 IVTD
 IVTL
 IWRL
@@ -1350,6 +1406,8 @@ Linvel
 litecoin
 Livermorium
 llen
+Llms
+llms
 LMAGIC
 Localisation
 localised
@@ -1405,9 +1463,11 @@ Matcap
 matcap
 matcaps
 materialargs
+materialcolor
 Materiali
 materialid
 materialindex
+materialopacity
 materialx
 mathwise
 MATMAGIC
@@ -1435,8 +1495,11 @@ maxz
 maxzoom
 mcdonalds
 MCVE
+mdat
 MDATA
 mdcs
+mdhd
+mdia
 Mediapipe
 mediumaquamarine
 mediumblue
@@ -1482,6 +1545,7 @@ mgck
 michorvath
 Microfacet
 microfacet
+microsoftcopilot
 midframe
 midnightblue
 mikesamuel
@@ -1490,6 +1554,7 @@ Mikkelsen
 mikktspace
 milli
 mincomp
+minf
 minifig
 miniprogram
 minm
@@ -1527,7 +1592,9 @@ monero
 Monette
 Monjori
 monokai
+monomorph
 monu
+moov
 MORF
 morphcolor
 MORPHCOLORS
@@ -1547,11 +1614,13 @@ msaa
 msdf
 mtllib
 mtlx
+Mugen
 MULT
 Mult
 mult
 multimaterials
 multipletextures
+multisample
 Multisampled
 multisampled
 multisampling
@@ -1560,6 +1629,8 @@ Multiscattering
 multiscattering
 multiview
 Murdock
+muxer
+mvhd
 Mátyás
 M├íty├ís
 nabogro
@@ -1622,12 +1693,14 @@ NOCLIP
 nodedef
 nodegraph
 nodename
+noice
 noinvertdark
 nomip
 nonblinn
 nondegenerate
 nonname
 nonvr
+noopener
 noord
 noperspective
 nord
@@ -1723,6 +1796,7 @@ OPAQ
 openended
 opengameart
 opengl
+openpbr
 operationorder
 oppo
 Optimer
@@ -1735,6 +1809,7 @@ orci
 OREF
 organisational
 orthogonalize
+Oscilation
 OSMP
 OTAG
 Outerra
@@ -1783,6 +1858,7 @@ paypay
 pbmetallic
 pbmetallicdisplayproperties
 pbmetallicdisplayproperty
+pcomb
 PCSS
 pcss
 pcurve
@@ -1800,9 +1876,11 @@ peppersghost
 periodictable
 Perlin
 perlin
+perplexdotgg
 Persp
 persp
 Persson
+PETG
 Pettineo
 PFLT
 Phan's
@@ -1815,7 +1893,9 @@ PHONGSOFT
 Photoshop
 photostudio
 physgl
+Physijs
 physotherapist
+physx
 pickable
 pickables
 pickt
@@ -1839,8 +1919,11 @@ Placemark
 planeschanged
 planesdetected
 planetscale
+playhead
+Playhead
 plmap
 PLTE
+pmndrs
 PMREM
 pmrem
 PMREM's
@@ -1865,6 +1948,7 @@ POLYDATA
 POLYFIELD
 polygonize
 polylist
+Polyslice
 Poppe
 portalgun
 porttitor
@@ -1875,6 +1959,7 @@ posnormtriv
 posterization
 Posterize
 posterize
+posterized
 posx
 posz
 potpack
@@ -1892,6 +1977,7 @@ premult
 Premultipled
 premultipled
 Premultiplies
+premultiply
 preservedrawingbuffer
 Presetpro
 presision
@@ -1917,6 +2003,7 @@ Prossimi
 protoplanet
 protoplanet's
 Protoplanets
+Prusa
 Pr├│ximos
 PTAG
 Ptrs
@@ -1926,8 +2013,14 @@ pvrtc
 qarea
 QRCODE
 qrcode
+Quatd
+quatd
 quaternius
 quaternnion
+Quatf
+quatf
+Quath
+quath
 Quats
 queryset
 Quickhull
@@ -1944,10 +2037,13 @@ ramplr
 ramptb
 Randomizable
 randomizable
+Raphson
 ratamahatta
 rawshader
 Raycaster
 raycaster
+raymarch
+raymarched
 raymarching
 RAYSHAD
 Raytracing
@@ -1994,6 +2090,7 @@ rels
 Remy
 Renderable
 renderable
+renderbuffer
 Renderbuffers
 renderbuffers
 renderbundle
@@ -2005,6 +2102,7 @@ rendertargets
 renderthreshold
 rendertime
 renminbi
+reproject
 Reprojection
 reprojection
 requis
@@ -2012,6 +2110,7 @@ Resetted
 Resizer
 resizer
 resizers
+respawn
 respecified
 resx
 resy
@@ -2029,6 +2128,7 @@ rgbe
 rgbeloader
 RGBM
 rgbm
+RGBs
 RGBSDA
 rgbtohsv
 RGTC
@@ -2042,6 +2142,8 @@ rlauncher
 Rodrigues
 Roentgenium
 ROID
+Rolloff
+rolloff
 rosybrown
 ROUGHNESSMAP
 roughnessmap
@@ -2086,6 +2188,8 @@ scriptable
 scène
 sdir
 sdistance
+SDRD
+SDRN
 seagreen
 SEDAC
 Seeley
@@ -2094,6 +2198,7 @@ selectend
 SELFI
 SELFIMAP
 SELFIMASK
+Separatei
 Sergej
 Servez
 servez
@@ -2177,6 +2282,7 @@ smoothstep
 snapseed
 Snellen
 snellen
+SNORM
 Sobel
 sobel
 Sobotka
@@ -2240,8 +2346,12 @@ staffantans
 stanloshka
 Starfighter
 startpoint
+stbl
+stbn
+STBN
 STCC
 STCK
+stco
 steelblue
 Stemkoskis
 stepv
@@ -2256,6 +2366,13 @@ strava
 stringlength
 stringvector
 strplace
+stsc
+stsd
+stsd
+stss
+stsz
+stts
+stts
 subcamera
 subchunk
 subchunks
@@ -2272,11 +2389,13 @@ subpage
 subpage's
 subpages
 subproperty
+subsampled
 substeps
 SUBTEX
 subtracter
 sugarizer
 Suivantes
+sundisc
 sundisk
 Sunfade
 sunsq
@@ -2303,6 +2422,7 @@ Tabler
 tabler
 Tahoma
 Tait
+takram
 tallymark
 tallymarks
 TANGENTSPACE
@@ -2327,6 +2447,7 @@ TESTLAB
 testo
 tetha
 TEXBLUR
+texel
 texels
 Texgen
 texid
@@ -2365,6 +2486,7 @@ Timecode
 timecode
 timestep
 TIMG
+tkhd
 TLAS
 tlas
 TMAP
@@ -2393,6 +2515,7 @@ torusknot
 touchpads
 TRAA
 traa
+trak
 TRANSFALLOFF
 Transforma├º├Áes
 transformmatrix
@@ -2419,6 +2542,7 @@ triplanarprojection
 Tris
 tris
 TRNL
+trunc
 tschw
 tspan
 tstep
@@ -2450,6 +2574,7 @@ ullamcorper
 ulonglong
 Ulrich
 Ulrich's
+Ultimaker
 ultrahdr
 ummm
 ummmm
@@ -2534,6 +2659,7 @@ valuet
 valuetl
 valuetr
 varius
+varyings
 Varys
 vcglib
 VCOL
@@ -2565,6 +2691,7 @@ vignfade
 vignin
 vignout
 vinted
+vints
 viridis
 Vispy
 visualising
@@ -2581,6 +2708,7 @@ VMADs
 VMAP
 VMAPs
 VMBG
+vmhd
 VMLA
 VMLB
 VMMD
@@ -2589,6 +2717,7 @@ VMPA
 VNDF
 vnum
 VOFFSET
+Vogel
 Vogel's
 volconfig
 vorbis

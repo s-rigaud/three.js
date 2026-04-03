@@ -26,6 +26,7 @@
         "docs/examples/ko/*",
         "docs/examples/zh/*",
         "docs/list.json",
+        "docs/llms-full.txt",
         "**.CUBE",
         "docs/manual/ar/*",
         "docs/manual/fr/*",
